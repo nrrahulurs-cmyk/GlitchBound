@@ -1,0 +1,490 @@
+{
+  "status": "passed",
+  "method": "Focused authored hero GLB; compressed pose workshop and asset-kit hero replacement, both freshly reopened. No complete-city regeneration.",
+  "glbSHA256": "a610ddd46a4996a65c2616b5292b504b27e5f17bc74975e1e63a2158acb5bcea",
+  "workshopSHA256": "24d347e9b96e2731ab6d99c6573f053dce73f747b7717afd6db3eafc133501cc",
+  "workshopBytes": 149286,
+  "contract": {
+    "coordinateBasis": "Blender Z up, +Y forward; glTF Y up, -Z forward",
+    "pivots": {
+      "left_leg": [
+        -0.192,
+        0,
+        0.83
+      ],
+      "right_leg": [
+        0.192,
+        0,
+        0.83
+      ],
+      "left_arm": [
+        -0.36,
+        0,
+        1.4
+      ],
+      "right_arm": [
+        0.36,
+        0,
+        1.4
+      ],
+      "head": [
+        0,
+        0,
+        1.47
+      ],
+      "torso": [
+        0,
+        0,
+        1.03
+      ],
+      "left_knee": [
+        -0.192,
+        0,
+        0.54
+      ],
+      "right_knee": [
+        0.192,
+        0,
+        0.54
+      ],
+      "left_foot": [
+        -0.192,
+        0,
+        0.2
+      ],
+      "right_foot": [
+        0.192,
+        0,
+        0.2
+      ]
+    },
+    "parents": {
+      "left_knee": "left_leg",
+      "right_knee": "right_leg",
+      "left_foot": "left_knee",
+      "right_foot": "right_knee"
+    },
+    "upperLength": 0.29,
+    "lowerLength": 0.34,
+    "ankleHeight": 0.2,
+    "restGeometryEdits": [
+      {
+        "sourceIndex": 2,
+        "part": "left_foot",
+        "previous": {
+          "position": [
+            -0.192,
+            0.0050000000000000044,
+            0.23500000000000001
+          ],
+          "size": [
+            0.23,
+            0.11,
+            0.065
+          ]
+        },
+        "position": [
+          -0.192,
+          0.0050000000000000044,
+          0.22
+        ],
+        "size": [
+          0.23,
+          0.11,
+          0.065
+        ]
+      },
+      {
+        "sourceIndex": 3,
+        "part": "left_foot",
+        "previous": {
+          "position": [
+            -0.192,
+            -0.09999999999999999,
+            0.27
+          ],
+          "size": [
+            0.23,
+            0.11,
+            0.065
+          ]
+        },
+        "position": [
+          -0.192,
+          -0.09999999999999999,
+          0.24000000000000002
+        ],
+        "size": [
+          0.23,
+          0.11,
+          0.065
+        ]
+      },
+      {
+        "sourceIndex": 4,
+        "part": "left_knee",
+        "previous": {
+          "position": [
+            -0.192,
+            0,
+            0.38
+          ],
+          "size": [
+            0.22,
+            0.26,
+            0.39
+          ]
+        },
+        "position": [
+          -0.192,
+          0,
+          0.3775
+        ],
+        "size": [
+          0.22,
+          0.26,
+          0.245
+        ]
+      },
+      {
+        "sourceIndex": 5,
+        "part": "left_leg",
+        "previous": {
+          "position": [
+            -0.192,
+            0.014,
+            0.665
+          ],
+          "size": [
+            0.26,
+            0.29,
+            0.28
+          ]
+        },
+        "position": [
+          -0.192,
+          0.014,
+          0.695
+        ],
+        "size": [
+          0.26,
+          0.29,
+          0.22
+        ]
+      },
+      {
+        "sourceIndex": 20,
+        "part": "right_foot",
+        "previous": {
+          "position": [
+            0.192,
+            0.0050000000000000044,
+            0.23500000000000001
+          ],
+          "size": [
+            0.23,
+            0.11,
+            0.065
+          ]
+        },
+        "position": [
+          0.192,
+          0.0050000000000000044,
+          0.22
+        ],
+        "size": [
+          0.23,
+          0.11,
+          0.065
+        ]
+      },
+      {
+        "sourceIndex": 21,
+        "part": "right_foot",
+        "previous": {
+          "position": [
+            0.192,
+            -0.09999999999999999,
+            0.27
+          ],
+          "size": [
+            0.23,
+            0.11,
+            0.065
+          ]
+        },
+        "position": [
+          0.192,
+          -0.09999999999999999,
+          0.24000000000000002
+        ],
+        "size": [
+          0.23,
+          0.11,
+          0.065
+        ]
+      },
+      {
+        "sourceIndex": 22,
+        "part": "right_knee",
+        "previous": {
+          "position": [
+            0.192,
+            0,
+            0.38
+          ],
+          "size": [
+            0.22,
+            0.26,
+            0.39
+          ]
+        },
+        "position": [
+          0.192,
+          0,
+          0.3775
+        ],
+        "size": [
+          0.22,
+          0.26,
+          0.245
+        ]
+      },
+      {
+        "sourceIndex": 23,
+        "part": "right_leg",
+        "previous": {
+          "position": [
+            0.192,
+            0.014,
+            0.665
+          ],
+          "size": [
+            0.26,
+            0.29,
+            0.28
+          ]
+        },
+        "position": [
+          0.192,
+          0.014,
+          0.695
+        ],
+        "size": [
+          0.26,
+          0.29,
+          0.22
+        ]
+      }
+    ],
+    "addedHingeModules": 12
+  },
+  "modules": 187,
+  "poseChecks": [
+    {
+      "pose": "HERO-IDLE",
+      "vertices": 1496,
+      "faces": 1122,
+      "maximumWorldError": 1.3328003749250113e-07,
+      "soles": [
+        {
+          "side": "left",
+          "height": -1.4901161193847656e-08,
+          "targetHeight": 0
+        },
+        {
+          "side": "right",
+          "height": -1.4901161193847656e-08,
+          "targetHeight": 0
+        }
+      ]
+    },
+    {
+      "pose": "HERO-ONE-RISER",
+      "vertices": 1496,
+      "faces": 1122,
+      "maximumWorldError": 2.5288109106536417e-07,
+      "soles": [
+        {
+          "side": "left",
+          "height": 0.1799999475479126,
+          "targetHeight": 0.18
+        },
+        {
+          "side": "right",
+          "height": -4.947185416881439e-08,
+          "targetHeight": 0
+        }
+      ]
+    },
+    {
+      "pose": "HERO-TWO-RISERS",
+      "vertices": 1496,
+      "faces": 1122,
+      "maximumWorldError": 2.6656007498500226e-07,
+      "soles": [
+        {
+          "side": "left",
+          "height": 0.1799999475479126,
+          "targetHeight": 0.18
+        },
+        {
+          "side": "right",
+          "height": 0.3599999248981476,
+          "targetHeight": 0.36
+        }
+      ]
+    }
+  ],
+  "authoredPoses": [
+    {
+      "id": "HERO-IDLE",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "angles": {},
+      "feet": {
+        "left": [
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0
+        ]
+      },
+      "stepCount": 0
+    },
+    {
+      "id": "HERO-ONE-RISER",
+      "location": [
+        1.65,
+        0,
+        -0.045
+      ],
+      "angles": {
+        "left_leg": 1.3011240514433362,
+        "left_knee": -1.0317574867841346,
+        "left_foot": -0.2693665646592016,
+        "right_leg": 0.41334463376619934,
+        "right_knee": -0.7630326723861318,
+        "right_foot": 0.3496880386199325
+      },
+      "feet": {
+        "left": [
+          0.37,
+          0.18
+        ],
+        "right": [
+          0,
+          0
+        ]
+      },
+      "stepCount": 1
+    },
+    {
+      "id": "HERO-TWO-RISERS",
+      "location": [
+        3.3,
+        0.36,
+        0.135
+      ],
+      "angles": {
+        "left_leg": 0.43003619911322377,
+        "left_knee": -0.7622986511813444,
+        "left_foot": 0.33226245206812066,
+        "right_leg": 1.3011240514433362,
+        "right_knee": -1.0317574867841346,
+        "right_foot": -0.2693665646592016
+      },
+      "feet": {
+        "left": [
+          0.37,
+          0.18
+        ],
+        "right": [
+          0.73,
+          0.36
+        ]
+      },
+      "stepCount": 2
+    }
+  ],
+  "negativeVerifierControls": [
+    {
+      "mutation": "knee transform displaced",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong saved face material slot",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong saved material color",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong saved material roughness",
+      "rejected": true
+    }
+  ],
+  "assetKit": {
+    "sha256": "e47fb68da4b545068ebe552381bc25ef5d5591b015136b0b8b6aba7511a7a044",
+    "bytes": 399497,
+    "maximumRestWorldError": 4.2146848510894033e-07,
+    "heroParts": 10,
+    "unrelatedObjectsPreserved": 10,
+    "unrelatedObjectGeometryMaterialTransformSHA256": "36c08a194e5e54e104bb2fadeff691124a3fa3543d189e65624100657232d5ed",
+    "heroFaceMaterialsVerified": true
+  },
+  "renderStatus": "Three captured views inspected; bounded static articulation accepted, live gait acceptance pending.",
+  "visualAssessment": {
+    "reviewerScope": "Implementation author inspecting actual saved renders; this is not a blind review.",
+    "findings": [
+      "Overview labels are readable after the presentation correction.",
+      "Bent knees and independently level boots are visible in the one-riser and two-riser poses.",
+      "The close and side views show stepped knee and ankle housings spanning the relieved armor joints without an obvious detached cuff in these poses.",
+      "The existing boots and knee pads remain bulky; three static poses do not prove natural gait, all-angle armor clearance, or runtime foot placement."
+    ],
+    "fullCityRegenerated": false,
+    "liveMovementAccepted": false,
+    "reviewFile": "validation/hero-articulation-visual-review.md"
+  },
+  "scope": "Three authored rigid-link poses, not accepted live gait. Non-leg geometry and rest bounds are checked separately against the published GLB.",
+  "renders": {
+    "workshopSHA256": "24d347e9b96e2731ab6d99c6573f053dce73f747b7717afd6db3eafc133501cc",
+    "engine": "Cycles CPU",
+    "samples": 16,
+    "threads": 2,
+    "resolution": [
+      1200,
+      850
+    ],
+    "views": [
+      {
+        "camera": "Hero three poses",
+        "file": "blender/hero-pose-preview.png",
+        "sha256": "d370296ae1e99bddbdd3b6b1702a67669ad35909ceac705a3f2110eb851c4e0e",
+        "seconds": 24.919314400001895,
+        "onlyRaisedPose": false
+      },
+      {
+        "camera": "Hero knee and ankle",
+        "file": "blender/hero-knee-preview.png",
+        "sha256": "5553759732498907fa6b97093e99de5d7c5029d1b685e31cd535bc4bdbb23655",
+        "seconds": 30.139464000007138,
+        "onlyRaisedPose": true
+      },
+      {
+        "camera": "Hero side articulation",
+        "file": "blender/hero-side-preview.png",
+        "sha256": "87c16408beea00fddf46ac2f1d1b9eb9dadc299dbb491b2a54a1b28e0f35cb22",
+        "seconds": 24.205227300000843,
+        "onlyRaisedPose": true
+      }
+    ],
+    "nativeUnchanged": true
+  }
+}

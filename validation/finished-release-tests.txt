@@ -1,0 +1,228 @@
+
+> neon-district@1.0.0 test
+> node scripts/test.mjs
+
+
+boot-clearance.test.mjs
+PASS A thin tall wall blocks a whole-frame crossing while preserving tangent travel {"position":[0.15149999999999997,0,2],"contacts":1}
+PASS A rotated thin OBB blocks the boot by its real face rather than its AABB {"normalClearance":0.001499999999999807,"tangentTravel":0.7}
+PASS Real supporting tops and clearance above risers stay open; low swings do not pass through risers {"blockedLowZ":0.4222999999999999,"raisedPathClear":true,"ownTopContactClear":true}
+PASS Contact skin allows leaving/sliding while preventing inward tunnelling; initial overlap is explicit {"inwardStop":0.15020000000000003,"initialRecovery":0.15150000000000002}
+PASS Two-face corners preserve both constraints and vertical conflicts never rewrite requested height {"corner":[0.15150000000000002,0,0.25229999999999997],"verticalConflictsReported":true}
+PASS Only valid upright static solids participate, including unwalkable vertical surfaces {"dynamicAABBsExcluded":true,"unwalkableWallStillSolid":true}
+PASS Recorded upper-entry boot sweep stays in front of the real closed door {"resolvedSole":[-190.34860043241866,3.2795261201783696,-261.16263416257175],"frontGap":0.0015000000000213731}
+PASS Actual authored boot vertices remain outside tall walls at varied yaw and diagonal approaches {"cases":12,"actualVertices":96,"minimumGap":0.0014999999999999545,"dimensions":{"halfWidth":0.14,"halfLength":0.24080000400543214,"height":0.3052000010013581},"assetSHA256":"a610ddd46a4996a65c2616b5292b504b27e5f17bc74975e1e63a2158acb5bcea"}
+
+camera-obstruction.test.mjs
+PASS Unobstructed walking and chase compositions remain exact without input mutation
+PASS Both directions stop before a 35 mm wall even across a 200 m sweep
+PASS Camera radius protects near-plane edge grazing instead of just the centre ray
+PASS Actual rotated OBB faces block and an empty corner of their AABB stays clear
+PASS Pitch and roll quaternions use true local dimensions
+PASS Informational yaw does not rotate already computed dynamic AABB dimensions
+PASS A chase rise stops beneath overhead beams and downward booms stay above ground
+PASS An engulfed anchor escapes its contiguous occupied interval without skipping the next wall
+PASS Zero-length and entirely contained booms find a clear surface outside overlapping solids
+PASS Broad-phase requests encompass the full boom rather than only its endpoints
+PASS Adjacent boxes discovered after contained-anchor recovery cannot capture the camera
+PASS Fresh moving and removed blocker poses take effect on the next call
+PASS Contained recovery retains neighboring solids instead of oscillating through shared walls
+PASS Previous-camera sweep prevents tunneling when the stopped endpoint remains visible from the anchor
+PASS Rounding a corner prioritizes a visible inward boom when temporal collision would hide the player
+PASS Outward interpolation remains safe at 20, 30, 60 FPS and during a long frame
+PASS Malformed positions, bounds and optional state never poison the result with NaN
+PASS Production frontage, canopy and building corners protect representative camera booms
+Completed camera-obstruction.test.mjs: 18 checks.
+
+city-services.test.mjs
+PASS Fifteen deterministic sites use real access screens across all five outer districts
+PASS All selected screens are visible from their standing position and recorded inspection viewpoint
+PASS Proximity, outward side and looking at the actual screen all gate discovery and begin
+PASS A live obstacle or caller line-of-sight veto blocks the screen without ignoring its whole host building
+PASS Food progress emits a single modest heal plus a timed neural benefit, without mutating caller state
+PASS Clinics, recharge terminals and garages emit their named effects only after their full durations
+PASS Movement, damage, death, driving, turning away and caller interruptions cancel without outcomes
+PASS A stationary garage operator can watch the car while repair runs; movement still cancels
+PASS Cooldown starts only at successful completion and cannot be bypassed with repeat interaction
+PASS Full-state clinics, recharge, repairs and already active recovery boosts do not consume service use
+PASS Garage repair requires the actual nearby owned car, correct alignment, no motion and a clear apron
+PASS Every garage has a continuous swept oriented route from an actual public road lane
+PASS Crown directories create real destinations, preserve them in state and cycle between services
+PASS Reset clears progress, cooldowns, result and navigation; returned snapshots cannot mutate internals
+PASS Invalid input and delayed frames cannot instantly complete an operation or emit phantom effects
+PASS The service system never changes authored city geometry, blueprint or native asset placements
+Completed city-services.test.mjs: 16 checks.
+
+civilian-crowd.test.mjs
+PASS Non-umbrella envelope contains all rotating body voxels during walk, flee, reversal and stop {"largestRatio":0.8172722710234029,"corners":1008000,"unitBodyRadius":0.7546129724410254}
+PASS Opposing walkers pass on separate wall-clear sides at60 and15Hz {"cases":[{"dt":0.016666666666666666,"minimumGap":0.193314001907114,"maxStep":0.014240981551689352,"paths":[9.861828436730919,9.861828436730919],"modes":["walk","pass"],"final":[{"id":"CIV-001","x":0.8512693896491472,"z":6.439003079952418,"speed":0.7},{"id":"CIV-002","x":-0.8512693896491472,"z":-6.439003079952418,"speed":-0.7}]},{"dt":0.06666666666666667,"minimumGap":0.18666465325274606,"maxStep":0.056963926206757276,"paths":[9.882056068519667,9.892353328059759],"modes":["walk","pass"],"final":[{"id":"CIV-001","x":0.8242981574857544,"z":6.470066989017021,"speed":0.7},{"id":"CIV-002","x":-0.870964824152421,"z":-6.456066989017021,"speed":-0.7}]}]}
+PASS A faster following walker eases down before the leader without intersection {"minimumGap":0.11500027511274591,"maxStep":0.018333333333333535,"paths":[4.187499999999933,6.56327378000514],"modes":["walk","follow"],"final":[{"id":"CIV-001","x":0,"z":4.187499999999933,"speed":0.3},{"id":"CIV-002","x":0,"z":2.5632737800051366,"speed":1.1}]}
+PASS Narrow head-on corridor gives deterministic right-of-way and a bounded retreat {"minimumGap":1.7883280393394978,"maxStep":0.010833333333334139,"paths":[10.335000000000111,9.988887317555022],"modes":["walk","reverse"],"final":[{"id":"CIV-001","x":0,"z":7.334999999999941,"speed":0.65},{"id":"CIV-002","x":0,"z":10.632553984221707,"speed":0.65}]}
+PASS Crowd reservations prevent a stationary turn or faster crossing from entering a neighbor {"minimumGap":0.00004275146408594388,"maxStep":0.17333333333333378,"paths":[0,6.5504991850244085,4.615153859410088],"modes":["idle","pass","yield","reverse","walk"],"final":[{"id":"CIV-001","x":0,"z":0,"speed":0},{"id":"CIV-002","x":-0.7372261297579459,"z":6.722710508030596,"speed":0},{"id":"CIV-003","x":-0.5153733553745858,"z":-1.677440892860647,"speed":0}]}
+PASS Larger authored body clearance is recorded and exactly restored on restart {"corrections":[{"id":"CIV-002","before":{"x":0.8,"z":0},"x":1.5342259448820508,"z":0,"distance":0.7342259448820507,"resolved":true,"bodyRadius":0.7546129724410254},{"id":"CIV-003","before":{"x":0,"z":1},"x":0,"z":1.5342259448820508,"distance":0.5342259448820508,"resolved":true,"bodyRadius":0.7546129724410254}]}
+PASS Both route endpoints reverse intent once while inertial gait brakes and turns {"cases":[{"dt":0.016666666666666666,"sign":-1,"reversals":1,"endpointSeconds":0.18333333333333332,"finalZ":-144.6575489440866},{"dt":0.016666666666666666,"sign":1,"reversals":1,"endpointSeconds":0.18333333333333332,"finalZ":144.6575489440866},{"dt":0.06666666666666667,"sign":-1,"reversals":1,"endpointSeconds":0.2,"finalZ":-144.646514495607},{"dt":0.06666666666666667,"sign":1,"reversals":1,"endpointSeconds":0.2,"finalZ":144.646514495607}]}
+
+civilian-gait-edge.test.mjs
+PASS 36 low-frame-rate reversal, square-turn and curb cases; measured world-space sole contacts, leg lengths and joint limits.
+{"performanceResults":[{"label":"constant","meanMs":4.4217916666666595,"medianMs":4.247499999999945,"p95Ms":5.835299999999961,"groundQueriesPerFrame":0,"groundSurfaces":39},{"label":"production","meanMs":5.37299416666668,"medianMs":5.269600000000082,"p95Ms":6.729100000000017,"groundQueriesPerFrame":2798.425,"groundSurfaces":39}],"cases":36}
+
+civilian-gait-integration.test.mjs
+PASS Walking and fleeing deaths preserve every voxel, anatomical joint point and captured bone orientation {"cases":[{"scale":0.84,"speed":0.45,"frames":19,"matrixError":1.3877787807814457e-17,"jointPointError":1.1188630228279524e-16,"angleOverrun":0,"angles":[{"name":"waist","angle":0,"limit":0.35},{"name":"neck","angle":0,"limit":0.55},{"name":"shoulderL","angle":0.18352008467146574,"limit":1.25},{"name":"hipL","angle":0.016752087889125696,"limit":1.2},{"name":"shoulderR","angle":0.12378682652151603,"limit":1.25},{"name":"hipR","angle":0.5002532641345421,"limit":1.2}],"maxGap":0.021250319894582693,"maxRise":0,"firstSleep":6.116666666666666,"sleeping":true,"final":{"articulated":true,"simplified":false,"segments":11,"joints":10,"maxJointError":0.0010255311074992455,"position":{"x":34.99038943322871,"y":0.2792260661088992,"z":-0.6150903395848234},"velocity":{"x":0,"y":0,"z":0},"speed":0,"sleeping":true,"rest":{"quietSeconds":2,"filteredEnergy":7.727946065504872e-67,"poseStable":true},"frozen":false,"correctionCount":0}},{"scale":1.12,"speed":-0.7,"frames":49,"matrixError":2.7755575615628914e-17,"jointPointError":5.551115123125783e-17,"angleOverrun":0,"angles":[{"name":"waist","angle":0,"limit":0.35},{"name":"neck","angle":0,"limit":0.55},{"name":"shoulderL","angle":0.010580983275968993,"limit":1.25},{"name":"hipL","angle":0.39270639274694297,"limit":1.2},{"name":"shoulderR","angle":0.03136821345640042,"limit":1.25},{"name":"hipR","angle":0.6140695768207498,"limit":1.2}],"maxGap":0.018363337491115905,"maxRise":0,"firstSleep":7.766666666666667,"sleeping":true,"final":{"articulated":true,"simplified":false,"segments":11,"joints":10,"maxJointError":0.008946692570737451,"position":{"x":34.792197464478164,"y":0.4083311185821893,"z":-0.18948965405488846},"velocity":{"x":0,"y":0,"z":0},"speed":0,"sleeping":true,"rest":{"quietSeconds":2,"filteredEnergy":3.4276766668644407e-62,"poseStable":true},"frozen":false,"correctionCount":0}},{"scale":1,"speed":0.45,"frames":88,"umbrella":true,"matrixError":1.3877787807814457e-17,"jointPointError":1.6653345369377348e-16,"angleOverrun":0,"angles":[{"name":"waist","angle":0,"limit":0.35},{"name":"neck","angle":0,"limit":0.55},{"name":"shoulderL","angle":0.16550950507700324,"limit":1.25},{"name":"hipL","angle":0.26771821537701856,"limit":1.2},{"name":"shoulderR","angle":0.5000000000000001,"limit":1.25},{"name":"hipR","angle":0.45707867625206106,"limit":1.2}],"maxGap":0.027575060915957007,"maxRise":0,"firstSleep":5.783333333333333,"sleeping":true,"final":{"articulated":true,"simplified":false,"segments":11,"joints":10,"maxJointError":0.000612189195415562,"position":{"x":35.07372377388875,"y":0.322768853932553,"z":-0.23601192521362466},"velocity":{"x":0,"y":0,"z":0},"speed":0,"sleeping":true,"rest":{"quietSeconds":2,"filteredEnergy":2.918767505046752e-67,"poseStable":true},"frozen":false,"correctionCount":0}},{"scale":1.02,"speed":0.5,"frames":27,"flee":true,"matrixError":2.1684605932526625e-17,"jointPointError":2.220446049250313e-16,"angleOverrun":0,"angles":[{"name":"waist","angle":0.10495936416671585,"limit":0.35},{"name":"neck","angle":2.1073424255447017e-8,"limit":0.55},{"name":"shoulderL","angle":0.24221059673833858,"limit":1.25},{"name":"hipL","angle":0.8292528993643737,"limit":1.2},{"name":"shoulderR","angle":0.17910197006237916,"limit":1.25},{"name":"hipR","angle":0.4309155682201408,"limit":1.2}],"maxGap":0.024826514404785397,"maxRise":0,"firstSleep":5.583333333333333,"sleeping":true,"final":{"articulated":true,"simplified":false,"segments":11,"joints":10,"maxJointError":0.012760500804712544,"position":{"x":35.24121351756825,"y":0.3686428902133803,"z":0.12628003528489318},"velocity":{"x":0,"y":0,"z":0},"speed":0,"sleeping":true,"rest":{"quietSeconds":2,"filteredEnergy":3.7822708120577375e-68,"poseStable":true},"frozen":false,"correctionCount":0}},{"scale":0.95,"speed":-0.5,"frames":43,"flee":true,"umbrella":true,"matrixError":1.3288676392999091e-17,"jointPointError":1.1102230246251565e-16,"angleOverrun":0,"angles":[{"name":"waist","angle":0.10926048390461637,"limit":0.35},{"name":"neck","angle":0,"limit":0.55},{"name":"shoulderL","angle":0.0650572467400971,"limit":1.25},{"name":"hipL","angle":0.49925982966038185,"limit":1.2},{"name":"shoulderR","angle":0.5000000000000003,"limit":1.25},{"name":"hipR","angle":1.1662671384089054,"limit":1.2}],"maxGap":0.019680087713333322,"maxRise":0,"firstSleep":7.316666666666666,"sleeping":true,"final":{"articulated":true,"simplified":false,"segments":11,"joints":10,"maxJointError":0.0008187403476085734,"position":{"x":35.31985414677271,"y":0.3208660537692755,"z":0.038955961114049205},"velocity":{"x":0,"y":0,"z":0},"speed":0,"sleeping":true,"rest":{"quietSeconds":2,"filteredEnergy":6.793457411712634e-64,"poseStable":true},"frozen":false,"correctionCount":0}},{"scale":1,"speed":0.5,"frames":111,"flee":true,"matrixError":2.7755575615628914e-17,"jointPointError":2.220446049250313e-16,"angleOverrun":0,"angles":[{"name":"waist","angle":0.1099997386116568,"limit":0.35},{"name":"neck","angle":2.580956827951785e-8,"limit":0.55},{"name":"shoulderL","angle":0.3499999999864497,"limit":1.25},{"name":"hipL","angle":0.12095733576125241,"limit":1.2},{"name":"shoulderR","angle":0.3499999999864455,"limit":1.25},{"name":"hipR","angle":0.9535457999806236,"limit":1.2}],"maxGap":0.01610415071020959,"maxRise":0.020711401168463296,"firstSleep":15.533333333333333,"sleeping":true,"final":{"articulated":true,"simplified":false,"segments":11,"joints":10,"maxJointError":0.006366146794662378,"position":{"x":36.800838963827196,"y":0.35147147914454685,"z":2.5192657025001366},"velocity":{"x":0,"y":0,"z":0},"speed":0,"sleeping":true,"rest":{"quietSeconds":2,"filteredEnergy":1.7343947627266253e-41,"poseStable":true},"frozen":false,"correctionCount":0}}]}
+PASS All284 authored citizens keep the original instance count with actual city pavement sampling {"citizens":284,"voxelInstances":14785,"groundSurfaces":39,"meanMs":5.629161666666684,"p95Ms":6.8771999999999025}
+
+civilian-motion.test.mjs
+PASS Stationary citizens keep planted feet and invariant authored voxel poses {"maxMatrixError":0,"seconds":5}
+PASS Foot contacts stay fixed while travel drives phase; blocked movement stops the cycle {"maxPlantedSlipM":0,"plantedPairs":578,"maxLift":0.06499866292540335,"walkedM":3.805500000000003}
+PASS Acceleration, braking, diagonal velocity and turns are bounded and eased {"maxAcceleration":4.6000000000000005,"maxTurnPerFrame":0.06333333333333346}
+PASS Scaled two-bone legs retain their lengths and soles stay above real curb support {"observations":[{"scale":0.84,"maxLengthError":2.7755575615628914e-16,"maxPenetration":5.551115123125783e-17,"maxWidth":0.6972,"maxDepth":0.5851273328833095},{"scale":1,"maxLengthError":2.7755575615628914e-16,"maxPenetration":2.0816681711721685e-17,"maxWidth":0.83,"maxDepth":0.6965413944227519},{"scale":1.12,"maxLengthError":2.7755575615628914e-16,"maxPenetration":2.7755575615628914e-17,"maxWidth":0.9296,"maxDepth":0.7800797081948274}]}
+PASS Fleeing, turning and stopping keep existing voxel geometry bounded and attached {"maxPoleGap":0,"maxWidth":0.978005215999872,"maxDepth":0.916263919783332,"maxLengthError":6.661338147750939e-16}
+
+civilian-navigation.test.mjs
+PASS Circle clearance uses the rotated box and the grid includes its rotated endpoints {"rotatedEndpoint":true,"outsideRotatedFootprint":true,"roundedCornerClearance":true}
+PASS Small accepted substeps stop at thin barriers and allow sliding along solid shelves {"stoppedZ":-0.5185185185185186,"slidX":1.0000000000000002}
+PASS Overhead objects and low curbs respect actual support height while taller props block {"overheadClear":true,"curbClear":true,"tallFurnitureBlocked":true}
+PASS Dynamic bins, parked vehicles and fixtures refresh once per frame without teleporting living citizens {"providerCalls":123,"updateFrames":122,"noPerFrameDepenetration":true}
+PASS Blocked ordinary walkers reverse, brake, and advance gait by accepted travel only {"furthestZ":-0.4650555555555608,"finalZ":-3.109639816922555,"acceptedDistance":4.179528705811423,"gaitDistance":4.179528705811423}
+PASS Initialization and reset minimally resolve obstacle and crowd overlaps deterministically {"corrections":[{"id":"CIV-001","before":{"x":0,"z":0},"x":-0.945,"z":0,"distance":0.945,"resolved":true,"bodyRadius":0.7546129724410254},{"id":"CIV-002","before":{"x":0,"z":0},"x":0.945,"z":0,"distance":0.945,"resolved":true,"bodyRadius":0.7546129724410254}]}
+PASS All284 authored citizens start and travel clear of real shelves, rotated solids and static vehicle placements {"citizens":284,"staticObstacles":29748,"trajectoryChecks":7176,"shelfFlee":{"id":"CIV-026","distance":7.945303374345725,"start":[-12.670963526703417,26.40701135188582],"end":[-11.292155215885312,23.815545782746867]},"corrections":[{"id":"CIV-011","before":{"x":12.074643455445766,"z":-8.50193376839161},"x":12.074643455445766,"z":-8.544342992866133,"distance":0.042409224474523555,"resolved":true,"bodyRadius":0.6934601539373012},{"id":"CIV-015","before":{"x":12.677479572128505,"z":11.934418112039566},"x":12.51519531226387,"z":12.109849118594298,"distance":0.23898162912788598,"resolved":true,"bodyRadius":0.7584688616499363},{"id":"CIV-018","before":{"x":-13.195959337521344,"z":-39.0886715054512},"x":-13.408921193749507,"z":-39.204516473125224,"distance":0.24243103915039335,"resolved":true,"bodyRadius":0.718792568967012},{"id":"CIV-019","before":{"x":13.221090064384043,"z":-108.50926034152508},"x":12.889759676727099,"z":-108.04524620850485,"distance":0.5701657140055119,"resolved":true,"bodyRadius":0.7659517569032168},{"id":"CIV-021","before":{"x":12.517017678823322,"z":-100.10201624035835},"x":11.806791220366568,"z":-99.54922479893766,"distance":0.8999999999999999,"resolved":true,"bodyRadius":0.7705174299702501},{"id":"CIV-023","before":{"x":13.587869253009558,"z":-24.88816125690937},"x":13.565894615737433,"z":-25.25555552756373,"distance":0.3680508589758887,"resolved":true,"bodyRadius":0.6976821303323989},{"id":"CIV-030","before":{"x":-13.434102502185851,"z":-159.20033758878708},"x":-13.302375826581498,"z":-159.4900083930135,"distance":0.3182154802754928,"resolved":true,"bodyRadius":0.6985063085656369},{"id":"CIV-074","before":{"x":323.10530251963064,"z":62.86941460734232},"x":323.10530251963064,"z":62.48793945252551,"distance":0.3814751548168118,"resolved":true,"bodyRadius":0.7838723143528389},{"id":"CIV-078","before":{"x":76.89240511644167,"z":62.954897770099336},"x":76.53272825768087,"z":62.954897770099336,"distance":0.3596768587607926,"resolved":true,"bodyRadius":0.7070581930110881},{"id":"CIV-119","before":{"x":-77.17964619430714,"z":-83.09548198571429},"x":-77.45681005406053,"z":-83.21028701542382,"distance":0.30000000000000004,"resolved":true,"bodyRadius":0.7423597747531753},{"id":"CIV-128","before":{"x":297.25404609702525,"z":-83.15167189808562},"x":297.4388220035275,"z":-83.22820858455864,"distance":0.2,"resolved":true,"bodyRadius":0.7301617124096518},{"id":"CIV-195","before":{"x":-323.0231257677777,"z":-287.1009962260723},"x":-323.0231257677777,"z":-287.52295460199156,"distance":0.421958375919246,"resolved":true,"bodyRadius":0.8025559390370453},{"id":"CIV-275","before":{"x":-77.03083626120352,"z":-526.6662617242896},"x":-77.03083626120352,"z":-526.5336425230291,"distance":0.1326192012604679,"resolved":true,"bodyRadius":0.7054902009836382}],"meanUpdateMs":6.260678055555564}
+PASS World restart restores destroyed obstacles before resolving original civilian spawns {"destroyedAreaInitiallyClear":true,"restoredSpawn":[-11.1,-18.195]}
+
+civilian-ragdoll.test.mjs
+PASS Actual rendered86-voxel figure becomes11 segments and10 joints without pose discontinuity {"matrixError":3.469446951953614e-18,"segments":11,"joints":10}
+PASS Bullet death collapses, articulates, settles on pavement and sleeps with bounded joint drift {"maxGap":0.012029036293953806,"peakSpeed":1.3036019544383923,"peakHeight":1.810291792507689,"maxArticulation":1.4715416886411163,"maxHingeOverrun":0.004739033325405109,"restingHeight":0.5941683910768404,"sleeping":true}
+PASS Different walking strides and civilian scales dissipate limb motion before assembly sleep {"observations":[{"scale":0.84,"phase":0.3,"speed":0.4,"asleep":true,"restY":0.05646251905199823,"comSpeed":0},{"scale":1.025,"phase":1.2,"speed":-0.4,"asleep":true,"restY":0.05640866583700557,"comSpeed":0},{"scale":1.12,"phase":2.4,"speed":0.4,"asleep":true,"restY":0.056379519375504145,"comSpeed":0},{"scale":1,"phase":3.1,"speed":-0.4,"asleep":true,"restY":0.056395195851924415,"comSpeed":0}]}
+PASS Accepted forward and reverse contact-velocity kinematic-car impacts have restrained launches {"observations":[{"sign":-1,"maxUp":3.2000000000000006,"maxBottom":0.4635657603809557,"maxGap":0.10597221792021108,"travel":-40.85218271703401,"corrections":3},{"sign":1,"maxUp":3.2,"maxBottom":0.3915605981966659,"maxGap":0.12444071719162696,"travel":39.73994451185876,"corrections":1}]}
+PASS Actual authored building and raised sidewalk stop a thrown articulated body {"authoredShapes":386,"raisedSurfaces":1,"minX":-15.917341318616735,"maxGap":0.07460443865381507,"restingBottom":0.14465675962879743}
+PASS Sleeping limbs wake on a later impulse, corpse raycasts remain physical, and reset removes all joints {"corpseHit":true,"remainingJoints":0}
+PASS A later moving car wakes a settled production ragdoll through real solver contact {"displacement":4.824538922775079,"maxGap":0.09408892007169622,"allLimbsWoke":true,"raisedBudgetWithinOneStep":true}
+PASS Different active corpses keep mutual collisions while excluding only their own overlapping limbs {"mutualBroadphasePairs":50,"retiredMutualPairs":4,"ownLimbAndUmbrellaPairs":0}
+PASS Retirement caps joints, preserves airborne pose and momentum, and keeps simplified bodies dynamic {"activeAssemblies":24,"activeBodies":294,"joints":240,"simplified":3,"matrixError":0,"retiredRestY":0.05695704513423523}
+PASS Joint-budget retirement prefers a settled corpse and preserves elevated support without lowering it {"supportHeight":1.4,"beforeBottom":1.3996660516237753,"afterBottom":1.3996660516237753}
+PASS Production update raises the solver budget on death and wake, restoring seven after rest and reset {"neutral":7,"death":12,"sleeping":7,"explicitWake":12,"reset":7}
+PASS Every flat-boot and calf shape preserves its exact physical pose during retirement {"retainedShapes":13,"maximumWorldCornerError":1.1102230246251565e-16,"minimumInitialShapeY":0.056999999999999995}
+
+civilian-source.test.mjs
+PASS All authored citizens and continuing aircraft match the frozen pre-extraction data
+PASS District order, equal-distance ties and fallback coats retain the old selection rules
+PASS Callers own independent records and templates retain ordered motion bindings and swatch draws
+
+foot-contact.test.mjs
+PASS Actual GLB boot sole geometry is cached in the animated joint frame {"records":[{"name":"left_leg","frameName":"left_foot","geometryVertices":96,"soleVertices":12,"localBounds":{"minX":-0.12499999999999999,"maxX":0.12499999999999999,"minZ":-0.270000010728836,"maxZ":0.15999999642372129,"y":-0.20000000298023224}},{"name":"right_leg","frameName":"right_foot","geometryVertices":96,"soleVertices":12,"localBounds":{"minX":-0.12500000000000006,"maxX":0.12499999999999994,"minZ":-0.27000001072883606,"maxZ":0.1599999964237213,"y":-0.20000000298023224}}],"actualGLBSHA256":"a610ddd46a4996a65c2616b5292b504b27e5f17bc74975e1e63a2158acb5bcea"}
+PASS Actual boot corners follow compound hip, knee and ankle motion on separate supports {"cases":27,"usingAuthoredAnkles":true,"maxCornerError":0,"minimumAnkleResponse":0.04564808326085537,"lowerFloorAlwaysUnchanged":true}
+PASS Ankle preference retains the legacy hip fallback and does not infer a missing boot {"preferredFrame":"left_foot","fallbackFrame":"left_leg","emptyAssetHasNoCue":true}
+PASS OBB support handles rotated edges, separate levels and missing surfaces {"rotatedSupport":true,"noLowerFloorProjection":true,"invalidDynamicPlaneRejected":true}
+PASS Per-foot lift, airborne, visibility, vehicle and reset clear the receiver cue {"independentFootFade":true,"clearedStates":5}
+PASS Footprint falloff is bounded, stays on its support and toggles without pose changes {"maximumAttenuation":0.28,"outsideFalloffSamples":[0.72,0.76375,0.8599999999999999,0.95625,1,1],"supportClipped":true,"togglePreservesPose":true}
+PASS Shared supports retain thin physical ground and low road slabs without thin visual decorations {"physicalThickness":0.022,"lowRoadTop":0.025,"originalReferencesPreserved":true,"duplicatesRemoved":true,"paintExcluded":true}
+PASS Actual city thin walking band, bench ground and landing resolve their own receiving levels {"cases":[{"name":"thin physical walking band","feet":[{"supportTop":0.20800000000000002,"gap":-1.6689300497141346e-8,"gain":1,"support":"COURT-15-CIRCULATION-070"},{"supportTop":0.20800000000000002,"gap":-1.6689300497141346e-8,"gain":1,"support":"COURT-15-CIRCULATION-070"}],"candidates":5},{"name":"bench ground","feet":[{"supportTop":0.185,"gap":-1.668930060816365e-8,"gain":1,"support":null},{"supportTop":0.185,"gap":-1.668930060816365e-8,"gain":1,"support":null}],"candidates":1},{"name":"housing landing","feet":[{"supportTop":3.065,"gap":-1.668930016407444e-8,"gain":1,"support":"STREET-VOXEL-160939"},{"supportTop":3.065,"gap":-1.668930016407444e-8,"gain":1,"support":"STREET-VOXEL-160939"}],"candidates":2}],"physicalThinSurface":"COURT-15-CIRCULATION-070","baseRoadTop":0.025}
+PASS Shader hook follows installed AO accumulation and leaves direct/emitted light untouched {"threeRevision":"180","sharedUniforms":6,"fixedFootCount":2,"ambientOnly":true,"inactiveUniformGuard":true,"zeroCoverageGuard":true,"stockSpecularIdentitySamples":1089}
+
+foot-placement.test.mjs
+PASS Actual heel contact is separate from a center-inside, load-bearing endpoint {"originalSupportedArea":0.21590068521600908,"resolvedSupportedArea":0.6661129568106312,"resolvedCenterZ":0.09999999999999999}
+PASS The real 0.9512mm nosing gap stays in the obstacle envelope without becoming sole contact {"actualGap":0.0009511999999745058,"retainedEnvelopeTop":3.065,"endpointZ":-256.89819998999997,"endpointGap":0.001500010000029306}
+PASS Projected boot dimensions derive the straight, 30-degree and sideways tread outcomes {"straightBias":0.062300009999999975,"thirtyDegreeRequiredBias":0.10003891723129282,"availableBias":0.1,"sidewaysFits":true}
+PASS Rotating and translating the entire stair preserves the geometric solution {"cases":4,"maximumLocalError":3.6866343311459104e-14}
+PASS Flat slabs, same-level seams and low curbs reserve actual top contact {"flatTop":0,"curbTop":0.165,"seamCoverage":0.7857142857142856,"overheadPass":true}
+PASS The complete boot prism rejects closed doors and ceilings, including tilted-input exclusions {"closedDoorRejected":true,"openDoorFits":true,"lowRoofRejected":true,"invalidSupportClasses":6}
+PASS Local obstacles split the center band without requiring one hardcoded downhill face {"nearestClearEndpoint":{"x":0.19150000999999994,"y":0.1,"z":0},"distance":0.19150000999999994}
+PASS Missing, removed and distant supports return explicit no-fit without mutation {"removedReason":"no-eligible-support","immutableInput":true}
+PASS Actual Blender-authored boot mesh bounds have no positive-volume collision at accepted treads {"accepted":15,"rejected":3,"checkedConservativeMeshBounds":30,"actualDimensions":{"halfWidth":0.14,"halfLength":0.24080000400543214,"height":0.3052000010013581},"assetSHA256":"a610ddd46a4996a65c2616b5292b504b27e5f17bc74975e1e63a2158acb5bcea"}
+PASS Normalized support orientation and inherited vertical tolerance are explicit {"normalizedYaw":0.6099999999999999,"originalRecordRetained":true,"acceptedMicroTop":0.0004,"rejectedMicroTop":0.0006}
+
+foot-swing.test.mjs
+PASS Flat trapezoidal motion matches an independent closed-form reference and stops exactly {"duration":1.5,"length":2,"referenceSamples":7,"terminalSpeed":0}
+PASS Short triangular travel and a zero-distance pose have finite exact rest {"triangularDuration":0.3,"triangularPeak":0.6,"zeroDuration":0}
+PASS 30, 60 and 120Hz execution uses the same profile and ends without a terminal snap {"rates":[30,60,120],"commonTimes":45,"maximumStepSpeed":2.000000000000006,"terminalSpeed":0}
+PASS A solved-foot divergence rejects time advance rather than advancing a hidden trajectory {"rejectedOffset":0.025,"unchangedElapsed":0.4,"sourcePathUnchanged":true}
+PASS A real-sized 18cm step has clear executing segments and frame samples in both directions {"directions":2,"segments":54,"frameSweeps":66,"rates":[30,60,120]}
+PASS Embedded endpoints, tall walls and an obstructed lift return explicit no-fit {"wallReason":"no clear route in the foot swing height range","embeddedReason":"endpoint intersects a solid or its lateral clearance skin","ceilingReason":"no clearance to lift the boot"}
+
+ground-height.test.mjs
+PASS Rotated, overlapping and cell-boundary footprints preserve exact edge heights {"checks":58125}
+PASS Every authored pavement agrees with the previous scan throughout the full city {"surfaces":39,"checks":106729,"exact":true}
+PASS Very large footprints use bounded storage and keep negative/outside queries correct {"checks":61}
+
+gun-shot-simulation.test.mjs
+Completed gun-shot-simulation.test.mjs: 11 checks.
+
+housing-compositions.test.mjs
+PASS Recipe exactly reproduces the reviewed 726-module coordinate oracle without mutation {"modules":726,"replacements":117}
+PASS Every one of the 117 changed source slots fails before any application mutation {"sourceSlots":117,"hostDriftRejected":true}
+PASS Application preserves untouched records, history, service anchors and all mounted campaigns {"netModules":609,"assemblies":24,"authoredModules":1459,"services":15,"mechanismParts":318,"signs":646,"campaigns":48}
+PASS Every physical support-graph edge is in contact and all 726 pieces reach ground or actual host {"groundedOrAttachedPieces":726,"verifiedGraphEdges":564,"supportRecords":364}
+PASS Road and pedestrian reserves plus all 3888 mounted campaign view rays remain clear {"laneSegments":112,"campaignRays":3888}
+PASS Individual collision boxes include the 366 high facade pieces while ground stays below the landing {"upperShapes":366,"collisionShapes":29248,"baseUnderLanding":0.185,"landingFloor":3.065}
+PASS Actual controller reaches landing and continuously descends at 15 Hz {"hz":15,"position":{"x":-189.00000000000037,"y":0.18500000000000005,"z":-250.85057499085158},"maxY":3.0649999999999995,"maxRise":0.1800000000000006,"seconds":31.2}
+PASS Actual controller reaches landing and continuously descends at 60 Hz {"hz":60,"position":{"x":-189.0000000000004,"y":0.18500000000000005,"z":-250.85348306976104},"maxY":3.0649999999999995,"maxRise":0.1800000000000006,"seconds":32.71666666666667}
+PASS Off-center stairs, retained seating approach and walking under the landing remain usable {"stairOffsets":[-0.2,0.2],"seat":{"x":-159.55271650080752,"y":0.18500000000000005,"z":-251.1498253222339},"underLanding":{"x":-190.24611184195933,"y":0.18500000000000005,"z":-259.5}}
+{"status":"passed","groups":9,"scope":"Isolated housing recipe with production static layout, service recipes and upright movement; no browser or visual acceptance."}
+
+iron-docks-compositions.test.mjs
+PASS Portable factory reproduces all 954 audited voxel modules without source mutation {"modules":954,"replacements":147,"materialProfiles":["paintedSteel","oxide","contactMetal"]}
+PASS Every replaced/retained source slot and all four hosts reject drift before any mutation {"sourceSlots":157,"hostRecords":4,"unexpectedFieldsRejected":true}
+PASS Integration preserves housing, all old slots outside 147 replacements, 15 services and 48 campaigns {"netModules":807,"assemblies":31,"authoredModules":2413,"services":15,"mechanismParts":318,"campaigns":48}
+PASS All 954 actual support paths reach retained hulls, roof, host walls or grade {"pieces":954,"edges":503,"roots":451,"protectedThemeRecords":378}
+PASS Road/sidewalk reservations, all mounted ads and 9702 existing entrance rays stay clear {"laneSegments":112,"campaignRays":3888,"entranceRays":9702,"retainedGarageRoutes":3}
+PASS 124 upper colliders match visible boxes and ground stays unchanged below the canopy {"upperColliders":124,"canopyBaseGround":0.185}
+PASS Four declared pedestrian widths are clear against actual static solids {"routes":[{"id":"DOCKS-ROAD-TO-HANDLING","width":1.3,"samples":543},{"id":"DOCKS-CONTAINER-AISLE-147.65","width":1.1,"samples":373},{"id":"DOCKS-CONTAINER-AISLE-152.35","width":1.1,"samples":373},{"id":"DOCKS-CONTAINER-CROSS-AISLE","width":0.8,"samples":305}]}
+PASS Production player controller completes all four route round trips at 15 and 60 Hz {"runs":[{"id":"DOCKS-ROAD-TO-HANDLING","hz":15,"seconds":21.6,"distanceMetres":64.22927177764248},{"id":"DOCKS-ROAD-TO-HANDLING","hz":60,"seconds":22.033333333333335,"distanceMetres":64.30134365107281},{"id":"DOCKS-CONTAINER-AISLE-147.65","hz":15,"seconds":13.866666666666667,"distanceMetres":44.40708742927856},{"id":"DOCKS-CONTAINER-AISLE-147.65","hz":60,"seconds":13.983333333333333,"distanceMetres":44.39542367311893},{"id":"DOCKS-CONTAINER-AISLE-152.35","hz":15,"seconds":13.866666666666667,"distanceMetres":44.40708742927856},{"id":"DOCKS-CONTAINER-AISLE-152.35","hz":60,"seconds":13.983333333333333,"distanceMetres":44.39542367311893},{"id":"DOCKS-CONTAINER-CROSS-AISLE","hz":15,"seconds":11.466666666666667,"distanceMetres":36.2336340554744},{"id":"DOCKS-CONTAINER-CROSS-AISLE","hz":60,"seconds":11.55,"distanceMetres":36.20278573226503}],"scope":"CPU accepted input fixture; no browser keyboard or vehicle-route claim"}
+{"status":"passed","groups":8,"geometrySHA256":"8bf66ae65637f929855f5f6a4600c2dd21a695913378c678189a61034d66476e","results":[{"name":"Portable factory reproduces all 954 audited voxel modules without source mutation","passed":true,"modules":954,"replacements":147,"materialProfiles":["paintedSteel","oxide","contactMetal"]},{"name":"Every replaced/retained source slot and all four hosts reject drift before any mutation","passed":true,"sourceSlots":157,"hostRecords":4,"unexpectedFieldsRejected":true},{"name":"Integration preserves housing, all old slots outside 147 replacements, 15 services and 48 campaigns","passed":true,"netModules":807,"assemblies":31,"authoredModules":2413,"services":15,"mechanismParts":318,"campaigns":48},{"name":"All 954 actual support paths reach retained hulls, roof, host walls or grade","passed":true,"pieces":954,"edges":503,"roots":451,"protectedThemeRecords":378},{"name":"Road/sidewalk reservations, all mounted ads and 9702 existing entrance rays stay clear","passed":true,"laneSegments":112,"campaignRays":3888,"entranceRays":9702,"retainedGarageRoutes":3},{"name":"124 upper colliders match visible boxes and ground stays unchanged below the canopy","passed":true,"upperColliders":124,"canopyBaseGround":0.185},{"name":"Four declared pedestrian widths are clear against actual static solids","passed":true,"routes":[{"id":"DOCKS-ROAD-TO-HANDLING","width":1.3,"samples":543},{"id":"DOCKS-CONTAINER-AISLE-147.65","width":1.1,"samples":373},{"id":"DOCKS-CONTAINER-AISLE-152.35","width":1.1,"samples":373},{"id":"DOCKS-CONTAINER-CROSS-AISLE","width":0.8,"samples":305}]},{"name":"Production player controller completes all four route round trips at 15 and 60 Hz","passed":true,"runs":[{"id":"DOCKS-ROAD-TO-HANDLING","hz":15,"seconds":21.6,"distanceMetres":64.22927177764248},{"id":"DOCKS-ROAD-TO-HANDLING","hz":60,"seconds":22.033333333333335,"distanceMetres":64.30134365107281},{"id":"DOCKS-CONTAINER-AISLE-147.65","hz":15,"seconds":13.866666666666667,"distanceMetres":44.40708742927856},{"id":"DOCKS-CONTAINER-AISLE-147.65","hz":60,"seconds":13.983333333333333,"distanceMetres":44.39542367311893},{"id":"DOCKS-CONTAINER-AISLE-152.35","hz":15,"seconds":13.866666666666667,"distanceMetres":44.40708742927856},{"id":"DOCKS-CONTAINER-AISLE-152.35","hz":60,"seconds":13.983333333333333,"distanceMetres":44.39542367311893},{"id":"DOCKS-CONTAINER-CROSS-AISLE","hz":15,"seconds":11.466666666666667,"distanceMetres":36.2336340554744},{"id":"DOCKS-CONTAINER-CROSS-AISLE","hz":60,"seconds":11.55,"distanceMetres":36.20278573226503}],"scope":"CPU accepted input fixture; no browser keyboard or vehicle-route claim"}]}
+
+kinematic-pose.test.mjs
+PASS One world controller installs exactly one listener set and disposal is reversible {"sharedInstance":true,"listenersRemoved":true}
+PASS Slow accepted contact pushes wake actual receivers without waking nearby resting objects {"observations":[{"motionHints":true,"speed":0.06,"firstContact":120,"firstWake":120,"receiverDisplacement":0.12073389101205083,"maxPenetration":0,"remoteStayedAsleep":true},{"motionHints":false,"speed":0.06,"firstContact":120,"firstWake":120,"receiverDisplacement":0.11783652280731335,"maxPenetration":0.0020236560750811483,"remoteStayedAsleep":true}]}
+PASS Temporary contact wake thresholds restore on idle, clear, unregister, dynamic conversion, removal and disposal {"restoredOriginalLimit":0.23,"cleanupPaths":8,"worldTransferPreserved":true}
+PASS Accepted translation and yaw remain exact at every internal step while solver sees contact velocity {"internalSteps":4,"maximumTranslationError":0,"maximumQuaternionError":0,"solverVelocity":[0,0,-10],"solverAngularVelocity":[0,1.2,0]}
+PASS Moving accepted car transfers real contact momentum without a second hull displacement {"observations":[{"speed":0,"peakProbeForwardSpeed":0.36937848456917594,"probeDisplacement":0.024625232304611444},{"speed":10,"peakProbeForwardSpeed":11.81224699930658,"probeDisplacement":0.787483133287104}]}
+PASS A genuinely idle car resumes translation and wakes a sleeping receiver on the first contact step {"before":{"car":2,"receiver":2},"after":{"car":0,"receiver":0},"receiverVelocity":[0.26723352156638713,3.6510802165164233,-4.5115189732692995],"internalSteps":3,"acceptedPoseExact":true}
+PASS A genuinely idle rotating fixture wakes with angular hints and transfers contact to a sleeping receiver {"contacts":4,"receiverVelocity":[-0.4405453372996376,-0.2521477739793778,-6.526992733650193],"acceptedYaw":0.3}
+PASS Cached targets detect callers mutating the body first, while unchanged and quaternion-sign-equivalent idle targets stay asleep {"unchangedIdlePreserved":true,"quaternionSignEquivalent":true,"preMutatedTranslationAndYawWake":true,"resetTargetWake":true,"angularHintAloneWakes":true}
+PASS First registration respects existing idle state, moving hints wake, and dynamic bodies retain their own sleep lifecycle {"firstUnchangedRegistrationSleeps":true,"firstMovingRegistrationWakes":true,"firstDifferentPoseWakes":true,"dynamicSleepUntouched":true}
+PASS Unregistering or changing to dynamic preserves free rigid-body motion and mass {"dynamicMass":1200,"noTargetReassertion":true}
+PASS Traffic accepted poses stay fixed through substeps; wrecks unregister and resets restore neutral targets {"perStepPoseChecks":64,"trafficBodies":16,"wreckFree":true,"resetHintsZero":true}
+
+native-character-export.test.mjs
+PASS All source people and actual frame-zero instance matrices survive export exactly {"people":284,"exactVoxelMatrices":14785,"float32Hash":"4af8521e9c69f33142d4148595eedc6b5ecd8e82f73c37af5d0456d75ba2b951"}
+PASS Initial clearance uses the exact live provider poses without advancing time {"staticColliders":29733,"dynamicColliders":284,"serviceSolids":234,"changedSpawns":14,"recordedCorrections":14,"worldSteps":0}
+PASS Editable group hierarchy and Blender basis reconstruct every original voxel corner {"voxelCorners":118280,"maximumMatrixError":8.526512829121202e-13,"maximumNativeCornerError":6.278560925847211e-13}
+PASS Exported live and physical groups agree with the production ragdoll handoff {"ordinaryAndUmbrellaParts":121,"jointedBodyGroups":11,"liveBodyGroups":13,"rigidDroppedUmbrella":true}
+PASS Compact workshop hierarchy matches replayed walk, stop, turn, flee and curb poses {"clips":4,"groupFrames":724,"matrixChecks":43802,"maximumError":1.0658141036401503e-14,"maximumSolePenetration":1.4155343563970746e-15,"plantedComparisons":857,"maxPlantedSlip":0}
+PASS Portable CLI writes explicit gzip output and a small reproducible summary {"gzipBytes":1082725,"summaryBytes":10294,"independentWorkingDirectory":true,"secondInitializationMatricesIdentical":true}
+
+player-movement.test.mjs
+PASS Eye height follows real raised pavement and remains grounded while idle
+PASS Acceleration, sprint, diagonal normalization, braking, and frame-rate consistency
+PASS High-speed dash cannot tunnel through a25mm-thick wall
+PASS Rotated OBB collision preserves tangential movement for smooth wall sliding
+PASS Two perpendicular walls resolve a corner without jitter or penetration
+PASS Real curb tops raise feet and descending curbs settle without hovering
+PASS Sequential20cm stairs climb using real tops and stop floating when the stairs end
+PASS A50cm ledge blocks walking but can be jumped onto and supports landing
+PASS Jump uses pavement height, cannot double jump, and lands without falling through
+PASS A low ceiling stops the head instead of allowing an upward clip
+PASS Walking off a tall platform causes a real fall and gravity remains active during air dashes
+PASS Dynamic props block walking; removed support causes a fall on the next update
+PASS External teleport clears old velocity and never sweeps across the intervening world
+PASS World bounds and large frame gaps stay bounded; collider queries are shared by substeps
+PASS The current authored city sidewalk and actual extracted bin stop the player at the visible footprint
+Completed player-movement.test.mjs: 15 checks.
+
+service-world.test.mjs
+PASS All fifteen existing sites own finite recipes and replace only their fifteen old food shutter slats {"sites":15,"parts":318,"replaced":15}
+PASS Every visible mechanism and luminous cell remains attached to its facade or connected frame across action poses {"attachmentPoses":75}
+PASS Animation preserves box dimensions, terminal sightlines and standing approaches at all fifteen sites {"poseSamples":315}
+PASS Food drawers fit all three walking reserves and close behind the shutter without intersecting the meal {"clearances":[{"id":"SERVICE-B049","projection":1.3149999999999973,"remaining":14.885000000000005},{"id":"SERVICE-B042","projection":1.3149999999999973,"remaining":14.88500000000004},{"id":"SERVICE-B046","projection":1.3149999999999973,"remaining":14.885000000000026}]}
+PASS Garage physical parts clear the real car across parking tolerance and both accepted orientations {"acceptedCarPoses":972}
+PASS All fifteen services start and finish with actual street and live fixture colliders in their production LOS provider {"started":15,"completed":15,"frames":525,"staticBoxes":29733}
+PASS Completion deduplicates, cancellation retracts on pause, and reset restores the exact resting instance matrices {"cancelledReturn":true,"duplicateIgnored":true,"resetExact":true}
+PASS Exact fixed-size collision shapes match visible parts and remain at accepted poses through multiple Cannon substeps {"bodies":36,"movingBodies":21,"substeps":4,"sharedControllerRetained":true}
+
+street-broadphase.test.mjs
+PASS Random rotated multicell bodies retain every unordered pair against legacy and CannonNaive {"snapshots":25,"totalPairs":12209,"orderedPairsIdentical":true}
+PASS Infinite ground, global moving boxes and sleeping receivers obey canonical ownership {"snapshots":3,"totalPairs":14,"orderedPairsIdentical":true}
+PASS Collision masks and same-civilian umbrella exclusions preserve cross-corpse contacts {"snapshots":1,"totalPairs":17,"orderedPairsIdentical":true}
+PASS Remove, readd, type conversion, rotated static relocation and external AABB refresh stay coherent {"snapshots":6,"totalPairs":8,"orderedPairsIdentical":true,"externalAabbRefresh":true}
+PASS Accepted moving kinematics wake and push sleeping dynamics through real world contacts {"firstSleepState":0,"afterSleepState":0,"speed":12.201142707224735,"carPosition":[0,1,1.75]}
+PASS Production city with24 articulated deaths retains pairs through motion, sleep, wake and reset {"snapshots":10,"totalPairs":1722,"orderedPairsIdentical":true,"bodiesAtLoad":2993,"selected":24,"meanCollisionPairsMs":{"legacy":1.3820100000000002,"optimized":0.47667899999999463,"ratio":0.3449171858380146},"note":"Bounded CPU microbenchmark on one settled-in-progress production snapshot; this is not browser FPS."}
+
+22/22 suites passed.

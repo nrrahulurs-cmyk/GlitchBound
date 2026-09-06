@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "sourceSHA256": "2e83662deebced31393ebe65a1d9044650e537929afef67eeb216e398f2a5a2b",
+  "tests": [
+    {
+      "name": "Actual heel contact is separate from a center-inside, load-bearing endpoint",
+      "passed": true,
+      "originalSupportedArea": 0.21590068521600908,
+      "resolvedSupportedArea": 0.6661129568106312,
+      "resolvedCenterZ": 0.09999999999999999
+    },
+    {
+      "name": "The real 0.9512mm nosing gap stays in the obstacle envelope without becoming sole contact",
+      "passed": true,
+      "actualGap": 0.0009511999999745058,
+      "retainedEnvelopeTop": 3.065,
+      "endpointZ": -256.89819998999997,
+      "endpointGap": 0.001500010000029306
+    },
+    {
+      "name": "Projected boot dimensions derive the straight, 30-degree and sideways tread outcomes",
+      "passed": true,
+      "straightBias": 0.062300009999999975,
+      "thirtyDegreeRequiredBias": 0.10003891723129282,
+      "availableBias": 0.1,
+      "sidewaysFits": true
+    },
+    {
+      "name": "Rotating and translating the entire stair preserves the geometric solution",
+      "passed": true,
+      "cases": 4,
+      "maximumLocalError": 3.6866343311459104e-14
+    },
+    {
+      "name": "Flat slabs, same-level seams and low curbs reserve actual top contact",
+      "passed": true,
+      "flatTop": 0,
+      "curbTop": 0.165,
+      "seamCoverage": 0.7857142857142856,
+      "overheadPass": true
+    },
+    {
+      "name": "The complete boot prism rejects closed doors and ceilings, including tilted-input exclusions",
+      "passed": true,
+      "closedDoorRejected": true,
+      "openDoorFits": true,
+      "lowRoofRejected": true,
+      "invalidSupportClasses": 6
+    },
+    {
+      "name": "Local obstacles split the center band without requiring one hardcoded downhill face",
+      "passed": true,
+      "nearestClearEndpoint": {
+        "x": 0.19150000999999994,
+        "y": 0.1,
+        "z": 0
+      },
+      "distance": 0.19150000999999994
+    },
+    {
+      "name": "Missing, removed and distant supports return explicit no-fit without mutation",
+      "passed": true,
+      "removedReason": "no-eligible-support",
+      "immutableInput": true
+    },
+    {
+      "name": "Actual Blender-authored boot mesh bounds have no positive-volume collision at accepted treads",
+      "passed": true,
+      "accepted": 15,
+      "rejected": 3,
+      "checkedConservativeMeshBounds": 30,
+      "actualDimensions": {
+        "halfWidth": 0.14,
+        "halfLength": 0.24080000400543214,
+        "height": 0.3052000010013581
+      },
+      "assetSHA256": "a610ddd46a4996a65c2616b5292b504b27e5f17bc74975e1e63a2158acb5bcea"
+    },
+    {
+      "name": "Normalized support orientation and inherited vertical tolerance are explicit",
+      "passed": true,
+      "normalizedYaw": 0.6099999999999999,
+      "originalRecordRetained": true,
+      "acceptedMicroTop": 0.0004,
+      "rejectedMicroTop": 0.0006
+    }
+  ]
+}

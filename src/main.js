@@ -25,7 +25,7 @@ import { createCityServices } from './city-services.js';
 import { createServiceInterface } from './service-interface.js';
 import { createServiceWorld } from './service-world.js';
 import { getKinematicPoseController } from './kinematic-pose.js';
-import { createFootContact } from './foot-contact.js';
+import { createFootContact, collectFootSupportSurfaces } from './foot-contact.js';
 
 const $=id=>document.getElementById(id);
 const audio=createAudio();
@@ -133,7 +133,7 @@ async function init(){
     serviceWorld.attachPhysics({world:simulation.world,material:simulation.physicsMaterial});
     cityShadows.addCaster(serviceWorld.root);
     footContact=createFootContact({avatar,
-      supportSurfaces:city.serviceSource.boxes.filter(box=>box.kind==='pavement'&&box.sy>=.025),
+      supportSurfaces:collectFootSupportSurfaces({groundSurfaces:city.groundSurfaces,boxes:city.serviceSource.boxes}),
       getColliders:(x,z,radius)=>[...city.getCollidersAt(x,z,radius),...simulation.getSolidProps(),...cityLife.getTrafficColliders()]});
     city.civilians.setObstacleProvider(()=>[...simulation.getSolidProps(),...cityLife.getTrafficColliders(),
       {id:'VEHICLE-PLAYER',x:carPosition.x,y:carPosition.y+.68,z:carPosition.z,sx:2.8,sy:1.28,sz:5.2,ry:carYaw}]);

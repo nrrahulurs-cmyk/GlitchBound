@@ -1,0 +1,14 @@
+{
+  "checkedAtUTC": "2026-09-06T20:00:53.096Z",
+  "status": "passed",
+  "scope": "Changed release files only; token-pattern scan and excluded unfinished runtime check",
+  "files": 40,
+  "bytes": 11391695,
+  "findings": [],
+  "excludedRuntimeConfirmed": [
+    "player-leg-pose",
+    "player-pelvis",
+    "terrain movement changes",
+    "weapon body-offset integration"
+  ]
+}

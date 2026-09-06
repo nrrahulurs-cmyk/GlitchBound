@@ -1,6 +1,6 @@
 # Quality work and evidence
 
-The target is an exceptional voxel cyberpunk game across the whole experience: world design, surfaces, characters, animation, movement, vehicles, physical interactions, combat, sound and usability. **AAA parity has not been established.** A working demo, a favorable screenshot and passing tests are insufficient evidence. The public release is a playable foundation; this branch contains further local development.
+The target is an exceptional voxel cyberpunk game across the whole experience: world design, surfaces, characters, animation, movement, vehicles, physical interactions, combat, sound and usability. **AAA parity has not been established.** A working demo, a favorable screenshot and passing tests are insufficient evidence. Development is paused at the user’s request. The public release contains completed asset and contact-shading updates; unfinished player stair IK, pelvis and terrain-movement work remains local. The wider quality target remains unmet. See RELEASE_CHECKPOINT.md.
 
 Preserve the accepted direction: a large connected dystopian voxel city, Blender source assets, Three.js runtime, free exploration, varied supported advertisements, functional traffic, civilian and vehicle impacts, firearms with authored muzzle effects, no monoblade and no gun-impact dome.
 

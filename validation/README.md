@@ -2,7 +2,9 @@
 
 ## Current release checkpoint and retained history
 
-For the `Y0FsMvtw` runtime checkpoint, start with these bounded reports:
+The completed September 6 asset/contact update is described in [RELEASE_CHECKPOINT.md](../RELEASE_CHECKPOINT.md). The focused hero reports validate the native rig and three authored poses; they do not accept a new live gait.
+
+For the previous `Y0FsMvtw` runtime checkpoint, these bounded reports retain their historical scope:
 
 - [Final foot contact and blueprint checks](foot-contact-final-browser.json): frozen comparisons, real hidden/airborne/vehicle transitions, stair support, restart and dock-route selection.
 - [Dock/contact performance samples](performance-docks-contact-profile.json): final 59.976 FPS ordinary / 54.195 FPS with 24 fresh articulated deaths, earlier samples and instrumented diagnosis. No measured FPS gain is attributed to the shader guard.

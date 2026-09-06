@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "method": "Execute the actual build_city.py library-selection and prop-copy section in an empty scene. No full city construction or save.",
+  "sourceSHA256": "8514b009fb8eaa542818fbbb1a235a23a47ce61eeff2d776df29d7b05b6fe5a0",
+  "parts": 10,
+  "vertices": 1496,
+  "scale": 1.12,
+  "yaw": 0.41,
+  "maximumWorldError": 1.9231159454466913e-06,
+  "kneeAndFootParentsPreserved": true
+}

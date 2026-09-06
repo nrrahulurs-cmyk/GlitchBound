@@ -9,6 +9,7 @@ from pathlib import Path
 import math
 import json
 import random
+import sys
 import bpy
 from mathutils import Vector
 
@@ -202,20 +203,36 @@ def interceptor():
 def mercenary():
     """Concept hero: heavily segmented armor, pixel hair and cybernetic arms."""
     b=Builder('VEX / VOXEL MERCENARY');rng=random.Random(417)
+    leg_members={};leg_edits=[]
+    def limb_box(part,pos,size,mat,prior=None):
+        source_index=len(b.verts)//8
+        leg_members[source_index]=part
+        b.box(pos,size,mat)
+        if prior:leg_edits.append({'sourceIndex':source_index,'part':part,'previous':prior,'position':pos,'size':size})
     # Grounded tactical boots, lower/upper leg segments, exposed knee joints.
     for side in [-1,1]:
         x=side*.192
-        b.box((x,.055,.10),(.25,.43,.20),'carbon rubber')
+        leg='left_leg' if side<0 else 'right_leg'
+        knee='left_knee' if side<0 else 'right_knee'
+        foot='left_foot' if side<0 else 'right_foot'
+        limb_box(foot,(x,.055,.10),(.25,.43,.20),'carbon rubber')
         for j in range(3):
-            b.box((x,.11-j*.105,.20+j*.035),(.23,.11,.065),'armor graphite')
-        b.box((x,0,.38),(.22,.26,.39),'black fabric')
-        b.box((x,.014,.665),(.26,.29,.28),'armor charcoal')
+            # Lower the two rear instep plates to leave room for ankle flexion.
+            height=.20+j*.02
+            limb_box(foot,(x,.11-j*.105,height),(.23,.11,.065),'armor graphite',
+                     prior={'position':(x,.11-j*.105,.20+j*.035),'size':(.23,.11,.065)} if j else None)
+        # Short cuffs terminate at actual hinges; centered voxel knuckles bridge
+        # the deliberate relief without stretching the boot or upper armor.
+        limb_box(knee,(x,0,.3775),(.22,.26,.245),'black fabric',prior={'position':(x,0,.38),'size':(.22,.26,.39)})
+        limb_box(leg,(x,.014,.695),(.26,.29,.22),'armor charcoal',prior={'position':(x,.014,.665),'size':(.26,.29,.28)})
         for j in range(4):
-            b.box((x,.15,.29+j*.076),(.23,.068,.056),'armor bluegrey')
-            b.box((x+side*.126,.01,.3+j*.07),(.065,.23,.065),'armor graphite')
-        b.box((x,.174,.60),(.22,.13,.17),'armor steel')
-        b.box((x,.248,.62),(.105,.018,.066),'armor charcoal')
-        b.box((x+side*.138,-.01,.72),(.102,.21,.17),'weathered khaki')
+            limb_box(knee,(x,.15,.29+j*.076),(.23,.068,.056),'armor bluegrey')
+            limb_box(knee,(x+side*.126,.01,.3+j*.07),(.065,.23,.065),'armor graphite')
+        limb_box(knee,(x,.174,.60),(.22,.13,.17),'armor steel')
+        limb_box(knee,(x,.248,.62),(.105,.018,.066),'armor charcoal')
+        limb_box(leg,(x+side*.138,-.01,.72),(.102,.21,.17),'weathered khaki')
+        # This lateral accessory already belongs to the arm; retain that exact
+        # legacy assignment rather than reclassifying the whole construction loop.
         b.box((x+side*.195,.10,.75),(.035,.044,.051),'hazard amber')
     b.box((0,0,.835),(.53,.35,.24),'black fabric')
     b.box((0,0,.954),(.58,.39,.105),'armor graphite')
@@ -277,25 +294,47 @@ def mercenary():
     for side in [-1,1]:
         b.box((side*.236,-.215,1.24),(.09,.12,.34),'weathered khaki')
         for j in range(4):b.box((side*.242,-.285,1.12+j*.071),(.081,.031,.043),'armor graphite')
-    # Export six joint-centered parts, preserving simple runtime walking animation.
+    # Add centered, stepped hinge housings after legacy boxes so their source
+    # indices remain stable for rest/non-leg comparison with the published kit.
+    for side in [-1,1]:
+        x=side*.192;leg='left_leg' if side<0 else 'right_leg';knee='left_knee' if side<0 else 'right_knee'
+        for size in [(.225,.11,.15),(.225,.15,.11)]:limb_box(leg,(x,0,.54),size,'armor graphite')
+        limb_box(leg,(x+side*.118,0,.54),(.025,.10,.10),'armor worn edge')
+        for size in [(.20,.10,.15),(.20,.15,.10)]:limb_box(knee,(x,0,.20),size,'carbon rubber')
+        limb_box(knee,(x+side*.105,0,.20),(.022,.085,.085),'armor steel')
+    # Keep the six public part names and add true knee/ankle descendants.
     root=bpy.data.objects.new('VEX / VOXEL MERCENARY',None)
     bpy.context.collection.objects.link(root)
     pivots={'left_leg':(-.192,0,.83),'right_leg':(.192,0,.83),
             'left_arm':(-.36,0,1.40),'right_arm':(.36,0,1.40),
-            'head':(0,0,1.47),'torso':(0,0,1.03)}
+            'head':(0,0,1.47),'torso':(0,0,1.03),
+            'left_knee':(-.192,0,.54),'right_knee':(.192,0,.54),
+            'left_foot':(-.192,0,.20),'right_foot':(.192,0,.20)}
+    parents={'left_knee':'left_leg','right_knee':'right_leg','left_foot':'left_knee','right_foot':'right_knee'}
     parts={name:Builder(name) for name in pivots}
     cube_faces=[(0,3,2,1),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)]
+    source_records=[]
     for index in range(0,len(b.verts),8):
         verts=b.verts[index:index+8];x,y,z=[sum(v[k] for v in verts)/8 for k in range(3)]
-        if z<.81 and abs(x)<.34:part='left_leg' if x<0 else 'right_leg'
+        if index//8 in leg_members:part=leg_members[index//8]
+        elif z<.81 and abs(x)<.34:part='left_leg' if x<0 else 'right_leg'
         elif (abs(x)>.335 and z<1.55):part='left_arm' if x<0 else 'right_arm'
         elif z>1.44 and abs(x)<.28:part='head'
         else:part='torso'
         px,py,pz=pivots[part]
         mat=b.slots[b.face_materials[(index//8)*6]]
         parts[part].poly([(vx-px,vy-py,vz-pz) for vx,vy,vz in verts],cube_faces,mat)
+        source_records.append({'id':'HERO-BOX-%03d'%(index//8),'part':part,'vertices':verts,'material':mat})
+    objects={}
     for name,part in parts.items():
-        obj=part.finish();obj.parent=root;obj.location=pivots[name]
+        obj=part.finish();objects[name]=obj
+        parent=parents.get(name);obj.parent=objects[parent] if parent else root
+        obj.location=Vector(pivots[name])-Vector(pivots[parent]) if parent else pivots[name]
+        obj['hero_part']=name;obj['hero_source_ids']=json.dumps([r['id'] for r in source_records if r['part']==name])
+    root['hero_articulation']=json.dumps({'coordinateBasis':'Blender Z up, +Y forward; glTF Y up, -Z forward',
+        'pivots':pivots,'parents':parents,'upperLength':.29,'lowerLength':.34,'ankleHeight':.20,
+        'restGeometryEdits':leg_edits,'addedHingeModules':12})
+    root['hero_box_records']=json.dumps(source_records)
     return root
 
 def av():
@@ -499,6 +538,12 @@ def kiosk():
     b.box((0,.76,.34),(2.42,.018,.025),'hot magenta')
     return b.finish()
 
+if '--hero-only' in sys.argv:
+    sys.path.insert(0,str(ROOT/'blender'))
+    from hero_articulation import build_focused_hero
+    build_focused_hero(ROOT,mercenary,PALETTE,render='--skip-render' not in sys.argv)
+    raise SystemExit(0)
+
 builders = [('interceptor',interceptor),('drone',drone),('relay',relay),('crate',crate),('kiosk',kiosk),('mercenary',mercenary),('av',av)]
 objects=[]
 metadata={}
@@ -551,7 +596,7 @@ scene.render.resolution_x=1600;scene.render.resolution_y=900;scene.render.resolu
 scene.view_settings.view_transform='AgX'
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
 scene.render.filepath=str(ROOT/'blender'/'asset-kit-preview.png')
-bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'blender'/'cyberpunk-assets.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'blender'/'cyberpunk-assets.blend'),compress=True)
 (ROOT/'blender'/'asset-manifest.json').write_text(json.dumps(metadata,indent=2))
 print('ASSET_MANIFEST '+json.dumps(metadata))
-bpy.ops.render.render(write_still=True)
+if '--skip-render' not in sys.argv:bpy.ops.render.render(write_still=True)

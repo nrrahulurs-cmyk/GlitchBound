@@ -1,0 +1,1315 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T19:58:33.096Z",
+  "url": "http://127.0.0.1:5174",
+  "build": "KpoojZaD",
+  "bundleSHA256": "dc742a1e470834096b530305690f36f50b7dcc3e73bd2fffaf33dd198f08a363",
+  "method": "One fresh hardware Chrome profile on D:. Local test query exposes read-only pose/scene diagnostics; real Enter/V/A/E/W/Space/H/mouse input, no position/damage/outcome injection. A transparent shot wrapper records exact socket and VFX origins without changing arguments/results. No performance or extended gait audit.",
+  "knownLimitation": "The unfinished leg-pose planner is excluded and confirmed absent from the test API. The existing whole-leg walking animation is retained; this release makes no new live-gait quality claim.",
+  "results": [
+    {
+      "test": "Exact release bytes and ready menu",
+      "pass": true,
+      "script": "/assets/index-KpoojZaD.js",
+      "bundleSHA256": "dc742a1e470834096b530305690f36f50b7dcc3e73bd2fffaf33dd198f08a363",
+      "ready": true,
+      "screenshot": "menu.png"
+    },
+    {
+      "test": "Ten essential GLBs,17 PNG decodes and all48 scene panels/12 newer campaigns",
+      "pass": true,
+      "glbs": [
+        {
+          "name": "interceptor",
+          "status": 200,
+          "bytes": 763916,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 763916
+        },
+        {
+          "name": "drone",
+          "status": 200,
+          "bytes": 53084,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 53084
+        },
+        {
+          "name": "crate",
+          "status": 200,
+          "bytes": 47164,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 47164
+        },
+        {
+          "name": "kiosk",
+          "status": 200,
+          "bytes": 80944,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 80944
+        },
+        {
+          "name": "mercenary",
+          "status": 200,
+          "bytes": 232160,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 232160
+        },
+        {
+          "name": "av",
+          "status": 200,
+          "bytes": 454392,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 454392
+        },
+        {
+          "name": "pulse-carbine",
+          "status": 200,
+          "bytes": 190200,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 190200
+        },
+        {
+          "name": "ion-bolt",
+          "status": 200,
+          "bytes": 9380,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 9380
+        },
+        {
+          "name": "muzzle-flash",
+          "status": 200,
+          "bytes": 13780,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 13780
+        },
+        {
+          "name": "impact-shards",
+          "status": 200,
+          "bytes": 24320,
+          "magic": 1179937895,
+          "version": 2,
+          "declaredBytes": 24320
+        }
+      ],
+      "images": [
+        {
+          "file": "advert-kuro-optics.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-axiom.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-orbital.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-noodle.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-recast.png",
+          "status": 200,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "file": "advert-kinkeep.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-everon.png",
+          "status": 200,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "file": "advert-quietus.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-vyra.png",
+          "status": 200,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "file": "advert-grinpop.png",
+          "status": 200,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "file": "advert-syntask.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-nesto.png",
+          "status": 200,
+          "width": 1122,
+          "height": 1402
+        },
+        {
+          "file": "advert-irisyn.png",
+          "status": 200,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "file": "advert-else.png",
+          "status": 200,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "file": "advert-vesper-arc.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-synthsilk.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "file": "advert-portrait.png",
+          "status": 200,
+          "width": 1024,
+          "height": 1536
+        }
+      ],
+      "brands": {
+        "else": 4,
+        "vyra": 4,
+        "grinpop": 4,
+        "kinkeep": 4,
+        "vesper-arc": 4,
+        "recast": 4,
+        "nesto": 4,
+        "syntask": 4,
+        "irisyn": 4,
+        "synthsilk": 4,
+        "quietus": 4,
+        "everon": 4
+      },
+      "panels": [
+        {
+          "name": "Billboard / ELSE",
+          "campaign": "else",
+          "index": 13,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / VYRA",
+          "campaign": "vyra",
+          "index": 8,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / GRINPOP",
+          "campaign": "grinpop",
+          "index": 9,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / ELSE",
+          "campaign": "else",
+          "index": 13,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / VYRA",
+          "campaign": "vyra",
+          "index": 8,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / KINKEEP",
+          "campaign": "kinkeep",
+          "index": 5,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / VESPER ARC",
+          "campaign": "vesper-arc",
+          "index": 14,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / RECAST",
+          "campaign": "recast",
+          "index": 4,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / NESTO",
+          "campaign": "nesto",
+          "index": 11,
+          "width": 1122,
+          "height": 1402
+        },
+        {
+          "name": "Billboard / KINKEEP",
+          "campaign": "kinkeep",
+          "index": 5,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / SYNTASK",
+          "campaign": "syntask",
+          "index": 10,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / IRISYN",
+          "campaign": "irisyn",
+          "index": 12,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / VYRA",
+          "campaign": "vyra",
+          "index": 8,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / SYNTHSILK",
+          "campaign": "synthsilk",
+          "index": 15,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / NESTO",
+          "campaign": "nesto",
+          "index": 11,
+          "width": 1122,
+          "height": 1402
+        },
+        {
+          "name": "Billboard / VESPER ARC",
+          "campaign": "vesper-arc",
+          "index": 14,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / GRINPOP",
+          "campaign": "grinpop",
+          "index": 9,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / IRISYN",
+          "campaign": "irisyn",
+          "index": 12,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / SYNTASK",
+          "campaign": "syntask",
+          "index": 10,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / RECAST",
+          "campaign": "recast",
+          "index": 4,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / KINKEEP",
+          "campaign": "kinkeep",
+          "index": 5,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / VYRA",
+          "campaign": "vyra",
+          "index": 8,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / SYNTASK",
+          "campaign": "syntask",
+          "index": 10,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / RECAST",
+          "campaign": "recast",
+          "index": 4,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / IRISYN",
+          "campaign": "irisyn",
+          "index": 12,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / QUIETUS",
+          "campaign": "quietus",
+          "index": 7,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / EVERON",
+          "campaign": "everon",
+          "index": 6,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / SYNTHSILK",
+          "campaign": "synthsilk",
+          "index": 15,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / EVERON",
+          "campaign": "everon",
+          "index": 6,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / QUIETUS",
+          "campaign": "quietus",
+          "index": 7,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / NESTO",
+          "campaign": "nesto",
+          "index": 11,
+          "width": 1122,
+          "height": 1402
+        },
+        {
+          "name": "Billboard / ELSE",
+          "campaign": "else",
+          "index": 13,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / VESPER ARC",
+          "campaign": "vesper-arc",
+          "index": 14,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / SYNTHSILK",
+          "campaign": "synthsilk",
+          "index": 15,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / NESTO",
+          "campaign": "nesto",
+          "index": 11,
+          "width": 1122,
+          "height": 1402
+        },
+        {
+          "name": "Billboard / IRISYN",
+          "campaign": "irisyn",
+          "index": 12,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / SYNTASK",
+          "campaign": "syntask",
+          "index": 10,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / ELSE",
+          "campaign": "else",
+          "index": 13,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / SYNTHSILK",
+          "campaign": "synthsilk",
+          "index": 15,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / EVERON",
+          "campaign": "everon",
+          "index": 6,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / QUIETUS",
+          "campaign": "quietus",
+          "index": 7,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / VESPER ARC",
+          "campaign": "vesper-arc",
+          "index": 14,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / EVERON",
+          "campaign": "everon",
+          "index": 6,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / QUIETUS",
+          "campaign": "quietus",
+          "index": 7,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / RECAST",
+          "campaign": "recast",
+          "index": 4,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / KINKEEP",
+          "campaign": "kinkeep",
+          "index": 5,
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "name": "Billboard / GRINPOP",
+          "campaign": "grinpop",
+          "index": 9,
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "Billboard / GRINPOP",
+          "campaign": "grinpop",
+          "index": 9,
+          "width": 1672,
+          "height": 941
+        }
+      ]
+    },
+    {
+      "test": "Owned interceptor remains separate from active ambient vehicle OBBs during60 fresh gameplay frames",
+      "pass": true,
+      "samples": [
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        },
+        {
+          "car": {
+            "x": -3.8,
+            "z": 23.5,
+            "yaw": -0.2
+          },
+          "active": 16,
+          "overlaps": []
+        }
+      ]
+    },
+    {
+      "test": "Actual V toggles first and third person",
+      "pass": true,
+      "screenshot": "third-person.png"
+    },
+    {
+      "test": "Actual A approach, E entry and W/Space drive/stop the owned interceptor",
+      "pass": true,
+      "walkedMetres": 2.359807844444437,
+      "driveDistance": 6.3646779402317755,
+      "before": {
+        "x": -3.8,
+        "y": 0.065,
+        "z": 23.5,
+        "yaw": -0.2,
+        "speed": 0,
+        "integrity": 100,
+        "impacts": 0
+      },
+      "after": {
+        "x": -2.535533692888065,
+        "y": 0.065,
+        "z": 17.2621918720554,
+        "yaw": -0.2,
+        "speed": 0.02475347516503588,
+        "integrity": 96,
+        "impacts": 1
+      },
+      "screenshot": "driving.png"
+    },
+    {
+      "test": "Actual H/left mouse consumes ammo; shot and VFX use the current authored muzzle socket",
+      "pass": true,
+      "beforeAmmo": 24,
+      "afterAmmo": 20,
+      "shots": [
+        {
+          "socket": [
+            0.8561376088815116,
+            1.7472843697290226,
+            16.864224832594797
+          ],
+          "passedMuzzle": [
+            0.8561376088815116,
+            1.7472843697290226,
+            16.864224832594797
+          ],
+          "origin": [
+            0.8561376088815116,
+            1.7472843697290226,
+            16.864224832594797
+          ],
+          "vfx": {
+            "id": 1,
+            "origin": [
+              0.8561376088815116,
+              1.7472843697290226,
+              16.864224832594797
+            ],
+            "end": [
+              16.700000000000003,
+              11.696314734661684,
+              -62.52920630651428
+            ],
+            "direction": [
+              0.19424130707123044,
+              0.12197232054092941,
+              -0.9733411876876067
+            ],
+            "distance": 81.56793542018522,
+            "targetType": "wall",
+            "obstructed": false
+          }
+        },
+        {
+          "socket": [
+            0.855414561189516,
+            1.7526617135230969,
+            16.868949070039562
+          ],
+          "passedMuzzle": [
+            0.855414561189516,
+            1.7526617135230969,
+            16.868949070039562
+          ],
+          "origin": [
+            0.855414561189516,
+            1.7526617135230969,
+            16.868949070039562
+          ],
+          "vfx": {
+            "id": 2,
+            "origin": [
+              0.855414561189516,
+              1.7526617135230969,
+              16.868949070039562
+            ],
+            "end": [
+              16.7,
+              11.696314734661684,
+              -62.52920630651428
+            ],
+            "direction": [
+              0.19424044828548828,
+              0.12190029381837279,
+              -0.9733503822451847
+            ],
+            "distance": 81.57201848876825,
+            "targetType": "wall",
+            "obstructed": false
+          }
+        },
+        {
+          "socket": [
+            0.8544593686936856,
+            1.7545966608426133,
+            16.870860562484253
+          ],
+          "passedMuzzle": [
+            0.8544593686936856,
+            1.7545966608426133,
+            16.870860562484253
+          ],
+          "origin": [
+            0.8544593686936856,
+            1.7545966608426133,
+            16.870860562484253
+          ],
+          "vfx": {
+            "id": 3,
+            "origin": [
+              0.8544593686936856,
+              1.7545966608426133,
+              16.870860562484253
+            ],
+            "end": [
+              16.7,
+              11.696314734661684,
+              -62.52920630651428
+            ],
+            "direction": [
+              0.1942478473361844,
+              0.12187386846537569,
+              -0.9733522147663418
+            ],
+            "distance": 81.57382873789312,
+            "targetType": "wall",
+            "obstructed": false
+          }
+        },
+        {
+          "socket": [
+            0.8555053477639629,
+            1.7534124206474901,
+            16.868592731287997
+          ],
+          "passedMuzzle": [
+            0.8555053477639629,
+            1.7534124206474901,
+            16.868592731287997
+          ],
+          "origin": [
+            0.8555053477639629,
+            1.7534124206474901,
+            16.868592731287997
+          ],
+          "vfx": {
+            "id": 4,
+            "origin": [
+              0.8555053477639629,
+              1.7534124206474901,
+              16.868592731287997
+            ],
+            "end": [
+              16.7,
+              11.696314734661684,
+              -62.52920630651429
+            ],
+            "direction": [
+              0.19424042112177806,
+              0.12189177219194329,
+              -0.9733514548580804
+            ],
+            "distance": 81.571562503473,
+            "targetType": "wall",
+            "obstructed": false
+          }
+        }
+      ],
+      "flashFrames": 10,
+      "boltFrames": 37,
+      "screenshot": "fire.png"
+    },
+    {
+      "test": "Architectural blueprint route opens with31 authored assemblies and15 routes",
+      "pass": true,
+      "counts": {
+        "frontages": 77,
+        "assemblies": 31,
+        "routes": 15,
+        "entrances": 2
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "errorResponses": [],
+  "chromeClosed": true
+}

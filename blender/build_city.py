@@ -257,8 +257,15 @@ for i,points in enumerate(layout['wires']):
 
 # Native Blender props share their mesh data, with independently editable transforms.
 with bpy.data.libraries.load(str(ROOT/'blender'/'cyberpunk-assets.blend'),link=False) as (src,dst):
-    dst.objects=[n for n in src.objects if n in ['K-77 INTERCEPTOR','VIGIL SECURITY DRONE','KASUMI DATA RELAY','VOLTA EXPLOSIVE CELL','NIGHT MARKET NOODLES','AEON / ARMORED PATROL AV','VEX / VOXEL MERCENARY','head','torso','left_arm','right_arm','left_leg','right_leg']]
-templates={obj.name:obj for obj in dst.objects if obj}
+    # Load the small kit's objects first so descendants are discovered from the
+    # real native hierarchy, including future knees/ankles or other child parts.
+    dst.objects=list(src.objects)
+asset_roots={'K-77 INTERCEPTOR','VIGIL SECURITY DRONE','KASUMI DATA RELAY','VOLTA EXPLOSIVE CELL','NIGHT MARKET NOODLES','AEON / ARMORED PATROL AV','VEX / VOXEL MERCENARY'}
+templates={obj.name:obj for obj in dst.objects if obj and obj.name in asset_roots}
+required=set(templates.values())
+for obj in templates.values():required.update(obj.children_recursive)
+for obj in dst.objects:
+    if obj and obj not in required:bpy.data.objects.remove(obj,do_unlink=True)
 
 def prop(template,name,pos,rotation=0,height=None):
     base=templates[template];obj=base.copy();obj.data=base.data;obj.name=name;PROPS.objects.link(obj)
@@ -274,8 +281,11 @@ def prop(template,name,pos,rotation=0,height=None):
                 if template in ['VIGIL SECURITY DRONE','AEON / ARMORED PATROL AV'] and any(tint in slot.material.name for tint in ['hot magenta','signal red']):
                     bs.inputs['Base Color'].default_value=(.025,.85,1,1)
                     bs.inputs['Emission Color'].default_value=(.025,.85,1,1)
-    for child in base.children:
-        copy=child.copy();copy.data=child.data;copy.parent=obj;PROPS.objects.link(copy)
+    copies={base:obj};queue=list(base.children)
+    while queue:
+        child=queue.pop(0)
+        copy=child.copy();copy.data=child.data;copy.parent=copies[child.parent]
+        PROPS.objects.link(copy);copies[child]=copy;queue.extend(child.children)
     if height:
         bounds=[Vector(v) for v in base.bound_box];low=min(v.z for v in bounds);high=max(v.z for v in bounds)
         factor=height/(high-low);obj.scale=(factor,factor,factor);obj.location.z-=low*factor

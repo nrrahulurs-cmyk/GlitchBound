@@ -2,9 +2,9 @@
 
 A free-roam voxel cyberpunk driving and exploration game, built with Blender assets and Three.js. The generated concept image is the visual target.
 
-Source: **[Hiraeth010/neon-district](https://github.com/Hiraeth010/neon-district)**. The hosted game is linked in the repository's About panel. Local game: **http://127.0.0.1:5173/**.
+Source: **[Hiraeth010/neon-district](https://github.com/Hiraeth010/neon-district)**. Play at **[neon-district-xi.vercel.app](https://neon-district-xi.vercel.app)**. Local game: **http://127.0.0.1:5173/**.
 
-The `quality-pass-01` branch contains ongoing local improvements. The full quality target and remaining gaps are recorded in [QUALITY_ROADMAP.md](QUALITY_ROADMAP.md); AAA parity and an independent preference result have not been established.
+Development is paused at the user's request. The September 6 release includes the finished articulated hero asset/workshop, corrected contact shading on thin physical paving, and the blueprint icon fix. The game retains its existing walking animation; unfinished stair IK, pelvis and movement experiments remain local. New placement/path helpers are available in source but are not active gameplay. See [RELEASE_CHECKPOINT.md](RELEASE_CHECKPOINT.md). The `quality-pass-01` working copy retains unfinished local work. The full quality target and remaining gaps are recorded in [QUALITY_ROADMAP.md](QUALITY_ROADMAP.md); AAA parity and an independent preference result have not been established.
 
 ## Play
 
@@ -101,7 +101,8 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 - `src/asset-placements.js` — shared named car, character, kiosk and aircraft anchors.
 
 - `blender/neon-district-city.blend` — complete editable city and cameras.
-- `blender/cyberpunk-assets.blend` — props and character source.
+- `blender/cyberpunk-assets.blend` — props and current ten-part character source.
+- `blender/hero-pose-workshop.blend` — three editable hero inspection poses. The full city file still contains the previous six-part hero.
 - `blender/pulse-carbine.blend` — editable weapon and projectile-effect workshop.
 - `blender/service-actions.blend` — editable service mechanisms, keyed operation/interruption sequences and inspection cameras.
 - `blender/character-workshop.blend` — the 284 resolved civilian placements and four editable walking, stopping, turning and fleeing clips.

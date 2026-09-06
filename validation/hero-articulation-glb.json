@@ -1,0 +1,151 @@
+{
+  "status": "passed",
+  "method": "Actual GLTFLoader hierarchy, corner/material membership, exact published non-leg vertex bags and outsoles, outer bounds, and byte-identical other exports. No gameplay controller replay.",
+  "beforeSHA256": "0ef50f480df79a0de273e15c2bafd711bb09201ab0e5450223efccaf00f31a16",
+  "afterSHA256": "a610ddd46a4996a65c2616b5292b504b27e5f17bc74975e1e63a2158acb5bcea",
+  "modules": 187,
+  "publishedModules": 175,
+  "addedHingeModules": 12,
+  "modifiedLegacyModules": 8,
+  "hierarchy": [
+    {
+      "part": "left_leg",
+      "parent": "VEX__VOXEL_MERCENARY",
+      "localPosition": [
+        -0.19200000166893005,
+        0.8299999833106995,
+        0
+      ]
+    },
+    {
+      "part": "right_leg",
+      "parent": "VEX__VOXEL_MERCENARY",
+      "localPosition": [
+        0.19200000166893005,
+        0.8299999833106995,
+        0
+      ]
+    },
+    {
+      "part": "left_arm",
+      "parent": "VEX__VOXEL_MERCENARY",
+      "localPosition": [
+        -0.36000001430511475,
+        1.399999976158142,
+        0
+      ]
+    },
+    {
+      "part": "right_arm",
+      "parent": "VEX__VOXEL_MERCENARY",
+      "localPosition": [
+        0.36000001430511475,
+        1.399999976158142,
+        0
+      ]
+    },
+    {
+      "part": "head",
+      "parent": "VEX__VOXEL_MERCENARY",
+      "localPosition": [
+        0,
+        1.4700000286102295,
+        0
+      ]
+    },
+    {
+      "part": "torso",
+      "parent": "VEX__VOXEL_MERCENARY",
+      "localPosition": [
+        0,
+        1.0299999713897705,
+        0
+      ]
+    },
+    {
+      "part": "left_knee",
+      "parent": "left_leg",
+      "localPosition": [
+        0,
+        -0.28999996185302734,
+        0
+      ]
+    },
+    {
+      "part": "right_knee",
+      "parent": "right_leg",
+      "localPosition": [
+        0,
+        -0.28999996185302734,
+        0
+      ]
+    },
+    {
+      "part": "left_foot",
+      "parent": "left_knee",
+      "localPosition": [
+        0,
+        -0.3400000333786011,
+        0
+      ]
+    },
+    {
+      "part": "right_foot",
+      "parent": "right_knee",
+      "localPosition": [
+        0,
+        -0.3400000333786011,
+        0
+      ]
+    }
+  ],
+  "unchangedNonLegParts": [
+    {
+      "part": "head",
+      "exportedVertices": 1272
+    },
+    {
+      "part": "torso",
+      "exportedVertices": 1272
+    },
+    {
+      "part": "left_arm",
+      "exportedVertices": 360
+    },
+    {
+      "part": "right_arm",
+      "exportedVertices": 480
+    }
+  ],
+  "soles": [
+    {
+      "side": "left",
+      "soleVertices": 12
+    },
+    {
+      "side": "right",
+      "soleVertices": 12
+    }
+  ],
+  "bounds": {
+    "min": [
+      -0.5550000071525574,
+      -1.4901161193847656e-8,
+      -0.3149999976158142
+    ],
+    "max": [
+      0.5725000202655792,
+      1.9307333528995514,
+      0.4205000102519989
+    ]
+  },
+  "otherExportsByteIdentical": [
+    "interceptor",
+    "drone",
+    "relay",
+    "crate",
+    "kiosk",
+    "av"
+  ],
+  "scope": "Three rigid segment chains; native authored pose views are separate. Live gait quality, toe/riser clearance and stance slip remain runtime evidence."
+}

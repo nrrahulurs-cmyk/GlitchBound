@@ -5,6 +5,15 @@ const smooth=(a,b,x)=>{const t=clamp((x-a)/(b-a),0,1);return t*t*(3-2*t);};
 const validBox=c=>c&&['x','y','z','sx','sy','sz'].every(k=>Number.isFinite(c[k]))&&Math.min(c.sx,c.sy,c.sz)>0;
 const inside=(x,z,c,slack=0)=>{const cs=Math.cos(c.ry||0),sn=Math.sin(c.ry||0),dx=x-c.x,dz=z-c.z;return Math.abs(dx*cs-dz*sn)<=c.sx/2+slack&&Math.abs(dx*sn+dz*cs)<=c.sz/2+slack;};
 
+/** Share movement's authored physical ground with both foot systems. Thin
+ * physical slabs remain valid; the thickness cutoff applies only to additional
+ * pavement boxes, where thinner pieces may be nonphysical surface decoration.
+ * Keep the original object identities for support lifecycle and deduplication.
+ */
+export function collectFootSupportSurfaces({groundSurfaces=[],boxes=[]}={}){
+  return [...new Set([...groundSurfaces,...boxes.filter(box=>box?.kind==='pavement'&&box.sy>=.025)])];
+}
+
 export function createFootContactUniforms(){return{
   uFootContactCenter:{value:[new THREE.Vector4(),new THREE.Vector4()]},
   uFootContactShape:{value:[new THREE.Vector4(1,0,0,0),new THREE.Vector4(1,0,0,0)]},
@@ -79,9 +88,12 @@ export function injectFootContactAO(shader,{worldPosition='vSurfaceWorld',worldN
       }`);
 }
 
-/** Cache real unbatched GLB geometry once in the animated leg's local frame. */
+/** Cache real unbatched GLB geometry in the final moving boot frame.
+ * Older assets have a single rigid leg; retain their hip-frame fallback.
+ */
 export function cacheBootSole(avatar,name){
-  const joint=avatar.getObjectByName(name);if(!joint)return null;
+  const side=/^(left|right)_(?:leg|foot)$/.exec(name)?.[1];
+  const joint=side?(avatar.getObjectByName(`${side}_foot`)||avatar.getObjectByName(`${side}_leg`)):avatar.getObjectByName(name);if(!joint)return null;
   avatar.updateWorldMatrix(true,true);
   const inverse=joint.matrixWorld.clone().invert(),vertices=[],point=new THREE.Vector3();
   joint.traverse(mesh=>{if(!mesh.isMesh||!mesh.geometry?.attributes.position)return;
@@ -92,7 +104,7 @@ export function cacheBootSole(avatar,name){
   const minimumY=Math.min(...vertices.map(p=>p.y)),sole=vertices.filter(p=>p.y<=minimumY+.002);
   const minX=Math.min(...sole.map(p=>p.x)),maxX=Math.max(...sole.map(p=>p.x)),minZ=Math.min(...sole.map(p=>p.z)),maxZ=Math.max(...sole.map(p=>p.z));
   if(maxX-minX<.025||maxZ-minZ<.025)return null;
-  return{name,joint,geometryVertexCount:vertices.length,soleVertexCount:sole.length,localBounds:{minX,maxX,minZ,maxZ,y:minimumY},
+  return{name,frameName:joint.name,joint,geometryVertexCount:vertices.length,soleVertexCount:sole.length,localBounds:{minX,maxX,minZ,maxZ,y:minimumY},
     localQuad:[new THREE.Vector3(minX,minimumY,minZ),new THREE.Vector3(maxX,minimumY,minZ),new THREE.Vector3(maxX,minimumY,maxZ),new THREE.Vector3(minX,minimumY,maxZ)],
     soleQuad:Array.from({length:4},()=>new THREE.Vector3()),support:null,gain:0,reason:'uninitialized'};
 }
@@ -164,7 +176,7 @@ export function createFootContact({avatar,getColliders=()=>[],supportSurfaces=[]
   }
   function setEnabled(value){enabled=Boolean(value);uniforms.uFootContactParams.value.x=enabled?amount:0;return enabled;}
   function getState(){return{enabled,approximation:'short-range receiver ambient occlusion',candidateCount,lastReason,strength:amount,outsideFalloff,
-    feet:feet.map((foot,i)=>foot?{name:foot.name,reason:foot.reason,gain:foot.gain,soleQuad:foot.soleQuad.map(p=>p.toArray()),localBounds:{...foot.localBounds},geometryVertexCount:foot.geometryVertexCount,soleVertexCount:foot.soleVertexCount,supportTop:foot.support?.top??null,gap:foot.support?.gap??null,support:foot.support?{id:foot.support.box.id??null,x:foot.support.box.x,y:foot.support.box.y,z:foot.support.box.z,sx:foot.support.box.sx,sy:foot.support.box.sy,sz:foot.support.box.sz,ry:foot.support.box.ry||0,probeCount:foot.support.probeCount}:null,uniforms:{center:uniforms.uFootContactCenter.value[i].toArray(),shape:uniforms.uFootContactShape.value[i].toArray(),plane:uniforms.uFootContactPlane.value[i].toArray(),support:uniforms.uFootContactSupport.value[i].toArray(),supportAxis:uniforms.uFootContactSupportAxis.value[i].toArray()}}:null)};}
+    feet:feet.map((foot,i)=>foot?{name:foot.name,frameName:foot.frameName,reason:foot.reason,gain:foot.gain,soleQuad:foot.soleQuad.map(p=>p.toArray()),localBounds:{...foot.localBounds},geometryVertexCount:foot.geometryVertexCount,soleVertexCount:foot.soleVertexCount,supportTop:foot.support?.top??null,gap:foot.support?.gap??null,support:foot.support?{id:foot.support.box.id??null,x:foot.support.box.x,y:foot.support.box.y,z:foot.support.box.z,sx:foot.support.box.sx,sy:foot.support.box.sy,sz:foot.support.box.sz,ry:foot.support.box.ry||0,probeCount:foot.support.probeCount}:null,uniforms:{center:uniforms.uFootContactCenter.value[i].toArray(),shape:uniforms.uFootContactShape.value[i].toArray(),plane:uniforms.uFootContactPlane.value[i].toArray(),support:uniforms.uFootContactSupport.value[i].toArray(),supportAxis:uniforms.uFootContactSupportAxis.value[i].toArray()}}:null)};}
   clear('uninitialized');
   return{update,setEnabled,getState,reset:()=>clear('reset'),dispose(){disposed=true;clear('disposed');},uniforms};
 }

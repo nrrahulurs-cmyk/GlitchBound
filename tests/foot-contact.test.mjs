@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import {cacheBootSole,createFootContact,createFootContactUniforms,resolveFootSupport,sampleFootContact,injectFootContactAO} from '../src/foot-contact.js';
+import {cacheBootSole,collectFootSupportSurfaces,createFootContact,createFootContactUniforms,resolveFootSupport,sampleFootContact,injectFootContactAO} from '../src/foot-contact.js';
 import {createCityLayout} from '../src/city-layout.js';
 import {createStreetCollisionLayout} from '../src/street-collisions.js';
 
@@ -25,9 +25,68 @@ test('Actual GLB boot sole geometry is cached in the animated joint frame',()=>{
     cached.joint.rotation.x=angle;f.avatar.rotation.y=.71;f.avatar.position.set(1,.04,2);f.controller.update({grounded:true});
     const foot=f.controller.getState().feet.find(p=>p.name===name);cached.joint.updateWorldMatrix(true,false);
     for(let i=0;i<4;i++)assert(cached.localQuad[i].clone().applyMatrix4(cached.joint.matrixWorld).distanceTo(new THREE.Vector3(...foot.soleQuad[i]))<1e-10);
-    records.push({name,geometryVertices:cached.geometryVertexCount,soleVertices:cached.soleVertexCount,localBounds:cached.localBounds});
+    records.push({name,frameName:cached.frameName,geometryVertices:cached.geometryVertexCount,soleVertices:cached.soleVertexCount,localBounds:cached.localBounds});
   }
   f.controller.dispose();return{records,actualGLBSHA256:crypto.createHash('sha256').update(bytes).digest('hex')};
+});
+
+function articulatedAvatar(){
+  const avatar=source.clone(true),authored=Boolean(avatar.getObjectByName('left_foot')&&avatar.getObjectByName('right_foot'));
+  // Until the updated GLB is available, exercise the agreed hierarchy using its
+  // actual existing rubber boot geometry. This is a binding fixture, not IK.
+  if(!authored)for(const side of['left','right']){
+    const hip=avatar.getObjectByName(side+'_leg');let boot;
+    hip.traverse(mesh=>{if(mesh.isMesh&&mesh.material.name==='carbon rubber')boot=mesh;});assert(boot,'Actual GLB rubber boot required');
+    const knee=new THREE.Group(),foot=new THREE.Group();knee.name=side+'_knee';foot.name=side+'_foot';
+    knee.position.y=-.29;foot.position.y=-.34;hip.add(knee);knee.add(foot);avatar.updateWorldMatrix(true,true);foot.attach(boot);
+  }
+  return{avatar,authored};
+}
+function bootVertices(avatar,side){
+  avatar.updateWorldMatrix(true,true);const points=[];
+  avatar.getObjectByName(side+'_foot').traverse(mesh=>{if(!mesh.isMesh)return;const a=mesh.geometry.attributes.position;
+    for(let i=0;i<a.count;i++)points.push(new THREE.Vector3().fromBufferAttribute(a,i).applyMatrix4(mesh.matrixWorld));
+  });return points;
+}
+
+test('Actual boot corners follow compound hip, knee and ankle motion on separate supports',()=>{
+  let maxCornerError=0,minimumAnkleResponse=Infinity,cases=0;const {avatar,authored}=articulatedAvatar();
+  let supports=[];const uniforms=createFootContactUniforms(),controller=createFootContact({avatar,uniforms,getColliders:()=>supports});
+  for(const scale of[.85,1.12,1.3])for(const yaw of[-1.1,0,.73])for(const angle of[-.32,.18,.42]){
+    avatar.scale.setScalar(scale);avatar.position.set(4,3.065,-6);avatar.rotation.y=yaw;supports=[];
+    const expected=[];
+    for(const [i,side]of['left','right'].entries()){
+      const hip=avatar.getObjectByName(side+'_leg'),knee=avatar.getObjectByName(side+'_knee'),ankle=avatar.getObjectByName(side+'_foot');
+      hip.rotation.x=angle*(i?-1:1);knee.rotation.x=-hip.rotation.x*1.8;ankle.rotation.x=-hip.rotation.x-knee.rotation.x;
+      const vertices=bootVertices(avatar,side),top=Math.min(...vertices.map(p=>p.y)),low=vertices.filter(p=>p.y<top+1e-5);
+      const x=(Math.min(...low.map(p=>p.x))+Math.max(...low.map(p=>p.x)))/2,z=(Math.min(...low.map(p=>p.z))+Math.max(...low.map(p=>p.z)))/2;
+      supports.push({id:side+'-upper-deck',x,y:top-.05,z,sx:.25*scale+.07,sy:.1,sz:.43*scale+.08,ry:yaw});
+      expected.push({side,vertices,top});
+    }
+    supports.push({id:'court-under-decks',x:4,y:.135,z:-6,sx:20,sy:.1,sz:20});
+    controller.update({grounded:true});const state=controller.getState();
+    for(const [i,e]of expected.entries()){
+      const foot=state.feet[i];assert.equal(foot.frameName,e.side+'_foot');assert.equal(foot.name,e.side+'_leg');assert.equal(foot.support.id,e.side+'-upper-deck');assert(Math.abs(foot.supportTop-e.top)<1e-8);assert(foot.gain>.999);
+      for(const q of foot.soleQuad){const actual=new THREE.Vector3(...q),error=Math.min(...e.vertices.map(p=>p.distanceTo(actual)));maxCornerError=Math.max(maxCornerError,error);assert(error<1e-7,'Contact quad must coincide with rendered boot corners, not the hip-frame bind pose');}
+      const at=new THREE.Vector3(foot.uniforms.center[0],foot.supportTop,foot.uniforms.center[2]);assert(sampleFootContact(uniforms,at)<.8);assert.equal(sampleFootContact(uniforms,at.setY(.185)),1,'No contact through the upper deck onto the court');
+    }
+    // Move only the ankle after caching. The old hip-frame implementation
+    // cannot observe this motion even though the actual boot visibly rotates.
+    avatar.getObjectByName('left_foot').rotation.x+=.16;controller.update({grounded:true});
+    const after=controller.getState().feet[0],actual=bootVertices(avatar,'left');
+    const response=Math.max(...after.soleQuad.map((q,i)=>new THREE.Vector3(...q).distanceTo(new THREE.Vector3(...state.feet[0].soleQuad[i]))));minimumAnkleResponse=Math.min(minimumAnkleResponse,response);assert(response>.02);
+    for(const q of after.soleQuad){const corner=new THREE.Vector3(...q);assert(Math.min(...actual.map(p=>p.distanceTo(corner)))<1e-7);}
+    assert.equal(sampleFootContact(uniforms,new THREE.Vector3(after.uniforms.center[0],.185,after.uniforms.center[2])),1);cases++;
+  }
+  controller.dispose();return{cases,usingAuthoredAnkles:authored,maxCornerError,minimumAnkleResponse,lowerFloorAlwaysUnchanged:true};
+});
+
+test('Ankle preference retains the legacy hip fallback and does not infer a missing boot',()=>{
+  const {avatar}=articulatedAvatar();const ankle=avatar.getObjectByName('left_foot');
+  assert.equal(cacheBootSole(avatar,'left_leg').joint,ankle);assert.equal(cacheBootSole(avatar,'left_foot').joint,ankle);
+  ankle.name='legacy-boot-mesh-holder';const fallback=cacheBootSole(avatar,'left_leg');assert.equal(fallback.joint,avatar.getObjectByName('left_leg'));assert.equal(fallback.frameName,'left_leg');
+  assert(Math.abs(fallback.localBounds.y+.83)<1e-6);assert.equal(cacheBootSole(new THREE.Group(),'left_leg'),null);
+  return{preferredFrame:'left_foot',fallbackFrame:'left_leg',emptyAssetHasNoCue:true};
 });
 
 test('OBB support handles rotated edges, separate levels and missing surfaces',()=>{
@@ -71,18 +130,35 @@ test('Footprint falloff is bounded, stays on its support and toggles without pos
   return{maximumAttenuation:1-dark,outsideFalloffSamples:samples,supportClipped:true,togglePreservesPose:true};
 });
 
-test('Actual city bench ground and elevated landing resolve their own receiving levels',()=>{
-  const layout=createCityLayout(),street=createStreetCollisionLayout(layout),solids=[...layout.colliders,...street.staticColliders],surfaces=layout.boxes.filter(b=>b.kind==='pavement'&&b.sy>=.025),avatar=source.clone(true);avatar.scale.setScalar(1.12);
+test('Shared supports retain thin physical ground and low road slabs without thin visual decorations',()=>{
+  const physical={id:'thin-physical',x:0,y:.197,z:0,sx:3.1,sy:.022,sz:40,kind:'pavement'};
+  const lowRoad={id:'low-road',x:0,y:-.015,z:0,sx:22,sy:.08,sz:215,kind:'pavement'};
+  const paint={...physical,id:'nonphysical-paint',y:.209,sy:.002},unrelated={...lowRoad,id:'building',kind:'building'};
+  const ground=[physical],boxes=[physical,lowRoad,paint,unrelated,lowRoad];
+  const result=collectFootSupportSurfaces({groundSurfaces:ground,boxes});
+  assert.deepEqual(result,[physical,lowRoad]);assert.equal(result[0],physical);assert.equal(result[1],lowRoad);
+  assert.equal(ground.length,1);assert.equal(boxes.length,5);assert.deepEqual(collectFootSupportSurfaces(),[]);
+  return{physicalThickness:physical.sy,lowRoadTop:lowRoad.y+lowRoad.sy/2,originalReferencesPreserved:true,duplicatesRemoved:true,paintExcluded:true};
+});
+
+test('Actual city thin walking band, bench ground and landing resolve their own receiving levels',()=>{
+  const layout=createCityLayout(),street=createStreetCollisionLayout(layout),solids=[...layout.colliders,...street.staticColliders],surfaces=collectFootSupportSurfaces({groundSurfaces:street.groundSurfaces,boxes:layout.boxes}),avatar=source.clone(true);avatar.scale.setScalar(1.12);
+  const thin=street.groundSurfaces.find(b=>b.id==='COURT-15-CIRCULATION-070');assert(thin,'Use the actual physical walking band that movement includes');assert.equal(thin.sy,.022);assert(Math.abs(thin.y+thin.sy/2-.208)<1e-12);assert(surfaces.includes(thin));assert.equal(surfaces.filter(s=>s===thin).length,1);
+  const baseRoad=layout.boxes.find(b=>b.kind==='pavement'&&b.sy>=.025&&b.y+b.sy/2<.08&&!street.groundSurfaces.includes(b));assert(baseRoad&&surfaces.includes(baseRoad),'Low base road slabs outside raised groundSurfaces must remain eligible');
   const uniforms=createFootContactUniforms(),controller=createFootContact({avatar,uniforms,supportSurfaces:surfaces,getColliders:()=>solids}),cases=[];
-  for(const pose of[{name:'bench ground',x:-159.3392,y:.185,z:-251.1466},{name:'housing landing',x:-189,y:3.065,z:-258.651422}]){
+  for(const pose of[{name:'thin physical walking band',x:thin.x,y:.208,z:thin.z},{name:'bench ground',x:-159.3392,y:.185,z:-251.1466},{name:'housing landing',x:-189,y:3.065,z:-258.651422}]){
     avatar.position.set(pose.x,pose.y,pose.z);controller.update({grounded:true});const state=controller.getState();
     assert(state.feet.every(p=>p.supportTop!==null&&p.gain>.9),JSON.stringify({pose,feet:state.feet}));
     assert(state.feet.every(p=>Math.abs(p.supportTop-pose.y)<.003));
     const foot=state.feet[0],at=V(foot.uniforms.center[0],foot.supportTop,foot.uniforms.center[2]);assert(sampleFootContact(uniforms,at)<.9);
+    if(pose.name==='thin physical walking band'){
+      assert(state.feet.every(p=>p.support.id===thin.id&&p.gain>.999));assert(Math.abs(sampleFootContact(uniforms,at)-.72)<1e-8,'The actual .208m slab must receive the full contact cue');
+      assert.equal(sampleFootContact(uniforms,at.clone().setY(.185)),1,'Do not project the walking-band cue onto its lower courtyard');
+    }
     assert.equal(sampleFootContact(uniforms,at.clone().setY(.165)),pose.name==='housing landing'?1:sampleFootContact(uniforms,at.clone().setY(.165)));
     cases.push({name:pose.name,feet:state.feet.map(p=>({supportTop:p.supportTop,gap:p.gap,gain:p.gain,support:p.support.id})),candidates:state.candidateCount});
   }
-  controller.dispose();return{cases};
+  controller.dispose();return{cases,physicalThinSurface:thin.id,baseRoadTop:baseRoad.y+baseRoad.sy/2};
 });
 
 test('Shader hook follows installed AO accumulation and leaves direct/emitted light untouched',()=>{
