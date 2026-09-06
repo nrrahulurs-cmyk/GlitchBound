@@ -1,0 +1,1183 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T07:51:13.132Z",
+  "counts": {
+    "addedVoxels": 5271,
+    "assemblies": 77,
+    "courtyards": 17,
+    "newStaticShapes": 4936
+  },
+  "checks": {
+    "geometryOutsideDeclaredRefitsUnchanged": true,
+    "facadeRecordsRefit": 547,
+    "facadeReplacementFragments": 1413,
+    "maximumRefitVolumeErrorCubicMetres": 4.39648317751562e-14,
+    "fixedRecordHash": "1e80ea6a70fd852fc7316a48cf48d87c1c97ae11d4076efd2597229fc070d907",
+    "roadAndPedestrianLanes": 112,
+    "campaigns": 48,
+    "campaignViewRays": 3888,
+    "entranceViewRays": 9702,
+    "wallContactToleranceMetres": 0.001,
+    "maximumHeight": 4.5
+  },
+  "connections": [
+    {
+      "id": "STREET-CRAFT-B042-FRONT",
+      "district": "Lantern Market",
+      "host": "B042",
+      "members": 72,
+      "connected": 72,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B045-FRONT",
+      "district": "Lantern Market",
+      "host": "B045",
+      "members": 72,
+      "connected": 72,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B044-COURT",
+      "district": "Lantern Market",
+      "host": "B044",
+      "members": 71,
+      "connected": 71,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B046-FRONT",
+      "district": "Lantern Market",
+      "host": "B046",
+      "members": 73,
+      "connected": 73,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B049-FRONT",
+      "district": "Lantern Market",
+      "host": "B049",
+      "members": 73,
+      "connected": 73,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B050-FRONT",
+      "district": "Lantern Market",
+      "host": "B050",
+      "members": 74,
+      "connected": 74,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B053-FRONT",
+      "district": "Lantern Market",
+      "host": "B053",
+      "members": 73,
+      "connected": 73,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B052-COURT",
+      "district": "Lantern Market",
+      "host": "B052",
+      "members": 73,
+      "connected": 73,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B054-FRONT",
+      "district": "Iron Docks",
+      "host": "B054",
+      "members": 74,
+      "connected": 74,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B057-FRONT",
+      "district": "Iron Docks",
+      "host": "B057",
+      "members": 73,
+      "connected": 73,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B058-FRONT",
+      "district": "Iron Docks",
+      "host": "B058",
+      "members": 77,
+      "connected": 77,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B061-FRONT",
+      "district": "Iron Docks",
+      "host": "B061",
+      "members": 73,
+      "connected": 73,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B060-COURT",
+      "district": "Iron Docks",
+      "host": "B060",
+      "members": 77,
+      "connected": 77,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B062-FRONT",
+      "district": "Iron Docks",
+      "host": "B062",
+      "members": 76,
+      "connected": 76,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B065-FRONT",
+      "district": "Iron Docks",
+      "host": "B065",
+      "members": 76,
+      "connected": 76,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B066-FRONT",
+      "district": "Stacktown",
+      "host": "B066",
+      "members": 70,
+      "connected": 70,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B069-FRONT",
+      "district": "Stacktown",
+      "host": "B069",
+      "members": 70,
+      "connected": 70,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B068-COURT",
+      "district": "Stacktown",
+      "host": "B068",
+      "members": 71,
+      "connected": 71,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B070-FRONT",
+      "district": "Stacktown",
+      "host": "B070",
+      "members": 67,
+      "connected": 67,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B073-FRONT",
+      "district": "Stacktown",
+      "host": "B073",
+      "members": 66,
+      "connected": 66,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B074-FRONT",
+      "district": "Iron Docks",
+      "host": "B074",
+      "members": 72,
+      "connected": 72,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B077-FRONT",
+      "district": "Iron Docks",
+      "host": "B077",
+      "members": 71,
+      "connected": 71,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B076-COURT",
+      "district": "Iron Docks",
+      "host": "B076",
+      "members": 74,
+      "connected": 74,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B078-FRONT",
+      "district": "Iron Docks",
+      "host": "B078",
+      "members": 75,
+      "connected": 75,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B081-FRONT",
+      "district": "Iron Docks",
+      "host": "B081",
+      "members": 74,
+      "connected": 74,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B082-FRONT",
+      "district": "Stacktown",
+      "host": "B082",
+      "members": 70,
+      "connected": 70,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B085-FRONT",
+      "district": "Stacktown",
+      "host": "B085",
+      "members": 70,
+      "connected": 70,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B084-COURT",
+      "district": "Stacktown",
+      "host": "B084",
+      "members": 69,
+      "connected": 69,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B086-FRONT",
+      "district": "Stacktown",
+      "host": "B086",
+      "members": 71,
+      "connected": 71,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B089-FRONT",
+      "district": "Stacktown",
+      "host": "B089",
+      "members": 71,
+      "connected": 71,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B090-FRONT",
+      "district": "Iron Docks",
+      "host": "B090",
+      "members": 77,
+      "connected": 77,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B093-FRONT",
+      "district": "Iron Docks",
+      "host": "B093",
+      "members": 76,
+      "connected": 76,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B092-COURT",
+      "district": "Iron Docks",
+      "host": "B092",
+      "members": 76,
+      "connected": 76,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B094-FRONT",
+      "district": "Iron Docks",
+      "host": "B094",
+      "members": 75,
+      "connected": 75,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B097-FRONT",
+      "district": "Iron Docks",
+      "host": "B097",
+      "members": 74,
+      "connected": 74,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B098-FRONT",
+      "district": "Stacktown",
+      "host": "B098",
+      "members": 71,
+      "connected": 71,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B101-FRONT",
+      "district": "Stacktown",
+      "host": "B101",
+      "members": 66,
+      "connected": 66,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B100-COURT",
+      "district": "Stacktown",
+      "host": "B100",
+      "members": 70,
+      "connected": 70,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B102-FRONT",
+      "district": "Stacktown",
+      "host": "B102",
+      "members": 69,
+      "connected": 69,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B105-FRONT",
+      "district": "Stacktown",
+      "host": "B105",
+      "members": 69,
+      "connected": 69,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B106-FRONT",
+      "district": "Meridian East",
+      "host": "B106",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B109-FRONT",
+      "district": "Meridian East",
+      "host": "B109",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B108-COURT",
+      "district": "Meridian East",
+      "host": "B108",
+      "members": 63,
+      "connected": 63,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B110-FRONT",
+      "district": "Meridian East",
+      "host": "B110",
+      "members": 58,
+      "connected": 58,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B113-FRONT",
+      "district": "Meridian East",
+      "host": "B113",
+      "members": 57,
+      "connected": 57,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B114-FRONT",
+      "district": "Stacktown",
+      "host": "B114",
+      "members": 64,
+      "connected": 64,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B117-FRONT",
+      "district": "Stacktown",
+      "host": "B117",
+      "members": 63,
+      "connected": 63,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B116-COURT",
+      "district": "Stacktown",
+      "host": "B116",
+      "members": 66,
+      "connected": 66,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B118-FRONT",
+      "district": "Crown Plaza",
+      "host": "B118",
+      "members": 64,
+      "connected": 64,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B121-FRONT",
+      "district": "Crown Plaza",
+      "host": "B121",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B123-FRONT",
+      "district": "Crown Plaza",
+      "host": "B123",
+      "members": 65,
+      "connected": 65,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B126-FRONT",
+      "district": "Crown Plaza",
+      "host": "B126",
+      "members": 66,
+      "connected": 66,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B125-COURT",
+      "district": "Crown Plaza",
+      "host": "B125",
+      "members": 65,
+      "connected": 65,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B128-FRONT",
+      "district": "Crown Plaza",
+      "host": "B128",
+      "members": 67,
+      "connected": 67,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B131-FRONT",
+      "district": "Crown Plaza",
+      "host": "B131",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B133-FRONT",
+      "district": "Crown Plaza",
+      "host": "B133",
+      "members": 65,
+      "connected": 65,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B136-FRONT",
+      "district": "Crown Plaza",
+      "host": "B136",
+      "members": 66,
+      "connected": 66,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B135-COURT",
+      "district": "Crown Plaza",
+      "host": "B135",
+      "members": 65,
+      "connected": 65,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B138-FRONT",
+      "district": "Meridian East",
+      "host": "B138",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B141-FRONT",
+      "district": "Meridian East",
+      "host": "B141",
+      "members": 56,
+      "connected": 56,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B142-FRONT",
+      "district": "Stacktown",
+      "host": "B142",
+      "members": 67,
+      "connected": 67,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B145-FRONT",
+      "district": "Stacktown",
+      "host": "B145",
+      "members": 67,
+      "connected": 67,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B144-COURT",
+      "district": "Stacktown",
+      "host": "B144",
+      "members": 66,
+      "connected": 66,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B146-FRONT",
+      "district": "Crown Plaza",
+      "host": "B146",
+      "members": 65,
+      "connected": 65,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B149-FRONT",
+      "district": "Crown Plaza",
+      "host": "B149",
+      "members": 65,
+      "connected": 65,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B151-FRONT",
+      "district": "Crown Plaza",
+      "host": "B151",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B154-FRONT",
+      "district": "Crown Plaza",
+      "host": "B154",
+      "members": 64,
+      "connected": 64,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B153-COURT",
+      "district": "Crown Plaza",
+      "host": "B153",
+      "members": 65,
+      "connected": 65,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B156-FRONT",
+      "district": "Crown Plaza",
+      "host": "B156",
+      "members": 66,
+      "connected": 66,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B159-FRONT",
+      "district": "Crown Plaza",
+      "host": "B159",
+      "members": 66,
+      "connected": 66,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B161-FRONT",
+      "district": "Crown Plaza",
+      "host": "B161",
+      "members": 63,
+      "connected": 63,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B164-FRONT",
+      "district": "Crown Plaza",
+      "host": "B164",
+      "members": 65,
+      "connected": 65,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B163-COURT",
+      "district": "Crown Plaza",
+      "host": "B163",
+      "members": 66,
+      "connected": 66,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B166-FRONT",
+      "district": "Meridian East",
+      "host": "B166",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B169-FRONT",
+      "district": "Meridian East",
+      "host": "B169",
+      "members": 62,
+      "connected": 62,
+      "courtyard": false
+    },
+    {
+      "id": "STREET-CRAFT-B172-COURT",
+      "district": "Lantern Market",
+      "host": "B172",
+      "members": 71,
+      "connected": 71,
+      "courtyard": true
+    },
+    {
+      "id": "STREET-CRAFT-B180-COURT",
+      "district": "Iron Docks",
+      "host": "B180",
+      "members": 78,
+      "connected": 78,
+      "courtyard": true
+    }
+  ],
+  "frontageApproaches": [
+    {
+      "id": "STREET-CRAFT-B042-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B045-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": -4.7
+    },
+    {
+      "id": "STREET-CRAFT-B044-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B046-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B049-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B050-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B053-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": -4.7
+    },
+    {
+      "id": "STREET-CRAFT-B052-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B054-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B057-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B058-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B061-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B060-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B062-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B065-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B066-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B069-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B068-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B070-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B073-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B074-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B077-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B076-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B078-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B081-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B082-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B085-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B084-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B086-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B089-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B090-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B093-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B092-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B094-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B097-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B098-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B101-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B100-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B102-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B105-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": 0
+    },
+    {
+      "id": "STREET-CRAFT-B106-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B109-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B108-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B110-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B113-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B114-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B117-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B116-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B118-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B121-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B123-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B126-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B125-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B128-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B131-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B133-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 3.141592653589793,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B136-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B135-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B138-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B141-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B142-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B145-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B144-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B146-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B149-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B151-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B154-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B153-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B156-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B159-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 0,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B161-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B164-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B163-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -1.7
+    },
+    {
+      "id": "STREET-CRAFT-B166-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B169-FRONT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": 1.5707963267948966,
+      "offset": -3.7
+    },
+    {
+      "id": "STREET-CRAFT-B172-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    },
+    {
+      "id": "STREET-CRAFT-B180-COURT",
+      "rays": 126,
+      "blocked": 0,
+      "ry": -1.5707963267948966,
+      "offset": 1.7
+    }
+  ],
+  "failures": []
+}

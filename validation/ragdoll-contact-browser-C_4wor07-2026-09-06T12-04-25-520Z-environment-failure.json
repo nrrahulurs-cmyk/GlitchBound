@@ -1,0 +1,10 @@
+{
+  "status": "invalid_capture",
+  "build": "/assets/index-C_4wor07.js",
+  "reason": "ENOSPC prevented raw JSON serialization. The attempted raw report is zero bytes. No gameplay pass or failure is inferred from this interrupted capture.",
+  "rawReport": "ragdoll-contact-browser-C_4wor07-2026-09-06T12-04-25-520Z.json",
+  "rawBytes": 0,
+  "screenshotsRetained": ["ragdoll-contact-browser-C_4wor07-2026-09-06T12-04-25-520Z-forward.png", "ragdoll-contact-browser-C_4wor07-2026-09-06T12-04-25-520Z-failure.png"],
+  "observerSetupFinding": "The final screenshot shows the observer's death screen. Subsequent diagnostics move only the observer farther from security during the settling interval.",
+  "cleanup": "Diagnostic Node session 61571 exited 1. Escalated Win32_Process inspection found no Chrome process with a Playwright command line. No prior reports, project assets, or unrelated temporary profiles were deleted."
+}

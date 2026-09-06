@@ -1,0 +1,3954 @@
+{
+  "status": "passed",
+  "build": "/assets/index-DrmNuE49.js",
+  "checkedAtUTC": "2026-09-06T07:48:39.891Z",
+  "method": "Actual Enter, sound-button, W, Space, H, mouse, R and Escape inputs. Test teleports/aim only arrange locations. Native Web Audio context/panners are observed unchanged; ScriptProcessor taps the final real output to WAV without injecting audio or locomotion calls.",
+  "results": [
+    {
+      "test": "Actual sound toggle initializes native audio from a user gesture; menu city loops remain silent",
+      "pass": true,
+      "waveform": {
+        "file": "world-audio-browser-menu.wav",
+        "samples": 32768,
+        "rate": 48000,
+        "duration": 0.6826666666666666,
+        "peak": 0,
+        "leftRMS": 0,
+        "rightRMS": 0
+      }
+    },
+    {
+      "test": "Actual playing state emits finite native stereo ambience through a bounded15-source graph",
+      "pass": true,
+      "waveform": {
+        "file": "world-audio-browser-idle.wav",
+        "samples": 32768,
+        "rate": 48000,
+        "duration": 0.6826666666666666,
+        "peak": 0.028787679970264435,
+        "leftRMS": 0.008359573224771384,
+        "rightRMS": 0.008250474143559542
+      },
+      "nodeCount": 60
+    },
+    {
+      "test": "Actual W travel generates road footsteps from measured distance",
+      "pass": true,
+      "steps": [
+        {
+          "id": 1,
+          "kind": "footstep",
+          "time": 3.92,
+          "surface": "road",
+          "distance": 1.8480000000000114,
+          "side": 1,
+          "position": {
+            "x": 0,
+            "y": 1.794264000851055,
+            "z": -28.904786880000024
+          }
+        },
+        {
+          "id": 2,
+          "kind": "footstep",
+          "time": 4.261333333333333,
+          "surface": "road",
+          "distance": 3.6960000000000552,
+          "side": 0,
+          "position": {
+            "x": 0,
+            "y": 1.8262395897827473,
+            "z": -30.705686880000066
+          }
+        },
+        {
+          "id": 3,
+          "kind": "footstep",
+          "time": 4.610666666666667,
+          "surface": "road",
+          "distance": 5.543999999999959,
+          "side": 1,
+          "position": {
+            "x": 0,
+            "y": 1.7808220643976798,
+            "z": -32.59622688000007
+          }
+        },
+        {
+          "id": 4,
+          "kind": "footstep",
+          "time": 4.941333333333334,
+          "surface": "road",
+          "distance": 7.391999999999863,
+          "side": 0,
+          "position": {
+            "x": 0,
+            "y": 1.834904475697548,
+            "z": -34.39712688000001
+          }
+        },
+        {
+          "id": 5,
+          "kind": "footstep",
+          "time": 5.1706666666666665,
+          "surface": "road",
+          "distance": 8.171313333333229,
+          "side": 1,
+          "position": {
+            "x": 0,
+            "y": 1.8061432047578598,
+            "z": -35.30179231333334
+          }
+        }
+      ],
+      "waveform": {
+        "file": "world-audio-browser-road-walk.wav",
+        "samples": 79872,
+        "rate": 48000,
+        "duration": 1.664,
+        "peak": 0.07698412239551544,
+        "leftRMS": 0.010240001044748686,
+        "rightRMS": 0.01038074353992292
+      },
+      "distance": 8.30192013333334
+    },
+    {
+      "test": "Actual W crosses the road curb and then walks on raised paving with distinct paver events and captured audio",
+      "pass": true,
+      "from": [
+        10,
+        1.807,
+        -64
+      ],
+      "to": [
+        13.543797166357994,
+        1.915,
+        -64.17601598601847
+      ],
+      "groundY": 0.165,
+      "steps": [
+        {
+          "id": 6,
+          "kind": "footstep",
+          "time": 6.341333333333333,
+          "surface": "paver",
+          "distance": 10.149792313333355,
+          "side": 0,
+          "position": {
+            "x": 11.903102506666658,
+            "y": 1.9292653262310706,
+            "z": -64
+          }
+        },
+        {
+          "id": 7,
+          "kind": "footstep",
+          "time": 6.64,
+          "surface": "paver",
+          "distance": 11.262728795170105,
+          "side": 1,
+          "position": {
+            "x": 13.45709673687793,
+            "y": 1.9061503270179596,
+            "z": -64.01586441681168
+          }
+        },
+        {
+          "id": 8,
+          "kind": "footstep",
+          "time": 6.810666666666667,
+          "surface": "paver",
+          "distance": 12.002341470803703,
+          "side": 0,
+          "position": {
+            "x": 13.576201377674334,
+            "y": 1.9090680528188555,
+            "z": -64.21259359014913
+          }
+        },
+        {
+          "id": 9,
+          "kind": "footstep",
+          "time": 7.341333333333333,
+          "surface": "paver",
+          "distance": 13.850762648310127,
+          "side": 1,
+          "position": {
+            "x": 13.576201377674334,
+            "y": 1.941662898558031,
+            "z": -66.11623609681587
+          }
+        },
+        {
+          "id": 10,
+          "kind": "footstep",
+          "time": 7.68,
+          "surface": "paver",
+          "distance": 15.698762648310009,
+          "side": 0,
+          "position": {
+            "x": 13.576201377674334,
+            "y": 1.8870023845489337,
+            "z": -67.91659609681591
+          }
+        },
+        {
+          "id": 11,
+          "kind": "footstep",
+          "time": 8.032,
+          "surface": "paver",
+          "distance": 17.54676264830989,
+          "side": 1,
+          "position": {
+            "x": 13.576201377674334,
+            "y": 1.9402319600024203,
+            "z": -69.80713609681605
+          }
+        },
+        {
+          "id": 12,
+          "kind": "footstep",
+          "time": 8.36,
+          "surface": "paver",
+          "distance": 19.394762648309772,
+          "side": 0,
+          "position": {
+            "x": 13.576201377674334,
+            "y": 1.8941074512533187,
+            "z": -71.60803609681624
+          }
+        }
+      ],
+      "waveform": {
+        "file": "world-audio-browser-paver-walk.wav",
+        "samples": 79872,
+        "rate": 48000,
+        "duration": 1.664,
+        "peak": 0.12467329204082489,
+        "leftRMS": 0.012103886607891393,
+        "rightRMS": 0.011853420124700077
+      }
+    },
+    {
+      "test": "Actual Space jump stops locomotion ticks in air and emits one landing on real ground contact",
+      "pass": true,
+      "before": {
+        "footstep": 12
+      },
+      "after": {
+        "footstep": 12,
+        "landing": 1
+      }
+    },
+    {
+      "test": "Native listener equals actual camera; twelve real HRTF panners retain live traffic and authored wall-emitter identities/coordinates",
+      "pass": true,
+      "evidence": {
+        "audio": {
+          "origin": "procedural Web Audio synthesis; no recorded voices or sampled music",
+          "initialized": true,
+          "disposed": false,
+          "enabled": true,
+          "playing": true,
+          "contextState": "running",
+          "time": 9.981333333333334,
+          "oneShots": {
+            "active": 2,
+            "peak": 2,
+            "limit": 24,
+            "dropped": 0
+          },
+          "counts": {
+            "footstep": 12,
+            "landing": 1
+          },
+          "events": [
+            {
+              "id": 1,
+              "kind": "footstep",
+              "time": 3.92,
+              "surface": "road",
+              "distance": 1.8480000000000114,
+              "side": 1,
+              "position": {
+                "x": 0,
+                "y": 1.794264000851055,
+                "z": -28.904786880000024
+              }
+            },
+            {
+              "id": 2,
+              "kind": "footstep",
+              "time": 4.261333333333333,
+              "surface": "road",
+              "distance": 3.6960000000000552,
+              "side": 0,
+              "position": {
+                "x": 0,
+                "y": 1.8262395897827473,
+                "z": -30.705686880000066
+              }
+            },
+            {
+              "id": 3,
+              "kind": "footstep",
+              "time": 4.610666666666667,
+              "surface": "road",
+              "distance": 5.543999999999959,
+              "side": 1,
+              "position": {
+                "x": 0,
+                "y": 1.7808220643976798,
+                "z": -32.59622688000007
+              }
+            },
+            {
+              "id": 4,
+              "kind": "footstep",
+              "time": 4.941333333333334,
+              "surface": "road",
+              "distance": 7.391999999999863,
+              "side": 0,
+              "position": {
+                "x": 0,
+                "y": 1.834904475697548,
+                "z": -34.39712688000001
+              }
+            },
+            {
+              "id": 5,
+              "kind": "footstep",
+              "time": 5.1706666666666665,
+              "surface": "road",
+              "distance": 8.171313333333229,
+              "side": 1,
+              "position": {
+                "x": 0,
+                "y": 1.8061432047578598,
+                "z": -35.30179231333334
+              }
+            },
+            {
+              "id": 6,
+              "kind": "footstep",
+              "time": 6.341333333333333,
+              "surface": "paver",
+              "distance": 10.149792313333355,
+              "side": 0,
+              "position": {
+                "x": 11.903102506666658,
+                "y": 1.9292653262310706,
+                "z": -64
+              }
+            },
+            {
+              "id": 7,
+              "kind": "footstep",
+              "time": 6.64,
+              "surface": "paver",
+              "distance": 11.262728795170105,
+              "side": 1,
+              "position": {
+                "x": 13.45709673687793,
+                "y": 1.9061503270179596,
+                "z": -64.01586441681168
+              }
+            },
+            {
+              "id": 8,
+              "kind": "footstep",
+              "time": 6.810666666666667,
+              "surface": "paver",
+              "distance": 12.002341470803703,
+              "side": 0,
+              "position": {
+                "x": 13.576201377674334,
+                "y": 1.9090680528188555,
+                "z": -64.21259359014913
+              }
+            },
+            {
+              "id": 9,
+              "kind": "footstep",
+              "time": 7.341333333333333,
+              "surface": "paver",
+              "distance": 13.850762648310127,
+              "side": 1,
+              "position": {
+                "x": 13.576201377674334,
+                "y": 1.941662898558031,
+                "z": -66.11623609681587
+              }
+            },
+            {
+              "id": 10,
+              "kind": "footstep",
+              "time": 7.68,
+              "surface": "paver",
+              "distance": 15.698762648310009,
+              "side": 0,
+              "position": {
+                "x": 13.576201377674334,
+                "y": 1.8870023845489337,
+                "z": -67.91659609681591
+              }
+            },
+            {
+              "id": 11,
+              "kind": "footstep",
+              "time": 8.032,
+              "surface": "paver",
+              "distance": 17.54676264830989,
+              "side": 1,
+              "position": {
+                "x": 13.576201377674334,
+                "y": 1.9402319600024203,
+                "z": -69.80713609681605
+              }
+            },
+            {
+              "id": 12,
+              "kind": "footstep",
+              "time": 8.36,
+              "surface": "paver",
+              "distance": 19.394762648309772,
+              "side": 0,
+              "position": {
+                "x": 13.576201377674334,
+                "y": 1.8941074512533187,
+                "z": -71.60803609681624
+              }
+            },
+            {
+              "id": 13,
+              "kind": "landing",
+              "time": 9.832,
+              "surface": "paver",
+              "airTime": 0.6502000000000004,
+              "position": {
+                "x": 13.576201377674334,
+                "y": 1.9150000000349765,
+                "z": -72.17719502815473
+              }
+            }
+          ],
+          "output": {
+            "masterTarget": 0.55,
+            "limiterThreshold": -12,
+            "limiterRatio": 20,
+            "limiterReduction": -0.0001342038594884798
+          },
+          "world": {
+            "active": true,
+            "district": "Kasumi Ward",
+            "profile": {
+              "hum": 57,
+              "air": 1150,
+              "rain": 0.065,
+              "pulse": 1.1,
+              "tone": 0.011
+            },
+            "listener": {
+              "position": {
+                "x": 13.576201377674334,
+                "y": 1.915000000004283,
+                "z": -72.17719502815473
+              },
+              "forward": {
+                "x": 0,
+                "y": 0.00043664645283655857,
+                "z": -0.999999904669933
+              },
+              "up": {
+                "x": 0,
+                "y": 0.999999904669933,
+                "z": 0.00043664645283655857
+              }
+            },
+            "nodeCount": 57,
+            "loopSources": 15,
+            "limits": {
+              "traffic": 6,
+              "machinery": 6
+            },
+            "traffic": [
+              {
+                "slot": 0,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 47,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 1,
+                "id": "ambient-vehicle-13",
+                "position": {
+                  "x": 4,
+                  "y": 0.577,
+                  "z": -66.96384270091856
+                },
+                "distance": 11.083087084097443,
+                "gain": 0.03246238513541471,
+                "frequency": 48.06195417209771,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 2,
+                "id": "ambient-vehicle-1",
+                "position": {
+                  "x": -4,
+                  "y": 0.577,
+                  "z": -64.60141159235766
+                },
+                "distance": 19.24233596876105,
+                "gain": 0.04646,
+                "frequency": 74.84,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 3,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 4,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 5,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              }
+            ],
+            "machinery": [
+              {
+                "slot": 0,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 1,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 2,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 3,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 4,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              },
+              {
+                "slot": 5,
+                "id": null,
+                "position": null,
+                "distance": null,
+                "gain": 0,
+                "frequency": 50,
+                "panningModel": "HRTF"
+              }
+            ],
+            "locomotion": {
+              "steps": 12,
+              "landings": 1,
+              "distanceRemainder": 0,
+              "totalDistance": 19.96736408631599,
+              "airTime": 0,
+              "grounded": true
+            },
+            "worldGainTarget": 1
+          },
+          "nodeCount": 65
+        },
+        "traffic": [
+          {
+            "id": "ambient-vehicle-1",
+            "routeId": "ambient-route-1",
+            "region": "Kasumi Ward",
+            "type": "taxi",
+            "x": -4,
+            "y": -0.07300000000000001,
+            "z": -64.60141159235766,
+            "yaw": -3.141592653589793,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 115.10466466774534,
+            "routeLength": 596.8243050404124,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-1",
+              "x": -4,
+              "z": -64.59366159235766,
+              "yaw": -3.141592653589793,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 8.599999999997918
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -1,
+              "z": 0,
+              "w": 6.123233995736766e-17
+            }
+          },
+          {
+            "id": "ambient-vehicle-2",
+            "routeId": "ambient-route-2",
+            "region": "Kasumi Ward",
+            "type": "sport",
+            "x": -4,
+            "y": -0.07300000000000001,
+            "z": 17.149458302424904,
+            "yaw": -3.141592653589793,
+            "speed": 0,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 204.85553456252782,
+            "routeLength": 660.8243050404124,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-2",
+              "x": -4,
+              "z": 17.157208302424905,
+              "yaw": -3.141592653589793,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -1,
+              "z": 0,
+              "w": 6.123233995736766e-17
+            }
+          },
+          {
+            "id": "ambient-vehicle-3",
+            "routeId": "ambient-route-3",
+            "region": "Lantern Market",
+            "type": "van",
+            "x": -142.9021339360699,
+            "y": -0.07300000000000001,
+            "z": 136,
+            "yaw": -4.712388980384688,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 131.81428645627577,
+            "routeLength": 376.8243050404119,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-3",
+              "x": -142.9098839360699,
+              "z": 136,
+              "yaw": -4.712388980384688,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -7.2000000000019995,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.7071067811865482,
+              "z": 0,
+              "w": -0.7071067811865468
+            }
+          },
+          {
+            "id": "ambient-vehicle-4",
+            "routeId": "ambient-route-4",
+            "region": "Lantern Market",
+            "type": "taxi",
+            "x": -206,
+            "y": -0.07300000000000001,
+            "z": 58.119969240486,
+            "yaw": 0,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 289.99825953982287,
+            "routeLength": 400.8243050404119,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-4",
+              "x": -206,
+              "z": 58.112219240486,
+              "yaw": 0,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -8.599999999997918
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          },
+          {
+            "id": "ambient-vehicle-5",
+            "routeId": "ambient-route-5",
+            "region": "Iron Docks",
+            "type": "bus",
+            "x": 94,
+            "y": -0.07300000000000001,
+            "z": 124.58213718094976,
+            "yaw": 0.000012431191521460119,
+            "speed": 6.7,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 203.53609159935908,
+            "routeLength": 376.824305040412,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-5",
+              "x": 93.99999990365826,
+              "z": 124.57438718095035,
+              "yaw": 0.000012431191521460119,
+              "halfWidth": 1.4875,
+              "halfLength": 3.73225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -6.700000000000767
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.000006215595760690038,
+              "z": 0,
+              "w": 0.9999999999806832
+            }
+          },
+          {
+            "id": "ambient-vehicle-6",
+            "routeId": "ambient-route-6",
+            "region": "Iron Docks",
+            "type": "van",
+            "x": 295.9778660639307,
+            "y": -0.07300000000000001,
+            "z": -74,
+            "yaw": 1.570796326360549,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 377.3464389764812,
+            "routeLength": 460.82430504041184,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-6",
+              "x": 295.97011606393073,
+              "z": -74.00000000000337,
+              "yaw": 1.570796326360549,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -7.199999999998575,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.7071067810329824,
+              "z": 0,
+              "w": 0.7071067813401126
+            }
+          },
+          {
+            "id": "ambient-vehicle-7",
+            "routeId": "ambient-route-7",
+            "region": "Stacktown",
+            "type": "bus",
+            "x": -224.92259197025942,
+            "y": -0.07300000000000001,
+            "z": -184,
+            "yaw": -4.712358112706447,
+            "speed": 6.7,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 123.83474449046535,
+            "routeLength": 396.82430504041173,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-7",
+              "x": -224.93034197025574,
+              "z": -183.9999997607755,
+              "yaw": -4.712358112706447,
+              "halfWidth": 1.4875,
+              "halfLength": 3.73225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -6.699999999993918,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.707117694474632,
+              "z": 0,
+              "w": -0.7070958677300277
+            }
+          },
+          {
+            "id": "ambient-vehicle-8",
+            "routeId": "ambient-route-8",
+            "region": "Stacktown",
+            "type": "van",
+            "x": -87.13102050617776,
+            "y": -0.07300000000000001,
+            "z": -421.15917113397967,
+            "yaw": 0.514321505101226,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 379.5052237244605,
+            "routeLength": 500.82430504041173,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-8",
+              "x": -87.13483307408843,
+              "z": -421.1659184909382,
+              "yaw": 0.514321505101226,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -3.9950727989900887,
+              "y": 0,
+              "z": -5.979513484615779
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.2543356990937111,
+              "z": 0,
+              "w": 0.9671159972653297
+            }
+          },
+          {
+            "id": "ambient-vehicle-9",
+            "routeId": "ambient-route-9",
+            "region": "Meridian East",
+            "type": "sport",
+            "x": 94,
+            "y": -0.07300000000000001,
+            "z": -232.05835392166415,
+            "yaw": 1.1801480311671034e-21,
+            "speed": 10.8,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 270.176582701973,
+            "routeLength": 436.82430504041184,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-9",
+              "x": 94,
+              "z": -232.06610392166414,
+              "yaw": 1.1801480311671034e-21,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -10.799999999997862
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 5.900740155835517e-22,
+              "z": 0,
+              "w": 1
+            }
+          },
+          {
+            "id": "ambient-vehicle-10",
+            "routeId": "ambient-route-10",
+            "region": "Meridian East",
+            "type": "sport",
+            "x": 227.17097252389,
+            "y": -0.07300000000000001,
+            "z": -424,
+            "yaw": 1.5707963267948961,
+            "speed": 10.8,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 446.15333251652163,
+            "routeLength": 460.8243050404117,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-10",
+              "x": 227.16322252389,
+              "z": -424,
+              "yaw": 1.5707963267948961,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -10.800000000004712,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.7071067811865474,
+              "z": 0,
+              "w": 0.7071067811865477
+            }
+          },
+          {
+            "id": "ambient-vehicle-11",
+            "routeId": "ambient-route-11",
+            "region": "Crown Plaza",
+            "type": "bus",
+            "x": -49.40502247430307,
+            "y": -0.07300000000000001,
+            "z": -424,
+            "yaw": -4.712388980384688,
+            "speed": 6.7,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 158.31717499450895,
+            "routeLength": 376.8243050404118,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-11",
+              "x": -49.41277247430307,
+              "z": -424,
+              "yaw": -4.712388980384688,
+              "halfWidth": 1.4875,
+              "halfLength": 3.73225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -6.700000000000767,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.7071067811865482,
+              "z": 0,
+              "w": -0.7071067811865468
+            }
+          },
+          {
+            "id": "ambient-vehicle-12",
+            "routeId": "ambient-route-12",
+            "region": "Crown Plaza",
+            "type": "taxi",
+            "x": 94,
+            "y": -0.07300000000000001,
+            "z": -396.7047599107264,
+            "yaw": 0,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 324.8229886910353,
+            "routeLength": 440.82430504041184,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-12",
+              "x": 94,
+              "z": -396.7125099107264,
+              "yaw": 0,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -8.600000000004766
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          },
+          {
+            "id": "ambient-vehicle-13",
+            "routeId": "ambient-route-13",
+            "region": "Kasumi Ward",
+            "type": "taxi",
+            "x": 4,
+            "y": -0.07300000000000001,
+            "z": -66.96384270091856,
+            "yaw": 0,
+            "speed": 2.514080493658569,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 455.0820714812276,
+            "routeLength": 660.8243050404122,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-13",
+              "x": 4,
+              "z": -66.97159270091856,
+              "yaw": 0,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -2.514080493663729
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          },
+          {
+            "id": "ambient-vehicle-14",
+            "routeId": "ambient-route-14",
+            "region": "Lantern Market",
+            "type": "taxi",
+            "x": -197.29651686032219,
+            "y": -0.07300000000000001,
+            "z": 46,
+            "yaw": 1.5707963267948966,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 430.6208219007342,
+            "routeLength": 440.824305040412,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-14",
+              "x": -197.30426686032217,
+              "z": 46,
+              "yaw": 1.5707963267948966,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -8.600000000004766,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.7071067811865475,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          },
+          {
+            "id": "ambient-vehicle-15",
+            "routeId": "ambient-route-15",
+            "region": "Iron Docks",
+            "type": "van",
+            "x": 267.62489386231493,
+            "y": -0.07300000000000001,
+            "z": 46,
+            "yaw": -4.712388980384688,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 151.287258657891,
+            "routeLength": 396.82430504041196,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-15",
+              "x": 267.61714386231495,
+              "z": 46,
+              "yaw": -4.712388980384688,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -7.199999999998575,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.7071067811865482,
+              "z": 0,
+              "w": -0.7071067811865468
+            }
+          },
+          {
+            "id": "ambient-vehicle-16",
+            "routeId": "ambient-route-16",
+            "region": "Meridian East",
+            "type": "sport",
+            "x": 89.0600716955165,
+            "y": -0.07300000000000001,
+            "z": -176.99278731163088,
+            "yaw": -2.245894976916432,
+            "speed": 10.8,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 131.7845620386366,
+            "routeLength": 500.82430504041184,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-16",
+              "x": 89.06612169660032,
+              "z": -176.98794376056932,
+              "yaw": -2.245894976916432,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 9.263468988001398,
+              "y": 0,
+              "z": 5.552309637284324
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.9013806994057741,
+              "z": 0,
+              "w": 0.43302752191836186
+            }
+          }
+        ],
+        "emitters": [
+          {
+            "id": "AD044",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD045",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD046",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD048",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD049",
+            "x": -249,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD050",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD051",
+            "x": -249,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD052",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD054",
+            "x": -283.3,
+            "y": 4.25,
+            "z": 125.60000000000001
+          },
+          {
+            "id": "AD057",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD059",
+            "x": -171,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD060",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD062",
+            "x": -171,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD063",
+            "x": -129,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD064",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD066",
+            "x": -129,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD067",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD068",
+            "x": -183.3,
+            "y": 4.25,
+            "z": 125.60000000000001
+          },
+          {
+            "id": "AD071",
+            "x": -75.60000000000001,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD073",
+            "x": -52.800000000000004,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD074",
+            "x": -75.60000000000001,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD076",
+            "x": -52.800000000000004,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD077",
+            "x": -37.199999999999996,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD078",
+            "x": -14.400000000000002,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD079",
+            "x": -37.199999999999996,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD080",
+            "x": -14.400000000000002,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD082",
+            "x": -64.2,
+            "y": 4.25,
+            "z": 125.60000000000001
+          },
+          {
+            "id": "AD086",
+            "x": 14.400000000000002,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD087",
+            "x": 37.199999999999996,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD088",
+            "x": 14.400000000000002,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD089",
+            "x": 37.199999999999996,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD090",
+            "x": 52.800000000000004,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD091",
+            "x": 75.60000000000001,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD093",
+            "x": 52.800000000000004,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD094",
+            "x": 75.60000000000001,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD096",
+            "x": 25.8,
+            "y": 4.25,
+            "z": 125.60000000000001
+          },
+          {
+            "id": "AD099",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD100",
+            "x": 129,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD101",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD103",
+            "x": 129,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD104",
+            "x": 171,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD105",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD106",
+            "x": 171,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD107",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD109",
+            "x": 116.7,
+            "y": 4.25,
+            "z": 125.60000000000001
+          },
+          {
+            "id": "AD112",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD113",
+            "x": 249,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD114",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD116",
+            "x": 249,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD117",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD118",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": 75.8
+          },
+          {
+            "id": "AD119",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD120",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": 114.2
+          },
+          {
+            "id": "AD121",
+            "x": 236.7,
+            "y": 4.25,
+            "z": 125.60000000000001
+          },
+          {
+            "id": "AD125",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD126",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD127",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD128",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD129",
+            "x": -249,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD130",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD132",
+            "x": -249,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD133",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD134",
+            "x": -283.3,
+            "y": 4.25,
+            "z": 35.599999999999994
+          },
+          {
+            "id": "AD135",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -42.8
+          },
+          {
+            "id": "AD137",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD138",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -48.9
+          },
+          {
+            "id": "AD140",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD141",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD143",
+            "x": -171,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD144",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD146",
+            "x": -171,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD147",
+            "x": -129,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD148",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD149",
+            "x": -129,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD150",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD152",
+            "x": -183.3,
+            "y": 4.25,
+            "z": 35.599999999999994
+          },
+          {
+            "id": "AD153",
+            "x": -195.60000000000002,
+            "y": 4.8,
+            "z": -48.9
+          },
+          {
+            "id": "AD155",
+            "x": -195.60000000000002,
+            "y": 4.8,
+            "z": 16.699999999999996
+          },
+          {
+            "id": "AD156",
+            "x": -104.39999999999999,
+            "y": 4.8,
+            "z": -42.8
+          },
+          {
+            "id": "AD158",
+            "x": -104.39999999999999,
+            "y": 4.8,
+            "z": 16.699999999999996
+          },
+          {
+            "id": "AD159",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD161",
+            "x": 129,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD162",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD164",
+            "x": 129,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD165",
+            "x": 171,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD166",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD168",
+            "x": 171,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD169",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD171",
+            "x": 116.7,
+            "y": 4.25,
+            "z": 35.599999999999994
+          },
+          {
+            "id": "AD175",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD177",
+            "x": 249,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD178",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD180",
+            "x": 249,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD181",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD182",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -42.8
+          },
+          {
+            "id": "AD184",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD185",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": 22.799999999999997
+          },
+          {
+            "id": "AD187",
+            "x": 236.7,
+            "y": 4.25,
+            "z": 35.599999999999994
+          },
+          {
+            "id": "AD190",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD191",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD192",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD194",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD195",
+            "x": -249,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD196",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD198",
+            "x": -249,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD199",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD201",
+            "x": -283.3,
+            "y": 4.25,
+            "z": -84.39999999999999
+          },
+          {
+            "id": "AD202",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -152.8
+          },
+          {
+            "id": "AD204",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -103.3
+          },
+          {
+            "id": "AD205",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -158.9
+          },
+          {
+            "id": "AD207",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -103.3
+          },
+          {
+            "id": "AD208",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD210",
+            "x": -171,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD211",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD212",
+            "x": -171,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD213",
+            "x": -129,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD214",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD216",
+            "x": -129,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD217",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD218",
+            "x": -183.3,
+            "y": 4.25,
+            "z": -84.39999999999999
+          },
+          {
+            "id": "AD220",
+            "x": -195.60000000000002,
+            "y": 4.8,
+            "z": -158.9
+          },
+          {
+            "id": "AD222",
+            "x": -195.60000000000002,
+            "y": 4.8,
+            "z": -97.2
+          },
+          {
+            "id": "AD223",
+            "x": -104.39999999999999,
+            "y": 4.8,
+            "z": -158.9
+          },
+          {
+            "id": "AD225",
+            "x": -104.39999999999999,
+            "y": 4.8,
+            "z": -97.2
+          },
+          {
+            "id": "AD226",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD227",
+            "x": 129,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD228",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD230",
+            "x": 129,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD231",
+            "x": 171,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD232",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD233",
+            "x": 171,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD234",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD236",
+            "x": 116.7,
+            "y": 4.25,
+            "z": -84.39999999999999
+          },
+          {
+            "id": "AD239",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD240",
+            "x": 249,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD241",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD243",
+            "x": 249,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD244",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD245",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -152.8
+          },
+          {
+            "id": "AD247",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD248",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -97.2
+          },
+          {
+            "id": "AD250",
+            "x": 236.7,
+            "y": 4.25,
+            "z": -84.39999999999999
+          },
+          {
+            "id": "AD253",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD255",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD256",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD257",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD258",
+            "x": -249,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD259",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD261",
+            "x": -249,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD262",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD264",
+            "x": -283.3,
+            "y": 4.25,
+            "z": -194.39999999999998
+          },
+          {
+            "id": "AD266",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -278.90000000000003
+          },
+          {
+            "id": "AD268",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -207.2
+          },
+          {
+            "id": "AD269",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -278.90000000000003
+          },
+          {
+            "id": "AD271",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -213.29999999999998
+          },
+          {
+            "id": "AD272",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD274",
+            "x": -171,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD275",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD277",
+            "x": -171,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD278",
+            "x": -129,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD279",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD281",
+            "x": -129,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD282",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD283",
+            "x": -183.3,
+            "y": 4.25,
+            "z": -194.39999999999998
+          },
+          {
+            "id": "AD284",
+            "x": -195.60000000000002,
+            "y": 4.8,
+            "z": -278.90000000000003
+          },
+          {
+            "id": "AD286",
+            "x": -195.60000000000002,
+            "y": 4.8,
+            "z": -213.29999999999998
+          },
+          {
+            "id": "AD287",
+            "x": -104.39999999999999,
+            "y": 4.8,
+            "z": -278.90000000000003
+          },
+          {
+            "id": "AD289",
+            "x": -104.39999999999999,
+            "y": 4.8,
+            "z": -207.2
+          },
+          {
+            "id": "AD290",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD291",
+            "x": 129,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD292",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD293",
+            "x": 129,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD294",
+            "x": 171,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD295",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD297",
+            "x": 171,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD298",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD299",
+            "x": 116.7,
+            "y": 4.25,
+            "z": -194.39999999999998
+          },
+          {
+            "id": "AD300",
+            "x": 104.39999999999999,
+            "y": 4.85,
+            "z": -272.8
+          },
+          {
+            "id": "AD302",
+            "x": 104.39999999999999,
+            "y": 4.85,
+            "z": -207.2
+          },
+          {
+            "id": "AD303",
+            "x": 195.60000000000002,
+            "y": 4.85,
+            "z": -278.90000000000003
+          },
+          {
+            "id": "AD305",
+            "x": 195.60000000000002,
+            "y": 4.85,
+            "z": -207.2
+          },
+          {
+            "id": "AD306",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD308",
+            "x": 249,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD309",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD311",
+            "x": 249,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD312",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD313",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -272.8
+          },
+          {
+            "id": "AD314",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD315",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -207.2
+          },
+          {
+            "id": "AD317",
+            "x": 236.7,
+            "y": 4.25,
+            "z": -194.39999999999998
+          },
+          {
+            "id": "AD319",
+            "x": 224.39999999999998,
+            "y": 4.85,
+            "z": -278.90000000000003
+          },
+          {
+            "id": "AD321",
+            "x": 224.39999999999998,
+            "y": 4.85,
+            "z": -213.29999999999998
+          },
+          {
+            "id": "AD322",
+            "x": 295.59999999999997,
+            "y": 4.85,
+            "z": -272.8
+          },
+          {
+            "id": "AD324",
+            "x": 295.59999999999997,
+            "y": 4.85,
+            "z": -213.29999999999998
+          },
+          {
+            "id": "AD325",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD327",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD328",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD330",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD331",
+            "x": -249,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD332",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD334",
+            "x": -249,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD335",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD337",
+            "x": -283.3,
+            "y": 4.25,
+            "z": -314.40000000000003
+          },
+          {
+            "id": "AD338",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -398.90000000000003
+          },
+          {
+            "id": "AD340",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -333.3
+          },
+          {
+            "id": "AD341",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -398.90000000000003
+          },
+          {
+            "id": "AD343",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -333.3
+          },
+          {
+            "id": "AD344",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD346",
+            "x": -171,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD347",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD349",
+            "x": -171,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD350",
+            "x": -129,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD351",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD353",
+            "x": -129,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD354",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD356",
+            "x": -159.8,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD358",
+            "x": -140.2,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD359",
+            "x": -183.3,
+            "y": 4.25,
+            "z": -314.40000000000003
+          },
+          {
+            "id": "AD360",
+            "x": -195.60000000000002,
+            "y": 4.75,
+            "z": -398.90000000000003
+          },
+          {
+            "id": "AD362",
+            "x": -195.60000000000002,
+            "y": 4.75,
+            "z": -333.3
+          },
+          {
+            "id": "AD363",
+            "x": -104.39999999999999,
+            "y": 4.75,
+            "z": -398.90000000000003
+          },
+          {
+            "id": "AD365",
+            "x": -104.39999999999999,
+            "y": 4.75,
+            "z": -333.3
+          },
+          {
+            "id": "AD366",
+            "x": -140.2,
+            "y": 4.75,
+            "z": -360
+          },
+          {
+            "id": "AD368",
+            "x": -75.60000000000001,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD369",
+            "x": -52.800000000000004,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD370",
+            "x": -75.60000000000001,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD371",
+            "x": -52.800000000000004,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD372",
+            "x": -37.199999999999996,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD373",
+            "x": -14.400000000000002,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD375",
+            "x": -37.199999999999996,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD376",
+            "x": -14.400000000000002,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD378",
+            "x": -54.3,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD380",
+            "x": -35.7,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD382",
+            "x": -64.2,
+            "y": 4.25,
+            "z": -314.40000000000003
+          },
+          {
+            "id": "AD384",
+            "x": -75.60000000000001,
+            "y": 4.75,
+            "z": -392.8
+          },
+          {
+            "id": "AD386",
+            "x": -75.60000000000001,
+            "y": 4.75,
+            "z": -327.2
+          },
+          {
+            "id": "AD387",
+            "x": -14.400000000000002,
+            "y": 4.75,
+            "z": -398.90000000000003
+          },
+          {
+            "id": "AD389",
+            "x": -14.400000000000002,
+            "y": 4.75,
+            "z": -333.3
+          },
+          {
+            "id": "AD390",
+            "x": -35.7,
+            "y": 4.75,
+            "z": -363.6
+          },
+          {
+            "id": "AD392",
+            "x": 14.400000000000002,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD393",
+            "x": 37.199999999999996,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD394",
+            "x": 14.400000000000002,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD396",
+            "x": 37.199999999999996,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD397",
+            "x": 52.800000000000004,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD398",
+            "x": 75.60000000000001,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD400",
+            "x": 52.800000000000004,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD401",
+            "x": 75.60000000000001,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD402",
+            "x": 35.7,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD404",
+            "x": 54.3,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD406",
+            "x": 25.8,
+            "y": 4.25,
+            "z": -314.40000000000003
+          },
+          {
+            "id": "AD407",
+            "x": 14.400000000000002,
+            "y": 4.75,
+            "z": -392.8
+          },
+          {
+            "id": "AD409",
+            "x": 14.400000000000002,
+            "y": 4.75,
+            "z": -333.3
+          },
+          {
+            "id": "AD410",
+            "x": 75.60000000000001,
+            "y": 4.75,
+            "z": -398.90000000000003
+          },
+          {
+            "id": "AD412",
+            "x": 75.60000000000001,
+            "y": 4.75,
+            "z": -327.2
+          },
+          {
+            "id": "AD413",
+            "x": 54.3,
+            "y": 4.75,
+            "z": -363.6
+          },
+          {
+            "id": "AD415",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD416",
+            "x": 129,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD417",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD418",
+            "x": 129,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD419",
+            "x": 171,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD420",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD421",
+            "x": 171,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD422",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD424",
+            "x": 140.2,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD426",
+            "x": 159.8,
+            "y": 3.46,
+            "z": -360
+          },
+          {
+            "id": "AD428",
+            "x": 116.7,
+            "y": 4.25,
+            "z": -314.40000000000003
+          },
+          {
+            "id": "AD429",
+            "x": 104.39999999999999,
+            "y": 4.75,
+            "z": -392.8
+          },
+          {
+            "id": "AD431",
+            "x": 104.39999999999999,
+            "y": 4.75,
+            "z": -327.2
+          },
+          {
+            "id": "AD432",
+            "x": 195.60000000000002,
+            "y": 4.75,
+            "z": -392.8
+          },
+          {
+            "id": "AD434",
+            "x": 195.60000000000002,
+            "y": 4.75,
+            "z": -333.3
+          },
+          {
+            "id": "AD435",
+            "x": 159.8,
+            "y": 4.75,
+            "z": -363.6
+          },
+          {
+            "id": "AD437",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD438",
+            "x": 249,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD439",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD440",
+            "x": 249,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD441",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD442",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -392.8
+          },
+          {
+            "id": "AD444",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD445",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -327.2
+          },
+          {
+            "id": "AD446",
+            "x": 236.7,
+            "y": 4.25,
+            "z": -314.40000000000003
+          },
+          {
+            "id": "AD448",
+            "x": 224.39999999999998,
+            "y": 4.85,
+            "z": -392.8
+          },
+          {
+            "id": "AD450",
+            "x": 224.39999999999998,
+            "y": 4.85,
+            "z": -327.2
+          },
+          {
+            "id": "AD451",
+            "x": 295.59999999999997,
+            "y": 4.85,
+            "z": -398.90000000000003
+          },
+          {
+            "id": "AD453",
+            "x": 295.59999999999997,
+            "y": 4.85,
+            "z": -327.2
+          },
+          {
+            "id": "AD454",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD456",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD457",
+            "x": -295.59999999999997,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD458",
+            "x": -271.00000000000006,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD459",
+            "x": -249,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD460",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD462",
+            "x": -249,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD463",
+            "x": -224.39999999999998,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD465",
+            "x": -283.3,
+            "y": 4.25,
+            "z": -434.40000000000003
+          },
+          {
+            "id": "AD466",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -518.9
+          },
+          {
+            "id": "AD468",
+            "x": -295.59999999999997,
+            "y": 4.8,
+            "z": -447.2
+          },
+          {
+            "id": "AD469",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -518.9
+          },
+          {
+            "id": "AD471",
+            "x": -224.39999999999998,
+            "y": 4.8,
+            "z": -453.3
+          },
+          {
+            "id": "AD472",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD474",
+            "x": -171,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD475",
+            "x": -195.60000000000002,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD477",
+            "x": -171,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD478",
+            "x": -129,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD479",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD481",
+            "x": -129,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD482",
+            "x": -104.39999999999999,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD484",
+            "x": -159.8,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD485",
+            "x": -140.2,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD487",
+            "x": -183.3,
+            "y": 4.25,
+            "z": -434.40000000000003
+          },
+          {
+            "id": "AD488",
+            "x": -195.60000000000002,
+            "y": 4.75,
+            "z": -518.9
+          },
+          {
+            "id": "AD490",
+            "x": -195.60000000000002,
+            "y": 4.75,
+            "z": -453.3
+          },
+          {
+            "id": "AD491",
+            "x": -104.39999999999999,
+            "y": 4.75,
+            "z": -518.9
+          },
+          {
+            "id": "AD493",
+            "x": -104.39999999999999,
+            "y": 4.75,
+            "z": -453.3
+          },
+          {
+            "id": "AD494",
+            "x": -140.2,
+            "y": 4.75,
+            "z": -483.6
+          },
+          {
+            "id": "AD496",
+            "x": -75.60000000000001,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD498",
+            "x": -52.800000000000004,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD499",
+            "x": -75.60000000000001,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD500",
+            "x": -52.800000000000004,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD501",
+            "x": -37.199999999999996,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD502",
+            "x": -14.400000000000002,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD504",
+            "x": -37.199999999999996,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD505",
+            "x": -14.400000000000002,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD507",
+            "x": -54.3,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD508",
+            "x": -35.7,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD509",
+            "x": -64.2,
+            "y": 4.25,
+            "z": -434.40000000000003
+          },
+          {
+            "id": "AD511",
+            "x": -75.60000000000001,
+            "y": 4.75,
+            "z": -518.9
+          },
+          {
+            "id": "AD513",
+            "x": -75.60000000000001,
+            "y": 4.75,
+            "z": -447.2
+          },
+          {
+            "id": "AD514",
+            "x": -14.400000000000002,
+            "y": 4.75,
+            "z": -518.9
+          },
+          {
+            "id": "AD516",
+            "x": -14.400000000000002,
+            "y": 4.75,
+            "z": -453.3
+          },
+          {
+            "id": "AD517",
+            "x": -35.7,
+            "y": 4.75,
+            "z": -480
+          },
+          {
+            "id": "AD519",
+            "x": 14.400000000000002,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD520",
+            "x": 37.199999999999996,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD521",
+            "x": 14.400000000000002,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD522",
+            "x": 37.199999999999996,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD523",
+            "x": 52.800000000000004,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD524",
+            "x": 75.60000000000001,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD526",
+            "x": 52.800000000000004,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD527",
+            "x": 75.60000000000001,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD529",
+            "x": 35.7,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD531",
+            "x": 54.3,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD533",
+            "x": 25.8,
+            "y": 4.25,
+            "z": -434.40000000000003
+          },
+          {
+            "id": "AD534",
+            "x": 14.400000000000002,
+            "y": 4.75,
+            "z": -512.8
+          },
+          {
+            "id": "AD536",
+            "x": 14.400000000000002,
+            "y": 4.75,
+            "z": -447.2
+          },
+          {
+            "id": "AD537",
+            "x": 75.60000000000001,
+            "y": 4.75,
+            "z": -518.9
+          },
+          {
+            "id": "AD539",
+            "x": 75.60000000000001,
+            "y": 4.75,
+            "z": -453.3
+          },
+          {
+            "id": "AD540",
+            "x": 54.3,
+            "y": 4.75,
+            "z": -483.6
+          },
+          {
+            "id": "AD542",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD544",
+            "x": 129,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD545",
+            "x": 104.39999999999999,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD546",
+            "x": 129,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD547",
+            "x": 171,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD548",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD550",
+            "x": 171,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD551",
+            "x": 195.60000000000002,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD552",
+            "x": 140.2,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD554",
+            "x": 159.8,
+            "y": 3.46,
+            "z": -480
+          },
+          {
+            "id": "AD555",
+            "x": 116.7,
+            "y": 4.25,
+            "z": -434.40000000000003
+          },
+          {
+            "id": "AD556",
+            "x": 104.39999999999999,
+            "y": 4.75,
+            "z": -518.9
+          },
+          {
+            "id": "AD558",
+            "x": 104.39999999999999,
+            "y": 4.75,
+            "z": -447.2
+          },
+          {
+            "id": "AD559",
+            "x": 195.60000000000002,
+            "y": 4.75,
+            "z": -518.9
+          },
+          {
+            "id": "AD561",
+            "x": 195.60000000000002,
+            "y": 4.75,
+            "z": -447.2
+          },
+          {
+            "id": "AD562",
+            "x": 159.8,
+            "y": 4.75,
+            "z": -480
+          },
+          {
+            "id": "AD564",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD566",
+            "x": 249,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD567",
+            "x": 224.39999999999998,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD569",
+            "x": 249,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD570",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD571",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -512.8
+          },
+          {
+            "id": "AD572",
+            "x": 271.00000000000006,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD573",
+            "x": 295.59999999999997,
+            "y": 3.46,
+            "z": -447.2
+          },
+          {
+            "id": "AD575",
+            "x": 236.7,
+            "y": 4.25,
+            "z": -434.40000000000003
+          },
+          {
+            "id": "AD577",
+            "x": 224.39999999999998,
+            "y": 4.85,
+            "z": -518.9
+          },
+          {
+            "id": "AD579",
+            "x": 224.39999999999998,
+            "y": 4.85,
+            "z": -453.3
+          },
+          {
+            "id": "AD580",
+            "x": 295.59999999999997,
+            "y": 4.85,
+            "z": -512.8
+          },
+          {
+            "id": "AD582",
+            "x": 295.59999999999997,
+            "y": 4.85,
+            "z": -453.3
+          },
+          {
+            "id": "AD583",
+            "x": -341.59999999999997,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD584",
+            "x": -332.24000000000007,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD585",
+            "x": -341.59999999999997,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD586",
+            "x": -332.24000000000007,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD587",
+            "x": -331.75999999999993,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD588",
+            "x": -322.40000000000003,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD590",
+            "x": -331.75999999999993,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD591",
+            "x": -322.40000000000003,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD593",
+            "x": -336.92,
+            "y": 4.25,
+            "z": 123.60000000000001
+          },
+          {
+            "id": "AD596",
+            "x": -341.59999999999997,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD597",
+            "x": -332.24000000000007,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD598",
+            "x": -341.59999999999997,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD599",
+            "x": -332.24000000000007,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD600",
+            "x": -331.75999999999993,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD601",
+            "x": -322.40000000000003,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD602",
+            "x": -331.75999999999993,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD603",
+            "x": -322.40000000000003,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD605",
+            "x": -336.92,
+            "y": 4.25,
+            "z": -332.40000000000003
+          },
+          {
+            "id": "AD606",
+            "x": -341.59999999999997,
+            "y": 4.8,
+            "z": -377.16
+          },
+          {
+            "id": "AD608",
+            "x": -341.59999999999997,
+            "y": 4.8,
+            "z": -342.84
+          },
+          {
+            "id": "AD609",
+            "x": -322.40000000000003,
+            "y": 4.8,
+            "z": -377.16
+          },
+          {
+            "id": "AD611",
+            "x": -322.40000000000003,
+            "y": 4.8,
+            "z": -346.58
+          },
+          {
+            "id": "AD612",
+            "x": 322.40000000000003,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD614",
+            "x": 331.75999999999993,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD615",
+            "x": 322.40000000000003,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD617",
+            "x": 331.75999999999993,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD618",
+            "x": 332.24000000000007,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD619",
+            "x": 341.59999999999997,
+            "y": 3.46,
+            "z": 78.84
+          },
+          {
+            "id": "AD620",
+            "x": 332.24000000000007,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD621",
+            "x": 341.59999999999997,
+            "y": 3.46,
+            "z": 113.16
+          },
+          {
+            "id": "AD623",
+            "x": 327.08,
+            "y": 4.25,
+            "z": 123.60000000000001
+          },
+          {
+            "id": "AD627",
+            "x": 322.40000000000003,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD629",
+            "x": 331.75999999999993,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD630",
+            "x": 322.40000000000003,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD631",
+            "x": 331.75999999999993,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD632",
+            "x": 332.24000000000007,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD633",
+            "x": 341.59999999999997,
+            "y": 3.46,
+            "z": -377.16
+          },
+          {
+            "id": "AD635",
+            "x": 332.24000000000007,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD636",
+            "x": 341.59999999999997,
+            "y": 3.46,
+            "z": -342.84
+          },
+          {
+            "id": "AD638",
+            "x": 327.08,
+            "y": 4.25,
+            "z": -332.40000000000003
+          },
+          {
+            "id": "AD639",
+            "x": 322.40000000000003,
+            "y": 4.85,
+            "z": -380.90000000000003
+          },
+          {
+            "id": "AD641",
+            "x": 322.40000000000003,
+            "y": 4.85,
+            "z": -342.84
+          },
+          {
+            "id": "AD642",
+            "x": 341.59999999999997,
+            "y": 4.85,
+            "z": -380.90000000000003
+          },
+          {
+            "id": "AD644",
+            "x": 341.59999999999997,
+            "y": 4.85,
+            "z": -346.58
+          }
+        ],
+        "camera": {
+          "position": [
+            13.576201377674334,
+            1.915000000004283,
+            -72.17719502815473
+          ],
+          "forward": [
+            0,
+            0.00043664645283655857,
+            -0.999999904669933
+          ]
+        },
+        "nativeListener": {
+          "x": 13.576201438903809,
+          "y": 1.9149999618530273,
+          "z": -72.17719268798828
+        },
+        "nativePanners": [
+          {
+            "x": -4,
+            "y": 0.5770000219345093,
+            "z": 17.149457931518555,
+            "model": "HRTF"
+          },
+          {
+            "x": 4,
+            "y": 0.5770000219345093,
+            "z": -66.92211151123047,
+            "model": "HRTF"
+          },
+          {
+            "x": -4,
+            "y": 0.5770000219345093,
+            "z": -64.74417114257812,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "model": "HRTF"
+          }
+        ]
+      }
+    },
+    {
+      "test": "Actual mounted market emitter has matching native panner coordinates; camera turn updates native orientation and moving to Meridian selects a distinct procedural neighborhood profile",
+      "pass": true,
+      "emitter": {
+        "id": "AD044",
+        "x": -295.59999999999997,
+        "y": 3.46,
+        "z": 75.8
+      },
+      "native": {
+        "x": -295.6000061035156,
+        "y": 3.4600000381469727,
+        "z": 75.80000305175781
+      },
+      "marketProfile": {
+        "hum": 74,
+        "air": 1800,
+        "rain": 0.058,
+        "pulse": 1.65,
+        "tone": 0.009
+      },
+      "medicalProfile": {
+        "hum": 98,
+        "air": 2300,
+        "rain": 0.052,
+        "pulse": 1.28,
+        "tone": 0.006
+      },
+      "waveforms": [
+        {
+          "file": "world-audio-browser-mounted-market.wav",
+          "samples": 32768,
+          "rate": 48000,
+          "duration": 0.6826666666666666,
+          "peak": 0.03680058568716049,
+          "leftRMS": 0.009562997449274371,
+          "rightRMS": 0.009566439164698702
+        },
+        {
+          "file": "world-audio-browser-meridian.wav",
+          "samples": 32768,
+          "rate": 48000,
+          "duration": 0.6826666666666666,
+          "peak": 0.027640191838145256,
+          "leftRMS": 0.007368201899141401,
+          "rightRMS": 0.007354880116322796
+        }
+      ]
+    },
+    {
+      "test": "Actual mouse fire and R reload produce native waveforms; one-shots clean up and limiter avoids clipped peaks",
+      "pass": true,
+      "counts": {
+        "footstep": 12,
+        "landing": 1,
+        "shot": 1,
+        "reload": 2,
+        "damage": 1
+      },
+      "oneShots": {
+        "active": 0,
+        "peak": 5,
+        "limit": 24,
+        "dropped": 0
+      },
+      "waveform": {
+        "file": "world-audio-browser-gun-reload.wav",
+        "samples": 114688,
+        "rate": 48000,
+        "duration": 2.3893333333333335,
+        "peak": 0.1664314866065979,
+        "leftRMS": 0.01333338548045891,
+        "rightRMS": 0.012298771774358666
+      }
+    },
+    {
+      "test": "Actual Escape pause quiets all world loops and one-shot tails",
+      "pass": true,
+      "waveform": {
+        "file": "world-audio-browser-paused.wav",
+        "samples": 32768,
+        "rate": 48000,
+        "duration": 0.6826666666666666,
+        "peak": 0,
+        "leftRMS": 0,
+        "rightRMS": 0
+      }
+    },
+    {
+      "test": "Actual mute remains silent after returning to play and moving",
+      "pass": true,
+      "waveform": {
+        "file": "world-audio-browser-muted.wav",
+        "samples": 32768,
+        "rate": 48000,
+        "duration": 0.6826666666666666,
+        "peak": 0,
+        "leftRMS": 0,
+        "rightRMS": 0
+      }
+    }
+  ],
+  "errors": []
+}

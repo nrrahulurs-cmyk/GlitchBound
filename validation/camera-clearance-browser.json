@@ -1,0 +1,116 @@
+{
+  "checkedAtUTC": "2026-09-06T08:05:12.079Z",
+  "build": "/assets/index-DuUXDqE2.js",
+  "method": "Actual V/W/E controls with the production camera and live static/dynamic collider providers. Setup teleports choose independent wall and vehicle cases; each captured rendered frame tests a .225m near-plane volume against real rotated solid boxes.",
+  "results": [
+    {
+      "test": "Third person retracts before the real Kasumi wall with near-plane clearance",
+      "pass": true,
+      "frame": {
+        "position": [
+          17.313660784932317,
+          2.060018891438403,
+          21.323245173287454
+        ],
+        "player": [
+          14.8,
+          1.915,
+          22
+        ],
+        "boom": {
+          "active": true,
+          "anchor": [
+            14.8,
+            1.915,
+            22
+          ],
+          "desired": [
+            20,
+            2.215,
+            20.6
+          ],
+          "position": [
+            17.313660784932317,
+            2.060018891438403,
+            21.323245173287454
+          ],
+          "obstructed": true,
+          "radius": 0.23
+        },
+        "inside": [],
+        "dt": 16.600000000000364
+      }
+    },
+    {
+      "test": "Walking at least3m away from cover keeps camera volume clear and reaches the unobstructed desired boom",
+      "pass": true,
+      "frames": 120,
+      "playerDistance": 8.122146177777786,
+      "desiredError": 0.000046102222061250586,
+      "first": [
+        17.313660784932317,
+        2.060018891438403,
+        21.323245173287454
+      ],
+      "last": [
+        11.877899924444277,
+        2.1069999999999998,
+        20.6
+      ],
+      "finalDesired": [
+        11.877853822222216,
+        2.1069999999999998,
+        20.6
+      ]
+    },
+    {
+      "test": "Vehicle chase camera retracts from the same street wall while preserving a clear cabin anchor",
+      "pass": true,
+      "frame": {
+        "position": [
+          16.85507327554291,
+          3.5379983110561484,
+          22
+        ],
+        "player": [
+          12,
+          1.923,
+          22
+        ],
+        "boom": {
+          "active": true,
+          "anchor": [
+            12,
+            1.7730000000000001,
+            22
+          ],
+          "desired": [
+            20,
+            4.673,
+            22
+          ],
+          "position": [
+            16.85507327554291,
+            3.5379983110561484,
+            22
+          ],
+          "obstructed": true,
+          "radius": 0.23
+        },
+        "inside": [],
+        "dt": 16.700000000000728
+      }
+    },
+    {
+      "test": "Actual drive and exit keep the chase camera clear and restore grounded walking",
+      "pass": true,
+      "frames": 90,
+      "exit": [
+        -2.7319317949126387,
+        1.807,
+        19
+      ]
+    }
+  ],
+  "errors": []
+}

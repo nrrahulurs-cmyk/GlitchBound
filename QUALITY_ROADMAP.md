@@ -39,4 +39,4 @@ Use representative ordinary streets and service areas as well as the strongest b
 
 Do not ask a reviewer to favor this game. Preserve adverse judgments and state reviewer involvement. Anonymous left/right labels cannot make the visibly different art styles rigorously blind. A still-image preference cannot settle movement, physics, audio or interaction quality. Keep all major gaps visible until addressed and reviewed.
 
-Keep the stable public release unchanged while the requested quality work is unfinished. A verified local iteration is a checkpoint, not evidence that the full quality target or the user's condition for another public deployment has been met.
+The user has requested publication of this checkpoint. Keep the remaining gaps and adverse evidence visible: publishing a verified iteration does not establish that the full quality target has been met.

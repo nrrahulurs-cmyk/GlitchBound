@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T09:44:15.699907+00:00",
+  "nativeFile": "neon-district-city.blend",
+  "originalNativeSHA256": "fae98baf0878bd0f0525ae7045fd52e2abfe4384137553574798c65d90423912",
+  "method": "One actual saved street-camera render using Cycles CPU,8samples,denoising,960×540,max2threads. Render settings are temporary and never saved back to the native file.",
+  "image": "native-surface-street-preview.png",
+  "errors": [],
+  "blender": "5.2.1 LTS",
+  "scene": "VESPER / street composition",
+  "camera": {
+    "name": "CAM 01 / concept composition",
+    "matrixWorld": [
+      [
+        1,
+        0,
+        0,
+        -0.5
+      ],
+      [
+        0,
+        -0.2953062057495117,
+        -0.955402672290802,
+        -32
+      ],
+      [
+        0,
+        0.955402672290802,
+        -0.2953062057495117,
+        1.2000000476837158
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "lens": 15.600000381469727,
+    "sensorWidth": 36,
+    "shiftX": 0,
+    "shiftY": 0
+  },
+  "parameters": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      960,
+      540
+    ],
+    "samples": 8,
+    "adaptiveSampling": false,
+    "denoise": true,
+    "denoiser": "OPENIMAGEDENOISE",
+    "gpuDenoising": false,
+    "threadsMode": "FIXED",
+    "threads": 2,
+    "viewTransform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.6499999761581421,
+    "frame": 1,
+    "world": "VESPER / blue night"
+  },
+  "renderSeconds": 37.81757519999519,
+  "imageBytes": 977028,
+  "imageSHA256": "887f742df09fc8ec4ccd9e2b1ae01e613c48af3ff674b6906c7b11e4f01fffa0",
+  "finalNativeSHA256": "fae98baf0878bd0f0525ae7045fd52e2abfe4384137553574798c65d90423912",
+  "nativeUnchanged": true,
+  "totalSeconds": 40.228740300022764,
+  "completedAtUTC": "2026-09-06T09:44:55.928641+00:00",
+  "visualReview": {
+    "status": "passed",
+    "reviewedAtUTC": "2026-09-06T09:46:29.489Z",
+    "observations": [
+      "Road reads as rough, nonmetal paving with broad local variation and restrained sheen, not a continuous mirror.",
+      "Authored voxel facade colors, emissive windows, billboard artwork and grounded foreground models remain visible.",
+      "No missing-image magenta, invalid-black material blocks, strong bump ridges, projection-grid seams or obvious shader artifacts were observed."
+    ],
+    "limits": [
+      "Eight CPU samples with denoising soften fine aggregate and can smooth small high-frequency details.",
+      "This is one saved street camera with unchanged native lighting; it does not establish full-city or runtime visual parity."
+    ]
+  },
+  "logReview": {
+    "renderErrors": [],
+    "warnings": [
+      "Blender could not read the user preference file because of a host permission restriction; the explicitly specified CPU settings were used and the render completed."
+    ],
+    "sourceLog": "work/native-surface-street-preview.log"
+  }
+}

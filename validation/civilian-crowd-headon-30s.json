@@ -1,0 +1,293 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T11:06:11.513Z",
+  "scenario": "headon",
+  "seconds": 30,
+  "method": "Read-only CPU fixture extracts the exact authored284-person seed/template from city.js, then runs production civilian navigation/gait and reads actual InstancedMesh matrices at60Hz. Full static structures/street shapes, real supply/bin bounds, resting service parts, traffic routes, owned and parked initial vehicles are supplied. Each potential pair uses15-axis full3D OBB SAT; umbrella contacts are separate. Original scenario preserves the entire authored population; dedicated headon/follower scenarios place two exact existing templates on the clear -90m avenue only at fixture initialization. No browser, rendering, damage or production code edits.",
+  "sourceHashes": {
+    "city.js": "09b87cde5ea2a12726338da8435011c85040af948dde2cd0822e570da46dd902",
+    "civilians.js": "f9bcd16fba3ce2141f017457bf46d2da7b321e21bcfe6cf805015547d749b651",
+    "civilian-motion.js": "a002f48d3bc4c68ab70ec80b85848c497bb02b7f46e6a1b457b15837ca146d2c",
+    "civilian-navigation.js": "785d6349bba11e916224d0993cec78551583c66aa62726af10230996fbbb2249"
+  },
+  "counts": {
+    "people": 2,
+    "renderedParts": 70,
+    "frames": 1801,
+    "staticColliders": 28308,
+    "dynamicObstacles": 284,
+    "satTests": 0,
+    "agreementChecks": 0
+  },
+  "maxMatrixOrthogonalityError": 6.318982331832146e-8,
+  "samples": [
+    {
+      "time": 0,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -90,
+          "z": -244,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90,
+          "z": -238,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        }
+      ]
+    },
+    {
+      "time": 0.8,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -90,
+          "z": -243.5450000000004,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90,
+          "z": -238.4549999999996,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        }
+      ]
+    },
+    {
+      "time": 1,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -90,
+          "z": -243.41500000000053,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90,
+          "z": -238.58499999999947,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        }
+      ]
+    },
+    {
+      "time": 2,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -89.96958363193164,
+          "z": -242.78466410738724,
+          "yaw": 0.5066666666666667,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90.03782124592996,
+          "z": -239.21179879557718,
+          "yaw": 3.7115926535897943,
+          "scale": 1.0120567231741735
+        }
+      ]
+    },
+    {
+      "time": 3,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -89.28269934101279,
+          "z": -242.33116467258898,
+          "yaw": 0.9944211062037129,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90.72896732565388,
+          "z": -239.66558532741104,
+          "yaw": 4.136013759793506,
+          "scale": 1.0120567231741735
+        }
+      ]
+    },
+    {
+      "time": 10,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -89.17208055791623,
+          "z": -237.82661857916057,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90.83958610875044,
+          "z": -244.17013142083945,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        }
+      ]
+    },
+    {
+      "time": 20,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -89.17208055791623,
+          "z": -231.32661857916648,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90.83958610875044,
+          "z": -250.67013142083354,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        }
+      ]
+    },
+    {
+      "time": 30,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": -89.17208055791623,
+          "z": -224.8266185791724,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-002",
+          "x": -90.83958610875044,
+          "z": -257.17013142082766,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "checks": [
+    {
+      "test": "Both pedestrians pass one another and continue on their original side of travel",
+      "pass": true,
+      "final": [
+        {
+          "id": "CIV-001",
+          "x": -89.17208055791623,
+          "z": -224.8266185791724
+        },
+        {
+          "id": "CIV-002",
+          "x": -90.83958610875044,
+          "z": -257.17013142082766
+        }
+      ]
+    }
+  ],
+  "progress": [
+    {
+      "id": "CIV-001",
+      "initial": {
+        "x": -90,
+        "z": -244
+      },
+      "totalDistance": 19.60258620895322,
+      "lastTenSecondsDistance": 6.510833333327412,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1728,
+        "pass": 73
+      },
+      "final": {
+        "x": -89.17208055791623,
+        "z": -224.8266185791724
+      }
+    },
+    {
+      "id": "CIV-002",
+      "initial": {
+        "x": -90,
+        "z": -238
+      },
+      "totalDistance": 19.605667546135457,
+      "lastTenSecondsDistance": 6.51083333332744,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1727,
+        "pass": 74
+      },
+      "final": {
+        "x": -90.83958610875044,
+        "z": -257.17013142082766
+      }
+    }
+  ],
+  "navigation": {
+    "staticObstacles": 28308,
+    "dynamicObstacles": 284,
+    "crowdActors": 2,
+    "spawnCorrections": []
+  },
+  "reportedPairFindings": [
+    {
+      "pair": "CIV-003/CIV-019",
+      "body": null,
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-014/CIV-030",
+      "body": null,
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-017/CIV-021",
+      "body": null,
+      "umbrella": null
+    }
+  ],
+  "durationMs": 2157.5977,
+  "limits": "Production navigation and rendering math are exercised without a GPU. Traffic advances normally; undamaged dynamic bins and parked car retain their initial poses. This establishes geometric body overlap, not a new performance or image-quality result."
+}

@@ -1,0 +1,959 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T08:35:00.882Z",
+  "initializationMs": 92.21349999999984,
+  "siteCount": 15,
+  "sites": [
+    {
+      "id": "SERVICE-B049",
+      "type": "food",
+      "label": "Street kitchen / 049",
+      "district": "Lantern Market",
+      "description": "Restore 25 health and boost neural regeneration for 45 seconds.",
+      "actionLabel": "ORDER RECOVERY MEAL",
+      "duration": 2.4,
+      "cooldown": 90,
+      "assemblyId": "STREET-CRAFT-B049-FRONT",
+      "hostBuilding": "B049",
+      "sourceBoxId": "STREET-CRAFT-B049-FRONT-040",
+      "sourceIndex": 155191,
+      "target": {
+        "x": -116.93,
+        "y": 1.645,
+        "z": 124.535
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "approach": {
+        "x": -116.93,
+        "y": 1.807,
+        "z": 126.13499999999999
+      },
+      "inspectionVantage": {
+        "x": -118.4,
+        "y": 1.935,
+        "z": 129.07
+      },
+      "terminalBounds": {
+        "x": -116.93,
+        "y": 1.645,
+        "z": 124.485,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 0
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B049-FRONT-040",
+        "STREET-CRAFT-B049-FRONT-039"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B042",
+      "type": "food",
+      "label": "Street kitchen / 042",
+      "district": "Lantern Market",
+      "description": "Restore 25 health and boost neural regeneration for 45 seconds.",
+      "actionLabel": "ORDER RECOVERY MEAL",
+      "duration": 2.4,
+      "cooldown": 90,
+      "assemblyId": "STREET-CRAFT-B042-FRONT",
+      "hostBuilding": "B042",
+      "sourceBoxId": "STREET-CRAFT-B042-FRONT-040",
+      "sourceIndex": 154903,
+      "target": {
+        "x": -283.07,
+        "y": 1.645,
+        "z": 65.465
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": -1
+      },
+      "approach": {
+        "x": -283.07,
+        "y": 1.807,
+        "z": 63.865
+      },
+      "inspectionVantage": {
+        "x": -281.6,
+        "y": 1.935,
+        "z": 60.93000000000001
+      },
+      "terminalBounds": {
+        "x": -283.07,
+        "y": 1.645,
+        "z": 65.515,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 3.141592653589793
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B042-FRONT-040",
+        "STREET-CRAFT-B042-FRONT-039"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B046",
+      "type": "food",
+      "label": "Street kitchen / 046",
+      "district": "Lantern Market",
+      "description": "Restore 25 health and boost neural regeneration for 45 seconds.",
+      "actionLabel": "ORDER RECOVERY MEAL",
+      "duration": 2.4,
+      "cooldown": 90,
+      "assemblyId": "STREET-CRAFT-B046-FRONT",
+      "hostBuilding": "B046",
+      "sourceBoxId": "STREET-CRAFT-B046-FRONT-040",
+      "sourceIndex": 155118,
+      "target": {
+        "x": -183.07000000000002,
+        "y": 1.645,
+        "z": 65.465
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": -1
+      },
+      "approach": {
+        "x": -183.07000000000002,
+        "y": 1.807,
+        "z": 63.865
+      },
+      "inspectionVantage": {
+        "x": -181.60000000000002,
+        "y": 1.935,
+        "z": 60.93000000000001
+      },
+      "terminalBounds": {
+        "x": -183.07000000000002,
+        "y": 1.645,
+        "z": 65.515,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 3.141592653589793
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B046-FRONT-040",
+        "STREET-CRAFT-B046-FRONT-039"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B110",
+      "type": "clinic",
+      "label": "Public clinic / 110",
+      "district": "Meridian East",
+      "description": "Use the exterior diagnostic terminal to restore health.",
+      "actionLabel": "START MEDICAL SCAN",
+      "duration": 4.5,
+      "cooldown": 120,
+      "assemblyId": "STREET-CRAFT-B110-FRONT",
+      "hostBuilding": "B110",
+      "sourceBoxId": "STREET-CRAFT-B110-FRONT-033",
+      "sourceIndex": 157974,
+      "target": {
+        "x": 225.46499999999997,
+        "y": 1.645,
+        "z": -275.03000000000003
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": 223.86499999999998,
+        "y": 1.807,
+        "z": -275.03000000000003
+      },
+      "inspectionVantage": {
+        "x": 220.92999999999998,
+        "y": 1.935,
+        "z": -276.5
+      },
+      "terminalBounds": {
+        "x": 225.515,
+        "y": 1.645,
+        "z": -275.03000000000003,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": -1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B110-FRONT-033",
+        "STREET-CRAFT-B110-FRONT-032"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B166",
+      "type": "clinic",
+      "label": "Public clinic / 166",
+      "district": "Meridian East",
+      "description": "Use the exterior diagnostic terminal to restore health.",
+      "actionLabel": "START MEDICAL SCAN",
+      "duration": 4.5,
+      "cooldown": 120,
+      "assemblyId": "STREET-CRAFT-B166-FRONT",
+      "hostBuilding": "B166",
+      "sourceBoxId": "STREET-CRAFT-B166-FRONT-033",
+      "sourceIndex": 159894,
+      "target": {
+        "x": 225.46499999999997,
+        "y": 1.645,
+        "z": -515.03
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": 223.86499999999998,
+        "y": 1.807,
+        "z": -515.03
+      },
+      "inspectionVantage": {
+        "x": 220.92999999999998,
+        "y": 1.935,
+        "z": -516.5
+      },
+      "terminalBounds": {
+        "x": 225.515,
+        "y": 1.645,
+        "z": -515.03,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": -1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B166-FRONT-033",
+        "STREET-CRAFT-B166-FRONT-032"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B106",
+      "type": "clinic",
+      "label": "Public clinic / 106",
+      "district": "Meridian East",
+      "description": "Use the exterior diagnostic terminal to restore health.",
+      "actionLabel": "START MEDICAL SCAN",
+      "duration": 4.5,
+      "cooldown": 120,
+      "assemblyId": "STREET-CRAFT-B106-FRONT",
+      "hostBuilding": "B106",
+      "sourceBoxId": "STREET-CRAFT-B106-FRONT-033",
+      "sourceIndex": 157787,
+      "target": {
+        "x": 105.465,
+        "y": 1.645,
+        "z": -275.03000000000003
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": 103.86500000000001,
+        "y": 1.807,
+        "z": -275.03000000000003
+      },
+      "inspectionVantage": {
+        "x": 100.93,
+        "y": 1.935,
+        "z": -276.5
+      },
+      "terminalBounds": {
+        "x": 105.515,
+        "y": 1.645,
+        "z": -275.03000000000003,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": -1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B106-FRONT-033",
+        "STREET-CRAFT-B106-FRONT-032"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B062",
+      "type": "garage",
+      "label": "Dockside garage / 062",
+      "district": "Iron Docks",
+      "description": "Park in the service apron, exit, and use the diagnostic panel.",
+      "actionLabel": "START INTERCEPTOR REPAIR",
+      "duration": 5.5,
+      "cooldown": 90,
+      "assemblyId": "STREET-CRAFT-B062-FRONT",
+      "hostBuilding": "B062",
+      "sourceBoxId": "STREET-CRAFT-B062-FRONT-042",
+      "sourceIndex": 155860,
+      "target": {
+        "x": 225.46499999999997,
+        "y": 1.645,
+        "z": 75.57
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": 223.86499999999998,
+        "y": 1.807,
+        "z": 75.57
+      },
+      "inspectionVantage": {
+        "x": 220.92999999999998,
+        "y": 1.935,
+        "z": 74.1
+      },
+      "terminalBounds": {
+        "x": 225.515,
+        "y": 1.645,
+        "z": 75.57,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": -1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B062-FRONT-042",
+        "STREET-CRAFT-B062-FRONT-041"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0,
+      "parking": {
+        "x": 222,
+        "y": 0.065,
+        "z": 75.57,
+        "yaw": -3.141592653589793,
+        "halfWidth": 1.45,
+        "halfLength": 2.64,
+        "positionTolerance": 1.05,
+        "yawTolerance": 0.3,
+        "road": "Avenue 210",
+        "clearance": "65 oriented car footprints from the adjacent road lane"
+      }
+    },
+    {
+      "id": "SERVICE-B090",
+      "type": "garage",
+      "label": "Dockside garage / 090",
+      "district": "Iron Docks",
+      "description": "Park in the service apron, exit, and use the diagnostic panel.",
+      "actionLabel": "START INTERCEPTOR REPAIR",
+      "duration": 5.5,
+      "cooldown": 90,
+      "assemblyId": "STREET-CRAFT-B090-FRONT",
+      "hostBuilding": "B090",
+      "sourceBoxId": "STREET-CRAFT-B090-FRONT-042",
+      "sourceIndex": 157073,
+      "target": {
+        "x": 116.93,
+        "y": 1.645,
+        "z": -164.53500000000003
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "y": 0,
+        "z": -1
+      },
+      "approach": {
+        "x": 116.93,
+        "y": 1.807,
+        "z": -166.13500000000002
+      },
+      "inspectionVantage": {
+        "x": 118.4,
+        "y": 1.935,
+        "z": -169.07000000000002
+      },
+      "terminalBounds": {
+        "x": 116.93,
+        "y": 1.645,
+        "z": -164.485,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 3.141592653589793
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B090-FRONT-042",
+        "STREET-CRAFT-B090-FRONT-041"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0,
+      "parking": {
+        "x": 116.93,
+        "y": 0.065,
+        "z": -168,
+        "yaw": 1.5707963267948966,
+        "halfWidth": 1.45,
+        "halfLength": 2.64,
+        "positionTolerance": 1.05,
+        "yawTolerance": 0.3,
+        "road": "Crossway -180",
+        "clearance": "65 oriented car footprints from the adjacent road lane"
+      }
+    },
+    {
+      "id": "SERVICE-B054",
+      "type": "garage",
+      "label": "Dockside garage / 054",
+      "district": "Iron Docks",
+      "description": "Park in the service apron, exit, and use the diagnostic panel.",
+      "actionLabel": "START INTERCEPTOR REPAIR",
+      "duration": 5.5,
+      "cooldown": 90,
+      "assemblyId": "STREET-CRAFT-B054-FRONT",
+      "hostBuilding": "B054",
+      "sourceBoxId": "STREET-CRAFT-B054-FRONT-042",
+      "sourceIndex": 155486,
+      "target": {
+        "x": 15.465000000000002,
+        "y": 1.645,
+        "z": 75.57
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": 13.865000000000002,
+        "y": 1.807,
+        "z": 75.57
+      },
+      "inspectionVantage": {
+        "x": 10.930000000000003,
+        "y": 1.935,
+        "z": 74.1
+      },
+      "terminalBounds": {
+        "x": 15.515000000000002,
+        "y": 1.645,
+        "z": 75.57,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": -1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B054-FRONT-042",
+        "STREET-CRAFT-B054-FRONT-041"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0,
+      "parking": {
+        "x": 12.000000000000004,
+        "y": 0.065,
+        "z": 75.57,
+        "yaw": -3.141592653589793,
+        "halfWidth": 1.45,
+        "halfLength": 2.64,
+        "positionTolerance": 1.05,
+        "yawTolerance": 0.3,
+        "road": "Kasumi Avenue",
+        "clearance": "65 oriented car footprints from the adjacent road lane"
+      }
+    },
+    {
+      "id": "SERVICE-B101",
+      "type": "recharge",
+      "label": "Neural utility / 101",
+      "district": "Stacktown",
+      "description": "Recharge 60 neural energy at the public utility interface.",
+      "actionLabel": "RECHARGE NEURAL ENERGY",
+      "duration": 3,
+      "cooldown": 45,
+      "assemblyId": "STREET-CRAFT-B101-FRONT",
+      "hostBuilding": "B101",
+      "sourceBoxId": "STREET-CRAFT-B101-FRONT-035",
+      "sourceIndex": 157515,
+      "target": {
+        "x": -225.46499999999997,
+        "y": 1.645,
+        "z": -206.97
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": -223.86499999999998,
+        "y": 1.807,
+        "z": -206.97
+      },
+      "inspectionVantage": {
+        "x": -220.92999999999998,
+        "y": 1.935,
+        "z": -205.5
+      },
+      "terminalBounds": {
+        "x": -225.515,
+        "y": 1.645,
+        "z": -206.97,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B101-FRONT-035",
+        "STREET-CRAFT-B101-FRONT-034"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B142",
+      "type": "recharge",
+      "label": "Neural utility / 142",
+      "district": "Stacktown",
+      "description": "Recharge 60 neural energy at the public utility interface.",
+      "actionLabel": "RECHARGE NEURAL ENERGY",
+      "duration": 3,
+      "cooldown": 45,
+      "assemblyId": "STREET-CRAFT-B142-FRONT",
+      "hostBuilding": "B142",
+      "sourceBoxId": "STREET-CRAFT-B142-FRONT-035",
+      "sourceIndex": 159049,
+      "target": {
+        "x": -294.535,
+        "y": 1.645,
+        "z": -513.03
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": -296.13500000000005,
+        "y": 1.807,
+        "z": -513.03
+      },
+      "inspectionVantage": {
+        "x": -299.07,
+        "y": 1.935,
+        "z": -514.5
+      },
+      "terminalBounds": {
+        "x": -294.485,
+        "y": 1.645,
+        "z": -513.03,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": -1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B142-FRONT-035",
+        "STREET-CRAFT-B142-FRONT-034"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B073",
+      "type": "recharge",
+      "label": "Neural utility / 073",
+      "district": "Stacktown",
+      "description": "Recharge 60 neural energy at the public utility interface.",
+      "actionLabel": "RECHARGE NEURAL ENERGY",
+      "duration": 3,
+      "cooldown": 45,
+      "assemblyId": "STREET-CRAFT-B073-FRONT",
+      "hostBuilding": "B073",
+      "sourceBoxId": "STREET-CRAFT-B073-FRONT-035",
+      "sourceIndex": 156283,
+      "target": {
+        "x": -105.465,
+        "y": 1.645,
+        "z": 23.029999999999998
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": -103.86500000000001,
+        "y": 1.807,
+        "z": 23.029999999999998
+      },
+      "inspectionVantage": {
+        "x": -100.93,
+        "y": 1.935,
+        "z": 24.499999999999996
+      },
+      "terminalBounds": {
+        "x": -105.515,
+        "y": 1.645,
+        "z": 23.029999999999998,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B073-FRONT-035",
+        "STREET-CRAFT-B073-FRONT-034"
+      ],
+      "range": 3.15,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B154",
+      "type": "wayfinding",
+      "label": "City directory / 154",
+      "district": "Crown Plaza",
+      "description": "Set a navigation waypoint to a food, clinic, recharge, or repair stop.",
+      "actionLabel": "LOCATE ANOTHER SERVICE",
+      "duration": 1.1,
+      "cooldown": 8,
+      "assemblyId": "STREET-CRAFT-B154-FRONT",
+      "hostBuilding": "B154",
+      "sourceBoxId": "STREET-CRAFT-B154-FRONT-037",
+      "sourceIndex": 159443,
+      "target": {
+        "x": -22.630000000000003,
+        "y": 1.645,
+        "z": -435.465
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "approach": {
+        "x": -22.630000000000003,
+        "y": 1.807,
+        "z": -433.86499999999995
+      },
+      "inspectionVantage": {
+        "x": -24.1,
+        "y": 1.935,
+        "z": -430.93
+      },
+      "terminalBounds": {
+        "x": -22.630000000000003,
+        "y": 1.645,
+        "z": -435.515,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 0
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B154-FRONT-037",
+        "STREET-CRAFT-B154-FRONT-036"
+      ],
+      "range": 3.15,
+      "destinationCursor": 0,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B136",
+      "type": "wayfinding",
+      "label": "City directory / 136",
+      "district": "Crown Plaza",
+      "description": "Set a navigation waypoint to a food, clinic, recharge, or repair stop.",
+      "actionLabel": "LOCATE ANOTHER SERVICE",
+      "duration": 1.1,
+      "cooldown": 8,
+      "assemblyId": "STREET-CRAFT-B136-FRONT",
+      "hostBuilding": "B136",
+      "sourceBoxId": "STREET-CRAFT-B136-FRONT-037",
+      "sourceIndex": 158802,
+      "target": {
+        "x": 194.53500000000003,
+        "y": 1.645,
+        "z": -330.37
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": 196.13500000000002,
+        "y": 1.807,
+        "z": -330.37
+      },
+      "inspectionVantage": {
+        "x": 199.07000000000002,
+        "y": 1.935,
+        "z": -328.9
+      },
+      "terminalBounds": {
+        "x": 194.485,
+        "y": 1.645,
+        "z": -330.37,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": 1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B136-FRONT-037",
+        "STREET-CRAFT-B136-FRONT-036"
+      ],
+      "range": 3.15,
+      "destinationCursor": 3,
+      "cooldownRemaining": 0
+    },
+    {
+      "id": "SERVICE-B146",
+      "type": "wayfinding",
+      "label": "City directory / 146",
+      "district": "Crown Plaza",
+      "description": "Set a navigation waypoint to a food, clinic, recharge, or repair stop.",
+      "actionLabel": "LOCATE ANOTHER SERVICE",
+      "duration": 1.1,
+      "cooldown": 8,
+      "assemblyId": "STREET-CRAFT-B146-FRONT",
+      "hostBuilding": "B146",
+      "sourceBoxId": "STREET-CRAFT-B146-FRONT-037",
+      "sourceIndex": 159251,
+      "target": {
+        "x": -194.53500000000003,
+        "y": 1.645,
+        "z": -513.03
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 6.123233995736766e-17
+      },
+      "approach": {
+        "x": -196.13500000000002,
+        "y": 1.807,
+        "z": -513.03
+      },
+      "inspectionVantage": {
+        "x": -199.07000000000002,
+        "y": 1.935,
+        "z": -514.5
+      },
+      "terminalBounds": {
+        "x": -194.485,
+        "y": 1.645,
+        "z": -513.03,
+        "sx": 0.19,
+        "sy": 0.2,
+        "sz": 0.05,
+        "ry": -1.5707963267948966
+      },
+      "ignoreBoxIds": [
+        "STREET-CRAFT-B146-FRONT-037",
+        "STREET-CRAFT-B146-FRONT-036"
+      ],
+      "range": 3.15,
+      "destinationCursor": 6,
+      "cooldownRemaining": 0
+    }
+  ],
+  "tests": [
+    {
+      "name": "Fifteen deterministic sites use real access screens across all five outer districts",
+      "passed": true,
+      "count": 15,
+      "initializationMs": 92.21349999999984,
+      "types": {
+        "food": [
+          "SERVICE-B049",
+          "SERVICE-B042",
+          "SERVICE-B046"
+        ],
+        "clinic": [
+          "SERVICE-B110",
+          "SERVICE-B166",
+          "SERVICE-B106"
+        ],
+        "garage": [
+          "SERVICE-B062",
+          "SERVICE-B090",
+          "SERVICE-B054"
+        ],
+        "recharge": [
+          "SERVICE-B101",
+          "SERVICE-B142",
+          "SERVICE-B073"
+        ],
+        "wayfinding": [
+          "SERVICE-B154",
+          "SERVICE-B136",
+          "SERVICE-B146"
+        ]
+      }
+    },
+    {
+      "name": "All selected screens are visible from their standing position and recorded inspection viewpoint",
+      "passed": true,
+      "clearRays": 30
+    },
+    {
+      "name": "Proximity, outward side and looking at the actual screen all gate discovery and begin",
+      "passed": true,
+      "site": "SERVICE-B049"
+    },
+    {
+      "name": "A live obstacle or caller line-of-sight veto blocks the screen without ignoring its whole host building",
+      "passed": true,
+      "callerLOSInvoked": true
+    },
+    {
+      "name": "Food progress emits a single modest heal plus a timed neural benefit, without mutating caller state",
+      "passed": true,
+      "event": {
+        "type": "completed",
+        "id": "SERVICE-B049",
+        "eventId": "5:1",
+        "outcome": {
+          "healthDelta": 25,
+          "neuralBoost": {
+            "duration": 45,
+            "regenerationMultiplier": 1.3
+          }
+        }
+      }
+    },
+    {
+      "name": "Clinics, recharge terminals and garages emit their named effects only after their full durations",
+      "passed": true,
+      "outcomes": {
+        "clinic": {
+          "healthRestore": 100
+        },
+        "recharge": {
+          "energyDelta": 60
+        },
+        "garage": {
+          "repairVehicle": true,
+          "integrityRestore": 100
+        }
+      }
+    },
+    {
+      "name": "Movement, damage, death, driving, turning away and caller interruptions cancel without outcomes",
+      "passed": true,
+      "cancellationCases": 10
+    },
+    {
+      "name": "Cooldown starts only at successful completion and cannot be bypassed with repeat interaction",
+      "passed": true,
+      "cooldownSeconds": 45
+    },
+    {
+      "name": "Full-state clinics, recharge, repairs and already active recovery boosts do not consume service use",
+      "passed": true,
+      "checks": 4
+    },
+    {
+      "name": "Garage repair requires the actual nearby owned car, correct alignment, no motion and a clear apron",
+      "passed": true,
+      "site": "SERVICE-B062",
+      "reverseParkingAccepted": true
+    },
+    {
+      "name": "Every garage has a continuous swept oriented route from an actual public road lane",
+      "passed": true,
+      "checks": [
+        {
+          "id": "SERVICE-B062",
+          "road": "Avenue 210",
+          "park": {
+            "x": 222,
+            "z": 75.57,
+            "yaw": -3.141592653589793
+          },
+          "sweptPoses": 256
+        },
+        {
+          "id": "SERVICE-B090",
+          "road": "Crossway -180",
+          "park": {
+            "x": 116.93,
+            "z": -168,
+            "yaw": 1.5707963267948966
+          },
+          "sweptPoses": 256
+        },
+        {
+          "id": "SERVICE-B054",
+          "road": "Kasumi Avenue",
+          "park": {
+            "x": 12.000000000000004,
+            "z": 75.57,
+            "yaw": -3.141592653589793
+          },
+          "sweptPoses": 256
+        }
+      ],
+      "sweptPoses": 768
+    },
+    {
+      "name": "Crown directories create real destinations, preserve them in state and cycle between services",
+      "passed": true,
+      "first": {
+        "id": "SERVICE-B049",
+        "label": "Street kitchen / 049",
+        "district": "Lantern Market",
+        "x": -116.93,
+        "y": 1.807,
+        "z": 126.13499999999999,
+        "type": "food"
+      },
+      "second": {
+        "id": "SERVICE-B042",
+        "label": "Street kitchen / 042",
+        "district": "Lantern Market",
+        "x": -283.07,
+        "y": 1.807,
+        "z": 63.865,
+        "type": "food"
+      }
+    },
+    {
+      "name": "Reset clears progress, cooldowns, result and navigation; returned snapshots cannot mutate internals",
+      "passed": true,
+      "reset": true
+    },
+    {
+      "name": "Invalid input and delayed frames cannot instantly complete an operation or emit phantom effects",
+      "passed": true,
+      "delayedFrameClampedSeconds": 0.25
+    },
+    {
+      "name": "The service system never changes authored city geometry, blueprint or native asset placements",
+      "passed": true,
+      "layoutSHA256": "2f02468f947fdd10c8abb1576a92752df6b64f467c0ea7e18ba38bcbc73f6c9e"
+    }
+  ]
+}

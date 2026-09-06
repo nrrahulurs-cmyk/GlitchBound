@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T07:58:14.452436+00:00",
+  "nativeSHA256": "14c8c33b93fb46e5fc4a5c420fcdef91c2a65fb9c21617077c963f09713205b0",
+  "nativeBytes": 58646226,
+  "nativeVoxelModules": 158023,
+  "streetFrontages": 77,
+  "sourceFacadeRecordsRefit": 547,
+  "nativeFacadeFragments": 1413,
+  "svgFrontageMarks": 77,
+  "svgMaximumFootprintErrorMetres": 5.684341886080802e-14,
+  "svgLegendVerified": true,
+  "nativeFreshReopenVerified": true,
+  "preservedCameras": 5,
+  "packedImageCount": 17,
+  "nativeMaximumFrontageBoundsErrorMetres": 2.929687502728484e-05,
+  "nativeMaximumRefitBoundsErrorMetres": 2.6855468718167685e-05,
+  "previewImagesCurrent": false,
+  "preservedFiles": [
+    {
+      "file": "blender/cyberpunk-assets.blend",
+      "sha256": "448cf9405d221489e7742c85d1adfdac8518d9957857a4dcaa574e41a554fac0",
+      "unchanged": true
+    },
+    {
+      "file": "blender/pulse-carbine.blend",
+      "sha256": "e5e6e302653389ee46c8ec21a589a0b83e0247dc8640d72e793ae2b5e30b8f32",
+      "unchanged": true
+    },
+    {
+      "file": "blender/city-scene-preview.png",
+      "sha256": "15b676e43f050acd1ba19e70c304f8317ba93c9a8fb300edc83e84b860393808",
+      "unchanged": true
+    },
+    {
+      "file": "blender/city-aerial-preview.png",
+      "sha256": "8d47f89958fb8c125ac5282054eb95eaff4692213f6f15d7d076ccdfea1dd815",
+      "unchanged": true
+    },
+    {
+      "file": "blender/city-blueprint-preview.png",
+      "sha256": "5d1f45a3585bf7df746cacc5d63d489be24eaa2500f345dc89183b7735b6375a",
+      "unchanged": true
+    }
+  ]
+}

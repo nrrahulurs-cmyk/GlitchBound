@@ -1,0 +1,247 @@
+{
+  "physicalSamples": 1625,
+  "physicalSeconds": 27.227499999999615,
+  "episodes": [
+    {
+      "start": 25.37679999999969,
+      "startIndex": 1513,
+      "end": 27.227499999999615,
+      "duration": 1.8506999999999252
+    }
+  ],
+  "finalTailSleeping": 112,
+  "finalTailLength": 120,
+  "last120MaxPositionDrift": 0.0020273731447287007,
+  "last120MaxAngleDrift": 0.00633243783767023,
+  "lastState": {
+    "articulated": true,
+    "simplified": false,
+    "segments": 11,
+    "joints": 10,
+    "maxJointError": 0.005691075549312025,
+    "position": {
+      "x": 4.46117343619156,
+      "y": 0.3538964781428845,
+      "z": -99.89069820648334
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "speed": 0,
+    "sleeping": true,
+    "rest": {
+      "quietSeconds": 2,
+      "filteredEnergy": 3.3103163241105996e-9,
+      "poseStable": true
+    },
+    "frozen": false,
+    "correctionCount": 0
+  },
+  "checkpoints": [
+    {
+      "age": 10.003900000000014,
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.012681997081754496,
+        "position": {
+          "x": 4.437791464855321,
+          "y": 0.3535470118737146,
+          "z": -99.67678232444905
+        },
+        "velocity": {
+          "x": 0.005473444942866857,
+          "y": -0.0002555202122435786,
+          "z": -0.01256306926361165
+        },
+        "speed": 0.013706005962488253,
+        "sleeping": false,
+        "rest": {
+          "quietSeconds": 0.5500999999999985,
+          "filteredEnergy": 0.0014561848856750076,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      }
+    },
+    {
+      "age": 15.006099999999947,
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.007563145790931771,
+        "position": {
+          "x": 4.447415343618725,
+          "y": 0.35328600196965754,
+          "z": -99.74725929274506
+        },
+        "velocity": {
+          "x": -0.004147348902531873,
+          "y": 0.0006453130429599096,
+          "z": -0.012278120414181
+        },
+        "speed": 0.01297571472975091,
+        "sleeping": false,
+        "rest": {
+          "quietSeconds": 0.9171000000000016,
+          "filteredEnergy": 0.0010777828363853182,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      }
+    },
+    {
+      "age": 20.007999999999843,
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.005781811894552931,
+        "position": {
+          "x": 4.452336376576737,
+          "y": 0.3534051924469874,
+          "z": -99.81821499596919
+        },
+        "velocity": {
+          "x": 0.0036828002341939827,
+          "y": 0.0005500767378957589,
+          "z": -0.015577804197798584
+        },
+        "speed": 0.016016665870508272,
+        "sleeping": false,
+        "rest": {
+          "quietSeconds": 0.15000000000000713,
+          "filteredEnergy": 0.0006580866826242578,
+          "poseStable": false
+        },
+        "frozen": false,
+        "correctionCount": 0
+      }
+    },
+    {
+      "age": 23.00919999999978,
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.005721085473487468,
+        "position": {
+          "x": 4.457130673786858,
+          "y": 0.35373819309690013,
+          "z": -99.8593382502932
+        },
+        "velocity": {
+          "x": 0.003106064316001484,
+          "y": 0.00010492057133899141,
+          "z": -0.014316660322325715
+        },
+        "speed": 0.014650099202608947,
+        "sleeping": false,
+        "rest": {
+          "quietSeconds": 1.0169999999999997,
+          "filteredEnergy": 0.0003663233335742549,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      }
+    },
+    {
+      "age": 25.010099999999696,
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.005691308913148884,
+        "position": {
+          "x": 4.460818486667674,
+          "y": 0.35388493841276214,
+          "z": -99.88593946325928
+        },
+        "velocity": {
+          "x": 0.0006269570341212159,
+          "y": 0.00003443870116361531,
+          "z": -0.012826282300258599
+        },
+        "speed": 0.012841642371312904,
+        "sleeping": false,
+        "rest": {
+          "quietSeconds": 1.4339999999999995,
+          "filteredEnergy": 0.0002683930801790901,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      }
+    },
+    {
+      "age": 26.010499999999666,
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.005691075549312025,
+        "position": {
+          "x": 4.46117343619156,
+          "y": 0.3538964781428845,
+          "z": -99.89069820648334
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 0.00000491007134395156,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      }
+    },
+    {
+      "age": 27.010799999999627,
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.005691075549312025,
+        "position": {
+          "x": 4.46117343619156,
+          "y": 0.3538964781428845,
+          "z": -99.89069820648334
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.214896220630261e-8,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      }
+    }
+  ]
+}

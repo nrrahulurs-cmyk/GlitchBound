@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "checkedAtUTC": "2026-09-06T10:01:36.928Z",
+  "error": "AssertionError [ERR_ASSERTION]: First actual body shot did not injure\n\n100 !== 40\n",
+  "stack": "AssertionError [ERR_ASSERTION]: First actual body shot did not injure\n\n100 !== 40\n\n    at C:\\Users\\Admin\\Documents\\Codex\\2026-09-05\\alright-wipe-every\\work\\civilian-gait-browser.cjs:9:634",
+  "stages": [
+    {
+      "name": "walk-turn",
+      "travel": 12.187935779948376,
+      "turn": 3.141592653589793,
+      "target": "CIV-026",
+      "authoredEndpointSeconds": 20.61340625871952
+    },
+    {
+      "name": "proximity-stop",
+      "stopDistance": 0,
+      "footMatrixDrift": 0
+    }
+  ],
+  "errors": [],
+  "video": "gait-clips\\page@95276fdb73394f68e06dacf33524da52.webm"
+}

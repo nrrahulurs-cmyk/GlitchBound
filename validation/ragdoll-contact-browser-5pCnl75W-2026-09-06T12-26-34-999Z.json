@@ -1,0 +1,330 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T12:27:10.630Z",
+  "build": "/assets/index-5pCnl75W.js",
+  "restTimeoutMs": 35000,
+  "method": "Hardware Chrome production bundle. Real E/W/S/Space inputs cause impacts, deaths and the second contact that wakes the sleeping body. Test hooks only arrange initial poses and later observation cameras. Rendered RAF samples inspect actual Cannon segments, visible civilian bounds and owned hull alignment. Timing here is instrumented diagnostic data, not a performance benchmark. The longer diagnostic observation cap does not fix or dismiss late settling.",
+  "results": [
+    {
+      "test": "Actual forward W run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+      "pass": true,
+      "id": "CIV-041",
+      "metrics": {
+        "samples": 526,
+        "maxWholeBodyRise": 0.5375932607456395,
+        "maxUpVelocity": 3.200000000000001,
+        "maxJointError": 0.08395286206846429,
+        "displacement": 10.816190021521436,
+        "finalMinimumY": 0.04780661527016339,
+        "finalGround": 0.057,
+        "finalSpeed": 0,
+        "sleeping": true,
+        "segments": 11,
+        "joints": 10,
+        "maxLimbRelativeRotation": 0.43148436705568816,
+        "restPositionDrift": 0,
+        "restRotationDrift": 4.2146848510894035e-8,
+        "maxHullError": 1.1102230246251565e-16,
+        "settling": {
+          "firstSleepSeconds": 6.852700000000029,
+          "continuousSleepSeconds": 2.0007000000000037,
+          "observationSeconds": 8.83680000000003,
+          "quietResets": [
+            {
+              "seconds": 4.501800000000001,
+              "previousQuiet": 1.6508000000000007,
+              "quiet": 1.6009999999999995,
+              "energy": 0.00014437415204133732,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.518500000000002,
+              "previousQuiet": 1.6009999999999995,
+              "quiet": 1.5508999999999973,
+              "energy": 0.00014420240120504023,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.535100000000003,
+              "previousQuiet": 1.5508999999999973,
+              "quiet": 1.501099999999996,
+              "energy": 0.00014245332009646397,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.551800000000002,
+              "previousQuiet": 1.501099999999996,
+              "quiet": 1.4509999999999994,
+              "energy": 0.00014304099489838407,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.568500000000003,
+              "previousQuiet": 1.4509999999999994,
+              "quiet": 1.4008999999999971,
+              "energy": 0.00014534300884846415,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.585100000000003,
+              "previousQuiet": 1.4008999999999971,
+              "quiet": 1.351099999999996,
+              "energy": 0.0001446048081071971,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.601900000000002,
+              "previousQuiet": 1.351099999999996,
+              "quiet": 1.3006999999999982,
+              "energy": 0.00014559599296405296,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.618500000000003,
+              "previousQuiet": 1.3006999999999982,
+              "quiet": 1.250899999999997,
+              "energy": 0.00014385210710447782,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.635100000000003,
+              "previousQuiet": 1.250899999999997,
+              "quiet": 1.2010999999999958,
+              "energy": 0.00014305714471848306,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.651900000000002,
+              "previousQuiet": 1.2010999999999958,
+              "quiet": 1.150699999999998,
+              "energy": 0.0001409701049809814,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.668600000000003,
+              "previousQuiet": 1.150699999999998,
+              "quiet": 1.1005999999999958,
+              "energy": 0.00014144568440748769,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.685200000000002,
+              "previousQuiet": 1.1005999999999958,
+              "quiet": 1.0508000000000002,
+              "energy": 0.00014377123793976167,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.701800000000002,
+              "previousQuiet": 1.0508000000000002,
+              "quiet": 1.000999999999999,
+              "energy": 0.00014316822621873916,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.718500000000003,
+              "previousQuiet": 1.000999999999999,
+              "quiet": 0.9508999999999969,
+              "energy": 0.00014432313011919224,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.7352000000000025,
+              "previousQuiet": 0.9508999999999969,
+              "quiet": 0.9008000000000002,
+              "energy": 0.00014303098790595668,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.751900000000004,
+              "previousQuiet": 0.9008000000000002,
+              "quiet": 0.850699999999998,
+              "energy": 0.00014306004545513207,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.768500000000004,
+              "previousQuiet": 0.850699999999998,
+              "quiet": 0.800899999999997,
+              "energy": 0.0001402701443447369,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.785200000000003,
+              "previousQuiet": 0.800899999999997,
+              "quiet": 0.7508000000000002,
+              "energy": 0.00014028480331937542,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.801900000000004,
+              "previousQuiet": 0.7508000000000002,
+              "quiet": 0.7006999999999981,
+              "energy": 0.0001388002489096558,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.818500000000005,
+              "previousQuiet": 0.7006999999999981,
+              "quiet": 0.650899999999997,
+              "energy": 0.0001396306883560303,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.835300000000004,
+              "previousQuiet": 0.650899999999997,
+              "quiet": 0.6004999999999993,
+              "energy": 0.0001421738933064955,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.852000000000005,
+              "previousQuiet": 0.6004999999999993,
+              "quiet": 0.5503999999999971,
+              "energy": 0.0001416717223139013,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.868600000000005,
+              "previousQuiet": 0.5503999999999971,
+              "quiet": 0.500599999999996,
+              "energy": 0.00014285089117670608,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.885200000000004,
+              "previousQuiet": 0.500599999999996,
+              "quiet": 0.4508000000000004,
+              "energy": 0.00014101021258974998,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.901900000000005,
+              "previousQuiet": 0.4508000000000004,
+              "quiet": 0.4006999999999982,
+              "energy": 0.00014037662154642175,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.918600000000006,
+              "previousQuiet": 0.4006999999999982,
+              "quiet": 0.350599999999996,
+              "energy": 0.0001384464225002065,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.935300000000005,
+              "previousQuiet": 0.350599999999996,
+              "quiet": 0.3004999999999993,
+              "energy": 0.00013900686275621687,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.9519000000000055,
+              "previousQuiet": 0.3004999999999993,
+              "quiet": 0.25069999999999826,
+              "energy": 0.00013782488380713077,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.968600000000007,
+              "previousQuiet": 0.25069999999999826,
+              "quiet": 0.20059999999999606,
+              "energy": 0.00013876012889163815,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.985300000000006,
+              "previousQuiet": 0.20059999999999606,
+              "quiet": 0.15049999999999933,
+              "energy": 0.00014126417404074958,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.002000000000007,
+              "previousQuiet": 0.15049999999999933,
+              "quiet": 0.10039999999999714,
+              "energy": 0.0001399408753247045,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.018700000000006,
+              "previousQuiet": 0.10039999999999714,
+              "quiet": 0.050300000000000414,
+              "energy": 0.00013667389609909477,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.035400000000007,
+              "previousQuiet": 0.050300000000000414,
+              "quiet": 0.00019999999999822937,
+              "energy": 0.00013636157281425422,
+              "poseStable": false
+            }
+          ]
+        },
+        "timing": {
+          "instrumented": true,
+          "notPerformanceBenchmark": true,
+          "meanMs": 16.673166023166026,
+          "p95Ms": 16.799999999999272,
+          "fps": 59.97661143723875
+        }
+      }
+    },
+    {
+      "test": "A second actual W-driven car contact wakes and moves a previously sleeping physical corpse",
+      "pass": true,
+      "id": "CIV-041",
+      "before": {
+        "sleeping": true,
+        "position": {
+          "x": -0.6705984646261051,
+          "y": 0.38086738831205424,
+          "z": -110.81311388485688
+        }
+      },
+      "awakeSamples": 46,
+      "maxSpeed": 14.84813222280186,
+      "displacement": 3.598747764518531
+    },
+    {
+      "test": "Actual reverse S run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+      "pass": true,
+      "id": "CIV-041",
+      "metrics": {
+        "samples": 430,
+        "maxWholeBodyRise": 0.39611655294712506,
+        "maxUpVelocity": 3.200000000000001,
+        "maxJointError": 0.04494981602997076,
+        "displacement": 7.26271030638654,
+        "finalMinimumY": 0.049951840478330845,
+        "finalGround": 0.057,
+        "finalSpeed": 0,
+        "sleeping": true,
+        "segments": 11,
+        "joints": 10,
+        "maxLimbRelativeRotation": 0.9994021115793639,
+        "restPositionDrift": 0,
+        "restRotationDrift": 4.2146848510894035e-8,
+        "maxHullError": 1.1102230246251565e-16,
+        "settling": {
+          "firstSleepSeconds": 5.30210000000001,
+          "continuousSleepSeconds": 2.000800000000003,
+          "observationSeconds": 7.286200000000031,
+          "quietResets": []
+        },
+        "timing": {
+          "instrumented": true,
+          "notPerformanceBenchmark": true,
+          "meanMs": 16.910426540284362,
+          "p95Ms": 16.800000000000182,
+          "fps": 59.135113926179194
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "rawSamples": "ragdoll-contact-browser-5pCnl75W-2026-09-06T12-26-34-999Z-raw.json.gz",
+  "chromeClosed": true
+}

@@ -1,0 +1,13 @@
+# Physical settling review
+
+The first browser pass (`ragdoll-browser-initial.json`, build `B3oMqYxn`) verified real forward/reverse driving, gunshot transitions, articulated limbs, contact with pavement, bounded launches and correct car-hull synchronization. Its original test incorrectly treated low center-of-mass speed as proof of settling.
+
+Independent inspection of the recorded limb transforms found continuing arm motion: approximately 33 cm / 57 degrees for the forward impact and 41 cm / 63 degrees for the gunshot over a 1.8-second window. Those bodies were not fully at rest, despite low center-of-mass speed. The original passing status does not establish stable settling.
+
+The next browser pass (`jMsxbThJ`) added explicit per-limb position/rotation checks and native sleeping state. Passive joint damping reduced the oscillation, but the forward case still failed after approximately 15 seconds: final 1.8-second limb drift was 5.4 cm / 15.2 degrees. The preserved report is `ragdoll-browser-jMsxbThJ-rest-failure.json`.
+
+A longer strict run on the same build passed both actual forward and reverse driving cases with all eleven limbs sleeping, zero final position drift and car-hull error below 0.00001 m. Its gunshot observation timed out at 27 seconds. Inspection found continuous native sleep began at 25.3768 seconds: 112 of the required 120 sleeping frames were captured before the timeout. The final 120-frame position drift was 2.03 mm and rotation drift 0.00633 radians. See `ragdoll-gun-sleep-analysis.json`; the failed raw run remains preserved.
+
+The targeted actual-gunfire follow-up, `ragdoll-gun-rest-retest.json`, kept the same 120-frame sleep and per-limb position/rotation requirements with a 30-second observation cap. On unchanged `jMsxbThJ`, natural sleep began at 14.4559 seconds, persisted for the remainder of the observation, and final position drift was zero. No product code or sleep threshold changed between these runs. This establishes bounded successful cases, not uniformly fast settling for every contact pose. The follow-up screenshot also revealed a separate black-view obstruction. It was traced to the vapor edge shader and corrected independently; see `vapor-blackout-resolution.json` and the ten passing production browser cases on `CFxS5cfC`.
+
+Later results must state their build identifier and observed settling window. Ragdolls remain an approximation: box proxies, no collisions between a person's own limbs, limited joints, bounded extreme launch/spin, and a maximum of 24 jointed assemblies. Retired remains continue as dynamic compound bodies; they are not teleported to ground or turned permanently static.

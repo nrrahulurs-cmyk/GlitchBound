@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T08:59:41.140Z",
+  "build": "/assets/index-jMsxbThJ.js",
+  "method": "Actual E, WASD, Q, M, Escape inputs. Test hooks arrange locations, initial injury, and security reset after EMP. No direct service begin/update/completion/effect calls. Car damage comes from actual driving; mesh hashes compare raw Blender position buffers.",
+  "results": [
+    {
+      "test": "Fifteen real mounted services across five districts are present",
+      "pass": true
+    },
+    {
+      "test": "Actual E performs medical scan, reports progress, restores health only on completion, then enforces cooldown",
+      "pass": true,
+      "site": "SERVICE-B110"
+    },
+    {
+      "test": "Actual walking interrupts a service without granting its effect",
+      "pass": true,
+      "site": "SERVICE-B049"
+    },
+    {
+      "test": "Actual E food order restores 25 health and activates timed neural recovery HUD",
+      "pass": true,
+      "site": "SERVICE-B049"
+    },
+    {
+      "test": "Actual Q drains neural energy and actual E at a utility terminal restores it",
+      "pass": true,
+      "site": "SERVICE-B101"
+    },
+    {
+      "test": "Actual directory interaction sets a persistent destination and full map shows services",
+      "pass": true,
+      "site": "SERVICE-B154",
+      "waypoint": {
+        "id": "SERVICE-B049",
+        "label": "Street kitchen / 049",
+        "district": "Lantern Market",
+        "x": -116.93,
+        "y": 1.807,
+        "z": 126.13499999999999,
+        "type": "food"
+      }
+    },
+    {
+      "test": "Aligned projected apron keeps four ground brackets while its readable label avoids actual speed/E/service/status HUD; P hides and restores guidance",
+      "pass": true,
+      "parkingLayout": {
+        "visible": true,
+        "bounds": {
+          "x": 550.5625,
+          "y": 443.109375,
+          "width": 178.859375,
+          "height": 42.890625
+        },
+        "overlaps": [],
+        "brackets": "M541.96 545.95 L557.22 506.64 L587.02 506.64 M692.98 506.64 L722.78 506.64 L738.04 545.95 M792.33 685.69 L807.60 725.00 L747.26 725.00 M532.74 725.00 L472.40 725.00 L487.67 685.69"
+      }
+    },
+    {
+      "test": "Actual ram dents Blender bodywork; actual E garage service restores its exact original vertices and integrity",
+      "pass": true,
+      "site": "SERVICE-B062",
+      "damagedIntegrity": 85
+    },
+    {
+      "test": "Pausing cancels active service and resume cannot collect an unfinished outcome",
+      "pass": true
+    }
+  ],
+  "timing": {
+    "meanFrameMs": 16.672500000000035,
+    "p95FrameMs": 16.80000000000291,
+    "drawCalls": 125
+  },
+  "errors": []
+}

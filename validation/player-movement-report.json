@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T07:21:52.575Z",
+  "method": "Production player movement with actual OBB contacts and geometry fixtures for thin walls, corners, curbs, stairs, ledges, jump/ceiling, dynamic supports, teleports, timing, and current authored city bins.",
+  "results": [
+    {
+      "test": "Eye height follows real raised pavement and remains grounded while idle",
+      "pass": true,
+      "eyeY": 1.915
+    },
+    {
+      "test": "Acceleration, sprint, diagonal normalization, braking, and frame-rate consistency",
+      "pass": true,
+      "walkDistance": 4.9666666666666615,
+      "sprintDistance": 7.974320987654331,
+      "brakingDistance": 0.3612500000000036
+    },
+    {
+      "test": "High-speed dash cannot tunnel through a25mm-thick wall",
+      "pass": true,
+      "stoppedZ": 0.41400000000000003
+    },
+    {
+      "test": "Rotated OBB collision preserves tangential movement for smooth wall sliding",
+      "pass": true,
+      "position": [
+        4.317003553815736,
+        1.75,
+        4.96966311285092
+      ],
+      "normalDistance": -0.4615000000000006
+    },
+    {
+      "test": "Two perpendicular walls resolve a corner without jitter or penetration",
+      "pass": true,
+      "corner": [
+        0.4515,
+        1.75,
+        0.4515
+      ]
+    },
+    {
+      "test": "Real curb tops raise feet and descending curbs settle without hovering",
+      "pass": true,
+      "end": [
+        0,
+        1.75,
+        1.275555555555555
+      ]
+    },
+    {
+      "test": "Sequential20cm stairs climb using real tops and stop floating when the stairs end",
+      "pass": true,
+      "feetY": 0.6000000000000001
+    },
+    {
+      "test": "A50cm ledge blocks walking but can be jumped onto and supports landing",
+      "pass": true,
+      "landed": [
+        0,
+        2.25,
+        0.49774999999999975
+      ]
+    },
+    {
+      "test": "Jump uses pavement height, cannot double jump, and lands without falling through",
+      "pass": true,
+      "jumpHeight": 1.1375000000000024
+    },
+    {
+      "test": "A low ceiling stops the head instead of allowing an upward clip",
+      "pass": true,
+      "maximumHeadY": 1.9785
+    },
+    {
+      "test": "Walking off a tall platform causes a real fall and gravity remains active during air dashes",
+      "pass": true,
+      "finalY": 1.75
+    },
+    {
+      "test": "Dynamic props block walking; removed support causes a fall on the next update",
+      "pass": true,
+      "final": [
+        0,
+        1.75,
+        0
+      ]
+    },
+    {
+      "test": "External teleport clears old velocity and never sweeps across the intervening world",
+      "pass": true
+    },
+    {
+      "test": "World bounds and large frame gaps stay bounded; collider queries are shared by substeps",
+      "pass": true,
+      "queries": 1,
+      "z": -1.0256410256410255
+    },
+    {
+      "test": "The current authored city sidewalk and actual extracted bin stop the player at the visible footprint",
+      "pass": true,
+      "bin": "STREET-BIN-W-01",
+      "player": [
+        -14.4,
+        1.915,
+        34.7615
+      ],
+      "visibleBinFront": 34.36
+    }
+  ]
+}

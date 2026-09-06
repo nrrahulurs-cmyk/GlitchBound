@@ -1,0 +1,315 @@
+{
+  "source": "ragdoll-contact-browser-5pCnl75W-2026-09-06T12-26-34-999Z.json",
+  "build": "/assets/index-5pCnl75W.js",
+  "sourceStatus": "passed",
+  "checkedAtUTC": "2026-09-06T12:28:55.138Z",
+  "note": "Read-only analysis of actual per-RAF native physics samples. Quiet anchors are approximated by the first positive quiet-time sample, so limb attribution is diagnostic rather than an exact internal guard trace. Kinematic velocities are sampled after frame cleanup, so they do not represent solver contact hints. Reruns have different impact/stride trajectories; longer observation does not fix a prior late-settling limitation.",
+  "results": [
+    {
+      "name": "Actual forward W run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+      "physicalSamples": 526,
+      "observedSeconds": 8.83680000000003,
+      "firstSleepSeconds": 6.852700000000029,
+      "longestSleepingSeconds": 2.0007000000000037,
+      "finalSleeping": true,
+      "finalSpeed": 0,
+      "quietResetEpisodes": 1,
+      "quietResets": [
+        {
+          "startSeconds": 4.501800000000001,
+          "endSeconds": 5.035400000000007,
+          "previousQuiet": 1.6508000000000007,
+          "energyMax": 0.00014559599296405296,
+          "poseDriftFrames": 33,
+          "approximateAnchorViolations": {
+            "upperArmR": 33,
+            "forearmR": 33
+          }
+        }
+      ],
+      "contactPartnersAvailable": true,
+      "contactPartners": [
+        {
+          "id": 2244,
+          "kind": "owned-car",
+          "shapeTypes": [
+            4
+          ],
+          "firstSeconds": 0.033299999999999275,
+          "lastSeconds": 0.11669999999999892,
+          "samples": 3,
+          "maxForce": 1403.8076823795136,
+          "postFrameMaxSpeed": 0
+        },
+        {
+          "id": 0,
+          "kind": "static",
+          "shapeTypes": [
+            2
+          ],
+          "firstSeconds": 0.033299999999999275,
+          "lastSeconds": 6.852700000000029,
+          "samples": 2197,
+          "maxForce": 12791.730387953638,
+          "postFrameMaxSpeed": 0
+        }
+      ],
+      "lastSixAwakeSecondsLimbMotion": [
+        {
+          "name": "shinL",
+          "maxPositionDrift1_8s": 7.949338553736095,
+          "maxRotationDrift1_8s": 3.119196714575331,
+          "maxSpeed": 0.1766753553398792,
+          "maxAngularSpeed": 1.197460514321194
+        },
+        {
+          "name": "shinR",
+          "maxPositionDrift1_8s": 7.7712163394871245,
+          "maxRotationDrift1_8s": 3.114347296767566,
+          "maxSpeed": 0.16275599291325665,
+          "maxAngularSpeed": 0.7261121322592579
+        },
+        {
+          "name": "thighL",
+          "maxPositionDrift1_8s": 7.27622039717,
+          "maxRotationDrift1_8s": 3.0893691399523746,
+          "maxSpeed": 0.4415892348743597,
+          "maxAngularSpeed": 1.1676186782103748
+        },
+        {
+          "name": "thighR",
+          "maxPositionDrift1_8s": 7.080808285167749,
+          "maxRotationDrift1_8s": 3.1231210756748484,
+          "maxSpeed": 0.4227432870387055,
+          "maxAngularSpeed": 0.7461999884161246
+        },
+        {
+          "name": "forearmL",
+          "maxPositionDrift1_8s": 7.045832427798413,
+          "maxRotationDrift1_8s": 3.075311964479252,
+          "maxSpeed": 0.19233730911078614,
+          "maxAngularSpeed": 0.9445628804111907
+        },
+        {
+          "name": "upperArmL",
+          "maxPositionDrift1_8s": 7.020384148720959,
+          "maxRotationDrift1_8s": 3.078231219610839,
+          "maxSpeed": 0.37571704182177784,
+          "maxAngularSpeed": 0.49623762994435744
+        },
+        {
+          "name": "pelvis",
+          "maxPositionDrift1_8s": 6.9034209309939065,
+          "maxRotationDrift1_8s": 3.139116392543529,
+          "maxSpeed": 0.48164531661150306,
+          "maxAngularSpeed": 1.3156450793993837
+        },
+        {
+          "name": "torso",
+          "maxPositionDrift1_8s": 6.793233563928459,
+          "maxRotationDrift1_8s": 3.1253445063961656,
+          "maxSpeed": 0.3425840268253445,
+          "maxAngularSpeed": 1.0988865221339499
+        },
+        {
+          "name": "head",
+          "maxPositionDrift1_8s": 6.590331099628076,
+          "maxRotationDrift1_8s": 3.1405562657752544,
+          "maxSpeed": 0.21214256240194165,
+          "maxAngularSpeed": 1.449183115050775
+        },
+        {
+          "name": "upperArmR",
+          "maxPositionDrift1_8s": 6.489002610088295,
+          "maxRotationDrift1_8s": 3.126139641218385,
+          "maxSpeed": 0.13164841850807135,
+          "maxAngularSpeed": 0.5137432554680524
+        },
+        {
+          "name": "forearmR",
+          "maxPositionDrift1_8s": 6.385626858412828,
+          "maxRotationDrift1_8s": 3.089303625488084,
+          "maxSpeed": 0.11437050906959721,
+          "maxAngularSpeed": 0.4819191601531512
+        }
+      ]
+    },
+    {
+      "name": "A second actual W-driven car contact wakes and moves a previously sleeping physical corpse",
+      "physicalSamples": 120,
+      "observedSeconds": 1.9842000000000033,
+      "firstSleepSeconds": 0,
+      "longestSleepingSeconds": 1.2170999999999985,
+      "finalSleeping": false,
+      "finalSpeed": 0.8142356701723317,
+      "quietResetEpisodes": 1,
+      "quietResets": [
+        {
+          "startSeconds": 1.2337999999999993,
+          "endSeconds": 1.2337999999999993,
+          "previousQuiet": 2,
+          "energyMax": 24.195750908867595,
+          "poseDriftFrames": 0,
+          "approximateAnchorViolations": {
+            "pelvis": 1,
+            "torso": 1,
+            "shinL": 1,
+            "thighL": 1,
+            "upperArmL": 1,
+            "forearmL": 1,
+            "shinR": 1,
+            "thighR": 1,
+            "upperArmR": 1,
+            "forearmR": 1,
+            "head": 1
+          }
+        }
+      ],
+      "contactPartnersAvailable": true,
+      "contactPartners": [
+        {
+          "id": 2244,
+          "kind": "owned-car",
+          "shapeTypes": [
+            4
+          ],
+          "firstSeconds": 1.2337999999999993,
+          "lastSeconds": 1.9842000000000033,
+          "samples": 155,
+          "maxForce": 24331.926652704562,
+          "postFrameMaxSpeed": 0
+        },
+        {
+          "id": 0,
+          "kind": "static",
+          "shapeTypes": [
+            2
+          ],
+          "firstSeconds": 1.2505000000000002,
+          "lastSeconds": 1.9842000000000033,
+          "samples": 161,
+          "maxForce": 13361.723123656542,
+          "postFrameMaxSpeed": 0
+        }
+      ],
+      "lastSixAwakeSecondsLimbMotion": []
+    },
+    {
+      "name": "Actual reverse S run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+      "physicalSamples": 430,
+      "observedSeconds": 7.286200000000031,
+      "firstSleepSeconds": 5.30210000000001,
+      "longestSleepingSeconds": 2.000800000000003,
+      "finalSleeping": true,
+      "finalSpeed": 0,
+      "quietResetEpisodes": 0,
+      "quietResets": [],
+      "contactPartnersAvailable": true,
+      "contactPartners": [
+        {
+          "id": 2244,
+          "kind": "owned-car",
+          "shapeTypes": [
+            4
+          ],
+          "firstSeconds": 0.016600000000000364,
+          "lastSeconds": 0.15000000000000002,
+          "samples": 8,
+          "maxForce": 2906.482108450816,
+          "postFrameMaxSpeed": 0
+        },
+        {
+          "id": 0,
+          "kind": "static",
+          "shapeTypes": [
+            2
+          ],
+          "firstSeconds": 0.03340000000000055,
+          "lastSeconds": 5.30210000000001,
+          "samples": 1522,
+          "maxForce": 10225.714952519753,
+          "postFrameMaxSpeed": 0
+        }
+      ],
+      "lastSixAwakeSecondsLimbMotion": [
+        {
+          "name": "shinR",
+          "maxPositionDrift1_8s": 5.800589036400328,
+          "maxRotationDrift1_8s": 3.091944209931801,
+          "maxSpeed": 0.18074563357295254,
+          "maxAngularSpeed": 1.4176441096949828
+        },
+        {
+          "name": "shinL",
+          "maxPositionDrift1_8s": 5.65048446598421,
+          "maxRotationDrift1_8s": 3.074820247776967,
+          "maxSpeed": 0.185277797945571,
+          "maxAngularSpeed": 1.3090263475687522
+        },
+        {
+          "name": "thighL",
+          "maxPositionDrift1_8s": 5.175460486362412,
+          "maxRotationDrift1_8s": 3.1210601819856643,
+          "maxSpeed": 0.2631845834727319,
+          "maxAngularSpeed": 1.3067745094994727
+        },
+        {
+          "name": "thighR",
+          "maxPositionDrift1_8s": 5.13674465516494,
+          "maxRotationDrift1_8s": 3.0873325217446403,
+          "maxSpeed": 0.1923333102212092,
+          "maxAngularSpeed": 1.4071214267894825
+        },
+        {
+          "name": "forearmL",
+          "maxPositionDrift1_8s": 4.898664084210937,
+          "maxRotationDrift1_8s": 3.0961425668278597,
+          "maxSpeed": 0.7987477588515792,
+          "maxAngularSpeed": 2.923238262432557
+        },
+        {
+          "name": "pelvis",
+          "maxPositionDrift1_8s": 4.845106285078661,
+          "maxRotationDrift1_8s": 3.1348632398898313,
+          "maxSpeed": 0.23448931510491988,
+          "maxAngularSpeed": 1.574071941003727
+        },
+        {
+          "name": "forearmR",
+          "maxPositionDrift1_8s": 4.725560326124453,
+          "maxRotationDrift1_8s": 3.095441791898345,
+          "maxSpeed": 0.14928178966211875,
+          "maxAngularSpeed": 0.746027692286237
+        },
+        {
+          "name": "torso",
+          "maxPositionDrift1_8s": 4.595872466439096,
+          "maxRotationDrift1_8s": 2.960946481535177,
+          "maxSpeed": 0.26016345025623544,
+          "maxAngularSpeed": 0.609896116358664
+        },
+        {
+          "name": "upperArmL",
+          "maxPositionDrift1_8s": 4.533703258545665,
+          "maxRotationDrift1_8s": 3.111928781618817,
+          "maxSpeed": 0.4140826016842383,
+          "maxAngularSpeed": 3.296694455485856
+        },
+        {
+          "name": "upperArmR",
+          "maxPositionDrift1_8s": 4.397508156134393,
+          "maxRotationDrift1_8s": 3.066911430746432,
+          "maxSpeed": 0.1490556567790418,
+          "maxAngularSpeed": 0.7677039288019472
+        },
+        {
+          "name": "head",
+          "maxPositionDrift1_8s": 4.0525296032409015,
+          "maxRotationDrift1_8s": 3.0634123848433723,
+          "maxSpeed": 0.9014172874592988,
+          "maxAngularSpeed": 5.000775097512316
+        }
+      ]
+    }
+  ]
+}

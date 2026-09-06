@@ -1,0 +1,5823 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T11:05:40.106Z",
+  "scenario": "original",
+  "seconds": 30,
+  "method": "Read-only CPU fixture extracts the exact authored284-person seed/template from city.js, then runs production civilian navigation/gait and reads actual InstancedMesh matrices at60Hz. Full static structures/street shapes, real supply/bin bounds, resting service parts, traffic routes, owned and parked initial vehicles are supplied. Each potential pair uses15-axis full3D OBB SAT; umbrella contacts are separate. Original scenario preserves the entire authored population; dedicated headon/follower scenarios place two exact existing templates on the clear -90m avenue only at fixture initialization. No browser, rendering, damage or production code edits.",
+  "sourceHashes": {
+    "city.js": "09b87cde5ea2a12726338da8435011c85040af948dde2cd0822e570da46dd902",
+    "civilians.js": "f9bcd16fba3ce2141f017457bf46d2da7b321e21bcfe6cf805015547d749b651",
+    "civilian-motion.js": "a002f48d3bc4c68ab70ec80b85848c497bb02b7f46e6a1b457b15837ca146d2c",
+    "civilian-navigation.js": "785d6349bba11e916224d0993cec78551583c66aa62726af10230996fbbb2249"
+  },
+  "counts": {
+    "people": 284,
+    "renderedParts": 14785,
+    "frames": 1801,
+    "staticColliders": 28308,
+    "dynamicObstacles": 284,
+    "satTests": 0,
+    "agreementChecks": 0
+  },
+  "maxMatrixOrthogonalityError": 9.298370790000732e-8,
+  "samples": [
+    {
+      "time": 0,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 13.784253734629601,
+          "z": -109.2979471385479,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.13619785010815,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.374897250905633,
+          "z": -99.59516586363316,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.889759676727099,
+          "z": -108.04524620850485,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 11.806791220366568,
+          "z": -99.54922479893766,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -13.302375826581498,
+          "z": -159.4900083930135,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 0.8,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 14.081357660750795,
+          "z": -109.21662535936902,
+          "yaw": 1.1518148401174264,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.13619785010815,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.388670069141217,
+          "z": -99.72014150429816,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.461285518800018,
+          "z": -108.17824863739112,
+          "yaw": 4.24671322587113,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 11.762758774604826,
+          "z": -99.18432256600806,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -12.907329374013473,
+          "z": -159.4160467710204,
+          "yaw": 1.3176599765297163,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 1,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 14.112711403720443,
+          "z": -109.17013163322962,
+          "yaw": 0.5034053990006158,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.13619785010815,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.388670069141217,
+          "z": -99.75678614334127,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.410917801438986,
+          "z": -108.25440078977064,
+          "yaw": 3.541958948950442,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 11.762758774604826,
+          "z": -99.06713043897395,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -12.792004144988214,
+          "z": -159.3832407504562,
+          "yaw": 1.2731811610272747,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 2,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 14.112711403720443,
+          "z": -108.82588693022436,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.13869785010814,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.388670069141217,
+          "z": -99.94000933855686,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.410917801438986,
+          "z": -108.81246184530742,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 11.762758774604826,
+          "z": -98.48116980380337,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -12.286613382749279,
+          "z": -159.1201093277741,
+          "yaw": 0.3853655844774355,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 3,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 14.112711403720443,
+          "z": -108.48007443140867,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.942281047755475,
+          "z": -158.38845238184277,
+          "yaw": 3.4582593202564604,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.388670069141217,
+          "z": -100.12323253377245,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.410917801438986,
+          "z": -109.37173490215177,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 11.762758774604826,
+          "z": -97.89520916863279,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -12.286613382749279,
+          "z": -158.61371754757627,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 10,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 14.112711403720443,
+          "z": -106.05938693969884,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.945822200834007,
+          "z": -159.54562871299842,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.468162472187174,
+          "z": -100.94472824585172,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.340392715107816,
+          "z": -110.69039507935891,
+          "yaw": 0,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 13.662150210962052,
+          "z": -94.73022029994405,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -12.286613382749279,
+          "z": -155.06218086325944,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 20,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 12.215462446438329,
+          "z": -105.37302540935225,
+          "yaw": -3.1415926535897936,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.945822200834007,
+          "z": -162.44374472658387,
+          "yaw": 0,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.468162472187174,
+          "z": -102.77696019800761,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.591455137280652,
+          "z": -107.04011190930036,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 13.662150210962052,
+          "z": -88.87061394823826,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -11.997340064729364,
+          "z": -150.19066108571278,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 30,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 11.972054952754139,
+          "z": -108.76097174101561,
+          "yaw": -2.082306631850409,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.924752609268376,
+          "z": -158.49254443242393,
+          "yaw": 3.082058880168045,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.468162472187174,
+          "z": -104.60919215016351,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 12.926507081774666,
+          "z": -111.40495442334716,
+          "yaw": 1.0100080925356534,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 13.662150210962052,
+          "z": -83.01100759653247,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -11.997340064729364,
+          "z": -145.11703725097445,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "checks": [],
+  "progress": [
+    {
+      "id": "CIV-001",
+      "initial": {
+        "x": 13.504376689903438,
+        "z": -76.8621567338705
+      },
+      "totalDistance": 13.160891991966679,
+      "lastTenSecondsDistance": 4.237314641412709,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 13.504376689903438,
+        "z": -64.75122172597321
+      }
+    },
+    {
+      "id": "CIV-002",
+      "initial": {
+        "x": -13.846324258483946,
+        "z": -103.41493789851665
+      },
+      "totalDistance": 10.07740987884209,
+      "lastTenSecondsDistance": 3.5063264375976644,
+      "currentStationary": 0,
+      "maxStationarySeconds": 1.6166666666666658,
+      "modeFrames": {
+        "walk": 1560,
+        "pass": 139,
+        "yield": 102
+      },
+      "final": {
+        "x": -12.922760664622128,
+        "z": -93.99292977572023
+      }
+    },
+    {
+      "id": "CIV-003",
+      "initial": {
+        "x": 13.784253734629601,
+        "z": -109.2979471385479
+      },
+      "totalDistance": 10.821059576299268,
+      "lastTenSecondsDistance": 3.5332405946506804,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.03333333333333333,
+      "modeFrames": {
+        "pass": 364,
+        "walk": 1407,
+        "follow": 30
+      },
+      "final": {
+        "x": 11.972054952754139,
+        "z": -108.76097174101561
+      }
+    },
+    {
+      "id": "CIV-004",
+      "initial": {
+        "x": -12.34697575122118,
+        "z": -0.30598850548267365
+      },
+      "totalDistance": 10.971998302145128,
+      "lastTenSecondsDistance": 3.7380746487172196,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -12.34697575122118,
+        "z": 1.2952727750399466
+      }
+    },
+    {
+      "id": "CIV-005",
+      "initial": {
+        "x": 12.04019576869905,
+        "z": -101.0668542534113
+      },
+      "totalDistance": 16.10121026797809,
+      "lastTenSecondsDistance": 5.41297968475979,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1486,
+        "pass": 315
+      },
+      "final": {
+        "x": 12.80650469833616,
+        "z": -89.63213149732795
+      }
+    },
+    {
+      "id": "CIV-006",
+      "initial": {
+        "x": -13.593897987622768,
+        "z": -118.91843837499619
+      },
+      "totalDistance": 12.338928719125079,
+      "lastTenSecondsDistance": 4.128161919751221,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -13.593897987622768,
+        "z": -106.5795096558711
+      }
+    },
+    {
+      "id": "CIV-007",
+      "initial": {
+        "x": 13.65599198359996,
+        "z": -23.749216362833977
+      },
+      "totalDistance": 17.92888868264118,
+      "lastTenSecondsDistance": 6.28025581999082,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1600,
+        "pass": 201
+      },
+      "final": {
+        "x": 13.116230143273375,
+        "z": -22.30777605625122
+      }
+    },
+    {
+      "id": "CIV-008",
+      "initial": {
+        "x": -12.879283959977329,
+        "z": -31.139252051711082
+      },
+      "totalDistance": 17.924572585282963,
+      "lastTenSecondsDistance": 6.122888570803376,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -12.879283959977329,
+        "z": -26.24044034752293
+      }
+    },
+    {
+      "id": "CIV-009",
+      "initial": {
+        "x": 13.144670573528856,
+        "z": -93.81975021958351
+      },
+      "totalDistance": 10.862270212807168,
+      "lastTenSecondsDistance": 3.471856971151581,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1510,
+        "pass": 291
+      },
+      "final": {
+        "x": 11.159905284529511,
+        "z": -103.4118934878801
+      }
+    },
+    {
+      "id": "CIV-010",
+      "initial": {
+        "x": -13.534853095188737,
+        "z": -147.75887788832188
+      },
+      "totalDistance": 10.566647060780829,
+      "lastTenSecondsDistance": 3.411458677871508,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1777,
+        "pass": 24
+      },
+      "final": {
+        "x": -13.629598874178399,
+        "z": -152.45563904215444
+      }
+    },
+    {
+      "id": "CIV-011",
+      "initial": {
+        "x": 12.074643455445766,
+        "z": -8.544342992866133
+      },
+      "totalDistance": 7.357751130670991,
+      "lastTenSecondsDistance": 2.504654444033438,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 12.074643455445766,
+        "z": -15.843086007441174
+      }
+    },
+    {
+      "id": "CIV-012",
+      "initial": {
+        "x": -12.109976245556027,
+        "z": -38.497928738594055
+      },
+      "totalDistance": 9.478723907628591,
+      "lastTenSecondsDistance": 3.0616344872399566,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "follow": 86,
+        "walk": 1715
+      },
+      "final": {
+        "x": -12.109976245556027,
+        "z": -42.97022323841311
+      }
+    },
+    {
+      "id": "CIV-013",
+      "initial": {
+        "x": 13.593889965675771,
+        "z": 10.943768754601479
+      },
+      "totalDistance": 6.432009136038445,
+      "lastTenSecondsDistance": 2.0593261691450415,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "pass": 183,
+        "walk": 1618
+      },
+      "final": {
+        "x": 13.090345043891249,
+        "z": 5.047889601002881
+      }
+    },
+    {
+      "id": "CIV-014",
+      "initial": {
+        "x": -13.918015924282372,
+        "z": -158.13619785010815
+      },
+      "totalDistance": 10.03477414567353,
+      "lastTenSecondsDistance": 4.899939903012647,
+      "currentStationary": 0,
+      "maxStationarySeconds": 2.8499999999999948,
+      "modeFrames": {
+        "yield": 300,
+        "walk": 623,
+        "pass": 196,
+        "follow": 682
+      },
+      "final": {
+        "x": -13.924752609268376,
+        "z": -158.49254443242393
+      }
+    },
+    {
+      "id": "CIV-015",
+      "initial": {
+        "x": 12.51519531226387,
+        "z": 12.109849118594298
+      },
+      "totalDistance": 14.797953698813853,
+      "lastTenSecondsDistance": 4.953117070344849,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 12.51519531226387,
+        "z": 26.90780281740815
+      }
+    },
+    {
+      "id": "CIV-016",
+      "initial": {
+        "x": -12.641609381884336,
+        "z": -100.53762920200825
+      },
+      "totalDistance": 11.8649576724283,
+      "lastTenSecondsDistance": 3.7517466248553006,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1559,
+        "pass": 242
+      },
+      "final": {
+        "x": -14.548196708498114,
+        "z": -101.75605458126124
+      }
+    },
+    {
+      "id": "CIV-017",
+      "initial": {
+        "x": 13.374897250905633,
+        "z": -99.59516586363316
+      },
+      "totalDistance": 5.725476099715185,
+      "lastTenSecondsDistance": 1.8352856720761537,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "pass": 223,
+        "walk": 1578
+      },
+      "final": {
+        "x": 13.468162472187174,
+        "z": -104.60919215016351
+      }
+    },
+    {
+      "id": "CIV-018",
+      "initial": {
+        "x": -13.408921193749507,
+        "z": -39.204516473125224
+      },
+      "totalDistance": 13.87272096256764,
+      "lastTenSecondsDistance": 4.64263975349143,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -13.408921193749507,
+        "z": -53.077237435692865
+      }
+    },
+    {
+      "id": "CIV-019",
+      "initial": {
+        "x": 12.889759676727099,
+        "z": -108.04524620850485
+      },
+      "totalDistance": 15.542996539410266,
+      "lastTenSecondsDistance": 5.346319828536345,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.13333333333333333,
+      "modeFrames": {
+        "pass": 283,
+        "walk": 1517,
+        "reverse": 1
+      },
+      "final": {
+        "x": 12.926507081774666,
+        "z": -111.40495442334716
+      }
+    },
+    {
+      "id": "CIV-020",
+      "initial": {
+        "x": -13.604270963929594,
+        "z": -126.44360183179379
+      },
+      "totalDistance": 5.480710580982475,
+      "lastTenSecondsDistance": 1.8313311403285866,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -13.604270963929594,
+        "z": -131.92431241277626
+      }
+    },
+    {
+      "id": "CIV-021",
+      "initial": {
+        "x": 11.806791220366568,
+        "z": -99.54922479893766
+      },
+      "totalDistance": 17.81745422236968,
+      "lastTenSecondsDistance": 5.869372362291969,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "pass": 185,
+        "walk": 1616
+      },
+      "final": {
+        "x": 13.662150210962052,
+        "z": -83.01100759653247
+      }
+    },
+    {
+      "id": "CIV-022",
+      "initial": {
+        "x": -13.084519563242793,
+        "z": -11.221694961190224
+      },
+      "totalDistance": 15.245443863069205,
+      "lastTenSecondsDistance": 5.202975513231943,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -13.084519563242793,
+        "z": -5.113123806858514
+      }
+    },
+    {
+      "id": "CIV-023",
+      "initial": {
+        "x": 13.565894615737433,
+        "z": -25.25555552756373
+      },
+      "totalDistance": 8.96199441984662,
+      "lastTenSecondsDistance": 3.1538313683177988,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.03333333333333333,
+      "modeFrames": {
+        "follow": 26,
+        "walk": 1574,
+        "pass": 201
+      },
+      "final": {
+        "x": 14.768379285082602,
+        "z": -16.983578227513593
+      }
+    },
+    {
+      "id": "CIV-024",
+      "initial": {
+        "x": -13.81313809985295,
+        "z": 10.891807079315186
+      },
+      "totalDistance": 14.494247872358022,
+      "lastTenSecondsDistance": 4.853122652097513,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -13.81313809985295,
+        "z": 12.214398573129058
+      }
+    },
+    {
+      "id": "CIV-025",
+      "initial": {
+        "x": 13.599280226044357,
+        "z": -10.477673158049583
+      },
+      "totalDistance": 17.693222551004176,
+      "lastTenSecondsDistance": 5.883287187141011,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1673,
+        "pass": 128
+      },
+      "final": {
+        "x": 12.428091530290489,
+        "z": -27.599140824652725
+      }
+    },
+    {
+      "id": "CIV-026",
+      "initial": {
+        "x": -12.670963526703417,
+        "z": 23.503492668271065
+      },
+      "totalDistance": 14.143325540259646,
+      "lastTenSecondsDistance": 4.389124020312728,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.5333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -12.670963526703417,
+        "z": 30.35318179146929
+      }
+    },
+    {
+      "id": "CIV-027",
+      "initial": {
+        "x": 13.854958090324141,
+        "z": -114.80202385783195
+      },
+      "totalDistance": 16.49664849507552,
+      "lastTenSecondsDistance": 5.5094425518120715,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1670,
+        "pass": 115,
+        "follow": 15,
+        "reverse": 1
+      },
+      "final": {
+        "x": 14.365536958971113,
+        "z": -113.37732051645641
+      }
+    },
+    {
+      "id": "CIV-028",
+      "initial": {
+        "x": -13.432508066296577,
+        "z": -161.27407260239124
+      },
+      "totalDistance": 11.123860930683755,
+      "lastTenSecondsDistance": 4.177854792215773,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1294,
+        "pass": 499,
+        "follow": 7,
+        "reverse": 1
+      },
+      "final": {
+        "x": -12.381346321447888,
+        "z": -160.61353131795602
+      }
+    },
+    {
+      "id": "CIV-029",
+      "initial": {
+        "x": 13.138952089473605,
+        "z": -40.09123183786869
+      },
+      "totalDistance": 11.249653322135577,
+      "lastTenSecondsDistance": 3.6142843087233087,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1756,
+        "pass": 45
+      },
+      "final": {
+        "x": 13.368430764241156,
+        "z": -44.401954328223866
+      }
+    },
+    {
+      "id": "CIV-030",
+      "initial": {
+        "x": -13.302375826581498,
+        "z": -159.4900083930135
+      },
+      "totalDistance": 15.212825806413537,
+      "lastTenSecondsDistance": 5.082079874462892,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "pass": 157,
+        "walk": 1644
+      },
+      "final": {
+        "x": -11.997340064729364,
+        "z": -145.11703725097445
+      }
+    },
+    {
+      "id": "CIV-031",
+      "initial": {
+        "x": 12.292688985355198,
+        "z": -31.126493498682976
+      },
+      "totalDistance": 15.055370335742483,
+      "lastTenSecondsDistance": 4.791720579743751,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1729,
+        "pass": 72
+      },
+      "final": {
+        "x": 11.717161364051051,
+        "z": -44.8818794826355
+      }
+    },
+    {
+      "id": "CIV-032",
+      "initial": {
+        "x": -12.104403140954673,
+        "z": 16.407981768250465
+      },
+      "totalDistance": 9.742496658874416,
+      "lastTenSecondsDistance": 3.2579280891769926,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -12.104403140954673,
+        "z": 26.15047842712488
+      }
+    },
+    {
+      "id": "CIV-033",
+      "initial": {
+        "x": 13.016093914862722,
+        "z": 8.205809444189072
+      },
+      "totalDistance": 16.5357158160134,
+      "lastTenSecondsDistance": 5.384552768606419,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "pass": 183,
+        "walk": 1618
+      },
+      "final": {
+        "x": 14.817564789325028,
+        "z": 23.715949084618195
+      }
+    },
+    {
+      "id": "CIV-034",
+      "initial": {
+        "x": 2.8375372560694814,
+        "z": -70.17430507438257
+      },
+      "totalDistance": 12.200836170125527,
+      "lastTenSecondsDistance": 4.175397357750143,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.6500000000000004,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 2.8375372560694814,
+        "z": -76.56268032567768
+      }
+    },
+    {
+      "id": "CIV-035",
+      "initial": {
+        "x": 5.276084739714861,
+        "z": -98.75880801258609
+      },
+      "totalDistance": 5.885217549219448,
+      "lastTenSecondsDistance": 2.0112691723028604,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.6500000000000004,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 5.276084739714861,
+        "z": -97.26083539796596
+      }
+    },
+    {
+      "id": "CIV-036",
+      "initial": {
+        "x": 2.8383223596028984,
+        "z": -129.10747052822262
+      },
+      "totalDistance": 10.127021847534195,
+      "lastTenSecondsDistance": 3.462301855146862,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.6333333333333336,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 2.8383223596028984,
+        "z": -129.80922278526543
+      }
+    },
+    {
+      "id": "CIV-037",
+      "initial": {
+        "x": -1.0550354747101665,
+        "z": -142.9953774441965
+      },
+      "totalDistance": 17.08012138459631,
+      "lastTenSecondsDistance": 5.719451063243383,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -1.0550354747101665,
+        "z": -160.0754988287928
+      }
+    },
+    {
+      "id": "CIV-038",
+      "initial": {
+        "x": -0.8131721131503582,
+        "z": -140.88239040551707
+      },
+      "totalDistance": 7.774189783000622,
+      "lastTenSecondsDistance": 2.5987607574280673,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -0.8131721131503582,
+        "z": -148.6565801885177
+      }
+    },
+    {
+      "id": "CIV-039",
+      "initial": {
+        "x": 8.567014682572335,
+        "z": -115.98031990323216
+      },
+      "totalDistance": 12.655031723888214,
+      "lastTenSecondsDistance": 4.234176376147786,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 8.567014682572335,
+        "z": -128.63535162712037
+      }
+    },
+    {
+      "id": "CIV-040",
+      "initial": {
+        "x": 7.497498300857842,
+        "z": -111.86827629106119
+      },
+      "totalDistance": 6.508625059499707,
+      "lastTenSecondsDistance": 2.1752089796358547,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 7.497498300857842,
+        "z": -118.3769013505609
+      }
+    },
+    {
+      "id": "CIV-041",
+      "initial": {
+        "x": -0.6981061510741711,
+        "z": -98.25524800596759
+      },
+      "totalDistance": 15.341129177944893,
+      "lastTenSecondsDistance": 5.1354596662634435,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -0.6981061510741711,
+        "z": -113.59637718391248
+      }
+    },
+    {
+      "id": "CIV-042",
+      "initial": {
+        "x": -8.897461634594947,
+        "z": -97.2414520541206
+      },
+      "totalDistance": 12.7370128258965,
+      "lastTenSecondsDistance": 4.261671154220878,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -8.897461634594947,
+        "z": -84.5044392282241
+      }
+    },
+    {
+      "id": "CIV-043",
+      "initial": {
+        "x": 4.536154207773507,
+        "z": -94.02932973997667
+      },
+      "totalDistance": 12.439029250109854,
+      "lastTenSecondsDistance": 4.255417851745165,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.6333333333333336,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 4.536154207773507,
+        "z": -90.61429217091398
+      }
+    },
+    {
+      "id": "CIV-044",
+      "initial": {
+        "x": 6.271673250943422,
+        "z": -65.91058393893763
+      },
+      "totalDistance": 13.330832818618774,
+      "lastTenSecondsDistance": 4.460826185262221,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 6.271673250943422,
+        "z": -79.24141675755641
+      }
+    },
+    {
+      "id": "CIV-045",
+      "initial": {
+        "x": -297.03807248587253,
+        "z": 118.65958297736942
+      },
+      "totalDistance": 20.38626264603529,
+      "lastTenSecondsDistance": 6.973198527948327,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.03807248587253,
+        "z": 113.90845689512665
+      }
+    },
+    {
+      "id": "CIV-046",
+      "initial": {
+        "x": -196.82912163916043,
+        "z": 124.25141338119283
+      },
+      "totalDistance": 19.713237637561654,
+      "lastTenSecondsDistance": 6.761797465468275,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1705,
+        "pass": 96
+      },
+      "final": {
+        "x": -197.9253747859779,
+        "z": 105.11230377334485
+      }
+    },
+    {
+      "id": "CIV-047",
+      "initial": {
+        "x": -77.2636489644181,
+        "z": 132.87987037757412
+      },
+      "totalDistance": 8.710510538767693,
+      "lastTenSecondsDistance": 2.91225868178239,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -77.2636489644181,
+        "z": 141.59038091634181
+      }
+    },
+    {
+      "id": "CIV-048",
+      "initial": {
+        "x": 103.37764078977052,
+        "z": 126.23265242893248
+      },
+      "totalDistance": 24.78224267275467,
+      "lastTenSecondsDistance": 8.474123152611725,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1715,
+        "pass": 86
+      },
+      "final": {
+        "x": 102.39066403336186,
+        "z": 102.66794807326232
+      }
+    },
+    {
+      "id": "CIV-049",
+      "initial": {
+        "x": 223.09504269389436,
+        "z": 126.10262495940552
+      },
+      "totalDistance": 28.865005452560496,
+      "lastTenSecondsDistance": 9.914351897011457,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.09504269389436,
+        "z": 98.10304639067411
+      }
+    },
+    {
+      "id": "CIV-050",
+      "initial": {
+        "x": 322.80421327119694,
+        "z": 130.32296038186178
+      },
+      "totalDistance": 9.625742685779528,
+      "lastTenSecondsDistance": 3.2188148573876845,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.80421327119694,
+        "z": 139.9487030676413
+      }
+    },
+    {
+      "id": "CIV-051",
+      "initial": {
+        "x": -323.37602719746064,
+        "z": 125.2050635844469
+      },
+      "totalDistance": 24.310630643414783,
+      "lastTenSecondsDistance": 8.35533328740668,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.18333333333333332,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.37602719746064,
+        "z": 124.01585276277667
+      }
+    },
+    {
+      "id": "CIV-052",
+      "initial": {
+        "x": -222.84670240334236,
+        "z": 118.0047306147404
+      },
+      "totalDistance": 29.174447568852997,
+      "lastTenSecondsDistance": 9.791513001430275,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.84670240334236,
+        "z": 88.8302830458874
+      }
+    },
+    {
+      "id": "CIV-053",
+      "initial": {
+        "x": -103.2783676752355,
+        "z": 122.76381936790422
+      },
+      "totalDistance": 24.14215636963787,
+      "lastTenSecondsDistance": 8.122511745881809,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1731,
+        "pass": 70
+      },
+      "final": {
+        "x": -104.04351327260609,
+        "z": 98.961830544739
+      }
+    },
+    {
+      "id": "CIV-054",
+      "initial": {
+        "x": 76.83471325810532,
+        "z": 129.7746913595125
+      },
+      "totalDistance": 20.225308640487498,
+      "lastTenSecondsDistance": 4.203602646489543,
+      "currentStationary": 4.799999999999988,
+      "maxStationarySeconds": 4.799999999999988,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.83471325810532,
+        "z": 150
+      }
+    },
+    {
+      "id": "CIV-055",
+      "initial": {
+        "x": 196.98902575187384,
+        "z": 121.13937272457406
+      },
+      "totalDistance": 24.315254450661996,
+      "lastTenSecondsDistance": 8.126812545649031,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1715,
+        "pass": 86
+      },
+      "final": {
+        "x": 196.00212942813502,
+        "z": 97.27347900091691
+      }
+    },
+    {
+      "id": "CIV-056",
+      "initial": {
+        "x": 296.81085891798136,
+        "z": 128.44884267328308
+      },
+      "totalDistance": 23.547239766317034,
+      "lastTenSecondsDistance": 7.334256892392347,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.966666666666668,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 296.81085891798136,
+        "z": 149.97533584184347
+      }
+    },
+    {
+      "id": "CIV-057",
+      "initial": {
+        "x": -297.04883840552066,
+        "z": 88.8095920395106
+      },
+      "totalDistance": 24.016525250563504,
+      "lastTenSecondsDistance": 8.052588756869582,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.04883840552066,
+        "z": 64.7930667889471
+      }
+    },
+    {
+      "id": "CIV-058",
+      "initial": {
+        "x": -197.2593226478901,
+        "z": 88.32960802251473
+      },
+      "totalDistance": 23.812392653585192,
+      "lastTenSecondsDistance": 8.054915346758246,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1706,
+        "pass": 95
+      },
+      "final": {
+        "x": -196.1674656310865,
+        "z": 111.63531373624416
+      }
+    },
+    {
+      "id": "CIV-059",
+      "initial": {
+        "x": -76.93325804895721,
+        "z": 94.84190810704604
+      },
+      "totalDistance": 20.72414268743489,
+      "lastTenSecondsDistance": 6.944395031793533,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -76.93325804895721,
+        "z": 74.11776541961115
+      }
+    },
+    {
+      "id": "CIV-060",
+      "initial": {
+        "x": 103.36016473865602,
+        "z": 95.84582356158644
+      },
+      "totalDistance": 27.838356207543164,
+      "lastTenSecondsDistance": 9.34578320197761,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1724,
+        "pass": 77
+      },
+      "final": {
+        "x": 104.24975876987324,
+        "z": 123.31828118936302
+      }
+    },
+    {
+      "id": "CIV-061",
+      "initial": {
+        "x": 223.1025392969139,
+        "z": 89.67965598097071
+      },
+      "totalDistance": 17.29568286703662,
+      "lastTenSecondsDistance": 5.708870525317803,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1706,
+        "pass": 95
+      },
+      "final": {
+        "x": 222.12030140566125,
+        "z": 72.91039793315925
+      }
+    },
+    {
+      "id": "CIV-062",
+      "initial": {
+        "x": 322.7846222215332,
+        "z": 84.43097003540024
+      },
+      "totalDistance": 26.49765764174309,
+      "lastTenSecondsDistance": 8.490021068361173,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.15,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.7846222215332,
+        "z": 68.94601237706992
+      }
+    },
+    {
+      "id": "CIV-063",
+      "initial": {
+        "x": -323.33429146434645,
+        "z": 93.2789242438972
+      },
+      "totalDistance": 11.667769353232089,
+      "lastTenSecondsDistance": 3.9036308345637423,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.33429146434645,
+        "z": 94.06651131292587
+      }
+    },
+    {
+      "id": "CIV-064",
+      "initial": {
+        "x": -222.77566509316677,
+        "z": 86.29885739879683
+      },
+      "totalDistance": 15.280240470127367,
+      "lastTenSecondsDistance": 5.115016027493425,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.77566509316677,
+        "z": 71.01861692866946
+      }
+    },
+    {
+      "id": "CIV-065",
+      "initial": {
+        "x": -103.04738720166498,
+        "z": 85.05597304748372
+      },
+      "totalDistance": 14.29522917342253,
+      "lastTenSecondsDistance": 4.877250799508237,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1732,
+        "pass": 69
+      },
+      "final": {
+        "x": -102.44868868891551,
+        "z": 99.02727471240613
+      }
+    },
+    {
+      "id": "CIV-066",
+      "initial": {
+        "x": 76.91361392519903,
+        "z": 82.16189175900072
+      },
+      "totalDistance": 14.887528731969951,
+      "lastTenSecondsDistance": 4.791600200738856,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.91361392519903,
+        "z": 92.03984156181755
+      }
+    },
+    {
+      "id": "CIV-067",
+      "initial": {
+        "x": 196.95597071591766,
+        "z": 100.72795842839405
+      },
+      "totalDistance": 26.976331240329536,
+      "lastTenSecondsDistance": 9.26112510639851,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1741,
+        "pass": 60
+      },
+      "final": {
+        "x": 197.64720402306799,
+        "z": 116.5794460343723
+      }
+    },
+    {
+      "id": "CIV-068",
+      "initial": {
+        "x": 296.67951750364153,
+        "z": 98.30432543559
+      },
+      "totalDistance": 15.141090196153343,
+      "lastTenSecondsDistance": 5.068295739974772,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 296.67951750364153,
+        "z": 83.16323523943666
+      }
+    },
+    {
+      "id": "CIV-069",
+      "initial": {
+        "x": -296.9025739871198,
+        "z": 52.44789477325975
+      },
+      "totalDistance": 18.211878287894834,
+      "lastTenSecondsDistance": 6.221383157475415,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.9025739871198,
+        "z": 54.29857528523796
+      }
+    },
+    {
+      "id": "CIV-070",
+      "initial": {
+        "x": -196.8194868459832,
+        "z": 66.33153840163723
+      },
+      "totalDistance": 19.061615494562233,
+      "lastTenSecondsDistance": 6.518504069943759,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.8194868459832,
+        "z": 79.68448245461028
+      }
+    },
+    {
+      "id": "CIV-071",
+      "initial": {
+        "x": -76.83910130369478,
+        "z": 47.540875849220896
+      },
+      "totalDistance": 19.842189854021598,
+      "lastTenSecondsDistance": 6.784625581119776,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -76.83910130369478,
+        "z": 47.30287805555943
+      }
+    },
+    {
+      "id": "CIV-072",
+      "initial": {
+        "x": 103.09860670755151,
+        "z": 61.31321529913694
+      },
+      "totalDistance": 22.174652485497077,
+      "lastTenSecondsDistance": 7.5889871004658005,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.09860670755151,
+        "z": 41.58335965275144
+      }
+    },
+    {
+      "id": "CIV-073",
+      "initial": {
+        "x": 222.76092698341236,
+        "z": 65.47547793900594
+      },
+      "totalDistance": 23.655856106488862,
+      "lastTenSecondsDistance": 8.062841094399452,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1706,
+        "pass": 95
+      },
+      "final": {
+        "x": 223.85281068375573,
+        "z": 84.53976323028455
+      }
+    },
+    {
+      "id": "CIV-074",
+      "initial": {
+        "x": 323.10530251963064,
+        "z": 62.48793945252551
+      },
+      "totalDistance": 20.45530078988726,
+      "lastTenSecondsDistance": 6.968712795100039,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.10530251963064,
+        "z": 42.0493053293049
+      }
+    },
+    {
+      "id": "CIV-075",
+      "initial": {
+        "x": -323.10601278513207,
+        "z": 64.19006043225528
+      },
+      "totalDistance": 16.783885113750927,
+      "lastTenSecondsDistance": 5.731526008489851,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.10601278513207,
+        "z": 65.27086007544145
+      }
+    },
+    {
+      "id": "CIV-076",
+      "initial": {
+        "x": -223.14128151028416,
+        "z": 59.09781695129351
+      },
+      "totalDistance": 13.015714528181583,
+      "lastTenSecondsDistance": 4.436488502084238,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.14128151028416,
+        "z": 52.886552676050535
+      }
+    },
+    {
+      "id": "CIV-077",
+      "initial": {
+        "x": -103.17307731634938,
+        "z": 58.68717427821829
+      },
+      "totalDistance": 28.44101434948672,
+      "lastTenSecondsDistance": 9.765347643657734,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.16666666666666666,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.17307731634938,
+        "z": 38.0040773815563
+      }
+    },
+    {
+      "id": "CIV-078",
+      "initial": {
+        "x": 76.53272825768087,
+        "z": 62.954897770099336
+      },
+      "totalDistance": 20.84960914086512,
+      "lastTenSecondsDistance": 6.986591639802242,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.53272825768087,
+        "z": 42.10528862923422
+      }
+    },
+    {
+      "id": "CIV-079",
+      "initial": {
+        "x": 196.7009467728436,
+        "z": 54.23018026826904
+      },
+      "totalDistance": 20.398045613993297,
+      "lastTenSecondsDistance": 6.977279933171104,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.7009467728436,
+        "z": 50.590645983303126
+      }
+    },
+    {
+      "id": "CIV-080",
+      "initial": {
+        "x": 297.2345136854798,
+        "z": 53.21763226119802
+      },
+      "totalDistance": 24.815677955767868,
+      "lastTenSecondsDistance": 8.135483805040614,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 297.2345136854798,
+        "z": 57.26936540994181
+      }
+    },
+    {
+      "id": "CIV-081",
+      "initial": {
+        "x": -296.6651138482848,
+        "z": 23.180859434232104
+      },
+      "totalDistance": 26.527963660906135,
+      "lastTenSecondsDistance": 8.89886632653129,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.6651138482848,
+        "z": -3.347104226674548
+      }
+    },
+    {
+      "id": "CIV-082",
+      "initial": {
+        "x": -197.25192513889633,
+        "z": 30.860151753667736
+      },
+      "totalDistance": 23.725340261590638,
+      "lastTenSecondsDistance": 7.954526328972216,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.25192513889633,
+        "z": 7.134811492076064
+      }
+    },
+    {
+      "id": "CIV-083",
+      "initial": {
+        "x": -76.74269129424356,
+        "z": 20.21512122983114
+      },
+      "totalDistance": 19.188720332154574,
+      "lastTenSecondsDistance": 6.533353792809178,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1732,
+        "pass": 69
+      },
+      "final": {
+        "x": -77.51598700869955,
+        "z": 1.4289704281324758
+      }
+    },
+    {
+      "id": "CIV-084",
+      "initial": {
+        "x": 102.92913860960398,
+        "z": 26.897525242902333
+      },
+      "totalDistance": 19.440765066278022,
+      "lastTenSecondsDistance": 6.512772228035634,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 102.92913860960398,
+        "z": 7.456760176624356
+      }
+    },
+    {
+      "id": "CIV-085",
+      "initial": {
+        "x": 223.3057253533043,
+        "z": 28.36755589088426
+      },
+      "totalDistance": 27.645764837874523,
+      "lastTenSecondsDistance": 9.494819949370797,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.19999999999999998,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.3057253533043,
+        "z": 17.21684802686208
+      }
+    },
+    {
+      "id": "CIV-086",
+      "initial": {
+        "x": 322.7025916364975,
+        "z": 15.25233142068609
+      },
+      "totalDistance": 10.471137953358497,
+      "lastTenSecondsDistance": 3.502026984374762,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.7025916364975,
+        "z": 25.723469374044587
+      }
+    },
+    {
+      "id": "CIV-087",
+      "initial": {
+        "x": -323.3270868888823,
+        "z": 19.333036205917608
+      },
+      "totalDistance": 11.951884166703259,
+      "lastTenSecondsDistance": 3.9983597606557773,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.3270868888823,
+        "z": 7.381152039214266
+      }
+    },
+    {
+      "id": "CIV-088",
+      "initial": {
+        "x": -222.8890428732615,
+        "z": 13.944558948744088
+      },
+      "totalDistance": 12.03811862278033,
+      "lastTenSecondsDistance": 4.027276390787243,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.8890428732615,
+        "z": 1.906440325963895
+      }
+    },
+    {
+      "id": "CIV-089",
+      "initial": {
+        "x": -103.18036039019935,
+        "z": 17.15374187724666
+      },
+      "totalDistance": 11.276602193831664,
+      "lastTenSecondsDistance": 3.707861902984062,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1712,
+        "pass": 89
+      },
+      "final": {
+        "x": -103.83933762614184,
+        "z": 6.252967442452935
+      }
+    },
+    {
+      "id": "CIV-090",
+      "initial": {
+        "x": 76.71089453294408,
+        "z": 14.267005138657993
+      },
+      "totalDistance": 12.793645233662827,
+      "lastTenSecondsDistance": 4.28066450079875,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.71089453294408,
+        "z": 1.4733599049951653
+      }
+    },
+    {
+      "id": "CIV-091",
+      "initial": {
+        "x": 196.63801012840122,
+        "z": 28.445829961728293
+      },
+      "totalDistance": 16.001749041421153,
+      "lastTenSecondsDistance": 5.357265553385911,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.63801012840122,
+        "z": 12.44408092030714
+      }
+    },
+    {
+      "id": "CIV-092",
+      "initial": {
+        "x": 296.89201548565177,
+        "z": 18.749345883261412
+      },
+      "totalDistance": 17.029630855586888,
+      "lastTenSecondsDistance": 5.665330194070642,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1747,
+        "pass": 54
+      },
+      "final": {
+        "x": 296.34630851230753,
+        "z": 2.0058491752576213
+      }
+    },
+    {
+      "id": "CIV-093",
+      "initial": {
+        "x": -296.734134647646,
+        "z": -9.476918182894565
+      },
+      "totalDistance": 25.97037661265329,
+      "lastTenSecondsDistance": 8.710919149862942,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.734134647646,
+        "z": -35.447294795547855
+      }
+    },
+    {
+      "id": "CIV-094",
+      "initial": {
+        "x": -197.18188910591417,
+        "z": -6.864295115973789
+      },
+      "totalDistance": 21.289944344613232,
+      "lastTenSecondsDistance": 7.2436831753480675,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1714,
+        "pass": 87
+      },
+      "final": {
+        "x": -198.17752969483803,
+        "z": -27.658471283892016
+      }
+    },
+    {
+      "id": "CIV-095",
+      "initial": {
+        "x": -76.6818406350445,
+        "z": -20.88126105507837
+      },
+      "totalDistance": 24.233338189081636,
+      "lastTenSecondsDistance": 8.174900465995693,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1719,
+        "pass": 82
+      },
+      "final": {
+        "x": -75.74161678525302,
+        "z": 2.9240373313625883
+      }
+    },
+    {
+      "id": "CIV-096",
+      "initial": {
+        "x": 102.99246727006975,
+        "z": -2.397704279236507
+      },
+      "totalDistance": 12.328136945747707,
+      "lastTenSecondsDistance": 4.201506107881546,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 102.99246727006975,
+        "z": -4.765869997407384
+      }
+    },
+    {
+      "id": "CIV-097",
+      "initial": {
+        "x": 223.27999184830114,
+        "z": -15.470624598208815
+      },
+      "totalDistance": 12.62662111870857,
+      "lastTenSecondsDistance": 4.416756442029806,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1726,
+        "pass": 75
+      },
+      "final": {
+        "x": 222.69161742389508,
+        "z": -17.88222422166424
+      }
+    },
+    {
+      "id": "CIV-098",
+      "initial": {
+        "x": 322.848880509939,
+        "z": -3.7992841937578987
+      },
+      "totalDistance": 20.743922096203107,
+      "lastTenSecondsDistance": 6.951047200047659,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.848880509939,
+        "z": 16.94463790244592
+      }
+    },
+    {
+      "id": "CIV-099",
+      "initial": {
+        "x": -322.80518074489663,
+        "z": -16.87255996465683
+      },
+      "totalDistance": 18.62125718481083,
+      "lastTenSecondsDistance": 6.237310161113174,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -322.80518074489663,
+        "z": 1.748697220153224
+      }
+    },
+    {
+      "id": "CIV-100",
+      "initial": {
+        "x": -222.9980036330875,
+        "z": -20.31042298702522
+      },
+      "totalDistance": 10.62673562607154,
+      "lastTenSecondsDistance": 3.5541800211576486,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.9980036330875,
+        "z": -30.93715861309676
+      }
+    },
+    {
+      "id": "CIV-101",
+      "initial": {
+        "x": -103.20311265154741,
+        "z": -5.417023892980069
+      },
+      "totalDistance": 25.36879502839112,
+      "lastTenSecondsDistance": 8.489772962731204,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1712,
+        "pass": 89
+      },
+      "final": {
+        "x": -102.18113209396888,
+        "z": 19.499095583663777
+      }
+    },
+    {
+      "id": "CIV-102",
+      "initial": {
+        "x": 76.66089793245774,
+        "z": -10.740223787911248
+      },
+      "totalDistance": 19.34699490561114,
+      "lastTenSecondsDistance": 6.6151797470883835,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.66089793245774,
+        "z": -29.615565609456226
+      }
+    },
+    {
+      "id": "CIV-103",
+      "initial": {
+        "x": 197.14545649029316,
+        "z": -3.9359208908863366
+      },
+      "totalDistance": 12.194163964653196,
+      "lastTenSecondsDistance": 4.079610793948978,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 197.14545649029316,
+        "z": -16.130084855539533
+      }
+    },
+    {
+      "id": "CIV-104",
+      "initial": {
+        "x": 297.1851648032665,
+        "z": -1.6146335822530204
+      },
+      "totalDistance": 29.44758304489706,
+      "lastTenSecondsDistance": 9.900487922809184,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1724,
+        "pass": 77
+      },
+      "final": {
+        "x": 298.07494655999784,
+        "z": 27.48199415242821
+      }
+    },
+    {
+      "id": "CIV-105",
+      "initial": {
+        "x": -296.62099102234936,
+        "z": -52.012770994380105
+      },
+      "totalDistance": 10.687812547442313,
+      "lastTenSecondsDistance": 3.6397958856868087,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.03333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.62099102234936,
+        "z": -50.6567750484893
+      }
+    },
+    {
+      "id": "CIV-106",
+      "initial": {
+        "x": -197.20487568764946,
+        "z": -48.44251708155497
+      },
+      "totalDistance": 25.601590649123164,
+      "lastTenSecondsDistance": 8.601645845656213,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1735,
+        "pass": 66
+      },
+      "final": {
+        "x": -196.45120652080956,
+        "z": -23.16693858721687
+      }
+    },
+    {
+      "id": "CIV-107",
+      "initial": {
+        "x": -76.72046667686664,
+        "z": -42.86671048915014
+      },
+      "totalDistance": 18.211304899889065,
+      "lastTenSecondsDistance": 5.856607228407611,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -76.72046667686664,
+        "z": -52.04421627523188
+      }
+    },
+    {
+      "id": "CIV-108",
+      "initial": {
+        "x": 102.84418598881457,
+        "z": -36.40699246283623
+      },
+      "totalDistance": 25.303196116025575,
+      "lastTenSecondsDistance": 8.486046823093435,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 102.84418598881457,
+        "z": -11.103796346810654
+      }
+    },
+    {
+      "id": "CIV-109",
+      "initial": {
+        "x": 222.7329545644112,
+        "z": -48.451588705275185
+      },
+      "totalDistance": 28.715424305997995,
+      "lastTenSecondsDistance": 9.630218875149515,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1710,
+        "pass": 91
+      },
+      "final": {
+        "x": 223.72541500794074,
+        "z": -20.148097293310595
+      }
+    },
+    {
+      "id": "CIV-110",
+      "initial": {
+        "x": 323.38874635705724,
+        "z": -40.68951014736666
+      },
+      "totalDistance": 21.07273888234181,
+      "lastTenSecondsDistance": 7.061662132299794,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.38874635705724,
+        "z": -19.616771265024852
+      }
+    },
+    {
+      "id": "CIV-111",
+      "initial": {
+        "x": -323.08477162520865,
+        "z": -54.079771444946516
+      },
+      "totalDistance": 9.96412455452898,
+      "lastTenSecondsDistance": 3.3937470605316236,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.08477162520865,
+        "z": -49.01928899481648
+      }
+    },
+    {
+      "id": "CIV-112",
+      "initial": {
+        "x": -223.07785178567283,
+        "z": -41.0848725388758
+      },
+      "totalDistance": 27.455874127788512,
+      "lastTenSecondsDistance": 9.426272832727555,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.07785178567283,
+        "z": -44.42104246791471
+      }
+    },
+    {
+      "id": "CIV-113",
+      "initial": {
+        "x": -103.11873449864797,
+        "z": -35.19262257469819
+      },
+      "totalDistance": 20.962063654241856,
+      "lastTenSecondsDistance": 7.024419236393502,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.11873449864797,
+        "z": -14.230558920456335
+      }
+    },
+    {
+      "id": "CIV-114",
+      "initial": {
+        "x": 76.70401256687474,
+        "z": -45.12336631063374
+      },
+      "totalDistance": 27.74155049730804,
+      "lastTenSecondsDistance": 9.528021731289812,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.19999999999999998,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.70401256687474,
+        "z": -40.37019038771341
+      }
+    },
+    {
+      "id": "CIV-115",
+      "initial": {
+        "x": 197.05781325567514,
+        "z": -42.45605205642062
+      },
+      "totalDistance": 22.689962651030534,
+      "lastTenSecondsDistance": 7.605920197910002,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 197.05781325567514,
+        "z": -19.766089405390083
+      }
+    },
+    {
+      "id": "CIV-116",
+      "initial": {
+        "x": 296.61856960188595,
+        "z": -49.53261988656595
+      },
+      "totalDistance": 28.55697296465994,
+      "lastTenSecondsDistance": 9.583145658857365,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 296.61856960188595,
+        "z": -20.975646921906012
+      }
+    },
+    {
+      "id": "CIV-117",
+      "initial": {
+        "x": -297.18880152555647,
+        "z": -75.00111687742174
+      },
+      "totalDistance": 15.453173231572919,
+      "lastTenSecondsDistance": 5.274101247949517,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.18880152555647,
+        "z": -74.6004641784827
+      }
+    },
+    {
+      "id": "CIV-118",
+      "initial": {
+        "x": -197.05518187354318,
+        "z": -79.40948194703088
+      },
+      "totalDistance": 27.41024555550132,
+      "lastTenSecondsDistance": 8.772117901215431,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.16666666666666666,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.05518187354318,
+        "z": -62.99075718493309
+      }
+    },
+    {
+      "id": "CIV-119",
+      "initial": {
+        "x": -77.45681005406053,
+        "z": -83.21028701542382
+      },
+      "totalDistance": 16.363870803321895,
+      "lastTenSecondsDistance": 5.58092160079043,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1732,
+        "pass": 69
+      },
+      "final": {
+        "x": -78.13619408588855,
+        "z": -99.21121873504315
+      }
+    },
+    {
+      "id": "CIV-120",
+      "initial": {
+        "x": 102.85887610281353,
+        "z": -80.95682627689092
+      },
+      "totalDistance": 24.171307865392336,
+      "lastTenSecondsDistance": 8.282303433323548,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 102.85887610281353,
+        "z": -59.94796431173539
+      }
+    },
+    {
+      "id": "CIV-121",
+      "initial": {
+        "x": 223.08739506443962,
+        "z": -72.9309035995044
+      },
+      "totalDistance": 9.457221804246167,
+      "lastTenSecondsDistance": 3.1623594227161718,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.08739506443962,
+        "z": -63.47368179525824
+      }
+    },
+    {
+      "id": "CIV-122",
+      "initial": {
+        "x": 323.04383548675105,
+        "z": -72.75452884370463
+      },
+      "totalDistance": 14.182475482324833,
+      "lastTenSecondsDistance": 4.746583062466357,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.04383548675105,
+        "z": -58.5720533613798
+      }
+    },
+    {
+      "id": "CIV-123",
+      "initial": {
+        "x": -323.2559361670865,
+        "z": -86.88692968636752
+      },
+      "totalDistance": 26.121647854924746,
+      "lastTenSecondsDistance": 7.550659496856483,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1505,
+        "follow": 296
+      },
+      "final": {
+        "x": -323.2559361670865,
+        "z": -113.00857754129227
+      }
+    },
+    {
+      "id": "CIV-124",
+      "initial": {
+        "x": -223.08472918435,
+        "z": -69.3155519443564
+      },
+      "totalDistance": 20.032846644991935,
+      "lastTenSecondsDistance": 6.807350821026475,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.08472918435,
+        "z": -75.66537111400345
+      }
+    },
+    {
+      "id": "CIV-125",
+      "initial": {
+        "x": -103.30147081217729,
+        "z": -76.83613476483151
+      },
+      "totalDistance": 22.847222711103683,
+      "lastTenSecondsDistance": 7.336437957898681,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.30147081217729,
+        "z": -60.86760200224788
+      }
+    },
+    {
+      "id": "CIV-126",
+      "initial": {
+        "x": 76.79564061972778,
+        "z": -85.39854562897233
+      },
+      "totalDistance": 27.059408431253782,
+      "lastTenSecondsDistance": 9.192780990926195,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1700,
+        "pass": 101
+      },
+      "final": {
+        "x": 76.22270058578437,
+        "z": -112.12896207465576
+      }
+    },
+    {
+      "id": "CIV-127",
+      "initial": {
+        "x": 197.18908169865608,
+        "z": -70.48022591890765
+      },
+      "totalDistance": 19.30503176660754,
+      "lastTenSecondsDistance": 6.601209441132468,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 197.18908169865608,
+        "z": -75.3464395423501
+      }
+    },
+    {
+      "id": "CIV-128",
+      "initial": {
+        "x": 297.4388220035275,
+        "z": -83.22820858455864
+      },
+      "totalDistance": 17.407666540047998,
+      "lastTenSecondsDistance": 5.83971009370606,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.016666666666666666,
+      "modeFrames": {
+        "walk": 1701,
+        "pass": 100
+      },
+      "final": {
+        "x": 296.3854348354894,
+        "z": -100.06476384757775
+      }
+    },
+    {
+      "id": "CIV-129",
+      "initial": {
+        "x": -297.2467845639447,
+        "z": -120.1636149201542
+      },
+      "totalDistance": 20.746856690034917,
+      "lastTenSecondsDistance": 6.952034156338925,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.2467845639447,
+        "z": -140.91047161018912
+      }
+    },
+    {
+      "id": "CIV-130",
+      "initial": {
+        "x": -196.75570938936434,
+        "z": -123.22269169604408
+      },
+      "totalDistance": 18.945575700351185,
+      "lastTenSecondsDistance": 6.346323263932362,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.75570938936434,
+        "z": -142.16826739639527
+      }
+    },
+    {
+      "id": "CIV-131",
+      "initial": {
+        "x": -77.24992007329129,
+        "z": -122.09592713778841
+      },
+      "totalDistance": 24.17915136294648,
+      "lastTenSecondsDistance": 8.14500795765684,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1731,
+        "pass": 70
+      },
+      "final": {
+        "x": -76.44969895154586,
+        "z": -98.27834940394004
+      }
+    },
+    {
+      "id": "CIV-132",
+      "initial": {
+        "x": 103.22795854865107,
+        "z": -104.99456671383234
+      },
+      "totalDistance": 21.107015399552935,
+      "lastTenSecondsDistance": 7.073196391450907,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.22795854865107,
+        "z": -83.8875513142794
+      }
+    },
+    {
+      "id": "CIV-133",
+      "initial": {
+        "x": 223.37578119048848,
+        "z": -113.23920969227328
+      },
+      "totalDistance": 24.274255724430972,
+      "lastTenSecondsDistance": 8.139413877270002,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.37578119048848,
+        "z": -88.9649539678423
+      }
+    },
+    {
+      "id": "CIV-134",
+      "initial": {
+        "x": 323.08649611221625,
+        "z": -114.8446584285237
+      },
+      "totalDistance": 20.83232477577114,
+      "lastTenSecondsDistance": 7.045372486731534,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1743,
+        "pass": 58
+      },
+      "final": {
+        "x": 322.43356248774336,
+        "z": -135.355615941318
+      }
+    },
+    {
+      "id": "CIV-135",
+      "initial": {
+        "x": -323.2068894355325,
+        "z": -103.08531047627332
+      },
+      "totalDistance": 11.55961316384166,
+      "lastTenSecondsDistance": 3.866873495892648,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.2068894355325,
+        "z": -114.64492364011498
+      }
+    },
+    {
+      "id": "CIV-136",
+      "initial": {
+        "x": -223.1558018523734,
+        "z": -107.18402324570343
+      },
+      "totalDistance": 19.004504987859306,
+      "lastTenSecondsDistance": 6.366131150840857,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.1558018523734,
+        "z": -88.17951825784412
+      }
+    },
+    {
+      "id": "CIV-137",
+      "initial": {
+        "x": -102.7944812677335,
+        "z": -114.58200336499141
+      },
+      "totalDistance": 23.241450750772557,
+      "lastTenSecondsDistance": 7.791603306002415,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -102.7944812677335,
+        "z": -91.34055261421885
+      }
+    },
+    {
+      "id": "CIV-138",
+      "initial": {
+        "x": 76.81526264369022,
+        "z": -117.95783709082752
+      },
+      "totalDistance": 26.264347393460334,
+      "lastTenSecondsDistance": 8.795614665065472,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1699,
+        "pass": 102
+      },
+      "final": {
+        "x": 77.98898699969024,
+        "z": -92.2040635121699
+      }
+    },
+    {
+      "id": "CIV-139",
+      "initial": {
+        "x": 196.987229157798,
+        "z": -119.06831872956826
+      },
+      "totalDistance": 26.693086877991348,
+      "lastTenSecondsDistance": 9.157107415624736,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.987229157798,
+        "z": -103.61839435605641
+      }
+    },
+    {
+      "id": "CIV-140",
+      "initial": {
+        "x": 296.7276109436527,
+        "z": -104.72712485240771
+      },
+      "totalDistance": 28.562704204659383,
+      "lastTenSecondsDistance": 9.593005301652596,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1687,
+        "pass": 114
+      },
+      "final": {
+        "x": 298.0489536142403,
+        "z": -76.70781575536427
+      }
+    },
+    {
+      "id": "CIV-141",
+      "initial": {
+        "x": -297.1008443352068,
+        "z": -138.40432167164977
+      },
+      "totalDistance": 10.376824602887154,
+      "lastTenSecondsDistance": 3.470431486251499,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.1008443352068,
+        "z": -148.78114627453692
+      }
+    },
+    {
+      "id": "CIV-142",
+      "initial": {
+        "x": -196.84901938471012,
+        "z": -153.7254637419246
+      },
+      "totalDistance": 21.78117724060033,
+      "lastTenSecondsDistance": 7.456125198711732,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.84901938471012,
+        "z": -157.51124992706045
+      }
+    },
+    {
+      "id": "CIV-143",
+      "initial": {
+        "x": -76.88484799857251,
+        "z": -141.3837754680775
+      },
+      "totalDistance": 16.403421346786203,
+      "lastTenSecondsDistance": 5.492128712899884,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -76.88484799857251,
+        "z": -124.98035412129128
+      }
+    },
+    {
+      "id": "CIV-144",
+      "initial": {
+        "x": 103.35129542502109,
+        "z": -156.89235503952955
+      },
+      "totalDistance": 17.04092878129478,
+      "lastTenSecondsDistance": 5.706284626919057,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.35129542502109,
+        "z": -139.85142625823477
+      }
+    },
+    {
+      "id": "CIV-145",
+      "initial": {
+        "x": 223.3451498764567,
+        "z": -147.58925188714636
+      },
+      "totalDistance": 10.553757987824923,
+      "lastTenSecondsDistance": 3.5297184703566415,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.3451498764567,
+        "z": -158.14300987497128
+      }
+    },
+    {
+      "id": "CIV-146",
+      "initial": {
+        "x": 323.1821611634456,
+        "z": -153.78138403976334
+      },
+      "totalDistance": 23.47748069187329,
+      "lastTenSecondsDistance": 7.9366625313501675,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1716,
+        "pass": 85
+      },
+      "final": {
+        "x": 324.1573278015101,
+        "z": -130.7583158538711
+      }
+    },
+    {
+      "id": "CIV-147",
+      "initial": {
+        "x": -322.7202739857836,
+        "z": -149.28179018795493
+      },
+      "totalDistance": 12.668562697451534,
+      "lastTenSecondsDistance": 4.238714386812717,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -322.7202739857836,
+        "z": -136.6132274905034
+      }
+    },
+    {
+      "id": "CIV-148",
+      "initial": {
+        "x": -222.96258029541931,
+        "z": -137.91742953984067
+      },
+      "totalDistance": 28.608856148562694,
+      "lastTenSecondsDistance": 9.331555773602474,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.18333333333333332,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.96258029541931,
+        "z": -166.49358188955895
+      }
+    },
+    {
+      "id": "CIV-149",
+      "initial": {
+        "x": -103.30066064833663,
+        "z": -155.3868148314766
+      },
+      "totalDistance": 24.406416134725674,
+      "lastTenSecondsDistance": 8.363939738829657,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.13333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.30066064833663,
+        "z": -153.34429322314193
+      }
+    },
+    {
+      "id": "CIV-150",
+      "initial": {
+        "x": 76.80296099807602,
+        "z": -151.86067444253717
+      },
+      "totalDistance": 27.62586907065841,
+      "lastTenSecondsDistance": 8.84196153560515,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.15,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.80296099807602,
+        "z": -126.72463924280652
+      }
+    },
+    {
+      "id": "CIV-151",
+      "initial": {
+        "x": 196.919931223616,
+        "z": -138.3189518568106
+      },
+      "totalDistance": 26.798900507817223,
+      "lastTenSecondsDistance": 8.990191646213248,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.919931223616,
+        "z": -165.11785236462782
+      }
+    },
+    {
+      "id": "CIV-152",
+      "initial": {
+        "x": 297.1977234236896,
+        "z": -156.91712160231543
+      },
+      "totalDistance": 10.734618343695416,
+      "lastTenSecondsDistance": 3.590341489809049,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 297.1977234236896,
+        "z": -146.18250325862002
+      }
+    },
+    {
+      "id": "CIV-153",
+      "initial": {
+        "x": -297.16040676555133,
+        "z": -191.21984739191828
+      },
+      "totalDistance": 17.406708195650396,
+      "lastTenSecondsDistance": 5.945745152155865,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.16040676555133,
+        "z": -176.4283165706121
+      }
+    },
+    {
+      "id": "CIV-154",
+      "initial": {
+        "x": -197.0096371205058,
+        "z": -172.0852121776901
+      },
+      "totalDistance": 15.478834010935799,
+      "lastTenSecondsDistance": 5.2811911671686005,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.0096371205058,
+        "z": -178.42173382762357
+      }
+    },
+    {
+      "id": "CIV-155",
+      "initial": {
+        "x": -77.07581314123236,
+        "z": -182.55041567897422
+      },
+      "totalDistance": 24.201108256094642,
+      "lastTenSecondsDistance": 8.290650875809888,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.15,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -77.07581314123236,
+        "z": -176.67518446880217
+      }
+    },
+    {
+      "id": "CIV-156",
+      "initial": {
+        "x": 103.02254155522678,
+        "z": -181.12601904328915
+      },
+      "totalDistance": 14.698256624217777,
+      "lastTenSecondsDistance": 5.024392629072395,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.55,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.02254155522678,
+        "z": -171.66922252917988
+      }
+    },
+    {
+      "id": "CIV-157",
+      "initial": {
+        "x": 222.93073996054008,
+        "z": -173.85791082987566
+      },
+      "totalDistance": 10.013272684706124,
+      "lastTenSecondsDistance": 3.409879991123745,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 222.93073996054008,
+        "z": -171.12234078935802
+      }
+    },
+    {
+      "id": "CIV-158",
+      "initial": {
+        "x": 322.7004810997285,
+        "z": -175.8893890575506
+      },
+      "totalDistance": 16.73642588421947,
+      "lastTenSecondsDistance": 5.716377270933009,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.7004810997285,
+        "z": -175.6325803162442
+      }
+    },
+    {
+      "id": "CIV-159",
+      "initial": {
+        "x": -322.71319892581084,
+        "z": -188.6965020306409
+      },
+      "totalDistance": 17.114395935927064,
+      "lastTenSecondsDistance": 5.730965320006817,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -322.71319892581084,
+        "z": -171.58210609471382
+      }
+    },
+    {
+      "id": "CIV-160",
+      "initial": {
+        "x": -223.38298981408587,
+        "z": -188.0642762283794
+      },
+      "totalDistance": 23.363561870743325,
+      "lastTenSecondsDistance": 8.004613600976171,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.38298981408587,
+        "z": -173.88743301046574
+      }
+    },
+    {
+      "id": "CIV-161",
+      "initial": {
+        "x": -102.89220915692859,
+        "z": -171.35508042527363
+      },
+      "totalDistance": 21.576363902660916,
+      "lastTenSecondsDistance": 6.928849428779387,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -102.89220915692859,
+        "z": -192.0646712163514
+      }
+    },
+    {
+      "id": "CIV-162",
+      "initial": {
+        "x": 76.80219328633976,
+        "z": -176.4002560788765
+      },
+      "totalDistance": 20.644511274593526,
+      "lastTenSecondsDistance": 6.6373769228843855,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.80219328633976,
+        "z": -188.0881173418495
+      }
+    },
+    {
+      "id": "CIV-163",
+      "initial": {
+        "x": 196.79156392607837,
+        "z": -186.1890230362303
+      },
+      "totalDistance": 10.295509202464359,
+      "lastTenSecondsDistance": 3.443190373846761,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.79156392607837,
+        "z": -175.89351383376595
+      }
+    },
+    {
+      "id": "CIV-164",
+      "initial": {
+        "x": 296.92477763351053,
+        "z": -187.75214386777952
+      },
+      "totalDistance": 10.753241254075505,
+      "lastTenSecondsDistance": 3.5965837481126925,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 296.92477763351053,
+        "z": -176.99890261370402
+      }
+    },
+    {
+      "id": "CIV-165",
+      "initial": {
+        "x": -297.20150544720235,
+        "z": -219.88451230190697
+      },
+      "totalDistance": 28.359631246336704,
+      "lastTenSecondsDistance": 9.516552524264512,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.20150544720235,
+        "z": -248.24414354824367
+      }
+    },
+    {
+      "id": "CIV-166",
+      "initial": {
+        "x": -197.2376066565048,
+        "z": -223.80672902604567
+      },
+      "totalDistance": 9.900772796004333,
+      "lastTenSecondsDistance": 3.310951477368235,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.2376066565048,
+        "z": -213.90595623004134
+      }
+    },
+    {
+      "id": "CIV-167",
+      "initial": {
+        "x": -77.10807684618048,
+        "z": -224.02617690255863
+      },
+      "totalDistance": 10.017940143202964,
+      "lastTenSecondsDistance": 3.3502031917865054,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -77.10807684618048,
+        "z": -214.00823675935567
+      }
+    },
+    {
+      "id": "CIV-168",
+      "initial": {
+        "x": 103.30824604968075,
+        "z": -208.52897928785535
+      },
+      "totalDistance": 20.957223881112526,
+      "lastTenSecondsDistance": 6.724575006588196,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.15,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.30824604968075,
+        "z": -199.25338024592875
+      }
+    },
+    {
+      "id": "CIV-169",
+      "initial": {
+        "x": 222.9983749977313,
+        "z": -205.24323415840047
+      },
+      "totalDistance": 8.72088421933924,
+      "lastTenSecondsDistance": 2.915731986530858,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 222.9983749977313,
+        "z": -196.52234993906123
+      }
+    },
+    {
+      "id": "CIV-170",
+      "initial": {
+        "x": 323.2952067221515,
+        "z": -206.0035863541998
+      },
+      "totalDistance": 18.658791056932614,
+      "lastTenSecondsDistance": 6.249926412313499,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.2952067221515,
+        "z": -224.6623774111324
+      }
+    },
+    {
+      "id": "CIV-171",
+      "initial": {
+        "x": -323.02102897881997,
+        "z": -220.3354922994971
+      },
+      "totalDistance": 25.10972703506468,
+      "lastTenSecondsDistance": 8.42087029974249,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.02102897881997,
+        "z": -195.22576526443243
+      }
+    },
+    {
+      "id": "CIV-172",
+      "initial": {
+        "x": -222.79219081639312,
+        "z": -207.44521226761867
+      },
+      "totalDistance": 13.939629396904081,
+      "lastTenSecondsDistance": 4.665091997509421,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.79219081639312,
+        "z": -193.5055828707146
+      }
+    },
+    {
+      "id": "CIV-173",
+      "initial": {
+        "x": -103.23895272887312,
+        "z": -206.6400174620561
+      },
+      "totalDistance": 26.434807535440285,
+      "lastTenSecondsDistance": 9.068428624234087,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.23895272887312,
+        "z": -206.64149539405176
+      }
+    },
+    {
+      "id": "CIV-174",
+      "initial": {
+        "x": 77.00881579357664,
+        "z": -206.64495129305874
+      },
+      "totalDistance": 24.702996339230452,
+      "lastTenSecondsDistance": 8.467901338750806,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.18333333333333332,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 77.00881579357664,
+        "z": -205.0552934421806
+      }
+    },
+    {
+      "id": "CIV-175",
+      "initial": {
+        "x": 196.9914459221065,
+        "z": -220.78823762061074
+      },
+      "totalDistance": 14.565712459960395,
+      "lastTenSecondsDistance": 4.875184638992863,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.9914459221065,
+        "z": -206.22252516065035
+      }
+    },
+    {
+      "id": "CIV-176",
+      "initial": {
+        "x": 296.6818446714431,
+        "z": -212.6795434859581
+      },
+      "totalDistance": 21.509828719413335,
+      "lastTenSecondsDistance": 7.237502476929514,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1750,
+        "pass": 51
+      },
+      "final": {
+        "x": 296.16227813505753,
+        "z": -233.95896282158694
+      }
+    },
+    {
+      "id": "CIV-177",
+      "initial": {
+        "x": -296.9861175758997,
+        "z": -239.21050283350053
+      },
+      "totalDistance": 16.605879954488984,
+      "lastTenSecondsDistance": 5.560133511821078,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.9861175758997,
+        "z": -255.8163827879895
+      }
+    },
+    {
+      "id": "CIV-178",
+      "initial": {
+        "x": -196.73329553878867,
+        "z": -253.82046548938376
+      },
+      "totalDistance": 12.333240896813777,
+      "lastTenSecondsDistance": 4.126254340951505,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.73329553878867,
+        "z": -266.15370638619754
+      }
+    },
+    {
+      "id": "CIV-179",
+      "initial": {
+        "x": -77.19808331965469,
+        "z": -242.7186099505983
+      },
+      "totalDistance": 18.6303159942064,
+      "lastTenSecondsDistance": 6.2403550964963586,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -77.19808331965469,
+        "z": -261.3489259448047
+      }
+    },
+    {
+      "id": "CIV-180",
+      "initial": {
+        "x": 102.92070386840496,
+        "z": -246.9211553594098
+      },
+      "totalDistance": 25.46307812621569,
+      "lastTenSecondsDistance": 8.539922856901683,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 102.92070386840496,
+        "z": -272.3842334856255
+      }
+    },
+    {
+      "id": "CIV-181",
+      "initial": {
+        "x": 223.1555960723199,
+        "z": -256.9964677528478
+      },
+      "totalDistance": 27.55041712201764,
+      "lastTenSecondsDistance": 9.245170178007925,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1716,
+        "pass": 85
+      },
+      "final": {
+        "x": 222.17270122741792,
+        "z": -284.1372913001599
+      }
+    },
+    {
+      "id": "CIV-182",
+      "initial": {
+        "x": 322.95282198609783,
+        "z": -255.95114954421297
+      },
+      "totalDistance": 14.91437169404523,
+      "lastTenSecondsDistance": 4.992183075444558,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.95282198609783,
+        "z": -241.03677785016774
+      }
+    },
+    {
+      "id": "CIV-183",
+      "initial": {
+        "x": -323.02492354575077,
+        "z": -251.53837662562728
+      },
+      "totalDistance": 12.254877134816752,
+      "lastTenSecondsDistance": 4.099972744433529,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.02492354575077,
+        "z": -239.28349949081053
+      }
+    },
+    {
+      "id": "CIV-184",
+      "initial": {
+        "x": -223.37214913028293,
+        "z": -256.3788114185445
+      },
+      "totalDistance": 22.563038655148574,
+      "lastTenSecondsDistance": 7.563185564002225,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.37214913028293,
+        "z": -233.81577276339593
+      }
+    },
+    {
+      "id": "CIV-185",
+      "initial": {
+        "x": -103.05541334445589,
+        "z": -240.81933056218554
+      },
+      "totalDistance": 28.959808820210924,
+      "lastTenSecondsDistance": 9.71908296890146,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.05541334445589,
+        "z": -211.85952174197462
+      }
+    },
+    {
+      "id": "CIV-186",
+      "initial": {
+        "x": 76.82635692402255,
+        "z": -253.7547065267339
+      },
+      "totalDistance": 14.172442972067907,
+      "lastTenSecondsDistance": 4.822614123310057,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1723,
+        "pass": 78
+      },
+      "final": {
+        "x": 76.21626800993509,
+        "z": -267.60838551021624
+      }
+    },
+    {
+      "id": "CIV-187",
+      "initial": {
+        "x": 197.0733306830749,
+        "z": -250.9486398299225
+      },
+      "totalDistance": 9.361853069273252,
+      "lastTenSecondsDistance": 3.1304103648922705,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 197.0733306830749,
+        "z": -260.31049289919576
+      }
+    },
+    {
+      "id": "CIV-188",
+      "initial": {
+        "x": 297.1966648252681,
+        "z": -243.28307366119702
+      },
+      "totalDistance": 19.527546087244662,
+      "lastTenSecondsDistance": 6.583483151744488,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1748,
+        "pass": 53
+      },
+      "final": {
+        "x": 297.7095802930281,
+        "z": -223.9949929452502
+      }
+    },
+    {
+      "id": "CIV-189",
+      "initial": {
+        "x": -296.83774988839866,
+        "z": -282.6830278795212
+      },
+      "totalDistance": 9.293164883610814,
+      "lastTenSecondsDistance": 3.1644476464899185,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.83774988839866,
+        "z": -281.07325659169595
+      }
+    },
+    {
+      "id": "CIV-190",
+      "initial": {
+        "x": -196.75344948726706,
+        "z": -289.2458131997846
+      },
+      "totalDistance": 24.974417047812892,
+      "lastTenSecondsDistance": 8.013313678977397,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.75344948726706,
+        "z": -310.9106564303731
+      }
+    },
+    {
+      "id": "CIV-191",
+      "initial": {
+        "x": -76.71201431672088,
+        "z": -276.9257685645483
+      },
+      "totalDistance": 14.249886269969522,
+      "lastTenSecondsDistance": 4.6055501236403416,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -76.71201431672088,
+        "z": -281.96539868101144
+      }
+    },
+    {
+      "id": "CIV-192",
+      "initial": {
+        "x": 103.38455738353078,
+        "z": -280.11287211757156
+      },
+      "totalDistance": 15.99711952722464,
+      "lastTenSecondsDistance": 5.460698944096578,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.38455738353078,
+        "z": -277.1334193029619
+      }
+    },
+    {
+      "id": "CIV-193",
+      "initial": {
+        "x": 222.9315446103923,
+        "z": -283.4290869855322
+      },
+      "totalDistance": 28.02506312121189,
+      "lastTenSecondsDistance": 9.636121211465195,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.15,
+      "modeFrames": {
+        "walk": 1716,
+        "pass": 85
+      },
+      "final": {
+        "x": 223.91456853344002,
+        "z": -261.99567723721304
+      }
+    },
+    {
+      "id": "CIV-194",
+      "initial": {
+        "x": 323.20992681374776,
+        "z": -284.5085442342795
+      },
+      "totalDistance": 16.41042782040364,
+      "lastTenSecondsDistance": 5.606137838527218,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.20992681374776,
+        "z": -272.1639624987184
+      }
+    },
+    {
+      "id": "CIV-195",
+      "initial": {
+        "x": -323.0231257677777,
+        "z": -287.52295460199156
+      },
+      "totalDistance": 22.501031196376402,
+      "lastTenSecondsDistance": 7.662592569854837,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.0231257677777,
+        "z": -310.01398579836797
+      }
+    },
+    {
+      "id": "CIV-196",
+      "initial": {
+        "x": -222.93995631611907,
+        "z": -286.18235349683096
+      },
+      "totalDistance": 10.72724854896984,
+      "lastTenSecondsDistance": 3.587871190517319,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.93995631611907,
+        "z": -275.4551049478611
+      }
+    },
+    {
+      "id": "CIV-197",
+      "initial": {
+        "x": -102.96662934138439,
+        "z": -277.9459929007105
+      },
+      "totalDistance": 25.542756471630554,
+      "lastTenSecondsDistance": 8.56678022402778,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -102.96662934138439,
+        "z": -252.40323642907995
+      }
+    },
+    {
+      "id": "CIV-198",
+      "initial": {
+        "x": 77.02754063855392,
+        "z": -281.2724516199902
+      },
+      "totalDistance": 17.485352822429974,
+      "lastTenSecondsDistance": 5.923672636374004,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1720,
+        "pass": 81
+      },
+      "final": {
+        "x": 77.76630068766227,
+        "z": -264.15076146286964
+      }
+    },
+    {
+      "id": "CIV-199",
+      "initial": {
+        "x": 197.26614868231118,
+        "z": -273.8691440013238
+      },
+      "totalDistance": 17.615436762109766,
+      "lastTenSecondsDistance": 5.666887105820592,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 197.26614868231118,
+        "z": -281.68745335733547
+      }
+    },
+    {
+      "id": "CIV-200",
+      "initial": {
+        "x": 296.72488975971936,
+        "z": -288.6774202150293
+      },
+      "totalDistance": 25.161004136270506,
+      "lastTenSecondsDistance": 8.438631501941643,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1741,
+        "pass": 60
+      },
+      "final": {
+        "x": 296.0861674931076,
+        "z": -313.57141366424145
+      }
+    },
+    {
+      "id": "CIV-201",
+      "initial": {
+        "x": -296.7732745999703,
+        "z": -323.3704750437289
+      },
+      "totalDistance": 10.290894727411967,
+      "lastTenSecondsDistance": 3.441644498982498,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.7732745999703,
+        "z": -333.66136977114087
+      }
+    },
+    {
+      "id": "CIV-202",
+      "initial": {
+        "x": -196.94849708317778,
+        "z": -317.42938546901564
+      },
+      "totalDistance": 13.828983811748628,
+      "lastTenSecondsDistance": 4.716215926545601,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.94849708317778,
+        "z": -323.348504753941
+      }
+    },
+    {
+      "id": "CIV-203",
+      "initial": {
+        "x": -77.06559382877313,
+        "z": -327.32449066555125
+      },
+      "totalDistance": 16.87226150161831,
+      "lastTenSecondsDistance": 5.426973947389399,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -77.06559382877313,
+        "z": -342.407736954462
+      }
+    },
+    {
+      "id": "CIV-204",
+      "initial": {
+        "x": 103.3971479417989,
+        "z": -314.0837659453973
+      },
+      "totalDistance": 16.613478860548582,
+      "lastTenSecondsDistance": 5.674256687595403,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.3971479417989,
+        "z": -329.1425039315914
+      }
+    },
+    {
+      "id": "CIV-205",
+      "initial": {
+        "x": 222.82559519233183,
+        "z": -309.9948279709555
+      },
+      "totalDistance": 9.545081506255372,
+      "lastTenSecondsDistance": 3.250844740665457,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 222.82559519233183,
+        "z": -305.51576766727027
+      }
+    },
+    {
+      "id": "CIV-206",
+      "initial": {
+        "x": 322.93936990657824,
+        "z": -311.63355927327643
+      },
+      "totalDistance": 9.594366053906924,
+      "lastTenSecondsDistance": 3.2676517876313937,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.93936990657824,
+        "z": -303.7277005262906
+      }
+    },
+    {
+      "id": "CIV-207",
+      "initial": {
+        "x": -322.8460015888093,
+        "z": -314.5730741538107
+      },
+      "totalDistance": 18.357019869013662,
+      "lastTenSecondsDistance": 6.2893564451372646,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1714,
+        "pass": 87
+      },
+      "final": {
+        "x": -323.7895804684772,
+        "z": -332.4303201484041
+      }
+    },
+    {
+      "id": "CIV-208",
+      "initial": {
+        "x": -223.09489997918718,
+        "z": -308.5476056228392
+      },
+      "totalDistance": 22.931638966785897,
+      "lastTenSecondsDistance": 7.354633521051085,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.09489997918718,
+        "z": -289.36281466946224
+      }
+    },
+    {
+      "id": "CIV-209",
+      "initial": {
+        "x": -102.89272572728805,
+        "z": -314.4740274573676
+      },
+      "totalDistance": 24.71339611853989,
+      "lastTenSecondsDistance": 8.471485365594845,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.18333333333333332,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -102.89272572728805,
+        "z": -337.21281617997784
+      }
+    },
+    {
+      "id": "CIV-210",
+      "initial": {
+        "x": 76.62205989218782,
+        "z": -310.5905060613528
+      },
+      "totalDistance": 12.334458399928963,
+      "lastTenSecondsDistance": 4.126662666494042,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.62205989218782,
+        "z": -298.25604766142385
+      }
+    },
+    {
+      "id": "CIV-211",
+      "initial": {
+        "x": 196.61599958259612,
+        "z": -326.23506583916026
+      },
+      "totalDistance": 28.88960612536549,
+      "lastTenSecondsDistance": 9.70828680610731,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1728,
+        "pass": 73
+      },
+      "final": {
+        "x": 195.77295106380595,
+        "z": -354.7884184634894
+      }
+    },
+    {
+      "id": "CIV-212",
+      "initial": {
+        "x": 297.15457470398394,
+        "z": -307.17773283617566
+      },
+      "totalDistance": 17.511124622034348,
+      "lastTenSecondsDistance": 5.828586179598574,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1742,
+        "pass": 59
+      },
+      "final": {
+        "x": 297.73447965596165,
+        "z": -289.964903595958
+      }
+    },
+    {
+      "id": "CIV-213",
+      "initial": {
+        "x": -296.99101534190123,
+        "z": -354.20956689082084
+      },
+      "totalDistance": 12.708695473630769,
+      "lastTenSecondsDistance": 4.252174095788007,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.99101534190123,
+        "z": -341.50087141719007
+      }
+    },
+    {
+      "id": "CIV-214",
+      "initial": {
+        "x": -197.08110445658676,
+        "z": -348.85829853853215
+      },
+      "totalDistance": 9.80200189042938,
+      "lastTenSecondsDistance": 3.2778626734381646,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.08110445658676,
+        "z": -358.66030042896153
+      }
+    },
+    {
+      "id": "CIV-215",
+      "initial": {
+        "x": -76.70514277103356,
+        "z": -361.23367960443716
+      },
+      "totalDistance": 20.651614131713938,
+      "lastTenSecondsDistance": 6.8571608371365755,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1712,
+        "pass": 89
+      },
+      "final": {
+        "x": -77.71973973489916,
+        "z": -381.37061147673916
+      }
+    },
+    {
+      "id": "CIV-216",
+      "initial": {
+        "x": 103.38261742705944,
+        "z": -347.9366909993812
+      },
+      "totalDistance": 9.345117833368874,
+      "lastTenSecondsDistance": 3.1821546262649463,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.38261742705944,
+        "z": -350.04263630695453
+      }
+    },
+    {
+      "id": "CIV-217",
+      "initial": {
+        "x": 223.12473836531862,
+        "z": -352.44671881580723
+      },
+      "totalDistance": 15.813426617297921,
+      "lastTenSecondsDistance": 5.294035510426113,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.12473836531862,
+        "z": -368.26014543310515
+      }
+    },
+    {
+      "id": "CIV-218",
+      "initial": {
+        "x": 323.2051315578632,
+        "z": -360.5723380022682
+      },
+      "totalDistance": 11.073852930143403,
+      "lastTenSecondsDistance": 3.5762394231776398,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.03333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.2051315578632,
+        "z": -349.570557750896
+      }
+    },
+    {
+      "id": "CIV-219",
+      "initial": {
+        "x": -323.31482881798877,
+        "z": -346.93087154775856
+      },
+      "totalDistance": 24.802823541324305,
+      "lastTenSecondsDistance": 8.380344458309168,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1694,
+        "pass": 107
+      },
+      "final": {
+        "x": -322.08289667783254,
+        "z": -322.68698588623647
+      }
+    },
+    {
+      "id": "CIV-220",
+      "initial": {
+        "x": -222.8842840821948,
+        "z": -341.79160347161815
+      },
+      "totalDistance": 11.840988067201522,
+      "lastTenSecondsDistance": 4.034993827091171,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.8842840821948,
+        "z": -333.0030644912777
+      }
+    },
+    {
+      "id": "CIV-221",
+      "initial": {
+        "x": -103.15223449221813,
+        "z": -349.2592882665806
+      },
+      "totalDistance": 18.976772043802725,
+      "lastTenSecondsDistance": 6.488309398239949,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.15223449221813,
+        "z": -358.33664537187053
+      }
+    },
+    {
+      "id": "CIV-222",
+      "initial": {
+        "x": 77.03060007158201,
+        "z": -349.1919852377847
+      },
+      "totalDistance": 19.56146519011088,
+      "lastTenSecondsDistance": 6.5533658343163665,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 77.03060007158201,
+        "z": -368.7534504278956
+      }
+    },
+    {
+      "id": "CIV-223",
+      "initial": {
+        "x": 196.85939442366362,
+        "z": -342.8126536649652
+      },
+      "totalDistance": 14.635545355293889,
+      "lastTenSecondsDistance": 4.845602531974009,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1729,
+        "pass": 72
+      },
+      "final": {
+        "x": 197.5098986837237,
+        "z": -328.5310092691523
+      }
+    },
+    {
+      "id": "CIV-224",
+      "initial": {
+        "x": 296.941920639202,
+        "z": -353.0441563305445
+      },
+      "totalDistance": 17.164612608012817,
+      "lastTenSecondsDistance": 5.747835202580063,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 296.941920639202,
+        "z": -335.8795437225317
+      }
+    },
+    {
+      "id": "CIV-225",
+      "initial": {
+        "x": -296.91508309899365,
+        "z": -382.8655171964317
+      },
+      "totalDistance": 21.283438948808055,
+      "lastTenSecondsDistance": 7.132564002370486,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.91508309899365,
+        "z": -404.14895614523977
+      }
+    },
+    {
+      "id": "CIV-226",
+      "initial": {
+        "x": -197.12597997388804,
+        "z": -379.3484528294764
+      },
+      "totalDistance": 18.65384984378636,
+      "lastTenSecondsDistance": 6.248265523554608,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.12597997388804,
+        "z": -398.00230267326276
+      }
+    },
+    {
+      "id": "CIV-227",
+      "initial": {
+        "x": -77.06988367005252,
+        "z": -379.3525854117237
+      },
+      "totalDistance": 27.90148640386186,
+      "lastTenSecondsDistance": 9.365936442545546,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1712,
+        "pass": 89
+      },
+      "final": {
+        "x": -76.04028306642601,
+        "z": -351.87719733885973
+      }
+    },
+    {
+      "id": "CIV-228",
+      "initial": {
+        "x": 102.73975982277189,
+        "z": -392.026625459455
+      },
+      "totalDistance": 24.471056199733084,
+      "lastTenSecondsDistance": 8.20571269209995,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 102.73975982277189,
+        "z": -367.5555692597219
+      }
+    },
+    {
+      "id": "CIV-229",
+      "initial": {
+        "x": 223.28971345582977,
+        "z": -388.2691108689644
+      },
+      "totalDistance": 26.98792725178356,
+      "lastTenSecondsDistance": 8.677333917433316,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.16666666666666666,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.28971345582977,
+        "z": -397.90763422707613
+      }
+    },
+    {
+      "id": "CIV-230",
+      "initial": {
+        "x": 322.88595646517354,
+        "z": -391.04140950450676
+      },
+      "totalDistance": 22.78843197083853,
+      "lastTenSecondsDistance": 7.33219971419328,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.88595646517354,
+        "z": -399.18118133320087
+      }
+    },
+    {
+      "id": "CIV-231",
+      "initial": {
+        "x": -322.84433619219345,
+        "z": -379.8248438827693
+      },
+      "totalDistance": 16.491534246725564,
+      "lastTenSecondsDistance": 5.633355032327813,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -322.84433619219345,
+        "z": -375.6370806161822
+      }
+    },
+    {
+      "id": "CIV-232",
+      "initial": {
+        "x": -223.1879992577713,
+        "z": -378.7824325229042
+      },
+      "totalDistance": 25.372443676166313,
+      "lastTenSecondsDistance": 8.50937517715397,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.1879992577713,
+        "z": -404.1548761990705
+      }
+    },
+    {
+      "id": "CIV-233",
+      "initial": {
+        "x": -102.98416492114775,
+        "z": -394.83524166746065
+      },
+      "totalDistance": 28.47315566624843,
+      "lastTenSecondsDistance": 9.554861438563762,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -102.98416492114775,
+        "z": -366.3620860012122
+      }
+    },
+    {
+      "id": "CIV-234",
+      "initial": {
+        "x": 76.7651124325348,
+        "z": -386.4672066846863
+      },
+      "totalDistance": 27.129507808736832,
+      "lastTenSecondsDistance": 8.696282062012529,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.7651124325348,
+        "z": -399.47502879523216
+      }
+    },
+    {
+      "id": "CIV-235",
+      "initial": {
+        "x": 196.62774780970068,
+        "z": -393.7186196674593
+      },
+      "totalDistance": 12.655153566783383,
+      "lastTenSecondsDistance": 4.234217239752695,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.62774780970068,
+        "z": -406.37377323424266
+      }
+    },
+    {
+      "id": "CIV-236",
+      "initial": {
+        "x": 296.77826648596675,
+        "z": -387.9013618712313
+      },
+      "totalDistance": 25.16458692124553,
+      "lastTenSecondsDistance": 8.068831100300827,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.15,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 296.77826648596675,
+        "z": -400.0526845915644
+      }
+    },
+    {
+      "id": "CIV-237",
+      "initial": {
+        "x": -296.9959621470654,
+        "z": -422.7671871971338
+      },
+      "totalDistance": 15.446052314172448,
+      "lastTenSecondsDistance": 5.271663073291734,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.9959621470654,
+        "z": -426.77002036871716
+      }
+    },
+    {
+      "id": "CIV-238",
+      "initial": {
+        "x": -197.15092892530373,
+        "z": -414.7078141926788
+      },
+      "totalDistance": 22.99746389595191,
+      "lastTenSecondsDistance": 7.377784717735608,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.15092892530373,
+        "z": -427.28939292584346
+      }
+    },
+    {
+      "id": "CIV-239",
+      "initial": {
+        "x": -77.13549535120838,
+        "z": -422.57408604761576
+      },
+      "totalDistance": 16.155127918694006,
+      "lastTenSecondsDistance": 5.198176521040182,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -77.13549535120838,
+        "z": -408.5527723970299
+      }
+    },
+    {
+      "id": "CIV-240",
+      "initial": {
+        "x": 103.08362277450506,
+        "z": -410.8645777789875
+      },
+      "totalDistance": 15.540159893761484,
+      "lastTenSecondsDistance": 5.3025726270890345,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 103.08362277450506,
+        "z": -419.66314775826834
+      }
+    },
+    {
+      "id": "CIV-241",
+      "initial": {
+        "x": 223.30989138213917,
+        "z": -421.1847099714912
+      },
+      "totalDistance": 17.68741425905398,
+      "lastTenSecondsDistance": 6.041985706942739,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 223.30989138213917,
+        "z": -426.25948231038785
+      }
+    },
+    {
+      "id": "CIV-242",
+      "initial": {
+        "x": 323.26773654287683,
+        "z": -427.4847198554314
+      },
+      "totalDistance": 28.498477421941857,
+      "lastTenSecondsDistance": 9.789560978122267,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.16666666666666666,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.26773654287683,
+        "z": -409.18118027225637
+      }
+    },
+    {
+      "id": "CIV-243",
+      "initial": {
+        "x": -323.1889924385352,
+        "z": -426.602297219634
+      },
+      "totalDistance": 14.71278855708698,
+      "lastTenSecondsDistance": 5.021471402886334,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.1889924385352,
+        "z": -423.81350663696657
+      }
+    },
+    {
+      "id": "CIV-244",
+      "initial": {
+        "x": -222.92184312096796,
+        "z": -417.34000931112087
+      },
+      "totalDistance": 13.548796352996021,
+      "lastTenSecondsDistance": 4.533941433919949,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -222.92184312096796,
+        "z": -430.8888056641169
+      }
+    },
+    {
+      "id": "CIV-245",
+      "initial": {
+        "x": -102.78882390647195,
+        "z": -428.76374755380675
+      },
+      "totalDistance": 13.885310131834956,
+      "lastTenSecondsDistance": 4.783067465215254,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.850000000000001,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -102.78882390647195,
+        "z": -430.7954556082398
+      }
+    },
+    {
+      "id": "CIV-246",
+      "initial": {
+        "x": 76.91533753748517,
+        "z": -416.3050963358953
+      },
+      "totalDistance": 18.867463089276328,
+      "lastTenSecondsDistance": 6.4508183565884,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.91533753748517,
+        "z": -417.4728829705139
+      }
+    },
+    {
+      "id": "CIV-247",
+      "initial": {
+        "x": 196.98312009684741,
+        "z": -423.1646711525507
+      },
+      "totalDistance": 21.957716974424216,
+      "lastTenSecondsDistance": 7.516505850122371,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.98312009684741,
+        "z": -419.9014855006684
+      }
+    },
+    {
+      "id": "CIV-248",
+      "initial": {
+        "x": 296.9883312918246,
+        "z": -409.6330782485195
+      },
+      "totalDistance": 26.49816975000965,
+      "lastTenSecondsDistance": 9.09113829770206,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.13333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 296.9883312918246,
+        "z": -431.8429939617946
+      }
+    },
+    {
+      "id": "CIV-249",
+      "initial": {
+        "x": -296.9673459904501,
+        "z": -459.9172418404371
+      },
+      "totalDistance": 26.41702591118502,
+      "lastTenSecondsDistance": 8.688899773025469,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.16666666666666666,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.9673459904501,
+        "z": -433.51140923025497
+      }
+    },
+    {
+      "id": "CIV-250",
+      "initial": {
+        "x": -196.97915821238422,
+        "z": -455.8746951586568
+      },
+      "totalDistance": 19.712849826522927,
+      "lastTenSecondsDistance": 6.604279189931162,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.97915821238422,
+        "z": -436.16184533213385
+      }
+    },
+    {
+      "id": "CIV-251",
+      "initial": {
+        "x": -76.83891762620769,
+        "z": -457.67296865200615
+      },
+      "totalDistance": 16.32079173788128,
+      "lastTenSecondsDistance": 5.464385475493486,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -76.83891762620769,
+        "z": -441.35217691412487
+      }
+    },
+    {
+      "id": "CIV-252",
+      "initial": {
+        "x": 102.78085915243719,
+        "z": -455.9964929347857
+      },
+      "totalDistance": 25.907857534186803,
+      "lastTenSecondsDistance": 8.305392095788875,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.11666666666666665,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 102.78085915243719,
+        "z": -436.89290996067945
+      }
+    },
+    {
+      "id": "CIV-253",
+      "initial": {
+        "x": 222.82690746681766,
+        "z": -455.13660770664
+      },
+      "totalDistance": 10.355722495128646,
+      "lastTenSecondsDistance": 3.46336216252638,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 222.82690746681766,
+        "z": -444.78088521151136
+      }
+    },
+    {
+      "id": "CIV-254",
+      "initial": {
+        "x": 322.70464373463767,
+        "z": -454.00566337266946
+      },
+      "totalDistance": 12.57709779719994,
+      "lastTenSecondsDistance": 4.208038937565391,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 322.70464373463767,
+        "z": -441.4285655754695
+      }
+    },
+    {
+      "id": "CIV-255",
+      "initial": {
+        "x": -323.3330453368602,
+        "z": -447.50504445508113
+      },
+      "totalDistance": 22.90714570927213,
+      "lastTenSecondsDistance": 7.847183443975894,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.3330453368602,
+        "z": -442.12856467999103
+      }
+    },
+    {
+      "id": "CIV-256",
+      "initial": {
+        "x": -223.15959058175795,
+        "z": -451.11186267538005
+      },
+      "totalDistance": 21.278480921932214,
+      "lastTenSecondsDistance": 6.831963503259033,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -223.15959058175795,
+        "z": -437.1593792278517
+      }
+    },
+    {
+      "id": "CIV-257",
+      "initial": {
+        "x": -103.08738626050763,
+        "z": -448.2608406241052
+      },
+      "totalDistance": 12.65725614718508,
+      "lastTenSecondsDistance": 4.234922402041434,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.08738626050763,
+        "z": -460.91809677129027
+      }
+    },
+    {
+      "id": "CIV-258",
+      "initial": {
+        "x": 77.1415786930127,
+        "z": -445.65959477368733
+      },
+      "totalDistance": 12.570488809740027,
+      "lastTenSecondsDistance": 4.205822418891614,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 77.1415786930127,
+        "z": -458.23008358342736
+      }
+    },
+    {
+      "id": "CIV-259",
+      "initial": {
+        "x": 197.2852095806971,
+        "z": -448.4770417933353
+      },
+      "totalDistance": 25.079384441075945,
+      "lastTenSecondsDistance": 8.595410666517694,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 197.2852095806971,
+        "z": -443.4826119905215
+      }
+    },
+    {
+      "id": "CIV-260",
+      "initial": {
+        "x": 297.15970641877504,
+        "z": -449.9516231198795
+      },
+      "totalDistance": 12.726004313518615,
+      "lastTenSecondsDistance": 4.257979125237,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 297.15970641877504,
+        "z": -437.2256188063609
+      }
+    },
+    {
+      "id": "CIV-261",
+      "initial": {
+        "x": -296.8592232994968,
+        "z": -477.07730603478853
+      },
+      "totalDistance": 28.940359380473126,
+      "lastTenSecondsDistance": 9.71251973853515,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -296.8592232994968,
+        "z": -506.01766541526166
+      }
+    },
+    {
+      "id": "CIV-262",
+      "initial": {
+        "x": -197.03283103550785,
+        "z": -485.33103618761515
+      },
+      "totalDistance": 20.464595244757163,
+      "lastTenSecondsDistance": 6.857104593601434,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -197.03283103550785,
+        "z": -464.866440942858
+      }
+    },
+    {
+      "id": "CIV-263",
+      "initial": {
+        "x": -76.78440598058515,
+        "z": -488.669210794475
+      },
+      "totalDistance": 14.141014406201123,
+      "lastTenSecondsDistance": 4.7326701050401425,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -76.78440598058515,
+        "z": -474.5281963882739
+      }
+    },
+    {
+      "id": "CIV-264",
+      "initial": {
+        "x": 103.07882861385588,
+        "z": -478.8571586770936
+      },
+      "totalDistance": 13.945938009556194,
+      "lastTenSecondsDistance": 4.81968274626529,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1702,
+        "pass": 99
+      },
+      "final": {
+        "x": 102.21549656252513,
+        "z": -492.3254733403921
+      }
+    },
+    {
+      "id": "CIV-265",
+      "initial": {
+        "x": 222.92704424923286,
+        "z": -479.7453126498499
+      },
+      "totalDistance": 11.850303672856683,
+      "lastTenSecondsDistance": 3.9643107496115704,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 222.92704424923286,
+        "z": -467.8950089769932
+      }
+    },
+    {
+      "id": "CIV-266",
+      "initial": {
+        "x": 323.04901282591743,
+        "z": -483.97411386603494
+      },
+      "totalDistance": 19.25425247912733,
+      "lastTenSecondsDistance": 6.450078713621679,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.04901282591743,
+        "z": -503.22836634516227
+      }
+    },
+    {
+      "id": "CIV-267",
+      "initial": {
+        "x": -323.22431078224906,
+        "z": -479.0420615717769
+      },
+      "totalDistance": 15.6898837418683,
+      "lastTenSecondsDistance": 5.252555472362872,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.22431078224906,
+        "z": -494.7319453136452
+      }
+    },
+    {
+      "id": "CIV-268",
+      "initial": {
+        "x": -223.07381415753625,
+        "z": -482.12391500948
+      },
+      "totalDistance": 17.90231646506679,
+      "lastTenSecondsDistance": 6.1172637431552825,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1722,
+        "pass": 79
+      },
+      "final": {
+        "x": -223.91222649928318,
+        "z": -499.5821736142962
+      }
+    },
+    {
+      "id": "CIV-269",
+      "initial": {
+        "x": -103.00021502799355,
+        "z": -485.2975116315297
+      },
+      "totalDistance": 26.369787297303503,
+      "lastTenSecondsDistance": 8.455217679729628,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.15,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.00021502799355,
+        "z": -469.7634293914355
+      }
+    },
+    {
+      "id": "CIV-270",
+      "initial": {
+        "x": 76.87372538733761,
+        "z": -489.09106347877537
+      },
+      "totalDistance": 17.145767361718868,
+      "lastTenSecondsDistance": 5.741504295356663,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.87372538733761,
+        "z": -471.9452961170565
+      }
+    },
+    {
+      "id": "CIV-271",
+      "initial": {
+        "x": 196.78959468379617,
+        "z": -484.9910228800959
+      },
+      "totalDistance": 10.461436047828272,
+      "lastTenSecondsDistance": 3.4987767919424755,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 196.78959468379617,
+        "z": -474.5295868322676
+      }
+    },
+    {
+      "id": "CIV-272",
+      "initial": {
+        "x": 296.60359773077073,
+        "z": -481.4424342599698
+      },
+      "totalDistance": 28.3935838815542,
+      "lastTenSecondsDistance": 9.49996846665735,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1740,
+        "pass": 61
+      },
+      "final": {
+        "x": 295.9338088299841,
+        "z": -509.57461630277203
+      }
+    },
+    {
+      "id": "CIV-273",
+      "initial": {
+        "x": -297.26721384807024,
+        "z": -514.9281208995731
+      },
+      "totalDistance": 9.481746215865996,
+      "lastTenSecondsDistance": 3.170575237310686,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -297.26721384807024,
+        "z": -524.409867115439
+      }
+    },
+    {
+      "id": "CIV-274",
+      "initial": {
+        "x": -196.85787158138118,
+        "z": -515.990686919447
+      },
+      "totalDistance": 10.981276527031014,
+      "lastTenSecondsDistance": 3.6730194419353097,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -196.85787158138118,
+        "z": -505.00941039241593
+      }
+    },
+    {
+      "id": "CIV-275",
+      "initial": {
+        "x": -77.03083626120352,
+        "z": -526.5336425230291
+      },
+      "totalDistance": 14.552232181354952,
+      "lastTenSecondsDistance": 4.954887672853715,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.05,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -77.03083626120352,
+        "z": -511.9914103416744
+      }
+    },
+    {
+      "id": "CIV-276",
+      "initial": {
+        "x": 102.72844916565809,
+        "z": -517.1991117795928
+      },
+      "totalDistance": 27.435166747556668,
+      "lastTenSecondsDistance": 9.208150060812345,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1702,
+        "pass": 99
+      },
+      "final": {
+        "x": 103.87068336428526,
+        "z": -490.24422699901163
+      }
+    },
+    {
+      "id": "CIV-277",
+      "initial": {
+        "x": 222.90236429804935,
+        "z": -528.4407816187479
+      },
+      "totalDistance": 11.345241000096848,
+      "lastTenSecondsDistance": 3.865566252221697,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 222.90236429804935,
+        "z": -537.8741076773952
+      }
+    },
+    {
+      "id": "CIV-278",
+      "initial": {
+        "x": 323.3499742564745,
+        "z": -518.7084558875299
+      },
+      "totalDistance": 10.812086383425708,
+      "lastTenSecondsDistance": 3.6163081891273805,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 323.3499742564745,
+        "z": -507.8963695041042
+      }
+    },
+    {
+      "id": "CIV-279",
+      "initial": {
+        "x": -323.3517118475167,
+        "z": -514.7371438883245
+      },
+      "totalDistance": 11.310485777374083,
+      "lastTenSecondsDistance": 3.7833678855930657,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -323.3517118475167,
+        "z": -526.0476296656985
+      }
+    },
+    {
+      "id": "CIV-280",
+      "initial": {
+        "x": -223.09545428561978,
+        "z": -514.2062635119073
+      },
+      "totalDistance": 25.221142890570757,
+      "lastTenSecondsDistance": 8.503171768241486,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1722,
+        "pass": 79
+      },
+      "final": {
+        "x": -222.19015173883486,
+        "z": -489.38524021349895
+      }
+    },
+    {
+      "id": "CIV-281",
+      "initial": {
+        "x": -103.14393179859034,
+        "z": -520.975488633942
+      },
+      "totalDistance": 16.717442565690817,
+      "lastTenSecondsDistance": 5.710749261903743,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.09999999999999999,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": -103.14393179859034,
+        "z": -515.3382309097306
+      }
+    },
+    {
+      "id": "CIV-282",
+      "initial": {
+        "x": 76.81652672782074,
+        "z": -528.8826910803095
+      },
+      "totalDistance": 25.46663684677162,
+      "lastTenSecondsDistance": 8.163491220545438,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.08333333333333333,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 76.81652672782074,
+        "z": -550.6524912722867
+      }
+    },
+    {
+      "id": "CIV-283",
+      "initial": {
+        "x": 197.07722614314406,
+        "z": -523.2204945703038
+      },
+      "totalDistance": 16.796708941605743,
+      "lastTenSecondsDistance": 5.7361542120836475,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0.06666666666666667,
+      "modeFrames": {
+        "walk": 1801
+      },
+      "final": {
+        "x": 197.07722614314406,
+        "z": -513.0582095712765
+      }
+    },
+    {
+      "id": "CIV-284",
+      "initial": {
+        "x": 297.0468177812174,
+        "z": -519.6836008106359
+      },
+      "totalDistance": 13.170868965624988,
+      "lastTenSecondsDistance": 4.474103954795058,
+      "currentStationary": 0,
+      "maxStationarySeconds": 0,
+      "modeFrames": {
+        "walk": 1739,
+        "pass": 62
+      },
+      "final": {
+        "x": 297.5271256811411,
+        "z": -506.76959605843257
+      }
+    }
+  ],
+  "navigation": {
+    "staticObstacles": 28308,
+    "dynamicObstacles": 284,
+    "crowdActors": 284,
+    "spawnCorrections": [
+      {
+        "id": "CIV-011",
+        "before": {
+          "x": 12.074643455445766,
+          "z": -8.50193376839161
+        },
+        "x": 12.074643455445766,
+        "z": -8.544342992866133,
+        "distance": 0.042409224474523555,
+        "resolved": true,
+        "bodyRadius": 0.6934601539373012
+      },
+      {
+        "id": "CIV-015",
+        "before": {
+          "x": 12.677479572128505,
+          "z": 11.934418112039566
+        },
+        "x": 12.51519531226387,
+        "z": 12.109849118594298,
+        "distance": 0.23898162912788598,
+        "resolved": true,
+        "bodyRadius": 0.7584688616499363
+      },
+      {
+        "id": "CIV-018",
+        "before": {
+          "x": -13.195959337521344,
+          "z": -39.0886715054512
+        },
+        "x": -13.408921193749507,
+        "z": -39.204516473125224,
+        "distance": 0.24243103915039335,
+        "resolved": true,
+        "bodyRadius": 0.718792568967012
+      },
+      {
+        "id": "CIV-019",
+        "before": {
+          "x": 13.221090064384043,
+          "z": -108.50926034152508
+        },
+        "x": 12.889759676727099,
+        "z": -108.04524620850485,
+        "distance": 0.5701657140055119,
+        "resolved": true,
+        "bodyRadius": 0.7659517569032168
+      },
+      {
+        "id": "CIV-021",
+        "before": {
+          "x": 12.517017678823322,
+          "z": -100.10201624035835
+        },
+        "x": 11.806791220366568,
+        "z": -99.54922479893766,
+        "distance": 0.8999999999999999,
+        "resolved": true,
+        "bodyRadius": 0.7705174299702501
+      },
+      {
+        "id": "CIV-023",
+        "before": {
+          "x": 13.587869253009558,
+          "z": -24.88816125690937
+        },
+        "x": 13.565894615737433,
+        "z": -25.25555552756373,
+        "distance": 0.3680508589758887,
+        "resolved": true,
+        "bodyRadius": 0.6976821303323989
+      },
+      {
+        "id": "CIV-030",
+        "before": {
+          "x": -13.434102502185851,
+          "z": -159.20033758878708
+        },
+        "x": -13.302375826581498,
+        "z": -159.4900083930135,
+        "distance": 0.3182154802754928,
+        "resolved": true,
+        "bodyRadius": 0.6985063085656369
+      },
+      {
+        "id": "CIV-074",
+        "before": {
+          "x": 323.10530251963064,
+          "z": 62.86941460734232
+        },
+        "x": 323.10530251963064,
+        "z": 62.48793945252551,
+        "distance": 0.3814751548168118,
+        "resolved": true,
+        "bodyRadius": 0.7838723143528389
+      },
+      {
+        "id": "CIV-078",
+        "before": {
+          "x": 76.89240511644167,
+          "z": 62.954897770099336
+        },
+        "x": 76.53272825768087,
+        "z": 62.954897770099336,
+        "distance": 0.3596768587607926,
+        "resolved": true,
+        "bodyRadius": 0.7070581930110881
+      },
+      {
+        "id": "CIV-119",
+        "before": {
+          "x": -77.17964619430714,
+          "z": -83.09548198571429
+        },
+        "x": -77.45681005406053,
+        "z": -83.21028701542382,
+        "distance": 0.30000000000000004,
+        "resolved": true,
+        "bodyRadius": 0.7423597747531753
+      },
+      {
+        "id": "CIV-128",
+        "before": {
+          "x": 297.25404609702525,
+          "z": -83.15167189808562
+        },
+        "x": 297.4388220035275,
+        "z": -83.22820858455864,
+        "distance": 0.2,
+        "resolved": true,
+        "bodyRadius": 0.7301617124096518
+      },
+      {
+        "id": "CIV-195",
+        "before": {
+          "x": -323.0231257677777,
+          "z": -287.1009962260723
+        },
+        "x": -323.0231257677777,
+        "z": -287.52295460199156,
+        "distance": 0.421958375919246,
+        "resolved": true,
+        "bodyRadius": 0.8025559390370453
+      },
+      {
+        "id": "CIV-275",
+        "before": {
+          "x": -77.03083626120352,
+          "z": -526.6662617242896
+        },
+        "x": -77.03083626120352,
+        "z": -526.5336425230291,
+        "distance": 0.1326192012604679,
+        "resolved": true,
+        "bodyRadius": 0.7054902009836382
+      },
+      {
+        "id": "CIV-027",
+        "before": {
+          "x": 13.186789627652615,
+          "z": -114.80202385783195
+        },
+        "x": 13.854958090324141,
+        "z": -114.80202385783195,
+        "distance": 0.6681684626715256,
+        "resolved": true,
+        "bodyRadius": 0.771691390939517
+      }
+    ]
+  },
+  "reportedPairFindings": [
+    {
+      "pair": "CIV-003/CIV-019",
+      "body": null,
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-014/CIV-030",
+      "body": null,
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-017/CIV-021",
+      "body": null,
+      "umbrella": null
+    }
+  ],
+  "durationMs": 18684.8689,
+  "limits": "Production navigation and rendering math are exercised without a GPU. Traffic advances normally; undamaged dynamic bins and parked car retain their initial poses. This establishes geometric body overlap, not a new performance or image-quality result."
+}

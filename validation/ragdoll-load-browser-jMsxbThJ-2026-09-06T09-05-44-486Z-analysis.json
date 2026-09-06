@@ -1,0 +1,655 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T09:08:34.941Z",
+  "build": "/assets/index-jMsxbThJ.js",
+  "bundleSha256": "ce799f8dcb7b3af47ffa6495f9a04a195a2af5452c2d22395b57bc33efca3ee8",
+  "sourceReport": "ragdoll-load-browser-jMsxbThJ-2026-09-06T09-05-44-486Z.json",
+  "sourceReportSHA256": "bc668b26e2965d74b6c2fcf81bf818e6ec6901a8655e8a704b2368a14338c8e6",
+  "method": "Post-run analysis of the immutable recorded production observations. The raw report remains available with its original overstrict travel-distance finding. No fresh browser, fixture, simulation, or source changes.",
+  "scope": "Targeted load and dynamic-retirement behavior only; not a universal performance, rest-state or visual-quality verdict.",
+  "phases": [
+    {
+      "name": "baseline",
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.673333333333332,
+        "fps": 59.97600959616154,
+        "minMs": 16.5,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000291,
+        "maxMs": 16.80000000000291,
+        "over25ms": 0,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "renderer": {
+        "calls": 436,
+        "triangles": 3108514
+      },
+      "worldBodies": {
+        "total": 2217,
+        "dynamic": 13,
+        "static": 2187,
+        "kinematic": 17,
+        "awake": 0,
+        "sleepy": 0,
+        "sleeping": 13
+      },
+      "constraints": 0,
+      "civilianBodies": {
+        "total": 0,
+        "dynamic": 0,
+        "static": 0,
+        "kinematic": 0,
+        "awake": 0,
+        "sleepy": 0,
+        "sleeping": 0
+      },
+      "civilians": {
+        "total": 284,
+        "alive": 284,
+        "dead": 0,
+        "injured": 0,
+        "fleeing": 0,
+        "physicalCorpses": 0,
+        "activeRagdolls": 0,
+        "simplifiedCorpses": 0,
+        "ragdollJoints": 0,
+        "activeCorpseBodies": 0,
+        "time": 9.12010000000004
+      },
+      "corpseAssemblies": {
+        "sleeping": 0,
+        "awake": 0
+      },
+      "heap": {
+        "usedBytes": 169983888,
+        "totalBytes": 233454864,
+        "limitBytes": 4395630592
+      }
+    },
+    {
+      "name": "24 newly jointed civilian deaths",
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.728666666666673,
+        "fps": 59.7776272267166,
+        "minMs": 16.399999999997817,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000291,
+        "maxMs": 33.20000000000073,
+        "over25ms": 1,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "renderer": {
+        "calls": 435,
+        "triangles": 3107662
+      },
+      "worldBodies": {
+        "total": 2488,
+        "dynamic": 284,
+        "static": 2187,
+        "kinematic": 17,
+        "awake": 68,
+        "sleepy": 142,
+        "sleeping": 74
+      },
+      "constraints": 240,
+      "civilianBodies": {
+        "total": 271,
+        "dynamic": 271,
+        "static": 0,
+        "kinematic": 0,
+        "awake": 68,
+        "sleepy": 142,
+        "sleeping": 61
+      },
+      "civilians": {
+        "total": 284,
+        "alive": 260,
+        "dead": 24,
+        "injured": 0,
+        "fleeing": 0,
+        "physicalCorpses": 24,
+        "activeRagdolls": 24,
+        "simplifiedCorpses": 0,
+        "ragdollJoints": 240,
+        "activeCorpseBodies": 271,
+        "time": 14.238799999999962
+      },
+      "corpseAssemblies": {
+        "sleeping": 5,
+        "awake": 19
+      },
+      "heap": {
+        "usedBytes": 176840176,
+        "totalBytes": 242367760,
+        "limitBytes": 4395630592
+      }
+    },
+    {
+      "name": "32 deaths: 24 jointed and 8 retired dynamic compounds",
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.673333333333332,
+        "fps": 59.97600959616154,
+        "minMs": 16.5,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.799999999999272,
+        "maxMs": 16.900000000001455,
+        "over25ms": 0,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "renderer": {
+        "calls": 437,
+        "triangles": 3109366
+      },
+      "worldBodies": {
+        "total": 2496,
+        "dynamic": 292,
+        "static": 2187,
+        "kinematic": 17,
+        "awake": 40,
+        "sleepy": 148,
+        "sleeping": 104
+      },
+      "constraints": 240,
+      "civilianBodies": {
+        "total": 279,
+        "dynamic": 279,
+        "static": 0,
+        "kinematic": 0,
+        "awake": 40,
+        "sleepy": 148,
+        "sleeping": 91
+      },
+      "civilians": {
+        "total": 284,
+        "alive": 252,
+        "dead": 32,
+        "injured": 0,
+        "fleeing": 1,
+        "physicalCorpses": 32,
+        "activeRagdolls": 24,
+        "simplifiedCorpses": 8,
+        "ragdollJoints": 240,
+        "activeCorpseBodies": 279,
+        "time": 19.307599999999862
+      },
+      "corpseAssemblies": {
+        "sleeping": 15,
+        "awake": 17
+      },
+      "heap": {
+        "usedBytes": 202782228,
+        "totalBytes": 246037776,
+        "limitBytes": 4395630592
+      }
+    },
+    {
+      "name": "32 deaths after 20 seconds settling",
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.673333333333332,
+        "fps": 59.97600959616154,
+        "minMs": 16.5,
+        "p50Ms": 16.69999999999709,
+        "p95Ms": 16.80000000000291,
+        "p99Ms": 16.80000000000291,
+        "maxMs": 16.80000000000291,
+        "over25ms": 0,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "renderer": {
+        "calls": 438,
+        "triangles": 3110218
+      },
+      "worldBodies": {
+        "total": 2496,
+        "dynamic": 292,
+        "static": 2187,
+        "kinematic": 17,
+        "awake": 0,
+        "sleepy": 11,
+        "sleeping": 281
+      },
+      "constraints": 240,
+      "civilianBodies": {
+        "total": 279,
+        "dynamic": 279,
+        "static": 0,
+        "kinematic": 0,
+        "awake": 0,
+        "sleepy": 11,
+        "sleeping": 268
+      },
+      "civilians": {
+        "total": 284,
+        "alive": 252,
+        "dead": 32,
+        "injured": 0,
+        "fleeing": 0,
+        "physicalCorpses": 32,
+        "activeRagdolls": 24,
+        "simplifiedCorpses": 8,
+        "ragdollJoints": 240,
+        "activeCorpseBodies": 279,
+        "time": 39.29890000000002
+      },
+      "corpseAssemblies": {
+        "sleeping": 31,
+        "awake": 1
+      },
+      "heap": {
+        "usedBytes": 176681118,
+        "totalBytes": 247610542,
+        "limitBytes": 4395630592
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "baseline remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.018700000000046
+      }
+    },
+    {
+      "name": "24 newly jointed civilian deaths remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.0852999999999255
+      }
+    },
+    {
+      "name": "24 deaths retain 24 articulated assemblies and 240 anatomical joints",
+      "passed": true,
+      "evidence": {
+        "total": 284,
+        "alive": 260,
+        "dead": 24,
+        "injured": 0,
+        "fleeing": 0,
+        "physicalCorpses": 24,
+        "activeRagdolls": 24,
+        "simplifiedCorpses": 0,
+        "ragdollJoints": 240,
+        "activeCorpseBodies": 271,
+        "time": 9.153500000000037
+      }
+    },
+    {
+      "name": "32 deaths: 24 jointed and 8 retired dynamic compounds remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.035499999999903
+      }
+    },
+    {
+      "name": "32 deaths enforce the 24 articulated / 8 compound budget",
+      "passed": true,
+      "evidence": {
+        "total": 284,
+        "alive": 252,
+        "dead": 32,
+        "injured": 0,
+        "fleeing": 1,
+        "physicalCorpses": 32,
+        "activeRagdolls": 24,
+        "simplifiedCorpses": 8,
+        "ragdollJoints": 240,
+        "activeCorpseBodies": 279,
+        "time": 14.272099999999961
+      }
+    },
+    {
+      "name": "32 deaths after 20 seconds settling remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.018700000000358
+      }
+    },
+    {
+      "name": "All eight retired compounds remain mass 68 and Cannon DYNAMIC",
+      "passed": true,
+      "evidence": [
+        {
+          "id": "CIV-038",
+          "bodyId": 2488,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -0.8189308062013834,
+            0.34566984302381026,
+            -142.55732146857557
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-040",
+          "bodyId": 2500,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            7.476856049532362,
+            0.3291861886579671,
+            -113.186026494547
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-019",
+          "bodyId": 2512,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            14.09504906499119,
+            0.49412802623441887,
+            -113.92169898421939
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-005",
+          "bodyId": 2524,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            12.054911530930804,
+            0.4039614764143178,
+            -105.18940997196725
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-009",
+          "bodyId": 2536,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            13.227475540645788,
+            0.46180049860185496,
+            -96.25082168834334
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-014",
+          "bodyId": 2548,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -14.44729870321857,
+            0.4646414934764742,
+            -162.32273033160857
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-028",
+          "bodyId": 2560,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -13.215853184869026,
+            0.4016550711360897,
+            -156.81000258527814
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-030",
+          "bodyId": 2572,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -13.431831221665577,
+            0.3700262278133684,
+            -154.03865081890854
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Settled bodies have pavement or recorded solid support beneath them",
+      "passed": true,
+      "evidence": {
+        "unsupported": [],
+        "maximumBodyFloorGap": 0.001926132256496127,
+        "note": "A raised corpse is accepted only with a recorded static-solid contact at its lower envelope. Umbrella geometry is reported separately."
+      }
+    },
+    {
+      "name": "A sleeping retired compound wakes dynamically through the production impulse API",
+      "passed": true,
+      "evidence": {
+        "method": "Production civilian.impulse API at the actual compound center; no body editing.",
+        "before": {
+          "id": "CIV-038",
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -0.8189308062013834,
+            0.34566984302381026,
+            -142.55732146857557
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        "applied": true,
+        "immediate": {
+          "id": "CIV-038",
+          "mass": 68,
+          "type": 1,
+          "sleepState": 0,
+          "position": [
+            -0.8189308062013834,
+            0.34566984302381026,
+            -142.55732146857557
+          ],
+          "velocity": [
+            0.6420060662726461,
+            0.0963009099408969,
+            0.12840121325452922
+          ]
+        },
+        "after": {
+          "mass": 68,
+          "type": 1,
+          "sleepState": 1,
+          "position": [
+            -0.8186038985806472,
+            0.3475571176949701,
+            -142.5563089398774
+          ],
+          "velocity": [
+            0.00006554050883987516,
+            0.000010456867346075871,
+            0.0000074991540665579696
+          ]
+        },
+        "displacement": 0.002166538400655009
+      },
+      "rationale": "The original harness incorrectly required more than 2cm of travel from a grounded 45Ns impulse. A friction-limited dynamic body can stop sooner. These original observations prove a sleeping-to-awake transition, nonzero immediate velocity, unchanged dynamic mass/type, and actual displacement above numerical tolerance. This does not change or rerun any observation."
+    },
+    {
+      "name": "Source remained unchanged throughout the strict-bundle run",
+      "passed": true,
+      "evidence": {
+        "sourceBefore": {
+          "src/civilian-ragdoll.js": "d49543c253b5f494633630fb3f6b6a897bf6499396cc5a6323177224459b1008",
+          "src/civilians.js": "f5fe66d74795eb0434b792ba84cb310e52d8baf648797791cdcc05e7e542a772",
+          "src/main.js": "ee1d7eada9b53822bcb92f020b636aa9d08cc1aec34138397b536747b77a80d6",
+          "src/simulation.js": "69f65f29ac791dac29ea0d5392a99a00a634ee835567d2584609e639cd275968",
+          "package-lock.json": "cd5c8a9f63146a583b6e18e281ede484c73fe490453120d23b0341efe13e6dc2"
+        },
+        "sourceAfter": {
+          "src/civilian-ragdoll.js": "d49543c253b5f494633630fb3f6b6a897bf6499396cc5a6323177224459b1008",
+          "src/civilians.js": "f5fe66d74795eb0434b792ba84cb310e52d8baf648797791cdcc05e7e542a772",
+          "src/main.js": "ee1d7eada9b53822bcb92f020b636aa9d08cc1aec34138397b536747b77a80d6",
+          "src/simulation.js": "69f65f29ac791dac29ea0d5392a99a00a634ee835567d2584609e639cd275968",
+          "package-lock.json": "cd5c8a9f63146a583b6e18e281ede484c73fe490453120d23b0341efe13e6dc2"
+        }
+      }
+    },
+    {
+      "name": "No browser console errors",
+      "passed": true,
+      "evidence": []
+    }
+  ],
+  "warnings": [
+    "1 corpse assemblies still awake at the end of the settling profile; this report records actual rest state without forcing sleep."
+  ],
+  "errors": [],
+  "maximumBodyFloorGap": 0.001926132256496127,
+  "wake": {
+    "name": "A sleeping retired compound wakes dynamically through the production impulse API",
+    "passed": true,
+    "evidence": {
+      "method": "Production civilian.impulse API at the actual compound center; no body editing.",
+      "before": {
+        "id": "CIV-038",
+        "mass": 68,
+        "type": 1,
+        "sleepState": 2,
+        "position": [
+          -0.8189308062013834,
+          0.34566984302381026,
+          -142.55732146857557
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ]
+      },
+      "applied": true,
+      "immediate": {
+        "id": "CIV-038",
+        "mass": 68,
+        "type": 1,
+        "sleepState": 0,
+        "position": [
+          -0.8189308062013834,
+          0.34566984302381026,
+          -142.55732146857557
+        ],
+        "velocity": [
+          0.6420060662726461,
+          0.0963009099408969,
+          0.12840121325452922
+        ]
+      },
+      "after": {
+        "mass": 68,
+        "type": 1,
+        "sleepState": 1,
+        "position": [
+          -0.8186038985806472,
+          0.3475571176949701,
+          -142.5563089398774
+        ],
+        "velocity": [
+          0.00006554050883987516,
+          0.000010456867346075871,
+          0.0000074991540665579696
+        ]
+      },
+      "displacement": 0.002166538400655009
+    },
+    "rationale": "The original harness incorrectly required more than 2cm of travel from a grounded 45Ns impulse. A friction-limited dynamic body can stop sooner. These original observations prove a sleeping-to-awake transition, nonzero immediate velocity, unchanged dynamic mass/type, and actual displacement above numerical tolerance. This does not change or rerun any observation."
+  }
+}

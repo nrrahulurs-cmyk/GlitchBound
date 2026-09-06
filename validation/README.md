@@ -1,5 +1,20 @@
 # Validation
 
+## Current release checkpoint and retained history
+
+For the `Y0FsMvtw` runtime checkpoint, start with these bounded reports:
+
+- [Final foot contact and blueprint checks](foot-contact-final-browser.json): frozen comparisons, real hidden/airborne/vehicle transitions, stair support, restart and dock-route selection.
+- [Dock/contact performance samples](performance-docks-contact-profile.json): final 59.976 FPS ordinary / 54.195 FPS with 24 fresh articulated deaths, earlier samples and instrumented diagnosis. No measured FPS gain is attributed to the shader guard.
+- [Dock geometry and actual walking](iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z.json): the preceding `cA0mxVCY` geometry checkpoint, all 954 modules and four actual W routes; the final Y0 change concerns guarded contact shading.
+- [Native city reopen](native-city-report.json), [native dock renders](native-docks-preview.json) and [before/after visual review](native-docks-visual-review.md): final saved city source checks and limited visual acceptance, with the first dark apron preserved. Native checks identify the `.blend` hash separately from the runtime bundle.
+
+Other files retain their recorded build IDs, conditions, intermediate observations and failures. They are not all tests of the current build. In particular, `ragdoll-contact-browser-C_4wor07-2026-09-06T12-04-25-520Z.json` is an empty, interrupted historical capture retained as a truncated artifact; it is not a current failing test or a valid JSON report. Duplicate raw captures and earlier adverse results are intentionally preserved with their original filenames and bytes.
+
+This evidence is included in GitHub. The `validation/` directory is excluded from the Vercel deployment payload through `.vercelignore`. Publication does not convert historical failures into current results or establish the unfinished quality target; see [QUALITY_ROADMAP.md](../QUALITY_ROADMAP.md).
+
+## Earlier feature reports
+
 The current game is free roam. Reports identify the build they tested. The first expansion was followed by district art, street activity and a structural placement pass. That pass also corrected overlapping building footprints, so the original driving report describes the earlier build; the final placement and browser checks validate the corrected layout.
 
 - `weapon-assets-report.json`: independent GLTFLoader checks of the four Blender weapon exports, open-bore triangle rays, muzzle orientation, separate animation parts and native/export checksums. The exact source contract is in `../blender/weapon-manifest.json`.

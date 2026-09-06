@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T07:39:49.002Z",
+  "method": "Production pure locomotion, source selection and listener geometry. No mocked Web Audio graph. Native waveform/panning/render verification remains pending.",
+  "tests": [
+    {
+      "name": "Footfalls follow equal actual travel at30/60/144Hz, with alternating feet",
+      "pass": true
+    },
+    {
+      "name": "Raised paving uses its own step surface and exact passed location",
+      "pass": true
+    },
+    {
+      "name": "Held movement against a wall produces no footfalls without physical travel",
+      "pass": true
+    },
+    {
+      "name": "Muted, paused, airborne and in-vehicle movement never produces walking steps",
+      "pass": true
+    },
+    {
+      "name": "Landing emits once after genuine airborne time; curb jitter does not",
+      "pass": true
+    },
+    {
+      "name": "Pause clears airborne/stride history without a phantom landing on resume",
+      "pass": true
+    },
+    {
+      "name": "Teleport-sized displacement is rejected without catching up steps next frame",
+      "pass": true
+    },
+    {
+      "name": "Reverse/strafe travel uses distance; invalid values remain finite",
+      "pass": true
+    },
+    {
+      "name": "Spatial pool selects at most six valid actual sources and filters wrecks/waiting/hidden/far sources",
+      "pass": true
+    },
+    {
+      "name": "Source retention avoids swapping voices for tiny nearest-distance changes",
+      "pass": true
+    },
+    {
+      "name": "Listener forward/up form the actual yaw/pitch orthonormal camera basis",
+      "pass": true
+    },
+    {
+      "name": "Six procedural neighborhood profiles are distinct and bounded",
+      "pass": true
+    },
+    {
+      "name": "Construction/update remain silent without creating an AudioContext",
+      "pass": true
+    }
+  ]
+}

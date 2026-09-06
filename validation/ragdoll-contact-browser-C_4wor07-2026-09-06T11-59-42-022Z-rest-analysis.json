@@ -1,0 +1,337 @@
+{
+  "source": "ragdoll-contact-browser-C_4wor07-2026-09-06T11-59-42-022Z.json",
+  "build": "/assets/index-C_4wor07.js",
+  "sourceStatus": "failed",
+  "checkedAtUTC": "2026-09-06T12:10:23.980Z",
+  "note": "Read-only analysis of actual per-RAF native physics samples. Quiet anchors are approximated by the first positive quiet-time sample, so limb attribution is diagnostic rather than an exact internal guard trace. Reruns have different impact/stride trajectories; longer observation does not fix a prior late-settling limitation.",
+  "results": [
+    {
+      "name": "Preserved timeout or failure capture",
+      "physicalSamples": 1734,
+      "observedSeconds": 28.99499999999957,
+      "firstSleepSeconds": 27.66109999999961,
+      "longestSleepingSeconds": 1.3504999999999998,
+      "finalSleeping": true,
+      "finalSpeed": 0,
+      "quietResetEpisodes": 23,
+      "quietResets": [
+        {
+          "startSeconds": 7.336300000000037,
+          "endSeconds": 7.386300000000038,
+          "previousQuiet": 0.2166999999999971,
+          "energyMax": 0.006732422500046248,
+          "poseDriftFrames": 4,
+          "approximateAnchorViolations": {
+            "forearmL": 4
+          }
+        },
+        {
+          "startSeconds": 8.903600000000036,
+          "endSeconds": 9.020300000000034,
+          "previousQuiet": 0.416800000000003,
+          "energyMax": 0.006143240989972969,
+          "poseDriftFrames": 8,
+          "approximateAnchorViolations": {
+            "forearmL": 8,
+            "upperArmL": 5
+          }
+        },
+        {
+          "startSeconds": 9.120300000000036,
+          "endSeconds": 9.120300000000036,
+          "previousQuiet": 0.06670000000000073,
+          "energyMax": 0.00817340844875501,
+          "poseDriftFrames": 0,
+          "approximateAnchorViolations": {}
+        },
+        {
+          "startSeconds": 10.487500000000015,
+          "endSeconds": 10.687600000000012,
+          "previousQuiet": 0.6668999999999975,
+          "energyMax": 0.006801406190273613,
+          "poseDriftFrames": 13,
+          "approximateAnchorViolations": {
+            "forearmL": 13,
+            "upperArmL": 9
+          }
+        },
+        {
+          "startSeconds": 10.804400000000012,
+          "endSeconds": 10.804400000000012,
+          "previousQuiet": 0.08340000000000146,
+          "energyMax": 0.008020466448630742,
+          "poseDriftFrames": 0,
+          "approximateAnchorViolations": {}
+        },
+        {
+          "startSeconds": 11.204400000000009,
+          "endSeconds": 11.221100000000005,
+          "previousQuiet": 0.13339999999999783,
+          "energyMax": 0.006533629589639845,
+          "poseDriftFrames": 2,
+          "approximateAnchorViolations": {
+            "forearmL": 2
+          }
+        },
+        {
+          "startSeconds": 12.021499999999993,
+          "endSeconds": 12.25489999999999,
+          "previousQuiet": 0.7668999999999974,
+          "energyMax": 0.005066951115451277,
+          "poseDriftFrames": 15,
+          "approximateAnchorViolations": {
+            "forearmL": 15,
+            "upperArmL": 11
+          }
+        },
+        {
+          "startSeconds": 12.404999999999985,
+          "endSeconds": 12.421599999999984,
+          "previousQuiet": 0.11670000000000073,
+          "energyMax": 0.005385542580579837,
+          "poseDriftFrames": 2,
+          "approximateAnchorViolations": {
+            "forearmL": 2
+          }
+        },
+        {
+          "startSeconds": 12.60499999999998,
+          "endSeconds": 12.62179999999998,
+          "previousQuiet": 0.15010000000000218,
+          "energyMax": 0.004628983062640222,
+          "poseDriftFrames": 2,
+          "approximateAnchorViolations": {
+            "forearmL": 2
+          }
+        },
+        {
+          "startSeconds": 13.522099999999966,
+          "endSeconds": 13.788799999999961,
+          "previousQuiet": 0.8504000000000009,
+          "energyMax": 0.003530370131345385,
+          "poseDriftFrames": 17,
+          "approximateAnchorViolations": {
+            "forearmL": 17,
+            "upperArmL": 11
+          }
+        },
+        {
+          "startSeconds": 13.972299999999958,
+          "endSeconds": 14.005599999999957,
+          "previousQuiet": 0.15009999999999857,
+          "energyMax": 0.0034728163574948363,
+          "poseDriftFrames": 3,
+          "approximateAnchorViolations": {
+            "forearmL": 3
+          }
+        },
+        {
+          "startSeconds": 14.272299999999955,
+          "endSeconds": 14.322399999999957,
+          "previousQuiet": 0.23349999999999999,
+          "energyMax": 0.0017819980182676568,
+          "poseDriftFrames": 4,
+          "approximateAnchorViolations": {
+            "forearmL": 4
+          }
+        },
+        {
+          "startSeconds": 14.905999999999947,
+          "endSeconds": 15.056099999999944,
+          "previousQuiet": 0.5502000000000006,
+          "energyMax": 0.0018126560716345455,
+          "poseDriftFrames": 10,
+          "approximateAnchorViolations": {
+            "forearmL": 10,
+            "upperArmL": 5
+          }
+        },
+        {
+          "startSeconds": 15.272699999999944,
+          "endSeconds": 15.306099999999942,
+          "previousQuiet": 0.18339999999999781,
+          "energyMax": 0.002329065212903057,
+          "poseDriftFrames": 3,
+          "approximateAnchorViolations": {
+            "forearmL": 3
+          }
+        },
+        {
+          "startSeconds": 15.55619999999994,
+          "endSeconds": 15.606199999999939,
+          "previousQuiet": 0.21670000000000073,
+          "energyMax": 0.0018104110184241774,
+          "poseDriftFrames": 4,
+          "approximateAnchorViolations": {
+            "forearmL": 4
+          }
+        },
+        {
+          "startSeconds": 16.456599999999916,
+          "endSeconds": 16.706699999999913,
+          "previousQuiet": 0.817099999999998,
+          "energyMax": 0.0015995257133684924,
+          "poseDriftFrames": 16,
+          "approximateAnchorViolations": {
+            "forearmL": 16,
+            "upperArmL": 7
+          }
+        },
+        {
+          "startSeconds": 16.990199999999906,
+          "endSeconds": 17.056899999999906,
+          "previousQuiet": 0.2502000000000007,
+          "energyMax": 0.001319356327387104,
+          "poseDriftFrames": 5,
+          "approximateAnchorViolations": {
+            "forearmL": 5
+          }
+        },
+        {
+          "startSeconds": 18.023899999999877,
+          "endSeconds": 18.32399999999987,
+          "previousQuiet": 0.9502999999999987,
+          "energyMax": 0.0010414148552734168,
+          "poseDriftFrames": 19,
+          "approximateAnchorViolations": {
+            "forearmL": 19,
+            "upperArmL": 12
+          }
+        },
+        {
+          "startSeconds": 19.574499999999833,
+          "endSeconds": 19.957999999999824,
+          "previousQuiet": 1.2337999999999991,
+          "energyMax": 0.0008050835039519817,
+          "poseDriftFrames": 24,
+          "approximateAnchorViolations": {
+            "forearmL": 24,
+            "upperArmL": 3
+          }
+        },
+        {
+          "startSeconds": 21.058499999999803,
+          "endSeconds": 21.391899999999794,
+          "previousQuiet": 1.0669999999999993,
+          "energyMax": 0.0005716587451310176,
+          "poseDriftFrames": 21,
+          "approximateAnchorViolations": {
+            "forearmL": 21,
+            "upperArmL": 9
+          }
+        },
+        {
+          "startSeconds": 22.49239999999978,
+          "endSeconds": 22.825799999999774,
+          "previousQuiet": 1.067100000000002,
+          "energyMax": 0.0004459637144736695,
+          "poseDriftFrames": 21,
+          "approximateAnchorViolations": {
+            "forearmL": 21
+          }
+        },
+        {
+          "startSeconds": 24.226399999999742,
+          "endSeconds": 24.65979999999973,
+          "previousQuiet": 1.3671999999999962,
+          "energyMax": 0.00030734525969789616,
+          "poseDriftFrames": 27,
+          "approximateAnchorViolations": {
+            "forearmL": 27
+          }
+        },
+        {
+          "startSeconds": 25.576899999999693,
+          "endSeconds": 25.84369999999968,
+          "previousQuiet": 0.883700000000004,
+          "energyMax": 0.00028276946373571415,
+          "poseDriftFrames": 17,
+          "approximateAnchorViolations": {
+            "forearmL": 17
+          }
+        }
+      ],
+      "contactPartnersAvailable": false,
+      "contactPartners": [],
+      "lastSixAwakeSecondsLimbMotion": [
+        {
+          "name": "forearmL",
+          "maxPositionDrift1_8s": 0.06949166188726828,
+          "maxRotationDrift1_8s": 0.20868374576532517,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "upperArmL",
+          "maxPositionDrift1_8s": 0.03295042530738162,
+          "maxRotationDrift1_8s": 0.19340536724079113,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "head",
+          "maxPositionDrift1_8s": 0.024422756604605148,
+          "maxRotationDrift1_8s": 0.010966008102877563,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "torso",
+          "maxPositionDrift1_8s": 0.023440053231249106,
+          "maxRotationDrift1_8s": 0.010457071631482025,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "pelvis",
+          "maxPositionDrift1_8s": 0.022273573875501548,
+          "maxRotationDrift1_8s": 0.024821759629224602,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "upperArmR",
+          "maxPositionDrift1_8s": 0.022194468577583344,
+          "maxRotationDrift1_8s": 0.013383852322720472,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "thighR",
+          "maxPositionDrift1_8s": 0.021191336268543273,
+          "maxRotationDrift1_8s": 0.02832383180605833,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "forearmR",
+          "maxPositionDrift1_8s": 0.02039370958821042,
+          "maxRotationDrift1_8s": 0.013382998379847298,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "thighL",
+          "maxPositionDrift1_8s": 0.01899042426312982,
+          "maxRotationDrift1_8s": 0.02457921111284858,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "shinR",
+          "maxPositionDrift1_8s": 0.013281080976566578,
+          "maxRotationDrift1_8s": 0.028359717085738825,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        },
+        {
+          "name": "shinL",
+          "maxPositionDrift1_8s": 0.00980066142114926,
+          "maxRotationDrift1_8s": 0.04735196430828308,
+          "maxSpeed": null,
+          "maxAngularSpeed": null
+        }
+      ]
+    }
+  ]
+}

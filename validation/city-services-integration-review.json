@@ -1,0 +1,58 @@
+{
+  "checkedAtUTC": "2026-09-06T08:37:39.537Z",
+  "originalReviewedBuild": "index-B39EHyc4.js",
+  "currentBuild": "index-CJaAGmbT.js",
+  "currentBuildSHA256": "5398babbc060a77744f758b0039f224e59e36f6336e4309aaa62529b0b473c35",
+  "buildChecks": {
+    "frontFacingSelection": true,
+    "cancellationEvents": true,
+    "activeRecoveryBoostGate": true
+  },
+  "optimization": {
+    "before": {
+      "mode": "current",
+      "initializationMs": 121.12220000000013,
+      "retainedHeapBytes": 43309720,
+      "retainedHeapMiB": 41.303367614746094,
+      "retainedRSSMiB": 35.3046875,
+      "sourceBoxes": 160135,
+      "siteCount": 15,
+      "averageNearbyDiscoveryMs": 0.026527,
+      "sourceIndexMappingValid": true
+    },
+    "after": {
+      "mode": "optimized",
+      "initializationMs": 90.22189999999989,
+      "retainedHeapBytes": 1241680,
+      "retainedHeapMiB": 1.1841583251953125,
+      "retainedRSSMiB": 0.26953125,
+      "sourceBoxes": 160135,
+      "siteCount": 15,
+      "averageNearbyDiscoveryMs": 0.02231224000000002,
+      "sourceIndexMappingValid": true
+    },
+    "retainedHeapSavedMiB": 40.11920928955078,
+    "sourceChangedOnly": "src/city-services.js",
+    "existingFocusedTestsPassed": 15
+  },
+  "integration": {
+    "outcomeFieldsMatch": true,
+    "garageBodyworkResetMatches": true,
+    "neuralBoostMappingMatches": true,
+    "rootParkingGuidePresent": true,
+    "findingsSentToRoot": [
+      {
+        "id": "direct-cancellation-feedback",
+        "scope": "main.js direct cancel calls",
+        "finding": "Cancellation events returned by cancel were discarded, so these interruptions did not reach the service HUD result.",
+        "recommendedFix": "Forward cancel result events through a cancelService(reason) wrapper."
+      },
+      {
+        "id": "finish-active-service",
+        "scope": "main.js finish()",
+        "finding": "finish did not directly clear service state when called outside a simulation update.",
+        "recommendedFix": "Cancel any active operation when entering ended mode."
+      }
+    ]
+  }
+}

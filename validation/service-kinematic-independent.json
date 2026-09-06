@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-09-06T10:37:14.594Z",
+  "kinematic": {
+    "food": "SERVICE-B049",
+    "duration": 2.4,
+    "dt": 0.1,
+    "from": [
+      -118.4,
+      0.40964312546957177,
+      123.8
+    ],
+    "target": [
+      -118.4,
+      0.5541712232518018,
+      123.8
+    ],
+    "velocity": [
+      0,
+      1.4452809778223001,
+      0
+    ],
+    "duringSteps": [
+      [
+        -118.4,
+        0.5541712232518018,
+        123.8
+      ],
+      [
+        -118.4,
+        0.5541712232518018,
+        123.8
+      ],
+      [
+        -118.4,
+        0.5541712232518018,
+        123.8
+      ],
+      [
+        -118.4,
+        0.5541712232518018,
+        123.8
+      ]
+    ],
+    "beforeRestore": [
+      -118.4,
+      0.5541712232518018,
+      123.8
+    ],
+    "afterRestore": [
+      -118.4,
+      0.5541712232518018,
+      123.8
+    ],
+    "maximumOvershoot": 0
+  },
+  "garages": [
+    {
+      "id": "SERVICE-B062",
+      "localParking": [
+        1.4699999999999986,
+        -0.12,
+        4.199999999999989
+      ],
+      "origin": {
+        "x": 226.2,
+        "y": 0.185,
+        "z": 74.1
+      },
+      "normal": {
+        "x": -1,
+        "z": 6.123233995736766e-17
+      },
+      "nScale": 1,
+      "parking": {
+        "x": 222,
+        "y": 0.065,
+        "z": 75.57,
+        "yaw": -3.141592653589793,
+        "halfWidth": 1.45,
+        "halfLength": 2.64,
+        "positionTolerance": 1.05,
+        "yawTolerance": 0.3,
+        "road": "Avenue 210",
+        "clearance": "65 oriented car footprints from the adjacent road lane"
+      }
+    },
+    {
+      "id": "SERVICE-B090",
+      "localParking": [
+        1.4699999999999993,
+        -0.12,
+        4.199999999999989
+      ],
+      "origin": {
+        "x": 118.4,
+        "y": 0.185,
+        "z": -163.8
+      },
+      "normal": {
+        "x": 1.2246467991473532e-16,
+        "z": -1
+      },
+      "nScale": 1,
+      "parking": {
+        "x": 116.93,
+        "y": 0.065,
+        "z": -168,
+        "yaw": 1.5707963267948966,
+        "halfWidth": 1.45,
+        "halfLength": 2.64,
+        "positionTolerance": 1.05,
+        "yawTolerance": 0.3,
+        "road": "Crossway -180",
+        "clearance": "65 oriented car footprints from the adjacent road lane"
+      }
+    },
+    {
+      "id": "SERVICE-B054",
+      "localParking": [
+        1.4699999999999986,
+        -0.12,
+        4.199999999999999
+      ],
+      "origin": {
+        "x": 16.200000000000003,
+        "y": 0.185,
+        "z": 74.1
+      },
+      "normal": {
+        "x": -1,
+        "z": 6.123233995736766e-17
+      },
+      "nScale": 1,
+      "parking": {
+        "x": 12.000000000000004,
+        "y": 0.065,
+        "z": 75.57,
+        "yaw": -3.141592653589793,
+        "halfWidth": 1.45,
+        "halfLength": 2.64,
+        "positionTolerance": 1.05,
+        "yawTolerance": 0.3,
+        "road": "Kasumi Avenue",
+        "clearance": "65 oriented car footprints from the adjacent road lane"
+      }
+    }
+  ]
+}

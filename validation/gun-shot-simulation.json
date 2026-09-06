@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checkedAtUTC": "2026-09-06T06:21:11.072Z",
+  "checkedAtUTC": "2026-09-06T07:14:13.944Z",
   "method": "Production simulation and civilian voxel/physics service; no injected damage. Independent geometry fixtures exercise camera/muzzle parallax, containment, near-cover checks, floor/slab normals, and actual effect geometry through delayed chain explosions.",
   "results": [
     {
@@ -21,6 +21,10 @@
     },
     {
       "test": "A muzzle or eye contained in cover stays blocked at zero distance",
+      "pass": true
+    },
+    {
+      "test": "Eye inside opaque cover cannot damage a crate containing the clipped muzzle",
       "pass": true
     },
     {

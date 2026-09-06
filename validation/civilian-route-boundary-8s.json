@@ -1,0 +1,358 @@
+{
+  "status": "findings",
+  "checkedAtUTC": "2026-09-06T11:08:52.164Z",
+  "scenario": "boundary",
+  "seconds": 8,
+  "method": "Read-only CPU fixture extracts the exact authored284-person seed/template from city.js, then runs production civilian navigation/gait and reads actual InstancedMesh matrices at60Hz. Full static structures/street shapes, real supply/bin bounds, resting service parts, traffic routes, owned and parked initial vehicles are supplied. Each potential pair uses15-axis full3D OBB SAT; umbrella contacts are separate. Original scenario preserves the entire authored population; dedicated headon/follower scenarios place two exact existing templates on the clear -90m avenue only at fixture initialization. No browser, rendering, damage or production code edits.",
+  "sourceHashes": {
+    "city.js": "09b87cde5ea2a12726338da8435011c85040af948dde2cd0822e570da46dd902",
+    "civilians.js": "f9bcd16fba3ce2141f017457bf46d2da7b321e21bcfe6cf805015547d749b651",
+    "civilian-motion.js": "a002f48d3bc4c68ab70ec80b85848c497bb02b7f46e6a1b457b15837ca146d2c",
+    "civilian-navigation.js": "785d6349bba11e916224d0993cec78551583c66aa62726af10230996fbbb2249"
+  },
+  "counts": {
+    "people": 1,
+    "renderedParts": 35,
+    "frames": 481,
+    "staticColliders": 28308,
+    "dynamicObstacles": 284,
+    "satTests": 0,
+    "agreementChecks": 0
+  },
+  "maxMatrixOrthogonalityError": 0,
+  "samples": [
+    {
+      "time": 0,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": 76.83471325810532,
+          "z": 149.5,
+          "yaw": 0,
+          "scale": 1.0437403805227952
+        }
+      ]
+    },
+    {
+      "time": 0.8,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": 76.83471325810532,
+          "z": 150,
+          "yaw": 0,
+          "scale": 1.0437403805227952
+        }
+      ]
+    },
+    {
+      "time": 1,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": 76.83471325810532,
+          "z": 150,
+          "yaw": 0,
+          "scale": 1.0437403805227952
+        }
+      ]
+    },
+    {
+      "time": 2,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": 76.83471325810532,
+          "z": 150,
+          "yaw": 0.06333333333333332,
+          "scale": 1.0437403805227952
+        }
+      ]
+    },
+    {
+      "time": 3,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": 76.83471325810532,
+          "z": 150,
+          "yaw": 0.06333333333333332,
+          "scale": 1.0437403805227952
+        }
+      ]
+    },
+    {
+      "time": 8,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-001",
+          "x": 76.83471325810532,
+          "z": 150,
+          "yaw": 0.06333333333333332,
+          "scale": 1.0437403805227952
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "checks": [
+    {
+      "test": "Authored CIV054 template reverses at its north endpoint and resumes walking",
+      "pass": false,
+      "final": [
+        {
+          "id": "CIV-001",
+          "x": 76.83471325810532,
+          "z": 150
+        }
+      ],
+      "finalDesiredSpeed": 0.8068489937782289
+    }
+  ],
+  "progress": [
+    {
+      "id": "CIV-001",
+      "initial": {
+        "x": 76.83471325810532,
+        "z": 149.5
+      },
+      "totalDistance": 0.5,
+      "lastTenSecondsDistance": 0.5,
+      "currentStationary": 7.24999999999998,
+      "maxStationarySeconds": 7.24999999999998,
+      "modeFrames": {
+        "walk": 481
+      },
+      "endpointTrace": [
+        {
+          "time": 0.7,
+          "z": 149.96296789730388,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.8068489937784307,
+          "gaitVelocityZ": 0.8068489937782289
+        },
+        {
+          "time": 0.7166666666666667,
+          "z": 149.97641538053352,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.8068489937784307,
+          "gaitVelocityZ": 0.8068489937782289
+        },
+        {
+          "time": 0.7333333333333333,
+          "z": 149.98986286376316,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.8068489937784307,
+          "gaitVelocityZ": 0.8068489937782289
+        },
+        {
+          "time": 0.75,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.8068489937784307,
+          "gaitVelocityZ": 0.8068489937782289
+        },
+        {
+          "time": 0.7666666666666667,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.7301823271120611,
+          "gaitVelocityZ": 0.7301823271115623
+        },
+        {
+          "time": 0.7833333333333333,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.7801823271120156,
+          "gaitVelocityZ": 0.7801823271115623
+        },
+        {
+          "time": 0.8,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.7035156604456461,
+          "gaitVelocityZ": 0.7035156604448957
+        },
+        {
+          "time": 0.8166666666666667,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.7535156604456006,
+          "gaitVelocityZ": 0.7535156604448957
+        },
+        {
+          "time": 0.8333333333333334,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.6768489937775257,
+          "gaitVelocityZ": 0.676848993778229
+        },
+        {
+          "time": 0.85,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.7268489937774802,
+          "gaitVelocityZ": 0.7268489937782291
+        },
+        {
+          "time": 0.8666666666666667,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.6501823271111107,
+          "gaitVelocityZ": 0.6501823271115624
+        },
+        {
+          "time": 0.8833333333333333,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.7001823271110652,
+          "gaitVelocityZ": 0.7001823271115625
+        },
+        {
+          "time": 0.9,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.6235156604446956,
+          "gaitVelocityZ": 0.6235156604448958
+        },
+        {
+          "time": 0.9166666666666666,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.6735156604446502,
+          "gaitVelocityZ": 0.6735156604448959
+        },
+        {
+          "time": 0.9333333333333333,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.5968489937782806,
+          "gaitVelocityZ": 0.5968489937782292
+        },
+        {
+          "time": 0.95,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.6468489937782351,
+          "gaitVelocityZ": 0.6468489937782292
+        },
+        {
+          "time": 0.9666666666666667,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.5701823271118656,
+          "gaitVelocityZ": 0.5701823271115626
+        },
+        {
+          "time": 0.9833333333333333,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.6201823271118201,
+          "gaitVelocityZ": 0.6201823271115626
+        },
+        {
+          "time": 1,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.5435156604454505,
+          "gaitVelocityZ": 0.543515660444896
+        },
+        {
+          "time": 1.0166666666666666,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.593515660445405,
+          "gaitVelocityZ": 0.593515660444896
+        },
+        {
+          "time": 1.0333333333333334,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.5168489937790355,
+          "gaitVelocityZ": 0.5168489937782293
+        },
+        {
+          "time": 1.05,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.56684899377899,
+          "gaitVelocityZ": 0.5668489937782294
+        },
+        {
+          "time": 1.0666666666666667,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.49018232711091514,
+          "gaitVelocityZ": 0.49018232711156273
+        },
+        {
+          "time": 1.0833333333333333,
+          "z": 150,
+          "desiredSpeed": -0.8068489937782289,
+          "acceptedVZ": 0.5401823271108697,
+          "gaitVelocityZ": 0.5401823271115628
+        },
+        {
+          "time": 1.1,
+          "z": 150,
+          "desiredSpeed": 0.8068489937782289,
+          "acceptedVZ": 0.4635156604445001,
+          "gaitVelocityZ": 0.4635156604448961
+        }
+      ],
+      "final": {
+        "x": 76.83471325810532,
+        "z": 150
+      }
+    }
+  ],
+  "navigation": {
+    "staticObstacles": 28308,
+    "dynamicObstacles": 284,
+    "crowdActors": 1,
+    "spawnCorrections": []
+  },
+  "reportedPairFindings": [
+    {
+      "pair": "CIV-003/CIV-019",
+      "body": null,
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-014/CIV-030",
+      "body": null,
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-017/CIV-021",
+      "body": null,
+      "umbrella": null
+    }
+  ],
+  "durationMs": 1797.632,
+  "limits": "Production navigation and rendering math are exercised without a GPU. Traffic advances normally; undamaged dynamic bins and parked car retain their initial poses. This establishes geometric body overlap, not a new performance or image-quality result."
+}

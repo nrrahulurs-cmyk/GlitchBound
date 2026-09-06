@@ -1,0 +1,156 @@
+{
+  "checkedAtUTC": "2026-09-06T09:56:19.354Z",
+  "passed": true,
+  "method": "Actual86-piece authored civilian template, production Cannon world/conditional12-awake7-asleep solver at60Hz, real street shapes and accepted-motion kinematic car contacts; no browser overrides or scripted fall animation.",
+  "physicsModel": {
+    "massKg": 68,
+    "segments": 11,
+    "joints": 10,
+    "maxArticulatedAssemblies": 24,
+    "retirement": "Persistent movable compound plus separate umbrella, current pose and linear momentum retained; angular momentum uses Cannon box-inertia approximation.",
+    "limits": "Coarse voxel box contacts; same-person overlapping limb/umbrella collisions excluded. A shared upward-momentum guard bounds energy injected by a position-controlled kinematic car; this is a game physics model, not human biomechanics."
+  },
+  "results": [
+    {
+      "test": "Actual rendered86-voxel figure becomes11 segments and10 joints without pose discontinuity",
+      "pass": true,
+      "matrixError": 3.469446951953614e-18,
+      "segments": 11,
+      "joints": 10
+    },
+    {
+      "test": "Bullet death collapses, articulates, settles on pavement and sleeps with bounded joint drift",
+      "pass": true,
+      "maxGap": 0.012029036293953806,
+      "peakSpeed": 1.3036019544383923,
+      "peakHeight": 1.810291792507689,
+      "maxArticulation": 1.4715416886411163,
+      "maxHingeOverrun": 0.004739033325405109,
+      "restingHeight": 0.5941683910768404,
+      "sleeping": true
+    },
+    {
+      "test": "Different walking strides and civilian scales dissipate limb motion before assembly sleep",
+      "pass": true,
+      "observations": [
+        {
+          "scale": 0.84,
+          "phase": 0.3,
+          "speed": 0.4,
+          "asleep": true,
+          "restY": 0.05646251905199823,
+          "comSpeed": 0
+        },
+        {
+          "scale": 1.025,
+          "phase": 1.2,
+          "speed": -0.4,
+          "asleep": true,
+          "restY": 0.05640866583700557,
+          "comSpeed": 0
+        },
+        {
+          "scale": 1.12,
+          "phase": 2.4,
+          "speed": 0.4,
+          "asleep": true,
+          "restY": 0.056379519375504145,
+          "comSpeed": 0
+        },
+        {
+          "scale": 1,
+          "phase": 3.1,
+          "speed": -0.4,
+          "asleep": true,
+          "restY": 0.056395195851924415,
+          "comSpeed": 0
+        }
+      ]
+    },
+    {
+      "test": "Accepted forward and reverse contact-velocity kinematic-car impacts have restrained launches",
+      "pass": true,
+      "observations": [
+        {
+          "sign": -1,
+          "maxUp": 3.2000000000000006,
+          "maxBottom": 0.4635657603809557,
+          "maxGap": 0.10597221792021108,
+          "travel": -40.85218271703401,
+          "corrections": 3
+        },
+        {
+          "sign": 1,
+          "maxUp": 3.2,
+          "maxBottom": 0.3915605981966659,
+          "maxGap": 0.12444071719162696,
+          "travel": 39.73994451185876,
+          "corrections": 1
+        }
+      ]
+    },
+    {
+      "test": "Actual authored building and raised sidewalk stop a thrown articulated body",
+      "pass": true,
+      "authoredShapes": 386,
+      "raisedSurfaces": 1,
+      "minX": -15.917341318616735,
+      "maxGap": 0.07460443865381507,
+      "restingBottom": 0.14465675962879743
+    },
+    {
+      "test": "Sleeping limbs wake on a later impulse, corpse raycasts remain physical, and reset removes all joints",
+      "pass": true,
+      "corpseHit": true,
+      "remainingJoints": 0
+    },
+    {
+      "test": "A later moving car wakes a settled production ragdoll through real solver contact",
+      "pass": true,
+      "displacement": 4.824538922775079,
+      "maxGap": 0.09408892007169622,
+      "allLimbsWoke": true,
+      "raisedBudgetWithinOneStep": true
+    },
+    {
+      "test": "Different active corpses keep mutual collisions while excluding only their own overlapping limbs",
+      "pass": true,
+      "mutualBroadphasePairs": 50,
+      "retiredMutualPairs": 4,
+      "ownLimbAndUmbrellaPairs": 0
+    },
+    {
+      "test": "Retirement caps joints, preserves airborne pose and momentum, and keeps simplified bodies dynamic",
+      "pass": true,
+      "activeAssemblies": 24,
+      "activeBodies": 294,
+      "joints": 240,
+      "simplified": 3,
+      "matrixError": 0,
+      "retiredRestY": 0.05695704513423523
+    },
+    {
+      "test": "Joint-budget retirement prefers a settled corpse and preserves elevated support without lowering it",
+      "pass": true,
+      "supportHeight": 1.4,
+      "beforeBottom": 1.3996660516237753,
+      "afterBottom": 1.3996660516237753
+    },
+    {
+      "test": "Production update raises the solver budget on death and wake, restoring seven after rest and reset",
+      "pass": true,
+      "neutral": 7,
+      "death": 12,
+      "sleeping": 7,
+      "explicitWake": 12,
+      "reset": 7
+    },
+    {
+      "test": "Every flat-boot and calf shape preserves its exact physical pose during retirement",
+      "pass": true,
+      "retainedShapes": 13,
+      "maximumWorldCornerError": 1.1102230246251565e-16,
+      "minimumInitialShapeY": 0.056999999999999995
+    }
+  ]
+}

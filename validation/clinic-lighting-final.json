@@ -1,0 +1,1172 @@
+{
+  "checkedAtUTC": "2026-09-06T08:17:34.678Z",
+  "build": "/assets/index-DuUXDqE2.js",
+  "errors": [],
+  "site": {
+    "id": "STREET-CRAFT-B108-COURT",
+    "label": "clinic entry / unit 08",
+    "district": "Meridian East",
+    "chunk": "block-16",
+    "hostBuilding": "B108",
+    "attachedTo": "B108",
+    "mountType": "wall-supported-frontage",
+    "anchor": {
+      "x": 172.8,
+      "y": 1.735,
+      "z": -272.8
+    },
+    "groundY": 0.185,
+    "ry": -1.5707963267948966,
+    "road": "Avenue 90",
+    "courtyard": true,
+    "bounds": {
+      "minX": 171.7755,
+      "maxX": 172.89000000000001,
+      "minY": 0.17500000000000004,
+      "maxY": 3.3500000000000005,
+      "minZ": -274.00000000000006,
+      "maxZ": -269.14000000000004
+    },
+    "approach": {
+      "minX": 170.4,
+      "maxX": 172.34,
+      "minY": 0.345,
+      "maxY": 3.085,
+      "minZ": -272.90000000000003,
+      "maxZ": -269.3
+    },
+    "offset": 1.7,
+    "inspectionVantage": {
+      "x": 170.65,
+      "y": 1.935,
+      "z": -271.1
+    },
+    "apertures": [
+      {
+        "role": "doorway aperture",
+        "bounds": {
+          "minX": 172.06,
+          "maxX": 172.86,
+          "minY": 0.16500000000000004,
+          "maxY": 3.325,
+          "minZ": -272.87,
+          "maxZ": -269.33000000000004
+        }
+      },
+      {
+        "role": "utility inset aperture",
+        "bounds": {
+          "minX": 172.06,
+          "maxX": 172.86,
+          "minY": 0.2550000000000001,
+          "maxY": 3.0949999999999998,
+          "minZ": -274.07,
+          "maxZ": -272.91
+        }
+      }
+    ],
+    "boxIds": [
+      "STREET-CRAFT-B108-COURT-001",
+      "STREET-CRAFT-B108-COURT-002",
+      "STREET-CRAFT-B108-COURT-003",
+      "STREET-CRAFT-B108-COURT-004",
+      "STREET-CRAFT-B108-COURT-005",
+      "STREET-CRAFT-B108-COURT-006",
+      "STREET-CRAFT-B108-COURT-007",
+      "STREET-CRAFT-B108-COURT-008",
+      "STREET-CRAFT-B108-COURT-009",
+      "STREET-CRAFT-B108-COURT-010",
+      "STREET-CRAFT-B108-COURT-011",
+      "STREET-CRAFT-B108-COURT-012",
+      "STREET-CRAFT-B108-COURT-013",
+      "STREET-CRAFT-B108-COURT-014",
+      "STREET-CRAFT-B108-COURT-015",
+      "STREET-CRAFT-B108-COURT-016",
+      "STREET-CRAFT-B108-COURT-017",
+      "STREET-CRAFT-B108-COURT-018",
+      "STREET-CRAFT-B108-COURT-019",
+      "STREET-CRAFT-B108-COURT-020",
+      "STREET-CRAFT-B108-COURT-021",
+      "STREET-CRAFT-B108-COURT-022",
+      "STREET-CRAFT-B108-COURT-023",
+      "STREET-CRAFT-B108-COURT-024",
+      "STREET-CRAFT-B108-COURT-025",
+      "STREET-CRAFT-B108-COURT-026",
+      "STREET-CRAFT-B108-COURT-027",
+      "STREET-CRAFT-B108-COURT-028",
+      "STREET-CRAFT-B108-COURT-029",
+      "STREET-CRAFT-B108-COURT-030",
+      "STREET-CRAFT-B108-COURT-031",
+      "STREET-CRAFT-B108-COURT-032",
+      "STREET-CRAFT-B108-COURT-033",
+      "STREET-CRAFT-B108-COURT-034",
+      "STREET-CRAFT-B108-COURT-035",
+      "STREET-CRAFT-B108-COURT-036",
+      "STREET-CRAFT-B108-COURT-037",
+      "STREET-CRAFT-B108-COURT-038",
+      "STREET-CRAFT-B108-COURT-039",
+      "STREET-CRAFT-B108-COURT-040",
+      "STREET-CRAFT-B108-COURT-041",
+      "STREET-CRAFT-B108-COURT-042",
+      "STREET-CRAFT-B108-COURT-043",
+      "STREET-CRAFT-B108-COURT-044",
+      "STREET-CRAFT-B108-COURT-045",
+      "STREET-CRAFT-B108-COURT-046",
+      "STREET-CRAFT-B108-COURT-047",
+      "STREET-CRAFT-B108-COURT-048",
+      "STREET-CRAFT-B108-COURT-049",
+      "STREET-CRAFT-B108-COURT-050",
+      "STREET-CRAFT-B108-COURT-051",
+      "STREET-CRAFT-B108-COURT-052",
+      "STREET-CRAFT-B108-COURT-053",
+      "STREET-CRAFT-B108-COURT-054",
+      "STREET-CRAFT-B108-COURT-055",
+      "STREET-CRAFT-B108-COURT-056",
+      "STREET-CRAFT-B108-COURT-057",
+      "STREET-CRAFT-B108-COURT-058",
+      "STREET-CRAFT-B108-COURT-059",
+      "STREET-CRAFT-B108-COURT-060",
+      "STREET-CRAFT-B108-COURT-061",
+      "STREET-CRAFT-B108-COURT-062",
+      "STREET-CRAFT-B108-COURT-063"
+    ],
+    "supportIds": [
+      "SUP-STREET-CRAFT-B108-COURT-001",
+      "SUP-STREET-CRAFT-B108-COURT-003",
+      "SUP-STREET-CRAFT-B108-COURT-007",
+      "SUP-STREET-CRAFT-B108-COURT-011",
+      "SUP-STREET-CRAFT-B108-COURT-012",
+      "SUP-STREET-CRAFT-B108-COURT-013",
+      "SUP-STREET-CRAFT-B108-COURT-014",
+      "SUP-STREET-CRAFT-B108-COURT-015",
+      "SUP-STREET-CRAFT-B108-COURT-016",
+      "SUP-STREET-CRAFT-B108-COURT-017",
+      "SUP-STREET-CRAFT-B108-COURT-018",
+      "SUP-STREET-CRAFT-B108-COURT-032",
+      "SUP-STREET-CRAFT-B108-COURT-039",
+      "SUP-STREET-CRAFT-B108-COURT-046"
+    ],
+    "variant": 111
+  },
+  "snapshot": {
+    "ready": true,
+    "mode": "playing",
+    "position": [
+      170.65,
+      1.935,
+      -271.1
+    ],
+    "health": 100,
+    "energy": 100,
+    "ammo": 24,
+    "holstered": true,
+    "thirdPerson": false,
+    "photoMode": true,
+    "carSpeed": 0,
+    "inVehicle": false,
+    "elapsed": 1.3171000000000015,
+    "city": {
+      "bounds": {
+        "minX": -350,
+        "maxX": 350,
+        "minZ": -600,
+        "maxZ": 190
+      },
+      "district": "Meridian East",
+      "roadSegments": 16,
+      "layout": {
+        "voxels": 160135,
+        "signs": 646,
+        "pedestrians": 284,
+        "pedestrianVoxels": 14785,
+        "blocks": 34,
+        "roadLength": 9590,
+        "streetColliders": 27496,
+        "movableBins": 12
+      }
+    },
+    "life": {
+      "vehicles": 16,
+      "types": [
+        "taxi",
+        "van",
+        "sport",
+        "bus"
+      ],
+      "districts": [
+        {
+          "name": "Kasumi Ward",
+          "activity": "Late-night taxis and pulsing street signs"
+        },
+        {
+          "name": "Lantern Market",
+          "activity": "Delivery traffic and flickering lantern streets"
+        },
+        {
+          "name": "Iron Docks",
+          "activity": "Heavy transports and rising vent steam"
+        },
+        {
+          "name": "Stacktown",
+          "activity": "Civic buses, service beacons, and drifting paper"
+        },
+        {
+          "name": "Meridian East",
+          "activity": "Sports cars and rotating holographic arrays"
+        },
+        {
+          "name": "Crown Plaza",
+          "activity": "Quiet shuttles and orbiting light sculptures"
+        }
+      ],
+      "movingVoxelParts": 673,
+      "lanterns": 20,
+      "holograms": 3,
+      "lightSculptures": 2,
+      "steamParticles": 64,
+      "paperParticles": 28,
+      "dataMotes": 72,
+      "drawCalls": 5,
+      "traffic": [
+        {
+          "id": "ambient-vehicle-1",
+          "routeId": "ambient-route-1",
+          "region": "Kasumi Ward",
+          "type": "taxi",
+          "x": -4,
+          "y": -0.07300000000000001,
+          "z": -134.51664661527403,
+          "yaw": -3.141592653589793,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 45.189429644828884,
+          "routeLength": 596.8243050404124,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-1",
+            "x": -4,
+            "z": -134.50889661527404,
+            "yaw": -3.141592653589793,
+            "halfWidth": 1.2375,
+            "halfLength": 2.3322499999999997
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "w": 6.123233995736766e-17
+          }
+        },
+        {
+          "id": "ambient-vehicle-2",
+          "routeId": "ambient-route-2",
+          "region": "Kasumi Ward",
+          "type": "sport",
+          "x": -4,
+          "y": -0.07300000000000001,
+          "z": 17.149458302424904,
+          "yaw": -3.141592653589793,
+          "speed": 0,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 204.85553456252782,
+          "routeLength": 660.8243050404124,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-2",
+            "x": -4,
+            "z": 17.157208302424905,
+            "yaw": -3.141592653589793,
+            "halfWidth": 1.2875,
+            "halfLength": 2.48225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "quaternion": {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "w": 6.123233995736766e-17
+          }
+        },
+        {
+          "id": "ambient-vehicle-3",
+          "routeId": "ambient-route-3",
+          "region": "Lantern Market",
+          "type": "van",
+          "x": -94,
+          "y": -0.07300000000000001,
+          "z": 121.53402693917118,
+          "yaw": -3.141592653589793,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 71.24010319927415,
+          "routeLength": 376.8243050404119,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-3",
+            "x": -94,
+            "z": 121.54177693917119,
+            "yaw": -3.141592653589793,
+            "halfWidth": 1.3475,
+            "halfLength": 2.63225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "w": 6.123233995736766e-17
+          }
+        },
+        {
+          "id": "ambient-vehicle-4",
+          "routeId": "ambient-route-4",
+          "region": "Lantern Market",
+          "type": "taxi",
+          "x": -206,
+          "y": -0.07300000000000001,
+          "z": 128.2613757664863,
+          "yaw": 0,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 219.8568530138225,
+          "routeLength": 400.8243050404119,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-4",
+            "x": -206,
+            "z": 128.25362576648632,
+            "yaw": 0,
+            "halfWidth": 1.2375,
+            "halfLength": 2.3322499999999997
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": -3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        },
+        {
+          "id": "ambient-vehicle-5",
+          "routeId": "ambient-route-5",
+          "region": "Iron Docks",
+          "type": "bus",
+          "x": 142.3071883128493,
+          "y": -0.07300000000000001,
+          "z": 136,
+          "yaw": 1.5707963267948966,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 146.6049642073566,
+          "routeLength": 376.824305040412,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-5",
+            "x": 142.2994383128493,
+            "z": 136,
+            "yaw": 1.5707963267948966,
+            "halfWidth": 1.4875,
+            "halfLength": 3.73225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": -3.746189999998189,
+            "y": 0,
+            "z": 0
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0.7071067811865475,
+            "z": 0,
+            "w": 0.7071067811865476
+          }
+        },
+        {
+          "id": "ambient-vehicle-6",
+          "routeId": "ambient-route-6",
+          "region": "Iron Docks",
+          "type": "van",
+          "x": 314,
+          "y": -0.07300000000000001,
+          "z": -28.654026939171132,
+          "yaw": 0,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 316.77225571948003,
+          "routeLength": 460.82430504041184,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-6",
+            "x": 314,
+            "z": -28.661776939171133,
+            "yaw": 0,
+            "halfWidth": 1.3475,
+            "halfLength": 2.63225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": -3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        },
+        {
+          "id": "ambient-vehicle-7",
+          "routeId": "ambient-route-7",
+          "region": "Stacktown",
+          "type": "bus",
+          "x": -214,
+          "y": -0.07300000000000001,
+          "z": -232.80245916163707,
+          "yaw": -3.141592653589793,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 66.90361709846587,
+          "routeLength": 396.82430504041173,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-7",
+            "x": -214,
+            "z": -232.7947091616371,
+            "yaw": -3.141592653589793,
+            "halfWidth": 1.4875,
+            "halfLength": 3.73225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "w": 6.123233995736766e-17
+          }
+        },
+        {
+          "id": "ambient-vehicle-8",
+          "routeId": "ambient-route-8",
+          "region": "Stacktown",
+          "type": "van",
+          "x": -86,
+          "y": -0.07300000000000001,
+          "z": -360.8128116871506,
+          "yaw": 0,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 318.93104046745935,
+          "routeLength": 500.82430504041173,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-8",
+            "x": -86,
+            "z": -360.8205616871506,
+            "yaw": 0,
+            "halfWidth": 1.3475,
+            "halfLength": 2.63225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": -3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        },
+        {
+          "id": "ambient-vehicle-9",
+          "routeId": "ambient-route-9",
+          "region": "Meridian East",
+          "type": "sport",
+          "x": 132.0342161112328,
+          "y": -0.07300000000000001,
+          "z": -184,
+          "yaw": 1.5707963267948966,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 186.87793640897303,
+          "routeLength": 436.82430504041184,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-9",
+            "x": 132.02646611123282,
+            "z": -184,
+            "yaw": 1.5707963267948966,
+            "halfWidth": 1.2875,
+            "halfLength": 2.48225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": -3.746190000006698,
+            "y": 0,
+            "z": 0
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0.7071067811865475,
+            "z": 0,
+            "w": 0.7071067811865476
+          }
+        },
+        {
+          "id": "ambient-vehicle-10",
+          "routeId": "ambient-route-10",
+          "region": "Meridian East",
+          "type": "sport",
+          "x": 310.36540000951646,
+          "y": -0.07300000000000001,
+          "z": -423.3264562828516,
+          "yaw": 1.0796525162282034,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 362.85468622352107,
+          "routeLength": 460.8243050404117,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-10",
+            "x": 310.35856610621266,
+            "z": -423.33011145256506,
+            "yaw": 1.0796525162282034,
+            "halfWidth": 1.2875,
+            "halfLength": 2.48225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": -3.386515650006993,
+            "y": 0,
+            "z": -1.6017026154590823
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0.5139869639700944,
+            "z": 0,
+            "w": 0.8577979953746715
+          }
+        },
+        {
+          "id": "ambient-vehicle-11",
+          "routeId": "ambient-route-11",
+          "region": "Crown Plaza",
+          "type": "bus",
+          "x": -4,
+          "y": -0.07300000000000001,
+          "z": -438.3200286575959,
+          "yaw": -3.141592653589793,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 101.38604760250708,
+          "routeLength": 376.8243050404118,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-11",
+            "x": -4,
+            "z": -438.3122786575959,
+            "yaw": -3.141592653589793,
+            "halfWidth": 1.4875,
+            "halfLength": 3.73225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "w": 6.123233995736766e-17
+          }
+        },
+        {
+          "id": "ambient-vehicle-12",
+          "routeId": "ambient-route-12",
+          "region": "Crown Plaza",
+          "type": "taxi",
+          "x": 94,
+          "y": -0.07300000000000001,
+          "z": -326.5633533847259,
+          "yaw": 0,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 254.68158216503477,
+          "routeLength": 440.82430504041184,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-12",
+            "x": 94,
+            "z": -326.57110338472586,
+            "yaw": 0,
+            "halfWidth": 1.2375,
+            "halfLength": 2.3322499999999997
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": -3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        },
+        {
+          "id": "ambient-vehicle-13",
+          "routeId": "ambient-route-13",
+          "region": "Kasumi Ward",
+          "type": "taxi",
+          "x": 4,
+          "y": -0.07300000000000001,
+          "z": -25.0045686367464,
+          "yaw": 0,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 413.12279741705555,
+          "routeLength": 660.8243050404122,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-13",
+            "x": 4,
+            "z": -25.0123186367464,
+            "yaw": 0,
+            "halfWidth": 1.2375,
+            "halfLength": 2.3322499999999997
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": -3.746189999993083
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        },
+        {
+          "id": "ambient-vehicle-14",
+          "routeId": "ambient-route-14",
+          "region": "Lantern Market",
+          "type": "taxi",
+          "x": -127.15511033432176,
+          "y": -0.07300000000000001,
+          "z": 46,
+          "yaw": 1.5707963267948966,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 360.4794153747337,
+          "routeLength": 440.824305040412,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-14",
+            "x": -127.16286033432176,
+            "z": 46,
+            "yaw": 1.5707963267948966,
+            "halfWidth": 1.2375,
+            "halfLength": 2.3322499999999997
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": -3.746190000006698,
+            "y": 0,
+            "z": 0
+          },
+          "quaternion": {
+            "x": 0,
+            "y": 0.7071067811865475,
+            "z": 0,
+            "w": 0.7071067811865476
+          }
+        },
+        {
+          "id": "ambient-vehicle-15",
+          "routeId": "ambient-route-15",
+          "region": "Iron Docks",
+          "type": "van",
+          "x": 306,
+          "y": -0.07300000000000001,
+          "z": 21.006999140787713,
+          "yaw": -3.141592653589793,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 90.71307540089063,
+          "routeLength": 396.82430504041196,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-15",
+            "x": 306,
+            "z": 21.014749140787714,
+            "yaw": -3.141592653589793,
+            "halfWidth": 1.3475,
+            "halfLength": 2.63225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "w": 6.123233995736766e-17
+          }
+        },
+        {
+          "id": "ambient-vehicle-16",
+          "routeId": "ambient-route-16",
+          "region": "Meridian East",
+          "type": "sport",
+          "x": 86,
+          "y": -0.07300000000000001,
+          "z": -259.2201605144659,
+          "yaw": -3.141592653589793,
+          "speed": 3.7461899999999995,
+          "active": true,
+          "waiting": false,
+          "blockedBy": null,
+          "distance": 48.48591574563708,
+          "routeLength": 500.82430504041184,
+          "laps": 0,
+          "footprint": {
+            "id": "ambient-vehicle-16",
+            "x": 86,
+            "z": -259.2124105144659,
+            "yaw": -3.141592653589793,
+            "halfWidth": 1.2875,
+            "halfLength": 2.48225
+          },
+          "health": 100,
+          "wrecked": false,
+          "damagedParts": 0,
+          "brokenLamps": 0,
+          "bodyVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 3.7461899999998907
+          },
+          "quaternion": {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "w": 6.123233995736766e-17
+          }
+        }
+      ]
+    },
+    "state": {
+      "kills": 0,
+      "securityKills": 0,
+      "civilianCasualties": 0,
+      "civilians": {
+        "total": 284,
+        "alive": 284,
+        "dead": 0,
+        "injured": 0,
+        "fleeing": 0,
+        "physicalCorpses": 0,
+        "activeCorpseBodies": 0,
+        "time": 1.7839000000000023
+      },
+      "streetPhysics": {
+        "total": 13,
+        "moving": 0,
+        "impacts": 0,
+        "props": [
+          {
+            "id": "STREET-BIN-W-01",
+            "kind": "bin",
+            "x": -14.4,
+            "y": 0.7325,
+            "z": 34,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-W-02",
+            "kind": "bin",
+            "x": -14.4,
+            "y": 0.7325,
+            "z": -4,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-W-03",
+            "kind": "bin",
+            "x": -14.4,
+            "y": 0.7325,
+            "z": -42,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-W-04",
+            "kind": "bin",
+            "x": -14.4,
+            "y": 0.7325,
+            "z": -80,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-W-05",
+            "kind": "bin",
+            "x": -14.4,
+            "y": 0.7325,
+            "z": -118,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-W-06",
+            "kind": "bin",
+            "x": -14.4,
+            "y": 0.7325,
+            "z": -156,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-E-01",
+            "kind": "bin",
+            "x": 14.4,
+            "y": 0.7325,
+            "z": 34,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-E-02",
+            "kind": "bin",
+            "x": 14.4,
+            "y": 0.7325,
+            "z": -4,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-E-03",
+            "kind": "bin",
+            "x": 14.4,
+            "y": 0.7325,
+            "z": -42,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-E-04",
+            "kind": "bin",
+            "x": 14.4,
+            "y": 0.7325,
+            "z": -80,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-E-05",
+            "kind": "bin",
+            "x": 14.4,
+            "y": 0.7325,
+            "z": -118,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "STREET-BIN-E-06",
+            "kind": "bin",
+            "x": 14.4,
+            "y": 0.7325,
+            "z": -156,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          },
+          {
+            "id": "VEHICLE-PARKED",
+            "kind": "vehicle",
+            "x": -9.2,
+            "y": 0.7422499838843941,
+            "z": -73.97625005245209,
+            "speed": 0,
+            "sleeping": true,
+            "hit": false
+          }
+        ]
+      },
+      "physics": {
+        "bodies": 2217,
+        "streetTiles": 1885,
+        "streetShapes": 27532
+      },
+      "totalDrones": 12,
+      "wantedLevel": 0,
+      "heat": 0,
+      "crimeReason": "",
+      "securityState": "PATROL",
+      "searchRemaining": 0,
+      "interactPrompt": "",
+      "remainingTargets": [
+        {
+          "id": 1,
+          "region": "Kasumi Ward",
+          "x": -5,
+          "y": 4.87140027230711,
+          "z": 29.073050000000023,
+          "hostile": false
+        },
+        {
+          "id": 2,
+          "region": "Kasumi Ward",
+          "x": 5,
+          "y": 5.5435241127185915,
+          "z": -148.6779199999998,
+          "hostile": false
+        },
+        {
+          "id": 3,
+          "region": "Lantern Market",
+          "x": -203.6779199999998,
+          "y": 4.875632084618331,
+          "z": 50,
+          "hostile": false
+        },
+        {
+          "id": 4,
+          "region": "Lantern Market",
+          "x": -303.6779200000008,
+          "y": 4.822083344367947,
+          "z": 50,
+          "hostile": false
+        },
+        {
+          "id": 5,
+          "region": "Iron Docks",
+          "x": 96.3220799999999,
+          "y": 4.93211035680098,
+          "z": 50,
+          "hostile": false
+        },
+        {
+          "id": 6,
+          "region": "Iron Docks",
+          "x": 216.3220800000002,
+          "y": 5.104554794102058,
+          "z": -70,
+          "hostile": false
+        },
+        {
+          "id": 7,
+          "region": "Stacktown",
+          "x": -303.6779200000008,
+          "y": 5.180872035884843,
+          "z": -300,
+          "hostile": false
+        },
+        {
+          "id": 8,
+          "region": "Stacktown",
+          "x": -203.6779199999998,
+          "y": 5.090896362009233,
+          "z": -420,
+          "hostile": false
+        },
+        {
+          "id": 9,
+          "region": "Meridian East",
+          "x": 96.3220799999999,
+          "y": 4.917350992092384,
+          "z": -300,
+          "hostile": false
+        },
+        {
+          "id": 10,
+          "region": "Meridian East",
+          "x": 216.3220800000002,
+          "y": 4.819792738890366,
+          "z": -420,
+          "hostile": false
+        },
+        {
+          "id": 11,
+          "region": "Crown Plaza",
+          "x": -83.6779200000001,
+          "y": 5.887916210484182,
+          "z": -540,
+          "hostile": false
+        },
+        {
+          "id": 12,
+          "region": "Crown Plaza",
+          "x": 6.322080000000002,
+          "y": 6.059089001257962,
+          "z": -420,
+          "hostile": false
+        }
+      ],
+      "debrisCount": 0,
+      "regions": [
+        {
+          "name": "Kasumi Ward",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Lantern Market",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Iron Docks",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Stacktown",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Meridian East",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Crown Plaza",
+          "patrols": 2,
+          "responding": 0
+        }
+      ]
+    },
+    "drawCalls": 311,
+    "triangles": 3029888,
+    "averageFPS": 9
+  }
+}

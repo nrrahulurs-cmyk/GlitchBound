@@ -1,0 +1,1936 @@
+{
+  "status": "failed",
+  "checkedAtUTC": "2026-09-06T12:13:13.650Z",
+  "build": "/assets/index-C_4wor07.js",
+  "restTimeoutMs": 35000,
+  "error": "TimeoutError: page.waitForFunction: Timeout 11000ms exceeded.",
+  "stack": "page.waitForFunction: Timeout 11000ms exceeded.\n    at recontactSleepingBody (C:\\Users\\Admin\\Documents\\Codex\\2026-09-05\\alright-wipe-every\\work\\ragdoll-contact-browser.cjs:46:14)\n    at async C:\\Users\\Admin\\Documents\\Codex\\2026-09-05\\alright-wipe-every\\work\\ragdoll-contact-browser.cjs:84:29",
+  "results": [
+    {
+      "test": "Actual forward W run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+      "pass": true,
+      "id": "CIV-041",
+      "metrics": {
+        "samples": 712,
+        "maxWholeBodyRise": 0.5676738986913097,
+        "maxUpVelocity": 3.2000000000000015,
+        "maxJointError": 0.11407208149157985,
+        "displacement": 12.984327223853077,
+        "finalMinimumY": 0.04350009538194391,
+        "finalGround": 0.057,
+        "finalSpeed": 0,
+        "sleeping": true,
+        "segments": 11,
+        "joints": 10,
+        "maxLimbRelativeRotation": 0.696106671586879,
+        "restPositionDrift": 0,
+        "restRotationDrift": 5.16191365590357e-8,
+        "maxHullError": 1.1102230246251565e-16,
+        "settling": {
+          "firstSleepSeconds": 10.037300000000013,
+          "continuousSleepSeconds": 2.0008000000000012,
+          "observationSeconds": 12.021499999999984,
+          "quietResets": [
+            {
+              "seconds": 4.118299999999999,
+              "previousQuiet": 0.8002999999999993,
+              "quiet": 0.7504999999999983,
+              "energy": 0.0013798779322795323,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.134999999999998,
+              "previousQuiet": 0.7504999999999983,
+              "quiet": 0.7004000000000016,
+              "energy": 0.001426405828476302,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.151699999999999,
+              "previousQuiet": 0.7004000000000016,
+              "quiet": 0.6502999999999994,
+              "energy": 0.0013927866655847035,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.1684,
+              "previousQuiet": 0.6502999999999994,
+              "quiet": 0.6001999999999973,
+              "energy": 0.001357992050036318,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.184999999999999,
+              "previousQuiet": 0.6001999999999973,
+              "quiet": 0.5504000000000017,
+              "energy": 0.0013466692225809326,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.2017,
+              "previousQuiet": 0.5504000000000017,
+              "quiet": 0.5002999999999995,
+              "energy": 0.0013969306498102451,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.2183,
+              "previousQuiet": 0.5002999999999995,
+              "quiet": 0.45049999999999846,
+              "energy": 0.001357244191576478,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.234999999999999,
+              "previousQuiet": 0.45049999999999846,
+              "quiet": 0.40040000000000175,
+              "energy": 0.0013315069039215425,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.2517000000000005,
+              "previousQuiet": 0.40040000000000175,
+              "quiet": 0.35029999999999956,
+              "energy": 0.0013021278796275055,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.2684000000000015,
+              "previousQuiet": 0.35029999999999956,
+              "quiet": 0.30019999999999736,
+              "energy": 0.001363361355414712,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.285,
+              "previousQuiet": 0.30019999999999736,
+              "quiet": 0.25040000000000173,
+              "energy": 0.0013295661009757385,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.301700000000001,
+              "previousQuiet": 0.25040000000000173,
+              "quiet": 0.20029999999999953,
+              "energy": 0.0013051680125782373,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.318400000000002,
+              "previousQuiet": 0.20029999999999953,
+              "quiet": 0.15019999999999734,
+              "energy": 0.0012949424510620379,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.3351000000000015,
+              "previousQuiet": 0.15019999999999734,
+              "quiet": 0.1001000000000006,
+              "energy": 0.0013427655609880695,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.351700000000002,
+              "previousQuiet": 0.1001000000000006,
+              "quiet": 0.05029999999999951,
+              "energy": 0.001301033599298115,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.368400000000003,
+              "previousQuiet": 0.05029999999999951,
+              "quiet": 0.00019999999999732732,
+              "energy": 0.0012652459971499415,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.1687000000000145,
+              "previousQuiet": 0.7668999999999996,
+              "quiet": 0.7167999999999974,
+              "energy": 0.001026106772184036,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.1854000000000156,
+              "previousQuiet": 0.7167999999999974,
+              "quiet": 0.6666999999999953,
+              "energy": 0.0010005276990934604,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.202100000000015,
+              "previousQuiet": 0.6666999999999953,
+              "quiet": 0.6165999999999986,
+              "energy": 0.0010023460759955082,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.218700000000015,
+              "previousQuiet": 0.6165999999999986,
+              "quiet": 0.5667999999999975,
+              "energy": 0.0009810773938880599,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.235400000000016,
+              "previousQuiet": 0.5667999999999975,
+              "quiet": 0.5166999999999954,
+              "energy": 0.0009621806360439608,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.2521000000000155,
+              "previousQuiet": 0.5166999999999954,
+              "quiet": 0.4665999999999987,
+              "energy": 0.0009488507099621348,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.268700000000016,
+              "previousQuiet": 0.4665999999999987,
+              "quiet": 0.4167999999999976,
+              "energy": 0.000929183223010708,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.285400000000017,
+              "previousQuiet": 0.4167999999999976,
+              "quiet": 0.3666999999999954,
+              "energy": 0.0009111653500689834,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.302100000000016,
+              "previousQuiet": 0.3666999999999954,
+              "quiet": 0.31659999999999866,
+              "energy": 0.0009008120760672523,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.318800000000017,
+              "previousQuiet": 0.31659999999999866,
+              "quiet": 0.26649999999999646,
+              "energy": 0.0009047001738013296,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.335500000000017,
+              "previousQuiet": 0.26649999999999646,
+              "quiet": 0.21639999999999973,
+              "energy": 0.0010049694616764155,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.352100000000017,
+              "previousQuiet": 0.21639999999999973,
+              "quiet": 0.16659999999999864,
+              "energy": 0.0009901068762371674,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.368800000000018,
+              "previousQuiet": 0.16659999999999864,
+              "quiet": 0.11649999999999645,
+              "energy": 0.0010632169303425867,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.385500000000017,
+              "previousQuiet": 0.11649999999999645,
+              "quiet": 0.06639999999999972,
+              "energy": 0.0010275040066751704,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.402200000000018,
+              "previousQuiet": 0.06639999999999972,
+              "quiet": 0.01629999999999754,
+              "energy": 0.0009961188491613383,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.269200000000029,
+              "previousQuiet": 0.8337999999999993,
+              "quiet": 0.7839999999999983,
+              "energy": 0.0009212439562622611,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.28590000000003,
+              "previousQuiet": 0.7839999999999983,
+              "quiet": 0.7338999999999961,
+              "energy": 0.000990272509283657,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.302600000000029,
+              "previousQuiet": 0.7338999999999961,
+              "quiet": 0.6837999999999994,
+              "energy": 0.0009547585128354555,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.31920000000003,
+              "previousQuiet": 0.6837999999999994,
+              "quiet": 0.6339999999999983,
+              "energy": 0.000928015705888533,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.33580000000003,
+              "previousQuiet": 0.6339999999999983,
+              "quiet": 0.5841999999999973,
+              "energy": 0.0009577480353976767,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.352600000000029,
+              "previousQuiet": 0.5841999999999973,
+              "quiet": 0.5337999999999995,
+              "energy": 0.0009131497068629485,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.3692000000000295,
+              "previousQuiet": 0.5337999999999995,
+              "quiet": 0.48399999999999843,
+              "energy": 0.0009474633942152512,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.3859000000000306,
+              "previousQuiet": 0.48399999999999843,
+              "quiet": 0.43389999999999623,
+              "energy": 0.0009613546754916328,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.40260000000003,
+              "previousQuiet": 0.43389999999999623,
+              "quiet": 0.3837999999999995,
+              "energy": 0.0009253946634679858,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.41920000000003,
+              "previousQuiet": 0.3837999999999995,
+              "quiet": 0.3339999999999984,
+              "energy": 0.0008926984757693017,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.435900000000031,
+              "previousQuiet": 0.3339999999999984,
+              "quiet": 0.2838999999999962,
+              "energy": 0.0009846675308209972,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.4526000000000305,
+              "previousQuiet": 0.2838999999999962,
+              "quiet": 0.23379999999999948,
+              "energy": 0.0009511857615699853,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.469300000000032,
+              "previousQuiet": 0.23379999999999948,
+              "quiet": 0.1836999999999973,
+              "energy": 0.0009696961752602315,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.486000000000031,
+              "previousQuiet": 0.1836999999999973,
+              "quiet": 0.13360000000000058,
+              "energy": 0.0009749800187892365,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.502600000000031,
+              "previousQuiet": 0.13360000000000058,
+              "quiet": 0.08379999999999949,
+              "energy": 0.0009321458980562844,
+              "poseStable": false
+            },
+            {
+              "seconds": 6.519300000000032,
+              "previousQuiet": 0.08379999999999949,
+              "quiet": 0.0336999999999973,
+              "energy": 0.0008913844785620966,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.819800000000047,
+              "previousQuiet": 1.2671000000000023,
+              "quiet": 1.2170000000000112,
+              "energy": 0.0008448885160472425,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.836500000000048,
+              "previousQuiet": 1.2170000000000112,
+              "quiet": 1.166900000000009,
+              "energy": 0.0008064892345949292,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.85310000000005,
+              "previousQuiet": 1.166900000000009,
+              "quiet": 1.1171000000000024,
+              "energy": 0.0009035257445344056,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.869800000000048,
+              "previousQuiet": 1.1171000000000024,
+              "quiet": 1.0670000000000113,
+              "energy": 0.0008535213557610805,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.886500000000049,
+              "previousQuiet": 1.0670000000000113,
+              "quiet": 1.016900000000009,
+              "energy": 0.0008122366341887698,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.90320000000005,
+              "previousQuiet": 1.016900000000009,
+              "quiet": 0.9668000000000069,
+              "energy": 0.000897403918792848,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.919900000000051,
+              "previousQuiet": 0.9668000000000069,
+              "quiet": 0.9167000000000047,
+              "energy": 0.0008987855199456533,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.936500000000049,
+              "previousQuiet": 0.9167000000000047,
+              "quiet": 0.8669000000000091,
+              "energy": 0.0009968689293796656,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.9532000000000505,
+              "previousQuiet": 0.8669000000000091,
+              "quiet": 0.816800000000007,
+              "energy": 0.0009501423910394851,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.969800000000049,
+              "previousQuiet": 0.816800000000007,
+              "quiet": 0.7670000000000113,
+              "energy": 0.0008985854669773055,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.986600000000052,
+              "previousQuiet": 0.7670000000000113,
+              "quiet": 0.7166000000000026,
+              "energy": 0.0008817397368835969,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.00320000000005,
+              "previousQuiet": 0.7166000000000026,
+              "quiet": 0.6668000000000069,
+              "energy": 0.0009212197885790263,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.01990000000005,
+              "previousQuiet": 0.6668000000000069,
+              "quiet": 0.6167000000000048,
+              "energy": 0.0008706950706913877,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.036500000000048,
+              "previousQuiet": 0.6167000000000048,
+              "quiet": 0.5669000000000092,
+              "energy": 0.0008217116222904488,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.053200000000048,
+              "previousQuiet": 0.5669000000000092,
+              "quiet": 0.516800000000007,
+              "energy": 0.0007802976254070731,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.069900000000048,
+              "previousQuiet": 0.516800000000007,
+              "quiet": 0.46670000000000483,
+              "energy": 0.0007439460166995634,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.086600000000049,
+              "previousQuiet": 0.46670000000000483,
+              "quiet": 0.41660000000000263,
+              "energy": 0.0008383703583707308,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.103300000000045,
+              "previousQuiet": 0.41660000000000263,
+              "quiet": 0.36650000000001137,
+              "energy": 0.0008010527132518513,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.119900000000047,
+              "previousQuiet": 0.36650000000001137,
+              "quiet": 0.3167000000000048,
+              "energy": 0.0007707887714131727,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.136600000000048,
+              "previousQuiet": 0.3167000000000048,
+              "quiet": 0.2666000000000026,
+              "energy": 0.0007404801329930985,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.153300000000044,
+              "previousQuiet": 0.2666000000000026,
+              "quiet": 0.21650000000001135,
+              "energy": 0.0007055156414630459,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.170000000000044,
+              "previousQuiet": 0.21650000000001135,
+              "quiet": 0.16640000000000915,
+              "energy": 0.0006824882840156446,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.186600000000047,
+              "previousQuiet": 0.16640000000000915,
+              "quiet": 0.1166000000000026,
+              "energy": 0.0008710880971437725,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.203300000000043,
+              "previousQuiet": 0.1166000000000026,
+              "quiet": 0.06650000000001134,
+              "energy": 0.0009490559133428109,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.219900000000045,
+              "previousQuiet": 0.06650000000001134,
+              "quiet": 0.016700000000004794,
+              "energy": 0.0009606202548308222,
+              "poseStable": false
+            }
+          ]
+        },
+        "timing": {
+          "instrumented": true,
+          "notPerformanceBenchmark": true,
+          "meanMs": 16.79190340909091,
+          "p95Ms": 16.799999999999272,
+          "fps": 59.55251025673561
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "current": {
+    "game": {
+      "ready": true,
+      "mode": "playing",
+      "position": [
+        1.689269074466313,
+        1.815,
+        -191.0480185334127
+      ],
+      "health": 80.14694575485056,
+      "energy": 100,
+      "ammo": 24,
+      "holstered": true,
+      "thirdPerson": false,
+      "photoMode": false,
+      "carSpeed": -0.04844597501600613,
+      "inVehicle": true,
+      "elapsed": 26.410599999999643,
+      "city": {
+        "bounds": {
+          "minX": -350,
+          "maxX": 350,
+          "minZ": -600,
+          "maxZ": 190
+        },
+        "district": "Kasumi Ward",
+        "roadSegments": 16,
+        "layout": {
+          "voxels": 160846,
+          "signs": 646,
+          "pedestrians": 284,
+          "pedestrianVoxels": 14785,
+          "blocks": 34,
+          "roadLength": 9590,
+          "streetColliders": 28038,
+          "movableBins": 12
+        }
+      },
+      "life": {
+        "vehicles": 16,
+        "types": [
+          "taxi",
+          "van",
+          "sport",
+          "bus"
+        ],
+        "districts": [
+          {
+            "name": "Kasumi Ward",
+            "activity": "Late-night taxis and pulsing street signs"
+          },
+          {
+            "name": "Lantern Market",
+            "activity": "Delivery traffic and flickering lantern streets"
+          },
+          {
+            "name": "Iron Docks",
+            "activity": "Heavy transports and rising vent steam"
+          },
+          {
+            "name": "Stacktown",
+            "activity": "Civic buses, service beacons, and drifting paper"
+          },
+          {
+            "name": "Meridian East",
+            "activity": "Sports cars and rotating holographic arrays"
+          },
+          {
+            "name": "Crown Plaza",
+            "activity": "Quiet shuttles and orbiting light sculptures"
+          }
+        ],
+        "movingVoxelParts": 673,
+        "lanterns": 20,
+        "holograms": 3,
+        "lightSculptures": 2,
+        "steamParticles": 64,
+        "paperParticles": 28,
+        "dataMotes": 72,
+        "drawCalls": 5,
+        "traffic": [
+          {
+            "id": "ambient-vehicle-1",
+            "routeId": "ambient-route-1",
+            "region": "Kasumi Ward",
+            "type": "taxi",
+            "x": -36.79964931961766,
+            "y": -0.07300000000000001,
+            "z": 46,
+            "yaw": -4.712388980384688,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 255.71180183982364,
+            "routeLength": 596.8243050404124,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-1",
+              "x": -36.80739931961766,
+              "z": 46,
+              "yaw": -4.712388980384688,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -8.600000000004815,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.7071067811865482,
+              "z": 0,
+              "w": -0.7071067811865468
+            }
+          },
+          {
+            "id": "ambient-vehicle-2",
+            "routeId": "ambient-route-2",
+            "region": "Kasumi Ward",
+            "type": "sport",
+            "x": 94,
+            "y": -0.07300000000000001,
+            "z": -71.60158558721906,
+            "yaw": -4.474096055847753e-59,
+            "speed": 10.8,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 459.7198143675282,
+            "routeLength": 660.8243050404124,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-2",
+              "x": 94,
+              "z": -71.60933558721906,
+              "yaw": -4.474096055847753e-59,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -10.80000000000573
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -2.2370480279238764e-59,
+              "z": 0,
+              "w": 1
+            }
+          },
+          {
+            "id": "ambient-vehicle-3",
+            "routeId": "ambient-route-3",
+            "region": "Lantern Market",
+            "type": "van",
+            "x": -206,
+            "y": -0.07300000000000001,
+            "z": 78.77559665503719,
+            "yaw": -6.2831853071795845,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 249.34263212527156,
+            "routeLength": 376.8243050404119,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-3",
+              "x": -206,
+              "z": 78.76784665503719,
+              "yaw": -6.2831853071795845,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -7.199999999999282
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -1.0106430996148606e-15,
+              "z": 0,
+              "w": -1
+            }
+          },
+          {
+            "id": "ambient-vehicle-4",
+            "routeId": "ambient-route-4",
+            "region": "Lantern Market",
+            "type": "taxi",
+            "x": -311.89064237021626,
+            "y": -0.07300000000000001,
+            "z": 47.7175047141111,
+            "yaw": 2.2137111826412403,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 4.825622116413776,
+            "routeLength": 400.8243050404119,
+            "laps": 1,
+            "footprint": {
+              "id": "ambient-vehicle-4",
+              "x": -311.89684509522687,
+              "z": 47.72215107854395,
+              "yaw": 2.2137111826412403,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -6.372179678056112,
+              "y": 0,
+              "z": 5.775407011685256
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.8942960624316649,
+              "z": 0,
+              "w": 0.4474757565714815
+            }
+          },
+          {
+            "id": "ambient-vehicle-5",
+            "routeId": "ambient-route-5",
+            "region": "Iron Docks",
+            "type": "bus",
+            "x": 135.57847997595115,
+            "y": -0.07300000000000001,
+            "z": 54,
+            "yaw": -1.5707963267948961,
+            "speed": 6.7,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 312.90278501636317,
+            "routeLength": 376.824305040412,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-5",
+              "x": 135.58622997595114,
+              "z": 54,
+              "yaw": -1.5707963267948961,
+              "halfWidth": 1.4875,
+              "halfLength": 3.73225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 6.700000000002168,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.7071067811865474,
+              "z": 0,
+              "w": 0.7071067811865477
+            }
+          },
+          {
+            "id": "ambient-vehicle-6",
+            "routeId": "ambient-route-6",
+            "region": "Iron Docks",
+            "type": "van",
+            "x": 206,
+            "y": -0.07300000000000001,
+            "z": -43.655596655030735,
+            "yaw": 3.1415926535897922,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 34.05047960507222,
+            "routeLength": 460.82430504041184,
+            "laps": 1,
+            "footprint": {
+              "id": "ambient-vehicle-6",
+              "x": 206,
+              "z": -43.64784665503073,
+              "yaw": 3.1415926535897922,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 7.199999999999282
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "w": 5.053215498074303e-16
+            }
+          },
+          {
+            "id": "ambient-vehicle-7",
+            "routeId": "ambient-route-7",
+            "region": "Stacktown",
+            "type": "bus",
+            "x": -306,
+            "y": -0.07300000000000001,
+            "z": -215.08320912716295,
+            "yaw": -6.2831853071795845,
+            "speed": 6.7,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 233.20143790747173,
+            "routeLength": 396.82430504041173,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-7",
+              "x": -306,
+              "z": -215.09095912716293,
+              "yaw": -6.2831853071795845,
+              "halfWidth": 1.4875,
+              "halfLength": 3.73225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -6.700000000002168
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -1.0106430996148606e-15,
+              "z": 0,
+              "w": -1
+            }
+          },
+          {
+            "id": "ambient-vehicle-8",
+            "routeId": "ambient-route-8",
+            "region": "Stacktown",
+            "type": "van",
+            "x": -203.70926435305012,
+            "y": -0.07300000000000001,
+            "z": -424,
+            "yaw": 1.5707963267948963,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 497.0335693934619,
+            "routeLength": 500.82430504041173,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-8",
+              "x": -203.7170143530501,
+              "z": -424,
+              "yaw": 1.5707963267948963,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": -7.199999999999282,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.7071067811865475,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          },
+          {
+            "id": "ambient-vehicle-9",
+            "routeId": "ambient-route-9",
+            "region": "Meridian East",
+            "type": "sport",
+            "x": 205.972158844936,
+            "y": -0.07300000000000001,
+            "z": -290.0667197305473,
+            "yaw": -2.930030025923937,
+            "speed": 10.8,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 9.63867306756094,
+            "routeLength": 436.82430504041184,
+            "laps": 1,
+            "footprint": {
+              "id": "ambient-vehicle-9",
+              "x": 205.97378625149332,
+              "z": -290.0591425247366,
+              "yaw": -2.930030025923937,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 1.1725370563110806,
+              "y": 0,
+              "z": 10.723699743171
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -0.9944103719214066,
+              "z": 0,
+              "w": 0.10558414755601253
+            }
+          },
+          {
+            "id": "ambient-vehicle-10",
+            "routeId": "ambient-route-10",
+            "region": "Meridian East",
+            "type": "sport",
+            "x": 238.70327036190426,
+            "y": -0.07300000000000001,
+            "z": -296,
+            "yaw": 4.712388980384661,
+            "speed": 10.8,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 161.61542288211012,
+            "routeLength": 460.8243050404117,
+            "laps": 1,
+            "footprint": {
+              "id": "ambient-vehicle-10",
+              "x": 238.71102036190425,
+              "z": -296,
+              "yaw": 4.712388980384661,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 10.799999999998922,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.7071067811865577,
+              "z": 0,
+              "w": -0.7071067811865374
+            }
+          },
+          {
+            "id": "ambient-vehicle-11",
+            "routeId": "ambient-route-11",
+            "region": "Crown Plaza",
+            "type": "bus",
+            "x": -86,
+            "y": -0.07300000000000001,
+            "z": -499.56563963120584,
+            "yaw": -6.2831853071795845,
+            "speed": 6.7,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 267.68386841151465,
+            "routeLength": 376.8243050404118,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-11",
+              "x": -86,
+              "z": -499.5733896312058,
+              "yaw": -6.2831853071795845,
+              "halfWidth": 1.4875,
+              "halfLength": 3.73225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -6.700000000002168
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -1.0106430996148606e-15,
+              "z": 0,
+              "w": -1
+            }
+          },
+          {
+            "id": "ambient-vehicle-12",
+            "routeId": "ambient-route-12",
+            "region": "Crown Plaza",
+            "type": "taxi",
+            "x": -4,
+            "y": -0.07300000000000001,
+            "z": -403.3264269404782,
+            "yaw": 3.1415926533106897,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 24.37964931962474,
+            "routeLength": 440.82430504041184,
+            "laps": 1,
+            "footprint": {
+              "id": "ambient-vehicle-12",
+              "x": -4.000000000002163,
+              "z": -403.3186769404782,
+              "yaw": 3.1415926533106897,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 8.599999999998007
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 1,
+              "z": 0,
+              "w": 1.3955176475864827e-10
+            }
+          },
+          {
+            "id": "ambient-vehicle-13",
+            "routeId": "ambient-route-13",
+            "region": "Kasumi Ward",
+            "type": "taxi",
+            "x": 7.275741054592699,
+            "y": -0.07337778125013883,
+            "z": -187.046824411017,
+            "yaw": -1.7763078863957666,
+            "speed": 0,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 555.3055882991027,
+            "routeLength": 660.8243050404122,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-13",
+              "x": 7.28332811721277,
+              "z": -187.04524331576178,
+              "yaw": 0,
+              "halfWidth": 2.5357060659107624,
+              "halfLength": 1.6873968677571156
+            },
+            "health": 0,
+            "wrecked": true,
+            "damagedParts": 25,
+            "brokenLamps": 7,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": -1.8567876787190354e-7,
+              "y": -0.7759084937327531,
+              "z": 1.1582253130971524e-7,
+              "w": 0.6308454718497409
+            }
+          },
+          {
+            "id": "ambient-vehicle-14",
+            "routeId": "ambient-route-14",
+            "region": "Lantern Market",
+            "type": "taxi",
+            "x": -182.7611139588834,
+            "y": -0.07300000000000001,
+            "z": 144,
+            "yaw": 4.712388980384688,
+            "speed": 8.6,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 130.1510385613225,
+            "routeLength": 440.824305040412,
+            "laps": 1,
+            "footprint": {
+              "id": "ambient-vehicle-14",
+              "x": -182.75336395888343,
+              "z": 144,
+              "yaw": 4.712388980384688,
+              "halfWidth": 1.2375,
+              "halfLength": 2.3322499999999997
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 8.599999999998007,
+              "y": 0,
+              "z": 0
+            },
+            "quaternion": {
+              "x": 0,
+              "y": 0.7071067811865482,
+              "z": 0,
+              "w": -0.7071067811865468
+            }
+          },
+          {
+            "id": "ambient-vehicle-15",
+            "routeId": "ambient-route-15",
+            "region": "Iron Docks",
+            "type": "van",
+            "x": 214,
+            "y": -0.07300000000000001,
+            "z": -20.697375546576666,
+            "yaw": -6.2831853071795845,
+            "speed": 7.2,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 268.81560432688553,
+            "routeLength": 396.82430504041196,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-15",
+              "x": 214,
+              "z": -20.705125546576667,
+              "yaw": -6.2831853071795845,
+              "halfWidth": 1.3475,
+              "halfLength": 2.63225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -7.199999999999282
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -1.0106430996148606e-15,
+              "z": 0,
+              "w": -1
+            }
+          },
+          {
+            "id": "ambient-vehicle-16",
+            "routeId": "ambient-route-16",
+            "region": "Meridian East",
+            "type": "sport",
+            "x": 214,
+            "y": -0.07300000000000001,
+            "z": -229.9527286643292,
+            "yaw": -1.603669306565058e-24,
+            "speed": 10.8,
+            "active": true,
+            "waiting": false,
+            "blockedBy": null,
+            "distance": 308.07095744463805,
+            "routeLength": 500.82430504041184,
+            "laps": 0,
+            "footprint": {
+              "id": "ambient-vehicle-16",
+              "x": 214,
+              "z": -229.96047866432917,
+              "yaw": -1.603669306565058e-24,
+              "halfWidth": 1.2875,
+              "halfLength": 2.48225
+            },
+            "health": 100,
+            "wrecked": false,
+            "damagedParts": 0,
+            "brokenLamps": 0,
+            "bodyVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": -10.799999999998922
+            },
+            "quaternion": {
+              "x": 0,
+              "y": -8.01834653282529e-25,
+              "z": 0,
+              "w": 1
+            }
+          }
+        ]
+      },
+      "state": {
+        "kills": 0,
+        "securityKills": 0,
+        "civilianCasualties": 2,
+        "civilians": {
+          "total": 284,
+          "alive": 282,
+          "dead": 2,
+          "injured": 0,
+          "fleeing": 0,
+          "physicalCorpses": 2,
+          "activeRagdolls": 2,
+          "simplifiedCorpses": 0,
+          "ragdollJoints": 20,
+          "activeCorpseBodies": 22,
+          "time": 26.910599999999626
+        },
+        "streetPhysics": {
+          "total": 13,
+          "moving": 0,
+          "impacts": 0,
+          "props": [
+            {
+              "id": "STREET-BIN-W-01",
+              "kind": "bin",
+              "x": -14.4,
+              "y": 0.7325,
+              "z": 34,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-W-02",
+              "kind": "bin",
+              "x": -14.4,
+              "y": 0.7325,
+              "z": -4,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-W-03",
+              "kind": "bin",
+              "x": -14.4,
+              "y": 0.7325,
+              "z": -42,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-W-04",
+              "kind": "bin",
+              "x": -14.4,
+              "y": 0.7325,
+              "z": -80,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-W-05",
+              "kind": "bin",
+              "x": -14.4,
+              "y": 0.7325,
+              "z": -118,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-W-06",
+              "kind": "bin",
+              "x": -14.4,
+              "y": 0.7325,
+              "z": -156,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-E-01",
+              "kind": "bin",
+              "x": 14.4,
+              "y": 0.7325,
+              "z": 34,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-E-02",
+              "kind": "bin",
+              "x": 14.4,
+              "y": 0.7325,
+              "z": -4,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-E-03",
+              "kind": "bin",
+              "x": 14.4,
+              "y": 0.7325,
+              "z": -42,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-E-04",
+              "kind": "bin",
+              "x": 14.4,
+              "y": 0.7325,
+              "z": -80,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-E-05",
+              "kind": "bin",
+              "x": 14.4,
+              "y": 0.7325,
+              "z": -118,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "STREET-BIN-E-06",
+              "kind": "bin",
+              "x": 14.4,
+              "y": 0.7325,
+              "z": -156,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            },
+            {
+              "id": "VEHICLE-PARKED",
+              "kind": "vehicle",
+              "x": -9.2,
+              "y": 0.7422499838843941,
+              "z": -73.97625005245209,
+              "speed": 0,
+              "sleeping": true,
+              "hit": false
+            }
+          ]
+        },
+        "physics": {
+          "bodies": 2303,
+          "streetTiles": 1909,
+          "streetShapes": 28077,
+          "solverIterations": 12
+        },
+        "totalDrones": 12,
+        "wantedLevel": 3,
+        "heat": 100,
+        "crimeReason": "VEHICULAR PROPERTY DAMAGE",
+        "securityState": "PURSUIT",
+        "searchRemaining": 0,
+        "interactPrompt": "",
+        "remainingTargets": [
+          {
+            "id": 1,
+            "region": "Kasumi Ward",
+            "x": -1.4881389102010045,
+            "y": 4.865765928311047,
+            "z": -113.61111051172796,
+            "hostile": true
+          },
+          {
+            "id": 2,
+            "region": "Kasumi Ward",
+            "x": 0.5227207566947012,
+            "y": 5.558941741382562,
+            "z": -176.2646177552803,
+            "hostile": true
+          },
+          {
+            "id": 3,
+            "region": "Lantern Market",
+            "x": -91.41443101191852,
+            "y": 4.897926789250722,
+            "z": 54.40099921676769,
+            "hostile": false
+          },
+          {
+            "id": 4,
+            "region": "Lantern Market",
+            "x": -211.08536027234126,
+            "y": 4.830757476347035,
+            "z": 74.40657901543858,
+            "hostile": false
+          },
+          {
+            "id": 5,
+            "region": "Iron Docks",
+            "x": 208.585568988081,
+            "y": 4.919188959187994,
+            "z": 54.40099921676769,
+            "hostile": false
+          },
+          {
+            "id": 6,
+            "region": "Iron Docks",
+            "x": 308.81369525774176,
+            "y": 5.081917740272308,
+            "z": -45.591959472625305,
+            "hostile": false
+          },
+          {
+            "id": 7,
+            "region": "Stacktown",
+            "x": -211.18630474226052,
+            "y": 5.1693317287332725,
+            "z": -275.59195947262657,
+            "hostile": false
+          },
+          {
+            "id": 8,
+            "region": "Stacktown",
+            "x": -91.43260819427039,
+            "y": 5.101062906710141,
+            "z": -415.59873797084117,
+            "hostile": false
+          },
+          {
+            "id": 9,
+            "region": "Meridian East",
+            "x": 208.56739180572856,
+            "y": 4.93987731433318,
+            "z": -295.59873797084117,
+            "hostile": false
+          },
+          {
+            "id": 10,
+            "region": "Meridian East",
+            "x": 308.81369525774176,
+            "y": 4.833968241888322,
+            "z": -395.59195947262657,
+            "hostile": false
+          },
+          {
+            "id": 11,
+            "region": "Crown Plaza",
+            "x": -1.06282385175847,
+            "y": 5.880708002156657,
+            "z": -505.58905299253826,
+            "hostile": false
+          },
+          {
+            "id": 12,
+            "region": "Crown Plaza",
+            "x": 88.9371761482412,
+            "y": 6.037124275098927,
+            "z": -385.58905299254724,
+            "hostile": false
+          }
+        ],
+        "debrisCount": 0,
+        "regions": [
+          {
+            "name": "Kasumi Ward",
+            "patrols": 2,
+            "responding": 2
+          },
+          {
+            "name": "Lantern Market",
+            "patrols": 2,
+            "responding": 0
+          },
+          {
+            "name": "Iron Docks",
+            "patrols": 2,
+            "responding": 0
+          },
+          {
+            "name": "Stacktown",
+            "patrols": 2,
+            "responding": 0
+          },
+          {
+            "name": "Meridian East",
+            "patrols": 2,
+            "responding": 0
+          },
+          {
+            "name": "Crown Plaza",
+            "patrols": 2,
+            "responding": 0
+          }
+        ]
+      },
+      "drawCalls": 388,
+      "triangles": 3305980,
+      "averageFPS": 60
+    },
+    "car": {
+      "x": 1.689269074466313,
+      "y": 0.065,
+      "z": -191.0480185334127,
+      "yaw": 0,
+      "speed": -0.04844597501600613,
+      "integrity": 19,
+      "impacts": 4
+    },
+    "sampleCount": 649,
+    "lastSample": {
+      "civilianId": "CIV-041",
+      "dt": 16.69999999999709,
+      "alive": false,
+      "health": 0,
+      "x": 1.705457812948716,
+      "y": 0.3446874699511198,
+      "z": -112.34733070960996,
+      "ground": 0.057,
+      "bounds": {
+        "min": {
+          "x": 0.8394363649839123,
+          "y": 0.04350009538194391,
+          "z": -113.02731743936147
+        },
+        "max": {
+          "x": 2.539101783948714,
+          "y": 0.7062869130650853,
+          "z": -111.58857593782064
+        }
+      },
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.006032820564816961,
+        "position": {
+          "x": 1.705457812948716,
+          "y": 0.3446874699511198,
+          "z": -112.34733070960996
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 2.3456181945917017e-42,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 5
+      },
+      "solverIterations": 12,
+      "segments": [
+        {
+          "name": "pelvis",
+          "p": [
+            1.5931437481346824,
+            0.35411262453769293,
+            -112.25516208650748
+          ],
+          "q": [
+            -0.5049615728014635,
+            -0.7030565338886864,
+            0.49033347908477326,
+            -0.10148102994609944
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "torso",
+          "p": [
+            1.84150355061748,
+            0.4155706149896863,
+            -112.40193664533574
+          ],
+          "q": [
+            -0.42944561542277315,
+            -0.6714735229434273,
+            0.5619631517197604,
+            -0.22112708447698567
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "shinL",
+          "p": [
+            1.1889209980199165,
+            0.21924167152454335,
+            -111.88970225581619
+          ],
+          "q": [
+            -0.5590719257736054,
+            -0.6338369736683719,
+            0.516432177221938,
+            0.1377936099843555
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "thighL",
+          "p": [
+            1.4895977310785773,
+            0.2467821866946841,
+            -112.08289444901749
+          ],
+          "q": [
+            -0.5702765937021218,
+            -0.7802247482857642,
+            0.24433694049255786,
+            -0.07958271388095184
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "upperArmL",
+          "p": [
+            2.150076548046239,
+            0.2819044659833495,
+            -112.23873759862786
+          ],
+          "q": [
+            -0.4691526950480283,
+            -0.4428450225091834,
+            0.7069279564743771,
+            0.2898911849694188
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "forearmL",
+          "p": [
+            2.036354404809524,
+            0.2319212694056759,
+            -112.08636385049333
+          ],
+          "q": [
+            -0.5286488169492746,
+            -0.8223210384546052,
+            0.14015322168577027,
+            -0.1570847303342089
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "shinR",
+          "p": [
+            1.1455823620635612,
+            0.2450073434575442,
+            -112.53962365142259
+          ],
+          "q": [
+            -0.5050555846806684,
+            -0.7945666052263148,
+            -0.1505142718841861,
+            -0.3015430652513351
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "thighR",
+          "p": [
+            1.375016172032785,
+            0.3934658756260547,
+            -112.33721875375191
+          ],
+          "q": [
+            -0.5179105961752962,
+            -0.8016045226856128,
+            -0.10810571708905603,
+            -0.27840969363867496
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "upperArmR",
+          "p": [
+            1.8207950008478715,
+            0.3333746966312327,
+            -112.74248545702696
+          ],
+          "q": [
+            -0.06602316664347976,
+            -0.8889889780489971,
+            0.14478038591820377,
+            -0.4293928017877605
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "forearmR",
+          "p": [
+            1.866902424564518,
+            0.1884482063455193,
+            -112.85222451875936
+          ],
+          "q": [
+            0.2874484110571192,
+            -0.6808622340390079,
+            -0.5896115114462044,
+            -0.3258194205541944
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        },
+        {
+          "name": "head",
+          "p": [
+            2.250351304261272,
+            0.29851802645540887,
+            -112.60608199891963
+          ],
+          "q": [
+            -0.51348191725406,
+            -0.43890189136597224,
+            0.6120487175412452,
+            -0.41121505050834933
+          ],
+          "v": [
+            0,
+            0,
+            0
+          ],
+          "w": [
+            0,
+            0,
+            0
+          ],
+          "sleepState": 2,
+          "sleeping": true
+        }
+      ],
+      "contacts": [],
+      "car": {
+        "x": 1.689269074466313,
+        "y": 0.065,
+        "z": -191.0480185334127,
+        "yaw": 0,
+        "speed": -0.04844597501600613
+      },
+      "hullError": 1.1102230246251565e-16
+    }
+  },
+  "rawSamples": "ragdoll-contact-browser-C_4wor07-2026-09-06T12-12-38-432Z-raw.json.gz",
+  "chromeClosed": true
+}

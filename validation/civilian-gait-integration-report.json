@@ -1,0 +1,446 @@
+{
+  "checkedAtUTC": "2026-09-06T09:56:22.022Z",
+  "passed": true,
+  "results": [
+    {
+      "test": "Walking and fleeing deaths preserve every voxel, anatomical joint point and captured bone orientation",
+      "pass": true,
+      "cases": [
+        {
+          "scale": 0.84,
+          "speed": 0.45,
+          "frames": 19,
+          "matrixError": 1.3877787807814457e-17,
+          "jointPointError": 1.1188630228279524e-16,
+          "angleOverrun": 0,
+          "angles": [
+            {
+              "name": "waist",
+              "angle": 0,
+              "limit": 0.35
+            },
+            {
+              "name": "neck",
+              "angle": 0,
+              "limit": 0.55
+            },
+            {
+              "name": "shoulderL",
+              "angle": 0.18352008467146574,
+              "limit": 1.25
+            },
+            {
+              "name": "hipL",
+              "angle": 0.016752087889125696,
+              "limit": 1.2
+            },
+            {
+              "name": "shoulderR",
+              "angle": 0.12378682652151603,
+              "limit": 1.25
+            },
+            {
+              "name": "hipR",
+              "angle": 0.5002532641345421,
+              "limit": 1.2
+            }
+          ],
+          "maxGap": 0.021250319894582693,
+          "maxRise": 0,
+          "firstSleep": 6.116666666666666,
+          "sleeping": true,
+          "final": {
+            "articulated": true,
+            "simplified": false,
+            "segments": 11,
+            "joints": 10,
+            "maxJointError": 0.0010255311074992455,
+            "position": {
+              "x": 34.99038943322871,
+              "y": 0.2792260661088992,
+              "z": -0.6150903395848234
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "sleeping": true,
+            "rest": {
+              "quietSeconds": 2,
+              "filteredEnergy": 7.727946065504872e-67,
+              "poseStable": true
+            },
+            "frozen": false,
+            "correctionCount": 0
+          }
+        },
+        {
+          "scale": 1.12,
+          "speed": -0.7,
+          "frames": 49,
+          "matrixError": 2.7755575615628914e-17,
+          "jointPointError": 5.551115123125783e-17,
+          "angleOverrun": 0,
+          "angles": [
+            {
+              "name": "waist",
+              "angle": 0,
+              "limit": 0.35
+            },
+            {
+              "name": "neck",
+              "angle": 0,
+              "limit": 0.55
+            },
+            {
+              "name": "shoulderL",
+              "angle": 0.010580983275968993,
+              "limit": 1.25
+            },
+            {
+              "name": "hipL",
+              "angle": 0.39270639274694297,
+              "limit": 1.2
+            },
+            {
+              "name": "shoulderR",
+              "angle": 0.03136821345640042,
+              "limit": 1.25
+            },
+            {
+              "name": "hipR",
+              "angle": 0.6140695768207498,
+              "limit": 1.2
+            }
+          ],
+          "maxGap": 0.018363337491115905,
+          "maxRise": 0,
+          "firstSleep": 7.766666666666667,
+          "sleeping": true,
+          "final": {
+            "articulated": true,
+            "simplified": false,
+            "segments": 11,
+            "joints": 10,
+            "maxJointError": 0.008946692570737451,
+            "position": {
+              "x": 34.792197464478164,
+              "y": 0.4083311185821893,
+              "z": -0.18948965405488846
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "sleeping": true,
+            "rest": {
+              "quietSeconds": 2,
+              "filteredEnergy": 3.4276766668644407e-62,
+              "poseStable": true
+            },
+            "frozen": false,
+            "correctionCount": 0
+          }
+        },
+        {
+          "scale": 1,
+          "speed": 0.45,
+          "frames": 88,
+          "umbrella": true,
+          "matrixError": 1.3877787807814457e-17,
+          "jointPointError": 1.6653345369377348e-16,
+          "angleOverrun": 0,
+          "angles": [
+            {
+              "name": "waist",
+              "angle": 0,
+              "limit": 0.35
+            },
+            {
+              "name": "neck",
+              "angle": 0,
+              "limit": 0.55
+            },
+            {
+              "name": "shoulderL",
+              "angle": 0.16550950507700324,
+              "limit": 1.25
+            },
+            {
+              "name": "hipL",
+              "angle": 0.26771821537701856,
+              "limit": 1.2
+            },
+            {
+              "name": "shoulderR",
+              "angle": 0.5000000000000001,
+              "limit": 1.25
+            },
+            {
+              "name": "hipR",
+              "angle": 0.45707867625206106,
+              "limit": 1.2
+            }
+          ],
+          "maxGap": 0.027575060915957007,
+          "maxRise": 0,
+          "firstSleep": 5.783333333333333,
+          "sleeping": true,
+          "final": {
+            "articulated": true,
+            "simplified": false,
+            "segments": 11,
+            "joints": 10,
+            "maxJointError": 0.000612189195415562,
+            "position": {
+              "x": 35.07372377388875,
+              "y": 0.322768853932553,
+              "z": -0.23601192521362466
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "sleeping": true,
+            "rest": {
+              "quietSeconds": 2,
+              "filteredEnergy": 2.918767505046752e-67,
+              "poseStable": true
+            },
+            "frozen": false,
+            "correctionCount": 0
+          }
+        },
+        {
+          "scale": 1.02,
+          "speed": 0.5,
+          "frames": 27,
+          "flee": true,
+          "matrixError": 2.1684605932526625e-17,
+          "jointPointError": 2.220446049250313e-16,
+          "angleOverrun": 0,
+          "angles": [
+            {
+              "name": "waist",
+              "angle": 0.10495936416671585,
+              "limit": 0.35
+            },
+            {
+              "name": "neck",
+              "angle": 2.1073424255447017e-8,
+              "limit": 0.55
+            },
+            {
+              "name": "shoulderL",
+              "angle": 0.24221059673833858,
+              "limit": 1.25
+            },
+            {
+              "name": "hipL",
+              "angle": 0.8292528993643737,
+              "limit": 1.2
+            },
+            {
+              "name": "shoulderR",
+              "angle": 0.17910197006237916,
+              "limit": 1.25
+            },
+            {
+              "name": "hipR",
+              "angle": 0.4309155682201408,
+              "limit": 1.2
+            }
+          ],
+          "maxGap": 0.024826514404785397,
+          "maxRise": 0,
+          "firstSleep": 5.583333333333333,
+          "sleeping": true,
+          "final": {
+            "articulated": true,
+            "simplified": false,
+            "segments": 11,
+            "joints": 10,
+            "maxJointError": 0.012760500804712544,
+            "position": {
+              "x": 35.24121351756825,
+              "y": 0.3686428902133803,
+              "z": 0.12628003528489318
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "sleeping": true,
+            "rest": {
+              "quietSeconds": 2,
+              "filteredEnergy": 3.7822708120577375e-68,
+              "poseStable": true
+            },
+            "frozen": false,
+            "correctionCount": 0
+          }
+        },
+        {
+          "scale": 0.95,
+          "speed": -0.5,
+          "frames": 43,
+          "flee": true,
+          "umbrella": true,
+          "matrixError": 1.3288676392999091e-17,
+          "jointPointError": 1.1102230246251565e-16,
+          "angleOverrun": 0,
+          "angles": [
+            {
+              "name": "waist",
+              "angle": 0.10926048390461637,
+              "limit": 0.35
+            },
+            {
+              "name": "neck",
+              "angle": 0,
+              "limit": 0.55
+            },
+            {
+              "name": "shoulderL",
+              "angle": 0.0650572467400971,
+              "limit": 1.25
+            },
+            {
+              "name": "hipL",
+              "angle": 0.49925982966038185,
+              "limit": 1.2
+            },
+            {
+              "name": "shoulderR",
+              "angle": 0.5000000000000003,
+              "limit": 1.25
+            },
+            {
+              "name": "hipR",
+              "angle": 1.1662671384089054,
+              "limit": 1.2
+            }
+          ],
+          "maxGap": 0.019680087713333322,
+          "maxRise": 0,
+          "firstSleep": 7.316666666666666,
+          "sleeping": true,
+          "final": {
+            "articulated": true,
+            "simplified": false,
+            "segments": 11,
+            "joints": 10,
+            "maxJointError": 0.0008187403476085734,
+            "position": {
+              "x": 35.31985414677271,
+              "y": 0.3208660537692755,
+              "z": 0.038955961114049205
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "sleeping": true,
+            "rest": {
+              "quietSeconds": 2,
+              "filteredEnergy": 6.793457411712634e-64,
+              "poseStable": true
+            },
+            "frozen": false,
+            "correctionCount": 0
+          }
+        },
+        {
+          "scale": 1,
+          "speed": 0.5,
+          "frames": 111,
+          "flee": true,
+          "matrixError": 2.7755575615628914e-17,
+          "jointPointError": 2.220446049250313e-16,
+          "angleOverrun": 0,
+          "angles": [
+            {
+              "name": "waist",
+              "angle": 0.1099997386116568,
+              "limit": 0.35
+            },
+            {
+              "name": "neck",
+              "angle": 2.580956827951785e-8,
+              "limit": 0.55
+            },
+            {
+              "name": "shoulderL",
+              "angle": 0.3499999999864497,
+              "limit": 1.25
+            },
+            {
+              "name": "hipL",
+              "angle": 0.12095733576125241,
+              "limit": 1.2
+            },
+            {
+              "name": "shoulderR",
+              "angle": 0.3499999999864455,
+              "limit": 1.25
+            },
+            {
+              "name": "hipR",
+              "angle": 0.9535457999806236,
+              "limit": 1.2
+            }
+          ],
+          "maxGap": 0.01610415071020959,
+          "maxRise": 0.020711401168463296,
+          "firstSleep": 15.533333333333333,
+          "sleeping": true,
+          "final": {
+            "articulated": true,
+            "simplified": false,
+            "segments": 11,
+            "joints": 10,
+            "maxJointError": 0.006366146794662378,
+            "position": {
+              "x": 36.800838963827196,
+              "y": 0.35147147914454685,
+              "z": 2.5192657025001366
+            },
+            "velocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "speed": 0,
+            "sleeping": true,
+            "rest": {
+              "quietSeconds": 2,
+              "filteredEnergy": 1.7343947627266253e-41,
+              "poseStable": true
+            },
+            "frozen": false,
+            "correctionCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "test": "All284 authored citizens keep the original instance count with actual city pavement sampling",
+      "pass": true,
+      "citizens": 284,
+      "voxelInstances": 14785,
+      "groundSurfaces": 36,
+      "meanMs": 3.6267249999999915,
+      "p95Ms": 4.12310000000025
+    }
+  ]
+}

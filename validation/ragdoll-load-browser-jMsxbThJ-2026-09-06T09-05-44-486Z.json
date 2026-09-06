@@ -1,0 +1,6288 @@
+{
+  "status": "findings",
+  "checkedAtUTC": "2026-09-06T09:06:35.100Z",
+  "build": "/assets/index-jMsxbThJ.js",
+  "bundleSha256": "ce799f8dcb7b3af47ffa6495f9a04a195a2af5452c2d22395b57bc33efca3ee8",
+  "sourceBefore": {
+    "src/civilian-ragdoll.js": "d49543c253b5f494633630fb3f6b6a897bf6499396cc5a6323177224459b1008",
+    "src/civilians.js": "f5fe66d74795eb0434b792ba84cb310e52d8baf648797791cdcc05e7e542a772",
+    "src/main.js": "ee1d7eada9b53822bcb92f020b636aa9d08cc1aec34138397b536747b77a80d6",
+    "src/simulation.js": "69f65f29ac791dac29ea0d5392a99a00a634ee835567d2584609e639cd275968",
+    "package-lock.json": "cd5c8a9f63146a583b6e18e281ede484c73fe490453120d23b0341efe13e6dc2"
+  },
+  "sourceAfter": {
+    "src/civilian-ragdoll.js": "d49543c253b5f494633630fb3f6b6a897bf6499396cc5a6323177224459b1008",
+    "src/civilians.js": "f5fe66d74795eb0434b792ba84cb310e52d8baf648797791cdcc05e7e542a772",
+    "src/main.js": "ee1d7eada9b53822bcb92f020b636aa9d08cc1aec34138397b536747b77a80d6",
+    "src/simulation.js": "69f65f29ac791dac29ea0d5392a99a00a634ee835567d2584609e639cd275968",
+    "package-lock.json": "cd5c8a9f63146a583b6e18e281ede484c73fe490453120d23b0341efe13e6dc2"
+  },
+  "browser": "152.0.7977.77",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "method": "Targeted production-city stress test. Native requestAnimationFrame intervals are recorded with a minimal callback; detailed physics/renderer/heap snapshots occur outside timing windows. Direct civilian.damage is an explicitly authorized load fixture, not actual combat input. The existing nearest 32 civilians are selected once; no NPC positions, body velocities, masses, world time, or sleep states are directly changed. Only the observation player/camera is initially placed near the core intersection.",
+  "limitations": [
+    "One fixed camera and one hardware/browser run; no blanket performance or visual-quality claim.",
+    "Heap metrics are Chromium estimates when available.",
+    "The 24- and 32-death windows contain initial motion; the final window starts twenty seconds after the second fixture batch.",
+    "Shot-direction initialization is the unmodified production gun-death behavior."
+  ],
+  "observation": {
+    "x": 0,
+    "z": -170,
+    "lookAt": {
+      "x": 0,
+      "y": 2.1,
+      "z": -88
+    }
+  },
+  "selected": [
+    {
+      "id": "CIV-014",
+      "x": -13.918015924282372,
+      "y": 0.165,
+      "z": -162.8454075129984,
+      "scale": 1.0120567231741735,
+      "groundY": 0.165,
+      "distance": 15.649260714923159
+    },
+    {
+      "id": "CIV-028",
+      "x": -13.432508066296577,
+      "y": 0.165,
+      "z": -157.6187805308252,
+      "scale": 1.073845375373494,
+      "groundY": 0.165,
+      "distance": 18.268192808676933
+    },
+    {
+      "id": "CIV-030",
+      "x": -13.434102502185851,
+      "y": 0.165,
+      "z": -154.57314191526808,
+      "scale": 0.9256484238617122,
+      "groundY": 0.165,
+      "distance": 20.456369678065915
+    },
+    {
+      "id": "CIV-037",
+      "x": -1.0550354747101665,
+      "y": 0.057,
+      "z": -148.20289481276143,
+      "scale": 1.0023848755075597,
+      "groundY": 0.057,
+      "distance": 21.82262345357312
+    },
+    {
+      "id": "CIV-010",
+      "x": -13.534853095188737,
+      "y": 0.165,
+      "z": -151.04261483088297,
+      "scale": 1.0639708757936024,
+      "groundY": 0.165,
+      "distance": 23.293232939173524
+    },
+    {
+      "id": "CIV-038",
+      "x": -0.8131721131503582,
+      "y": 0.057,
+      "z": -143.24854261687543,
+      "scale": 1.0425529909064062,
+      "groundY": 0.057,
+      "distance": 26.763813648408473
+    },
+    {
+      "id": "CIV-020",
+      "x": -13.604270963929594,
+      "y": 0.165,
+      "z": -128.11101512293075,
+      "scale": 0.9443436265573837,
+      "groundY": 0.165,
+      "distance": 44.04274335791714
+    },
+    {
+      "id": "CIV-036",
+      "x": 2.8383223596028984,
+      "y": 0.057,
+      "z": -125.95507061317352,
+      "scale": 0.9649497133865953,
+      "groundY": 0.057,
+      "distance": 44.13628754786193
+    },
+    {
+      "id": "CIV-039",
+      "x": 8.567014682572335,
+      "y": 0.057,
+      "z": -119.83550579023176,
+      "scale": 0.9977270307019354,
+      "groundY": 0.057,
+      "distance": 50.89076753099014
+    },
+    {
+      "id": "CIV-006",
+      "x": -13.593897987622768,
+      "y": 0.165,
+      "z": -115.1597778567632,
+      "scale": 0.9332283274270594,
+      "groundY": 0.165,
+      "distance": 56.49994714349257
+    },
+    {
+      "id": "CIV-040",
+      "x": 7.497498300857842,
+      "y": 0.057,
+      "z": -113.84878778010007,
+      "scale": 0.9883839567913675,
+      "groundY": 0.057,
+      "distance": 56.64954646363557
+    },
+    {
+      "id": "CIV-019",
+      "x": 13.221090064384043,
+      "y": 0.165,
+      "z": -113.6098865472492,
+      "scale": 1.0150259601627476,
+      "groundY": 0.165,
+      "distance": 57.919272420366795
+    },
+    {
+      "id": "CIV-027",
+      "x": 13.186789627652615,
+      "y": 0.165,
+      "z": -109.47813235820722,
+      "scale": 1.022632023463957,
+      "groundY": 0.165,
+      "distance": 61.941810463810725
+    },
+    {
+      "id": "CIV-005",
+      "x": 12.04019576869905,
+      "y": 0.165,
+      "z": -105.99533172658931,
+      "scale": 0.9332598780444824,
+      "groundY": 0.165,
+      "distance": 65.12728978652453
+    },
+    {
+      "id": "CIV-003",
+      "x": 13.784253734629601,
+      "y": 0.165,
+      "z": -106.14410256810164,
+      "scale": 0.9916700023738668,
+      "groundY": 0.165,
+      "distance": 65.3267272091123
+    },
+    {
+      "id": "CIV-016",
+      "x": -12.641609381884336,
+      "y": 0.165,
+      "z": -104.14617999092908,
+      "scale": 0.9983915787446314,
+      "groundY": 0.165,
+      "distance": 67.05621445884978
+    },
+    {
+      "id": "CIV-041",
+      "x": -0.6981061510741711,
+      "y": 0.057,
+      "z": -102.93104558023704,
+      "scale": 1.0195226015080698,
+      "groundY": 0.057,
+      "distance": 67.07258753886278
+    },
+    {
+      "id": "CIV-035",
+      "x": 5.276084739714861,
+      "y": 0.057,
+      "z": -100.59005353454779,
+      "scale": 1.058367537104059,
+      "groundY": 0.057,
+      "distance": 69.6101841580497
+    },
+    {
+      "id": "CIV-017",
+      "x": 13.374897250905633,
+      "y": 0.165,
+      "z": -101.26617972632127,
+      "scale": 0.9455076281516813,
+      "groundY": 0.165,
+      "distance": 70.02303853651776
+    },
+    {
+      "id": "CIV-002",
+      "x": -13.846324258483946,
+      "y": 0.165,
+      "z": -100.22245393077115,
+      "scale": 0.9478056855429896,
+      "groundY": 0.165,
+      "distance": 71.13808143965112
+    },
+    {
+      "id": "CIV-043",
+      "x": 4.536154207773507,
+      "y": 0.057,
+      "z": -97.90385583146103,
+      "scale": 0.9283454785658978,
+      "groundY": 0.057,
+      "distance": 72.23870637661956
+    },
+    {
+      "id": "CIV-009",
+      "x": 13.144670573528856,
+      "y": 0.165,
+      "z": -96.98084999621867,
+      "scale": 1.0760514641227201,
+      "groundY": 0.165,
+      "distance": 74.19284757819527
+    },
+    {
+      "id": "CIV-021",
+      "x": 12.517017678823322,
+      "y": 0.165,
+      "z": -94.75799665154177,
+      "scale": 1.021076310784556,
+      "groundY": 0.165,
+      "distance": 76.27604341771652
+    },
+    {
+      "id": "CIV-042",
+      "x": -8.897461634594947,
+      "y": 0.057,
+      "z": -93.36123237755865,
+      "scale": 0.9666849586740136,
+      "groundY": 0.057,
+      "distance": 77.15351920830089
+    },
+    {
+      "id": "CIV-155",
+      "x": -77.07581314123236,
+      "y": 0.057,
+      "z": -175.00184013297212,
+      "scale": 1.0521459293947555,
+      "groundY": 0.057,
+      "distance": 77.23794000423611
+    },
+    {
+      "id": "CIV-162",
+      "x": 76.80219328633976,
+      "y": 0.057,
+      "z": -182.8280260662688,
+      "scale": 0.9320696974778548,
+      "groundY": 0.057,
+      "distance": 77.8661360692128
+    },
+    {
+      "id": "CIV-150",
+      "x": 76.80296099807602,
+      "y": 0.057,
+      "z": -143.2233416299778,
+      "scale": 0.9778616207512096,
+      "groundY": 0.057,
+      "distance": 81.33685666127545
+    },
+    {
+      "id": "CIV-174",
+      "x": 77.00881579357664,
+      "y": 0.057,
+      "z": -198.9349905277144,
+      "scale": 1.0185095944302156,
+      "groundY": 0.057,
+      "distance": 82.2653717354267
+    },
+    {
+      "id": "CIV-143",
+      "x": -76.88484799857251,
+      "y": 0.057,
+      "z": -136.3832333974076,
+      "scale": 1.0395137722813526,
+      "groundY": 0.057,
+      "distance": 83.91285270193579
+    },
+    {
+      "id": "CIV-167",
+      "x": -77.10807684618048,
+      "y": 0.057,
+      "z": -220.97584198115266,
+      "scale": 1.0147282766946593,
+      "groundY": 0.057,
+      "distance": 92.43479853715222
+    },
+    {
+      "id": "CIV-131",
+      "x": -77.24992007329129,
+      "y": 0.057,
+      "z": -114.73163060673592,
+      "scale": 1.0746244117082098,
+      "groundY": 0.057,
+      "distance": 94.98496095024824
+    },
+    {
+      "id": "CIV-138",
+      "x": 76.81526264369022,
+      "y": 0.057,
+      "z": -109.94949579563625,
+      "scale": 1.0546732251206414,
+      "groundY": 0.057,
+      "distance": 97.5020391079972
+    }
+  ],
+  "fixtures": [
+    {
+      "start": 0,
+      "end": 24,
+      "wallTime": 18979.30000001192,
+      "simulationElapsed": 8.320100000000048,
+      "results": [
+        {
+          "id": "CIV-014",
+          "before": {
+            "id": "CIV-014",
+            "x": -13.918015924282372,
+            "y": 0.165,
+            "z": -162.854030642281,
+            "groundY": 0.165,
+            "scale": 1.0120567231741735,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 710,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -13.918015924282372,
+              "y": 1.2985035299550745,
+              "z": -162.854030642281
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -14.338019464399654,
+                "y": 0.14913587385473162,
+                "z": -163.13406230603186
+              },
+              "max": {
+                "x": -13.49801238416509,
+                "y": 1.9209184147071912,
+                "z": -162.51752178182556
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-028",
+          "before": {
+            "id": "CIV-028",
+            "x": -13.432508066296577,
+            "y": 0.165,
+            "z": -157.61208725140995,
+            "groundY": 0.165,
+            "scale": 1.073845375373494,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1404,
+            "instanceCount": 86,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -13.432508066296577,
+              "y": 1.3677068204183134,
+              "z": -157.61208725140995
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -13.878153897076578,
+                "y": 0.14993166525091198,
+                "z": -157.96914083872164
+              },
+              "max": {
+                "x": -12.986862235516577,
+                "y": 2.028121726273012,
+                "z": -157.3242874805358
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-030",
+          "before": {
+            "id": "CIV-030",
+            "x": -13.434102502185851,
+            "y": 0.165,
+            "z": -154.56466896346407,
+            "groundY": 0.165,
+            "scale": 0.9256484238617122,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1525,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -13.434102502185851,
+              "y": 1.2017262347251179,
+              "z": -154.56466896346407
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -13.818246598088463,
+                "y": 0.1576606130641533,
+                "z": -154.87244706439807
+              },
+              "max": {
+                "x": -13.04995840628324,
+                "y": 1.771000015400071,
+                "z": -154.34620504796194
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-037",
+          "before": {
+            "id": "CIV-037",
+            "x": -1.0550354747101665,
+            "y": 0.057,
+            "z": -148.21243040338598,
+            "groundY": 0.057,
+            "scale": 1.0023848755075597,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1872,
+            "instanceCount": 86,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -1.0550354747101665,
+              "y": 1.179671060568467,
+              "z": -148.21243040338598
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -1.4710251980458038,
+                "y": 0.04152705800496488,
+                "z": -148.4885171269168
+              },
+              "max": {
+                "x": -0.6390457513745291,
+                "y": 1.796137759005616,
+                "z": -147.87913743227972
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-010",
+          "before": {
+            "id": "CIV-010",
+            "x": -13.534853095188737,
+            "y": 0.165,
+            "z": -151.04862774816905,
+            "groundY": 0.165,
+            "scale": 1.0639708757936024,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 468,
+            "instanceCount": 86,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -13.534853095188737,
+              "y": 1.3566473808888349,
+              "z": -151.04862774816905
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -13.976401008643082,
+                "y": 0.15560844384166614,
+                "z": -151.30471937294675
+              },
+              "max": {
+                "x": -13.093305181734392,
+                "y": 2.0109894695019004,
+                "z": -150.69485743196768
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-038",
+          "before": {
+            "id": "CIV-038",
+            "x": -0.8131721131503582,
+            "y": 0.057,
+            "z": -143.25287532615818,
+            "groundY": 0.057,
+            "scale": 1.0425529909064062,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1958,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -0.8131721131503582,
+              "y": 1.224659349815175,
+              "z": -143.25287532615818
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -1.245831604376517,
+                "y": 0.05433936140554013,
+                "z": -143.4698710060264
+              },
+              "max": {
+                "x": -0.3805126219241996,
+                "y": 1.8658294392226147,
+                "z": -142.9062264566818
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-020",
+          "before": {
+            "id": "CIV-020",
+            "x": -13.604270963929594,
+            "y": 0.165,
+            "z": -128.1140683572113,
+            "groundY": 0.165,
+            "scale": 0.9443436265573837,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1022,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -13.604270963929594,
+              "y": 1.22266486174427,
+              "z": -128.1140683572113
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -13.996173568950907,
+                "y": 0.15169600604536726,
+                "z": -128.36743943993702
+              },
+              "max": {
+                "x": -13.21236835890828,
+                "y": 1.8034361920770607,
+                "z": -127.80007410138096
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-036",
+          "before": {
+            "id": "CIV-036",
+            "x": 2.8383223596028984,
+            "y": 0.057,
+            "z": -125.94929818978109,
+            "groundY": 0.057,
+            "scale": 0.9649497133865953,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1837,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 2.8383223596028984,
+              "y": 1.1377436789929867,
+              "z": -125.94929818978109
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 2.4378682285474613,
+                "y": 0.055242524840450336,
+                "z": -126.27014396948213
+              },
+              "max": {
+                "x": 3.2387764906583354,
+                "y": 1.7311877527257429,
+                "z": -125.75148349853684
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-039",
+          "before": {
+            "id": "CIV-039",
+            "x": 8.567014682572335,
+            "y": 0.057,
+            "z": -119.84256509926487,
+            "groundY": 0.057,
+            "scale": 0.9977270307019354,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1993,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 8.567014682572335,
+              "y": 1.1744542743861677,
+              "z": -119.84256509926487
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 8.152957964831032,
+                "y": 0.040293579253006195,
+                "z": -120.12429092810278
+              },
+              "max": {
+                "x": 8.981071400313638,
+                "y": 1.7880563982678577,
+                "z": -119.51082086155647
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-006",
+          "before": {
+            "id": "CIV-006",
+            "x": -13.593897987622768,
+            "y": 0.165,
+            "z": -115.15289529728967,
+            "groundY": 0.165,
+            "scale": 0.9332283274270594,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 277,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -13.593897987622768,
+              "y": 1.2102157267183067,
+              "z": -115.15289529728967
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -13.981187743504996,
+                "y": 0.16029876868489337,
+                "z": -115.46319371615917
+              },
+              "max": {
+                "x": -13.206608231740539,
+                "y": 1.7841511480859482,
+                "z": -114.94666136054873
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-040",
+          "before": {
+            "id": "CIV-040",
+            "x": 7.497498300857842,
+            "y": 0.057,
+            "z": -113.85241433483817,
+            "groundY": 0.057,
+            "scale": 0.9883839567913675,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 2028,
+            "instanceCount": 86,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 7.497498300857842,
+              "y": 1.1639900316063316,
+              "z": -113.85241433483817
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 7.0873189587894245,
+                "y": 0.056743733672702384,
+                "z": -114.05503304598041
+              },
+              "max": {
+                "x": 7.907677642926259,
+                "y": 1.7718461650330226,
+                "z": -113.52377666920505
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-019",
+          "before": {
+            "id": "CIV-019",
+            "x": 13.221090064384043,
+            "y": 0.165,
+            "z": -113.6192264072985,
+            "groundY": 0.165,
+            "scale": 1.0150259601627476,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 936,
+            "instanceCount": 86,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 13.221090064384043,
+              "y": 1.3018290753822774,
+              "z": -113.6192264072985
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 12.799854290916503,
+                "y": 0.1580040694164494,
+                "z": -113.85330856497325
+              },
+              "max": {
+                "x": 13.642325837851583,
+                "y": 1.9260700408823672,
+                "z": -113.28173027554438
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-027",
+          "before": {
+            "id": "CIV-027",
+            "x": 13.186789627652615,
+            "y": 0.165,
+            "z": -109.46838367255205,
+            "groundY": 0.165,
+            "scale": 1.022632023463957,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1369,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 13.186789627652615,
+              "y": 1.310347866279632,
+              "z": -109.46838367255205
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 12.762397337915074,
+                "y": 0.16490568041774167,
+                "z": -109.80840882035382
+              },
+              "max": {
+                "x": 13.611181917390157,
+                "y": 1.9392665607099655,
+                "z": -109.25874410774193
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-005",
+          "before": {
+            "id": "CIV-005",
+            "x": 12.04019576869905,
+            "y": 0.165,
+            "z": -106.00435636160451,
+            "groundY": 0.165,
+            "scale": 0.9332598780444824,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 242,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 12.04019576869905,
+              "y": 1.2102510634098205,
+              "z": -106.00435636160451
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 11.65289291931059,
+                "y": 0.15554640034928816,
+                "z": -106.23534036412732
+              },
+              "max": {
+                "x": 12.42749861808751,
+                "y": 1.784205888407177,
+                "z": -105.69404745215472
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-003",
+          "before": {
+            "id": "CIV-003",
+            "x": 13.784253734629601,
+            "y": 0.165,
+            "z": -106.13832749937143,
+            "groundY": 0.165,
+            "scale": 0.9916700023738668,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 121,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 13.784253734629601,
+              "y": 1.2756704026587309,
+              "z": -106.13832749937143
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 13.372710683644447,
+                "y": 0.16257246248735557,
+                "z": -106.46805777516073
+              },
+              "max": {
+                "x": 14.195796785614755,
+                "y": 1.885547454118659,
+                "z": -105.93245515761582
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-016",
+          "before": {
+            "id": "CIV-016",
+            "x": -12.641609381884336,
+            "y": 0.165,
+            "z": -104.15278768143412,
+            "groundY": 0.165,
+            "scale": 0.9983915787446314,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 780,
+            "instanceCount": 86,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -12.641609381884336,
+              "y": 1.2831985681939873,
+              "z": -104.15278768143412
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -13.055941887063359,
+                "y": 0.14991432504652913,
+                "z": -104.42605118315858
+              },
+              "max": {
+                "x": -12.227276876705314,
+                "y": 1.8972093891219355,
+                "z": -103.82082248150152
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-041",
+          "before": {
+            "id": "CIV-041",
+            "x": -0.6981061510741711,
+            "y": 0.057,
+            "z": -102.93960752796681,
+            "groundY": 0.057,
+            "scale": 1.0195226015080698,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 2114,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -0.6981061510741711,
+              "y": 1.1988653136890384,
+              "z": -102.93960752796681
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -1.12120803070002,
+                "y": 0.042942379311355916,
+                "z": -103.21153755223706
+              },
+              "max": {
+                "x": -0.275004271448322,
+                "y": 1.8258717136165012,
+                "z": -102.60061626296537
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-035",
+          "before": {
+            "id": "CIV-035",
+            "x": 5.276084739714861,
+            "y": 0.057,
+            "z": -100.59340676534754,
+            "groundY": 0.057,
+            "scale": 1.058367537104059,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1802,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 5.276084739714861,
+              "y": 1.2423716415565462,
+              "z": -100.59340676534754
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 4.836862211816676,
+                "y": 0.045916892368576434,
+                "z": -100.85725127617648
+              },
+              "max": {
+                "x": 5.715307267613046,
+                "y": 1.8932676768755423,
+                "z": -100.24149955926045
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-017",
+          "before": {
+            "id": "CIV-017",
+            "x": 13.374897250905633,
+            "y": 0.165,
+            "z": -101.26923955368137,
+            "groundY": 0.165,
+            "scale": 0.9455076281516813,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 866,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 13.374897250905633,
+              "y": 1.2239685435298833,
+              "z": -101.26923955368137
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 12.982511585222685,
+                "y": 0.1528272611393166,
+                "z": -101.51687396113834
+              },
+              "max": {
+                "x": 13.76728291658858,
+                "y": 1.805455734843167,
+                "z": -100.95485826732094
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-002",
+          "before": {
+            "id": "CIV-002",
+            "x": -13.846324258483946,
+            "y": 0.165,
+            "z": -100.21660810865721,
+            "groundY": 0.165,
+            "scale": 0.9478056855429896,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 86,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -13.846324258483946,
+              "y": 1.2265423678081484,
+              "z": -100.21660810865721
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -14.239663617984286,
+                "y": 0.14885214449847667,
+                "z": -100.53175349910025
+              },
+              "max": {
+                "x": -13.452984898983606,
+                "y": 1.809442864417087,
+                "z": -99.94750495533458
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-043",
+          "before": {
+            "id": "CIV-043",
+            "x": 4.536154207773507,
+            "y": 0.057,
+            "z": -97.91095055473465,
+            "groundY": 0.057,
+            "scale": 0.9283454785658978,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 2184,
+            "instanceCount": 86,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 4.536154207773507,
+              "y": 1.0967469359938056,
+              "z": -97.91095055473465
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 4.150890834168659,
+                "y": 0.054133360315950285,
+                "z": -98.10674289953201
+              },
+              "max": {
+                "x": 4.921417581378354,
+                "y": 1.6676794053118327,
+                "z": -97.6022756831115
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-009",
+          "before": {
+            "id": "CIV-009",
+            "x": 13.144670573528856,
+            "y": 0.165,
+            "z": -96.98663835010402,
+            "groundY": 0.165,
+            "scale": 1.0760514641227201,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 433,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 13.144670573528856,
+              "y": 1.3701776398174468,
+              "z": -96.98663835010402
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 12.698109215917928,
+                "y": 0.15753035921596054,
+                "z": -97.23507012636853
+              },
+              "max": {
+                "x": 13.591231931139784,
+                "y": 2.0319492902529195,
+                "z": -96.6288512382832
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-021",
+          "before": {
+            "id": "CIV-021",
+            "x": 12.517017678823322,
+            "y": 0.165,
+            "z": -94.74821110893443,
+            "groundY": 0.165,
+            "scale": 1.021076310784556,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 1057,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 12.517017678823322,
+              "y": 1.308605468078703,
+              "z": -94.74821110893443
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 12.093271009847731,
+                "y": 0.14719431470486924,
+                "z": -95.08771898227029
+              },
+              "max": {
+                "x": 12.940764347798913,
+                "y": 1.9365673992112047,
+                "z": -94.45612723903315
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-042",
+          "before": {
+            "id": "CIV-042",
+            "x": -8.897461634594947,
+            "y": 0.057,
+            "z": -93.35412722864596,
+            "groundY": 0.057,
+            "scale": 0.9666849586740136,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 2149,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -8.897461634594947,
+              "y": 1.1396871537148954,
+              "z": -93.35412722864596
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -9.298635892444661,
+                "y": 0.04075778245647746,
+                "z": -93.67554997740508
+              },
+              "max": {
+                "x": -8.496287376745233,
+                "y": 1.7341984032994135,
+                "z": -93.08087146761457
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        }
+      ]
+    },
+    {
+      "start": 24,
+      "end": 32,
+      "wallTime": 24100.100000023842,
+      "simulationElapsed": 13.438799999999967,
+      "results": [
+        {
+          "id": "CIV-155",
+          "before": {
+            "id": "CIV-155",
+            "x": -77.07581314123236,
+            "y": 0.057,
+            "z": -170.75134344335962,
+            "groundY": 0.057,
+            "scale": 1.0521459293947555,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 8042,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -77.07581314123236,
+              "y": 1.2354034409221262,
+              "z": -170.75134344335962
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -77.51245370193118,
+                "y": 0.04085587329726417,
+                "z": -171.10118196488338
+              },
+              "max": {
+                "x": -76.63917258053354,
+                "y": 1.8824731874999008,
+                "z": -170.4620641922397
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-162",
+          "before": {
+            "id": "CIV-162",
+            "x": 76.80219328633976,
+            "y": 0.057,
+            "z": -186.44741291435787,
+            "groundY": 0.057,
+            "scale": 0.9320696974778548,
+            "yaw": 3.141592653589793,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 8389,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 76.80219328633976,
+              "y": 1.1009180611751974,
+              "z": -186.44741291435787
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 76.41538436188645,
+                "y": 0.0447149441138848,
+                "z": -186.69303016824645
+              },
+              "max": {
+                "x": 77.18900221079306,
+                "y": 1.6741409251240782,
+                "z": -186.1374997399465
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-150",
+          "before": {
+            "id": "CIV-150",
+            "x": 76.80296099807602,
+            "y": 0.057,
+            "z": -138.35978104121043,
+            "groundY": 0.057,
+            "scale": 0.9778616207512096,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 7765,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 76.80296099807602,
+              "y": 1.1522050152413548,
+              "z": -138.35978104121043
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 76.39714842546427,
+                "y": 0.047498965358410916,
+                "z": -138.68492003011022
+              },
+              "max": {
+                "x": 77.20877357068777,
+                "y": 1.7535899120033487,
+                "z": -138.11987309337485
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-174",
+          "before": {
+            "id": "CIV-174",
+            "x": 77.00881579357664,
+            "y": 0.057,
+            "z": -194.59362009160625,
+            "groundY": 0.057,
+            "scale": 1.0185095944302156,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 9013,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 77.00881579357664,
+              "y": 1.1977307457618416,
+              "z": -194.59362009160625
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 76.5861343118881,
+                "y": 0.03906996850684595,
+                "z": -194.9322745317543
+              },
+              "max": {
+                "x": 77.43149727526519,
+                "y": 1.824114146336424,
+                "z": -194.3013706076679
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-143",
+          "before": {
+            "id": "CIV-143",
+            "x": -76.88484799857251,
+            "y": 0.057,
+            "z": -133.56749850966247,
+            "groundY": 0.057,
+            "scale": 1.0395137722813526,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 7418,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -76.88484799857251,
+              "y": 1.2212554249551149,
+              "z": -133.56749850966247
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -77.31624621406927,
+                "y": 0.04707443993224805,
+                "z": -133.91313683894603
+              },
+              "max": {
+                "x": -76.45344978307575,
+                "y": 1.8605563949081467,
+                "z": -133.31337704199424
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-167",
+          "before": {
+            "id": "CIV-167",
+            "x": -77.10807684618048,
+            "y": 0.057,
+            "z": -219.25824130184122,
+            "groundY": 0.057,
+            "scale": 1.0147282766946593,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 8666,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -77.10807684618048,
+              "y": 1.1934956698980184,
+              "z": -219.25824130184122
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -77.52918908100877,
+                "y": 0.041071666474605,
+                "z": -219.5956384538422
+              },
+              "max": {
+                "x": -76.6869646113522,
+                "y": 1.8175535600652337,
+                "z": -218.9773521340118
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-131",
+          "before": {
+            "id": "CIV-131",
+            "x": -77.24992007329129,
+            "y": 0.057,
+            "z": -110.58489883783355,
+            "groundY": 0.057,
+            "scale": 1.0746244117082098,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 6794,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": -77.24992007329129,
+              "y": 1.260579341113195,
+              "z": -110.58489883783355
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -77.6958892041502,
+                "y": 0.047226830889076685,
+                "z": -110.94221145472653
+              },
+              "max": {
+                "x": -76.80395094243238,
+                "y": 1.9214733543137439,
+                "z": -110.32474169332531
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        },
+        {
+          "id": "CIV-138",
+          "before": {
+            "id": "CIV-138",
+            "x": 76.81526264369022,
+            "y": 0.057,
+            "z": -105.44011148106449,
+            "groundY": 0.057,
+            "scale": 1.0546732251206414,
+            "yaw": 0,
+            "health": 100,
+            "alive": true,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0,
+            "physical": false,
+            "physics": null,
+            "instanceStart": 7141,
+            "instanceCount": 35,
+            "vehicleCooldown": 0,
+            "cause": null,
+            "aimPoint": {
+              "x": 76.81526264369022,
+              "y": 1.2382340121351185,
+              "z": -105.44011148106449
+            },
+            "bodyBounds": {
+              "min": {
+                "x": 76.37757325526515,
+                "y": 0.03986435050997328,
+                "z": -105.7907903284171
+              },
+              "max": {
+                "x": 77.25295203211529,
+                "y": 1.886858045584313,
+                "z": -105.14508882125679
+              }
+            }
+          },
+          "result": {
+            "hit": true,
+            "killed": true
+          }
+        }
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "baseline",
+      "before": {
+        "wallTime": 13938,
+        "simulationElapsed": 3.2847000000000017,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 436,
+          "triangles": 3108514
+        },
+        "world": {
+          "total": 2217,
+          "dynamic": 13,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 0,
+          "sleepy": 0,
+          "sleeping": 13
+        },
+        "constraints": 0,
+        "contacts": 0,
+        "civilians": {
+          "total": 284,
+          "alive": 284,
+          "dead": 0,
+          "injured": 0,
+          "fleeing": 0,
+          "physicalCorpses": 0,
+          "activeRagdolls": 0,
+          "simplifiedCorpses": 0,
+          "ragdollJoints": 0,
+          "activeCorpseBodies": 0,
+          "time": 4.101399999999999
+        },
+        "civilianBodies": {
+          "total": 0,
+          "dynamic": 0,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 0,
+          "sleepy": 0,
+          "sleeping": 0
+        },
+        "corpseAssemblies": {
+          "sleeping": 0,
+          "awake": 0
+        },
+        "retired": [],
+        "heap": {
+          "usedBytes": 176224928,
+          "totalBytes": 232930576,
+          "limitBytes": 4395630592
+        }
+      },
+      "after": {
+        "wallTime": 18958.100000023842,
+        "simulationElapsed": 8.303400000000048,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 436,
+          "triangles": 3108514
+        },
+        "world": {
+          "total": 2217,
+          "dynamic": 13,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 0,
+          "sleepy": 0,
+          "sleeping": 13
+        },
+        "constraints": 0,
+        "contacts": 0,
+        "civilians": {
+          "total": 284,
+          "alive": 284,
+          "dead": 0,
+          "injured": 0,
+          "fleeing": 0,
+          "physicalCorpses": 0,
+          "activeRagdolls": 0,
+          "simplifiedCorpses": 0,
+          "ragdollJoints": 0,
+          "activeCorpseBodies": 0,
+          "time": 9.12010000000004
+        },
+        "civilianBodies": {
+          "total": 0,
+          "dynamic": 0,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 0,
+          "sleepy": 0,
+          "sleeping": 0
+        },
+        "corpseAssemblies": {
+          "sleeping": 0,
+          "awake": 0
+        },
+        "retired": [],
+        "heap": {
+          "usedBytes": 169983888,
+          "totalBytes": 233454864,
+          "limitBytes": 4395630592
+        }
+      },
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.673333333333332,
+        "fps": 59.97600959616154,
+        "minMs": 16.5,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000291,
+        "maxMs": 16.80000000000291,
+        "over25ms": 0,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "nativeRafIntervalsMs": [
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.80000000000109,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.799999999999272,
+        16.5,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.80000000000109,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.799999999999272,
+        16.600000000000364,
+        16.700000000000728,
+        16.600000000000364,
+        16.799999999999272,
+        16.600000000000364,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.69999999999891,
+        16.700000000000728,
+        16.600000000000364,
+        16.799999999999272,
+        16.600000000000364,
+        16.69999999999891,
+        16.600000000000364,
+        16.700000000000728,
+        16.69999999999891,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.5,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.599999999998545,
+        16.700000000000728,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.5,
+        16.799999999999272,
+        16.600000000002183,
+        16.799999999999272,
+        16.5,
+        16.799999999999272,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728
+      ]
+    },
+    {
+      "name": "24 newly jointed civilian deaths",
+      "before": {
+        "wallTime": 19017.90000000596,
+        "simulationElapsed": 8.336800000000045,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 436,
+          "triangles": 3108514
+        },
+        "world": {
+          "total": 2488,
+          "dynamic": 284,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 269,
+          "sleepy": 2,
+          "sleeping": 13
+        },
+        "constraints": 240,
+        "contacts": 172,
+        "civilians": {
+          "total": 284,
+          "alive": 260,
+          "dead": 24,
+          "injured": 0,
+          "fleeing": 0,
+          "physicalCorpses": 24,
+          "activeRagdolls": 24,
+          "simplifiedCorpses": 0,
+          "ragdollJoints": 240,
+          "activeCorpseBodies": 271,
+          "time": 9.153500000000037
+        },
+        "civilianBodies": {
+          "total": 271,
+          "dynamic": 271,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 269,
+          "sleepy": 2,
+          "sleeping": 0
+        },
+        "corpseAssemblies": {
+          "sleeping": 0,
+          "awake": 24
+        },
+        "retired": [],
+        "heap": {
+          "usedBytes": 187293592,
+          "totalBytes": 234765584,
+          "limitBytes": 4395630592
+        }
+      },
+      "after": {
+        "wallTime": 24080.90000000596,
+        "simulationElapsed": 13.42209999999997,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 435,
+          "triangles": 3107662
+        },
+        "world": {
+          "total": 2488,
+          "dynamic": 284,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 68,
+          "sleepy": 142,
+          "sleeping": 74
+        },
+        "constraints": 240,
+        "contacts": 216,
+        "civilians": {
+          "total": 284,
+          "alive": 260,
+          "dead": 24,
+          "injured": 0,
+          "fleeing": 0,
+          "physicalCorpses": 24,
+          "activeRagdolls": 24,
+          "simplifiedCorpses": 0,
+          "ragdollJoints": 240,
+          "activeCorpseBodies": 271,
+          "time": 14.238799999999962
+        },
+        "civilianBodies": {
+          "total": 271,
+          "dynamic": 271,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 68,
+          "sleepy": 142,
+          "sleeping": 61
+        },
+        "corpseAssemblies": {
+          "sleeping": 5,
+          "awake": 19
+        },
+        "retired": [],
+        "heap": {
+          "usedBytes": 176840176,
+          "totalBytes": 242367760,
+          "limitBytes": 4395630592
+        }
+      },
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.728666666666673,
+        "fps": 59.7776272267166,
+        "minMs": 16.399999999997817,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.80000000000291,
+        "maxMs": 33.20000000000073,
+        "over25ms": 1,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "nativeRafIntervalsMs": [
+        16.700000000000728,
+        33.20000000000073,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.80000000000291,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.900000000001455,
+        16.399999999997817,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.600000000002183,
+        16.799999999999272,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728
+      ]
+    },
+    {
+      "name": "32 deaths: 24 jointed and 8 retired dynamic compounds",
+      "before": {
+        "wallTime": 24117.70000001788,
+        "simulationElapsed": 13.455399999999969,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 435,
+          "triangles": 3107662
+        },
+        "world": {
+          "total": 2496,
+          "dynamic": 292,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 151,
+          "sleepy": 117,
+          "sleeping": 24
+        },
+        "constraints": 240,
+        "contacts": 243,
+        "civilians": {
+          "total": 284,
+          "alive": 252,
+          "dead": 32,
+          "injured": 0,
+          "fleeing": 1,
+          "physicalCorpses": 32,
+          "activeRagdolls": 24,
+          "simplifiedCorpses": 8,
+          "ragdollJoints": 240,
+          "activeCorpseBodies": 279,
+          "time": 14.272099999999961
+        },
+        "civilianBodies": {
+          "total": 279,
+          "dynamic": 279,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 151,
+          "sleepy": 117,
+          "sleeping": 11
+        },
+        "corpseAssemblies": {
+          "sleeping": 5,
+          "awake": 27
+        },
+        "retired": [
+          {
+            "id": "CIV-038",
+            "bodyId": 2488,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -0.8189308062013834,
+              0.34566984302381026,
+              -142.55732146857557
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-040",
+            "bodyId": 2500,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              7.476856049532362,
+              0.3291861886579671,
+              -113.186026494547
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-019",
+            "bodyId": 2512,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              14.09504906499119,
+              0.49412802623441887,
+              -113.92169898421939
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-005",
+            "bodyId": 2524,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              12.054911530930804,
+              0.4039614764143178,
+              -105.18940997196725
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-009",
+            "bodyId": 2536,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              13.227475540645788,
+              0.46180049860185496,
+              -96.25082168834334
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-014",
+            "bodyId": 2548,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 0,
+            "position": [
+              -14.44780786898958,
+              0.4487371582764446,
+              -162.3192919189024
+            ],
+            "velocity": [
+              0.009384383537904762,
+              0.2276378371964449,
+              -0.047815117573633714
+            ],
+            "angularVelocity": [
+              -0.15744715046389032,
+              0.0017023402112549277,
+              -0.05875104993246434
+            ]
+          },
+          {
+            "id": "CIV-028",
+            "bodyId": 2560,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 1,
+            "position": [
+              -13.214972077590847,
+              0.39934831501829404,
+              -156.81035759106263
+            ],
+            "velocity": [
+              -0.008256100407229027,
+              0.0326350438542945,
+              0.00471201403344786
+            ],
+            "angularVelocity": [
+              0.022047595687478567,
+              -0.00006972498090570743,
+              0.031120875099017332
+            ]
+          },
+          {
+            "id": "CIV-030",
+            "bodyId": 2572,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 1,
+            "position": [
+              -13.430469943756963,
+              0.3662072787025342,
+              -154.03891853023418
+            ],
+            "velocity": [
+              -0.009441377247414626,
+              0.052079564870944006,
+              0.00947662982149529
+            ],
+            "angularVelocity": [
+              0.04693151116848381,
+              -0.00011575272187920902,
+              0.04250603984138132
+            ]
+          }
+        ],
+        "heap": {
+          "usedBytes": 176840176,
+          "totalBytes": 242367760,
+          "limitBytes": 4395630592
+        }
+      },
+      "after": {
+        "wallTime": 29148.40000000596,
+        "simulationElapsed": 18.490899999999872,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 437,
+          "triangles": 3109366
+        },
+        "world": {
+          "total": 2496,
+          "dynamic": 292,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 40,
+          "sleepy": 148,
+          "sleeping": 104
+        },
+        "constraints": 240,
+        "contacts": 206,
+        "civilians": {
+          "total": 284,
+          "alive": 252,
+          "dead": 32,
+          "injured": 0,
+          "fleeing": 1,
+          "physicalCorpses": 32,
+          "activeRagdolls": 24,
+          "simplifiedCorpses": 8,
+          "ragdollJoints": 240,
+          "activeCorpseBodies": 279,
+          "time": 19.307599999999862
+        },
+        "civilianBodies": {
+          "total": 279,
+          "dynamic": 279,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 40,
+          "sleepy": 148,
+          "sleeping": 91
+        },
+        "corpseAssemblies": {
+          "sleeping": 15,
+          "awake": 17
+        },
+        "retired": [
+          {
+            "id": "CIV-038",
+            "bodyId": 2488,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -0.8189308062013834,
+              0.34566984302381026,
+              -142.55732146857557
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-040",
+            "bodyId": 2500,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              7.476856049532362,
+              0.3291861886579671,
+              -113.186026494547
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-019",
+            "bodyId": 2512,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              14.09504906499119,
+              0.49412802623441887,
+              -113.92169898421939
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-005",
+            "bodyId": 2524,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              12.054911530930804,
+              0.4039614764143178,
+              -105.18940997196725
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-009",
+            "bodyId": 2536,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              13.227475540645788,
+              0.46180049860185496,
+              -96.25082168834334
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-014",
+            "bodyId": 2548,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -14.44729870321857,
+              0.4646414934764742,
+              -162.32273033160857
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-028",
+            "bodyId": 2560,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -13.215853184869026,
+              0.4016550711360897,
+              -156.81000258527814
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-030",
+            "bodyId": 2572,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -13.431831221665577,
+              0.3700262278133684,
+              -154.03865081890854
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "heap": {
+          "usedBytes": 202782228,
+          "totalBytes": 246037776,
+          "limitBytes": 4395630592
+        }
+      },
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.673333333333332,
+        "fps": 59.97600959616154,
+        "minMs": 16.5,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 16.799999999999272,
+        "p99Ms": 16.799999999999272,
+        "maxMs": 16.900000000001455,
+        "over25ms": 0,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "nativeRafIntervalsMs": [
+        16.599999999998545,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.600000000002183,
+        16.799999999999272,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.600000000002183,
+        16.700000000000728,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.900000000001455,
+        16.5,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.80000000000291,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.5,
+        16.799999999999272,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.700000000000728,
+        16.69999999999709,
+        16.700000000000728,
+        16.600000000002183,
+        16.69999999999709,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.700000000000728,
+        16.700000000000728,
+        16.599999999998545,
+        16.799999999999272,
+        16.600000000002183,
+        16.69999999999709,
+        16.600000000002183,
+        16.799999999999272,
+        16.599999999998545,
+        16.700000000000728,
+        16.600000000002183,
+        16.799999999999272
+      ]
+    },
+    {
+      "name": "32 deaths after 20 seconds settling",
+      "before": {
+        "wallTime": 44120.20000001788,
+        "simulationElapsed": 33.463499999999584,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 438,
+          "triangles": 3110218
+        },
+        "world": {
+          "total": 2496,
+          "dynamic": 292,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 3,
+          "sleepy": 19,
+          "sleeping": 270
+        },
+        "constraints": 240,
+        "contacts": 18,
+        "civilians": {
+          "total": 284,
+          "alive": 252,
+          "dead": 32,
+          "injured": 0,
+          "fleeing": 0,
+          "physicalCorpses": 32,
+          "activeRagdolls": 24,
+          "simplifiedCorpses": 8,
+          "ragdollJoints": 240,
+          "activeCorpseBodies": 279,
+          "time": 34.28019999999966
+        },
+        "civilianBodies": {
+          "total": 279,
+          "dynamic": 279,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 3,
+          "sleepy": 19,
+          "sleeping": 257
+        },
+        "corpseAssemblies": {
+          "sleeping": 30,
+          "awake": 2
+        },
+        "retired": [
+          {
+            "id": "CIV-038",
+            "bodyId": 2488,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -0.8189308062013834,
+              0.34566984302381026,
+              -142.55732146857557
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-040",
+            "bodyId": 2500,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              7.476856049532362,
+              0.3291861886579671,
+              -113.186026494547
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-019",
+            "bodyId": 2512,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              14.09504906499119,
+              0.49412802623441887,
+              -113.92169898421939
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-005",
+            "bodyId": 2524,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              12.054911530930804,
+              0.4039614764143178,
+              -105.18940997196725
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-009",
+            "bodyId": 2536,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              13.227475540645788,
+              0.46180049860185496,
+              -96.25082168834334
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-014",
+            "bodyId": 2548,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -14.44729870321857,
+              0.4646414934764742,
+              -162.32273033160857
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-028",
+            "bodyId": 2560,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -13.215853184869026,
+              0.4016550711360897,
+              -156.81000258527814
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-030",
+            "bodyId": 2572,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -13.431831221665577,
+              0.3700262278133684,
+              -154.03865081890854
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "heap": {
+          "usedBytes": 183636722,
+          "totalBytes": 247610542,
+          "limitBytes": 4395630592
+        }
+      },
+      "after": {
+        "wallTime": 49139.10000002384,
+        "simulationElapsed": 38.48219999999994,
+        "mode": "playing",
+        "player": [
+          0,
+          1.807,
+          -170
+        ],
+        "health": 100,
+        "renderer": {
+          "calls": 438,
+          "triangles": 3110218
+        },
+        "world": {
+          "total": 2496,
+          "dynamic": 292,
+          "static": 2187,
+          "kinematic": 17,
+          "awake": 0,
+          "sleepy": 11,
+          "sleeping": 281
+        },
+        "constraints": 240,
+        "contacts": 10,
+        "civilians": {
+          "total": 284,
+          "alive": 252,
+          "dead": 32,
+          "injured": 0,
+          "fleeing": 0,
+          "physicalCorpses": 32,
+          "activeRagdolls": 24,
+          "simplifiedCorpses": 8,
+          "ragdollJoints": 240,
+          "activeCorpseBodies": 279,
+          "time": 39.29890000000002
+        },
+        "civilianBodies": {
+          "total": 279,
+          "dynamic": 279,
+          "static": 0,
+          "kinematic": 0,
+          "awake": 0,
+          "sleepy": 11,
+          "sleeping": 268
+        },
+        "corpseAssemblies": {
+          "sleeping": 31,
+          "awake": 1
+        },
+        "retired": [
+          {
+            "id": "CIV-038",
+            "bodyId": 2488,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -0.8189308062013834,
+              0.34566984302381026,
+              -142.55732146857557
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-040",
+            "bodyId": 2500,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              7.476856049532362,
+              0.3291861886579671,
+              -113.186026494547
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-019",
+            "bodyId": 2512,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              14.09504906499119,
+              0.49412802623441887,
+              -113.92169898421939
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-005",
+            "bodyId": 2524,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              12.054911530930804,
+              0.4039614764143178,
+              -105.18940997196725
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-009",
+            "bodyId": 2536,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              13.227475540645788,
+              0.46180049860185496,
+              -96.25082168834334
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-014",
+            "bodyId": 2548,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -14.44729870321857,
+              0.4646414934764742,
+              -162.32273033160857
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-028",
+            "bodyId": 2560,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -13.215853184869026,
+              0.4016550711360897,
+              -156.81000258527814
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "CIV-030",
+            "bodyId": 2572,
+            "mass": 68,
+            "type": 1,
+            "sleepState": 2,
+            "position": [
+              -13.431831221665577,
+              0.3700262278133684,
+              -154.03865081890854
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "angularVelocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "heap": {
+          "usedBytes": 176681118,
+          "totalBytes": 247610542,
+          "limitBytes": 4395630592
+        }
+      },
+      "timing": {
+        "frames": 300,
+        "meanMs": 16.673333333333332,
+        "fps": 59.97600959616154,
+        "minMs": 16.5,
+        "p50Ms": 16.69999999999709,
+        "p95Ms": 16.80000000000291,
+        "p99Ms": 16.80000000000291,
+        "maxMs": 16.80000000000291,
+        "over25ms": 0,
+        "over33ms": 0,
+        "over50ms": 0
+      },
+      "nativeRafIntervalsMs": [
+        16.69999999999709,
+        16.60000000000582,
+        16.799999999995634,
+        16.599999999998545,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.799999999995634,
+        16.599999999998545,
+        16.60000000000582,
+        16.799999999995634,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.60000000000582,
+        16.799999999995634,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.69999999999709,
+        16.599999999998545,
+        16.599999999998545,
+        16.700000000004366,
+        16.799999999995634,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.799999999995634,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.80000000000291,
+        16.5,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.599999999998545,
+        16.69999999999709,
+        16.80000000000291,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.599999999998545,
+        16.80000000000291,
+        16.5,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.599999999998545,
+        16.799999999995634,
+        16.60000000000582,
+        16.69999999999709,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.799999999995634,
+        16.700000000004366,
+        16.599999999998545,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.69999999999709,
+        16.60000000000582,
+        16.69999999999709,
+        16.80000000000291,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.799999999995634,
+        16.60000000000582,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545,
+        16.69999999999709,
+        16.599999999998545,
+        16.80000000000291,
+        16.599999999998545,
+        16.599999999998545,
+        16.700000000004366,
+        16.69999999999709,
+        16.700000000004366,
+        16.69999999999709,
+        16.69999999999709,
+        16.700000000004366,
+        16.599999999998545
+      ]
+    }
+  ],
+  "settledGeometry": [
+    {
+      "id": "CIV-002",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.01199823031563436,
+        "position": {
+          "x": -13.578559549234647,
+          "y": 0.3802006976213252,
+          "z": -99.5639409862184
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 9.69352967844434e-64,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -14.04060504707876,
+          "y": 0.14974781636570417,
+          "z": -100.45193026220042
+        },
+        "max": {
+          "x": -12.987648895755294,
+          "y": 0.6908943557534543,
+          "z": -98.71557336037355
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.01525218363429584,
+      "renderedMinimumIncludingUmbrella": 0.14974782802164555,
+      "lowestRenderedPoint": {
+        "x": -13.089829517528415,
+        "y": 0.14974782802164555,
+        "z": -99.24324778141454
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-003",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.00164406517867177,
+        "position": {
+          "x": 13.700517852303781,
+          "y": 0.3768474933749255,
+          "z": -105.64475367011208
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 7.339587695692902e-60,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 13.149577716976738,
+          "y": 0.16432442295275948,
+          "z": -106.52694740711098
+        },
+        "max": {
+          "x": 14.147271393288342,
+          "y": 0.6979651611242744,
+          "z": -104.84322949662081
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.0006755770472405276,
+      "renderedMinimumIncludingUmbrella": 0.16432441043434665,
+      "lowestRenderedPoint": {
+        "x": 13.951080642655143,
+        "y": 0.16432441043434665,
+        "z": -106.38692526402883
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-005",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": 12.054911530930804,
+          "y": 0.4039614764143178,
+          "z": -105.18940997196725
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 0,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 11.706123379515649,
+          "y": 0.16335412212452816,
+          "z": -106.02919804787071
+        },
+        "max": {
+          "x": 12.47057411095279,
+          "y": 0.6746250462575838,
+          "z": -104.36588664914737
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.0016458778754718517,
+      "renderedMinimumIncludingUmbrella": 0.16335413122578757,
+      "lowestRenderedPoint": {
+        "x": 11.895783445099369,
+        "y": 0.16335413122578757,
+        "z": -104.92510754521936
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-006",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0013927367692987875,
+        "position": {
+          "x": -13.550631321322157,
+          "y": 0.3652590875193806,
+          "z": -114.64594502084239
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 2.666853509096925e-58,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -14.1091677969514,
+          "y": 0.16431206717472796,
+          "z": -115.4607408299211
+        },
+        "max": {
+          "x": -12.96337037359855,
+          "y": 0.6665444301429084,
+          "z": -113.906946397002
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.0006879328252720474,
+      "renderedMinimumIncludingUmbrella": 0.16431207378627732,
+      "lowestRenderedPoint": {
+        "x": -13.818162906332873,
+        "y": 0.16431207378627732,
+        "z": -115.41057210089639
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-009",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": 13.227475540645788,
+          "y": 0.46180049860185496,
+          "z": -96.25082168834334
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 0,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 12.814199781548728,
+          "y": 0.16330718141046552,
+          "z": -97.22329838326637
+        },
+        "max": {
+          "x": 13.766637593781367,
+          "y": 0.755512801588404,
+          "z": -95.28879291601864
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.0016928185895344894,
+      "renderedMinimumIncludingUmbrella": 0.1633071806281805,
+      "lowestRenderedPoint": {
+        "x": 13.535773637704551,
+        "y": 0.1633071806281805,
+        "z": -96.1374762696214
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-010",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0018902060555603052,
+        "position": {
+          "x": -13.501275947087802,
+          "y": 0.4352972818972052,
+          "z": -150.16722101550988
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 2.4380579108915906e-59,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -13.973731422290705,
+          "y": 0.16295547323618978,
+          "z": -151.12636160782998
+        },
+        "max": {
+          "x": -13.090040949291282,
+          "y": 0.7466538076960076,
+          "z": -149.20883839045743
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.0020445267638102282,
+      "renderedMinimumIncludingUmbrella": 0.1629554649698548,
+      "lowestRenderedPoint": {
+        "x": -13.298858966561966,
+        "y": 0.1629554649698548,
+        "z": -149.8771929750219
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-014",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": -14.44729870321857,
+          "y": 0.4646414934764742,
+          "z": -162.32273033160857
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 4.201762821135156e-65,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -14.826122316605579,
+          "y": 0.16595984604217195,
+          "z": -163.15939726036837
+        },
+        "max": {
+          "x": -13.884640137825558,
+          "y": 0.9251358755724585,
+          "z": -161.41635167991663
+        }
+      },
+      "ground": 0.165,
+      "floorGap": 0.0009598460421719468,
+      "renderedMinimumIncludingUmbrella": 0.1659598401747644,
+      "lowestRenderedPoint": {
+        "x": -14.150981277227402,
+        "y": 0.1659598401747644,
+        "z": -162.9839314026758
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-016",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.00634008101848304,
+        "position": {
+          "x": -13.117288224297123,
+          "y": 0.4409367527780173,
+          "z": -103.33747439589447
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.2779544020697954e-24,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -13.413460030279122,
+          "y": 0.14624357778111474,
+          "z": -104.21494492581122
+        },
+        "max": {
+          "x": -12.658454355333982,
+          "y": 0.8825205193030723,
+          "z": -102.45233930816123
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.018756422218885266,
+      "renderedMinimumIncludingUmbrella": 0.14624357561115175,
+      "lowestRenderedPoint": {
+        "x": -13.234210757771507,
+        "y": 0.14624357561115175,
+        "z": -103.04123067017645
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-017",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.006207522200116629,
+        "position": {
+          "x": 12.720382798373493,
+          "y": 0.4292431458998889,
+          "z": -100.54746735392237
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.2602558198833445e-24,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 12.109962848601963,
+          "y": 0.16014186565561367,
+          "z": -101.29025690961463
+        },
+        "max": {
+          "x": 13.306414649377633,
+          "y": 0.8423408609337653,
+          "z": -99.78930911173096
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.004858134344386339,
+      "renderedMinimumIncludingUmbrella": 0.1601418734062463,
+      "lowestRenderedPoint": {
+        "x": 13.289805100066587,
+        "y": 0.1601418734062463,
+        "z": -101.04937793652061
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-019",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": 14.09504906499119,
+          "y": 0.49412802623441887,
+          "z": -113.92169898421939
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 0,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 13.393279611521384,
+          "y": 0.1522597842894522,
+          "z": -114.79413851106432
+        },
+        "max": {
+          "x": 14.552286165497375,
+          "y": 0.8609236912261027,
+          "z": -113.29223468365652
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.012740215710547814,
+      "renderedMinimumIncludingUmbrella": 0.15225979406386614,
+      "lowestRenderedPoint": {
+        "x": 13.498845893889666,
+        "y": 0.15225979406386614,
+        "z": -113.74313585972413
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-020",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.006237459795603403,
+        "position": {
+          "x": -14.22098238572985,
+          "y": 0.4285308339517242,
+          "z": -127.4027692795304
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 5.80129803315873e-33,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -14.595935965748586,
+          "y": 0.16019225416324925,
+          "z": -128.17497181526775
+        },
+        "max": {
+          "x": -13.688042083667197,
+          "y": 0.8415231186990201,
+          "z": -126.56787890871095
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.004807745836750754,
+      "renderedMinimumIncludingUmbrella": 0.1601922548143193,
+      "lowestRenderedPoint": {
+        "x": -13.946755845681764,
+        "y": 0.1601922548143193,
+        "z": -128.06310968194157
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-021",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.00827431728149169,
+        "position": {
+          "x": 12.046746780861742,
+          "y": 0.4754666757613939,
+          "z": -94.57539862481025
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.0386728463151519e-58,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 11.429834558224801,
+          "y": 0.14645773547093915,
+          "z": -95.20682349147263
+        },
+        "max": {
+          "x": 12.856623392294864,
+          "y": 0.860000781829028,
+          "z": -93.6834734760664
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.018542264529060853,
+      "renderedMinimumIncludingUmbrella": 0.14645774941891432,
+      "lowestRenderedPoint": {
+        "x": 12.59095617197454,
+        "y": 0.14645774941891432,
+        "z": -94.8738906539511
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-027",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0007526528607797704,
+        "position": {
+          "x": 13.123638099603106,
+          "y": 0.3829668286622941,
+          "z": -108.9915420227157
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 5.077258841048014e-56,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 12.562481338193074,
+          "y": 0.16279552778455939,
+          "z": -109.89448486407603
+        },
+        "max": {
+          "x": 13.610223063927286,
+          "y": 0.7146186648264066,
+          "z": -108.1766270635097
+        }
+      },
+      "ground": 0.165,
+      "floorGap": -0.0022044722154406227,
+      "renderedMinimumIncludingUmbrella": 0.1627955180592835,
+      "lowestRenderedPoint": {
+        "x": 13.136632511159405,
+        "y": 0.1627955180592835,
+        "z": -109.74308926530648
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-028",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": -13.215853184869026,
+          "y": 0.4016550711360897,
+          "z": -156.81000258527814
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 2.2820402827215808e-65,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -13.811718174318921,
+          "y": 0.16638109610751173,
+          "z": -157.73090316014336
+        },
+        "max": {
+          "x": -12.832069069763643,
+          "y": 0.7440828008362232,
+          "z": -155.8944291667849
+        }
+      },
+      "ground": 0.165,
+      "floorGap": 0.00138109610751172,
+      "renderedMinimumIncludingUmbrella": 0.16494066971846877,
+      "lowestRenderedPoint": {
+        "x": -12.418201019056141,
+        "y": 0.16494066971846877,
+        "z": -156.47175890486687
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-030",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": -13.431831221665577,
+          "y": 0.3700262278133684,
+          "z": -154.03865081890854
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.8785896364287192e-65,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -13.959500412973458,
+          "y": 0.16692613225649613,
+          "z": -154.84780158136073
+        },
+        "max": {
+          "x": -13.017297866732703,
+          "y": 0.6652586733370102,
+          "z": -153.29534250141543
+        }
+      },
+      "ground": 0.165,
+      "floorGap": 0.001926132256496127,
+      "renderedMinimumIncludingUmbrella": 0.16692613020859426,
+      "lowestRenderedPoint": {
+        "x": -13.658494543975394,
+        "y": 0.16692613020859426,
+        "z": -153.76115866683904
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-035",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.006016717547387757,
+        "position": {
+          "x": 6.699768812480478,
+          "y": 0.3537283124053378,
+          "z": -102.29223627935518
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 7.928858695679475e-18,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 5.755155546391842,
+          "y": 0.03917454264369352,
+          "z": -102.80278698502998
+        },
+        "max": {
+          "x": 7.642109069621772,
+          "y": 0.8199348429305388,
+          "z": -101.71568108398107
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.01782545735630648,
+      "renderedMinimumIncludingUmbrella": 0.03917453554458916,
+      "lowestRenderedPoint": {
+        "x": 6.975805677473545,
+        "y": 0.03917453554458916,
+        "z": -102.28068452142179
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-036",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0017149877244128637,
+        "position": {
+          "x": 1.0540426124255822,
+          "y": 0.25844157434250964,
+          "z": -158.55308271023037
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 7.873222381851552e-33,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 0.24077415982535028,
+          "y": 0.05520093500733078,
+          "z": -159.12852713751232
+        },
+        "max": {
+          "x": 1.843589711425455,
+          "y": 0.5756502873258481,
+          "z": -158.16587378737938
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0017990649926692207,
+      "renderedMinimumIncludingUmbrella": 0.05520093330414966,
+      "lowestRenderedPoint": {
+        "x": 0.9993721805512905,
+        "y": 0.05520093330414966,
+        "z": -158.25867920648307
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-037",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0019298084093262956,
+        "position": {
+          "x": -1.0716767240735317,
+          "y": 0.3349516098678883,
+          "z": -147.6761807946301
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.6961510488527037e-66,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -1.6609604447433313,
+          "y": 0.05451790643129045,
+          "z": -148.4857956406079
+        },
+        "max": {
+          "x": -0.5658340643968659,
+          "y": 0.6146452782493248,
+          "z": -146.80865182385068
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0024820935687095494,
+      "renderedMinimumIncludingUmbrella": 0.054517896845936775,
+      "lowestRenderedPoint": {
+        "x": -0.8969648815691471,
+        "y": 0.054517896845936775,
+        "z": -147.70128527469933
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-038",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": -0.8189308062013834,
+          "y": 0.34566984302381026,
+          "z": -142.55732146857557
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 0,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -1.1985595815889425,
+          "y": 0.05614916891434192,
+          "z": -143.44803550919102
+        },
+        "max": {
+          "x": -0.3765063007620355,
+          "y": 0.6169011995227537,
+          "z": -141.6156037282952
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0008508310856580811,
+      "renderedMinimumIncludingUmbrella": 0.05614916945114601,
+      "lowestRenderedPoint": {
+        "x": -0.9134171038816703,
+        "y": 0.05614916945114601,
+        "z": -142.26743403111323
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-039",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.006261583993297145,
+        "position": {
+          "x": 7.923917826428429,
+          "y": 0.3354139647464945,
+          "z": -119.13494801762432
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 2.53340162935248e-31,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 7.558015915744479,
+          "y": 0.05191257809475225,
+          "z": -119.87845486011847
+        },
+        "max": {
+          "x": 8.511531374130213,
+          "y": 0.7727342434964128,
+          "z": -118.25647829973194
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0050874219052477535,
+      "renderedMinimumIncludingUmbrella": 0.05191257962724194,
+      "lowestRenderedPoint": {
+        "x": 8.230478280456737,
+        "y": 0.05191257962724194,
+        "z": -119.80576726258732
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-040",
+      "physics": {
+        "articulated": false,
+        "simplified": true,
+        "segments": 1,
+        "joints": 0,
+        "maxJointError": 0,
+        "position": {
+          "x": 7.476856049532362,
+          "y": 0.3291861886579671,
+          "z": -113.186026494547
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 0,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 7.087801706057786,
+          "y": 0.05608383204172448,
+          "z": -114.04577602397279
+        },
+        "max": {
+          "x": 7.874013723673408,
+          "y": 0.5964189838708825,
+          "z": -112.32006535306043
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0009161679582755239,
+      "renderedMinimumIncludingUmbrella": 0.056083829986164346,
+      "lowestRenderedPoint": {
+        "x": 7.409739792387882,
+        "y": 0.056083829986164346,
+        "z": -112.90491136888886
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-041",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.005055758553002487,
+        "position": {
+          "x": -0.930112048983803,
+          "y": 0.3393031241046946,
+          "z": -102.36434612102434
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 7.860100013617874e-68,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -1.4177986458546492,
+          "y": 0.05546620683650122,
+          "z": -103.24818407600415
+        },
+        "max": {
+          "x": -0.48786044743421886,
+          "y": 0.6197108937006204,
+          "z": -101.46005341408028
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0015337931634987825,
+      "renderedMinimumIncludingUmbrella": 0.055466203950345516,
+      "lowestRenderedPoint": {
+        "x": -0.7431580163538456,
+        "y": 0.055466203950345516,
+        "z": -102.36434331163764
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-042",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.001725835542392528,
+        "position": {
+          "x": -8.564534585116117,
+          "y": 0.2781700643477125,
+          "z": -92.90098590829643
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 3.8287245038418056e-53,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -9.427950386020846,
+          "y": 0.05673414686429715,
+          "z": -93.68930306537766
+        },
+        "max": {
+          "x": -7.90774000488798,
+          "y": 0.5765161255056099,
+          "z": -92.13378416398605
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0002658531357028551,
+      "renderedMinimumIncludingUmbrella": 0.05673415074124932,
+      "lowestRenderedPoint": {
+        "x": -8.493122348794714,
+        "y": 0.05673415074124932,
+        "z": -93.20371994562447
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-043",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0018466004678761197,
+        "position": {
+          "x": 4.50099058397969,
+          "y": 0.38199234031656,
+          "z": -165.7741221154881
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.605315660606963e-28,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 3.671809825725633,
+          "y": 0.051422204143838635,
+          "z": -166.14768439061208
+        },
+        "max": {
+          "x": 5.335941025196767,
+          "y": 0.7704967474396069,
+          "z": -165.41377614621712
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0055777958561613675,
+      "renderedMinimumIncludingUmbrella": 0.05142220575362444,
+      "lowestRenderedPoint": {
+        "x": 3.8790625075343996,
+        "y": 0.05142220575362444,
+        "z": -165.53326680138707
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-131",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0012261106615458015,
+        "position": {
+          "x": -77.20449891163128,
+          "y": 0.29047487947853784,
+          "z": -110.03546742465605
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 8.798234670594604e-53,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -77.80148330364636,
+          "y": 0.056563853946536985,
+          "z": -110.97156642352189
+        },
+        "max": {
+          "x": -76.71496098888387,
+          "y": 0.634233930585169,
+          "z": -109.17029096917486
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0004361460534630171,
+      "renderedMinimumIncludingUmbrella": 0.05656385044858325,
+      "lowestRenderedPoint": {
+        "x": -77.1893969377852,
+        "y": 0.05656385044858325,
+        "z": -110.95205320697278
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-138",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.008284816720350197,
+        "position": {
+          "x": 77.37127504295482,
+          "y": 0.3764965013995901,
+          "z": -105.15753510830241
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 4.52697706591449e-48,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 76.53312963890049,
+          "y": 0.03686721031125273,
+          "z": -105.7693777424002
+        },
+        "max": {
+          "x": 78.02527739525405,
+          "y": 0.7744446102882601,
+          "z": -104.25081772740569
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.020132789688747273,
+      "renderedMinimumIncludingUmbrella": 0.03686720412224531,
+      "lowestRenderedPoint": {
+        "x": 76.78780981339514,
+        "y": 0.03686720412224531,
+        "z": -105.42332655657083
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-143",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.00116603670844416,
+        "position": {
+          "x": -76.81887318497787,
+          "y": 0.28315248785514596,
+          "z": -133.03074594388443
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 8.60165809552402e-48,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -77.39729541252987,
+          "y": 0.05653351813600657,
+          "z": -133.93685810351988
+        },
+        "max": {
+          "x": -76.2987193451724,
+          "y": 0.615716342604624,
+          "z": -132.19076684230404
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0004664818639934301,
+      "renderedMinimumIncludingUmbrella": 0.05653352270019241,
+      "lowestRenderedPoint": {
+        "x": -76.81623243750073,
+        "y": 0.05653352270019241,
+        "z": -133.91697673033923
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-150",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0011265694000878997,
+        "position": {
+          "x": 76.86618233576691,
+          "y": 0.26989751087750935,
+          "z": -137.85210090051098
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 2.5214759868049715e-54,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 76.32387307851789,
+          "y": 0.0566365906417306,
+          "z": -138.7030117682995
+        },
+        "max": {
+          "x": 77.30006949486972,
+          "y": 0.5825389713814897,
+          "z": -137.05830255305514
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0003634093582694023,
+      "renderedMinimumIncludingUmbrella": 0.05663657921832055,
+      "lowestRenderedPoint": {
+        "x": 76.84388167283032,
+        "y": 0.05663657921832055,
+        "z": -138.684020367451
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-155",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0016118679552671298,
+        "position": {
+          "x": -77.05561719790408,
+          "y": 0.28691794826213946,
+          "z": -170.07186202187896
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 2.993215814501211e-37,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -77.4749392672363,
+          "y": 0.05635884262103745,
+          "z": -170.99748920562288
+        },
+        "max": {
+          "x": -76.60138108360428,
+          "y": 0.6224156036712656,
+          "z": -169.12214749249367
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.0006411573789625521,
+      "renderedMinimumIncludingUmbrella": 0.056358837988227606,
+      "lowestRenderedPoint": {
+        "x": -76.70464659389108,
+        "y": 0.056358837988227606,
+        "z": -170.2070319801569
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-162",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0062759653412315895,
+        "position": {
+          "x": 76.30967287825726,
+          "y": 0.3171337879639314,
+          "z": -185.64968529415637
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 1.8535462000172347e-11,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 76.0278888718351,
+          "y": 0.051600547497753876,
+          "z": -186.3975433726588
+        },
+        "max": {
+          "x": 76.75576531292165,
+          "y": 0.7242125043937114,
+          "z": -184.83135848808084
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.005399452502246126,
+      "renderedMinimumIncludingUmbrella": 0.05160053970757872,
+      "lowestRenderedPoint": {
+        "x": 76.46584093692945,
+        "y": 0.05160053970757872,
+        "z": -186.32182336901315
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-167",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0016177176183272454,
+        "position": {
+          "x": -76.76485007129502,
+          "y": 0.28823200645012276,
+          "z": -218.76711418736275
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0,
+        "sleeping": true,
+        "rest": {
+          "quietSeconds": 2,
+          "filteredEnergy": 3.8396285283596825e-43,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": -77.61363986122328,
+          "y": 0.05675811769013803,
+          "z": -219.64989769579626
+        },
+        "max": {
+          "x": -76.09278084261624,
+          "y": 0.6023418604969373,
+          "z": -217.94209202852596
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.00024188230986197518,
+      "renderedMinimumIncludingUmbrella": 0.056758096907287836,
+      "lowestRenderedPoint": {
+        "x": -77.12518741562963,
+        "y": 0.056758096907287836,
+        "z": -219.53409387171268
+      },
+      "contacts": []
+    },
+    {
+      "id": "CIV-174",
+      "physics": {
+        "articulated": true,
+        "simplified": false,
+        "segments": 11,
+        "joints": 10,
+        "maxJointError": 0.0060514996053283795,
+        "position": {
+          "x": 77.80318300025073,
+          "y": 0.3420249706654763,
+          "z": -194.23569976490813
+        },
+        "velocity": {
+          "x": -0.00017155787643043005,
+          "y": -0.0001446136519365486,
+          "z": 0.01364526743854424
+        },
+        "speed": 0.01364711210046607,
+        "sleeping": false,
+        "rest": {
+          "quietSeconds": 1.650699999999997,
+          "filteredEnergy": 0.00025540503908064426,
+          "poseStable": true
+        },
+        "frozen": false,
+        "correctionCount": 0
+      },
+      "bodyBounds": {
+        "min": {
+          "x": 76.9670956504101,
+          "y": 0.040374147695466156,
+          "z": -194.76420100159424
+        },
+        "max": {
+          "x": 78.36576253678757,
+          "y": 0.7909226181953828,
+          "z": -193.3848187427091
+        }
+      },
+      "ground": 0.057,
+      "floorGap": -0.016625852304533846,
+      "renderedMinimumIncludingUmbrella": 0.04037414351478219,
+      "lowestRenderedPoint": {
+        "x": 77.85121740342584,
+        "y": 0.04037414351478219,
+        "z": -193.9277630141005
+      },
+      "contacts": [
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 78.0643253602453,
+            "y": 0.05572218661373585,
+            "z": -194.48785898527777
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 77.58196910726464,
+            "y": 0.0550453330188439,
+            "z": -194.22895303157645
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 77.03791882390708,
+            "y": 0.05341888033976888,
+            "z": -194.4188333362183
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 77.14524485581366,
+            "y": 0.05247876158346823,
+            "z": -194.73789104632957
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 77.6389925763275,
+            "y": 0.053631546630643276,
+            "z": -194.64253872861153
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 78.16851916585293,
+            "y": 0.03184262525444259,
+            "z": -193.88353585238227
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 77.84710982780022,
+            "y": 0.03046373040624001,
+            "z": -193.8294989782904
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 78.03326017946327,
+            "y": 0.043317308775623675,
+            "z": -194.13475979944192
+          }
+        },
+        {
+          "otherId": 0,
+          "otherType": 2,
+          "otherRole": null,
+          "point": {
+            "x": 77.79359271073321,
+            "y": 0.04124732154843044,
+            "z": -194.08416697963096
+          }
+        }
+      ]
+    }
+  ],
+  "wake": {
+    "method": "Production civilian.impulse API at the actual compound center; no body editing.",
+    "before": {
+      "id": "CIV-038",
+      "mass": 68,
+      "type": 1,
+      "sleepState": 2,
+      "position": [
+        -0.8189308062013834,
+        0.34566984302381026,
+        -142.55732146857557
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ]
+    },
+    "applied": true,
+    "immediate": {
+      "id": "CIV-038",
+      "mass": 68,
+      "type": 1,
+      "sleepState": 0,
+      "position": [
+        -0.8189308062013834,
+        0.34566984302381026,
+        -142.55732146857557
+      ],
+      "velocity": [
+        0.6420060662726461,
+        0.0963009099408969,
+        0.12840121325452922
+      ]
+    },
+    "after": {
+      "mass": 68,
+      "type": 1,
+      "sleepState": 1,
+      "position": [
+        -0.8186038985806472,
+        0.3475571176949701,
+        -142.5563089398774
+      ],
+      "velocity": [
+        0.00006554050883987516,
+        0.000010456867346075871,
+        0.0000074991540665579696
+      ]
+    },
+    "displacement": 0.002166538400655009
+  },
+  "checks": [
+    {
+      "name": "baseline remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.018700000000046
+      }
+    },
+    {
+      "name": "24 newly jointed civilian deaths remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.0852999999999255
+      }
+    },
+    {
+      "name": "24 deaths retain 24 articulated assemblies and 240 anatomical joints",
+      "passed": true,
+      "evidence": {
+        "total": 284,
+        "alive": 260,
+        "dead": 24,
+        "injured": 0,
+        "fleeing": 0,
+        "physicalCorpses": 24,
+        "activeRagdolls": 24,
+        "simplifiedCorpses": 0,
+        "ragdollJoints": 240,
+        "activeCorpseBodies": 271,
+        "time": 9.153500000000037
+      }
+    },
+    {
+      "name": "32 deaths: 24 jointed and 8 retired dynamic compounds remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.035499999999903
+      }
+    },
+    {
+      "name": "32 deaths enforce the 24 articulated / 8 compound budget",
+      "passed": true,
+      "evidence": {
+        "total": 284,
+        "alive": 252,
+        "dead": 32,
+        "injured": 0,
+        "fleeing": 1,
+        "physicalCorpses": 32,
+        "activeRagdolls": 24,
+        "simplifiedCorpses": 8,
+        "ragdollJoints": 240,
+        "activeCorpseBodies": 279,
+        "time": 14.272099999999961
+      }
+    },
+    {
+      "name": "32 deaths after 20 seconds settling remains an active finite production simulation",
+      "passed": true,
+      "evidence": {
+        "simulationAdvance": 5.018700000000358
+      }
+    },
+    {
+      "name": "All eight retired compounds remain mass 68 and Cannon DYNAMIC",
+      "passed": true,
+      "evidence": [
+        {
+          "id": "CIV-038",
+          "bodyId": 2488,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -0.8189308062013834,
+            0.34566984302381026,
+            -142.55732146857557
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-040",
+          "bodyId": 2500,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            7.476856049532362,
+            0.3291861886579671,
+            -113.186026494547
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-019",
+          "bodyId": 2512,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            14.09504906499119,
+            0.49412802623441887,
+            -113.92169898421939
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-005",
+          "bodyId": 2524,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            12.054911530930804,
+            0.4039614764143178,
+            -105.18940997196725
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-009",
+          "bodyId": 2536,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            13.227475540645788,
+            0.46180049860185496,
+            -96.25082168834334
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-014",
+          "bodyId": 2548,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -14.44729870321857,
+            0.4646414934764742,
+            -162.32273033160857
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-028",
+          "bodyId": 2560,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -13.215853184869026,
+            0.4016550711360897,
+            -156.81000258527814
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "CIV-030",
+          "bodyId": 2572,
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -13.431831221665577,
+            0.3700262278133684,
+            -154.03865081890854
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "angularVelocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Settled bodies have pavement or recorded solid support beneath them",
+      "passed": true,
+      "evidence": {
+        "unsupported": [],
+        "maximumBodyFloorGap": 0.001926132256496127,
+        "note": "A raised corpse is accepted only with a recorded static-solid contact at its lower envelope. Umbrella geometry is reported separately."
+      }
+    },
+    {
+      "name": "A retired compound responds dynamically to the production impulse API",
+      "passed": false,
+      "evidence": {
+        "method": "Production civilian.impulse API at the actual compound center; no body editing.",
+        "before": {
+          "id": "CIV-038",
+          "mass": 68,
+          "type": 1,
+          "sleepState": 2,
+          "position": [
+            -0.8189308062013834,
+            0.34566984302381026,
+            -142.55732146857557
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        "applied": true,
+        "immediate": {
+          "id": "CIV-038",
+          "mass": 68,
+          "type": 1,
+          "sleepState": 0,
+          "position": [
+            -0.8189308062013834,
+            0.34566984302381026,
+            -142.55732146857557
+          ],
+          "velocity": [
+            0.6420060662726461,
+            0.0963009099408969,
+            0.12840121325452922
+          ]
+        },
+        "after": {
+          "mass": 68,
+          "type": 1,
+          "sleepState": 1,
+          "position": [
+            -0.8186038985806472,
+            0.3475571176949701,
+            -142.5563089398774
+          ],
+          "velocity": [
+            0.00006554050883987516,
+            0.000010456867346075871,
+            0.0000074991540665579696
+          ]
+        },
+        "displacement": 0.002166538400655009
+      }
+    },
+    {
+      "name": "Source remained unchanged throughout the strict-bundle run",
+      "passed": true,
+      "evidence": {
+        "sourceBefore": {
+          "src/civilian-ragdoll.js": "d49543c253b5f494633630fb3f6b6a897bf6499396cc5a6323177224459b1008",
+          "src/civilians.js": "f5fe66d74795eb0434b792ba84cb310e52d8baf648797791cdcc05e7e542a772",
+          "src/main.js": "ee1d7eada9b53822bcb92f020b636aa9d08cc1aec34138397b536747b77a80d6",
+          "src/simulation.js": "69f65f29ac791dac29ea0d5392a99a00a634ee835567d2584609e639cd275968",
+          "package-lock.json": "cd5c8a9f63146a583b6e18e281ede484c73fe490453120d23b0341efe13e6dc2"
+        },
+        "sourceAfter": {
+          "src/civilian-ragdoll.js": "d49543c253b5f494633630fb3f6b6a897bf6499396cc5a6323177224459b1008",
+          "src/civilians.js": "f5fe66d74795eb0434b792ba84cb310e52d8baf648797791cdcc05e7e542a772",
+          "src/main.js": "ee1d7eada9b53822bcb92f020b636aa9d08cc1aec34138397b536747b77a80d6",
+          "src/simulation.js": "69f65f29ac791dac29ea0d5392a99a00a634ee835567d2584609e639cd275968",
+          "package-lock.json": "cd5c8a9f63146a583b6e18e281ede484c73fe490453120d23b0341efe13e6dc2"
+        }
+      }
+    },
+    {
+      "name": "No browser console errors",
+      "passed": true,
+      "evidence": []
+    }
+  ],
+  "warnings": [
+    "1 corpse assemblies still awake at the end of the settling profile; this report records actual rest state without forcing sleep."
+  ],
+  "errors": []
+}

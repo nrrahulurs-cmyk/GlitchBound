@@ -1,0 +1,56 @@
+{
+  "checkedAtUTC": "2026-09-06T07:29:56.315Z",
+  "build": "/assets/index-BqnycfW1.js",
+  "method": "Actual Chrome keyboard controls drive the production main loop. Teleports only establish independent starting locations; all reported movement, jump, curb and stop behavior follows real input and RAF samples.",
+  "results": [
+    {
+      "test": "Real WASD accelerates to 5.4 m/s then settles on release at physical ground height",
+      "pass": true,
+      "steadySpeed": 5.399999999995507,
+      "stoppedSpeed": 0
+    },
+    {
+      "test": "Space produces a gravity jump and a grounded landing with no stuck vertical speed",
+      "pass": true,
+      "apexAboveGroundEye": 1.1447912000000016
+    },
+    {
+      "test": "Real walking crosses the curb onto the raised Kasumi pavement and is stopped by the solid frontage",
+      "pass": true,
+      "start": [
+        8.520823786666666,
+        1.807,
+        22
+      ],
+      "end": [
+        16.218102807428153,
+        1.915,
+        22.057030249633925
+      ],
+      "highestGround": 0.29000000000000004
+    },
+    {
+      "test": "Third-person feet use the same physical ground as the first-person eye",
+      "pass": true,
+      "eye": [
+        16.219121680383044,
+        1.915,
+        22.059464214554403
+      ],
+      "feet": [
+        16.219121680383044,
+        0.16500000000000004,
+        22.059464214554403
+      ],
+      "visible": true
+    },
+    {
+      "test": "Real Shift sprint reaches 9.3 m/s with no diagonal or terrain acceleration exploit",
+      "pass": true,
+      "speed": 9.300000000007666,
+      "meanFrameMs": 16.673749999999995,
+      "p95FrameMs": 16.80000000000109
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,3007 @@
+{
+  "build": "/assets/index-DuUXDqE2.js",
+  "phase": "quality-final",
+  "errors": [],
+  "performance": {
+    "meanFrameMs": 16.67333333333333,
+    "p95FrameMs": 16.799999999999272,
+    "rafFPS": 59.97600959616155,
+    "drawCalls": 410
+  },
+  "sites": [
+    {
+      "name": "Kasumi Ward",
+      "x": 0,
+      "z": 25,
+      "tx": 0,
+      "tz": -100,
+      "diagnostics": {
+        "position": [
+          0,
+          1.807,
+          25
+        ],
+        "district": "Kasumi Ward",
+        "drawCalls": 465,
+        "fps": 8,
+        "camera": [
+          0,
+          1.807,
+          25
+        ],
+        "visibleBlocks": 10,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -136.0222938513773,
+              332.58122045608707,
+              -216.85463581438484
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "color": "a5c9df"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "color": "a5c9df"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "color": "a5c9df"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "color": "a5c9df"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [],
+          "activeLights": 0,
+          "visibleBlocks": 10,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Kasumi Ward",
+        "ground": {
+          "meanLuma": 46.88582583098381,
+          "medianLuma": 34.8992,
+          "blackFraction": 0.0002655420181193377
+        },
+        "facades": {
+          "meanLuma": 44.894967314761274,
+          "medianLuma": 30.5198,
+          "blackFraction": 0.06898122784852584
+        }
+      }
+    },
+    {
+      "name": "Lantern Market",
+      "x": -210,
+      "z": 126,
+      "tx": -210,
+      "tz": 5,
+      "diagnostics": {
+        "position": [
+          -210,
+          1.807,
+          126
+        ],
+        "district": "Lantern Market",
+        "drawCalls": 481,
+        "fps": 58,
+        "camera": [
+          -210,
+          1.807,
+          126
+        ],
+        "visibleBlocks": 9,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -346.0554192023974,
+              332.57064459217713,
+              -115.85054461731225
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.97474314175914,
+            "position": [
+              -224.39999999999998,
+              3.46,
+              114.2
+            ],
+            "color": "e1afa7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.97474314175914,
+            "position": [
+              -195.60000000000002,
+              3.46,
+              114.2
+            ],
+            "color": "d89ac1"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.97474314175914,
+            "position": [
+              -183.3,
+              4.25,
+              125.60000000000001
+            ],
+            "color": "dfb1a6"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.97474314175914,
+            "position": [
+              -249,
+              3.46,
+              114.2
+            ],
+            "color": "e1afa7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD052",
+              "distance": 18.617196351760363,
+              "position": [
+                -224.39999999999998,
+                3.46,
+                114.2
+              ]
+            },
+            {
+              "id": "AD060",
+              "distance": 18.617196351760363,
+              "position": [
+                -195.60000000000002,
+                3.46,
+                114.2
+              ]
+            },
+            {
+              "id": "AD068",
+              "distance": 26.702996086581734,
+              "position": [
+                -183.3,
+                4.25,
+                125.60000000000001
+              ]
+            },
+            {
+              "id": "AD051",
+              "distance": 40.74604275264041,
+              "position": [
+                -249,
+                3.46,
+                114.2
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 9,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Lantern Market",
+        "ground": {
+          "meanLuma": 36.1123681958771,
+          "medianLuma": 31.5226,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 55.67925266538935,
+          "medianLuma": 39.5224,
+          "blackFraction": 0.000008385416084346106
+        }
+      }
+    },
+    {
+      "name": "Iron Docks",
+      "x": 210,
+      "z": 124,
+      "tx": 210,
+      "tz": 0,
+      "diagnostics": {
+        "position": [
+          210,
+          1.807,
+          124
+        ],
+        "district": "Iron Docks",
+        "drawCalls": 416,
+        "fps": 59,
+        "camera": [
+          210,
+          1.807,
+          124
+        ],
+        "visibleBlocks": 9,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              73.94919538119694,
+              332.57163493980926,
+              -117.85177859258988
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.870601378067246,
+            "position": [
+              195.60000000000002,
+              3.46,
+              114.2
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.870601378067246,
+            "position": [
+              224.39999999999998,
+              3.46,
+              114.2
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.870601378067246,
+            "position": [
+              236.7,
+              4.25,
+              125.60000000000001
+            ],
+            "color": "e1c5a9"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.870601378067246,
+            "position": [
+              171,
+              3.46,
+              114.2
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD107",
+              "distance": 17.418381095842385,
+              "position": [
+                195.60000000000002,
+                3.46,
+                114.2
+              ]
+            },
+            {
+              "id": "AD114",
+              "distance": 17.418381095842385,
+              "position": [
+                224.39999999999998,
+                3.46,
+                114.2
+              ]
+            },
+            {
+              "id": "AD121",
+              "distance": 26.74789711360501,
+              "position": [
+                236.7,
+                4.25,
+                125.60000000000001
+              ]
+            },
+            {
+              "id": "AD106",
+              "distance": 40.21243588742169,
+              "position": [
+                171,
+                3.46,
+                114.2
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 9,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Iron Docks",
+        "ground": {
+          "meanLuma": 31.179136177760498,
+          "medianLuma": 28.0252,
+          "blackFraction": 0.0008747266479225242
+        },
+        "facades": {
+          "meanLuma": 36.84697750693849,
+          "medianLuma": 31.690599999999996,
+          "blackFraction": 0.008650954260350398
+        }
+      }
+    },
+    {
+      "name": "Stacktown",
+      "x": -210,
+      "z": -215,
+      "tx": -210,
+      "tz": -340,
+      "diagnostics": {
+        "position": [
+          -210,
+          1.807,
+          -215
+        ],
+        "district": "Stacktown",
+        "drawCalls": 408,
+        "fps": 58,
+        "camera": [
+          -210,
+          1.807,
+          -215
+        ],
+        "visibleBlocks": 12,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -346.0477170784536,
+              332.5944459690568,
+              -456.82215016882117
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.935697550052794,
+            "position": [
+              -224.39999999999998,
+              4.8,
+              -213.29999999999998
+            ],
+            "color": "d9a2dd"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.935697550052794,
+            "position": [
+              -195.60000000000002,
+              4.8,
+              -213.29999999999998
+            ],
+            "color": "d9a2dd"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.935697550052794,
+            "position": [
+              -224.39999999999998,
+              3.46,
+              -207.2
+            ],
+            "color": "8fc6d6"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.935697550052794,
+            "position": [
+              -195.60000000000002,
+              3.46,
+              -207.2
+            ],
+            "color": "da9cce"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD271",
+              "distance": 14.49999999999998,
+              "position": [
+                -224.39999999999998,
+                4.8,
+                -213.29999999999998
+              ]
+            },
+            {
+              "id": "AD286",
+              "distance": 14.49999999999998,
+              "position": [
+                -195.60000000000002,
+                4.8,
+                -213.29999999999998
+              ]
+            },
+            {
+              "id": "AD262",
+              "distance": 16.3768128767474,
+              "position": [
+                -224.39999999999998,
+                3.46,
+                -207.2
+              ]
+            },
+            {
+              "id": "AD275",
+              "distance": 16.3768128767474,
+              "position": [
+                -195.60000000000002,
+                3.46,
+                -207.2
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 12,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Stacktown",
+        "ground": {
+          "meanLuma": 33.6656485035807,
+          "medianLuma": 30.889999999999997,
+          "blackFraction": 0.004131521399562636
+        },
+        "facades": {
+          "meanLuma": 41.502427241932445,
+          "medianLuma": 27.061999999999998,
+          "blackFraction": 0.007381961292919355
+        }
+      }
+    },
+    {
+      "name": "Meridian East",
+      "x": 210,
+      "z": -255,
+      "tx": 210,
+      "tz": -370,
+      "diagnostics": {
+        "position": [
+          210,
+          1.807,
+          -255
+        ],
+        "district": "Meridian East",
+        "drawCalls": 350,
+        "fps": 59,
+        "camera": [
+          210,
+          1.807,
+          -255
+        ],
+        "visibleBlocks": 12,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              73.95837722270016,
+              332.58787983517317,
+              -496.83460664731
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.964158812090968,
+            "position": [
+              195.60000000000002,
+              3.46,
+              -272.8
+            ],
+            "color": "cdbbad"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.964158812090968,
+            "position": [
+              224.39999999999998,
+              3.46,
+              -272.8
+            ],
+            "color": "da9cce"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.964158812090968,
+            "position": [
+              195.60000000000002,
+              4.85,
+              -278.90000000000003
+            ],
+            "color": "b0e1b3"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.964158812090968,
+            "position": [
+              224.39999999999998,
+              4.85,
+              -278.90000000000003
+            ],
+            "color": "b0e1b3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD295",
+              "distance": 22.895414388038485,
+              "position": [
+                195.60000000000002,
+                3.46,
+                -272.8
+              ]
+            },
+            {
+              "id": "AD306",
+              "distance": 22.895414388038485,
+              "position": [
+                224.39999999999998,
+                3.46,
+                -272.8
+              ]
+            },
+            {
+              "id": "AD303",
+              "distance": 27.902867236182036,
+              "position": [
+                195.60000000000002,
+                4.85,
+                -278.90000000000003
+              ]
+            },
+            {
+              "id": "AD319",
+              "distance": 27.902867236182036,
+              "position": [
+                224.39999999999998,
+                4.85,
+                -278.90000000000003
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 12,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Meridian East",
+        "ground": {
+          "meanLuma": 40.8907394095613,
+          "medianLuma": 33.3084,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 86.7117930473574,
+          "medianLuma": 63.71379999999999,
+          "blackFraction": 0.00010062499301215326
+        }
+      }
+    },
+    {
+      "name": "Crown Plaza",
+      "x": 0,
+      "z": -388,
+      "tx": 0,
+      "tz": -520,
+      "diagnostics": {
+        "position": [
+          0,
+          1.807,
+          -388
+        ],
+        "district": "Crown Plaza",
+        "drawCalls": 234,
+        "fps": 60,
+        "camera": [
+          0,
+          1.807,
+          -388
+        ],
+        "visibleBlocks": 12,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -136.02306390269246,
+              332.59926605126134,
+              -629.8293899671555
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.81624603201417,
+            "position": [
+              -14.400000000000002,
+              3.46,
+              -392.8
+            ],
+            "color": "8bd3e8"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.81624603201417,
+            "position": [
+              14.400000000000002,
+              3.46,
+              -392.8
+            ],
+            "color": "8bd3e8"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.81624603201417,
+            "position": [
+              14.400000000000002,
+              4.75,
+              -392.8
+            ],
+            "color": "bfc3b4"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.81624603201417,
+            "position": [
+              -14.400000000000002,
+              4.75,
+              -398.90000000000003
+            ],
+            "color": "bfc3b4"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD373",
+              "distance": 15.178932768808227,
+              "position": [
+                -14.400000000000002,
+                3.46,
+                -392.8
+              ]
+            },
+            {
+              "id": "AD392",
+              "distance": 15.178932768808227,
+              "position": [
+                14.400000000000002,
+                3.46,
+                -392.8
+              ]
+            },
+            {
+              "id": "AD407",
+              "distance": 15.178932768808227,
+              "position": [
+                14.400000000000002,
+                4.75,
+                -392.8
+              ]
+            },
+            {
+              "id": "AD387",
+              "distance": 18.06017718628477,
+              "position": [
+                -14.400000000000002,
+                4.75,
+                -398.90000000000003
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 12,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Crown Plaza",
+        "ground": {
+          "meanLuma": 28.477387449217545,
+          "medianLuma": 25.089399999999998,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 35.52221956762508,
+          "medianLuma": 22.0934,
+          "blackFraction": 0.057104683534396974
+        }
+      }
+    },
+    {
+      "name": "Northwest edge",
+      "x": -310,
+      "z": -543,
+      "tx": -310,
+      "tz": -425,
+      "diagnostics": {
+        "position": [
+          -310,
+          1.807,
+          -543
+        ],
+        "district": "Crown Plaza",
+        "drawCalls": 508,
+        "fps": 60,
+        "camera": [
+          -310,
+          1.807,
+          -543
+        ],
+        "visibleBlocks": 5,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -446.02284446041017,
+              332.5841756342411,
+              -784.8502627268421
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.89743489862405,
+            "position": [
+              -295.59999999999997,
+              4.8,
+              -518.9
+            ],
+            "color": "d9a2dd"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.89743489862405,
+            "position": [
+              -295.59999999999997,
+              3.46,
+              -512.8
+            ],
+            "color": "8fc6d6"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.89743489862405,
+            "position": [
+              -271.00000000000006,
+              3.46,
+              -512.8
+            ],
+            "color": "8fc6d6"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 0.10249942409857846,
+            "position": [
+              -14.400000000000002,
+              4.75,
+              -398.90000000000003
+            ],
+            "color": "bfc3b4"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD466",
+              "distance": 28.074365531566375,
+              "position": [
+                -295.59999999999997,
+                4.8,
+                -518.9
+              ]
+            },
+            {
+              "id": "AD454",
+              "distance": 33.45743564590693,
+              "position": [
+                -295.59999999999997,
+                3.46,
+                -512.8
+              ]
+            },
+            {
+              "id": "AD456",
+              "distance": 49.32585528908747,
+              "position": [
+                -271.00000000000006,
+                3.46,
+                -512.8
+              ]
+            }
+          ],
+          "activeLights": 3,
+          "visibleBlocks": 5,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Northwest edge",
+        "ground": {
+          "meanLuma": 32.20500385973984,
+          "medianLuma": 23.093400000000003,
+          "blackFraction": 0.0004920337394564198
+        },
+        "facades": {
+          "meanLuma": 34.66142613060999,
+          "medianLuma": 27.061999999999998,
+          "blackFraction": 0.14221386165181515
+        }
+      }
+    },
+    {
+      "name": "Southeast edge",
+      "x": 310,
+      "z": 156,
+      "tx": 310,
+      "tz": 35,
+      "diagnostics": {
+        "position": [
+          310,
+          1.807,
+          156
+        ],
+        "district": "Iron Docks",
+        "drawCalls": 268,
+        "fps": 60,
+        "camera": [
+          310,
+          1.807,
+          156
+        ],
+        "visibleBlocks": 5,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              173.97667231904845,
+              332.57270248158386,
+              -85.86576650019128
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.942791772106077,
+            "position": [
+              327.08,
+              4.25,
+              123.60000000000001
+            ],
+            "color": "e1c5a9"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.942791772106077,
+            "position": [
+              295.59999999999997,
+              3.46,
+              114.2
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.942791772106077,
+            "position": [
+              322.40000000000003,
+              3.46,
+              113.16
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.942791772106077,
+            "position": [
+              331.75999999999993,
+              3.46,
+              113.16
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD623",
+              "distance": 36.62630748519428,
+              "position": [
+                327.08,
+                4.25,
+                123.60000000000001
+              ]
+            },
+            {
+              "id": "AD120",
+              "distance": 44.210858394742814,
+              "position": [
+                295.59999999999997,
+                3.46,
+                114.2
+              ]
+            },
+            {
+              "id": "AD615",
+              "distance": 44.5984932480908,
+              "position": [
+                322.40000000000003,
+                3.46,
+                113.16
+              ]
+            },
+            {
+              "id": "AD617",
+              "distance": 48.04959104924825,
+              "position": [
+                331.75999999999993,
+                3.46,
+                113.16
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 5,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Southeast edge",
+        "ground": {
+          "meanLuma": 34.16176422992673,
+          "medianLuma": 28.8126,
+          "blackFraction": 0.00003124023742580444
+        },
+        "facades": {
+          "meanLuma": 38.97645890140029,
+          "medianLuma": 32.2746,
+          "blackFraction": 0.004276562203016514
+        }
+      }
+    },
+    {
+      "name": "Market service courtyard",
+      "x": -260,
+      "z": 96,
+      "tx": -275,
+      "ty": 3,
+      "tz": 96,
+      "diagnostics": {
+        "position": [
+          -260,
+          1.935,
+          96
+        ],
+        "district": "Lantern Market",
+        "drawCalls": 123,
+        "fps": 60,
+        "camera": [
+          -260,
+          1.935,
+          96
+        ],
+        "visibleBlocks": 8,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -396.02480053096394,
+              332.7104239720487,
+              -145.85157097267012
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.968090692693146,
+            "position": [
+              -249,
+              3.46,
+              114.2
+            ],
+            "color": "e1afa7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.968090692693146,
+            "position": [
+              -271.00000000000006,
+              3.46,
+              114.2
+            ],
+            "color": "89d2df"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.968090692693146,
+            "position": [
+              -249,
+              3.46,
+              75.8
+            ],
+            "color": "e1afa7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.968090692693146,
+            "position": [
+              -271.00000000000006,
+              3.46,
+              75.8
+            ],
+            "color": "e1afa7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD051",
+              "distance": 21.26593520163174,
+              "position": [
+                -249,
+                3.46,
+                114.2
+              ]
+            },
+            {
+              "id": "AD048",
+              "distance": 21.265935201631773,
+              "position": [
+                -271.00000000000006,
+                3.46,
+                114.2
+              ]
+            },
+            {
+              "id": "AD049",
+              "distance": 23.00086954878011,
+              "position": [
+                -249,
+                3.46,
+                75.8
+              ]
+            },
+            {
+              "id": "AD045",
+              "distance": 23.000869548780134,
+              "position": [
+                -271.00000000000006,
+                3.46,
+                75.8
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 8,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Market service courtyard",
+        "ground": {
+          "meanLuma": 31.396169803184115,
+          "medianLuma": 30.531799999999997,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 42.859561116832026,
+          "medianLuma": 28.6968,
+          "blackFraction": 0.002817499804340291
+        }
+      }
+    },
+    {
+      "name": "Dock service lane",
+      "x": 140,
+      "z": -6,
+      "tx": 156,
+      "ty": 3,
+      "tz": -38,
+      "diagnostics": {
+        "position": [
+          140,
+          1.935,
+          -6
+        ],
+        "district": "Iron Docks",
+        "drawCalls": 316,
+        "fps": 60,
+        "camera": [
+          140,
+          1.935,
+          -6
+        ],
+        "visibleBlocks": 11,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              3.9734654090271135,
+              332.71347870403866,
+              -247.8463953074289
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.836404366724807,
+            "position": [
+              129,
+              3.46,
+              22.799999999999997
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.836404366724807,
+            "position": [
+              129,
+              3.46,
+              -42.8
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.836404366724807,
+            "position": [
+              171,
+              3.46,
+              22.799999999999997
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.836404366724807,
+            "position": [
+              104.39999999999999,
+              3.46,
+              22.799999999999997
+            ],
+            "color": "dcbca7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD164",
+              "distance": 30.82920693109052,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD161",
+              "distance": 38.40885314611723,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD168",
+              "distance": 42.31359119715555,
+              "position": [
+                171,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD162",
+              "distance": 45.79082877607699,
+              "position": [
+                104.39999999999999,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Dock service lane",
+        "ground": {
+          "meanLuma": 27.02413743361022,
+          "medianLuma": 29.3192,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 29.424346816906695,
+          "medianLuma": 25.5554,
+          "blackFraction": 0.0005674131550407531
+        }
+      }
+    },
+    {
+      "name": "Stacktown service court",
+      "x": -150,
+      "z": -240,
+      "tx": -174,
+      "ty": 3,
+      "tz": -240,
+      "diagnostics": {
+        "position": [
+          -150,
+          1.935,
+          -240
+        ],
+        "district": "Stacktown",
+        "drawCalls": 253,
+        "fps": 60,
+        "camera": [
+          -150,
+          1.935,
+          -240
+        ],
+        "visibleBlocks": 14,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -286.00904574585456,
+              332.72494211426925,
+              -481.8404705937409
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.908750479984878,
+            "position": [
+              -171,
+              3.46,
+              -272.8
+            ],
+            "color": "da9cce"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.908750479984878,
+            "position": [
+              -171,
+              3.46,
+              -207.2
+            ],
+            "color": "da9cce"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.908750479984878,
+            "position": [
+              -129,
+              3.46,
+              -272.8
+            ],
+            "color": "8fc6d6"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.908750479984878,
+            "position": [
+              -129,
+              3.46,
+              -207.2
+            ],
+            "color": "8fc6d6"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD274",
+              "distance": 38.94663014947507,
+              "position": [
+                -171,
+                3.46,
+                -272.8
+              ]
+            },
+            {
+              "id": "AD277",
+              "distance": 38.94663014947507,
+              "position": [
+                -171,
+                3.46,
+                -207.2
+              ]
+            },
+            {
+              "id": "AD278",
+              "distance": 38.94663014947507,
+              "position": [
+                -129,
+                3.46,
+                -272.8
+              ]
+            },
+            {
+              "id": "AD281",
+              "distance": 38.94663014947507,
+              "position": [
+                -129,
+                3.46,
+                -207.2
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 14,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Stacktown service court",
+        "ground": {
+          "meanLuma": 32.358875145261386,
+          "medianLuma": 30.0384,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 28.91341176750123,
+          "medianLuma": 18.446399999999997,
+          "blackFraction": 0.27445187330195325
+        }
+      }
+    },
+    {
+      "name": "Crown inner court",
+      "x": 25,
+      "z": -365,
+      "tx": 55,
+      "ty": 3,
+      "tz": -365,
+      "diagnostics": {
+        "position": [
+          25,
+          1.935,
+          -365
+        ],
+        "district": "Crown Plaza",
+        "drawCalls": 410,
+        "fps": 60,
+        "camera": [
+          25,
+          1.935,
+          -365
+        ],
+        "visibleBlocks": 14,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.95,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -111.02505058875789,
+              332.7263489109961,
+              -606.8295335241085
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.949103318124735,
+            "position": [
+              35.7,
+              3.46,
+              -360
+            ],
+            "color": "8bd3e8"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.949103318124735,
+            "position": [
+              54.3,
+              4.75,
+              -363.6
+            ],
+            "color": "bfc3b4"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.949103318124735,
+            "position": [
+              54.3,
+              3.46,
+              -360
+            ],
+            "color": "8bd3e8"
+          },
+          {
+            "type": "RectAreaLight",
+            "intensity": 21.949103318124735,
+            "position": [
+              14.400000000000002,
+              3.46,
+              -392.8
+            ],
+            "color": "8bd3e8"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD402",
+              "distance": 11.810588469674155,
+              "position": [
+                35.7,
+                3.46,
+                -360
+              ]
+            },
+            {
+              "id": "AD413",
+              "distance": 29.33342803015017,
+              "position": [
+                54.3,
+                4.75,
+                -363.6
+              ]
+            },
+            {
+              "id": "AD404",
+              "distance": 29.723559679150142,
+              "position": [
+                54.3,
+                3.46,
+                -360
+              ]
+            },
+            {
+              "id": "AD392",
+              "distance": 29.752310834622588,
+              "position": [
+                14.400000000000002,
+                3.46,
+                -392.8
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 14,
+          "emitterCount": 418,
+          "pooledLights": 4
+        }
+      },
+      "metrics": {
+        "name": "Crown inner court",
+        "ground": {
+          "meanLuma": 56.63311001093707,
+          "medianLuma": 49.3244,
+          "blackFraction": 0.002155576382380506
+        },
+        "facades": {
+          "meanLuma": 64.76047799723496,
+          "medianLuma": 33.9974,
+          "blackFraction": 0.01400923513824756
+        }
+      }
+    }
+  ]
+}

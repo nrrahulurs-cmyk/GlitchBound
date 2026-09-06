@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T09:33:47.024516+00:00",
+  "method": "CPU-only material update of the existing native city. Complete native mesh/tint/UV/slot, object-transform, camera, animation, packed-image/source-path, source-text, sign-curve and unrelated-material digests compared before update, after update, and fresh saved-file reopen. No render performed.",
+  "nativeFile": "neon-district-city.blend",
+  "previousSHA256": "14c8c33b93fb46e5fc4a5c420fcdef91c2a65fb9c21617077c963f09713205b0",
+  "citySHA256": "fae98baf0878bd0f0525ae7045fd52e2abfe4384137553574798c65d90423912",
+  "bytes": 58676048,
+  "before": {
+    "digests": {
+      "meshGeometryTintUVAndSlots": "327088d81d5d3614ba2e16b8e2b44022892ed8a6de9852f3f585a10d93521648",
+      "objectsTransformsAnchorsAndHierarchy": "50d865f1cf05df9fe66316e348dbe96e0ede3e7b4386f4b2c42965f4f034b32f",
+      "cameras": "4ab1cc0c0e4d74709d291c823eb2e02c133fa35924319061ddc0cb2eb02d9e00",
+      "packedImagesAndSourcePaths": "a58414b9e4e2e4d8a28f9fb5516335a3b41b5ed1e370e1a0fd0a02663eb20468",
+      "scenesAndViewSettings": "0b3d07981a7c5c5db2ca4aadd85b86f1635d8e8a64fced770f684ba0811cf768",
+      "nativeCurvesAndSigns": "230363c5e28f144de75742709996e5965d5605e00fa84f2e235c8a6ce11bdb0f",
+      "animationActions": "60220b73109dd4c0cb32efeb83aec2ae866ff45697395983258282d8887bcff1",
+      "embeddedSourceTexts": "9ad5eea587f6b1e05997cc83b6f8d554ef5567d093350927742c11ef0786309d",
+      "untouchedMaterials": "72354d441c1596f60102719f5c7559261850feaf30dfae2ffc7e2aba1088bc31"
+    },
+    "counts": {
+      "objects": 12172,
+      "meshes": 8835,
+      "cameras": 5,
+      "images": 17,
+      "actions": 23,
+      "materials": 363,
+      "vertices": 1476448
+    }
+  },
+  "after": {
+    "digests": {
+      "meshGeometryTintUVAndSlots": "327088d81d5d3614ba2e16b8e2b44022892ed8a6de9852f3f585a10d93521648",
+      "objectsTransformsAnchorsAndHierarchy": "50d865f1cf05df9fe66316e348dbe96e0ede3e7b4386f4b2c42965f4f034b32f",
+      "cameras": "4ab1cc0c0e4d74709d291c823eb2e02c133fa35924319061ddc0cb2eb02d9e00",
+      "packedImagesAndSourcePaths": "a58414b9e4e2e4d8a28f9fb5516335a3b41b5ed1e370e1a0fd0a02663eb20468",
+      "scenesAndViewSettings": "0b3d07981a7c5c5db2ca4aadd85b86f1635d8e8a64fced770f684ba0811cf768",
+      "nativeCurvesAndSigns": "230363c5e28f144de75742709996e5965d5605e00fa84f2e235c8a6ce11bdb0f",
+      "animationActions": "60220b73109dd4c0cb32efeb83aec2ae866ff45697395983258282d8887bcff1",
+      "embeddedSourceTexts": "9ad5eea587f6b1e05997cc83b6f8d554ef5567d093350927742c11ef0786309d",
+      "untouchedMaterials": "72354d441c1596f60102719f5c7559261850feaf30dfae2ffc7e2aba1088bc31"
+    },
+    "counts": {
+      "objects": 12172,
+      "meshes": 8835,
+      "cameras": 5,
+      "images": 17,
+      "actions": 23,
+      "materials": 363,
+      "vertices": 1476448
+    }
+  },
+  "surfaceMaterials": {
+    "revision": "native-surface-finish-01",
+    "runtimeReference": "src/surface-materials.js",
+    "comparison": "Comparable physical scale and finish using editable Blender noise nodes; not exact GLSL noise or render parity.",
+    "surfaces": [
+      {
+        "name": "Voxel / architectural alloy",
+        "roughness": 0.86,
+        "metallic": 0.08,
+        "roughnessRange": [
+          0.8,
+          0.92
+        ],
+        "bumpDistanceMetres": 0.0006,
+        "bumpStrength": 0.06,
+        "kind": "solid",
+        "nodes": 39,
+        "links": 51
+      },
+      {
+        "name": "Voxel / rain polished asphalt",
+        "roughness": 0.91,
+        "metallic": 0.025,
+        "roughnessRange": [
+          0.495,
+          0.945
+        ],
+        "bumpDistanceMetres": 0.0008,
+        "bumpStrength": 0.08,
+        "kind": "pavement",
+        "nodes": 77,
+        "links": 103
+      },
+      {
+        "name": "Voxel / weathered small metal panels",
+        "roughness": 0.57,
+        "metallic": 0.66,
+        "roughnessRange": [
+          0.47,
+          0.83
+        ],
+        "bumpDistanceMetres": 0.0004,
+        "bumpStrength": 0.06,
+        "kind": "metal",
+        "nodes": 45,
+        "links": 58
+      }
+    ]
+  },
+  "retainedUnusedMeshDatablocks": [
+    "AEON / ARMORED PATROL AV geometry",
+    "K-77 INTERCEPTOR geometry",
+    "KASUMI DATA RELAY geometry",
+    "VIGIL SECURITY DRONE geometry"
+  ],
+  "previousMaterials": {
+    "solid": {
+      "nodes": 3,
+      "graphSHA256": "f0cbb04cbe750430cf415e5db816907f2c2488ef6fcf57fde178ce8c3b2bdd88"
+    },
+    "pavement": {
+      "nodes": 5,
+      "graphSHA256": "cade01a924b7e26fa4aafac00a8806f16d223c79b8c4dd1983f49f6ef5385476"
+    },
+    "metal": {
+      "nodes": 3,
+      "graphSHA256": "fd19651c15053c43f7479e824b158b321da6634105ef1113c0002ced7c48ef26"
+    }
+  },
+  "updatedMaterials": {
+    "solid": {
+      "nodes": 39,
+      "graphSHA256": "4c0e188d52461a2e5f5099d1232500d9f6894a9437148869df581c3852ddb28d"
+    },
+    "pavement": {
+      "nodes": 77,
+      "graphSHA256": "ff29324bda6f4f8de1d87b797727451275f42294f58bfcfd9cd401fa60952226"
+    },
+    "metal": {
+      "nodes": 45,
+      "graphSHA256": "2cbf9ab2006003ab06e402a3bc7cc9f869b884e829d1dc76981ef7ae5ca376bd"
+    }
+  },
+  "previewImagesCurrent": false,
+  "previewHashesUnchanged": {
+    "asset-kit-preview.png": "4ffe3775ca4875b42b831e34796e7a38a908acfca4e9ed82f31a58e385ca56d7",
+    "city-aerial-preview.png": "8d47f89958fb8c125ac5282054eb95eaff4692213f6f15d7d076ccdfea1dd815",
+    "city-blueprint-preview.png": "5d1f45a3585bf7df746cacc5d63d489be24eaa2500f345dc89183b7735b6375a",
+    "city-scene-preview.png": "15b676e43f050acd1ba19e70c304f8317ba93c9a8fb300edc83e84b860393808",
+    "pulse-carbine-preview.png": "8b13f231caad67310cb9fdf697ba0bdde541d6fa86a6e3ef954d9a79477f1dd2"
+  },
+  "otherNativeAssetsUnchanged": {
+    "cyberpunk-assets.blend": "448cf9405d221489e7742c85d1adfdac8518d9957857a4dcaa574e41a554fac0",
+    "pulse-carbine.blend": "e5e6e302653389ee46c8ec21a589a0b83e0247dc8640d72e793ae2b5e30b8f32"
+  },
+  "limits": [
+    "No fresh material render in this CPU-only pass.",
+    "Blender procedural noise approximates the runtime physical scale and finish; its values are not identical to the GLSL hash.",
+    "Native scene lighting is unchanged and differs from the runtime renderer."
+  ],
+  "existingCityReopenVerificationPassed": true
+}

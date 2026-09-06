@@ -1,0 +1,168 @@
+{
+  "generatedAt": "2026-09-06T07:49:11.732Z",
+  "passed": true,
+  "total": 18,
+  "results": [
+    {
+      "name": "Unobstructed walking and chase compositions remain exact without input mutation",
+      "passed": true,
+      "position": [
+        2.4,
+        2.2,
+        8.2
+      ]
+    },
+    {
+      "name": "Both directions stop before a 35 mm wall even across a 200 m sweep",
+      "passed": true,
+      "left": -0.24349999999999739,
+      "right": 0.24349999999999739
+    },
+    {
+      "name": "Camera radius protects near-plane edge grazing instead of just the centre ray",
+      "passed": true,
+      "grazingStop": -0.27600000000000025,
+      "clearance": 0.24713559031430526
+    },
+    {
+      "name": "Actual rotated OBB faces block and an empty corner of their AABB stays clear",
+      "passed": true,
+      "stop": [
+        -0.19516147160748742,
+        2,
+        0.19516147160748742
+      ],
+      "openCorner": [
+        2.9,
+        2,
+        -2.7
+      ]
+    },
+    {
+      "name": "Pitch and roll quaternions use true local dimensions",
+      "passed": true,
+      "localStop": [
+        -0.28600000000000086,
+        -2.5673907444456745e-16,
+        -4.579669976578771e-16
+      ]
+    },
+    {
+      "name": "Informational yaw does not rotate already computed dynamic AABB dimensions",
+      "passed": true,
+      "stop": [
+        2.8,
+        2,
+        -0.726
+      ]
+    },
+    {
+      "name": "A chase rise stops beneath overhead beams and downward booms stay above ground",
+      "passed": true,
+      "ceilingStop": [
+        0,
+        2.775977602029136,
+        3.2440761435286505
+      ],
+      "groundStop": [
+        0,
+        0.2249205531989933,
+        2.130095336161208
+      ]
+    },
+    {
+      "name": "An engulfed anchor escapes its contiguous occupied interval without skipping the next wall",
+      "passed": true,
+      "escaped": [
+        2.7565,
+        1.8,
+        0
+      ]
+    },
+    {
+      "name": "Zero-length and entirely contained booms find a clear surface outside overlapping solids",
+      "passed": true,
+      "zeroLength": [
+        0.5,
+        1.8,
+        1.2259999999999998
+      ],
+      "contained": [
+        0.7,
+        1.8,
+        1.2259999999999998
+      ]
+    },
+    {
+      "name": "Broad-phase requests encompass the full boom rather than only its endpoints",
+      "passed": true,
+      "firstQuery": {
+        "x": 0,
+        "z": 0,
+        "range": 63.47155320336759
+      }
+    },
+    {
+      "name": "Adjacent boxes discovered after contained-anchor recovery cannot capture the camera",
+      "passed": true,
+      "escaped": [
+        -0.47600000000000003,
+        1.8,
+        0
+      ]
+    },
+    {
+      "name": "Fresh moving and removed blocker poses take effect on the next call",
+      "passed": true,
+      "first": -0.24350000000000005,
+      "moved": 1.7565000000000008
+    },
+    {
+      "name": "Contained recovery retains neighboring solids instead of oscillating through shared walls",
+      "passed": true,
+      "escaped": [
+        8.725999999999999,
+        1.8,
+        0
+      ],
+      "queries": 12
+    },
+    {
+      "name": "Previous-camera sweep prevents tunneling when the stopped endpoint remains visible from the anchor",
+      "passed": true,
+      "safeTemporalEnd": [
+        -0.246,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "Rounding a corner prioritizes a visible inward boom when temporal collision would hide the player",
+      "passed": true,
+      "camera": [
+        -0.3352111960325761,
+        2,
+        -1.4735409837128397
+      ],
+      "anchorToCameraClear": true,
+      "temporalConstraintDeliberatelyRelaxed": true
+    },
+    {
+      "name": "Outward interpolation remains safe at 20, 30, 60 FPS and during a long frame",
+      "passed": true,
+      "safeFrames": 800
+    },
+    {
+      "name": "Malformed positions, bounds and optional state never poison the result with NaN",
+      "passed": true,
+      "invalidRecords": 9
+    },
+    {
+      "name": "Production frontage, canopy and building corners protect representative camera booms",
+      "passed": true,
+      "booms": 15,
+      "shortened": 15,
+      "productionColliders": 27762
+    }
+  ]
+}

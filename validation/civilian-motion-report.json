@@ -1,0 +1,61 @@
+{
+  "checkedAtUTC": "2026-09-06T09:50:57.705Z",
+  "passed": true,
+  "results": [
+    {
+      "test": "Stationary citizens keep planted feet and invariant authored voxel poses",
+      "pass": true,
+      "maxMatrixError": 0,
+      "seconds": 5
+    },
+    {
+      "test": "Foot contacts stay fixed while travel drives phase; blocked movement stops the cycle",
+      "pass": true,
+      "maxPlantedSlipM": 0,
+      "plantedPairs": 578,
+      "maxLift": 0.06499866292540335,
+      "walkedM": 3.805500000000003
+    },
+    {
+      "test": "Acceleration, braking, diagonal velocity and turns are bounded and eased",
+      "pass": true,
+      "maxAcceleration": 4.6000000000000005,
+      "maxTurnPerFrame": 0.06333333333333346
+    },
+    {
+      "test": "Scaled two-bone legs retain their lengths and soles stay above real curb support",
+      "pass": true,
+      "observations": [
+        {
+          "scale": 0.84,
+          "maxLengthError": 2.7755575615628914e-16,
+          "maxPenetration": 5.551115123125783e-17,
+          "maxWidth": 0.6972,
+          "maxDepth": 0.5920919279754087
+        },
+        {
+          "scale": 1,
+          "maxLengthError": 2.7755575615628914e-16,
+          "maxPenetration": 2.0816681711721685e-17,
+          "maxWidth": 0.83,
+          "maxDepth": 0.7042273178349636
+        },
+        {
+          "scale": 1.12,
+          "maxLengthError": 2.7755575615628914e-16,
+          "maxPenetration": 2.7755575615628914e-17,
+          "maxWidth": 0.9296,
+          "maxDepth": 0.7880084500314133
+        }
+      ]
+    },
+    {
+      "test": "Fleeing, turning and stopping keep existing voxel geometry bounded and attached",
+      "pass": true,
+      "maxPoleGap": 0,
+      "maxWidth": 0.978005215999872,
+      "maxDepth": 0.916263919783332,
+      "maxLengthError": 6.661338147750939e-16
+    }
+  ]
+}

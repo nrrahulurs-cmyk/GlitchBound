@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T07:58:14.452436+00:00",
+  "streetFrontages": 77,
+  "sourceFacadeRecordsRefit": 547,
+  "svgFrontageMarks": 77,
+  "svgMaximumFootprintErrorMetres": 5.684341886080802e-14,
+  "svgLegendVerified": true
+}

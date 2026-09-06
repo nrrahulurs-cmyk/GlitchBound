@@ -1,0 +1,5876 @@
+{
+  "results": [
+    {
+      "label": "initial",
+      "camera": {
+        "p": [
+          7.76,
+          1.807,
+          -96.09
+        ],
+        "q": [
+          -0.13154931317266802,
+          0.3465082744559108,
+          0.04914729430259092,
+          0.9274757880398393
+        ]
+      },
+      "weapon": {
+        "rig": {
+          "source": "Blender pulse-carbine.glb",
+          "socket": "muzzle_socket",
+          "muzzle": [
+            7.323110537501727,
+            1.3369949543891073,
+            -96.966738924741
+          ],
+          "visible": true,
+          "view": "first-person",
+          "shots": 0,
+          "age": 12.53429999999997,
+          "reloading": 0,
+          "kick": 0,
+          "pitch": 0,
+          "flash": false,
+          "bolt": [
+            0.07900000363588333,
+            0.14300000667572021,
+            -0.057999998331069946
+          ],
+          "magazine": [
+            0,
+            0.014999999664723873,
+            -0.19499999284744263
+          ]
+        },
+        "effects": {
+          "source": "Blender ion-bolt.glb / impact-shards.glb",
+          "speed": 240,
+          "activeBolts": 0,
+          "activeImpacts": 0,
+          "maxBolts": 18,
+          "maxImpacts": 16,
+          "lastShot": null,
+          "bolts": []
+        }
+      },
+      "objects": [
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels",
+          "distance": 0.8533454761610244,
+          "bounds": {
+            "min": [
+              7.28700557658332,
+              1.2968243926760878,
+              -97.00025185701483
+            ],
+            "max": [
+              7.475160072054075,
+              1.4283568020974755,
+              -96.79971405919173
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_1",
+          "distance": 0.8673012809021701,
+          "bounds": {
+            "min": [
+              7.305653717807423,
+              1.3058723657411702,
+              -96.98149494409502
+            ],
+            "max": [
+              7.464517017413295,
+              1.4228431960481207,
+              -96.80925299362164
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_2",
+          "distance": 0.990989351262573,
+          "bounds": {
+            "min": [
+              7.301734958687058,
+              1.334642729871908,
+              -96.9824143943096
+            ],
+            "max": [
+              7.3930330552809735,
+              1.3607813880188486,
+              -96.89516091939501
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_3",
+          "distance": 0.9938274825934824,
+          "bounds": {
+            "min": [
+              7.278935844236653,
+              1.2999750255426492,
+              -97.00709047890662
+            ],
+            "max": [
+              7.3848447535631125,
+              1.3817676849638485,
+              -96.90616731402206
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_4",
+          "distance": 1.0113905660398599,
+          "bounds": {
+            "min": [
+              7.282714825442799,
+              1.3019441688835587,
+              -97.00370291663069
+            ],
+            "max": [
+              7.372802478269225,
+              1.376150159361103,
+              -96.91907018464146
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_5",
+          "distance": 0.8914798444340869,
+          "bounds": {
+            "min": [
+              7.370874784575079,
+              1.338096326557396,
+              -96.90349992231985
+            ],
+            "max": [
+              7.450941622437654,
+              1.41342157865808,
+              -96.82777724181813
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_6",
+          "distance": 0.9985960389242718,
+          "bounds": {
+            "min": [
+              7.322007786258256,
+              1.3254608854644847,
+              -96.95863174785067
+            ],
+            "max": [
+              7.3957295510811045,
+              1.3374210379505258,
+              -96.89249404197179
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels",
+          "distance": 0.5542503965663428,
+          "bounds": {
+            "min": [
+              7.690886392324746,
+              1.5018442444997162,
+              -96.64386045985236
+            ],
+            "max": [
+              7.750390693233613,
+              1.5466384809778517,
+              -96.57919632329966
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_1",
+          "distance": 0.5726639542400245,
+          "bounds": {
+            "min": [
+              7.703932754028853,
+              1.5139493587129662,
+              -96.64472090082593
+            ],
+            "max": [
+              7.747908546933098,
+              1.5394664907516649,
+              -96.59618536395062
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_2",
+          "distance": 0.5771595753617682,
+          "bounds": {
+            "min": [
+              7.730869149831204,
+              1.5209975674058465,
+              -96.63015997019437
+            ],
+            "max": [
+              7.75926501296909,
+              1.5399639077537686,
+              -96.6016682134584
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_3",
+          "distance": 0.5906733803113976,
+          "bounds": {
+            "min": [
+              7.746287006122915,
+              1.5233709658519203,
+              -96.62907831812001
+            ],
+            "max": [
+              7.758706205497971,
+              1.5375905085692767,
+              -96.61565377791025
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels",
+          "distance": 0.7026579206435426,
+          "bounds": {
+            "min": [
+              7.395934034253447,
+              1.3377243311901457,
+              -96.87157657016202
+            ],
+            "max": [
+              7.588566734901899,
+              1.4531817328886272,
+              -96.67236708605417
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_1",
+          "distance": 0.6825025038674384,
+          "bounds": {
+            "min": [
+              7.368926129809201,
+              1.3269557473969567,
+              -96.89882061397931
+            ],
+            "max": [
+              7.607990943326285,
+              1.4537726364932897,
+              -96.65385578310823
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_2",
+          "distance": 0.7115386287340617,
+          "bounds": {
+            "min": [
+              7.397315870154828,
+              1.3636551494560754,
+              -96.86814501599825
+            ],
+            "max": [
+              7.582101476036373,
+              1.4540312813243277,
+              -96.6816522787827
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_3",
+          "distance": 0.7204185675124669,
+          "bounds": {
+            "min": [
+              7.394977782029257,
+              1.3956588999505126,
+              -96.86987336871313
+            ],
+            "max": [
+              7.580851291068984,
+              1.4409313348248898,
+              -96.68405587690215
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_4",
+          "distance": 0.7264101129253875,
+          "bounds": {
+            "min": [
+              7.40310096542475,
+              1.3648574910627913,
+              -96.86025649255494
+            ],
+            "max": [
+              7.585477205955092,
+              1.419312107488037,
+              -96.67899197322092
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_5",
+          "distance": 0.7463927511591442,
+          "bounds": {
+            "min": [
+              7.420231029939826,
+              1.326282760720671,
+              -96.84491274522686
+            ],
+            "max": [
+              7.583515766881691,
+              1.3809243678801189,
+              -96.67686881852524
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels",
+          "distance": 0.5797201873948906,
+          "bounds": {
+            "min": [
+              7.5651251904054835,
+              1.1895974052552505,
+              -96.68060635705858
+            ],
+            "max": [
+              7.725163158968055,
+              1.4102166064512776,
+              -96.5112182673912
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_1",
+          "distance": 0.6294752529022535,
+          "bounds": {
+            "min": [
+              7.585069774918963,
+              1.2061694921809183,
+              -96.6590420359875
+            ],
+            "max": [
+              7.710288530387133,
+              1.3566141598997328,
+              -96.52694445738842
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_2",
+          "distance": 0.6504221934077042,
+          "bounds": {
+            "min": [
+              7.605913050476526,
+              1.2513881763516324,
+              -96.63381378978872
+            ],
+            "max": [
+              7.688901025194555,
+              1.3555460289412717,
+              -96.55279939225782
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_3",
+          "distance": 0.6646460678570464,
+          "bounds": {
+            "min": [
+              7.607646082698179,
+              1.2791428642240692,
+              -96.63102945603407
+            ],
+            "max": [
+              7.681513877599477,
+              1.3457830412161997,
+              -96.56209452553338
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_4",
+          "distance": 0.7150681568385457,
+          "bounds": {
+            "min": [
+              7.621999234408576,
+              1.2539378012915783,
+              -96.61450158436756
+            ],
+            "max": [
+              7.686298262245577,
+              1.2701678641557475,
+              -96.55658523412272
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_5",
+          "distance": 0.6706901415219064,
+          "bounds": {
+            "min": [
+              7.58979204295753,
+              1.2314162574212952,
+              -96.65264028095133
+            ],
+            "max": [
+              7.6795528909624355,
+              1.3386628474464328,
+              -96.56330100371771
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels",
+          "distance": 0.48744287091118693,
+          "bounds": {
+            "min": [
+              7.678874496413176,
+              1.396475597043334,
+              -96.54962230771639
+            ],
+            "max": [
+              7.783839948635321,
+              1.4715428735795932,
+              -96.44365105504707
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_1",
+          "distance": 0.4897342406509435,
+          "bounds": {
+            "min": [
+              7.694165085142255,
+              1.2925360025942352,
+              -96.53201496311927
+            ],
+            "max": [
+              7.822100059492901,
+              1.427538265665521,
+              -96.39959395769593
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_2",
+          "distance": 0.5683787825998988,
+          "bounds": {
+            "min": [
+              7.722019914832029,
+              1.2862454845425564,
+              -96.4988004419015
+            ],
+            "max": [
+              7.833198652701883,
+              1.3229768217880828,
+              -96.3879530222424
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_3",
+          "distance": 0.5004120737295529,
+          "bounds": {
+            "min": [
+              7.692723832202629,
+              1.3139790020908328,
+              -96.53271059587618
+            ],
+            "max": [
+              7.815087481816701,
+              1.4211435111291482,
+              -96.40863303898148
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_4",
+          "distance": 0.5596758225341728,
+          "bounds": {
+            "min": [
+              7.725136148539656,
+              1.3302097143953664,
+              -96.49468623742496
+            ],
+            "max": [
+              7.801540155480684,
+              1.3586071016147383,
+              -96.42493407561335
+            ]
+          },
+          "material": "M09 / magenta",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels",
+          "distance": 0.42094215294211296,
+          "bounds": {
+            "min": [
+              7.464973815150866,
+              1.3485264689533363,
+              -96.78839551933437
+            ],
+            "max": [
+              7.796932226628274,
+              1.5674192326380088,
+              -96.43611176234532
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_1",
+          "distance": 0.45172267506571134,
+          "bounds": {
+            "min": [
+              7.478580642506613,
+              1.4106898944321902,
+              -96.77167542448298
+            ],
+            "max": [
+              7.767681312567188,
+              1.5640812865183653,
+              -96.47084626006954
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_2",
+          "distance": 0.42658482412605814,
+          "bounds": {
+            "min": [
+              7.4723226604638135,
+              1.4062124913364134,
+              -96.779056857223
+            ],
+            "max": [
+              7.785511956135311,
+              1.5783633762596034,
+              -96.45013873223975
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_3",
+          "distance": 0.48257992041815284,
+          "bounds": {
+            "min": [
+              7.487445443241487,
+              1.3752449525983195,
+              -96.7619932856152
+            ],
+            "max": [
+              7.7877398203143855,
+              1.4825384899895346,
+              -96.44722277098825
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_4",
+          "distance": 0.5645270825558499,
+          "bounds": {
+            "min": [
+              7.5042527127637,
+              1.4168878994533083,
+              -96.74237655270504
+            ],
+            "max": [
+              7.708685186580717,
+              1.4680472552813055,
+              -96.53851828692979
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_5",
+          "distance": 0.5409043188012049,
+          "bounds": {
+            "min": [
+              7.503389143534127,
+              1.4697753264894762,
+              -96.7425822461698
+            ],
+            "max": [
+              7.707182606697702,
+              1.5131408429912008,
+              -96.54103725001892
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_6",
+          "distance": 0.46841979824308644,
+          "bounds": {
+            "min": [
+              7.641235938688739,
+              1.5005295312566793,
+              -96.58384957296147
+            ],
+            "max": [
+              7.779371450229174,
+              1.5170710051383454,
+              -96.45791070292206
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "serial_and_markings__authored_voxels",
+          "distance": 0.6085292029556061,
+          "bounds": {
+            "min": [
+              7.500217804434618,
+              1.4037570090414646,
+              -96.7467599046871
+            ],
+            "max": [
+              7.656052081188659,
+              1.4907319868585045,
+              -96.5993890113539
+            ]
+          },
+          "material": "M09 / markings",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "serial_and_markings__authored_voxels_1",
+          "distance": 0.6829064100777575,
+          "bounds": {
+            "min": [
+              7.509834417108928,
+              1.4021608443884959,
+              -96.73568622948638
+            ],
+            "max": [
+              7.62971278762746,
+              1.4093950543703262,
+              -96.62971910696983
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels",
+          "distance": 0.322858928425858,
+          "bounds": {
+            "min": [
+              7.669533170979219,
+              1.4982708027436713,
+              -96.55731173902124
+            ],
+            "max": [
+              7.86402128425066,
+              1.6216982845240189,
+              -96.35438827868488
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_1",
+          "distance": 0.3519161310700248,
+          "bounds": {
+            "min": [
+              7.681513777658596,
+              1.5195378983769239,
+              -96.54351588890559
+            ],
+            "max": [
+              7.844538385918008,
+              1.603094495776556,
+              -96.37682313131036
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_2",
+          "distance": 0.3543687944835009,
+          "bounds": {
+            "min": [
+              7.728391788186564,
+              1.4857526478627618,
+              -96.4908496838967
+            ],
+            "max": [
+              7.865691291911955,
+              1.5674638822819378,
+              -96.3511507051728
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_3",
+          "distance": 0.3118380319209813,
+          "bounds": {
+            "min": [
+              7.764812637129125,
+              1.5082751895126474,
+              -96.44759599012134
+            ],
+            "max": [
+              7.8732500162092816,
+              1.62582322819441,
+              -96.34376125400526
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_4",
+          "distance": 0.38266956592572837,
+          "bounds": {
+            "min": [
+              7.7115305558124385,
+              1.5512628033108946,
+              -96.50833766411532
+            ],
+            "max": [
+              7.8293561809606596,
+              1.5757851069630044,
+              -96.39491912029861
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_5",
+          "distance": 0.3314437106451191,
+          "bounds": {
+            "min": [
+              7.7875943856790615,
+              1.5230856374562118,
+              -96.42285226682192
+            ],
+            "max": [
+              7.869550265342004,
+              1.598949680875097,
+              -96.34653176785191
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels",
+          "distance": 0.48389547824891116,
+          "bounds": {
+            "min": [
+              7.590229209739128,
+              1.4924754105934381,
+              -96.54976193193733
+            ],
+            "max": [
+              7.649990399549485,
+              1.5504109580413328,
+              -96.48524016145275
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels_1",
+          "distance": 0.49736982152835485,
+          "bounds": {
+            "min": [
+              7.597224034452568,
+              1.5015025308056698,
+              -96.53551230897052
+            ],
+            "max": [
+              7.634658437370568,
+              1.5445344715451166,
+              -96.49345765380974
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels_2",
+          "distance": 0.5261224234313929,
+          "bounds": {
+            "min": [
+              7.618235439548042,
+              1.4974818311679736,
+              -96.51114208604864
+            ],
+            "max": [
+              7.628516209631714,
+              1.5056072855613198,
+              -96.50070579371491
+            ]
+          },
+          "material": "M09 / magenta",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels",
+          "distance": 0.45781777733662404,
+          "bounds": {
+            "min": [
+              7.4473949131477335,
+              1.4686635321420316,
+              -96.81783963204663
+            ],
+            "max": [
+              7.738847829180995,
+              1.5922926830517876,
+              -96.49379508536384
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_1",
+          "distance": 0.4496878306360892,
+          "bounds": {
+            "min": [
+              7.436116093782861,
+              1.4815771535442852,
+              -96.82898701555592
+            ],
+            "max": [
+              7.729902372337432,
+              1.638743340386133,
+              -96.50593626233699
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_2",
+          "distance": 0.49439154432565097,
+          "bounds": {
+            "min": [
+              7.446610047880763,
+              1.4895573297047624,
+              -96.81883105209336
+            ],
+            "max": [
+              7.701821978170061,
+              1.6025104035404576,
+              -96.53634327800077
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_3",
+          "distance": 0.7959050750984027,
+          "bounds": {
+            "min": [
+              7.474778323604365,
+              1.5017145627492132,
+              -96.79147772167192
+            ],
+            "max": [
+              7.486451542327525,
+              1.5179446145134525,
+              -96.77926273219552
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_4",
+          "distance": 0.513058809423262,
+          "bounds": {
+            "min": [
+              7.643654745798937,
+              1.6007376784410883,
+              -96.59263218168181
+            ],
+            "max": [
+              7.6836067774678085,
+              1.6078474499928659,
+              -96.55661727283034
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger__authored_voxels",
+          "distance": 0.5657573396273414,
+          "bounds": {
+            "min": [
+              7.694615446622241,
+              1.4083523579636377,
+              -96.53771849427619
+            ],
+            "max": [
+              7.71471362996848,
+              1.438656674130148,
+              -96.51702892913562
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger__authored_voxels_1",
+          "distance": 0.5698099743019607,
+          "bounds": {
+            "min": [
+              7.699685184364954,
+              1.401719482646058,
+              -96.53188061445125
+            ],
+            "max": [
+              7.7232896345333355,
+              1.4205822359930331,
+              -96.50715352993971
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger_guard__authored_voxels",
+          "distance": 0.5219170752830393,
+          "bounds": {
+            "min": [
+              7.6557795781775715,
+              1.418643052472052,
+              -96.57770626132154
+            ],
+            "max": [
+              7.752298723286731,
+              1.458545859684481,
+              -96.4784814485995
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger_guard__authored_voxels_1",
+          "distance": 0.5275262661654724,
+          "bounds": {
+            "min": [
+              7.6594184120150635,
+              1.3627815443670712,
+              -96.57342845387684
+            ],
+            "max": [
+              7.759424966216349,
+              1.4414763514712172,
+              -96.47036310703963
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Trigger glove",
+          "distance": 0.5050592251726561,
+          "bounds": {
+            "min": [
+              7.735748073742278,
+              1.2841932783583017,
+              -96.55072348599737
+            ],
+            "max": [
+              7.89627179514713,
+              1.3971626188844095,
+              -96.38515782553122
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.055,
+            -0.13,
+            0.075
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.40242142838412975,
+          "bounds": {
+            "min": [
+              7.800078171915412,
+              1.1705794164080374,
+              -96.49452900742281
+            ],
+            "max": [
+              8.074497202645285,
+              1.421860413283619,
+              -96.19956388502868
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.07,
+            -0.24,
+            0.26
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.6042809544982135,
+          "bounds": {
+            "min": [
+              7.786854652341044,
+              1.3253997153432624,
+              -96.57435835586912
+            ],
+            "max": [
+              7.856669736895378,
+              1.362379915434056,
+              -96.4983470093162
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.11,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5927728881358142,
+          "bounds": {
+            "min": [
+              7.783116852448952,
+              1.3450911675315904,
+              -96.5786624890782
+            ],
+            "max": [
+              7.8529319370032855,
+              1.382071367622384,
+              -96.50265114252528
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.08499999999999999,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5817597630022869,
+          "bounds": {
+            "min": [
+              7.779379052556859,
+              1.3647826197199182,
+              -96.58296662228727
+            ],
+            "max": [
+              7.849194137111192,
+              1.4017628198107117,
+              -96.50695527573436
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.06,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5148644553863004,
+          "bounds": {
+            "min": [
+              7.8843761918586575,
+              1.3237863085272104,
+              -96.43167224774965
+            ],
+            "max": [
+              7.973374313707608,
+              1.3698047116130032,
+              -96.3318186306536
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.09,
+            -0.17,
+            0.24
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.7424740354534201,
+          "bounds": {
+            "min": [
+              7.422024500807931,
+              1.2164051165135288,
+              -96.79142147201424
+            ],
+            "max": [
+              7.5882710764270875,
+              1.3192176407127858,
+              -96.62277128310296
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.04,
+            -0.085,
+            -0.4
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5565269088103525,
+          "bounds": {
+            "min": [
+              7.383276419503609,
+              1.1152912690671495,
+              -96.60521056509731
+            ],
+            "max": [
+              7.690706996948913,
+              1.357325398685624,
+              -96.41048936470798
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.17,
+            -0.18,
+            -0.21
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.8395738522884625,
+          "bounds": {
+            "min": [
+              7.404235527109995,
+              1.2501086087788382,
+              -96.76813483717271
+            ],
+            "max": [
+              7.497756081569639,
+              1.2739044847799017,
+              -96.68322976353602
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.46
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.8178641364896956,
+          "bounds": {
+            "min": [
+              7.419729234021488,
+              1.2569493151333975,
+              -96.75029359891099
+            ],
+            "max": [
+              7.513249788481132,
+              1.280745191134461,
+              -96.6653885252743
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.43000000000000005
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.7963225213853883,
+          "bounds": {
+            "min": [
+              7.435222940932981,
+              1.2637900214879567,
+              -96.73245236064926
+            ],
+            "max": [
+              7.528743495392625,
+              1.2875858974890202,
+              -96.64754728701257
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.4
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.6599281963085922,
+          "bounds": {
+            "min": [
+              7.483467052932387,
+              1.2600820497306309,
+              -96.56641716967216
+            ],
+            "max": [
+              7.574070043994929,
+              1.2991770076507851,
+              -96.46822094625306
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.17,
+            -0.125,
+            -0.21
+          ]
+        },
+        {
+          "name": "Midnight monsoon sky",
+          "distance": 0,
+          "bounds": {
+            "min": [
+              -482.24,
+              -488.193,
+              -586.09
+            ],
+            "max": [
+              497.76,
+              491.807,
+              393.90999999999997
+            ]
+          },
+          "material": "",
+          "type": "ShaderMaterial",
+          "side": 1,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            7.76,
+            1.807,
+            -96.09
+          ]
+        },
+        {
+          "name": "Rainwater / isolated street puddles",
+          "distance": 1.7499999999999118,
+          "bounds": {
+            "min": [
+              -352,
+              0.05699999999991185,
+              -602
+            ],
+            "max": [
+              352,
+              0.057000000000088154,
+              192
+            ]
+          },
+          "material": "ReflectorShader",
+          "type": "ShaderMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            0,
+            0.057,
+            -205
+          ]
+        }
+      ]
+    },
+    {
+      "label": "later",
+      "camera": {
+        "p": [
+          7.76,
+          1.807,
+          -96.09
+        ],
+        "q": [
+          -0.13154931317266802,
+          0.3465082744559108,
+          0.04914729430259092,
+          0.9274757880398393
+        ]
+      },
+      "weapon": {
+        "rig": {
+          "source": "Blender pulse-carbine.glb",
+          "socket": "muzzle_socket",
+          "muzzle": [
+            7.322540798279876,
+            1.3399964507160302,
+            -96.96739498808736
+          ],
+          "visible": true,
+          "view": "first-person",
+          "shots": 0,
+          "age": 14.785199999999932,
+          "reloading": 0,
+          "kick": 0,
+          "pitch": 0,
+          "flash": false,
+          "bolt": [
+            0.07900000363588333,
+            0.14300000667572021,
+            -0.057999998331069946
+          ],
+          "magazine": [
+            0,
+            0.014999999664723873,
+            -0.19499999284744263
+          ]
+        },
+        "effects": {
+          "source": "Blender ion-bolt.glb / impact-shards.glb",
+          "speed": 240,
+          "activeBolts": 0,
+          "activeImpacts": 0,
+          "maxBolts": 18,
+          "maxImpacts": 16,
+          "lastShot": null,
+          "bolts": []
+        }
+      },
+      "objects": [
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels",
+          "distance": 0.8527549924041613,
+          "bounds": {
+            "min": [
+              7.286435837361469,
+              1.2998258890030108,
+              -97.0009079203612
+            ],
+            "max": [
+              7.474590332832224,
+              1.4313582984243984,
+              -96.8003701225381
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_1",
+          "distance": 0.8667154278801629,
+          "bounds": {
+            "min": [
+              7.3050839785855715,
+              1.308873862068093,
+              -96.98215100744139
+            ],
+            "max": [
+              7.463947278191444,
+              1.4258446923750436,
+              -96.80990905696801
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_2",
+          "distance": 0.9903866090196928,
+          "bounds": {
+            "min": [
+              7.301165219465208,
+              1.3376442261988308,
+              -96.98307045765597
+            ],
+            "max": [
+              7.392463316059122,
+              1.3637828843457716,
+              -96.89581698274138
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_3",
+          "distance": 0.9933018468379491,
+          "bounds": {
+            "min": [
+              7.278366105014801,
+              1.3029765218695721,
+              -97.00774654225299
+            ],
+            "max": [
+              7.384275014341261,
+              1.3847691812907714,
+              -96.90682337736843
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_4",
+          "distance": 1.0108725443878408,
+          "bounds": {
+            "min": [
+              7.282145086220948,
+              1.3049456652104816,
+              -97.00435897997706
+            ],
+            "max": [
+              7.372232739047374,
+              1.379151655688026,
+              -96.91972624798782
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_5",
+          "distance": 0.890900472125621,
+          "bounds": {
+            "min": [
+              7.370305045353227,
+              1.341097822884319,
+              -96.90415598566622
+            ],
+            "max": [
+              7.450371883215802,
+              1.4164230749850029,
+              -96.8284333051645
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_6",
+          "distance": 0.9979243388530084,
+          "bounds": {
+            "min": [
+              7.321438047036405,
+              1.3284623817914076,
+              -96.95928781119704
+            ],
+            "max": [
+              7.395159811859253,
+              1.3404225342774487,
+              -96.89315010531816
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels",
+          "distance": 0.5534375800049364,
+          "bounds": {
+            "min": [
+              7.690316653102895,
+              1.5048457408266391,
+              -96.64451652319873
+            ],
+            "max": [
+              7.749820954011762,
+              1.5496399773047747,
+              -96.57985238664602
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_1",
+          "distance": 0.5718616301824047,
+          "bounds": {
+            "min": [
+              7.703363014807001,
+              1.5169508550398891,
+              -96.6453769641723
+            ],
+            "max": [
+              7.747338807711246,
+              1.5424679870785878,
+              -96.596841427297
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_2",
+          "distance": 0.5763611148892588,
+          "bounds": {
+            "min": [
+              7.730299410609352,
+              1.5239990637327694,
+              -96.63081603354074
+            ],
+            "max": [
+              7.7586952737472386,
+              1.5429654040806915,
+              -96.60232427680477
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_3",
+          "distance": 0.5898972297076284,
+          "bounds": {
+            "min": [
+              7.745717266901064,
+              1.5263724621788433,
+              -96.62973438146638
+            ],
+            "max": [
+              7.758136466276119,
+              1.5405920048961996,
+              -96.61630984125662
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels",
+          "distance": 0.7018357592027024,
+          "bounds": {
+            "min": [
+              7.395364295031595,
+              1.3407258275170686,
+              -96.87223263350839
+            ],
+            "max": [
+              7.587996995680047,
+              1.45618322921555,
+              -96.67302314940054
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_1",
+          "distance": 0.6816245827333027,
+          "bounds": {
+            "min": [
+              7.3683563905873495,
+              1.3299572437238796,
+              -96.89947667732568
+            ],
+            "max": [
+              7.607421204104433,
+              1.4567741328202126,
+              -96.6545118464546
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_2",
+          "distance": 0.7107440818175208,
+          "bounds": {
+            "min": [
+              7.396746130932977,
+              1.3666566457829983,
+              -96.86880107934462
+            ],
+            "max": [
+              7.581531736814521,
+              1.4570327776512506,
+              -96.68230834212908
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_3",
+          "distance": 0.7195823660819288,
+          "bounds": {
+            "min": [
+              7.394408042807406,
+              1.3986603962774355,
+              -96.8705294320595
+            ],
+            "max": [
+              7.580281551847133,
+              1.4439328311518127,
+              -96.68471194024852
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_4",
+          "distance": 0.725483167029571,
+          "bounds": {
+            "min": [
+              7.402531226202899,
+              1.3678589873897142,
+              -96.86091255590131
+            ],
+            "max": [
+              7.584907466733241,
+              1.42231360381496,
+              -96.67964803656729
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_5",
+          "distance": 0.7453357098090955,
+          "bounds": {
+            "min": [
+              7.419661290717975,
+              1.329284257047594,
+              -96.84556880857323
+            ],
+            "max": [
+              7.5829460276598395,
+              1.3839258642070418,
+              -96.6775248818716
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels",
+          "distance": 0.5781831538882274,
+          "bounds": {
+            "min": [
+              7.564555451183632,
+              1.1925989015821734,
+              -96.68126242040495
+            ],
+            "max": [
+              7.724593419746204,
+              1.4132181027782005,
+              -96.51187433073757
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_1",
+          "distance": 0.627833709482651,
+          "bounds": {
+            "min": [
+              7.584500035697111,
+              1.2091709885078412,
+              -96.65969809933387
+            ],
+            "max": [
+              7.709718791165281,
+              1.3596156562266557,
+              -96.5276005207348
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_2",
+          "distance": 0.6488736286771829,
+          "bounds": {
+            "min": [
+              7.605343311254675,
+              1.2543896726785553,
+              -96.63446985313509
+            ],
+            "max": [
+              7.688331285972704,
+              1.3585475252681947,
+              -96.5534554556042
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_3",
+          "distance": 0.6631020725179302,
+          "bounds": {
+            "min": [
+              7.6070763434763276,
+              1.2821443605509921,
+              -96.63168551938044
+            ],
+            "max": [
+              7.680944138377626,
+              1.3487845375431227,
+              -96.56275058887975
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_4",
+          "distance": 0.7133062694525503,
+          "bounds": {
+            "min": [
+              7.6214294951867245,
+              1.2569392976185012,
+              -96.61515764771393
+            ],
+            "max": [
+              7.685728523023726,
+              1.2731693604826704,
+              -96.55724129746909
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_5",
+          "distance": 0.6691310066629352,
+          "bounds": {
+            "min": [
+              7.589222303735679,
+              1.2344177537482182,
+              -96.6532963442977
+            ],
+            "max": [
+              7.678983151740584,
+              1.3416643437733557,
+              -96.56395706706408
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels",
+          "distance": 0.48586035043530307,
+          "bounds": {
+            "min": [
+              7.6783047571913245,
+              1.399477093370257,
+              -96.55027837106276
+            ],
+            "max": [
+              7.78327020941347,
+              1.4745443699065162,
+              -96.44430711839344
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_1",
+          "distance": 0.4878292594314625,
+          "bounds": {
+            "min": [
+              7.693595345920404,
+              1.295537498921158,
+              -96.53267102646564
+            ],
+            "max": [
+              7.82153032027105,
+              1.4305397619924438,
+              -96.4002500210423
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_2",
+          "distance": 0.5661706848995514,
+          "bounds": {
+            "min": [
+              7.721450175610178,
+              1.2892469808694793,
+              -96.49945650524786
+            ],
+            "max": [
+              7.832628913480032,
+              1.3259783181150058,
+              -96.38860908558877
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_3",
+          "distance": 0.498521289596675,
+          "bounds": {
+            "min": [
+              7.692154092980777,
+              1.3169804984177558,
+              -96.53336665922255
+            ],
+            "max": [
+              7.81451774259485,
+              1.424145007456071,
+              -96.40928910232785
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_4",
+          "distance": 0.5576685775570419,
+          "bounds": {
+            "min": [
+              7.724566409317805,
+              1.3332112107222893,
+              -96.49534230077133
+            ],
+            "max": [
+              7.800970416258832,
+              1.3616085979416612,
+              -96.42559013895972
+            ]
+          },
+          "material": "M09 / magenta",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels",
+          "distance": 0.41978289200302515,
+          "bounds": {
+            "min": [
+              7.464404075929015,
+              1.3515279652802592,
+              -96.78905158268074
+            ],
+            "max": [
+              7.796362487406423,
+              1.5704207289649317,
+              -96.43676782569169
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_1",
+          "distance": 0.4506709374465943,
+          "bounds": {
+            "min": [
+              7.478010903284762,
+              1.413691390759113,
+              -96.77233148782935
+            ],
+            "max": [
+              7.767111573345336,
+              1.5670827828452882,
+              -96.4715023234159
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_2",
+          "distance": 0.4255397692871043,
+          "bounds": {
+            "min": [
+              7.471752921241963,
+              1.4092139876633363,
+              -96.77971292056937
+            ],
+            "max": [
+              7.78494221691346,
+              1.5813648725865264,
+              -96.45079479558612
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_3",
+          "distance": 0.48105488300413796,
+          "bounds": {
+            "min": [
+              7.486875704019636,
+              1.3782464489252424,
+              -96.76264934896157
+            ],
+            "max": [
+              7.787170081092533,
+              1.4855399863164576,
+              -96.44787883433462
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_4",
+          "distance": 0.5633052858306621,
+          "bounds": {
+            "min": [
+              7.503682973541848,
+              1.4198893957802312,
+              -96.74303261605141
+            ],
+            "max": [
+              7.708115447358866,
+              1.4710487516082285,
+              -96.53917435027616
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_5",
+          "distance": 0.5398844450763441,
+          "bounds": {
+            "min": [
+              7.502819404312276,
+              1.472776822816399,
+              -96.74323830951617
+            ],
+            "max": [
+              7.706612867475851,
+              1.5161423393181237,
+              -96.54169331336529
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_6",
+          "distance": 0.46708548533749755,
+          "bounds": {
+            "min": [
+              7.640666199466888,
+              1.5035310275836022,
+              -96.58450563630784
+            ],
+            "max": [
+              7.778801711007323,
+              1.5200725014652683,
+              -96.45856676626843
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "serial_and_markings__authored_voxels",
+          "distance": 0.6076230983297826,
+          "bounds": {
+            "min": [
+              7.499648065212766,
+              1.4067585053683875,
+              -96.74741596803347
+            ],
+            "max": [
+              7.655482341966808,
+              1.4937334831854274,
+              -96.60004507470028
+            ]
+          },
+          "material": "M09 / markings",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "serial_and_markings__authored_voxels_1",
+          "distance": 0.6817923061141589,
+          "bounds": {
+            "min": [
+              7.509264677887077,
+              1.4051623407154188,
+              -96.73634229283275
+            ],
+            "max": [
+              7.629143048405609,
+              1.4123965506972491,
+              -96.6303751703162
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels",
+          "distance": 0.32168598530954146,
+          "bounds": {
+            "min": [
+              7.668963431757367,
+              1.5012722990705942,
+              -96.55796780236761
+            ],
+            "max": [
+              7.863451545028808,
+              1.6246997808509418,
+              -96.35504434203125
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_1",
+          "distance": 0.3507231212072636,
+          "bounds": {
+            "min": [
+              7.680944038436745,
+              1.5225393947038468,
+              -96.54417195225196
+            ],
+            "max": [
+              7.8439686466961565,
+              1.606095992103479,
+              -96.37747919465673
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_2",
+          "distance": 0.3528334042563106,
+          "bounds": {
+            "min": [
+              7.727822048964713,
+              1.4887541441896848,
+              -96.49150574724307
+            ],
+            "max": [
+              7.865121552690104,
+              1.5704653786088607,
+              -96.35180676851917
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_3",
+          "distance": 0.3106325841616546,
+          "bounds": {
+            "min": [
+              7.764242897907273,
+              1.5112766858395703,
+              -96.44825205346771
+            ],
+            "max": [
+              7.87268027698743,
+              1.628824724521333,
+              -96.34441731735163
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_4",
+          "distance": 0.3813889711273907,
+          "bounds": {
+            "min": [
+              7.710960816590587,
+              1.5542642996378175,
+              -96.50899372746169
+            ],
+            "max": [
+              7.828786441738808,
+              1.5787866032899274,
+              -96.39557518364498
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_5",
+          "distance": 0.33003171326927,
+          "bounds": {
+            "min": [
+              7.78702464645721,
+              1.5260871337831348,
+              -96.42350833016829
+            ],
+            "max": [
+              7.868980526120152,
+              1.6019511772020198,
+              -96.34718783119828
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels",
+          "distance": 0.48297852382078155,
+          "bounds": {
+            "min": [
+              7.589659470517277,
+              1.495476906920361,
+              -96.5504179952837
+            ],
+            "max": [
+              7.649420660327634,
+              1.5534124543682557,
+              -96.48589622479912
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels_1",
+          "distance": 0.49647068019744195,
+          "bounds": {
+            "min": [
+              7.5966542952307154,
+              1.5045040271325927,
+              -96.5361683723169
+            ],
+            "max": [
+              7.634088698148717,
+              1.5475359678720395,
+              -96.49411371715611
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels_2",
+          "distance": 0.5250657398539125,
+          "bounds": {
+            "min": [
+              7.6176657003261905,
+              1.5004833274948965,
+              -96.511798149395
+            ],
+            "max": [
+              7.627946470409863,
+              1.5086087818882428,
+              -96.50136185706128
+            ]
+          },
+          "material": "M09 / magenta",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels",
+          "distance": 0.4570250841625258,
+          "bounds": {
+            "min": [
+              7.446825173925882,
+              1.4716650284689545,
+              -96.818495695393
+            ],
+            "max": [
+              7.7382780899591435,
+              1.5952941793787105,
+              -96.49445114871021
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_1",
+          "distance": 0.4492203492751453,
+          "bounds": {
+            "min": [
+              7.435546354561009,
+              1.4845786498712081,
+              -96.8296430789023
+            ],
+            "max": [
+              7.729332633115581,
+              1.6417448367130558,
+              -96.50659232568336
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_2",
+          "distance": 0.4938189598308525,
+          "bounds": {
+            "min": [
+              7.446040308658912,
+              1.4925588260316853,
+              -96.81948711543973
+            ],
+            "max": [
+              7.70125223894821,
+              1.6055118998673805,
+              -96.53699934134714
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_3",
+          "distance": 0.7955850412205531,
+          "bounds": {
+            "min": [
+              7.474208584382514,
+              1.5047160590761361,
+              -96.7921337850183
+            ],
+            "max": [
+              7.4858818031056735,
+              1.5209461108403755,
+              -96.77991879554189
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_4",
+          "distance": 0.5125845335586291,
+          "bounds": {
+            "min": [
+              7.643085006577086,
+              1.6037391747680112,
+              -96.59328824502818
+            ],
+            "max": [
+              7.683037038245957,
+              1.6108489463197888,
+              -96.5572733361767
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger__authored_voxels",
+          "distance": 0.5643508553762878,
+          "bounds": {
+            "min": [
+              7.69404570740039,
+              1.4113538542905606,
+              -96.53837455762256
+            ],
+            "max": [
+              7.714143890746628,
+              1.441658170457071,
+              -96.51768499248199
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger__authored_voxels_1",
+          "distance": 0.5682980703549514,
+          "bounds": {
+            "min": [
+              7.699115445143103,
+              1.4047209789729809,
+              -96.53253667779762
+            ],
+            "max": [
+              7.722719895311484,
+              1.423583732319956,
+              -96.50780959328608
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger_guard__authored_voxels",
+          "distance": 0.5204170847951922,
+          "bounds": {
+            "min": [
+              7.65520983895572,
+              1.4216445487989748,
+              -96.5783623246679
+            ],
+            "max": [
+              7.751728984064879,
+              1.4615473560114038,
+              -96.47913751194586
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger_guard__authored_voxels_1",
+          "distance": 0.5259270192183855,
+          "bounds": {
+            "min": [
+              7.658848672793212,
+              1.3657830406939941,
+              -96.57408451722321
+            ],
+            "max": [
+              7.7588552269944975,
+              1.4444778477981401,
+              -96.471019170386
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Trigger glove",
+          "distance": 0.5030122205321265,
+          "bounds": {
+            "min": [
+              7.735178334520427,
+              1.2871947746852246,
+              -96.55137954934374
+            ],
+            "max": [
+              7.895702055925279,
+              1.4001641152113324,
+              -96.38581388887759
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.055,
+            -0.13,
+            0.075
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.3996734584635327,
+          "bounds": {
+            "min": [
+              7.79950843269356,
+              1.1735809127349603,
+              -96.49518507076918
+            ],
+            "max": [
+              8.073927463423432,
+              1.424861909610542,
+              -96.20021994837505
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.07,
+            -0.24,
+            0.26
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.6024959647859347,
+          "bounds": {
+            "min": [
+              7.786284913119193,
+              1.3284012116701853,
+              -96.57501441921549
+            ],
+            "max": [
+              7.856099997673526,
+              1.3653814117609788,
+              -96.49900307266257
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.11,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5910615254575816,
+          "bounds": {
+            "min": [
+              7.782547113227101,
+              1.3480926638585133,
+              -96.57931855242457
+            ],
+            "max": [
+              7.852362197781434,
+              1.3850728639493068,
+              -96.50330720587165
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.08499999999999999,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5801263363864397,
+          "bounds": {
+            "min": [
+              7.778809313335008,
+              1.3677841160468411,
+              -96.58362268563364
+            ],
+            "max": [
+              7.848624397889341,
+              1.4047643161376346,
+              -96.50761133908073
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.06,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5124902574765632,
+          "bounds": {
+            "min": [
+              7.883806452636807,
+              1.3267878048541333,
+              -96.43232831109601
+            ],
+            "max": [
+              7.972804574485758,
+              1.3728062079399261,
+              -96.33247469399997
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.09,
+            -0.17,
+            0.24
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.7411100108845927,
+          "bounds": {
+            "min": [
+              7.421454761586079,
+              1.2194066128404517,
+              -96.7920775353606
+            ],
+            "max": [
+              7.587701337205236,
+              1.3222191370397087,
+              -96.62342734644933
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.04,
+            -0.085,
+            -0.4
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5545557243751429,
+          "bounds": {
+            "min": [
+              7.382706680281759,
+              1.1182927653940724,
+              -96.60586662844368
+            ],
+            "max": [
+              7.690137257727061,
+              1.3603268950125469,
+              -96.41114542805435
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.17,
+            -0.18,
+            -0.21
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.8383144176778939,
+          "bounds": {
+            "min": [
+              7.403665787888143,
+              1.2531101051057612,
+              -96.76879090051908
+            ],
+            "max": [
+              7.497186342347788,
+              1.2769059811068246,
+              -96.68388582688239
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.46
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.8165712186920213,
+          "bounds": {
+            "min": [
+              7.419159494799636,
+              1.2599508114603204,
+              -96.75094966225736
+            ],
+            "max": [
+              7.512680049259281,
+              1.2837466874613839,
+              -96.66604458862066
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.43000000000000005
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.7949945707397755,
+          "bounds": {
+            "min": [
+              7.4346532017111295,
+              1.2667915178148796,
+              -96.73310842399563
+            ],
+            "max": [
+              7.528173756170774,
+              1.2905873938159431,
+              -96.64820335035894
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.4
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.6581600622712679,
+          "bounds": {
+            "min": [
+              7.482897313710535,
+              1.2630835460575538,
+              -96.56707323301853
+            ],
+            "max": [
+              7.573500304773078,
+              1.302178503977708,
+              -96.46887700959942
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.17,
+            -0.125,
+            -0.21
+          ]
+        },
+        {
+          "name": "Midnight monsoon sky",
+          "distance": 0,
+          "bounds": {
+            "min": [
+              -482.24,
+              -488.193,
+              -586.09
+            ],
+            "max": [
+              497.76,
+              491.807,
+              393.90999999999997
+            ]
+          },
+          "material": "",
+          "type": "ShaderMaterial",
+          "side": 1,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            7.76,
+            1.807,
+            -96.09
+          ]
+        },
+        {
+          "name": "Rainwater / isolated street puddles",
+          "distance": 1.7499999999999118,
+          "bounds": {
+            "min": [
+              -352,
+              0.05699999999991185,
+              -602
+            ],
+            "max": [
+              352,
+              0.057000000000088154,
+              192
+            ]
+          },
+          "material": "ReflectorShader",
+          "type": "ShaderMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            0,
+            0.057,
+            -205
+          ]
+        }
+      ]
+    },
+    {
+      "label": "no-proxies",
+      "camera": {
+        "p": [
+          7.76,
+          1.807,
+          -96.09
+        ],
+        "q": [
+          -0.13154931317266802,
+          0.3465082744559108,
+          0.04914729430259092,
+          0.9274757880398393
+        ]
+      },
+      "weapon": {
+        "rig": {
+          "source": "Blender pulse-carbine.glb",
+          "socket": "muzzle_socket",
+          "muzzle": [
+            7.322781767346038,
+            1.3387269791064809,
+            -96.96711750855663
+          ],
+          "visible": true,
+          "view": "first-person",
+          "shots": 0,
+          "age": 15.101999999999927,
+          "reloading": 0,
+          "kick": 0,
+          "pitch": 0,
+          "flash": false,
+          "bolt": [
+            0.07900000363588333,
+            0.14300000667572021,
+            -0.057999998331069946
+          ],
+          "magazine": [
+            0,
+            0.014999999664723873,
+            -0.19499999284744263
+          ]
+        },
+        "effects": {
+          "source": "Blender ion-bolt.glb / impact-shards.glb",
+          "speed": 240,
+          "activeBolts": 0,
+          "activeImpacts": 0,
+          "maxBolts": 18,
+          "maxImpacts": 16,
+          "lastShot": null,
+          "bolts": []
+        }
+      },
+      "objects": [
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels",
+          "distance": 0.8530033883297005,
+          "bounds": {
+            "min": [
+              7.286676806427631,
+              1.2985564173934614,
+              -97.00063044083046
+            ],
+            "max": [
+              7.474831301898386,
+              1.430088826814849,
+              -96.80009264300736
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_1",
+          "distance": 0.8669618861737461,
+          "bounds": {
+            "min": [
+              7.305324947651734,
+              1.3076043904585437,
+              -96.98187352791065
+            ],
+            "max": [
+              7.464188247257606,
+              1.4245752207654943,
+              -96.80963157743727
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_2",
+          "distance": 0.9906403785711397,
+          "bounds": {
+            "min": [
+              7.30140618853137,
+              1.3363747545892815,
+              -96.98279297812523
+            ],
+            "max": [
+              7.392704285125284,
+              1.3625134127362222,
+              -96.89553950321064
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_3",
+          "distance": 0.993522997163193,
+          "bounds": {
+            "min": [
+              7.278607074080964,
+              1.3017070502600228,
+              -97.00746906272225
+            ],
+            "max": [
+              7.384515983407423,
+              1.383499709681222,
+              -96.90654589783769
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_4",
+          "distance": 1.0110904936451062,
+          "bounds": {
+            "min": [
+              7.28238605528711,
+              1.3036761936009322,
+              -97.00408150044632
+            ],
+            "max": [
+              7.372473708113536,
+              1.3778821840784765,
+              -96.91944876845709
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_5",
+          "distance": 0.891144224375489,
+          "bounds": {
+            "min": [
+              7.370546014419389,
+              1.3398283512747695,
+              -96.90387850613548
+            ],
+            "max": [
+              7.450612852281965,
+              1.4151536033754535,
+              -96.82815582563376
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "barrel_and_open_muzzle__authored_voxels_6",
+          "distance": 0.9982072933812909,
+          "bounds": {
+            "min": [
+              7.321679016102567,
+              1.3271929101818583,
+              -96.9590103316663
+            ],
+            "max": [
+              7.395400780925415,
+              1.3391530626678994,
+              -96.89287262578742
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels",
+          "distance": 0.553779351704441,
+          "bounds": {
+            "min": [
+              7.690557622169057,
+              1.5035762692170898,
+              -96.644239043668
+            ],
+            "max": [
+              7.750061923077924,
+              1.5483705056952253,
+              -96.57957490711529
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_1",
+          "distance": 0.5721990250780693,
+          "bounds": {
+            "min": [
+              7.703603983873164,
+              1.5156813834303398,
+              -96.64509948464156
+            ],
+            "max": [
+              7.747579776777409,
+              1.5411985154690384,
+              -96.59656394776626
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_2",
+          "distance": 0.5766968895574993,
+          "bounds": {
+            "min": [
+              7.7305403796755146,
+              1.52272959212322,
+              -96.63053855401
+            ],
+            "max": [
+              7.758936242813401,
+              1.5416959324711421,
+              -96.60204679727403
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bolt__authored_voxels_3",
+          "distance": 0.5902236054963017,
+          "bounds": {
+            "min": [
+              7.745958235967226,
+              1.5251029905692939,
+              -96.62945690193564
+            ],
+            "max": [
+              7.758377435342282,
+              1.5393225332866503,
+              -96.61603236172589
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels",
+          "distance": 0.7021819098991696,
+          "bounds": {
+            "min": [
+              7.395605264097758,
+              1.3394563559075192,
+              -96.87195515397765
+            ],
+            "max": [
+              7.5882379647462095,
+              1.4549137576060007,
+              -96.6727456698698
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_1",
+          "distance": 0.6819942869934471,
+          "bounds": {
+            "min": [
+              7.368597359653512,
+              1.3286877721143302,
+              -96.89919919779494
+            ],
+            "max": [
+              7.607662173170596,
+              1.4555046612106632,
+              -96.65423436692386
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_2",
+          "distance": 0.7110785651535123,
+          "bounds": {
+            "min": [
+              7.396987099999139,
+              1.365387174173449,
+              -96.86852359981388
+            ],
+            "max": [
+              7.581772705880684,
+              1.4557633060417012,
+              -96.68203086259834
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_3",
+          "distance": 0.7199344978317017,
+          "bounds": {
+            "min": [
+              7.394649011873568,
+              1.3973909246678862,
+              -96.87025195252876
+            ],
+            "max": [
+              7.580522520913295,
+              1.4426633595422633,
+              -96.68443446071778
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_4",
+          "distance": 0.725873718280279,
+          "bounds": {
+            "min": [
+              7.402772195269061,
+              1.3665895157801649,
+              -96.86063507637057
+            ],
+            "max": [
+              7.585148435799403,
+              1.4210441322054106,
+              -96.67937055703655
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "handguard__authored_voxels_5",
+          "distance": 0.7457813666392029,
+          "bounds": {
+            "min": [
+              7.419902259784137,
+              1.3280147854380446,
+              -96.8452913290425
+            ],
+            "max": [
+              7.583186996726002,
+              1.3826563925974924,
+              -96.67724740234087
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels",
+          "distance": 0.5788316760278718,
+          "bounds": {
+            "min": [
+              7.564796420249794,
+              1.191329429972624,
+              -96.68098494087421
+            ],
+            "max": [
+              7.724834388812366,
+              1.411948631168651,
+              -96.51159685120683
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_1",
+          "distance": 0.6285266215695909,
+          "bounds": {
+            "min": [
+              7.5847410047632735,
+              1.2079015168982918,
+              -96.65942061980313
+            ],
+            "max": [
+              7.709959760231444,
+              1.3583461846171063,
+              -96.52732304120406
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_2",
+          "distance": 0.6495272044270273,
+          "bounds": {
+            "min": [
+              7.605584280320837,
+              1.253120201069006,
+              -96.63419237360435
+            ],
+            "max": [
+              7.688572255038866,
+              1.3572780536586453,
+              -96.55317797607346
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_3",
+          "distance": 0.6637537427243615,
+          "bounds": {
+            "min": [
+              7.60731731254249,
+              1.2808748889414427,
+              -96.6314080398497
+            ],
+            "max": [
+              7.681185107443788,
+              1.3475150659335733,
+              -96.56247310934901
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_4",
+          "distance": 0.7140503149589583,
+          "bounds": {
+            "min": [
+              7.621670464252887,
+              1.2556698260089518,
+              -96.61488016818319
+            ],
+            "max": [
+              7.685969492089888,
+              1.271899888873121,
+              -96.55696381793835
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "magazine__authored_voxels_5",
+          "distance": 0.6697891008580452,
+          "bounds": {
+            "min": [
+              7.589463272801841,
+              1.2331482821386688,
+              -96.65301886476696
+            ],
+            "max": [
+              7.679224120806746,
+              1.3403948721638064,
+              -96.56367958753334
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels",
+          "distance": 0.4865279320860751,
+          "bounds": {
+            "min": [
+              7.678545726257487,
+              1.3982076217607076,
+              -96.55000089153202
+            ],
+            "max": [
+              7.783511178479632,
+              1.4732748982969668,
+              -96.4440296388627
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_1",
+          "distance": 0.4886335129916449,
+          "bounds": {
+            "min": [
+              7.693836314986566,
+              1.2942680273116087,
+              -96.5323935469349
+            ],
+            "max": [
+              7.821771289337212,
+              1.4292702903828944,
+              -96.39997254151156
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_2",
+          "distance": 0.5671036095038187,
+          "bounds": {
+            "min": [
+              7.72169114467634,
+              1.28797750925993,
+              -96.49917902571713
+            ],
+            "max": [
+              7.832869882546194,
+              1.3247088465054564,
+              -96.38833160605803
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_3",
+          "distance": 0.499319556437398,
+          "bounds": {
+            "min": [
+              7.6923950620469395,
+              1.3157110268082064,
+              -96.53308917969181
+            ],
+            "max": [
+              7.814758711661012,
+              1.4228755358465217,
+              -96.40901162279711
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "pistol_grip__authored_voxels_4",
+          "distance": 0.5585163521680413,
+          "bounds": {
+            "min": [
+              7.724807378383967,
+              1.33194173911274,
+              -96.49506482124059
+            ],
+            "max": [
+              7.8012113853249945,
+              1.3603391263321118,
+              -96.42531265942898
+            ]
+          },
+          "material": "M09 / magenta",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels",
+          "distance": 0.42027084643163054,
+          "bounds": {
+            "min": [
+              7.464645044995177,
+              1.3502584936707098,
+              -96.78877410315
+            ],
+            "max": [
+              7.796603456472585,
+              1.5691512573553823,
+              -96.43649034616095
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_1",
+          "distance": 0.4511135116933832,
+          "bounds": {
+            "min": [
+              7.478251872350924,
+              1.4124219191495637,
+              -96.77205400829861
+            ],
+            "max": [
+              7.767352542411499,
+              1.5658133112357389,
+              -96.47122484388517
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_2",
+          "distance": 0.4259793800567967,
+          "bounds": {
+            "min": [
+              7.471993890308125,
+              1.407944516053787,
+              -96.77943544103863
+            ],
+            "max": [
+              7.785183185979622,
+              1.580095400976977,
+              -96.45051731605538
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_3",
+          "distance": 0.4816980897150325,
+          "bounds": {
+            "min": [
+              7.487116673085798,
+              1.376976977315693,
+              -96.76237186943084
+            ],
+            "max": [
+              7.7874110501586955,
+              1.4842705147069082,
+              -96.44760135480388
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_4",
+          "distance": 0.5638202499801688,
+          "bounds": {
+            "min": [
+              7.503923942608011,
+              1.4186199241706818,
+              -96.74275513652067
+            ],
+            "max": [
+              7.708356416425028,
+              1.469779279998679,
+              -96.53889687074542
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_5",
+          "distance": 0.540313826537553,
+          "bounds": {
+            "min": [
+              7.503060373378438,
+              1.4715073512068497,
+              -96.74296082998544
+            ],
+            "max": [
+              7.706853836542013,
+              1.5148728677085743,
+              -96.54141583383455
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "receiver__authored_voxels_6",
+          "distance": 0.4676478293824335,
+          "bounds": {
+            "min": [
+              7.64090716853305,
+              1.5022615559740529,
+              -96.5842281567771
+            ],
+            "max": [
+              7.779042680073485,
+              1.518803029855719,
+              -96.4582892867377
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "serial_and_markings__authored_voxels",
+          "distance": 0.608004536957412,
+          "bounds": {
+            "min": [
+              7.499889034278929,
+              1.4054890337588382,
+              -96.74713848850273
+            ],
+            "max": [
+              7.65572331103297,
+              1.492464011575878,
+              -96.59976759516954
+            ]
+          },
+          "material": "M09 / markings",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "serial_and_markings__authored_voxels_1",
+          "distance": 0.682261987798848,
+          "bounds": {
+            "min": [
+              7.509505646953239,
+              1.4038928691058694,
+              -96.73606481330201
+            ],
+            "max": [
+              7.6293840174717715,
+              1.4111270790876997,
+              -96.63009769078546
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels",
+          "distance": 0.3221790229725917,
+          "bounds": {
+            "min": [
+              7.66920440082353,
+              1.5000028274610449,
+              -96.55769032283688
+            ],
+            "max": [
+              7.8636925140949705,
+              1.6234303092413924,
+              -96.35476686250051
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_1",
+          "distance": 0.35122491509985554,
+          "bounds": {
+            "min": [
+              7.681185007502907,
+              1.5212699230942974,
+              -96.54389447272122
+            ],
+            "max": [
+              7.844209615762319,
+              1.6048265204939296,
+              -96.37720171512599
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_2",
+          "distance": 0.3534803469030103,
+          "bounds": {
+            "min": [
+              7.728063018030875,
+              1.4874846725801354,
+              -96.49122826771233
+            ],
+            "max": [
+              7.865362521756266,
+              1.5691959069993113,
+              -96.35152928898843
+            ]
+          },
+          "material": "M09 / ceramic",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_3",
+          "distance": 0.31113916418255033,
+          "bounds": {
+            "min": [
+              7.7644838669734355,
+              1.510007214230021,
+              -96.44797457393697
+            ],
+            "max": [
+              7.8729212460535924,
+              1.6275552529117836,
+              -96.34413983782089
+            ]
+          },
+          "material": "M09 / rubber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_4",
+          "distance": 0.3819281018590096,
+          "bounds": {
+            "min": [
+              7.711201785656749,
+              1.5529948280282682,
+              -96.50871624793095
+            ],
+            "max": [
+              7.82902741080497,
+              1.577517131680378,
+              -96.39529770411424
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "shoulder_stock__authored_voxels_5",
+          "distance": 0.3306260443326279,
+          "bounds": {
+            "min": [
+              7.787265615523372,
+              1.5248176621735854,
+              -96.42323085063755
+            ],
+            "max": [
+              7.869221495186315,
+              1.6006817055924705,
+              -96.34691035166755
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels",
+          "distance": 0.48336409348739157,
+          "bounds": {
+            "min": [
+              7.589900439583439,
+              1.4942074353108117,
+              -96.55014051575296
+            ],
+            "max": [
+              7.649661629393796,
+              1.5521429827587063,
+              -96.48561874526838
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels_1",
+          "distance": 0.4968487690766431,
+          "bounds": {
+            "min": [
+              7.596895264296878,
+              1.5032345555230433,
+              -96.53589089278616
+            ],
+            "max": [
+              7.634329667214879,
+              1.5462664962624901,
+              -96.49383623762537
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "status_display__authored_voxels_2",
+          "distance": 0.5255106521525604,
+          "bounds": {
+            "min": [
+              7.617906669392353,
+              1.4992138558853472,
+              -96.51152066986427
+            ],
+            "max": [
+              7.628187439476025,
+              1.5073393102786934,
+              -96.50108437753055
+            ]
+          },
+          "material": "M09 / magenta",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels",
+          "distance": 0.4573579132189209,
+          "bounds": {
+            "min": [
+              7.447066142992044,
+              1.4703955568594052,
+              -96.81821821586226
+            ],
+            "max": [
+              7.738519059025306,
+              1.5940247077691612,
+              -96.49417366917947
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_1",
+          "distance": 0.4494154768570858,
+          "bounds": {
+            "min": [
+              7.435787323627172,
+              1.4833091782616588,
+              -96.82936559937156
+            ],
+            "max": [
+              7.729573602181743,
+              1.6404753651035064,
+              -96.50631484615262
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_2",
+          "distance": 0.49405880159343457,
+          "bounds": {
+            "min": [
+              7.446281277725074,
+              1.491289354422136,
+              -96.81920963590899
+            ],
+            "max": [
+              7.701493208014372,
+              1.6042424282578311,
+              -96.5367218618164
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_3",
+          "distance": 0.7957189166509244,
+          "bounds": {
+            "min": [
+              7.474449553448676,
+              1.5034465874665868,
+              -96.79185630548756
+            ],
+            "max": [
+              7.486122772171836,
+              1.519676639230826,
+              -96.77964131601115
+            ]
+          },
+          "material": "M09 / cyan",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top_rail_and_sights__authored_voxels_4",
+          "distance": 0.5127828566675989,
+          "bounds": {
+            "min": [
+              7.643325975643248,
+              1.6024697031584618,
+              -96.59301076549744
+            ],
+            "max": [
+              7.683278007312119,
+              1.6095794747102394,
+              -96.55699585664597
+            ]
+          },
+          "material": "M09 / amber",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger__authored_voxels",
+          "distance": 0.5649440408342965,
+          "bounds": {
+            "min": [
+              7.694286676466552,
+              1.4100843826810112,
+              -96.53809707809182
+            ],
+            "max": [
+              7.714384859812791,
+              1.4403886988475216,
+              -96.51740751295125
+            ]
+          },
+          "material": "M09 / black",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger__authored_voxels_1",
+          "distance": 0.5689359204668275,
+          "bounds": {
+            "min": [
+              7.699356414209265,
+              1.4034515073634315,
+              -96.53225919826689
+            ],
+            "max": [
+              7.722960864377646,
+              1.4223142607104067,
+              -96.50753211375535
+            ]
+          },
+          "material": "M09 / bright steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger_guard__authored_voxels",
+          "distance": 0.5210497403391184,
+          "bounds": {
+            "min": [
+              7.655450808021882,
+              1.4203750771894255,
+              -96.57808484513717
+            ],
+            "max": [
+              7.7519699531310415,
+              1.4602778844018545,
+              -96.47886003241513
+            ]
+          },
+          "material": "M09 / navy",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "trigger_guard__authored_voxels_1",
+          "distance": 0.5266017447485574,
+          "bounds": {
+            "min": [
+              7.659089641859374,
+              1.3645135690844448,
+              -96.57380703769248
+            ],
+            "max": [
+              7.75909619606066,
+              1.4432083761885908,
+              -96.47074169085526
+            ]
+          },
+          "material": "M09 / steel",
+          "type": "MeshStandardMaterial",
+          "side": 2,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Trigger glove",
+          "distance": 0.5038767221955639,
+          "bounds": {
+            "min": [
+              7.735419303586589,
+              1.2859253030756752,
+              -96.551102069813
+            ],
+            "max": [
+              7.895943024991441,
+              1.398894643601783,
+              -96.38553640934686
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.055,
+            -0.13,
+            0.075
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.40083502840178586,
+          "bounds": {
+            "min": [
+              7.799749401759723,
+              1.172311441125411,
+              -96.49490759123844
+            ],
+            "max": [
+              8.074168432489595,
+              1.4235924380009926,
+              -96.19994246884431
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.07,
+            -0.24,
+            0.26
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.6032495888627788,
+          "bounds": {
+            "min": [
+              7.786525882185355,
+              1.327131740060636,
+              -96.57473693968475
+            ],
+            "max": [
+              7.856340966739689,
+              1.3641119401514294,
+              -96.49872559313184
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.11,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5917839303926627,
+          "bounds": {
+            "min": [
+              7.782788082293263,
+              1.346823192248964,
+              -96.57904107289383
+            ],
+            "max": [
+              7.852603166847596,
+              1.3838033923397575,
+              -96.50302972634091
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.08499999999999999,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5808156971698203,
+          "bounds": {
+            "min": [
+              7.77905028240117,
+              1.3665146444372918,
+              -96.5833452061029
+            ],
+            "max": [
+              7.848865366955503,
+              1.4034948445280853,
+              -96.50733385954999
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.115,
+            -0.06,
+            0.02
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.513493434752196,
+          "bounds": {
+            "min": [
+              7.884047421702969,
+              1.325518333244584,
+              -96.43205083156528
+            ],
+            "max": [
+              7.97304554355192,
+              1.3715367363303768,
+              -96.33219721446923
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            0.09,
+            -0.17,
+            0.24
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.7416856195868782,
+          "bounds": {
+            "min": [
+              7.4216957306522415,
+              1.2181371412309023,
+              -96.79180005582987
+            ],
+            "max": [
+              7.587942306271398,
+              1.3209496654301593,
+              -96.6231498669186
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.04,
+            -0.085,
+            -0.4
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.5553881378122595,
+          "bounds": {
+            "min": [
+              7.382947649347921,
+              1.117023293784523,
+              -96.60558914891294
+            ],
+            "max": [
+              7.690378226793223,
+              1.3590574234029975,
+              -96.41086794852362
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.17,
+            -0.18,
+            -0.21
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.838845901149967,
+          "bounds": {
+            "min": [
+              7.403906756954306,
+              1.2518406334962118,
+              -96.76851342098834
+            ],
+            "max": [
+              7.49742731141395,
+              1.2756365094972753,
+              -96.68360834735165
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.46
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.8171168448793887,
+          "bounds": {
+            "min": [
+              7.419400463865799,
+              1.258681339850771,
+              -96.75067218272662
+            ],
+            "max": [
+              7.512921018325443,
+              1.2824772158518345,
+              -96.66576710908993
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.43000000000000005
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.7955549952675768,
+          "bounds": {
+            "min": [
+              7.434894170777292,
+              1.2655220462053303,
+              -96.7328309444649
+            ],
+            "max": [
+              7.528414725236936,
+              1.2893179222063937,
+              -96.6479258708282
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.075,
+            -0.075,
+            -0.4
+          ]
+        },
+        {
+          "name": "",
+          "distance": 0.6589066586078716,
+          "bounds": {
+            "min": [
+              7.4831382827766975,
+              1.2618140744480044,
+              -96.5667957534878
+            ],
+            "max": [
+              7.57374127383924,
+              1.3009090323681587,
+              -96.46859953006869
+            ]
+          },
+          "material": "",
+          "type": "MeshStandardMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": true,
+          "position": [
+            -0.17,
+            -0.125,
+            -0.21
+          ]
+        },
+        {
+          "name": "Midnight monsoon sky",
+          "distance": 0,
+          "bounds": {
+            "min": [
+              -482.24,
+              -488.193,
+              -586.09
+            ],
+            "max": [
+              497.76,
+              491.807,
+              393.90999999999997
+            ]
+          },
+          "material": "",
+          "type": "ShaderMaterial",
+          "side": 1,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            7.76,
+            1.807,
+            -96.09
+          ]
+        },
+        {
+          "name": "Rainwater / isolated street puddles",
+          "distance": 1.7499999999999118,
+          "bounds": {
+            "min": [
+              -352,
+              0.05699999999991185,
+              -602
+            ],
+            "max": [
+              352,
+              0.057000000000088154,
+              192
+            ]
+          },
+          "material": "ReflectorShader",
+          "type": "ShaderMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            0,
+            0.057,
+            -205
+          ]
+        }
+      ]
+    },
+    {
+      "label": "holstered",
+      "camera": {
+        "p": [
+          7.76,
+          1.807,
+          -96.09
+        ],
+        "q": [
+          -0.13154931317266802,
+          0.3465082744559108,
+          0.04914729430259092,
+          0.9274757880398393
+        ]
+      },
+      "weapon": {
+        "rig": {
+          "source": "Blender pulse-carbine.glb",
+          "socket": "muzzle_socket",
+          "muzzle": [
+            7.459261047371008,
+            0.9737186223522638,
+            -96.77946301739193
+          ],
+          "visible": false,
+          "view": "first-person",
+          "shots": 0,
+          "age": 15.702299999999921,
+          "reloading": 0,
+          "kick": 0,
+          "pitch": 0,
+          "flash": false,
+          "bolt": [
+            0.07900000363588333,
+            0.14300000667572021,
+            -0.057999998331069946
+          ],
+          "magazine": [
+            0,
+            0.014999999664723873,
+            -0.19499999284744263
+          ]
+        },
+        "effects": {
+          "source": "Blender ion-bolt.glb / impact-shards.glb",
+          "speed": 240,
+          "activeBolts": 0,
+          "activeImpacts": 0,
+          "maxBolts": 18,
+          "maxImpacts": 16,
+          "lastShot": null,
+          "bolts": []
+        }
+      },
+      "objects": [
+        {
+          "name": "Midnight monsoon sky",
+          "distance": 0,
+          "bounds": {
+            "min": [
+              -482.24,
+              -488.193,
+              -586.09
+            ],
+            "max": [
+              497.76,
+              491.807,
+              393.90999999999997
+            ]
+          },
+          "material": "",
+          "type": "ShaderMaterial",
+          "side": 1,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            7.76,
+            1.807,
+            -96.09
+          ]
+        },
+        {
+          "name": "Rainwater / isolated street puddles",
+          "distance": 1.7499999999999118,
+          "bounds": {
+            "min": [
+              -352,
+              0.05699999999991185,
+              -602
+            ],
+            "max": [
+              352,
+              0.057000000000088154,
+              192
+            ]
+          },
+          "material": "ReflectorShader",
+          "type": "ShaderMaterial",
+          "side": 0,
+          "opacity": 1,
+          "colorWrite": true,
+          "depthWrite": false,
+          "position": [
+            0,
+            0.057,
+            -205
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

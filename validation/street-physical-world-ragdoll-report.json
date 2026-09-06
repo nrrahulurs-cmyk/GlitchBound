@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T08:52:51.616Z",
+  "method": "Production civilian and street physics modules in the same Cannon world, real fixed/kinematic contacts, full authored street extraction, swept accepted movement, and render-derived corpse bounds.",
+  "results": [
+    {
+      "test": "Forward and reverse vehicle deaths launch in the accepted direction, tumble, land, and reset",
+      "pass": true,
+      "observations": [
+        {
+          "direction": -1,
+          "peakBodyBottom": 1.0433614687081127,
+          "travel": 11.322620075795887
+        },
+        {
+          "direction": 1,
+          "peakBodyBottom": 1.0431946488879056,
+          "travel": 11.328947239869418
+        }
+      ]
+    },
+    {
+      "test": "Thrown civilian collides with a fixed wall instead of passing through it",
+      "pass": true,
+      "minimumZ": -4.779248438687903
+    },
+    {
+      "test": "A moving kinematic car transfers momentum to a physical corpse through Cannon contacts",
+      "pass": true,
+      "carTransferredDistance": 4.765744842636362
+    },
+    {
+      "test": "A physical corpse blocks further bullets and receives impulse without another casualty",
+      "pass": true
+    },
+    {
+      "test": "Persistent corpse cleanup bounds articulated joints and retains movable simplified bodies",
+      "pass": true,
+      "activeBodies": 126,
+      "dead": 27
+    },
+    {
+      "test": "Movable bin receives shot and bumper impulses, lands on raised pavement, and resets",
+      "pass": true,
+      "peak": 1.3897973419564815,
+      "settledBottom": 0.16499220786046842
+    },
+    {
+      "test": "Rotated visible street furniture blocks shots to civilians behind it",
+      "pass": true
+    },
+    {
+      "test": "An existing parked vehicle becomes physical, takes impact damage, and restores its original pose",
+      "pass": true,
+      "parkedTravel": 0.5850783286543647
+    },
+    {
+      "test": "Spatial broadphase preserves all dynamic contact candidates through movement, sleep, removal, and freezing",
+      "pass": true,
+      "randomBodies": 90,
+      "statesCompared": 2
+    },
+    {
+      "test": "Full authored street geometry is solid using bounded compound tiles and all twelve physical bins",
+      "pass": true,
+      "streetShapes": 27532,
+      "compoundTiles": 1885,
+      "totalBodies": 2199,
+      "constructionMs": 327.46889999999985,
+      "meanPhysicsStepMs": 0.6919433333333397,
+      "profile": {
+        "broadphase": 0.36160499999999374,
+        "narrowphase": 0.0006383333333133122,
+        "solve": 0.00903000000000702,
+        "integrate": 0.17277333333328593
+      }
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "checkedAtUTC": "2026-09-06T09:06:54.822Z",
+  "method": "CPU continuation of failed browser per-limb position/quaternion state using actual CIV-041 authored voxels and scale. Initial stride fitted to recorded pre-impact bounds. Final linear/angular momentum estimated from adjacent RAF transforms because original capture omitted v/w; this is diagnostic, not an exact trajectory replay.",
+  "scale": 1.0195226015080698,
+  "stride": -0.9998,
+  "preImpactBoundsSquaredError": 3.400849135382409e-11,
+  "recordedJointError": 0.003188569884725284,
+  "results": [
+    {
+      "iterations": 7,
+      "initialJointError": 0.003188569956871119,
+      "firstSleep": 3.566600000000005,
+      "maxSpeed": 0.3435737075095068,
+      "meanStepMs": 0.07050433333333331,
+      "checkpoints": [
+        {
+          "elapsed": 5.000000000000021,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0017090430152087114,
+          "position": {
+            "x": -3.985041412302307,
+            "y": 0.2833395196517402,
+            "z": -114.16069982825121
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 4.023949215254916e-8,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 10.000000000000092,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0017090430152087114,
+          "position": {
+            "x": -3.985041412302307,
+            "y": 0.2833395196517402,
+            "z": -114.16069982825121
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 3.765459960211635e-21,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 15.000000000000163,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0017090430152087114,
+          "position": {
+            "x": -3.985041412302307,
+            "y": 0.2833395196517402,
+            "z": -114.16069982825121
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 3.5235754611924914e-34,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 20.000000000000234,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0017090430152087114,
+          "position": {
+            "x": -3.985041412302307,
+            "y": 0.2833395196517402,
+            "z": -114.16069982825121
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 3.2972290668096947e-47,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 25.000000000000306,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0017090430152087114,
+          "position": {
+            "x": -3.985041412302307,
+            "y": 0.2833395196517402,
+            "z": -114.16069982825121
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 3.0854226449106326e-60,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        }
+      ]
+    },
+    {
+      "iterations": 12,
+      "initialJointError": 0.003188569956871119,
+      "firstSleep": 5.1500000000000234,
+      "maxSpeed": 0.2453413620646649,
+      "meanStepMs": 0.06598793333333333,
+      "checkpoints": [
+        {
+          "elapsed": 5.000000000000021,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.00041848521516551357,
+          "position": {
+            "x": -3.9720827080094123,
+            "y": 0.2838474356018661,
+            "z": -114.16025941811097
+          },
+          "velocity": {
+            "x": -0.0006136069147950349,
+            "y": 0.0006033796664174917,
+            "z": -0.0009815667932896687
+          },
+          "speed": 0.0013053941310651462,
+          "sleeping": false,
+          "rest": {
+            "quietSeconds": 1.6666999999999978,
+            "filteredEnergy": 0.00025726027960624407,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 10.000000000000092,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.00041948539268920986,
+          "position": {
+            "x": -3.972147361035028,
+            "y": 0.283734692909975,
+            "z": -114.16041304070103
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 9.579426273771648e-17,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 15.000000000000163,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.00041948539268920986,
+          "position": {
+            "x": -3.972147361035028,
+            "y": 0.283734692909975,
+            "z": -114.16041304070103
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 8.964065932775795e-30,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 20.000000000000234,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.00041948539268920986,
+          "position": {
+            "x": -3.972147361035028,
+            "y": 0.283734692909975,
+            "z": -114.16041304070103
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 8.38823492667417e-43,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 25.000000000000306,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.00041948539268920986,
+          "position": {
+            "x": -3.972147361035028,
+            "y": 0.283734692909975,
+            "z": -114.16041304070103
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 7.849393981787478e-56,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        }
+      ]
+    },
+    {
+      "iterations": 15,
+      "initialJointError": 0.003188569956871119,
+      "firstSleep": 6.533300000000043,
+      "maxSpeed": 0.22128063757612548,
+      "meanStepMs": 0.07150553333333332,
+      "checkpoints": [
+        {
+          "elapsed": 5.000000000000021,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0001891988039804472,
+          "position": {
+            "x": -3.9707303916406422,
+            "y": 0.2839233076270178,
+            "z": -114.15948528809375
+          },
+          "velocity": {
+            "x": 0.0006690686300643644,
+            "y": 0.00038009807054584027,
+            "z": -0.0020757172778171407
+          },
+          "speed": 0.002213759154108115,
+          "sleeping": false,
+          "rest": {
+            "quietSeconds": 0.2834,
+            "filteredEnergy": 0.0003892632309768835,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 10.000000000000092,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0001782085082409377,
+          "position": {
+            "x": -3.970981347828364,
+            "y": 0.283864522287039,
+            "z": -114.16083754871154
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 3.439811518090055e-13,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 15.000000000000163,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0001782085082409377,
+          "position": {
+            "x": -3.970981347828364,
+            "y": 0.283864522287039,
+            "z": -114.16083754871154
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 3.2188459270160985e-26,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 20.000000000000234,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0001782085082409377,
+          "position": {
+            "x": -3.970981347828364,
+            "y": 0.283864522287039,
+            "z": -114.16083754871154
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 3.012074657980397e-39,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        },
+        {
+          "elapsed": 25.000000000000306,
+          "articulated": true,
+          "simplified": false,
+          "segments": 11,
+          "joints": 10,
+          "maxJointError": 0.0001782085082409377,
+          "position": {
+            "x": -3.970981347828364,
+            "y": 0.283864522287039,
+            "z": -114.16083754871154
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "speed": 0,
+          "sleeping": true,
+          "rest": {
+            "quietSeconds": 2,
+            "filteredEnergy": 2.818585900337917e-52,
+            "poseStable": true
+          },
+          "frozen": false,
+          "correctionCount": 0
+        }
+      ]
+    }
+  ]
+}
