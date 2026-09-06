@@ -20,9 +20,10 @@ from mathutils import Vector, Matrix
 ROOT=Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(ROOT/'blender'))
 from advert_materials import load_ad_material, material_image, image_quad, panel_dimensions
-from surface_materials import configure_surface_materials
+from surface_materials import configure_surface_materials, configure_surface_material
 from native_layout import read_native_layout, read_native_characters
 from native_characters import populate_characters, embed_character_export, verify_character
+from practical_lights import add_practical_lights
 layout=read_native_layout(ROOT)
 character_source=read_native_characters(ROOT)
 far_lod_count=sum(1 for box in layout['boxes'] if box.get('lod')=='far')
@@ -54,6 +55,14 @@ FRONTS=collection('07 STREET FRONTS / attached entrance assemblies')
 SERVICES=collection('08 SERVICE MECHANISMS / editable idle fixtures')
 BLOCKS=collection('09 AUTHORED BLOCKS / residential court and market')
 CITIZENS=collection('10 CITIZENS / exact resolved runtime population')
+# Construct editable rigs before the large architecture graph exists. Their
+# source roots are already resolved by the runtime export, so this ordering
+# changes no placement and avoids repeated edit-mode updates of city geometry.
+print('NATIVE_PHASE citizens',flush=True)
+native_people=populate_characters(character_source,CITIZENS)
+for citizen in native_people:verify_character(citizen)
+character_source_sha=embed_character_export(character_source)
+print('NATIVE_PHASE architecture',flush=True)
 
 def linear(hex_color):
     rgb=[int(hex_color.lstrip('#')[i:i+2],16)/255 for i in (0,2,4)]
@@ -82,6 +91,16 @@ mats={
  'window':material('Voxel / occupied warm windows',emissive=.85,roughness=.35,metallic=.2),
 }
 configure_surface_materials(mats)
+profile_mats={}
+for profile_id,settings in layout['nativeSurfaceProfiles'].items():
+    item=material('Voxel / industrial finish / '+profile_id,roughness=settings['roughness'],metallic=settings['metalness'])
+    configure_surface_material(item,'metal',{'id':profile_id,**settings})
+    profile_mats[profile_id]=item
+
+def surface_profile(box):
+    key=box.get('materialProfile','') if box['kind']=='metal' else ''
+    if key and key not in profile_mats:raise ValueError('Unknown native material profile '+key)
+    return key
 
 def to_blender(x,y,z):return (x,-z,y)
 
@@ -137,11 +156,12 @@ for assembly in layout.get('blockCompositions',{}).get('assemblies',[]):
     parent['block_composition']=json.dumps(assembly,ensure_ascii=False)
     parts=defaultdict(Batch)
     for box_id in assembly['boxIds']:
-        box=block_by_id[box_id];parts[box['kind']].box(box)
-    for kind,batch in parts.items():
-        obj=batch.finish(assembly['id']+' / '+kind,mats[kind],BLOCKS);obj.parent=parent
+        box=block_by_id[box_id];parts[(box['kind'],surface_profile(box))].box(box)
+    for (kind,profile),batch in parts.items():
+        obj=batch.finish(assembly['id']+' / '+kind+(' / '+profile if profile else ''),profile_mats[profile] if profile else mats[kind],BLOCKS);obj.parent=parent
         obj['block_composition_id']=assembly['id'];obj['voxel_modules']=len(batch.verts)//8
-        obj['source_box_ids']=json.dumps([bid for bid in assembly['boxIds'] if block_by_id[bid]['kind']==kind])
+        obj['surface_profile']=profile
+        obj['source_box_ids']=json.dumps([bid for bid in assembly['boxIds'] if block_by_id[bid]['kind']==kind and surface_profile(block_by_id[bid])==profile])
 
 service_materials={}
 for recipe in layout['nativeServiceFixtures']['recipes']:
@@ -286,12 +306,6 @@ for i,support in enumerate(supply_layout.get('stackSpacers',[])):
     prop('VOLTA EXPLOSIVE CELL',f'SUPPLY STACK {i+1:02d} / upper energy cell',
          (support['x'],support['y']+support['sy']/2,support['z']),0,1.35)
 
-# All live civilian pieces and their rigid articulation groups are editable.
-# Use the resolved runtime frame-zero roots, including real spawn clearances.
-native_people=populate_characters(character_source,CITIZENS)
-for citizen in native_people:verify_character(citizen)
-character_source_sha=embed_character_export(character_source)
-
 # The overhead craft also use their actual runtime voxel kit and population.
 # Their frame-zero placement includes the runtime's per-craft vertical phase.
 for i,aircraft in enumerate(character_source['airTraffic']):
@@ -394,6 +408,7 @@ light('Magenta skyline fill','AREA',(45,35,-35),(1,.13,.39),14000,70,(0,20,-65))
 light('Noodle bar / warm pavement','AREA',(-13,4,20),(1,.33,.06),520,7,(-5,0,24))
 light('Portrait / neon bounce','AREA',(-15,20,12),(1,.03,.34),2400,10,(0,2,22))
 light('Hero / cyan edge','AREA',(8,3,19),(.025,.72,1),270,5,(1,1,25))
+add_practical_lights(layout,RIG)
 searchlight=light('PATROL / volumetric searchlight','SPOT',(14,32.5,-8),(.47,.72,1),5000,target=(10,0,-15))
 searchlight.data.spot_size=.698;searchlight.data.spot_blend=.75
 for side in [-1,1]:

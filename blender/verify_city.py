@@ -16,6 +16,7 @@ def verify_city(root):
     sys.path.insert(0,str(root/'blender'))
     from native_layout import read_native_layout, read_native_characters
     from native_characters import load_embedded_export, verify_character, verify_character_materials
+    from practical_lights import verify_practical_lights
     source = read_native_layout(root)
     character_source = read_native_characters(root)
     path = root/'blender/neon-district-city.blend'
@@ -23,6 +24,7 @@ def verify_city(root):
     scene = bpy.data.scenes['VESPER / street composition']
     bpy.context.window.scene = scene
     scene.frame_set(1)
+    practical_checks=verify_practical_lights(source,scene)
     aerial = bpy.data.scenes['VESPER / complete city aerial']
     blueprint_scene = bpy.data.scenes['VESPER / architectural blueprint']
     blueprint = json.loads(bpy.data.texts['VESPER / authoritative city blueprint.json'].as_string())
@@ -183,6 +185,7 @@ def verify_city(root):
         assert plan and json.loads(plan['record'])==assembly
         frontage_checks.append({'id':assembly['id'],'hostBuilding':assembly['hostBuilding'],'voxelModules':modules,'boundsErrorMetres':error,'planFootprint':plan.name})
     block_checks=[]
+    profile_checks=[]
     for assembly in source.get('blockCompositions',{}).get('assemblies',[]):
         parent=bpy.data.objects.get(assembly['id']);assert parent and json.loads(parent['block_composition'])==assembly
         actual_ids=[];maximum=0
@@ -190,6 +193,61 @@ def verify_city(root):
             if obj.type!='MESH':continue
             ids=json.loads(obj['source_box_ids']);actual_ids.extend(ids)
             assert len(obj.data.vertices)==len(ids)*8
+            profile=obj.get('surface_profile','')
+            expected_profiles={source_by_id[bid].get('materialProfile','') if source_by_id[bid]['kind']=='metal' else '' for bid in ids}
+            assert expected_profiles=={profile},'Native industrial profile groups differ from source'
+            if profile:
+                settings=source['nativeSurfaceProfiles'][profile]
+                assert len(obj.data.materials)==1 and all(face.material_index==0 for face in obj.data.polygons)
+                material=obj.data.materials[0]
+                output=next(node for node in material.node_tree.nodes if node.type=='OUTPUT_MATERIAL' and node.is_active_output)
+                shader=output.inputs['Surface'].links[0].from_node
+                assert shader.type=='BSDF_PRINCIPLED' and receives_voxel_tint(shader.inputs['Base Color'])
+                assert not shader.inputs['Metallic'].is_linked
+                assert abs(shader.inputs['Metallic'].default_value-settings['metalness'])<.000001
+                limit=shader.inputs['Roughness'].links[0].from_node
+                assert limit.type=='MATH' and limit.operation=='MINIMUM'
+                assert not limit.inputs[0].is_linked
+                assert abs(limit.inputs[0].default_value-settings['roughnessRange'][1])<.000001
+                lower=limit.inputs[1].links[0].from_node
+                assert lower.type=='MATH' and lower.operation=='MAXIMUM'
+                assert not lower.inputs[0].is_linked
+                assert abs(lower.inputs[0].default_value-settings['roughnessRange'][0])<.000001
+                variation=lower.inputs[1].links[0].from_node
+                assert variation.type=='MATH' and variation.operation=='ADD'
+                assert not variation.inputs[0].is_linked
+                assert abs(variation.inputs[0].default_value-settings['roughness'])<.000001
+                tint=obj.data.color_attributes['VoxelTint'];color_error=0
+                for j,bid in enumerate(ids):
+                    expected=(*linear_color(source_by_id[bid]['c']),1)
+                    for vertex in tint.data[j*8:(j+1)*8]:
+                        color_error=max(color_error,max(abs(vertex.color[k]-expected[k]) for k in range(4)))
+                assert color_error<.000001
+                profile_checks.append({'assembly':assembly['id'],'profile':profile,'modules':len(ids),'maximumLinearColorError':color_error,'roughness':settings['roughness'],'metalness':settings['metalness'],'roughnessRange':settings['roughnessRange']})
+            else:
+                kinds={source_by_id[bid]['kind'] for bid in ids}
+                assert len(kinds)==1
+                kind=next(iter(kinds))
+                base_names={'solid':'Voxel / architectural alloy','pavement':'Voxel / rain polished asphalt','metal':'Voxel / weathered small metal panels','window':'Voxel / occupied warm windows','glow':'Voxel / emissive neon and windows','glass':'Voxel / reflective facade glass'}
+                assert len(obj.data.materials)==1 and obj.data.materials[0].name==base_names[kind]
+                material=obj.data.materials[0]
+                assert not material.get('surface_profile','') and all(face.material_index==0 for face in obj.data.polygons)
+                output=next(node for node in material.node_tree.nodes if node.type=='OUTPUT_MATERIAL' and node.is_active_output)
+                shader=output.inputs['Surface'].links[0].from_node
+                assert shader.type=='BSDF_PRINCIPLED'
+                assert not shader.inputs['Emission Strength'].is_linked
+                if kind in ('window','glow'):
+                    assert abs(shader.inputs['Emission Strength'].default_value-{'window':.85,'glow':2.4}[kind])<.000001
+                    assert receives_voxel_tint(shader.inputs['Emission Color'])
+                else:
+                    # Native defaults can represent no emission with either
+                    # zero strength or black color. Check the actual result.
+                    if abs(shader.inputs['Emission Strength'].default_value)>=.000001:
+                        assert not shader.inputs['Emission Color'].is_linked
+                        assert max(abs(v) for v in shader.inputs['Emission Color'].default_value[:3])<.000001, 'Unexpected authored-block emission: '+obj.name
+                if kind=='glass':
+                    assert not shader.inputs['Metallic'].is_linked and not shader.inputs['Roughness'].is_linked
+                    assert abs(shader.inputs['Metallic'].default_value-.86)<.000001 and abs(shader.inputs['Roughness'].default_value-.11)<.000001
             for i,box_id in enumerate(ids):
                 vertices=[obj.matrix_world@v.co for v in obj.data.vertices[i*8:(i+1)*8]]
                 maximum=max(maximum,box_bounds_error(vertices,source_by_id[box_id]))
@@ -280,6 +338,8 @@ def verify_city(root):
         'serviceMechanisms':len(service_checks),'serviceMechanismParts':sum(len(r['parts']) for r in service_checks),
         'serviceShuttersReplaced':len(removed_shutters),'serviceMechanismSourceHash':service_source['sourceHash'],
         'authoredBlockAssemblies':len(block_checks),'authoredBlockVoxelModules':sum(a['modules'] for a in block_checks),
+        'industrialMaterialProfiles':sorted({item['profile'] for item in profile_checks}),'industrialProfileVoxelModules':sum(item['modules'] for item in profile_checks),
+        'mountedNativeTaskLights':len(practical_checks),
         'serviceCourtFrontages':sum(1 for item in frontages if item.get('courtyard')),
         'facadeRecordsRefit':len(refits),'facadeRefitFragments':len(expected_fragments),
         'facadeRefitMaximumBoundsErrorMetres':max((item['boundsErrorMetres'] for item in fragment_checks),default=0),
@@ -299,6 +359,8 @@ def verify_city(root):
         'trafficMovementOver30FramesMetres':distance,'sharedAnchorsChecked':anchors}
     report['streetFrontages']={'count':len(frontages),'serviceCourts':manifest['serviceCourtFrontages'],'voxelModules':manifest['streetFrontageVoxelModules'],'checks':frontage_checks}
     report['authoredBlocks']={'count':len(block_checks),'modules':manifest['authoredBlockVoxelModules'],'checks':block_checks}
+    report['industrialMaterials']={'profiles':manifest['industrialMaterialProfiles'],'modules':manifest['industrialProfileVoxelModules'],'checks':profile_checks,'scope':'Saved face assignments, source colors, actual shader metallic value and connected roughness base/range. Native noise remains an editable approximation of the runtime finish.'}
+    report['mountedTaskLights']={'count':len(practical_checks),'checks':practical_checks,'scope':'Native rectangular emitters follow the actual three dock fixture faces, directed downward. Power is a Cycles preview calibration; runtime lights remain separate.'}
     report['characters']={'count':len(citizen_checks),'voxelParts':character_source['counts']['voxelPieces'],'freshSourceCompared':True,
         'sourceHashes':character_source['sourceHashes'],'maximumWorldErrorMetres':manifest['civilianMaximumWorldErrorMetres'],'checks':citizen_checks,
         'materialChecks':citizen_material_checks}

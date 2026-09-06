@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "sourceSHA256": "ce7b14599ba05df7ea64b5fdda93f12aa439ac584f7c73854e9a1c8ec2835d28",
+  "tests": [
+    {
+      "name": "Actual GLB boot sole geometry is cached in the animated joint frame",
+      "passed": true,
+      "records": [
+        {
+          "name": "left_leg",
+          "geometryVertices": 408,
+          "soleVertices": 12,
+          "localBounds": {
+            "minX": -0.12499999999999999,
+            "maxX": 0.12499999999999999,
+            "minZ": -0.270000010728836,
+            "maxZ": 0.15999999642372129,
+            "y": -0.8299999833106994
+          }
+        },
+        {
+          "name": "right_leg",
+          "geometryVertices": 408,
+          "soleVertices": 12,
+          "localBounds": {
+            "minX": -0.12500000000000006,
+            "maxX": 0.12499999999999994,
+            "minZ": -0.27000001072883606,
+            "maxZ": 0.1599999964237213,
+            "y": -0.8299999833106996
+          }
+        }
+      ],
+      "actualGLBSHA256": "0ef50f480df79a0de273e15c2bafd711bb09201ab0e5450223efccaf00f31a16"
+    },
+    {
+      "name": "OBB support handles rotated edges, separate levels and missing surfaces",
+      "passed": true,
+      "rotatedSupport": true,
+      "noLowerFloorProjection": true,
+      "invalidDynamicPlaneRejected": true
+    },
+    {
+      "name": "Per-foot lift, airborne, visibility, vehicle and reset clear the receiver cue",
+      "passed": true,
+      "independentFootFade": true,
+      "clearedStates": 5
+    },
+    {
+      "name": "Footprint falloff is bounded, stays on its support and toggles without pose changes",
+      "passed": true,
+      "maximumAttenuation": 0.28,
+      "outsideFalloffSamples": [
+        0.72,
+        0.76375,
+        0.8599999999999999,
+        0.95625,
+        1,
+        1
+      ],
+      "supportClipped": true,
+      "togglePreservesPose": true
+    },
+    {
+      "name": "Actual city bench ground and elevated landing resolve their own receiving levels",
+      "passed": true,
+      "cases": [
+        {
+          "name": "bench ground",
+          "feet": [
+            {
+              "supportTop": 0.185,
+              "gap": 5.551115123125783e-17,
+              "gain": 1,
+              "support": null
+            },
+            {
+              "supportTop": 0.185,
+              "gap": 5.551115123125783e-17,
+              "gain": 1,
+              "support": null
+            }
+          ],
+          "candidates": 1
+        },
+        {
+          "name": "housing landing",
+          "feet": [
+            {
+              "supportTop": 3.065,
+              "gap": 0,
+              "gain": 1,
+              "support": "STREET-VOXEL-160939"
+            },
+            {
+              "supportTop": 3.065,
+              "gap": 0,
+              "gain": 1,
+              "support": "STREET-VOXEL-160939"
+            }
+          ],
+          "candidates": 2
+        }
+      ]
+    },
+    {
+      "name": "Shader hook follows installed AO accumulation and leaves direct/emitted light untouched",
+      "passed": true,
+      "threeRevision": "180",
+      "sharedUniforms": 6,
+      "fixedFootCount": 2,
+      "ambientOnly": true,
+      "inactiveUniformGuard": true,
+      "zeroCoverageGuard": true,
+      "stockSpecularIdentitySamples": 1089
+    }
+  ]
+}

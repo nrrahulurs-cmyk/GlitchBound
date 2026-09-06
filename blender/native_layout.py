@@ -18,6 +18,7 @@ def read_native_layout(root):
     script += 'const anchors=await import('+module('asset-placements.js')+');city.nativePlacements=anchors.SCENE_PLACEMENTS;'
     script += 'const adverts=await import('+module('advert-campaigns.js')+');city.nativeAdvertCampaigns=adverts.ADVERT_CAMPAIGNS;'
     script += 'const aircraft=await import('+module('aircraft-source.js')+');city.nativeAircraftGeometry={body:aircraft.AIRCRAFT_BODY_PARTS,glow:aircraft.AIRCRAFT_GLOW_PARTS};'
+    script += 'const finishes=await import('+module('surface-profiles.js')+');city.nativeSurfaceProfiles=finishes.SURFACE_PROFILES;'
     script += 'const service=await import('+module('city-services.js')+');const fixtures=await import('+module('service-fixtures.js')+');'
     script += '''
 const pavement=city.boxes.filter(b=>b.kind==='pavement'&&b.sx>=1&&b.sz>=1&&b.y+b.sy/2>=.08&&b.y+b.sy/2<=.4);

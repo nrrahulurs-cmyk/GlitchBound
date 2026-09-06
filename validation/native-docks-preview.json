@@ -1,0 +1,52 @@
+{
+  "status": "captured",
+  "checkedAtUTC": "2026-09-06T15:04:33.632585+00:00",
+  "nativeSHA256": "5d016b746b7caae94e2ceb84caa8e250bb6f40d3c1e56fd06d4c3b13311e54c3",
+  "views": [
+    {
+      "id": "work-apron",
+      "position": [
+        194,
+        1.935,
+        -21.7
+      ],
+      "target": [
+        182.4,
+        2.5,
+        -30.1
+      ],
+      "file": "city-docks-preview.png",
+      "observerOnly": false,
+      "image": "blender/city-docks-preview.png",
+      "imageSHA256": "81a354d7698e8cdeb95c5a73a5bf0ce3cf97b1ecee509a598e34b1d6b1b8c96c"
+    },
+    {
+      "id": "process-roof",
+      "position": [
+        134,
+        24,
+        -19
+      ],
+      "target": [
+        116.7,
+        15,
+        -45
+      ],
+      "file": "city-docks-roof-preview.png",
+      "observerOnly": true,
+      "image": "blender/city-docks-roof-preview.png",
+      "imageSHA256": "0b38990cdfad6c5b41dbb20556c46cec78a7a305a56eeb27328d4f789d896fa8"
+    }
+  ],
+  "method": "Fresh native file opened; actual Cycles renders with existing street-scene lighting/materials. No native geometry, lighting or saved viewpoint edits. Process roof uses an elevated inspection camera, not a walking reachability claim.",
+  "frame": 1,
+  "samples": 16,
+  "resolution": [
+    1100,
+    720
+  ],
+  "verticalFOV": 66,
+  "blenderVersion": "5.2.1 LTS",
+  "fullCityPreviewsRefreshed": false,
+  "visualAcceptance": "Bounded review completed in validation/native-docks-visual-review.md. Three mapped practical lights resolve the first apron readability failure: shutter, cabinet, workbench and framing are legible without obvious bleaching. Visible roof cap/front/base joins remain coherent; shadowed or occluded side/rear joins and the plain oversized crane remain limitations. Before images are preserved. No full-city, exact runtime/native lighting parity or publication claim."
+}

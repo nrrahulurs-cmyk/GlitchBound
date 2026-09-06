@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "build": "Y0FsMvtw",
+  "bundleSHA256": "10230ce13f05aaa5562ac79b9a51ce366d49e20a3e9e4bce469e86d7d83612d4",
+  "checkedAtUTC": "2026-09-06T14:44:25.644Z",
+  "positive": {
+    "artifact": "outputs/neon-district/validation/foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z.json",
+    "poses": [
+      {
+        "id": "bench-ground",
+        "frozenFrameVerified": true,
+        "repeatMax": 0,
+        "repeatChanged": 0,
+        "roiLumaChanges": [
+          -1.2205548354558051,
+          -1.443755448898915
+        ],
+        "images": {
+          "off": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-bench-ground-off.png",
+          "on": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-bench-ground-on.png"
+        }
+      },
+      {
+        "id": "landing",
+        "frozenFrameVerified": true,
+        "repeatMax": 0,
+        "repeatChanged": 0,
+        "roiLumaChanges": [
+          -1.2551162867996164,
+          -1.5925052947052947
+        ],
+        "images": {
+          "off": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-landing-off.png",
+          "on": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-landing-on.png"
+        }
+      }
+    ]
+  },
+  "negative": {
+    "artifact": "outputs/neon-district/validation/foot-contact-negative-Y0FsMvtw-2026-09-06T14-44-05-069Z.json",
+    "results": [
+      {
+        "id": "actual-V-first-person-hidden",
+        "passed": true,
+        "maximumChannelDifference": 0,
+        "pixelsAboveOne": 0,
+        "elapsedFrozen": true
+      },
+      {
+        "id": "actual-Space-airborne",
+        "passed": true,
+        "maximumChannelDifference": 1,
+        "pixelsAboveOne": 0,
+        "elapsedFrozen": true
+      },
+      {
+        "id": "real-jump-landing-contact-restores",
+        "passed": true
+      },
+      {
+        "id": "actual-W-stair-per-foot-support-and-fade",
+        "passed": true,
+        "frames": 103,
+        "zeroGainSamples": 109,
+        "partialGainSamples": 32
+      },
+      {
+        "id": "lower-ground-under-occupied-landing",
+        "passed": true,
+        "maximumChannelDifference": 0,
+        "pixelsAboveOne": 0,
+        "elapsedFrozen": true
+      },
+      {
+        "id": "actual-E-vehicle",
+        "passed": true,
+        "maximumChannelDifference": 0,
+        "pixelsAboveOne": 0,
+        "elapsedFrozen": true
+      },
+      {
+        "id": "production-restart-clears-old-contact",
+        "passed": true
+      },
+      {
+        "id": "post-restart-hidden-avatar",
+        "passed": true,
+        "maximumChannelDifference": 1,
+        "pixelsAboveOne": 0,
+        "elapsedFrozen": true
+      }
+    ]
+  },
+  "blueprint": {
+    "id": "actual-Iron-Docks-focus-and-canvas-route-pick",
+    "passed": true,
+    "counts": {
+      "frontages": 77,
+      "assemblies": 31,
+      "routes": 15,
+      "entrances": 2
+    },
+    "selected": "DOCKS-CONTAINER-CROSS-AISLE",
+    "width": 0.8,
+    "points": [
+      {
+        "x": 140.8,
+        "y": 0.185,
+        "z": -13.3285
+      },
+      {
+        "x": 159,
+        "y": 0.185,
+        "z": -13.3285
+      }
+    ],
+    "image": "foot-contact-negative-Y0FsMvtw-2026-09-06T14-44-05-069Z-blueprint-dock-route.png"
+  },
+  "visualAssessment": "Final guard keeps restrained, attached contact shading at settled bench and landing soles. No detached ring/halo or new visible artifact observed. Geometry, real support heights and animation remain unchanged; no AAA/animation parity claim.",
+  "scopeLimits": [
+    "Negative controls cover actual hidden/airborne/vehicle transitions, jump landing, actualWstair fade, lower floor beneath occupied landing and production restart.",
+    "They do not exhaust every support edge/orientation, dynamic tilted object or lighting condition.",
+    "Blueprint proves actual focus/canvas route selection, not every UI interaction.",
+    "Performance is measured separately and remains below60FPS under the24death load."
+  ],
+  "performance": "validation/performance-docks-contact-profile.json",
+  "errors": [],
+  "chromeClosed": true
+}

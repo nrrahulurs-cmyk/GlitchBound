@@ -1,0 +1,573 @@
+{
+  "status": "captured",
+  "build": "Bynkp4Gf",
+  "bundleSHA256": "9f70ab3b45ff8895c4952856d937040597ca90181174547f1e23854f90ded9e5",
+  "phase": "baseline",
+  "checkedAtUTC": "2026-09-06T13:59:33.872Z",
+  "viewport": {
+    "width": 1100,
+    "height": 720
+  },
+  "candidateSHA256": "7fa0e8a1ef273724035a1aa6d282249dceca2888e21cc8e8656feff67b6f82eb",
+  "candidateStatus": "PRIVATE CANDIDATE / not integrated or visually approved",
+  "method": "Exact authored observer camera applied before primary scene render; real player XZ selects district LOD and lighting. Elevated process view is an observation camera, not a reachable walking-height claim. Hiding billboard meshes is an explicitly labeled diagnostic only; mount geometry and spill lights remain. No source changes or performance measurement.",
+  "captures": [
+    {
+      "view": {
+        "id": "docks-existing-court",
+        "position": {
+          "x": 140,
+          "y": 1.935,
+          "z": -6
+        },
+        "target": {
+          "x": 156,
+          "y": 3,
+          "z": -38
+        }
+      },
+      "state": {
+        "camera": [
+          140,
+          1.935,
+          -6
+        ],
+        "quaternion": [
+          0.014480859323276331,
+          -0.22972748765054182,
+          0.003418467172904817,
+          0.9731412539879384
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          140,
+          1.935,
+          -6
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 1.5507999999999997,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD164",
+              "distance": 30.82920693109052,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD161",
+              "distance": 38.40885314611723,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD168",
+              "distance": 42.31359119715555,
+              "position": [
+                171,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD162",
+              "distance": 45.79082877607699,
+              "position": [
+                104.39999999999999,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 161455,
+        "authoredDocksBoxes": 0
+      },
+      "image": "iron-docks-baseline-Bynkp4Gf-2026-09-06T13-59-15-331Z-docks-existing-court.png",
+      "imageSHA256": "735c16835a2b62c3d710050c28176cedaae07b358fa10a3b8cd9aebb0d36c77d",
+      "bytes": 518941
+    },
+    {
+      "view": {
+        "id": "B074-process-roof",
+        "position": {
+          "x": 134,
+          "y": 5.9,
+          "z": -15
+        },
+        "target": {
+          "x": 116.7,
+          "y": 10,
+          "z": -40
+        }
+      },
+      "state": {
+        "camera": [
+          134,
+          5.9,
+          -15
+        ],
+        "quaternion": [
+          0.06393054564312423,
+          0.29739902712938343,
+          -0.01996310030444954,
+          0.9524012697505727
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          134,
+          1.935,
+          -15
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 3.0846,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD161",
+              "distance": 28.246061672381863,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD164",
+              "distance": 38.1292538610448,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD159",
+              "distance": 40.60788100849391,
+              "position": [
+                104.39999999999999,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 46.28001728608147,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 161455,
+        "authoredDocksBoxes": 0
+      },
+      "image": "iron-docks-baseline-Bynkp4Gf-2026-09-06T13-59-15-331Z-B074-process-roof.png",
+      "imageSHA256": "fdd0ae2d0c5d3577a6b8b4257bf450f8eec0de694b2df2f966a6610b625911a6",
+      "bytes": 691932
+    },
+    {
+      "view": {
+        "id": "B076-work-apron",
+        "position": {
+          "x": 194,
+          "y": 1.935,
+          "z": -21.7
+        },
+        "target": {
+          "x": 182.4,
+          "y": 2.5,
+          "z": -30.1
+        }
+      },
+      "state": {
+        "camera": [
+          194,
+          1.935,
+          -21.7
+        ],
+        "quaternion": [
+          0.01755769720897289,
+          0.4546039475900002,
+          -0.008963523842034977,
+          0.8904755096826862
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          194,
+          1.935,
+          -21.7
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 4.585200000000006,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD166",
+              "distance": 21.160576551691594,
+              "position": [
+                195.60000000000002,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 31.212337304341695,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD175",
+              "distance": 37.00499966220779,
+              "position": [
+                224.39999999999998,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD169",
+              "distance": 44.52875475465264,
+              "position": [
+                195.60000000000002,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 10,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 161455,
+        "authoredDocksBoxes": 0
+      },
+      "image": "iron-docks-baseline-Bynkp4Gf-2026-09-06T13-59-15-331Z-B076-work-apron.png",
+      "imageSHA256": "29e73186dddb60477a2b3c38a9d6cb8402c47438d3315a3443824c68701376b3",
+      "bytes": 613963
+    },
+    {
+      "view": {
+        "id": "container-west-face",
+        "position": {
+          "x": 140.4,
+          "y": 1.935,
+          "z": -15.2
+        },
+        "target": {
+          "x": 145.3,
+          "y": 1.5,
+          "z": -16.8
+        }
+      },
+      "state": {
+        "camera": [
+          140.4,
+          1.935,
+          -15.2
+        ],
+        "quaternion": [
+          -0.03406392129512259,
+          -0.5866757837234544,
+          -0.024711008413262295,
+          0.8087277292894499
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          140.4,
+          1.935,
+          -15.2
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 6.069100000000024,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD161",
+              "distance": 29.861681131510327,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD164",
+              "distance": 39.67316473386009,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 41.20825160086266,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD159",
+              "distance": 45.362539611445925,
+              "position": [
+                104.39999999999999,
+                3.46,
+                -42.8
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 161455,
+        "authoredDocksBoxes": 0
+      },
+      "image": "iron-docks-baseline-Bynkp4Gf-2026-09-06T13-59-15-331Z-container-west-face.png",
+      "imageSHA256": "4e715116e4f3ada12dcd2d1d113ed4f4f547fa7672068e356ca1166294f73830",
+      "bytes": 422296
+    },
+    {
+      "view": {
+        "id": "container-east-counterview",
+        "position": {
+          "x": 147.65,
+          "y": 1.935,
+          "z": -15.2
+        },
+        "target": {
+          "x": 145.3,
+          "y": 1.5,
+          "z": -16.8
+        },
+        "derived": true
+      },
+      "state": {
+        "camera": [
+          147.65,
+          1.935,
+          -15.2
+        ],
+        "quaternion": [
+          -0.0670423655828645,
+          0.4662049684310388,
+          0.03546038450443942,
+          0.8814197693256401
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          147.65,
+          1.935,
+          -15.2
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 7.503100000000035,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD161",
+              "distance": 33.31039627503702,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 36.152212933650404,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD164",
+              "distance": 42.32992440342884,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD168",
+              "distance": 44.60070066714199,
+              "position": [
+                171,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 161455,
+        "authoredDocksBoxes": 0
+      },
+      "image": "iron-docks-baseline-Bynkp4Gf-2026-09-06T13-59-15-331Z-container-east-counterview.png",
+      "imageSHA256": "7a00bd0f7c6ee2487c83b6fcb474861641c19666dda184edb67a9d98caf12d17",
+      "bytes": 321497
+    },
+    {
+      "view": {
+        "id": "docks-existing-court-ad-hidden",
+        "position": {
+          "x": 140,
+          "y": 1.935,
+          "z": -6
+        },
+        "target": {
+          "x": 156,
+          "y": 3,
+          "z": -38
+        },
+        "hideAds": true
+      },
+      "state": {
+        "camera": [
+          140,
+          1.935,
+          -6
+        ],
+        "quaternion": [
+          0.014480859323276331,
+          -0.22972748765054182,
+          0.003418467172904817,
+          0.9731412539879384
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          140,
+          1.935,
+          -6
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 8.920300000000022,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD164",
+              "distance": 30.82920693109052,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD161",
+              "distance": 38.40885314611723,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD168",
+              "distance": 42.31359119715555,
+              "position": [
+                171,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD162",
+              "distance": 45.79082877607699,
+              "position": [
+                104.39999999999999,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 646,
+        "sourceBoxes": 161455,
+        "authoredDocksBoxes": 0
+      },
+      "image": "iron-docks-baseline-Bynkp4Gf-2026-09-06T13-59-15-331Z-docks-existing-court-ad-hidden.png",
+      "imageSHA256": "1f94c538c352668219d0fc811839e95bc54a8242572575aabaeeccaade142ba2",
+      "bytes": 510220
+    }
+  ],
+  "errors": [],
+  "scratchProfile": "D:\\Temp\\neon-district-browser\\iron-docks-baseline-Bynkp4Gf-2026-09-06T13-59-15-331Z",
+  "chromeClosed": true
+}

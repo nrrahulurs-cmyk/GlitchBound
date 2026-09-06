@@ -1,0 +1,327 @@
+{
+  "status": "measured",
+  "finalBuild": "Y0FsMvtw",
+  "finalBundleSHA256": "10230ce13f05aaa5562ac79b9a51ce366d49e20a3e9e4bce469e86d7d83612d4",
+  "cleanSamples": {
+    "before": {
+      "build": "Bynkp4Gf",
+      "bundleSHA256": "9f70ab3b45ff8895c4952856d937040597ca90181174547f1e23854f90ded9e5",
+      "phases": [
+        {
+          "name": "control-baseline",
+          "fps": 59.97600959616154,
+          "meanMs": 16.673333333333332,
+          "p95Ms": 16.799999999999272,
+          "maxMs": 16.80000000000291,
+          "frames": 300,
+          "over25ms": 0,
+          "bodies": 2649,
+          "drawCalls": 444,
+          "triangles": 3119962,
+          "articulated": 0,
+          "joints": 0,
+          "solverIterations": 7
+        },
+        {
+          "name": "control-24-new-deaths",
+          "fps": 55.87840858292357,
+          "meanMs": 17.895999999999997,
+          "p95Ms": 33.29999999999927,
+          "maxMs": 33.5,
+          "frames": 300,
+          "over25ms": 22,
+          "bodies": 2920,
+          "drawCalls": 444,
+          "triangles": 3119962,
+          "articulated": 24,
+          "joints": 240,
+          "solverIterations": 12
+        }
+      ]
+    },
+    "currentFirst": {
+      "build": "cA0mxVCY",
+      "bundleSHA256": "37b91e7f79500afc132cccf7224d850bab03a077e1628041546a2c0795e6a36d",
+      "phases": [
+        {
+          "name": "control-baseline",
+          "fps": 59.97600959616154,
+          "meanMs": 16.673333333333332,
+          "p95Ms": 16.799999999999272,
+          "maxMs": 16.80000000000291,
+          "frames": 300,
+          "over25ms": 0,
+          "bodies": 2776,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 0,
+          "joints": 0,
+          "solverIterations": 7
+        },
+        {
+          "name": "control-24-new-deaths",
+          "fps": 50.541637886011756,
+          "meanMs": 19.785666666666668,
+          "p95Ms": 33.400000000001455,
+          "maxMs": 33.5,
+          "frames": 300,
+          "over25ms": 56,
+          "bodies": 3047,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 24,
+          "joints": 240,
+          "solverIterations": 12
+        }
+      ]
+    },
+    "currentSecond": {
+      "build": "cA0mxVCY",
+      "bundleSHA256": "37b91e7f79500afc132cccf7224d850bab03a077e1628041546a2c0795e6a36d",
+      "phases": [
+        {
+          "name": "control-baseline",
+          "fps": 59.97600959616154,
+          "meanMs": 16.673333333333332,
+          "p95Ms": 16.799999999999272,
+          "maxMs": 16.80000000000291,
+          "frames": 300,
+          "over25ms": 0,
+          "bodies": 2776,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 0,
+          "joints": 0,
+          "solverIterations": 7
+        },
+        {
+          "name": "control-24-new-deaths",
+          "fps": 54.523645087419574,
+          "meanMs": 18.340666666666667,
+          "p95Ms": 33.29999999999927,
+          "maxMs": 33.400000000001455,
+          "frames": 300,
+          "over25ms": 30,
+          "bodies": 3047,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 24,
+          "joints": 240,
+          "solverIterations": 12
+        }
+      ]
+    },
+    "guard": {
+      "build": "Y0FsMvtw",
+      "bundleSHA256": "10230ce13f05aaa5562ac79b9a51ce366d49e20a3e9e4bce469e86d7d83612d4",
+      "phases": [
+        {
+          "name": "control-baseline",
+          "fps": 59.97600959616154,
+          "meanMs": 16.673333333333332,
+          "p95Ms": 16.799999999999272,
+          "maxMs": 16.899999999997817,
+          "frames": 300,
+          "over25ms": 0,
+          "bodies": 2776,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 0,
+          "joints": 0,
+          "solverIterations": 7
+        },
+        {
+          "name": "control-24-new-deaths",
+          "fps": 54.19466724474313,
+          "meanMs": 18.451999999999995,
+          "p95Ms": 33.30000000000291,
+          "maxMs": 33.5,
+          "frames": 300,
+          "over25ms": 32,
+          "bodies": 3047,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 24,
+          "joints": 240,
+          "solverIterations": 12
+        }
+      ]
+    }
+  },
+  "unguardedInstrumented": {
+    "fps": 46.85596476431451,
+    "frames": 305,
+    "stepsPerRAF": 1.2950819672131149,
+    "actualIterationsPerStep": 12,
+    "cpuCallbackMs": 20.832131147384644,
+    "gpuIntervalMs": 9.413554780327871,
+    "gpuTimerAvailable": true,
+    "phaseCosts": {
+      "world.step": {
+        "msPerRAF": 8.453770490747983,
+        "msPerFixedStep": 6.527594935894012
+      },
+      "world.internalStep": {
+        "msPerRAF": 8.349180327575715,
+        "msPerFixedStep": 6.4468354428116275
+      },
+      "solver.solve": {
+        "msPerRAF": 4.615737704761693,
+        "msPerFixedStep": 3.564050632790674
+      },
+      "broadphase.collisionPairs": {
+        "msPerRAF": 1.2199999998827449,
+        "msPerFixedStep": 0.9420253163651574
+      },
+      "narrowphase.getContacts": {
+        "msPerRAF": 1.4649180334122454,
+        "msPerFixedStep": 1.131139240989202
+      },
+      "civilians.update": {
+        "msPerRAF": 6.284262295922295,
+        "msPerFixedStep": null
+      },
+      "traffic.update": {
+        "msPerRAF": 0.792786886262112,
+        "msPerFixedStep": null
+      }
+    },
+    "counts": {
+      "civilian solver selection calls": 1,
+      "broadphase.collisionPairs calls": 1.2950819672131149,
+      "broadphasePairs": 347.6327868852459,
+      "narrowphase.getContacts calls": 1.2950819672131149,
+      "solver.solve calls": 1.2950819672131149,
+      "solverEquations": 2477.773770491803,
+      "solverIterations": 15.540983606557377,
+      "actualIterations": 15.540983606557377,
+      "world.internalStep calls": 1.2950819672131149,
+      "world.step calls": 1,
+      "streetPhysics.update calls": 1,
+      "simulation.update calls": 1,
+      "traffic.afterPhysics calls": 1,
+      "living instance writes": 13588,
+      "corpse instance writes": 1099.6688524590163,
+      "civilians.update calls": 1,
+      "city.update calls": 1,
+      "traffic.update calls": 1
+    }
+  },
+  "olderInstrumented": {
+    "build": "C_4wor07",
+    "fps": 48.4981732354748,
+    "frames": 305,
+    "stepsPerRAF": 1.2459016393442623,
+    "actualIterationsPerStep": 12,
+    "cpuCallbackMs": 20.027540983919238,
+    "gpuIntervalMs": 9.203037167213122,
+    "gpuTimerAvailable": true,
+    "phaseCosts": {
+      "world.step": {
+        "msPerRAF": 8.06852458910864,
+        "msPerFixedStep": 6.4760526307319335
+      },
+      "world.internalStep": {
+        "msPerRAF": 7.957704916840694,
+        "msPerFixedStep": 6.387105262201083
+      },
+      "solver.solve": {
+        "msPerRAF": 4.342295082573031,
+        "msPerFixedStep": 3.4852631583809854
+      },
+      "broadphase.collisionPairs": {
+        "msPerRAF": 1.1045901635631186,
+        "msPerFixedStep": 0.8865789470703977
+      },
+      "narrowphase.getContacts": {
+        "msPerRAF": 1.520983606283782,
+        "msPerFixedStep": 1.2207894734646145
+      },
+      "civilians.update": {
+        "msPerRAF": 6.233114753981106,
+        "msPerFixedStep": null
+      },
+      "traffic.update": {
+        "msPerRAF": 0.7573770494734655,
+        "msPerFixedStep": null
+      }
+    },
+    "counts": {
+      "civilian solver selection calls": 1,
+      "broadphase.collisionPairs calls": 1.2459016393442623,
+      "broadphasePairs": 357.5606557377049,
+      "narrowphase.getContacts calls": 1.2459016393442623,
+      "solver.solve calls": 1.2459016393442623,
+      "solverEquations": 2383.849180327869,
+      "solverIterations": 14.950819672131148,
+      "actualIterations": 14.950819672131148,
+      "world.internalStep calls": 1.2459016393442623,
+      "world.step calls": 1,
+      "streetPhysics.update calls": 1,
+      "simulation.update calls": 1,
+      "traffic.afterPhysics calls": 1,
+      "living instance writes": 13588,
+      "corpse instance writes": 1059.4196721311475,
+      "civilians.update calls": 1,
+      "city.update calls": 1,
+      "traffic.update calls": 1
+    }
+  },
+  "sampledRenderCPU": {
+    "method": "Inclusive CDP subtree /305observed RAFs; approximate1ms sampling, not dedicated timers.",
+    "composerMsPerRAF": 4.012222950819672,
+    "reflectorMsPerRAF": 1.4600426229508197,
+    "overlap": "Reflector is included in composer."
+  },
+  "findings": [
+    "Baseline stayed59.976FPS. cA loaded clean samples were50.542 and54.524FPS; guarded Y0 was54.195FPS. Guard result lies within cA variation and does not demonstrate an FPS gain.",
+    "First cA loaded sample was9.55% below Byn55.878; subsequent cA control was only2.42% lower. Preserve both; do not report9.55% as a stable regression estimate.",
+    "Instrumented cA CPU20.832ms/RAF exceeds GPU9.414ms command-stream interval. This is not a complete attribution: GPU timings may include submission gaps and CPU instrumentation changes workload.",
+    "World.step normalized6.528ms/fixed-step is close to older6.476ms; current1.295 versus1.246steps/RAF increases per-frame sums. Solver3.564ms/step, broadphase.942ms/step and narrowphase1.131ms/step retained12actual iterations.",
+    "Living/corpse update remains6.284ms/RAF. Major sampled work includes living piece matrices/bounds, solver operations and crowd search. Composer sampled CPU subtree is approximately4.01ms/RAF including reflection.",
+    "Dock build has127more bodies and8more calls/19,368more triangles than Byn at this camera. The before/after build comparison does not isolate the shader.",
+    "No foot-controller timer was added to the already-running harness. Hidden zero-gain state and early return before support queries are independently established. No final guard CPU/GPU profile was requested; only its clean sample was run."
+  ],
+  "methods": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "browser": "152.0.7977.77",
+    "referenceIds": "Exact CS_PCoEN nearest32 IDs; first24 production deaths. Same camera/180RAF warmup/300RAF windows.",
+    "clean": "No wrappers, CPU profiles or GPU queries.",
+    "instrumented": "Separate fresh context, wrappers call originals,1ms CDP sampling and asynchronous disjoint GPU queries.",
+    "sourceHashesStable": true,
+    "chromeClosed": true,
+    "changesDuringMeasurements": "none",
+    "limitations": [
+      "One camera/browser and short fresh-death window; not a general60FPS guarantee.",
+      "Same IDs do not fix exact gait/contact timing.",
+      "Production death initialization is a stress fixture, not real gun-input proof.",
+      "Inclusive costs overlap; do not sum them.",
+      "Current first-person timing does not show third-person contact appearance."
+    ]
+  },
+  "artifacts": {
+    "before": {
+      "path": "work/performance-diagnosis/Bynkp4Gf-2026-09-06T13-45-13-094Z/report.json",
+      "sha256": "0a2004a7111e718fd8109d4595aa1db3d85dfccb36eda3b7b1bd1395c4897e50"
+    },
+    "clean": {
+      "path": "work/performance-diagnosis/cA0mxVCY-2026-09-06T14-32-39-067Z/report.json",
+      "sha256": "25288a3c34a4d74040ccec589bdca402ce6cd633d8e5b01daf7472d5535d9be7"
+    },
+    "profile": {
+      "path": "work/performance-diagnosis/cA0mxVCY-2026-09-06T14-36-34-131Z/report.json",
+      "sha256": "dcc7c948590fa0e6ed1c450a87e900c4c71b77917d1049c925c0d28d6e53fcf7"
+    },
+    "guard": {
+      "path": "work/performance-diagnosis/Y0FsMvtw-2026-09-06T14-45-42-829Z/report.json",
+      "sha256": "233a8e120c4d32c4113dd8ab3efdcda5ac185e99ef00928f750f7119f4e9ca4b"
+    },
+    "olderProfile": {
+      "path": "work/performance-diagnosis/C_4wor07-2026-09-06T11-57-58-268Z/report.json",
+      "sha256": "326d5ff6af5fce19969d9a93c8709e24174e2f48b38f79729f3dab096f98a9d7"
+    }
+  }
+}

@@ -1,0 +1,771 @@
+{
+  "status": "captured",
+  "build": "cA0mxVCY",
+  "bundleSHA256": "37b91e7f79500afc132cccf7224d850bab03a077e1628041546a2c0795e6a36d",
+  "phase": "after",
+  "checkedAtUTC": "2026-09-06T14:19:51.979Z",
+  "viewport": {
+    "width": 1100,
+    "height": 720
+  },
+  "candidateSHA256": "7fa0e8a1ef273724035a1aa6d282249dceca2888e21cc8e8656feff67b6f82eb",
+  "method": "Exact authored observer camera applied before primary scene render; real player XZ selects district LOD and lighting. Elevated process view is an observation camera, not a reachable walking-height claim. Hiding billboard meshes is an explicitly labeled diagnostic only; mount geometry and spill lights remain. Optional route proof uses real W after one initial placement per route, aim hook changes heading only, no jumping or movement injection. No source changes or performance measurement.",
+  "captures": [
+    {
+      "view": {
+        "id": "docks-existing-court",
+        "position": {
+          "x": 140,
+          "y": 1.935,
+          "z": -6
+        },
+        "target": {
+          "x": 156,
+          "y": 3,
+          "z": -38
+        }
+      },
+      "state": {
+        "camera": [
+          140,
+          1.935,
+          -6
+        ],
+        "quaternion": [
+          0.014480859323276331,
+          -0.22972748765054182,
+          0.003418467172904817,
+          0.9731412539879384
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          140,
+          1.935,
+          -6
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 1.6672000000000005,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD164",
+              "distance": 30.82920693109052,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD161",
+              "distance": 38.40885314611723,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD168",
+              "distance": 42.31359119715555,
+              "position": [
+                171,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD162",
+              "distance": 45.79082877607699,
+              "position": [
+                104.39999999999999,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 162262,
+        "authoredDocksBoxes": 954
+      },
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-docks-existing-court.png",
+      "imageSHA256": "08f75e0fa188a3d5bf0edf0b307fb2247b834a50638f6d396df755ea2b5a7798",
+      "bytes": 561499
+    },
+    {
+      "view": {
+        "id": "B074-process-roof",
+        "position": {
+          "x": 134,
+          "y": 5.9,
+          "z": -15
+        },
+        "target": {
+          "x": 116.7,
+          "y": 10,
+          "z": -40
+        }
+      },
+      "state": {
+        "camera": [
+          134,
+          5.9,
+          -15
+        ],
+        "quaternion": [
+          0.06393054564312423,
+          0.29739902712938343,
+          -0.01996310030444954,
+          0.9524012697505727
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          134,
+          1.935,
+          -15
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 3.234499999999999,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD161",
+              "distance": 28.246061672381863,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD164",
+              "distance": 38.1292538610448,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD159",
+              "distance": 40.60788100849391,
+              "position": [
+                104.39999999999999,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 46.28001728608147,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 162262,
+        "authoredDocksBoxes": 954
+      },
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-B074-process-roof.png",
+      "imageSHA256": "0022e9360b050290eac43f62442467184faf7cb8e8c4621bfa75be2ef2560206",
+      "bytes": 694931
+    },
+    {
+      "view": {
+        "id": "B076-work-apron",
+        "position": {
+          "x": 194,
+          "y": 1.935,
+          "z": -21.7
+        },
+        "target": {
+          "x": 182.4,
+          "y": 2.5,
+          "z": -30.1
+        }
+      },
+      "state": {
+        "camera": [
+          194,
+          1.935,
+          -21.7
+        ],
+        "quaternion": [
+          0.01755769720897289,
+          0.4546039475900002,
+          -0.008963523842034977,
+          0.8904755096826862
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          194,
+          1.935,
+          -21.7
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 4.851900000000003,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD166",
+              "distance": 21.160576551691594,
+              "position": [
+                195.60000000000002,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 31.212337304341695,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD175",
+              "distance": 37.00499966220779,
+              "position": [
+                224.39999999999998,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD169",
+              "distance": 44.52875475465264,
+              "position": [
+                195.60000000000002,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 10,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 162262,
+        "authoredDocksBoxes": 954
+      },
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-B076-work-apron.png",
+      "imageSHA256": "26db46f21c76e6d6305422e7edbf205aa34b277ccb2595bbffaf1b1212fdcf7e",
+      "bytes": 642291
+    },
+    {
+      "view": {
+        "id": "container-west-face",
+        "position": {
+          "x": 140.4,
+          "y": 1.935,
+          "z": -15.2
+        },
+        "target": {
+          "x": 145.3,
+          "y": 1.5,
+          "z": -16.8
+        }
+      },
+      "state": {
+        "camera": [
+          140.4,
+          1.935,
+          -15.2
+        ],
+        "quaternion": [
+          -0.03406392129512259,
+          -0.5866757837234544,
+          -0.024711008413262295,
+          0.8087277292894499
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          140.4,
+          1.935,
+          -15.2
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 6.36910000000002,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD161",
+              "distance": 29.861681131510327,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD164",
+              "distance": 39.67316473386009,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 41.20825160086266,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD159",
+              "distance": 45.362539611445925,
+              "position": [
+                104.39999999999999,
+                3.46,
+                -42.8
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 162262,
+        "authoredDocksBoxes": 954
+      },
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-container-west-face.png",
+      "imageSHA256": "659f2a2cc53d4a5867dbe0f6f5b7769fc6b8241b87445bcc8320444d2b6bfade",
+      "bytes": 467102
+    },
+    {
+      "view": {
+        "id": "container-east-counterview",
+        "position": {
+          "x": 147.65,
+          "y": 1.935,
+          "z": -15.2
+        },
+        "target": {
+          "x": 145.3,
+          "y": 1.5,
+          "z": -16.8
+        },
+        "derived": true
+      },
+      "state": {
+        "camera": [
+          147.65,
+          1.935,
+          -15.2
+        ],
+        "quaternion": [
+          -0.0670423655828645,
+          0.4662049684310388,
+          0.03546038450443942,
+          0.8814197693256401
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          147.65,
+          1.935,
+          -15.2
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 7.803000000000031,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD161",
+              "distance": 33.31039627503702,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD165",
+              "distance": 36.152212933650404,
+              "position": [
+                171,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD164",
+              "distance": 42.32992440342884,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD168",
+              "distance": 44.60070066714199,
+              "position": [
+                171,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 0,
+        "sourceBoxes": 162262,
+        "authoredDocksBoxes": 954
+      },
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-container-east-counterview.png",
+      "imageSHA256": "bd2ab76b1e9be8e67ed6cfe47178b1d411e4be974e7f6eeb0c8d2a3ae078fd84",
+      "bytes": 342222
+    },
+    {
+      "view": {
+        "id": "docks-existing-court-ad-hidden",
+        "position": {
+          "x": 140,
+          "y": 1.935,
+          "z": -6
+        },
+        "target": {
+          "x": 156,
+          "y": 3,
+          "z": -38
+        },
+        "hideAds": true
+      },
+      "state": {
+        "camera": [
+          140,
+          1.935,
+          -6
+        ],
+        "quaternion": [
+          0.014480859323276331,
+          -0.22972748765054182,
+          0.003418467172904817,
+          0.9731412539879384
+        ],
+        "fov": 66,
+        "near": 0.08,
+        "player": [
+          140,
+          1.935,
+          -6
+        ],
+        "groundY": 0.185,
+        "mode": "playing",
+        "elapsed": 9.22030000000002,
+        "district": "Iron Docks",
+        "nearLOD": true,
+        "farLOD": false,
+        "lighting": {
+          "nearestEmitters": [
+            {
+              "id": "AD164",
+              "distance": 30.82920693109052,
+              "position": [
+                129,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD161",
+              "distance": 38.40885314611723,
+              "position": [
+                129,
+                3.46,
+                -42.8
+              ]
+            },
+            {
+              "id": "AD168",
+              "distance": 42.31359119715555,
+              "position": [
+                171,
+                3.46,
+                22.799999999999997
+              ]
+            },
+            {
+              "id": "AD162",
+              "distance": 45.79082877607699,
+              "position": [
+                104.39999999999999,
+                3.46,
+                22.799999999999997
+              ]
+            }
+          ],
+          "activeLights": 4,
+          "visibleBlocks": 11,
+          "emitterCount": 418,
+          "pooledLights": 4
+        },
+        "insideStaticSolids": [],
+        "hiddenBillboardMeshes": 646,
+        "sourceBoxes": 162262,
+        "authoredDocksBoxes": 954
+      },
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-docks-existing-court-ad-hidden.png",
+      "imageSHA256": "9e082aacabd73629aaa88635d993a3590c108f73ca59c838281e6c139675d987",
+      "bytes": 553660
+    }
+  ],
+  "materials": {
+    "authored": 954,
+    "counts": {
+      "paintedSteel": 706,
+      "contactMetal": 121,
+      "nonmetal-base": 99,
+      "oxide": 28
+    },
+    "unmatched": [],
+    "batches": [
+      {
+        "name": "Shared Blender city / metal / paintedSteel / 706 voxels",
+        "count": 706,
+        "profile": "paintedSteel",
+        "material": "Voxel surface / metal / paintedSteel",
+        "roughness": 0.64,
+        "metalness": 0.32
+      },
+      {
+        "name": "Shared Blender city / metal / contactMetal / 121 voxels",
+        "count": 121,
+        "profile": "contactMetal",
+        "material": "Voxel surface / metal / contactMetal",
+        "roughness": 0.4,
+        "metalness": 0.78
+      },
+      {
+        "name": "Shared Blender city / metal / oxide / 28 voxels",
+        "count": 28,
+        "profile": "oxide",
+        "material": "Voxel surface / metal / oxide",
+        "roughness": 0.83,
+        "metalness": 0.06
+      }
+    ]
+  },
+  "walks": [
+    {
+      "id": "DOCKS-ROAD-TO-HANDLING",
+      "status": "passed",
+      "endpoints": [
+        {
+          "target": {
+            "x": 197.3,
+            "y": 0.057,
+            "z": -20
+          },
+          "position": [
+            197.0167442333359,
+            1.807,
+            -20
+          ]
+        },
+        {
+          "target": {
+            "x": 189,
+            "y": 0.185,
+            "z": -20
+          },
+          "position": [
+            188.715145308893,
+            1.935,
+            -20
+          ]
+        },
+        {
+          "target": {
+            "x": 184,
+            "y": 0.185,
+            "z": -24
+          },
+          "position": [
+            183.82609481666668,
+            1.935,
+            -24.14752901294881
+          ]
+        },
+        {
+          "target": {
+            "x": 184,
+            "y": 0.185,
+            "z": -28.8
+          },
+          "position": [
+            184.00835829616915,
+            1.935,
+            -29.02360880613358
+          ]
+        }
+      ],
+      "frames": 431,
+      "minFeet": 0.05699999999999994,
+      "maxFeet": 0.18500000000000005,
+      "keys": [
+        "KeyW"
+      ],
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-DOCKS-ROAD-TO-HANDLING-end.png"
+    },
+    {
+      "id": "DOCKS-CONTAINER-AISLE-147.65",
+      "status": "passed",
+      "endpoints": [
+        {
+          "target": {
+            "x": 147.65,
+            "y": 0.185,
+            "z": 1
+          },
+          "position": [
+            147.65,
+            1.935,
+            1.3173613599999883
+          ]
+        }
+      ],
+      "frames": 269,
+      "minFeet": 0.18500000000000005,
+      "maxFeet": 0.18500000000000005,
+      "keys": [
+        "KeyW"
+      ],
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-DOCKS-CONTAINER-AISLE-147.65-end.png"
+    },
+    {
+      "id": "DOCKS-CONTAINER-AISLE-152.35",
+      "status": "passed",
+      "endpoints": [
+        {
+          "target": {
+            "x": 152.35,
+            "y": 0.185,
+            "z": 1
+          },
+          "position": [
+            152.35,
+            1.935,
+            1.3170334444445588
+          ]
+        }
+      ],
+      "frames": 269,
+      "minFeet": 0.18500000000000005,
+      "maxFeet": 0.18500000000000005,
+      "keys": [
+        "KeyW"
+      ],
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-DOCKS-CONTAINER-AISLE-152.35-end.png"
+    },
+    {
+      "id": "DOCKS-CONTAINER-CROSS-AISLE",
+      "status": "passed",
+      "endpoints": [
+        {
+          "target": {
+            "x": 159,
+            "y": 0.185,
+            "z": -13.3285
+          },
+          "position": [
+            159.5455987577776,
+            1.935,
+            -13.3285
+          ]
+        }
+      ],
+      "frames": 226,
+      "minFeet": 0.18500000000000005,
+      "maxFeet": 0.18500000000000005,
+      "keys": [
+        "KeyW"
+      ],
+      "image": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-DOCKS-CONTAINER-CROSS-AISLE-end.png"
+    }
+  ],
+  "walkingRaw": {
+    "frames": 1245,
+    "teleports": [
+      [
+        210,
+        -20
+      ],
+      [
+        147.65,
+        -21.3
+      ],
+      [
+        152.35,
+        -21.3
+      ],
+      [
+        140.8,
+        -13.3285
+      ]
+    ],
+    "raw": "iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z-raw.json.gz"
+  },
+  "errors": [],
+  "scratchProfile": "D:\\Temp\\neon-district-browser\\iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z",
+  "chromeClosed": true,
+  "candidateSourceStatus": "PRIVATE CANDIDATE / not integrated or visually approved",
+  "integrationStatus": "Integrated in served cA0mxVCY: all954 authored modules matched actual instanced geometry/materials; four actual walking routes passed. Visual acceptance is limited to inspected views.",
+  "candidateProvenance": "candidateSourceStatus is the historical private JSON label, not the live build status. Raw evidence is unchanged."
+}

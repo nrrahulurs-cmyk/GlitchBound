@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "checkedAtUTC": "2026-09-06T13:40:40.810829+00:00",
+  "checkedAtUTC": "2026-09-06T15:02:20.852831+00:00",
   "method": "Complete native city regeneration from the final structural layout followed by fresh reopen. Checks compare embedded source blueprint/catalog, actual image-plane vertex dimensions, packed raster assets, character geometry, shared anchors, and vehicle animation.",
   "freshReopenVerified": true,
-  "citySHA256": "312d537cd8af507b912dcbdd67bc62815302f42b4c254fae22151e2cfd151592",
+  "citySHA256": "5d016b746b7caae94e2ceb84caa8e250bb6f40d3c1e56fd06d4c3b13311e54c3",
   "packedImages": [
     "advert-portrait.png",
     "advert-kuro-optics.png",
@@ -2269,10 +2269,10 @@
     }
   ],
   "counts": {
-    "nativeVoxelModules": 159646,
+    "nativeVoxelModules": 160453,
     "buildings": 185,
     "editableSigns": 646,
-    "structuralSupports": 5324,
+    "structuralSupports": 5775,
     "groundedPhysicalBins": 12
   },
   "trafficMovementOver30FramesMetres": 8.600006156741754,
@@ -2831,8 +2831,8 @@
     ]
   },
   "authoredBlocks": {
-    "count": 24,
-    "modules": 1459,
+    "count": 31,
+    "modules": 2413,
     "checks": [
       {
         "id": "COURT-15-GARDEN-0",
@@ -2953,8 +2953,294 @@
         "id": "HOUSING-COURT-SEAT-EDGE",
         "modules": 46,
         "maximumBoundsErrorMetres": 7.32421875682121e-06
+      },
+      {
+        "id": "DOCKS-B074-PROCESS",
+        "modules": 103,
+        "maximumBoundsErrorMetres": 3.662109378410605e-06
+      },
+      {
+        "id": "DOCKS-B074-ROOF",
+        "modules": 79,
+        "maximumBoundsErrorMetres": 3.662109378410605e-06
+      },
+      {
+        "id": "DOCKS-B076-APRON",
+        "modules": 106,
+        "maximumBoundsErrorMetres": 7.32421875682121e-06
+      },
+      {
+        "id": "DOCKS-FREIGHT-ROW-1",
+        "modules": 201,
+        "maximumBoundsErrorMetres": 7.32421878524292e-06
+      },
+      {
+        "id": "DOCKS-FREIGHT-ROW-2",
+        "modules": 201,
+        "maximumBoundsErrorMetres": 7.32421878524292e-06
+      },
+      {
+        "id": "DOCKS-FREIGHT-ROW-3",
+        "modules": 201,
+        "maximumBoundsErrorMetres": 7.32421878524292e-06
+      },
+      {
+        "id": "DOCKS-APRON-GROUND",
+        "modules": 63,
+        "maximumBoundsErrorMetres": 7.446289060908384e-06
       }
     ]
+  },
+  "industrialMaterials": {
+    "profiles": [
+      "contactMetal",
+      "oxide",
+      "paintedSteel"
+    ],
+    "modules": 855,
+    "checks": [
+      {
+        "assembly": "DOCKS-B074-PROCESS",
+        "profile": "contactMetal",
+        "modules": 17,
+        "maximumLinearColorError": 1.9123171490775803e-08,
+        "roughness": 0.4,
+        "metalness": 0.78,
+        "roughnessRange": [
+          0.28,
+          0.55
+        ]
+      },
+      {
+        "assembly": "DOCKS-B074-PROCESS",
+        "profile": "paintedSteel",
+        "modules": 75,
+        "maximumLinearColorError": 1.4742983445170665e-08,
+        "roughness": 0.64,
+        "metalness": 0.32,
+        "roughnessRange": [
+          0.54,
+          0.82
+        ]
+      },
+      {
+        "assembly": "DOCKS-B074-ROOF",
+        "profile": "paintedSteel",
+        "modules": 64,
+        "maximumLinearColorError": 1.4010067328484865e-08,
+        "roughness": 0.64,
+        "metalness": 0.32,
+        "roughnessRange": [
+          0.54,
+          0.82
+        ]
+      },
+      {
+        "assembly": "DOCKS-B076-APRON",
+        "profile": "contactMetal",
+        "modules": 14,
+        "maximumLinearColorError": 1.399586807560027e-08,
+        "roughness": 0.4,
+        "metalness": 0.78,
+        "roughnessRange": [
+          0.28,
+          0.55
+        ]
+      },
+      {
+        "assembly": "DOCKS-B076-APRON",
+        "profile": "oxide",
+        "modules": 1,
+        "maximumLinearColorError": 5.347991827164833e-09,
+        "roughness": 0.83,
+        "metalness": 0.06,
+        "roughnessRange": [
+          0.73,
+          0.96
+        ]
+      },
+      {
+        "assembly": "DOCKS-B076-APRON",
+        "profile": "paintedSteel",
+        "modules": 81,
+        "maximumLinearColorError": 1.4742983445170665e-08,
+        "roughness": 0.64,
+        "metalness": 0.32,
+        "roughnessRange": [
+          0.54,
+          0.82
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-1",
+        "profile": "contactMetal",
+        "modules": 30,
+        "maximumLinearColorError": 2.4902076289912145e-08,
+        "roughness": 0.4,
+        "metalness": 0.78,
+        "roughnessRange": [
+          0.28,
+          0.55
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-1",
+        "profile": "oxide",
+        "modules": 9,
+        "maximumLinearColorError": 6.917507233694664e-09,
+        "roughness": 0.83,
+        "metalness": 0.06,
+        "roughnessRange": [
+          0.73,
+          0.96
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-1",
+        "profile": "paintedSteel",
+        "modules": 162,
+        "maximumLinearColorError": 1.278216599231996e-08,
+        "roughness": 0.64,
+        "metalness": 0.32,
+        "roughnessRange": [
+          0.54,
+          0.82
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-2",
+        "profile": "contactMetal",
+        "modules": 30,
+        "maximumLinearColorError": 2.4902076289912145e-08,
+        "roughness": 0.4,
+        "metalness": 0.78,
+        "roughnessRange": [
+          0.28,
+          0.55
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-2",
+        "profile": "oxide",
+        "modules": 9,
+        "maximumLinearColorError": 6.917507233694664e-09,
+        "roughness": 0.83,
+        "metalness": 0.06,
+        "roughnessRange": [
+          0.73,
+          0.96
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-2",
+        "profile": "paintedSteel",
+        "modules": 162,
+        "maximumLinearColorError": 1.278216599231996e-08,
+        "roughness": 0.64,
+        "metalness": 0.32,
+        "roughnessRange": [
+          0.54,
+          0.82
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-3",
+        "profile": "contactMetal",
+        "modules": 30,
+        "maximumLinearColorError": 2.4902076289912145e-08,
+        "roughness": 0.4,
+        "metalness": 0.78,
+        "roughnessRange": [
+          0.28,
+          0.55
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-3",
+        "profile": "oxide",
+        "modules": 9,
+        "maximumLinearColorError": 6.917507233694664e-09,
+        "roughness": 0.83,
+        "metalness": 0.06,
+        "roughnessRange": [
+          0.73,
+          0.96
+        ]
+      },
+      {
+        "assembly": "DOCKS-FREIGHT-ROW-3",
+        "profile": "paintedSteel",
+        "modules": 162,
+        "maximumLinearColorError": 1.278216599231996e-08,
+        "roughness": 0.64,
+        "metalness": 0.32,
+        "roughnessRange": [
+          0.54,
+          0.82
+        ]
+      }
+    ],
+    "scope": "Saved face assignments, source colors, actual shader metallic value and connected roughness base/range. Native noise remains an editable approximation of the runtime finish."
+  },
+  "mountedTaskLights": {
+    "count": 3,
+    "checks": [
+      {
+        "id": "DOCKS-B074-PROCESS-103",
+        "assemblyId": "DOCKS-B074-PROCESS",
+        "position": [
+          113.7,
+          30.59,
+          5.0395
+        ],
+        "rotationZ": 0,
+        "width": 4.85,
+        "depth": 0.075,
+        "color": [
+          1.0,
+          0.6634873747093747,
+          0.33418692801480243
+        ],
+        "powerWatts": 95.0
+      },
+      {
+        "id": "DOCKS-B076-APRON-103",
+        "assemblyId": "DOCKS-B076-APRON",
+        "position": [
+          180.9,
+          29.37,
+          4.509
+        ],
+        "rotationZ": 0,
+        "width": 1.84,
+        "depth": 0.24,
+        "color": [
+          1.0,
+          0.7991440743489443,
+          0.4242174564404161
+        ],
+        "powerWatts": 120.0
+      },
+      {
+        "id": "DOCKS-B076-APRON-106",
+        "assemblyId": "DOCKS-B076-APRON",
+        "position": [
+          187.1,
+          29.37,
+          4.509
+        ],
+        "rotationZ": 0,
+        "width": 1.84,
+        "depth": 0.24,
+        "color": [
+          1.0,
+          0.7991440743489443,
+          0.4242174564404161
+        ],
+        "powerWatts": 120.0
+      }
+    ],
+    "scope": "Native rectangular emitters follow the actual three dock fixture faces, directed downward. Power is a Cycles preview calibration; runtime lights remain separate."
   },
   "characters": {
     "count": 284,
@@ -2973,20 +3259,22 @@
       "src/camera-obstruction.js": "b761e264079c6b0208d17bb957b851571a3905f57724979cc844ebfff7cfe711",
       "src/city-blueprint.js": "527be26daa88fcfe8fd896b2431a5bad6dabd6505e332fe14713c916ce8a9f56",
       "src/city-expansion.js": "4afa1aa2733da10f6e4441810912944f50f975baddad53dcd226358089585461",
-      "src/city-layout.js": "ff40ed51624d50afc7dfd01278edaf9f9d0607ff61408d6b000161fc04913a85",
+      "src/city-layout.js": "2dbd1f4c87651ee09dba88130737695495fd4b7a80db3924261bf8d1d3890257",
       "src/city-life.js": "d635d80cd461ab8a73cbcf4ac9fc0c9a85b263b624c7a6bf551db421cba39896",
       "src/city-services.js": "516c040b23d2f94a5ea3116ea028612f8d044c4d86d9d4cc614143970137c286",
       "src/city-shadows.js": "4bc0e767034555409b28416f469ff026dc53a1187f55d41c62ba69b30a1ca134",
-      "src/city.js": "772ef31415b837a9c2166fd22079a05b38532a98a2ecdcd8c674eb44933b07af",
+      "src/city.js": "95040e2caa13478bf2216e21965afbaf80f46139253abac6b95faf6a2202acd7",
       "src/civilian-motion.js": "d29d6f58b29fffc453f8aa107adbc1260a7161f49cef21c285097e63fa3425aa",
       "src/civilian-navigation.js": "785d6349bba11e916224d0993cec78551583c66aa62726af10230996fbbb2249",
       "src/civilian-ragdoll.js": "faafbdf01558c26f26160b4e89b8f7827cebb476f5fde7e57e8c3317ac3e8e6e",
       "src/civilian-source.js": "f5ce916b72dfc66203f4b376d8e1c1ad45741ff863497b8d8af7ed1c45557594",
       "src/civilians.js": "07fa47557a503d9b003002c3abbefa532f7436fe332e3efedbd6cb523e2b7d74",
+      "src/foot-contact.js": "ce7b14599ba05df7ea64b5fdda93f12aa439ac584f7c73854e9a1c8ec2835d28",
       "src/ground-height.js": "efaaa33c02bdcaf2882c3ec8cd3ad19081eba8c2a37db6fda1c5ea004f9803bc",
       "src/housing-compositions.js": "fe8f47f83f1312ba7163e3f190a42602eefa68c22c2b2024b6a4ca993216a8b5",
+      "src/iron-docks-compositions.js": "5f543f192aeb706454c182a3164ee0f3ca926abb4ef4ea3ef68bac79037a7602",
       "src/kinematic-pose.js": "0991c047a956cefa227e310e908bff47a8fc371933fba0fc8a1a9ee3f0f92624",
-      "src/main.js": "e7461954eb311f61cf261b1a86a666fe2fad1a6950843070bdcbaa35ecd2c364",
+      "src/main.js": "605f593b525da2e408a328d0ebd67ed5e1fcfbe8115c8748013988266544fb5a",
       "src/player-movement.js": "64babb415af0b8f8db8f273931274e0fb186c7aae18262b8a2536d21e1ee9271",
       "src/service-fixtures.js": "d76c455fe433af286608bb6825b3a9a1a53452b5d9d0d68a1fea01beb18debd8",
       "src/service-interface.js": "38a17f9d75ee073f7c1b88ee8f2c5e6066655cfefe7e691bdbfbe2fe3a0992d9",
@@ -2996,7 +3284,8 @@
       "src/street-collisions.js": "10b99defe84b0dd336e32a1bf32bf928e36cc3f3971b8d456b41139d4060d4f3",
       "src/street-detail.js": "8e0b007ac46d7b56119c14529497e20e633199c65a1013e43e3521ee2305c2b1",
       "src/street-physics.js": "bd4a9b9fcbf5077a5e141005878561b9914f36501bc89a33126c4b3dca860b65",
-      "src/surface-materials.js": "4f9cc88d3c9d48762a6796b3a0e1f605cc43bcd06fdbca7d40c68b63c502e50c",
+      "src/surface-materials.js": "28ae47e211794be176cc66bc1a18a5023201362cc1ecef5c730d120da8255cdc",
+      "src/surface-profiles.js": "bcdbd77154e88b625a153c55fa5e81b6a3ec076da26befedc1f0062dc7a92287",
       "src/vehicle-damage.js": "8f79045b2d8a1b8d0ee073c6aad0a57f16e943f778a0184c6c961bab1307b71f",
       "src/voxel-assets.js": "5a7af09ec9923147cf86f130db98f71789f6269426fe6ef96ef0e17a72108bf9",
       "src/weapon-rig.js": "690a9374bde7a3937628315c0c13a30cf55b2cf01775a6f115d5bca97ab6f9e9",
@@ -8578,7 +8867,7 @@
   "facadeRefits": {
     "sourceRecords": 547,
     "nativeFragments": 1413,
-    "actualNativeModulesCounted": 159646,
+    "actualNativeModulesCounted": 160453,
     "maximumBoundsErrorMetres": 2.6855468718167685e-05,
     "checks": [
       {

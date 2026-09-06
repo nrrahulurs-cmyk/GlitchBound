@@ -15,6 +15,21 @@ const bounds=b=>{const c=Math.abs(Math.cos(b.ry||0)),s=Math.abs(Math.sin(b.ry||0
 const contact=(a,b)=>a.minX<=b.maxX+.0005&&a.maxX>=b.minX-.0005&&a.minY<=b.maxY+.0005&&a.maxY>=b.minY-.0005&&a.minZ<=b.maxZ+.0005&&a.maxZ>=b.minZ-.0005;
 const paving=layout=>layout.boxes.filter(b=>b.kind==='pavement'&&b.sx>=1&&b.sz>=1&&b.y+b.sy/2>=.08&&b.y+b.sy/2<=.4);
 const source=createCityLayout();
+// Undo the later Iron Docks layer first. This restores its exact old slots and
+// removes only its own appended geometry/metadata before the housing fixture.
+if(source.ironDocksCompositions){
+ const d=source.ironDocksCompositions,boxIds=new Set(d.boxes.map(b=>b.id)),assemblyIds=new Set(d.assemblies.map(a=>a.id)),pathIds=new Set(d.paths.map(p=>p.id)),supportIds=new Set(d.supports.map(s=>s.id));
+ assert.equal(d.replacements.length,147);
+ source.boxes=source.boxes.slice(0,d.sourceBoxCount);for(const r of d.replacements)source.boxes[r.sourceIndex]=r.original;
+ source.colliders=source.colliders.filter(b=>!boxIds.has(b.sourceBoxId));
+ source.supports=source.supports.filter(s=>!supportIds.has(s.id));source.blueprint.supports=[...source.supports];
+ source.blockCompositions={...source.blockCompositions,
+  assemblies:source.blockCompositions.assemblies.filter(a=>!assemblyIds.has(a.id)),paths:source.blockCompositions.paths.filter(p=>!pathIds.has(p.id)),
+  addedVoxelModules:source.blockCompositions.addedVoxelModules-d.addedVoxelModules,replacedSourceRecords:source.blockCompositions.replacedSourceRecords-d.replacedSourceRecords};
+ delete source.blockCompositions.ironDocksReplacements;delete source.blockCompositions.ironDocksSupportGraphs;
+ source.blueprint.blockCompositions=source.blockCompositions;delete source.ironDocksCompositions;delete source.blueprint.ironDocksCompositions;
+ assert.equal(source.blockCompositions.assemblies.length,24);assert.equal(source.blockCompositions.addedVoxelModules,1459);
+}
 // The suite works before the opt-in hook and after root later enables it.
 // Restore exactly the declared delta to obtain the same authoritative source.
 if(source.housingCompositions){

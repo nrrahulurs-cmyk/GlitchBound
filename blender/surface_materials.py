@@ -18,9 +18,13 @@ SURFACES = {
 }
 
 
-def configure_surface_material(material, kind):
+def configure_surface_material(material, kind, profile=None):
     """Replace one opaque surface graph while retaining its ID and VoxelTint input."""
-    settings=SURFACES[kind]
+    settings=dict(SURFACES[kind])
+    if profile:
+        if kind!='metal':raise ValueError('Local industrial profiles apply only to metal')
+        settings.update({'name':profile['name'],'roughness':profile['roughness'],'metallic':profile['metalness'],'roughnessRange':profile['roughnessRange']})
+    profile_id=profile.get('id','') if profile else ''
     material.use_nodes=True
     tree=material.node_tree;tree.nodes.clear()
     serial=0
@@ -94,13 +98,25 @@ def configure_surface_material(material, kind):
         shade=math('MULTIPLY',shade,math('SUBTRACT',1,math('MULTIPLY',lower,.22)),'Concrete base weathering')
         color=multiply_color(tint.outputs['Color'],shade,'Keep authored concrete tint')
         roughness=math('ADD',.86,math('MULTIPLY',stain_center,.12),'Concrete roughness / .80 to .92')
+    elif profile_id=='oxide':
+        shade=math('MULTIPLY',math('ADD',.89,math('MULTIPLY',grain,.15)),math('ADD',.94,math('MULTIPLY',stain,.09)),'Rough localized oxidation')
+        shade=math('MULTIPLY',shade,math('SUBTRACT',1,math('MULTIPLY',lower,.08)),'Oxide dirt accumulation')
+        color=multiply_color(tint.outputs['Color'],shade,'Keep localized oxidation tint')
+        roughness=math('ADD',settings['roughness'],math('ADD',math('MULTIPLY',stain_center,.08),math('MULTIPLY',grain_center,.04)),'Oxide roughness variation')
+    elif profile_id=='contactMetal':
+        brush_grid=vector('FLOOR',vector('MULTIPLY',uv,(105,5,1),'Working metal directional cells'),label='Fine working metal brush')
+        brush=node('ShaderNodeTexWhiteNoise','Exposed working metal');tree.links.new(brush_grid,brush.inputs['Vector'])
+        shade=math('MULTIPLY',math('ADD',.98,math('MULTIPLY',brush.outputs['Value'],.04)),math('ADD',.98,math('MULTIPLY',stain,.04)),'Restrained exposed-metal wear')
+        shade=math('MULTIPLY',shade,math('SUBTRACT',1,math('MULTIPLY',lower,.035)),'Light dirt on contact hardware')
+        color=multiply_color(tint.outputs['Color'],shade,'Keep exposed metal tint')
+        roughness=math('ADD',settings['roughness'],math('MULTIPLY',stain_center,.10),'Contact metal roughness variation')
     elif kind=='metal':
         brush_grid=vector('FLOOR',vector('MULTIPLY',uv,(105,5,1),'Brushed metal / metre spacing'),label='Directional brush cells')
         brush=node('ShaderNodeTexWhiteNoise','Directional metal brush');tree.links.new(brush_grid,brush.inputs['Vector'])
         shade=math('MULTIPLY',math('ADD',.95,math('MULTIPLY',brush.outputs['Value'],.1)),math('ADD',.91,math('MULTIPLY',stain,.13)),'Brushed painted metal')
         shade=math('MULTIPLY',shade,math('SUBTRACT',1,math('MULTIPLY',lower,.18)),'Metal lower-edge weathering')
         color=multiply_color(tint.outputs['Color'],shade,'Keep authored metal tint')
-        roughness=math('ADD',.57,math('ADD',math('MULTIPLY',stain_center,.2),math('MULTIPLY',lower,.16)),'Metal roughness / .47 to .83')
+        roughness=math('ADD',settings['roughness'],math('ADD',math('MULTIPLY',stain_center,.16 if profile_id=='paintedSteel' else .2),math('MULTIPLY',lower,.10 if profile_id=='paintedSteel' else .16)),'Paint condition and lower-edge roughness')
     else:
         broad=noise(horizontal,(.27,.19,1),'Wet basin / broad metre patches')
         fine=noise(vector('ADD',horizontal,(7.4,7.4,0),'Wet detail offset'),(.83,.83,1),'Wet basin / local variation')
@@ -125,12 +141,15 @@ def configure_surface_material(material, kind):
         color=mix(ground,grit,mix(asphalt,slab,road,'Raised concrete versus road'),'Ground detail only')
         roughness=math('ADD',math('SUBTRACT',.91,math('MULTIPLY',water,.38)),math('MULTIPLY',grain_center,.07),'Paving roughness / dry .91, wet .53')
 
+    if profile:
+        low,high=settings['roughnessRange']
+        roughness=math('MINIMUM',high,math('MAXIMUM',low,roughness),'Authored finish roughness bounds')
     tree.links.new(color,bs.inputs['Base Color']);tree.links.new(roughness,bs.inputs['Roughness'])
     bump=node('ShaderNodeBump','Submillimetre aggregate / restrained normal detail')
     bump.inputs['Distance'].default_value=settings['bumpDistanceMetres'];bump.inputs['Strength'].default_value=settings['bumpStrength']
     tree.links.new(grain,bump.inputs['Height']);tree.links.new(bump.outputs['Normal'],bs.inputs['Normal'])
     out.location=(1850,350);bs.location=(1500,350);bump.location=(1250,-100)
-    material['surface_revision']=REVISION;material['surface_kind']=kind
+    material['surface_revision']=REVISION;material['surface_kind']=kind;material['surface_profile']=profile_id
     material['surface_parameters']=json.dumps({**settings,'coordinateSpace':'world metres','wetness':'horizontal ground patches only' if kind=='pavement' else 'none'})
     return material
 

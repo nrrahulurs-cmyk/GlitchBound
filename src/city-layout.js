@@ -4,6 +4,7 @@ import { applyAdvertCampaigns } from './advert-campaigns.js';
 import { applyStreetDetails } from './street-detail.js';
 import { applyBlockCompositions } from './block-compositions.js';
 import { applyHousingCompositions } from './housing-compositions.js';
+import { applyIronDocksCompositions } from './iron-docks-compositions.js';
 // Pure deterministic art layout. Shared by the browser and the Blender scene builder.
 export function createCityLayout() {
   let state=938217;
@@ -372,5 +373,5 @@ export function createCityLayout() {
     }
   }
   const keptColliders=colliders.filter(v=>!removedIds.has(v.blockId));
-  return applyHousingCompositions(applyBlockCompositions(applyStreetDetails(applyAdvertCampaigns(enforceCityPlacements({boxes:keptBoxes.concat(expansion.boxes),signs:keptSigns.concat(expansion.signs),colliders:keptColliders.concat(expansion.colliders),bounds,roads:expansion.roads,districts:expansion.districts,patrolRoutes:expansion.patrolRoutes,chunks:expansion.chunks,citySize:expansion.citySize,removedCoreBuildings:removed.length,supports:supports.concat(expansion.supports),elevatedConnections:elevatedConnections.concat(expansion.elevatedConnections)})))));
+  return applyIronDocksCompositions(applyHousingCompositions(applyBlockCompositions(applyStreetDetails(applyAdvertCampaigns(enforceCityPlacements({boxes:keptBoxes.concat(expansion.boxes),signs:keptSigns.concat(expansion.signs),colliders:keptColliders.concat(expansion.colliders),bounds,roads:expansion.roads,districts:expansion.districts,patrolRoutes:expansion.patrolRoutes,chunks:expansion.chunks,citySize:expansion.citySize,removedCoreBuildings:removed.length,supports:supports.concat(expansion.supports),elevatedConnections:elevatedConnections.concat(expansion.elevatedConnections)}))))));
 }

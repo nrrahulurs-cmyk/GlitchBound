@@ -1,0 +1,52 @@
+{
+  "status": "captured",
+  "checkedAtUTC": "2026-09-06T14:53:21.820258+00:00",
+  "nativeSHA256": "9bc43295b530bc8189691947bfe24eda5bb426e9776caec18cf827fd602a0d35",
+  "views": [
+    {
+      "id": "work-apron",
+      "position": [
+        194,
+        1.935,
+        -21.7
+      ],
+      "target": [
+        182.4,
+        2.5,
+        -30.1
+      ],
+      "file": "city-docks-preview.png",
+      "observerOnly": false,
+      "image": "blender/city-docks-preview.png",
+      "imageSHA256": "0a424ffbf22200cc7f2dd829f9ff0437e0e9369c07afe5100319537b0509872a"
+    },
+    {
+      "id": "process-roof",
+      "position": [
+        134,
+        24,
+        -19
+      ],
+      "target": [
+        116.7,
+        15,
+        -45
+      ],
+      "file": "city-docks-roof-preview.png",
+      "observerOnly": true,
+      "image": "blender/city-docks-roof-preview.png",
+      "imageSHA256": "7c83e1009ae2ba4d7796f3b7ea5e45b71c9fa42c6c1e2ae5635828a7855dd7d9"
+    }
+  ],
+  "method": "Fresh native file opened; actual Cycles renders with existing street-scene lighting/materials. No native geometry, lighting or saved viewpoint edits. Process roof uses an elevated inspection camera, not a walking reachability claim.",
+  "frame": 1,
+  "samples": 16,
+  "resolution": [
+    1100,
+    720
+  ],
+  "verticalFOV": 66,
+  "blenderVersion": "5.2.1 LTS",
+  "fullCityPreviewsRefreshed": false,
+  "visualAcceptance": "pending independent full-image inspection"
+}

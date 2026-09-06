@@ -62,7 +62,7 @@ Each district has its own visual identity:
 |---|---|
 | Kasumi Ward | Dense neon avenue, cyan megatower, nightlife and warm noodle shops |
 | Lantern Market | Orange and red lantern canopies, market counters and food stalls |
-| Iron Docks | Rust and teal industrial gantries, pressure pipes and striped smokestacks |
+| Iron Docks | Rust and teal processing sheds, supported handling aprons, framed freight containers and pressure pipes |
 | Stacktown | Violet modular housing, laundry terraces, catwalks and magenta clubs |
 | Meridian East | White cyberware facades, cyan ribs and acid-green diagnostic panels |
 | Crown Plaza | Blue and gold corporate crowns, gardens and orbital ring gateways |
@@ -75,9 +75,15 @@ Connected roads extend through all districts. Geometry is instanced and spatiall
 
 Ambient fill keeps unlit masonry and service courtyards readable; four broad canopy lights cast colored spill from existing mounted shop signs. A local directional shadow map uses simplified architectural occluders and actual character/vehicle silhouettes. Wet asphalt has scattered puddles, while concrete, metal and paving have separate surface treatments. Twelve browser viewpoints cover all six districts, outer edges and service courtyards.
 
+Player boots receive a small, support-aware contact shade on the actual surface beneath them. Frozen off/on comparisons on final local build `Y0FsMvtw` found modestly clearer sole contact at the bench and landing, with no detached disc or broad halo. Hidden-avatar, airborne, vehicle, lower-floor and restart controls pass, as does actual stair support/fading. This changes shading; the simple player gait and stair foot placement still need work. The comparisons and their conditions are recorded in the [final foot-contact report](validation/foot-contact-final-browser.json).
+
 There are 77 wall-supported street and courtyard assemblies: food hatches, service garages, residential entries, clinic doors and concierge entries. Each has a shared blueprint/native Blender placement. Existing facade rails and glazing are cut around the new apertures, with clear approaches checked against the older street furniture. Fifteen exterior panels provide working services. Doors remain closed; usable interiors and more involved activities are still future work.
 
 The authored Stacktown courtyard includes an exterior staircase to a shared landing, layered apartment bays and connected seating. Sixteen solid treads lead to the 3.065 m landing; the covered ground route stays below it and the upstairs door is closed. The same structures are editable in the Blender city. The interactive blueprint exposes their footprints, route waypoints, floor heights and structural attachments.
+
+The current local Iron Docks pass adds seven shared assemblies with 954 voxel modules: a processing entrance and roof assembly, a covered handling apron, detailed faces on nine freight containers, and grounded paving. Authored block totals are now 31 assemblies, 2,413 modules and fifteen walking paths. Of the new modules, 855 metal pieces use faded paint, localized oxide or exposed working-metal finishes; panes, windows and paving keep their base materials. All four dock routes passed actual W input on `cA0mxVCY`, including the narrow single-person cross-aisle; this is not a vehicle or crowd-width route claim. Six matched views and rendered geometry checks are in the [dock browser report](validation/iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z.json).
+
+The container faces, entrance and apron have more visible depth, but repeated panels, sparse upper walls and an inactive open court remain. An additional raised view shows connected roof-cap, panel and base joins; the inherited large plain crane dominates that view, and hidden rear/underside joins remain outside its visual scope. The native city has been regenerated and reopened against shared source, including all 31 authored assemblies and 855 profiled metal modules. Three native area lights at actual dock fixtures correct an initially unreadable apron render; the revised shutter, cabinet and workbench are legible. The [before/after native review](validation/native-docks-visual-review.md) retains the dark first images and remaining roof-shadow limits. These local changes remain unpublished while the broader quality work continues.
 
 Sound is procedurally synthesized with Web Audio. Footsteps follow actual distance travelled and distinguish road from paving; landings, nearby traffic and mounted machinery provide local feedback. Six traffic and six machinery voices use spatial panning, with district-specific ambience and bounded transient voices. Pause and mute silence the output. These are original synthesized sounds, not recorded crowds or licensed music.
 
@@ -127,11 +133,14 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 | `src/camera-obstruction.js` | Swept camera clearance and clear-boom recovery |
 | `src/street-detail.js` | Supported frontage assemblies, clear approaches and facade apertures |
 | `src/block-compositions.js` | Authored residential court and market block, structural links and clear routes |
+| `src/iron-docks-compositions.js` | Validated processing shed, handling apron, container relief and walking routes |
 | `src/city-services.js` | Authored terminal discovery, service progress, interruptions and outcomes |
 | `src/service-interface.js` | Contextual service HUD, recovery status and projected parking guidance |
 | `src/service-fixtures.js` / `src/service-world.js` | Shared native mechanism recipes, animation and physical world presentation |
 | `src/kinematic-pose.js` | Accepted vehicle/fixture poses and contact momentum across physics substeps |
 | `src/surface-materials.js` | Instanced metre-scaled concrete, metal and paving shaders |
+| `src/surface-profiles.js` | Shared opaque-metal paint, oxide and working-metal finish values |
+| `src/foot-contact.js` | Boot support queries and bounded contact shade on actual receiving surfaces |
 | `src/city-shadows.js` | Local directional shadows and simplified architectural occluders |
 | `src/world-audio.js` | Spatial city sources, neighborhood profiles and travel-driven footsteps |
 | `src/street-collisions.js` | Collision shapes derived from visible street geometry |
@@ -153,5 +162,7 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 `?test=1` enables targeted controls under `window.__neon.test`. Normal play exposes a diagnostic snapshot at `window.__neon.snapshot()`.
 
 Run `npm test` for the portable Node regression suites covering grounded movement, camera clearance, service access/outcomes, gun-cover checks, and articulated physics against production city geometry. The suites use the pinned runtime dependencies and leave stored browser/native reports unchanged. Browser reports record their build identifiers and tested conditions separately; the Node suite does not substitute for a graphics or listening review.
+
+A clean `Y0FsMvtw` sample measured 59.976 FPS ordinarily and 54.195 FPS with 24 fresh articulated deaths (p95 33.3 ms). The loaded result lies within the two preceding `cA0mxVCY` samples, 50.542–54.524 FPS; no FPS improvement caused by the shader guard is established. The [performance report](validation/performance-docks-contact-profile.json) preserves the samples, instrumented diagnosis and their limits. Heavy physical scenes still miss frames.
 
 Dependencies are pinned: Three.js 0.180.0, cannon-es 0.20.0, Vite 7.3.6. `npm ci` uses the included lockfile. Project source code is MIT-licensed; see `LICENSE` and `THIRD-PARTY-NOTICES.md` for dependency licenses and artwork provenance. The project is inspired by Cyberpunk 2077's atmosphere; no assets were extracted from that game. The twelve additional campaign artworks are voxel adaptations of user-supplied references.

@@ -1,0 +1,15 @@
+{
+  "before": {
+    "sourceSHA256": "aabdbaeb9b247ff44e452e6d7c01c304cc99504d5d86aeef791a2030a9a7da78",
+    "controllerAndGeometrySHA256": "bef6e493f8aeda4f7ee47c226f95e5ef1e37c236826bde9bdfe347ebd5a39313"
+  },
+  "after": {
+    "sourceSHA256": "ce7b14599ba05df7ea64b5fdda93f12aa439ac584f7c73854e9a1c8ec2835d28",
+    "controllerAndGeometrySHA256": "bef6e493f8aeda4f7ee47c226f95e5ef1e37c236826bde9bdfe347ebd5a39313"
+  },
+  "controllerAndGeometryUnchanged": true,
+  "tests": "work/foot-contact-guard-report.json",
+  "runtimeProofPending": false,
+  "runtimeProofPendingAtSourceCapture": true,
+  "runtimeProof": "validation/foot-contact-final-browser.json"
+}

@@ -1,0 +1,184 @@
+{
+  "status": "verified-local-checkpoint",
+  "checkedAtUTC": "2026-09-06T16:40:11.896Z",
+  "publication": {
+    "pushed": false,
+    "deployed": false,
+    "qualityGoalComplete": false,
+    "policy": "Keep unfinished quality work local; the public foundation remains unchanged."
+  },
+  "runtime": {
+    "bundle": "/assets/index-Y0FsMvtw.js",
+    "sha256": "10230ce13f05aaa5562ac79b9a51ce366d49e20a3e9e4bce469e86d7d83612d4",
+    "localURL": "http://127.0.0.1:5173/",
+    "blueprintURL": "http://127.0.0.1:5173/blueprint/"
+  },
+  "nodeValidation": {
+    "integrationSuites": 19,
+    "integrationBundle": "cA0mxVCY",
+    "integrationLogSHA256": "fff96bdc5801e7563f67667a23fdffdbd434c00c3c2510db0b7efd37f71ce5e9",
+    "subsequentChange": "Shader-only uniform/coverage guards; controller and geometry remain byte-identical.",
+    "guardTests": 6,
+    "guardSourceSHA256": "ce7b14599ba05df7ea64b5fdda93f12aa439ac584f7c73854e9a1c8ec2835d28"
+  },
+  "docks": {
+    "newAssemblies": 7,
+    "newModules": 954,
+    "netModuleIncrease": 807,
+    "totalAuthoredAssemblies": 31,
+    "totalAuthoredModules": 2413,
+    "totalWalkingPaths": 15,
+    "opaqueMetalProfiles": {
+      "paintedSteel": 706,
+      "contactMetal": 121,
+      "nonmetal-base": 99,
+      "oxide": 28
+    },
+    "actualWPaths": [
+      {
+        "id": "DOCKS-ROAD-TO-HANDLING",
+        "status": "passed",
+        "frames": 431
+      },
+      {
+        "id": "DOCKS-CONTAINER-AISLE-147.65",
+        "status": "passed",
+        "frames": 269
+      },
+      {
+        "id": "DOCKS-CONTAINER-AISLE-152.35",
+        "status": "passed",
+        "frames": 269
+      },
+      {
+        "id": "DOCKS-CONTAINER-CROSS-AISLE",
+        "status": "passed",
+        "frames": 226
+      }
+    ],
+    "sourceAndWalkingReport": "validation/iron-docks-after-cA0mxVCY-2026-09-06T14-19-06-503Z.json",
+    "browserEvidenceScope": "Dock geometry/material/route captures are cA0mxVCY. The only later runtime change is the tested shader guard; final contact/blueprint captures use Y0FsMvtw.",
+    "narrowRouteScope": "The 0.80m cross-aisle is a single-person pedestrian path, not a vehicle or crowd route."
+  },
+  "contact": {
+    "report": "validation/foot-contact-final-browser.json",
+    "visualAssessment": "Final guard keeps restrained, attached contact shading at settled bench and landing soles. No detached ring/halo or new visible artifact observed. Geometry, real support heights and animation remain unchanged; no AAA/animation parity claim.",
+    "scope": "Actual GLB sole footprints and actual support faces. Indirect lighting only; no player-root, camera, direct-light or emission changes."
+  },
+  "native": {
+    "city": "blender/neon-district-city.blend",
+    "citySHA256": "5d016b746b7caae94e2ceb84caa8e250bb6f40d3c1e56fd06d4c3b13311e54c3",
+    "cityBytes": 63111042,
+    "nativeVoxelModules": 160453,
+    "industrialProfileModules": 855,
+    "mountedTaskLights": 3,
+    "civilianRigs": 284,
+    "civilianVoxelParts": 14785,
+    "overheadAircraft": 16,
+    "overheadAircraftVoxelParts": 240,
+    "serviceMechanisms": 15,
+    "serviceParts": 318,
+    "packedImages": 17,
+    "imagePanels": 91,
+    "preservedViewpoints": 5,
+    "workshop": "blender/character-workshop.blend",
+    "workshopSHA256": "f31ee5c5297f00cec6ff505d73826717a3e702de7e721901dd2f0fe5ac92849b",
+    "finitePoseCount": 724,
+    "savedFacesChecked": 90162,
+    "maximumCivilianWorldErrorMetres": 0.00012302034810695442,
+    "freshSourceAndReopenVerified": true,
+    "fullCityPreviewsCurrent": false,
+    "inspectionViews": [
+      {
+        "id": "work-apron",
+        "position": [
+          194,
+          1.935,
+          -21.7
+        ],
+        "target": [
+          182.4,
+          2.5,
+          -30.1
+        ],
+        "file": "city-docks-preview.png",
+        "observerOnly": false,
+        "image": "blender/city-docks-preview.png",
+        "imageSHA256": "81a354d7698e8cdeb95c5a73a5bf0ce3cf97b1ecee509a598e34b1d6b1b8c96c"
+      },
+      {
+        "id": "process-roof",
+        "position": [
+          134,
+          24,
+          -19
+        ],
+        "target": [
+          116.7,
+          15,
+          -45
+        ],
+        "file": "city-docks-roof-preview.png",
+        "observerOnly": true,
+        "image": "blender/city-docks-roof-preview.png",
+        "imageSHA256": "0b38990cdfad6c5b41dbb20556c46cec78a7a305a56eeb27328d4f789d896fa8"
+      }
+    ],
+    "visualReview": "validation/native-docks-visual-review.md",
+    "report": "validation/native-city-report.json",
+    "limits": "Native city civilians/craft are frame zero; finite gait clips are in the workshop. Native noise and fixture wattage are editable approximations, not exact runtime render parity. Three complete-city previews remain dated."
+  },
+  "performance": {
+    "report": "validation/performance-docks-contact-profile.json",
+    "final": {
+      "build": "Y0FsMvtw",
+      "bundleSHA256": "10230ce13f05aaa5562ac79b9a51ce366d49e20a3e9e4bce469e86d7d83612d4",
+      "phases": [
+        {
+          "name": "control-baseline",
+          "fps": 59.97600959616154,
+          "meanMs": 16.673333333333332,
+          "p95Ms": 16.799999999999272,
+          "maxMs": 16.899999999997817,
+          "frames": 300,
+          "over25ms": 0,
+          "bodies": 2776,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 0,
+          "joints": 0,
+          "solverIterations": 7
+        },
+        {
+          "name": "control-24-new-deaths",
+          "fps": 54.19466724474313,
+          "meanMs": 18.451999999999995,
+          "p95Ms": 33.30000000000291,
+          "maxMs": 33.5,
+          "frames": 300,
+          "over25ms": 32,
+          "bodies": 3047,
+          "drawCalls": 452,
+          "triangles": 3139330,
+          "articulated": 24,
+          "joints": 240,
+          "solverIterations": 12
+        }
+      ]
+    },
+    "interpretation": "The guarded build measures54.195FPS under24 fresh articulated deaths, within the two unguarded samples50.542–54.524. No causal FPS gain is established; p95 remains33.3ms."
+  },
+  "failuresRetained": [
+    "The first native non-emission check assumed a particular Blender default representation. It now checks actual zero emission; full reopened geometry/material checks passed.",
+    "The initial native apron render was too dark. Its images/report and source native were preserved before three actual mounted fixture lights were added and rendered again.",
+    "The first clean loaded performance sample was50.542FPS. Repeats and instrumented costs are retained instead of omitting the adverse result."
+  ],
+  "remainingQualityGaps": [
+    "Plain crane, repeated skyline/panels and sparse court activity.",
+    "Whole-leg player stair animation lacks knee/ankle articulation; work-only design packet is prepared.",
+    "Loaded frame rate is not locked60FPS; some corpse trajectories settle slowly.",
+    "Broader vehicle/cyberware/combat/sound/interaction variety.",
+    "Dated complete-city native previews and remaining native lighting variation.",
+    "No final blind preference or AAA parity established."
+  ]
+}

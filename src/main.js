@@ -25,6 +25,7 @@ import { createCityServices } from './city-services.js';
 import { createServiceInterface } from './service-interface.js';
 import { createServiceWorld } from './service-world.js';
 import { getKinematicPoseController } from './kinematic-pose.js';
+import { createFootContact } from './foot-contact.js';
 
 const $=id=>document.getElementById(id);
 const audio=createAudio();
@@ -33,6 +34,7 @@ let empCooldown=0,dashCooldown=0,shotCooldown=0,reloadTime=0,elapsed=0,totalTime
 let carSpeed=0,carYaw=-.2,bob=0,walkBlend=0,dashTime=0,lastFrameSeconds=.016;
 let playerMovement,motion={grounded:true,speed:0,distanceMoved:0};
 let cityShadows;
+let footContact;
 let cameraBoomState={active:false};
 let services,serviceInterface,serviceSites=[],serviceCandidate=null,serviceResult=null,serviceResultUntil=0,damageVersion=0;
 let serviceWorld;
@@ -130,6 +132,9 @@ async function init(){
     serviceWorld=createServiceWorld({scene,source:city.serviceSource,sites:serviceSites,recipes:city.serviceFixtures});
     serviceWorld.attachPhysics({world:simulation.world,material:simulation.physicsMaterial});
     cityShadows.addCaster(serviceWorld.root);
+    footContact=createFootContact({avatar,
+      supportSurfaces:city.serviceSource.boxes.filter(box=>box.kind==='pavement'&&box.sy>=.025),
+      getColliders:(x,z,radius)=>[...city.getCollidersAt(x,z,radius),...simulation.getSolidProps(),...cityLife.getTrafficColliders()]});
     city.civilians.setObstacleProvider(()=>[...simulation.getSolidProps(),...cityLife.getTrafficColliders(),
       {id:'VEHICLE-PLAYER',x:carPosition.x,y:carPosition.y+.68,z:carPosition.z,sx:2.8,sy:1.28,sz:5.2,ry:carYaw}]);
     serviceInterface=createServiceInterface({parent:$('hud')});
@@ -140,7 +145,7 @@ async function init(){
     if(new URLSearchParams(location.search).has('test')){
       window.__neon.test={teleport(x,z){position.set(x,city.groundHeightAt(x,z)+1.75,z);motion=playerMovement.reset();camera.position.copy(position)},getMovement:()=>playerMovement.getState(),aimAt(x,y,z){const target=new THREE.Vector3(x,y,z).sub(position).normalize();lookYaw=Math.atan2(-target.x,-target.z);lookPitch=Math.asin(target.y);updateCamera(0,totalTime)},
         placeCar(x,z,yaw=0){if(!Number.isFinite(x+z+yaw)||collides(x,z,1.45,1))return false;carPosition.set(x,city.groundHeightAt(x,z)+.008,z);carYaw=yaw;carSpeed=0;carBody.position.set(x,carPosition.y+.68,z);carBody.quaternion.setFromEuler(0,yaw,0);poseController.setTarget(carBody,{position:carBody.position,quaternion:carBody.quaternion});if(player.inVehicle){position.copy(carPosition);position.y+=1.75}updateCamera(0,totalTime);return true},
-        getCar:()=>({x:carPosition.x,y:carPosition.y,z:carPosition.z,yaw:carYaw,speed:carSpeed,...carDamage.getState()}),getWeapon:()=>({rig:weaponRig.getState(),effects:weaponFX.getState()}),getShadows:()=>cityShadows.getState(),getAudio:()=>audio.getState(),getCameraBoom:()=>({...cameraBoomState}),getServices:()=>({...services.getState(),sites:services.list(),candidate:serviceCandidate,neuralBoost:{...neuralBoost},interface:serviceInterface.getState(),world:serviceWorld.getState()}),damage,shoot:fire,emp:useEMP,interact,reload,start,pause,reset:restart,simulation,scene,camera,city,cityLife};
+        getCar:()=>({x:carPosition.x,y:carPosition.y,z:carPosition.z,yaw:carYaw,speed:carSpeed,...carDamage.getState()}),getWeapon:()=>({rig:weaponRig.getState(),effects:weaponFX.getState()}),getShadows:()=>cityShadows.getState(),footContact,renderFootContactFrame(enabled){footContact.setEnabled(enabled);composer.render(0);return footContact.getState();},getAudio:()=>audio.getState(),getCameraBoom:()=>({...cameraBoomState}),getServices:()=>({...services.getState(),sites:services.list(),candidate:serviceCandidate,neuralBoost:{...neuralBoost},interface:serviceInterface.getState(),world:serviceWorld.getState()}),damage,shoot:fire,emp:useEMP,interact,reload,start,pause,reset:restart,simulation,scene,camera,city,cityLife};
     }
   }catch(error){console.error(error);$('start-label').textContent='CITY CONNECTION FAILED';$('load-status').textContent='Could not initialize the city. Check WebGL support and reload.';toast('Unable to initialize: '+error.message,15000)}
 }
@@ -159,6 +164,7 @@ function pause(){
   $('hud').classList.add('hidden');$('menu').classList.remove('hidden');document.body.classList.remove('playing','photo-mode');photoMode=false;$('start-label').textContent='RETURN TO THE CITY';weapon.visible=false;
 }
 function restart(){
+  footContact?.reset();
   services?.reset();serviceInterface?.reset();serviceCandidate=serviceResult=null;serviceResultUntil=damageVersion=0;neuralBoost={remaining:0,regenMultiplier:1};
   serviceWorldEvents.length=0;serviceWorld?.reset();
   $('result-dialog').close();weaponRig.reset();weaponFX.reset();carDamage.reset();lastCarImpact=-10;health=100;energy=100;ammo=24;empCooldown=dashCooldown=shotCooldown=reloadTime=elapsed=0;
@@ -332,6 +338,7 @@ function updateCamera(dt,time){
   }
   if(av){av.position.set(14+Math.sin(time*.12)*1.6,33+Math.sin(time*.34)*.35,-6+Math.sin(time*.08)*2);av.rotation.z=Math.sin(time*.18)*.02}
   weaponRig?.update(mode==='playing'?dt:0,{time,bob,moving:motion.grounded&&motion.speed>.12,lookYaw,lookPitch,drawn:!holstered,active:mode==='playing'&&!player.inVehicle,thirdPerson,reloadTime});
+  footContact?.update({grounded:mode==='menu'||motion.grounded,inVehicle:player.inVehicle,active:mode!=='dead'});
 }
 function updateHUD(){
   if(!simulation)return;

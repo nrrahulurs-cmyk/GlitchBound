@@ -1,0 +1,221 @@
+{
+  "status": "captured",
+  "build": "Y0FsMvtw",
+  "bundleSHA256": "10230ce13f05aaa5562ac79b9a51ce366d49e20a3e9e4bce469e86d7d83612d4",
+  "checkedAtUTC": "2026-09-06T14:42:48.371Z",
+  "method": "Actual settled ground and W ascent landing. Test-only RAF gate holds animation/physics/time. Composer renders unchanged scene off/on/off; camera and leg matrix equality and repeat-off pixels are checked. ROIs project actual controller world sole quads plus12px. Pixel change is not a quality verdict.",
+  "results": [
+    {
+      "id": "bench-ground",
+      "projected": [
+        {
+          "index": 0,
+          "corners": [
+            {
+              "x": 439.8521748079411,
+              "y": 494.5072917141899,
+              "z": 0.9564072947068976
+            },
+            {
+              "x": 490.1225027900646,
+              "y": 494.50729171419243,
+              "z": 0.9564072947068976
+            },
+            {
+              "x": 469.8445597622385,
+              "y": 546.2908375300469,
+              "z": 0.9504677057888146
+            },
+            {
+              "x": 412.7728181870939,
+              "y": 546.2908375300498,
+              "z": 0.9504677057888146
+            }
+          ],
+          "roi": {
+            "x": 400,
+            "y": 482,
+            "right": 503,
+            "bottom": 559
+          }
+        },
+        {
+          "index": 1,
+          "corners": [
+            {
+              "x": 517.0673992596677,
+              "y": 494.5072917141899,
+              "z": 0.9564072947068976
+            },
+            {
+              "x": 567.3377272417912,
+              "y": 494.5072917141899,
+              "z": 0.9564072947068976
+            },
+            {
+              "x": 557.5067555836546,
+              "y": 546.2908375300469,
+              "z": 0.9504677057888146
+            },
+            {
+              "x": 500.43501400851,
+              "y": 546.2908375300469,
+              "z": 0.9504677057888146
+            }
+          ],
+          "roi": {
+            "x": 488,
+            "y": 482,
+            "right": 580,
+            "bottom": 559
+          }
+        }
+      ],
+      "metrics": {
+        "repeatMax": 0,
+        "repeatChanged": 0,
+        "samples": [
+          {
+            "index": 0,
+            "roi": {
+              "x": 400,
+              "y": 482,
+              "right": 503,
+              "bottom": 559
+            },
+            "pixels": 7931,
+            "meanLumaDelta": -1.2205548354558051,
+            "meanAbsoluteLumaDelta": 1.2205548354558051,
+            "changedPixels": 2268
+          },
+          {
+            "index": 1,
+            "roi": {
+              "x": 488,
+              "y": 482,
+              "right": 580,
+              "bottom": 559
+            },
+            "pixels": 7084,
+            "meanLumaDelta": -1.443755448898915,
+            "meanAbsoluteLumaDelta": 1.443755448898915,
+            "changedPixels": 2345
+          }
+        ]
+      },
+      "images": {
+        "off": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-bench-ground-off.png",
+        "on": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-bench-ground-on.png"
+      },
+      "visualAcceptance": "pending independent image review",
+      "frozenFrameVerified": true
+    },
+    {
+      "id": "landing",
+      "projected": [
+        {
+          "index": 0,
+          "corners": [
+            {
+              "x": 421.90461601575373,
+              "y": 749.8212956781509,
+              "z": 0.9699216588225597
+            },
+            {
+              "x": 456.6996676673084,
+              "y": 749.8212956781509,
+              "z": 0.9699216588225597
+            },
+            {
+              "x": 438.342055942503,
+              "y": 776.0896715467857,
+              "z": 0.9668784789951621
+            },
+            {
+              "x": 400.062264028697,
+              "y": 776.0896715467857,
+              "z": 0.9668784789951621
+            }
+          ],
+          "roi": {
+            "x": 388,
+            "y": 737,
+            "right": 469,
+            "bottom": 789
+          }
+        },
+        {
+          "index": 1,
+          "corners": [
+            {
+              "x": 475.3498158171101,
+              "y": 749.8212956781509,
+              "z": 0.9699216588225597
+            },
+            {
+              "x": 510.14486746866464,
+              "y": 749.8212956781509,
+              "z": 0.9699216588225597
+            },
+            {
+              "x": 497.1398168332041,
+              "y": 776.0896715467857,
+              "z": 0.9668784789951621
+            },
+            {
+              "x": 458.8600249193982,
+              "y": 776.0896715467857,
+              "z": 0.9668784789951621
+            }
+          ],
+          "roi": {
+            "x": 446,
+            "y": 737,
+            "right": 523,
+            "bottom": 789
+          }
+        }
+      ],
+      "metrics": {
+        "repeatMax": 0,
+        "repeatChanged": 0,
+        "samples": [
+          {
+            "index": 0,
+            "roi": {
+              "x": 388,
+              "y": 737,
+              "right": 469,
+              "bottom": 789
+            },
+            "pixels": 4212,
+            "meanLumaDelta": -1.2551162867996164,
+            "meanAbsoluteLumaDelta": 1.2551162867996164,
+            "changedPixels": 762
+          },
+          {
+            "index": 1,
+            "roi": {
+              "x": 446,
+              "y": 737,
+              "right": 523,
+              "bottom": 789
+            },
+            "pixels": 4004,
+            "meanLumaDelta": -1.5925052947052947,
+            "meanAbsoluteLumaDelta": 1.5925052947052947,
+            "changedPixels": 905
+          }
+        ]
+      },
+      "images": {
+        "off": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-landing-off.png",
+        "on": "foot-contact-ab-Y0FsMvtw-2026-09-06T14-42-32-202Z-landing-on.png"
+      },
+      "visualAcceptance": "pending independent image review",
+      "frozenFrameVerified": true
+    }
+  ],
+  "errors": [],
+  "chromeClosed": true
+}

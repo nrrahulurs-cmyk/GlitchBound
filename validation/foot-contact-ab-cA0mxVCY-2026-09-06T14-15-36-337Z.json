@@ -1,0 +1,246 @@
+{
+  "status": "captured",
+  "build": "cA0mxVCY",
+  "bundleSHA256": "37b91e7f79500afc132cccf7224d850bab03a077e1628041546a2c0795e6a36d",
+  "checkedAtUTC": "2026-09-06T14:15:52.341Z",
+  "method": "Actual settled ground and W ascent landing. Test-only RAF gate holds animation/physics/time. Composer renders unchanged scene off/on/off; camera and leg matrix equality and repeat-off pixels are checked. ROIs project actual controller world sole quads plus12px. Pixel change is not a quality verdict.",
+  "results": [
+    {
+      "id": "bench-ground",
+      "projected": [
+        {
+          "index": 0,
+          "corners": [
+            {
+              "x": 439.860252353609,
+              "y": 494.4793324295998,
+              "z": 0.9564090664366117
+            },
+            {
+              "x": 490.1285515309274,
+              "y": 494.4793324296004,
+              "z": 0.9564090664366115
+            },
+            {
+              "x": 469.85464617638144,
+              "y": 546.2734907284432,
+              "z": 0.9504706601887546
+            },
+            {
+              "x": 412.78628767979467,
+              "y": 546.2734907284432,
+              "z": 0.9504706601887546
+            }
+          ],
+          "roi": {
+            "x": 400,
+            "y": 482,
+            "right": 503,
+            "bottom": 559
+          }
+        },
+        {
+          "index": 1,
+          "corners": [
+            {
+              "x": 517.0723605611269,
+              "y": 494.47933242959726,
+              "z": 0.9564090664366117
+            },
+            {
+              "x": 567.3406597384408,
+              "y": 494.4793324296004,
+              "z": 0.9564090664366115
+            },
+            {
+              "x": 557.5116455890874,
+              "y": 546.2734907284432,
+              "z": 0.9504706601887546
+            },
+            {
+              "x": 500.44328709250067,
+              "y": 546.2734907284432,
+              "z": 0.9504706601887546
+            }
+          ],
+          "roi": {
+            "x": 488,
+            "y": 482,
+            "right": 580,
+            "bottom": 559
+          }
+        }
+      ],
+      "metrics": {
+        "repeatMax": 1,
+        "repeatChanged": 0,
+        "samples": [
+          {
+            "index": 0,
+            "roi": {
+              "x": 400,
+              "y": 482,
+              "right": 503,
+              "bottom": 559
+            },
+            "pixels": 7931,
+            "meanLumaDelta": -1.2182026730551005,
+            "meanAbsoluteLumaDelta": 1.2182026730551005,
+            "changedPixels": 2266
+          },
+          {
+            "index": 1,
+            "roi": {
+              "x": 488,
+              "y": 482,
+              "right": 580,
+              "bottom": 559
+            },
+            "pixels": 7084,
+            "meanLumaDelta": -1.4423425183512029,
+            "meanAbsoluteLumaDelta": 1.4423425183512029,
+            "changedPixels": 2343
+          }
+        ]
+      },
+      "images": {
+        "off": "foot-contact-ab-cA0mxVCY-2026-09-06T14-15-36-337Z-bench-ground-off.png",
+        "on": "foot-contact-ab-cA0mxVCY-2026-09-06T14-15-36-337Z-bench-ground-on.png"
+      },
+      "visualAcceptance": "Bounded improvement in settled sole contact; no detached halo or ring observed. Broader player animation quality is unchanged.",
+      "frozenFrameVerified": true,
+      "pixelBounds": {
+        "threshold": "Any RGB channel difference >2/255, above measured repeat-off variation",
+        "changedPixels": 3052,
+        "bounds": {
+          "minX": 398,
+          "maxX": 579,
+          "minY": 488,
+          "maxY": 554
+        },
+        "maxChannelDelta": 11,
+        "outsideProjectedROIsPlus20px": 0
+      }
+    },
+    {
+      "id": "landing",
+      "projected": [
+        {
+          "index": 0,
+          "corners": [
+            {
+              "x": 421.9011068587547,
+              "y": 749.828867909819,
+              "z": 0.9699211699102026
+            },
+            {
+              "x": 456.6967183630527,
+              "y": 749.828867909819,
+              "z": 0.9699211699102026
+            },
+            {
+              "x": 438.3386577604284,
+              "y": 776.0923479848951,
+              "z": 0.9668779156713869
+            },
+            {
+              "x": 400.05822078548533,
+              "y": 776.0923479848951,
+              "z": 0.9668779156713869
+            }
+          ],
+          "roi": {
+            "x": 388,
+            "y": 737,
+            "right": 469,
+            "bottom": 789
+          }
+        },
+        {
+          "index": 1,
+          "corners": [
+            {
+              "x": 475.34716659393223,
+              "y": 749.828867909819,
+              "z": 0.9699211699102026
+            },
+            {
+              "x": 510.1427780982303,
+              "y": 749.828867909819,
+              "z": 0.9699211699102026
+            },
+            {
+              "x": 497.1374094650448,
+              "y": 776.0923479848951,
+              "z": 0.9668779156713869
+            },
+            {
+              "x": 458.8569724901018,
+              "y": 776.0923479848951,
+              "z": 0.9668779156713869
+            }
+          ],
+          "roi": {
+            "x": 446,
+            "y": 737,
+            "right": 523,
+            "bottom": 789
+          }
+        }
+      ],
+      "metrics": {
+        "repeatMax": 0,
+        "repeatChanged": 0,
+        "samples": [
+          {
+            "index": 0,
+            "roi": {
+              "x": 388,
+              "y": 737,
+              "right": 469,
+              "bottom": 789
+            },
+            "pixels": 4212,
+            "meanLumaDelta": -1.2552661918328567,
+            "meanAbsoluteLumaDelta": 1.2552661918328567,
+            "changedPixels": 762
+          },
+          {
+            "index": 1,
+            "roi": {
+              "x": 446,
+              "y": 737,
+              "right": 523,
+              "bottom": 789
+            },
+            "pixels": 4004,
+            "meanLumaDelta": -1.5913635364635368,
+            "meanAbsoluteLumaDelta": 1.5913635364635368,
+            "changedPixels": 903
+          }
+        ]
+      },
+      "images": {
+        "off": "foot-contact-ab-cA0mxVCY-2026-09-06T14-15-36-337Z-landing-off.png",
+        "on": "foot-contact-ab-cA0mxVCY-2026-09-06T14-15-36-337Z-landing-on.png"
+      },
+      "visualAcceptance": "Bounded improvement in settled sole contact; no detached halo or ring observed. Broader player animation quality is unchanged.",
+      "frozenFrameVerified": true,
+      "pixelBounds": {
+        "threshold": "Any RGB channel difference >2/255, above measured repeat-off variation",
+        "changedPixels": 1097,
+        "bounds": {
+          "minX": 389,
+          "maxX": 519,
+          "minY": 747,
+          "maxY": 779
+        },
+        "maxChannelDelta": 15,
+        "outsideProjectedROIsPlus20px": 0
+      }
+    }
+  ],
+  "errors": [],
+  "chromeClosed": true,
+  "independentVisualReview": "Full off/on images reviewed at1280x850. Small, attached darkening improves bench and landing contact modestly. The exact frozen comparison is valid; it is not a global lighting/animation quality verdict."
+}

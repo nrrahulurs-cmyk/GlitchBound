@@ -6,6 +6,7 @@ import { ADVERT_CAMPAIGNS } from './advert-campaigns.js';
 import { createStreetCollisionLayout } from './street-collisions.js';
 import { createCivilianSystem } from './civilians.js';
 import { createSurfaceMaterial } from './surface-materials.js';
+import {surfaceProfileFor} from './surface-profiles.js';
 import { createCityServices } from './city-services.js';
 import { createServiceFixtures } from './service-fixtures.js';
 import { createGroundHeightSampler } from './ground-height.js';
@@ -68,11 +69,14 @@ export function createCity(scene) {
   }
   const targetGroup=(chunk,lod)=>chunkGroups.has(chunk)?chunkGroups.get(chunk)[lod==='far'?'far':'near']:root;
   const batches=new Map();
-  for(const box of boxes){if(removedBoxes.has(box)||replacedServiceBoxes.has(box.id))continue;const kind=box.role==='inset door glazing'?'doorGlass':box.role==='medical cross'?'medicalIndicator':box.kind;const key=[box.chunk||'core',box.lod||'near',kind].join('|');if(!batches.has(key))batches.set(key,[]);batches.get(key).push(box);}
+  const profiledMaterials=new Map();
+  for(const box of boxes){if(removedBoxes.has(box)||replacedServiceBoxes.has(box.id))continue;const kind=box.role==='inset door glazing'?'doorGlass':box.role==='medical cross'?'medicalIndicator':box.kind;const key=[box.chunk||'core',box.lod||'near',kind,surfaceProfileFor(box)].join('|');if(!batches.has(key))batches.set(key,[]);batches.get(key).push(box);}
   for(const [key,items] of batches) {
-    const [chunk,lod,kind]=key.split('|');
-    const mesh=new THREE.InstancedMesh(cube,materials[kind]||materials.solid,items.length);
-    mesh.name=`Shared Blender city / ${kind} / ${items.length} voxels`;
+    const [chunk,lod,kind,profile]=key.split('|');
+    if(profile&&!profiledMaterials.has(profile))profiledMaterials.set(profile,createSurfaceMaterial(kind,profile));
+    const mesh=new THREE.InstancedMesh(cube,profile?profiledMaterials.get(profile):materials[kind]||materials.solid,items.length);
+    mesh.name=`Shared Blender city / ${kind}${profile?' / '+profile:''} / ${items.length} voxels`;
+    mesh.userData.surfaceProfile=profile;
     items.forEach((v,i)=>{
       dummy.position.set(v.x,v.y,v.z);dummy.rotation.set(0,v.ry||0,0);dummy.scale.set(v.sx,v.sy,v.sz);dummy.updateMatrix();
       mesh.setMatrixAt(i,dummy.matrix);mesh.setColorAt(i,color.set(v.c));
