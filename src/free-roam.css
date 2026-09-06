@@ -22,3 +22,4 @@ h1{grid-column:1;grid-row:2;font-size:49px!important;line-height:.95;letter-spac
 .map-head b{font-weight:400;font-size:inherit;color:#bacfca}.roam-card .tiny-label{display:flex;align-items:center;gap:7px}#roam-district{text-transform:uppercase}.city-map-layout aside>.city-map-note{margin-bottom:0}
 
 .blueprint-link{display:block;margin-top:12px;font:9px 'Space Mono',monospace;color:#a4cbd6;letter-spacing:1px}.blueprint-link:hover{color:var(--lime)}
+.legend-service{background:#91d5b9}.legend-destination{background:#fff0a8}

@@ -1,0 +1,192 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T10:37:18.100201+00:00",
+  "method": "CPU-only full native city regeneration with --threads 2 --skip-render --preserve-views, then fresh reopen and actual world-space mesh checks.",
+  "previousCitySHA256": "fae98baf0878bd0f0525ae7045fd52e2abfe4384137553574798c65d90423912",
+  "citySHA256": "a12e476b2c42a9a086bd7c435132b178706bc4bffeb0ab138232d0c2738b57e0",
+  "sourceGeometryAudit": "block-compositions-audit.json",
+  "authoredBlocks": {
+    "count": 21,
+    "modules": 765,
+    "checks": [
+      {
+        "id": "COURT-15-GARDEN-0",
+        "modules": 24,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "COURT-15-GARDEN-1",
+        "modules": 24,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "COURT-15-GARDEN-2",
+        "modules": 24,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "COURT-15-GARDEN-3",
+        "modules": 24,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "COURT-15-GARDEN-4",
+        "modules": 24,
+        "maximumBoundsErrorMetres": 0.00001464843751364242
+      },
+      {
+        "id": "COURT-15-GARDEN-5",
+        "modules": 24,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "COURT-15-SEAT-SOUTH",
+        "modules": 15,
+        "maximumBoundsErrorMetres": 0.000006713867179541921
+      },
+      {
+        "id": "COURT-15-SEAT-NORTH",
+        "modules": 15,
+        "maximumBoundsErrorMetres": 0.000006713867179541921
+      },
+      {
+        "id": "COURT-15-CIRCULATION",
+        "modules": 70,
+        "maximumBoundsErrorMetres": 0.00001464843751364242
+      },
+      {
+        "id": "COURT-15-HOME-ENTRY",
+        "modules": 43,
+        "maximumBoundsErrorMetres": 0.00001464843751364242
+      },
+      {
+        "id": "COURT-15-B102-BAYS",
+        "modules": 16,
+        "maximumBoundsErrorMetres": 0.000013427734359083843
+      },
+      {
+        "id": "COURT-15-B103-BAYS",
+        "modules": 16,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "MARKET-0-STALL-0-0",
+        "modules": 51,
+        "maximumBoundsErrorMetres": 0.00001464843751364242
+      },
+      {
+        "id": "MARKET-0-STALL-0-1",
+        "modules": 51,
+        "maximumBoundsErrorMetres": 0.00001464843751364242
+      },
+      {
+        "id": "MARKET-0-STALL-0-2",
+        "modules": 51,
+        "maximumBoundsErrorMetres": 0.000007324218728399501
+      },
+      {
+        "id": "MARKET-0-STALL-1-0",
+        "modules": 51,
+        "maximumBoundsErrorMetres": 0.00001464843751364242
+      },
+      {
+        "id": "MARKET-0-STALL-1-1",
+        "modules": 51,
+        "maximumBoundsErrorMetres": 0.00001464843751364242
+      },
+      {
+        "id": "MARKET-0-STALL-1-2",
+        "modules": 51,
+        "maximumBoundsErrorMetres": 0.000007324218728399501
+      },
+      {
+        "id": "MARKET-0-LOADING-GATE",
+        "modules": 24,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "MARKET-0-B044-SETBACK",
+        "modules": 58,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      },
+      {
+        "id": "MARKET-0-B045-SETBACK",
+        "modules": 58,
+        "maximumBoundsErrorMetres": 0.00000732421875682121
+      }
+    ]
+  },
+  "services": {
+    "count": 15,
+    "parts": 318,
+    "sourceHash": "d76c455fe433af286608bb6825b3a9a1a53452b5d9d0d68a1fea01beb18debd8",
+    "removedShutters": [
+      "STREET-CRAFT-B042-FRONT-022",
+      "STREET-CRAFT-B042-FRONT-023",
+      "STREET-CRAFT-B042-FRONT-024",
+      "STREET-CRAFT-B042-FRONT-025",
+      "STREET-CRAFT-B042-FRONT-026",
+      "STREET-CRAFT-B046-FRONT-022",
+      "STREET-CRAFT-B046-FRONT-023",
+      "STREET-CRAFT-B046-FRONT-024",
+      "STREET-CRAFT-B046-FRONT-025",
+      "STREET-CRAFT-B046-FRONT-026",
+      "STREET-CRAFT-B049-FRONT-022",
+      "STREET-CRAFT-B049-FRONT-023",
+      "STREET-CRAFT-B049-FRONT-024",
+      "STREET-CRAFT-B049-FRONT-025",
+      "STREET-CRAFT-B049-FRONT-026"
+    ],
+    "fullSiteRecordsVerified": true,
+    "maximumWorldPoseErrorMetres": 0.00002929687502728484,
+    "maximumBoundsErrorMetres": 0.00005371093755002221
+  },
+  "preservedViewpoints": {
+    "cameras": [
+      "CAM 01 / concept composition",
+      "CAM 02 / complete city aerial",
+      "CAM 03 / district human scale",
+      "CAM 04 / city map",
+      "CAM PLAN / orthographic architectural sheet"
+    ],
+    "scenes": {
+      "VESPER / architectural blueprint": "CAM PLAN / orthographic architectural sheet",
+      "VESPER / complete city aerial": "CAM 02 / complete city aerial",
+      "VESPER / street composition": "CAM 01 / concept composition"
+    },
+    "verified": true
+  },
+  "packedImages": 17,
+  "imagePanels": 91,
+  "trafficMovementOver30FramesMetres": 8.600006156741754,
+  "previewsRendered": false,
+  "previewImages": [
+    {
+      "file": "city-scene-preview.png",
+      "bytes": 2806543,
+      "modifiedAtUTC": "2026-09-06T06:01:51.745998+00:00",
+      "sha256": "15b676e43f050acd1ba19e70c304f8317ba93c9a8fb300edc83e84b860393808",
+      "currentGeometry": false
+    },
+    {
+      "file": "city-aerial-preview.png",
+      "bytes": 2378450,
+      "modifiedAtUTC": "2026-09-06T06:02:10.332008+00:00",
+      "sha256": "8d47f89958fb8c125ac5282054eb95eaff4692213f6f15d7d076ccdfea1dd815",
+      "currentGeometry": false
+    },
+    {
+      "file": "city-blueprint-preview.png",
+      "bytes": 5064441,
+      "modifiedAtUTC": "2026-09-06T06:02:13.660717+00:00",
+      "sha256": "5d1f45a3585bf7df746cacc5d63d489be24eaa2500f345dc89183b7735b6375a",
+      "currentGeometry": false
+    }
+  ],
+  "environmentMessages": [
+    "Host Blender preferences could not be read under the sandbox.",
+    "Host thumbnail-cache PNG write failed; main .blend save and fresh reopen succeeded.",
+    "Host extension cache directory already exists."
+  ],
+  "limits": "No render or browser quality claim. Standalone service-actions.blend contains keyed animation; main city contains exact evaluated idle fixtures."
+}

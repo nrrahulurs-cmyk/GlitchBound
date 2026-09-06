@@ -1,0 +1,12 @@
+{
+  "checkedAtUTC": "2026-09-06T10:42:39.577177+00:00",
+  "source": "service-actions.blend",
+  "sha256": "78c2314b674afe6e4c9447eb95415a871d15f43483fccf4d809543b83b623a18",
+  "scene": "VESPER / exterior service mechanisms",
+  "frame": 55,
+  "camera": "Service camera / food",
+  "image": "native-service-food-preview.png",
+  "renderSeconds": 8.308394699997734,
+  "method": "Actual keyed food mechanism in Blender. Cycles CPU only, two threads, 8 samples, OIDN CPU denoising, 960x640. No native settings saved.",
+  "limits": "A single workshop view of the native service action. Runtime steam/beam effects are not baked in this file; this does not establish whole-city or game-quality parity."
+}

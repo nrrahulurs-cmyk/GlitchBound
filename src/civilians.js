@@ -1,5 +1,7 @@
 import * as THREE from 'three';
-import * as CANNON from 'cannon-es';
+import { createCivilianRagdoll } from './civilian-ragdoll.js';
+import { createCivilianMotion } from './civilian-motion.js';
+import { createCivilianNavigation, civilianBodyRadius } from './civilian-navigation.js';
 
 const UNIT_BOX = new THREE.Box3(new THREE.Vector3(-.5,-.5,-.5),new THREE.Vector3(.5,.5,.5));
 const clamp = THREE.MathUtils.clamp;
@@ -19,16 +21,8 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
   const pose=new THREE.Object3D(),color=new THREE.Color(),partBox=new THREE.Box3();
   const inverse=new THREE.Matrix4(),ray=new THREE.Ray(),localRay=new THREE.Ray();
   const intersection=new THREE.Vector3(),worldHit=new THREE.Vector3();
-  const grid=new Map(),cell=24;
-  for(const obstacle of colliders) {
-    if(obstacle.y-obstacle.sy/2>3)continue;
-    for(let x=Math.floor((obstacle.x-obstacle.sx/2-2)/cell);x<=Math.floor((obstacle.x+obstacle.sx/2+2)/cell);x++)
-      for(let z=Math.floor((obstacle.z-obstacle.sz/2-2)/cell);z<=Math.floor((obstacle.z+obstacle.sz/2+2)/cell);z++) {
-        const key=x+','+z;if(!grid.has(key))grid.set(key,[]);grid.get(key).push(obstacle);
-      }
-  }
-  const obstaclesAt=(x,z)=>grid.get(Math.floor(x/cell)+','+Math.floor(z/cell))||[];
-  const blocked=(x,z,r=.48)=>Boolean(bounds&&(x<bounds.minX+r||x>bounds.maxX-r||z<bounds.minZ+r||z>bounds.maxZ-r))||obstaclesAt(x,z).some(b=>Math.abs(x-b.x)<b.sx/2+r&&Math.abs(z-b.z)<b.sz/2+r);
+  const navigation=createCivilianNavigation({colliders,groundHeightAt,bounds});
+  let spawnAudit=[];
   let instance=0;
   for(let i=0;i<people.length;i++) {
     const p=people[i];p.id=`CIV-${String(i+1).padStart(3,'0')}`;
@@ -37,6 +31,8 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
     p.lastVehicleImpact=-Infinity;p.vehicleContact=false;p.vehicleHitLocked=false;p.fall=null;p.bodyBox=new THREE.Box3();
     p.instanceStart=instance;
     p.parts=p.pieces.map(piece=>({piece,index:instance++,matrix:new THREE.Matrix4()}));
+    p.crowdRadius=civilianBodyRadius(p.pieces,p.scale);
+    p.gait=createCivilianMotion({scale:p.scale,phase:p.phase,groundHeightAt,umbrella:p.pieces.some(piece=>piece.umbrella)});
     for(const part of p.parts)mesh.setColorAt(part.index,color.set(part.piece.c));
   }
   mesh.instanceColor.needsUpdate=true;
@@ -53,9 +49,9 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
   }
 
   function renderAlive(p) {
-    yawMatrix.makeRotationY(p.yaw);yawMatrix.setPosition(p.x,p.groundY,p.z);p.bodyBox.makeEmpty();
+    p.bodyBox.makeEmpty();
     for(const part of p.parts) {
-      part.matrix.multiplyMatrices(yawMatrix,localPart(p,part));
+      p.gait.writePartMatrix(part.piece,part.matrix);
       mesh.setMatrixAt(part.index,part.matrix);
       if(!part.piece.umbrella)p.bodyBox.union(boundsFromMatrix(partBox,part.matrix));
     }
@@ -88,16 +84,6 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
     return bodyBounds;
   }
 
-  function boxBlocked(b) {
-    const seen=new Set();
-    for(const x of [b.min.x,(b.min.x+b.max.x)/2,b.max.x])for(const z of [b.min.z,(b.min.z+b.max.z)/2,b.max.z])
-      for(const c of obstaclesAt(x,z)) {
-        if(seen.has(c))continue;seen.add(c);
-        if(b.max.y>c.y-c.sy/2+.01&&b.min.y<c.y+c.sy/2&&b.max.x>c.x-c.sx/2&&b.min.x<c.x+c.sx/2&&b.max.z>c.z-c.sz/2&&b.min.z<c.z+c.sz/2)return true;
-      }
-    return false;
-  }
-
   function startFall(p,direction) {
     p.fall={time:0,duration:.78,startYaw:p.yaw,yaw:p.yaw,stride:p.stride};
     // Try the walking direction first on narrow sidewalks, then alternate
@@ -106,7 +92,7 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
     const candidates=[p.yaw,p.yaw+Math.PI,impulseYaw,p.yaw+Math.PI/2,p.yaw-Math.PI/2];
     for(const candidate of candidates) {
       const finalBox=fallenPose(p,1,candidate,false);
-      if(!boxBlocked(finalBox)){p.fall.yaw=candidate;break;}
+      if(!navigation.boxBlocked(finalBox)){p.fall.yaw=candidate;break;}
     }
     fallenPose(p,0,p.fall.yaw);mesh.instanceMatrix.needsUpdate=true;
   }
@@ -115,32 +101,6 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
     if(physics?.world===world)return;
     if(physicalDeaths.length)throw new Error('Attach civilian physics before any physical deaths');
     physics={world,material,groundHeightAt:sampleGround};
-  }
-
-  function rigidParts(parts,mass,direction,speed,umbrella=false) {
-    const bounds=new THREE.Box3();
-    for(const part of parts)bounds.union(partBox.copy(UNIT_BOX).applyMatrix4(part.matrix));
-    const center=bounds.getCenter(new THREE.Vector3()),body=new CANNON.Body({mass,material:physics.material,
-      linearDamping:umbrella?.18:.085,angularDamping:.18,allowSleep:true,sleepSpeedLimit:.22,sleepTimeLimit:1.2});
-    body.position.set(center.x,center.y,center.z);
-    const groups=new Map();
-    for(const part of parts){
-      const piece=part.piece;
-      const key=umbrella?(piece.sy>.5?'pole':'canopy'):piece.motion?`limb-${piece.motion}`:piece.y>1.62?'head':'torso';
-      if(!groups.has(key))groups.set(key,new THREE.Box3());
-      groups.get(key).union(partBox.copy(UNIT_BOX).applyMatrix4(part.matrix));
-    }
-    for(const shape of groups.values()){
-      const size=shape.getSize(new THREE.Vector3()),offset=shape.getCenter(new THREE.Vector3()).sub(center);
-      body.addShape(new CANNON.Box(new CANNON.Vec3(Math.max(.04,size.x/2),Math.max(.04,size.y/2),Math.max(.04,size.z/2))),new CANNON.Vec3(offset.x,offset.y,offset.z));
-    }
-    const localOrigin=new THREE.Matrix4().makeTranslation(-center.x,-center.y,-center.z);
-    const members=parts.map(part=>({part,local:part.matrix.clone().premultiply(localOrigin)}));
-    physics.world.addBody(body);
-    const push=speed>0?Math.min(18,speed*.68):.65,up=speed>0?Math.min(7,.7+speed*.2):.05;
-    body.applyImpulse(new CANNON.Vec3((direction?.x||0)*mass*push,mass*(umbrella?up+1.5:up),(direction?.z||0)*mass*push));
-    body.angularVelocity.set((direction?.z||.5)*(speed>0?4:1.2),umbrella?2:.35,-(direction?.x||.35)*(speed>0?4:1.2));
-    return{body,members,umbrella,frozen:false};
   }
 
   function renderRigidRecord(record,write=true) {
@@ -155,34 +115,32 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
     }return result;
   }
 
-  function freezeRigid(record) {
-    if(record.frozen)return;
-    const b=record.body,shape=renderRigidRecord(record,false);
-    const floor=Math.max(physics.groundHeightAt(shape.min.x,shape.min.z),physics.groundHeightAt(shape.max.x,shape.max.z),physics.groundHeightAt(b.position.x,b.position.z));
-    // Bounded cleanup must never leave an airborne frozen body.
-    if(shape.min.y>floor+.03)b.position.y-=shape.min.y-floor-.006;
-    b.velocity.setZero();b.angularVelocity.setZero();b.mass=0;b.type=CANNON.Body.STATIC;b.updateMassProperties();b.aabbNeedsUpdate=true;b.sleep();record.frozen=true;
-  }
-
   function startPhysicalDeath(p,direction,cause,speed) {
-    const bodyParts=p.parts.filter(part=>!part.piece.umbrella),umbrellaParts=p.parts.filter(part=>part.piece.umbrella);
-    const records=[rigidParts(bodyParts,68,direction,cause==='vehicle'?Math.abs(speed):0)];
-    if(umbrellaParts.length)records.push(rigidParts(umbrellaParts,3,direction,cause==='vehicle'?Math.abs(speed)*.7:0,true));
-    p.physical={records,age:0};p.fall={time:0,duration:.78};physicalDeaths.push(p);
-    const active=physicalDeaths.filter(person=>person.physical.records.some(record=>!record.frozen));
-    while(active.length>24){const oldest=active.shift();oldest.physical.records.forEach(freezeRigid);}
+    const active=physicalDeaths.filter(person=>person.physical.ragdoll.articulated);
+    while(active.length>=24){
+      const settled=active.findIndex(person=>person.physical.ragdoll.getState().sleeping);
+      active.splice(settled<0?0:settled,1)[0].physical.ragdoll.simplify();
+    }
+    const occupied=new Set(active.map(person=>person.physical.ragdoll.collisionGroup));let slot=0;while(occupied.has(1<<(slot+2)))slot++;
+    const gait=p.gait.getState();
+    const ragdoll=createCivilianRagdoll({world:physics.world,material:physics.material,parts:p.parts,yaw:p.yaw,scale:p.scale,id:p.id,
+      direction,cause,speed,collisionGroup:1<<(slot+2),groundHeightAt:physics.groundHeightAt,jointPositions:gait.jointPositions,segmentOrientations:gait.segmentOrientations});
+    p.physical={ragdoll,records:ragdoll.records,age:0};p.fall={time:0,duration:.78};physicalDeaths.push(p);
   }
 
   function updatePhysicalDeath(p,step) {
     p.physical.age+=step;p.fall.time=Math.min(p.fall.duration,p.fall.time+step);
+    p.physical.ragdoll.update(step);
+    // Sleeping poses stay in the instance buffer until any limb or umbrella
+    // wakes. Persistent bodies should not repeat 86 matrix products every frame.
+    const sleeping=p.physical.records.every(record=>record.body.sleepState===2);
+    if(sleeping&&p.physical.renderedSleeping)return;
+    p.physical.renderedSleeping=sleeping;p.bodyBox.makeEmpty();
     for(const record of p.physical.records){
-      const body=record.body;
-      if(body.velocity.length()>45)body.velocity.scale(45/body.velocity.length(),body.velocity);
-      // Sleeping bodies keep their mass so later vehicle contacts can wake
-      // them. Only the oldest assemblies freeze when the corpse cap is full.
       const bounds=renderRigidRecord(record);
-      if(!record.umbrella){p.bodyBox.copy(bounds);p.x=body.position.x;p.z=body.position.z;p.groundY=physics.groundHeightAt(p.x,p.z);}
+      if(!record.umbrella)p.bodyBox.union(bounds);
     }
+    const state=p.physical.ragdoll.getState();p.x=state.position.x;p.z=state.position.z;p.groundY=physics.groundHeightAt(p.x,p.z);
   }
 
   function frighten(source,direction) {
@@ -223,9 +181,7 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
   }
 
   function impulse(id,direction,point,strength=45){
-    const record=byId.get(id)?.physical?.records[0];if(!record||record.frozen)return false;
-    const b=record.body;b.wakeUp();b.applyImpulse(new CANNON.Vec3(direction.x*strength,direction.y*strength,direction.z*strength),
-      new CANNON.Vec3(point.x-b.position.x,point.y-b.position.y,point.z-b.position.z));return true;
+    return byId.get(id)?.physical?.ragdoll.impulse(direction,point,strength)??false;
   }
 
   function vehicleImpact(from,to,{yaw=0,speed=0,halfWidth=1.45,halfLength=2.64}={}) {
@@ -268,20 +224,19 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
     return results;
   }
 
-  function move(p,dx,dz) {
-    const steps=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.2));let moved=false;
-    for(let i=0;i<steps;i++) {
-      const nx=p.x+dx/steps,nz=p.z+dz/steps;
-      if(!blocked(nx,nz,.43*p.scale)){p.x=nx;p.z=nz;moved=true;}
-      else if(!blocked(p.x,nz,.43*p.scale)){p.z=nz;moved=true;}
-      else if(!blocked(nx,p.z,.43*p.scale)){p.x=nx;moved=true;}
-    }
-    return moved;
-  }
-
   function update(dt,time,playerPosition) {
+    navigation.beginFrame();
     elapsed+=Math.max(0,dt);
     const step=Math.min(.1,Math.max(0,dt));
+    for(const p of people){
+      if(!p.alive)continue;
+      const fleeing=p.fleeUntil>elapsed,paused=!fleeing&&playerPosition&&Math.hypot(p.x-playerPosition.x,p.z-playerPosition.z)<1.7,factor=p.health<100?.78:1;
+      // Reverse route intent once at an endpoint. The gait may still coast
+      // outward while braking; that residual motion must not flip intent again.
+      if(!fleeing&&((p.speed>0&&p.z>=p.maxZ-1e-7)||(p.speed<0&&p.z<=p.minZ+1e-7))){p.speed*=-1;p.turnCooldown=1;}
+      p.intentVX=(fleeing?p.fleeX*2.6:0)*factor;p.intentVZ=(fleeing?p.fleeZ*2.6:paused?0:p.speed)*factor;
+    }
+    navigation.beginCrowd(people);
     for(const p of people) {
       if(!p.alive) {
         if(p.physical)updatePhysicalDeath(p,step);
@@ -289,41 +244,64 @@ export function createCivilianSystem({people,mesh,colliders=[],groundHeightAt=()
         continue;
       }
       const fleeing=p.fleeUntil>elapsed,paused=!fleeing&&playerPosition&&Math.hypot(p.x-playerPosition.x,p.z-playerPosition.z)<1.7;
-      let dx=fleeing?p.fleeX*2.6*step:0,dz=fleeing?p.fleeZ*2.6*step:paused?0:p.speed*step;
-      if(p.health<100){dx*=.78;dz*=.78;}
-      const moved=move(p,dx,dz);
-      if(!fleeing&&(p.z>p.maxZ||p.z<p.minZ)){p.z=clamp(p.z,p.minZ,p.maxZ);p.speed*=-1;}
+      const crowd=navigation.steerCrowd(p,p.intentVX,p.intentVZ);p.crowdMode=crowd.mode;
+      p.crowdTurnCooldown=Math.max(0,(p.crowdTurnCooldown||0)-step);
+      if(crowd.mode==='reverse'&&p.crowdTurnCooldown===0){if(fleeing){p.fleeX*=-1;p.fleeZ*=-1;}else p.speed*=-1;p.crowdTurnCooldown=1;}
+      const plan=p.gait.plan(step,{vx:crowd.vx,vz:crowd.vz,fleeing}),routeDZ=fleeing?plan.dz:clamp(p.z+plan.dz,p.minZ,p.maxZ)-p.z;
+      const movement=navigation.move(p,plan.dx,routeDZ),moved=movement.distance>1e-8;
+      p.acceptedVX=step?movement.dx/step:0;p.acceptedVZ=step?movement.dz/step:0;
+      p.turnCooldown=Math.max(0,(p.turnCooldown||0)-step);
+      const intent=Math.hypot(plan.dx,routeDZ);
+      if(!fleeing&&!paused&&crowd.mode==='walk'&&intent>.0005&&movement.distance<intent*.15&&p.turnCooldown===0){p.speed*=-1;p.turnCooldown=1;}
       // Blocked witnesses follow their clear sidewalk instead of clipping walls.
-      if(fleeing&&!moved){p.fleeX=0;p.fleeZ=Math.sign(p.speed)||1;}
-      if(moved&&Math.hypot(dx,dz)>.0001)p.yaw=Math.atan2(dx,dz);
-      p.groundY=groundHeightAt(p.x,p.z);p.stride=moved?Math.sin(time*(fleeing?8.4:3.4)+p.phase)*(fleeing?1.3:1):0;
+      if(fleeing&&crowd.mode==='walk'&&!moved&&intent>.0005&&p.turnCooldown===0){
+        const sign=Math.sign(p.speed)||1,r=.44*p.scale,h=1.85*p.scale;
+        const directions=[[0,sign],[0,-sign],[1,0],[-1,0]];
+        const clear=directions.find(([x,z])=>!navigation.blocked(p.x+x*.35,p.z+z*.35,r,h));
+        p.fleeX=clear?.[0]||0;p.fleeZ=clear?.[1]||0;p.turnCooldown=.5;
+      }
+      p.groundY=groundHeightAt(p.x,p.z);const gait=p.gait.update(step,{x:p.x,z:p.z,groundY:p.groundY,fleeing});p.yaw=gait.yaw;p.stride=Math.sin(gait.phase*Math.PI*2)*gait.blend;
       renderAlive(p);
     }
     mesh.instanceMatrix.needsUpdate=true;
   }
 
-  function reset() {
-    elapsed=0;
-    for(const person of physicalDeaths)for(const record of person.physical.records)physics.world.removeBody(record.body);
-    physicalDeaths.length=0;
-    for(const p of people) {
-      Object.assign(p,p.spawn,{health:100,alive:true,fall:null,physical:null,fleeUntil:0,fleeX:0,fleeZ:0,lastVehicleImpact:-Infinity,vehicleContact:false,vehicleHitLocked:false,lastCause:null,lastImpactSpeed:0});
-      p.yaw=p.speed<0?Math.PI:0;p.stride=0;p.groundY=groundHeightAt(p.x,p.z);renderAlive(p);
+  function resolveSpawns(){
+    const occupied=[];
+    for(const p of people){
+      if(!p.alive)continue;
+      const before={x:p.x,z:p.z},result=navigation.resolveSpawn(p,occupied);
+      p.x=result.x;p.z=result.z;occupied.push({x:p.x,z:p.z,radius:p.crowdRadius});
+      if(result.distance>0||!result.resolved)spawnAudit.push({id:p.id,before,x:p.x,z:p.z,distance:result.distance,resolved:result.resolved,bodyRadius:p.crowdRadius});
+      p.groundY=groundHeightAt(p.x,p.z);p.gait.reset({x:p.x,z:p.z,yaw:p.yaw,groundY:p.groundY});renderAlive(p);
     }
     mesh.instanceMatrix.needsUpdate=true;
   }
+  function refreshObstacles({resolveSpawns:resolve=false}={}){navigation.beginFrame();if(resolve)resolveSpawns();}
+  function setObstacleProvider(callback,{resolveSpawns:resolve=true}={}){navigation.setObstacleProvider(callback);if(resolve)resolveSpawns();}
+  function reset() {
+    elapsed=0;spawnAudit=[];navigation.beginFrame();
+    for(const person of physicalDeaths)person.physical.ragdoll.dispose();
+    physicalDeaths.length=0;
+    for(const p of people) {
+      Object.assign(p,p.spawn,{health:100,alive:true,fall:null,physical:null,fleeUntil:0,fleeX:0,fleeZ:0,lastVehicleImpact:-Infinity,vehicleContact:false,vehicleHitLocked:false,lastCause:null,lastImpactSpeed:0,turnCooldown:0,crowdTurnCooldown:0,acceptedVX:0,acceptedVZ:0,intentVX:0,intentVZ:0,crowdMode:'idle'});
+      p.yaw=p.speed<0?Math.PI:0;p.stride=0;
+    }
+    resolveSpawns();
+  }
 
   function getPeople() {
-    return people.map(p=>({id:p.id,x:p.x,y:p.physical?p.physical.records[0].body.position.y:p.groundY,z:p.z,groundY:p.groundY,scale:p.scale,yaw:p.yaw,health:p.health,alive:p.alive,injured:p.alive&&p.health<100,fleeing:p.alive&&p.fleeUntil>elapsed,fallProgress:p.fall?p.fall.time/p.fall.duration:0,physical:Boolean(p.physical),physics:p.physical?{speed:p.physical.records[0].body.velocity.length(),velocity:{...p.physical.records[0].body.velocity},sleeping:p.physical.records[0].body.sleepState===CANNON.Body.SLEEPING,frozen:p.physical.records[0].frozen}:null,instanceStart:p.instanceStart,instanceCount:p.parts.length,vehicleCooldown:Math.max(0,1.2-(elapsed-p.lastVehicleImpact)),cause:p.lastCause||null,aimPoint:{x:p.x,y:p.groundY+1.12*p.scale,z:p.z},bodyBounds:{min:{x:p.bodyBox.min.x,y:p.bodyBox.min.y,z:p.bodyBox.min.z},max:{x:p.bodyBox.max.x,y:p.bodyBox.max.y,z:p.bodyBox.max.z}}}));
+    return people.map(p=>{const state=p.physical?.ragdoll.getState();return{id:p.id,x:p.x,y:state?state.position.y:p.groundY,z:p.z,groundY:p.groundY,scale:p.scale,yaw:p.yaw,health:p.health,alive:p.alive,injured:p.alive&&p.health<100,fleeing:p.alive&&p.fleeUntil>elapsed,fallProgress:p.fall?p.fall.time/p.fall.duration:0,physical:Boolean(p.physical),physics:state?{...state,velocity:{...state.velocity},position:{...state.position}}:null,instanceStart:p.instanceStart,instanceCount:p.parts.length,vehicleCooldown:Math.max(0,1.2-(elapsed-p.lastVehicleImpact)),cause:p.lastCause||null,aimPoint:{x:p.x,y:p.groundY+1.12*p.scale,z:p.z},bodyBounds:{min:{x:p.bodyBox.min.x,y:p.bodyBox.min.y,z:p.bodyBox.min.z},max:{x:p.bodyBox.max.x,y:p.bodyBox.max.y,z:p.bodyBox.max.z}}};});
   }
+  function needsArticulatedSolver(){return physicalDeaths.some(p=>p.physical.ragdoll.articulated&&p.physical.records.some(r=>!r.umbrella&&r.body.sleepState!==2));}
   function getState() {
     const alive=people.filter(p=>p.alive).length;
-    return {total:people.length,alive,dead:people.length-alive,injured:people.filter(p=>p.alive&&p.health<100).length,fleeing:people.filter(p=>p.alive&&p.fleeUntil>elapsed).length,physicalCorpses:physicalDeaths.length,activeCorpseBodies:physicalDeaths.reduce((n,p)=>n+p.physical.records.filter(record=>!record.frozen).length,0),time:elapsed};
+    return {total:people.length,alive,dead:people.length-alive,injured:people.filter(p=>p.alive&&p.health<100).length,fleeing:people.filter(p=>p.alive&&p.fleeUntil>elapsed).length,physicalCorpses:physicalDeaths.length,activeRagdolls:physicalDeaths.filter(p=>p.physical.ragdoll.articulated).length,simplifiedCorpses:physicalDeaths.filter(p=>p.physical.ragdoll.simplified).length,ragdollJoints:physicalDeaths.reduce((n,p)=>n+(p.physical.ragdoll.articulated?p.physical.ragdoll.joints.length:0),0),activeCorpseBodies:physicalDeaths.reduce((n,p)=>n+p.physical.records.length,0),time:elapsed};
   }
   function getColliders(){
     return people.map(p=>({id:p.id,civilian:true,alive:p.alive,dynamic:Boolean(p.physical),x:(p.bodyBox.min.x+p.bodyBox.max.x)/2,y:(p.bodyBox.min.y+p.bodyBox.max.y)/2,z:(p.bodyBox.min.z+p.bodyBox.max.z)/2,
       sx:p.bodyBox.max.x-p.bodyBox.min.x,sy:p.bodyBox.max.y-p.bodyBox.min.y,sz:p.bodyBox.max.z-p.bodyBox.min.z}));
   }
   reset();
-  return {mesh,update,raycast,damage,vehicleImpact,reset,getState,getPeople,getColliders,attachPhysics,impulse};
+  return {mesh,update,raycast,damage,vehicleImpact,reset,getState,getPeople,getColliders,attachPhysics,impulse,needsArticulatedSolver,setObstacleProvider,refreshObstacles,getNavigationState:()=>({...navigation.getState(),spawnCorrections:spawnAudit})};
 }

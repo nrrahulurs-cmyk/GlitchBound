@@ -1,0 +1,280 @@
+{
+  "status": "verified local checkpoint; full quality goal remains active",
+  "checkedAtUTC": "2026-09-06T11:22:35.746Z",
+  "publication": {
+    "localBranch": "quality-pass-01",
+    "publicBaseline": "315825494c2ccbdfd63359fd3c64f5969c4562b0",
+    "github": "https://github.com/Hiraeth010/neon-district",
+    "existingPublicGame": "https://neon-district-xi.vercel.app",
+    "newSourcePushed": false,
+    "newVercelDeployment": false,
+    "condition": "Do not publish this continuing quality work until the requested complete game and comparative review are finished."
+  },
+  "localGame": "http://127.0.0.1:5173/",
+  "build": {
+    "entry": "/assets/index-CS_PCoEN.js",
+    "sha256": "4127c17e40b92cce9fd282c47fe5de600385e1408ef73b7b0fee36c18ec3aff3",
+    "nodeSuitesPassed": 12,
+    "suites": [
+      "camera-obstruction.test.mjs",
+      "city-services.test.mjs",
+      "civilian-crowd.test.mjs",
+      "civilian-gait-edge.test.mjs",
+      "civilian-gait-integration.test.mjs",
+      "civilian-motion.test.mjs",
+      "civilian-navigation.test.mjs",
+      "civilian-ragdoll.test.mjs",
+      "gun-shot-simulation.test.mjs",
+      "kinematic-pose.test.mjs",
+      "player-movement.test.mjs",
+      "service-world.test.mjs"
+    ],
+    "productionBuildPassed": true,
+    "warning": "Existing chunks exceed the Vite 500 kB warning threshold."
+  },
+  "changes": [
+    "Grounded civilian gait with captured pose-to-ragdoll transitions.",
+    "Neighbor-aware following, passing and accepted crowd positions; route endpoints reverse once.",
+    "Controlled cars, traffic and moving fixtures retain accepted poses through every Cannon substep, with physical impact momentum.",
+    "Fifteen physical animated service sites and exact Blender workshop source.",
+    "Two authored residential/market blocks, connected approaches and synchronized native city geometry.",
+    "Vapor shader fractional-power clamp removes the reproduced reflection blackout."
+  ],
+  "currentBuildEvidence": [
+    {
+      "file": "validation/crowd-browser-CS_PCoEN-2026-09-06T11-16-14-146Z.json",
+      "sha256": "ad73e824842773d24b0f2d5098b11e76964727ef5a7ccb909a3fa243df65ac4a",
+      "description": "Five actual browser groups: clear fresh crowd, progress, real injury/flee, shot-to-physical-death and clean reset. Instrumented, not a performance sample."
+    },
+    {
+      "file": "validation/physics-short-timing-CS_PCoEN-2026-09-06T11-15-07-768Z.json",
+      "sha256": "4531c82ecee49f867827fec661c51a06ad2409ba0c221a85f168b859ffcab79c",
+      "description": "Separate clean native-RAF timing at 1440x900; ordinary baseline 59.9745 FPS / p95 16.8 ms; 24 fresh articulated deaths 40.4333 FPS / p95 33.4 ms. No concurrent browser or Blender."
+    },
+    {
+      "file": "validation/civilian-crowd-final-original-30s.json",
+      "sha256": "2f81331623c49ca1a4bdd9f148a02dd69f8a0a7534f615677d8509b893b27112",
+      "description": "Independent CPU check of actual 284-person voxel matrices for 30 seconds, zero contacts and continued progress."
+    },
+    {
+      "file": "validation/civilian-crowd-final-headon-30s.json",
+      "sha256": "5a7c02e7e5fe9b2dff2590a2d257b0e7d2340f9baba2f4adc20980b813053c04",
+      "description": "Independent head-on passing case with actual transformed body parts."
+    },
+    {
+      "file": "validation/civilian-crowd-final-follower-30s.json",
+      "sha256": "45824bb4a7f7b4e8cb81aa3dac96f602dba0c76ed67a74ffea4837ab55bc5fe6",
+      "description": "Independent faster-follower case with actual transformed body parts."
+    },
+    {
+      "file": "validation/civilian-route-boundary-final-8s.json",
+      "sha256": "09ddf6ea07765b9ed339d228ee95dfcf66ded64bb2c10b2596400c8a7841adda",
+      "description": "Independent endpoint regression; one reversal and return into route."
+    }
+  ],
+  "priorBuildEvidence": {
+    "build": "/assets/index--TQCur8T.js",
+    "qualification": "Captured before the final living-crowd and route-end changes. These unchanged systems are supported by their reports and the final combined Node suite; these are not recaptured CS_PCoEN browser runs.",
+    "reports": [
+      {
+        "file": "validation/block-compositions-browser.json",
+        "sha256": "33a968262fe62f7467ea060029efebc46bce9622e416a32917ee0b1328a150ed",
+        "description": "Actual W walking: 220.397 m residential entry route and 137.601 m loading route; grounded eye error zero. First matched court image was premature far LOD."
+      },
+      {
+        "file": "validation/block-compositions-settled-cameras.json",
+        "sha256": "d34b23235525b17566585c13ceaada8a04c6f1cd7e6a757171c008adf66d40d2",
+        "description": "Corrected identical cameras require detailed chunk visibility, far chunk hidden and 65 settling frames. Both views inspected by root; design review involved the geometry author."
+      },
+      {
+        "file": "validation/service-world-browser.json",
+        "sha256": "5606501da55a2913ad0dcdaa181eed897c32ed293766012fee462f44f137e729",
+        "description": "Six service-world browser groups: physical food, clinic, garage, interruption and reset integration. Original warped-car adverse frame retained."
+      },
+      {
+        "file": "validation/garage-repair-driving.json",
+        "sha256": "5700a67b9f4bfc75d4a1e643986528dd5a3f42aa489372aa3d10f1e6daf82b49",
+        "description": "Separate real collision damage, pedestrian-aware drive, parking, exit/walk and repair. No injuries; car integrity 83 to 100 with exact original vertex restoration."
+      },
+      {
+        "file": "validation/ragdoll-contact-browser--TQCur8T-2026-09-06T10-47-08-589Z.json",
+        "sha256": "a99000cd92791cb521b2ca54abd003220e082d3e37ba1e20a5c2c35bb2d02523",
+        "description": "Actual forward and reverse vehicle impacts reach strict stable sleep; every tested substep has aligned controlled-car hulls."
+      },
+      {
+        "file": "validation/street-impact-regression--TQCur8T-2026-09-06T10-48-37-164Z.json",
+        "sha256": "d36e018d874cf4fe5f8d27a947eab0b2bde4d04f76036f301ce17f80f1b54772",
+        "description": "Actual launched bin, damaged traffic wreck and displaced/dented parked vehicle."
+      }
+    ]
+  },
+  "native": [
+    {
+      "file": "blender/neon-district-city.blend",
+      "sha256": "a12e476b2c42a9a086bd7c435132b178706bc4bffeb0ab138232d0c2738b57e0",
+      "report": {
+        "file": "validation/native-authored-blocks-services.json",
+        "sha256": "1d90772c6ecfc2fd05475dc283d9b053ce8e873af8a14de9b8779aae622707b2",
+        "description": "Reopened native city with 21 assemblies / 765 authored block voxels, 15 sites / 318 mechanism parts, packed ads and preserved cameras."
+      }
+    },
+    {
+      "file": "blender/service-actions.blend",
+      "sha256": "78c2314b674afe6e4c9447eb95415a871d15f43483fccf4d809543b83b623a18",
+      "report": {
+        "file": "validation/native-service-actions.json",
+        "sha256": "a8038293d54da7bb954531a16679f2317cc7ac8a3180844849c1173b68813579",
+        "description": "Freshly reopened workshop: 22,947 pose/emission samples match the shared recipe contract."
+      }
+    }
+  ],
+  "blackout": {
+    "file": "validation/vapor-blackout-resolution.json",
+    "sha256": "e3ecca94aaab7f1305e871d9252b93ef9c68f1d2bbb62e9618db2126089bd8a7",
+    "description": "Isolated original/clamped vapor shader toggle evidence, followed by nine steam views and actual walking. Latest authored-block camera pass also visually recaptures the original regression view."
+  },
+  "remaining": [
+    "24-death transient simulation cost; profiling is the next performance task.",
+    "Ordinary upper housing remains repetitive; broader authored routes, activities and usable interiors.",
+    "Close-range character design and varied purposeful animation; native crowd preview is still a smaller static representation, not the full runtime crowd.",
+    "Vehicle variety/handling, deeper cyberware/security encounters and independent sound review.",
+    "Long-session, accessibility and hardware-range verification.",
+    "Fresh native full-city renders.",
+    "AAA parity and a blind comparative preference have not been established."
+  ],
+  "reviewPolicy": "Passing logic and browser checks establishes the tested behavior only. Involved visual review is not blind. Preserve failed/adverse reports and do not infer full-game completion from these results.",
+  "sourceFiles": [
+    {
+      "file": "src/advert-campaigns.js",
+      "sha256": "d5e97b70b294f951ef7d78e18e47a6862804eb0a68167d0e37efe7ba20359b99"
+    },
+    {
+      "file": "src/asset-placements.js",
+      "sha256": "d3e8464c01c03df883b20b090020c6ed52141e3661e272fee1726dc3a18356c7"
+    },
+    {
+      "file": "src/atmosphere.js",
+      "sha256": "6cd0bbe1b0939fae9e7be8136df0b19b781747e9f9ced333dd5fd7c110a0df85"
+    },
+    {
+      "file": "src/audio.js",
+      "sha256": "210bef0cff9a55eea875fcffa246efc2d3c5ea65b521ee60a92d35f51cbfd83b"
+    },
+    {
+      "file": "src/block-compositions.js",
+      "sha256": "d3a8cb503519787984584c444521669d8cd8661f438333321b3bc7abcaeec768"
+    },
+    {
+      "file": "src/camera-obstruction.js",
+      "sha256": "b761e264079c6b0208d17bb957b851571a3905f57724979cc844ebfff7cfe711"
+    },
+    {
+      "file": "src/city-blueprint.js",
+      "sha256": "527be26daa88fcfe8fd896b2431a5bad6dabd6505e332fe14713c916ce8a9f56"
+    },
+    {
+      "file": "src/city-expansion.js",
+      "sha256": "4afa1aa2733da10f6e4441810912944f50f975baddad53dcd226358089585461"
+    },
+    {
+      "file": "src/city-layout.js",
+      "sha256": "41102b6b14651ef2220df21905c493b7a9782e798807412062182dfc47a59f99"
+    },
+    {
+      "file": "src/city-life.js",
+      "sha256": "d635d80cd461ab8a73cbcf4ac9fc0c9a85b263b624c7a6bf551db421cba39896"
+    },
+    {
+      "file": "src/city-services.js",
+      "sha256": "516c040b23d2f94a5ea3116ea028612f8d044c4d86d9d4cc614143970137c286"
+    },
+    {
+      "file": "src/city-shadows.js",
+      "sha256": "4bc0e767034555409b28416f469ff026dc53a1187f55d41c62ba69b30a1ca134"
+    },
+    {
+      "file": "src/city.js",
+      "sha256": "09b87cde5ea2a12726338da8435011c85040af948dde2cd0822e570da46dd902"
+    },
+    {
+      "file": "src/civilian-motion.js",
+      "sha256": "d29d6f58b29fffc453f8aa107adbc1260a7161f49cef21c285097e63fa3425aa"
+    },
+    {
+      "file": "src/civilian-navigation.js",
+      "sha256": "785d6349bba11e916224d0993cec78551583c66aa62726af10230996fbbb2249"
+    },
+    {
+      "file": "src/civilian-ragdoll.js",
+      "sha256": "faafbdf01558c26f26160b4e89b8f7827cebb476f5fde7e57e8c3317ac3e8e6e"
+    },
+    {
+      "file": "src/civilians.js",
+      "sha256": "07fa47557a503d9b003002c3abbefa532f7436fe332e3efedbd6cb523e2b7d74"
+    },
+    {
+      "file": "src/kinematic-pose.js",
+      "sha256": "2804901da66706106c9aa3514f69419af6944f863725370e2bb8cdc6fbccbacd"
+    },
+    {
+      "file": "src/main.js",
+      "sha256": "e7461954eb311f61cf261b1a86a666fe2fad1a6950843070bdcbaa35ecd2c364"
+    },
+    {
+      "file": "src/player-movement.js",
+      "sha256": "64babb415af0b8f8db8f273931274e0fb186c7aae18262b8a2536d21e1ee9271"
+    },
+    {
+      "file": "src/service-fixtures.js",
+      "sha256": "d76c455fe433af286608bb6825b3a9a1a53452b5d9d0d68a1fea01beb18debd8"
+    },
+    {
+      "file": "src/service-interface.js",
+      "sha256": "38a17f9d75ee073f7c1b88ee8f2c5e6066655cfefe7e691bdbfbe2fe3a0992d9"
+    },
+    {
+      "file": "src/service-world.js",
+      "sha256": "bdae796570bd2858ac0e01e0d5e58f6e5e17f425a8f8dae9d9f196a525992417"
+    },
+    {
+      "file": "src/simulation.js",
+      "sha256": "a5e655f0509f58ad2e8e69b8994e522b5115ed4f5bcbdcf71c571b95c5133fce"
+    },
+    {
+      "file": "src/street-collisions.js",
+      "sha256": "10b99defe84b0dd336e32a1bf32bf928e36cc3f3971b8d456b41139d4060d4f3"
+    },
+    {
+      "file": "src/street-detail.js",
+      "sha256": "8e0b007ac46d7b56119c14529497e20e633199c65a1013e43e3521ee2305c2b1"
+    },
+    {
+      "file": "src/street-physics.js",
+      "sha256": "bd4a9b9fcbf5077a5e141005878561b9914f36501bc89a33126c4b3dca860b65"
+    },
+    {
+      "file": "src/surface-materials.js",
+      "sha256": "4f9cc88d3c9d48762a6796b3a0e1f605cc43bcd06fdbca7d40c68b63c502e50c"
+    },
+    {
+      "file": "src/vehicle-damage.js",
+      "sha256": "8f79045b2d8a1b8d0ee073c6aad0a57f16e943f778a0184c6c961bab1307b71f"
+    },
+    {
+      "file": "src/voxel-assets.js",
+      "sha256": "5a7af09ec9923147cf86f130db98f71789f6269426fe6ef96ef0e17a72108bf9"
+    },
+    {
+      "file": "src/weapon-rig.js",
+      "sha256": "690a9374bde7a3937628315c0c13a30cf55b2cf01775a6f115d5bca97ab6f9e9"
+    },
+    {
+      "file": "src/weapon-vfx.js",
+      "sha256": "7dd32258417aebaa4bda5a6301de7b56174fe886005e04f19bd5875ae00ebb3e"
+    },
+    {
+      "file": "src/world-audio.js",
+      "sha256": "fab82737bfcaa84a96c290161df52b2397f76bd76325a9e4d21ee5195a1a53c5"
+    }
+  ]
+}

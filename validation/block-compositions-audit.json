@@ -1,0 +1,231 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T10:29:57.685Z",
+  "scope": "Two authored shared block compositions; CPU-only geometry, placement, support and access audit. No visual-quality or gameplay-input claim.",
+  "counts": {
+    "assemblies": 21,
+    "voxels": 765,
+    "replacements": 54,
+    "addedCollisionBodies": 4,
+    "lanes": 112,
+    "adRays": 3888,
+    "entranceRays": 9702,
+    "residentialEntranceRays": 126
+  },
+  "checks": [
+    {
+      "name": "All original source indices preserved outside54 declared tree/stall replacements",
+      "pass": true,
+      "evidence": {
+        "oldCount": 160135,
+        "replacements": 54
+      }
+    },
+    {
+      "name": "roads remains exactly unchanged",
+      "pass": true
+    },
+    {
+      "name": "bounds remains exactly unchanged",
+      "pass": true
+    },
+    {
+      "name": "signs remains exactly unchanged",
+      "pass": true
+    },
+    {
+      "name": "advertPlacements remains exactly unchanged",
+      "pass": true
+    },
+    {
+      "name": "streetDetails remains exactly unchanged",
+      "pass": true
+    },
+    {
+      "name": "All15 full service placement records unchanged",
+      "pass": true,
+      "evidence": {
+        "count": 15
+      }
+    },
+    {
+      "name": "All original collision boxes unchanged",
+      "pass": true,
+      "evidence": {
+        "added": 4
+      }
+    },
+    {
+      "name": "Only two declared buildings receive upper sections",
+      "pass": true
+    },
+    {
+      "name": "Both upper-storey hosts have exactly three shared blueprint sections",
+      "pass": true
+    },
+    {
+      "name": "Recipe data deterministic",
+      "pass": true
+    },
+    {
+      "name": "Ground craft uses the production static collision source",
+      "pass": true,
+      "evidence": {
+        "visibleGroundPieces": 605,
+        "derivedGroundShapes": 605
+      }
+    }
+  ],
+  "connectionChecks": [
+    {
+      "id": "COURT-15-GARDEN-0",
+      "members": 24,
+      "connected": 24
+    },
+    {
+      "id": "COURT-15-GARDEN-1",
+      "members": 24,
+      "connected": 24
+    },
+    {
+      "id": "COURT-15-GARDEN-2",
+      "members": 24,
+      "connected": 24
+    },
+    {
+      "id": "COURT-15-GARDEN-3",
+      "members": 24,
+      "connected": 24
+    },
+    {
+      "id": "COURT-15-GARDEN-4",
+      "members": 24,
+      "connected": 24
+    },
+    {
+      "id": "COURT-15-GARDEN-5",
+      "members": 24,
+      "connected": 24
+    },
+    {
+      "id": "COURT-15-SEAT-SOUTH",
+      "members": 15,
+      "connected": 15
+    },
+    {
+      "id": "COURT-15-SEAT-NORTH",
+      "members": 15,
+      "connected": 15
+    },
+    {
+      "id": "COURT-15-CIRCULATION",
+      "members": 70,
+      "connected": 70
+    },
+    {
+      "id": "COURT-15-HOME-ENTRY",
+      "members": 43,
+      "connected": 43
+    },
+    {
+      "id": "COURT-15-B102-BAYS",
+      "members": 16,
+      "connected": 16
+    },
+    {
+      "id": "COURT-15-B103-BAYS",
+      "members": 16,
+      "connected": 16
+    },
+    {
+      "id": "MARKET-0-STALL-0-0",
+      "members": 51,
+      "connected": 51
+    },
+    {
+      "id": "MARKET-0-STALL-0-1",
+      "members": 51,
+      "connected": 51
+    },
+    {
+      "id": "MARKET-0-STALL-0-2",
+      "members": 51,
+      "connected": 51
+    },
+    {
+      "id": "MARKET-0-STALL-1-0",
+      "members": 51,
+      "connected": 51
+    },
+    {
+      "id": "MARKET-0-STALL-1-1",
+      "members": 51,
+      "connected": 51
+    },
+    {
+      "id": "MARKET-0-STALL-1-2",
+      "members": 51,
+      "connected": 51
+    },
+    {
+      "id": "MARKET-0-LOADING-GATE",
+      "members": 24,
+      "connected": 24
+    },
+    {
+      "id": "MARKET-0-B044-SETBACK",
+      "members": 58,
+      "connected": 58
+    },
+    {
+      "id": "MARKET-0-B045-SETBACK",
+      "members": 58,
+      "connected": 58
+    }
+  ],
+  "pathChecks": [
+    {
+      "id": "COURT-15-ROAD-ENTRY",
+      "segments": 6,
+      "width": 2.6,
+      "obstacles": []
+    },
+    {
+      "id": "COURT-15-ENTRY-WALK",
+      "segments": 4,
+      "width": 2,
+      "obstacles": []
+    },
+    {
+      "id": "COURT-15-LOOP",
+      "segments": 5,
+      "width": 1.8,
+      "obstacles": []
+    },
+    {
+      "id": "COURT-15-SEAT-ACCESS-S",
+      "segments": 2,
+      "width": 1.2,
+      "obstacles": []
+    },
+    {
+      "id": "COURT-15-SEAT-ACCESS-N",
+      "segments": 2,
+      "width": 1.2,
+      "obstacles": []
+    },
+    {
+      "id": "MARKET-0-LOADING-WALK",
+      "segments": 6,
+      "width": 2.6,
+      "obstacles": []
+    },
+    {
+      "id": "MARKET-0-SERVICE-WALK",
+      "segments": 6,
+      "width": 1.2,
+      "obstacles": []
+    }
+  ],
+  "failures": []
+}

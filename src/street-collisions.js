@@ -33,7 +33,7 @@ function contained(inner,outer) {
  * compound bodies without filling the gaps in benches, railings or gateways.
  * The input layout is never changed; removedBoxes contains its original refs.
  */
-export function createStreetCollisionLayout(layout) {
+export function createStreetCollisionLayout(layout,{excludedBoxIds=new Set()}={}) {
   const boxes=layout.boxes||[],staticColliders=[],dynamicProps=[],removedBoxes=new Set();
   const groundSurfaces=boxes.filter(box=>finiteBox(box)&&box.lod!=='far'&&box.kind==='pavement'&&
     box.sx>=1&&box.sz>=1&&box.y+box.sy/2>=.08&&box.y+box.sy/2<=.4);
@@ -81,7 +81,7 @@ export function createStreetCollisionLayout(layout) {
   }
   for(let index=0;index<boxes.length;index++) {
     const box=boxes[index];
-    if(!finiteBox(box)||box.lod==='far'||removedBoxes.has(box)||!['solid','metal'].includes(box.kind))continue;
+    if(!finiteBox(box)||box.lod==='far'||removedBoxes.has(box)||excludedBoxIds.has(box.id)||!['solid','metal'].includes(box.kind))continue;
     if(box.y+box.sy/2<=FLOOR_Y+EPSILON||box.y-box.sy/2>=STREET_HEIGHT-EPSILON)continue;
     // A containing box necessarily contains the candidate's center, so one
     // spatial bucket is enough even for rotated or very large architecture.

@@ -3,12 +3,21 @@ import { createCityLayout } from './city-layout.js';
 import { ADVERT_CAMPAIGNS } from './advert-campaigns.js';
 import { createStreetCollisionLayout } from './street-collisions.js';
 import { createCivilianSystem } from './civilians.js';
+import { createSurfaceMaterial } from './surface-materials.js';
+import { createCityServices } from './city-services.js';
+import { createServiceFixtures } from './service-fixtures.js';
+import { RectAreaLightUniformsLib } from 'three/addons/lights/RectAreaLightUniformsLib.js';
 
 // The same deterministic voxel modules are exported to the editable Blender scene.
 export function createCity(scene) {
   const layout=createCityLayout();
   const {boxes,signs,colliders,bounds,roads,districts,patrolRoutes,chunks,citySize}=layout;
-  const {staticColliders:streetColliders,dynamicProps,removedBoxes}=createStreetCollisionLayout(layout);
+  const groundSurfaces=boxes.filter(v=>v.kind==='pavement'&&v.sx>=1&&v.sz>=1&&v.y+v.sy/2>=.08&&v.y+v.sy/2<=.4);
+  function groundHeightAt(x,z){let height=.057;for(const v of groundSurfaces){const cs=Math.cos(v.ry||0),sn=Math.sin(v.ry||0),dx=x-v.x,dz=z-v.z;if(Math.abs(dx*cs-dz*sn)<=v.sx/2&&Math.abs(dx*sn+dz*cs)<=v.sz/2)height=Math.max(height,v.y+v.sy/2)}return height}
+  const serviceSource={boxes,streetDetails:layout.streetDetails,roads,districts,colliders,buildings:layout.buildings};
+  const serviceFixtures=createServiceFixtures({source:serviceSource,sites:createCityServices({layout:serviceSource,groundHeightAt}).list()});
+  const replacedServiceBoxes=new Set(serviceFixtures.removedBoxIds);
+  const {staticColliders:streetColliders,dynamicProps,removedBoxes}=createStreetCollisionLayout(layout,{excludedBoxIds:replacedServiceBoxes});
   const collisionGrid=new Map(),collisionCell=12;let indexedColliders=-1;
   function indexCollisions(){
     collisionGrid.clear();indexedColliders=colliders.length;
@@ -27,8 +36,6 @@ export function createCity(scene) {
     return [...nearby];
   }
   const root=new THREE.Group();root.name='KASUMI WARD / concept city';scene.add(root);
-  const groundSurfaces=boxes.filter(v=>v.kind==='pavement'&&v.sx>=1&&v.sz>=1&&v.y+v.sy/2>=.08&&v.y+v.sy/2<=.4);
-  function groundHeightAt(x,z){let height=.057;for(const v of groundSurfaces)if(Math.abs(x-v.x)<=v.sx/2&&Math.abs(z-v.z)<=v.sz/2)height=Math.max(height,v.y+v.sy/2);return height}
   const cube=new THREE.BoxGeometry(1,1,1),dummy=new THREE.Object3D(),color=new THREE.Color();
   function luminousMaterial(intensity) {
     const material=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.38,metalness:.15,emissive:0xffffff,emissiveIntensity:intensity});
@@ -41,12 +48,16 @@ export function createCity(scene) {
     return material;
   }
   const materials={
-    solid:new THREE.MeshStandardMaterial({roughness:.83,metalness:.18}),
-    metal:new THREE.MeshStandardMaterial({roughness:.52,metalness:.65}),
-    pavement:new THREE.MeshStandardMaterial({roughness:.38,metalness:.48}),
+    solid:createSurfaceMaterial('solid'),
+    metal:createSurfaceMaterial('metal'),
+    pavement:createSurfaceMaterial('pavement'),
     window:luminousMaterial(.95),glow:luminousMaterial(4.2),
     glass:new THREE.MeshStandardMaterial({roughness:.16,metalness:.75,transparent:true,opacity:.34,depthWrite:false})
   };
+  // Door panes are frosted glazing, not full-bright tower advertisements. Keep
+  // medical symbols distinct from the pane when the player stands close to it.
+  materials.doorGlass=luminousMaterial(.12);materials.doorGlass.roughness=.58;materials.doorGlass.metalness=.06;
+  materials.medicalIndicator=luminousMaterial(1.4);
   const chunkGroups=new Map();
   for(const chunk of chunks) {
     const near=new THREE.Group(),far=new THREE.Group();near.name=chunk.id+' / detailed';far.name=chunk.id+' / distant skyline';
@@ -54,7 +65,7 @@ export function createCity(scene) {
   }
   const targetGroup=(chunk,lod)=>chunkGroups.has(chunk)?chunkGroups.get(chunk)[lod==='far'?'far':'near']:root;
   const batches=new Map();
-  for(const box of boxes){if(removedBoxes.has(box))continue;const key=[box.chunk||'core',box.lod||'near',box.kind].join('|');if(!batches.has(key))batches.set(key,[]);batches.get(key).push(box);}
+  for(const box of boxes){if(removedBoxes.has(box)||replacedServiceBoxes.has(box.id))continue;const kind=box.role==='inset door glazing'?'doorGlass':box.role==='medical cross'?'medicalIndicator':box.kind;const key=[box.chunk||'core',box.lod||'near',kind].join('|');if(!batches.has(key))batches.set(key,[]);batches.get(key).push(box);}
   for(const [key,items] of batches) {
     const [chunk,lod,kind]=key.split('|');
     const mesh=new THREE.InstancedMesh(cube,materials[kind]||materials.solid,items.length);
@@ -151,12 +162,15 @@ export function createCity(scene) {
   // small pool of local lights at actual mounted signs so their spill reaches
   // the sidewalk and adjacent unlit masonry without adding hundreds of lights.
   const storefrontEmitters=signs.filter(s=>s.chunk&&s.y>2&&s.y<8&&s.w>2.5&&s.h<2.8&&s.mountType==='wall-panel').map(s=>({
-    id:s.id,x:s.x+Math.sin(s.ry||0)*1.15,y:s.y-.45,z:s.z+Math.cos(s.ry||0)*1.15,
+    id:s.id,x:s.x+Math.sin(s.ry||0)*.9,y:s.y-.45,z:s.z+Math.cos(s.ry||0)*.9,ry:s.ry||0,
     color:new THREE.Color(s.tint).lerp(new THREE.Color('#b9d1e1'),.48),
-    intensity:Math.min(185,105+s.w*7),distance:44
+    intensity:22,width:Math.min(8,s.w),height:1.2
   }));
+  // A broad canopy emits across its width. It illuminates the pavement without
+  // the concentrated white reflection produced by a point close to metal trim.
+  RectAreaLightUniformsLib.init();
   const storefrontLights=Array.from({length:4},(_,i)=>{
-    const light=new THREE.PointLight('#a5c9df',0,44,2);light.name='Mounted storefront spill / '+(i+1);
+    const light=new THREE.RectAreaLight('#a5c9df',0,8,1.2);light.name='Mounted storefront spill / '+(i+1);
     light.userData.emitterId=null;light.userData.targetIntensity=0;root.add(light);return light;
   });
   let lightingState={nearestEmitters:[],activeLights:0,visibleBlocks:0};
@@ -175,7 +189,8 @@ export function createCity(scene) {
       const next=targets.values().next().value;
       if(!next)continue;
       const emitter=next.emitter;targets.delete(emitter.id);
-      light.position.set(emitter.x,emitter.y,emitter.z);light.color.copy(emitter.color);light.distance=emitter.distance;
+      light.position.set(emitter.x,emitter.y,emitter.z);light.color.copy(emitter.color);light.width=emitter.width;light.height=emitter.height;
+      light.lookAt(emitter.x+Math.sin(emitter.ry)*.25,emitter.y-1,emitter.z+Math.cos(emitter.ry)*.25);
       light.intensity=0;light.userData.emitterId=emitter.id;light.userData.targetIntensity=emitter.intensity;
     }
     lightingState={nearestEmitters:selected.map(({emitter,distance})=>({id:emitter.id,distance,position:[emitter.x,emitter.y,emitter.z]})),activeLights:selected.length,
@@ -230,7 +245,7 @@ export function createCity(scene) {
   const pedestrianCount=people.reduce((n,p)=>n+p.pieces.length,0);
   const pedestrian=new THREE.InstancedMesh(cube,new THREE.MeshStandardMaterial({roughness:.74,metalness:.2}),pedestrianCount);
   pedestrian.name='Animated citizens / segmented voxel coats and umbrellas';pedestrian.instanceMatrix.setUsage(THREE.DynamicDrawUsage);pedestrian.frustumCulled=false;root.add(pedestrian);
-  const civilians=createCivilianSystem({people,mesh:pedestrian,colliders,groundHeightAt,bounds});
+  const civilians=createCivilianSystem({people,mesh:pedestrian,colliders:[...colliders,...streetColliders],groundHeightAt,bounds});
   const traffic=[];
   for(let i=0;i<16;i++)traffic.push({x:(rand()-.5)*(i<9?145:600),y:36+rand()*35,z:i<9?-55-rand()*190:130-rand()*670,speed:(i%2?1:-1)*(2.8+rand()*3.5),range:i<9?105:330});
   const trafficParts=[
@@ -270,6 +285,8 @@ export function createCity(scene) {
   }
   update(0,0,new THREE.Vector3(0,2.7,29));
   return {root,colliders,streetColliders,dynamicProps,groundSurfaces,getCollidersAt,bounds,update,groundHeightAt,civilians,roads,districts,patrolRoutes,citySize,
+    serviceSource,serviceFixtures,
+    audioEmitters:storefrontEmitters,
     lighting:{getState:()=>({...lightingState,emitterCount:storefrontEmitters.length,pooledLights:storefrontLights.length})},
     layoutStats:{voxels:boxes.length,signs:signs.length,pedestrians:people.length,pedestrianVoxels:pedestrianCount,blocks:chunks.length,roadLength:citySize.roadLength,streetColliders:streetColliders.length,movableBins:dynamicProps.length}};
 }

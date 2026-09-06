@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "checkedAtUTC": "2026-09-06T11:09:09.188Z",
+  "results": [
+    {
+      "name": "Non-umbrella envelope contains all rotating body voxels during walk, flee, reversal and stop",
+      "passed": true,
+      "largestRatio": 0.8172722710234029,
+      "corners": 1008000,
+      "unitBodyRadius": 0.7546129724410254
+    },
+    {
+      "name": "Opposing walkers pass on separate wall-clear sides at60 and15Hz",
+      "passed": true,
+      "cases": [
+        {
+          "dt": 0.016666666666666666,
+          "minimumGap": 0.193314001907114,
+          "maxStep": 0.014240981551689352,
+          "paths": [
+            9.861828436730919,
+            9.861828436730919
+          ],
+          "modes": [
+            "walk",
+            "pass"
+          ],
+          "final": [
+            {
+              "id": "CIV-001",
+              "x": 0.8512693896491472,
+              "z": 6.439003079952418,
+              "speed": 0.7
+            },
+            {
+              "id": "CIV-002",
+              "x": -0.8512693896491472,
+              "z": -6.439003079952418,
+              "speed": -0.7
+            }
+          ]
+        },
+        {
+          "dt": 0.06666666666666667,
+          "minimumGap": 0.18666465325274606,
+          "maxStep": 0.056963926206757276,
+          "paths": [
+            9.882056068519667,
+            9.892353328059759
+          ],
+          "modes": [
+            "walk",
+            "pass"
+          ],
+          "final": [
+            {
+              "id": "CIV-001",
+              "x": 0.8242981574857544,
+              "z": 6.470066989017021,
+              "speed": 0.7
+            },
+            {
+              "id": "CIV-002",
+              "x": -0.870964824152421,
+              "z": -6.456066989017021,
+              "speed": -0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A faster following walker eases down before the leader without intersection",
+      "passed": true,
+      "minimumGap": 0.11500027511274591,
+      "maxStep": 0.018333333333333535,
+      "paths": [
+        4.187499999999933,
+        6.56327378000514
+      ],
+      "modes": [
+        "walk",
+        "follow"
+      ],
+      "final": [
+        {
+          "id": "CIV-001",
+          "x": 0,
+          "z": 4.187499999999933,
+          "speed": 0.3
+        },
+        {
+          "id": "CIV-002",
+          "x": 0,
+          "z": 2.5632737800051366,
+          "speed": 1.1
+        }
+      ]
+    },
+    {
+      "name": "Narrow head-on corridor gives deterministic right-of-way and a bounded retreat",
+      "passed": true,
+      "minimumGap": 1.7883280393394978,
+      "maxStep": 0.010833333333334139,
+      "paths": [
+        10.335000000000111,
+        9.988887317555022
+      ],
+      "modes": [
+        "walk",
+        "reverse"
+      ],
+      "final": [
+        {
+          "id": "CIV-001",
+          "x": 0,
+          "z": 7.334999999999941,
+          "speed": 0.65
+        },
+        {
+          "id": "CIV-002",
+          "x": 0,
+          "z": 10.632553984221707,
+          "speed": 0.65
+        }
+      ]
+    },
+    {
+      "name": "Crowd reservations prevent a stationary turn or faster crossing from entering a neighbor",
+      "passed": true,
+      "minimumGap": 0.00004275146408594388,
+      "maxStep": 0.17333333333333378,
+      "paths": [
+        0,
+        6.5504991850244085,
+        4.615153859410088
+      ],
+      "modes": [
+        "idle",
+        "pass",
+        "yield",
+        "reverse",
+        "walk"
+      ],
+      "final": [
+        {
+          "id": "CIV-001",
+          "x": 0,
+          "z": 0,
+          "speed": 0
+        },
+        {
+          "id": "CIV-002",
+          "x": -0.7372261297579459,
+          "z": 6.722710508030596,
+          "speed": 0
+        },
+        {
+          "id": "CIV-003",
+          "x": -0.5153733553745858,
+          "z": -1.677440892860647,
+          "speed": 0
+        }
+      ]
+    },
+    {
+      "name": "Larger authored body clearance is recorded and exactly restored on restart",
+      "passed": true,
+      "corrections": [
+        {
+          "id": "CIV-002",
+          "before": {
+            "x": 0.8,
+            "z": 0
+          },
+          "x": 1.5342259448820508,
+          "z": 0,
+          "distance": 0.7342259448820507,
+          "resolved": true,
+          "bodyRadius": 0.7546129724410254
+        },
+        {
+          "id": "CIV-003",
+          "before": {
+            "x": 0,
+            "z": 1
+          },
+          "x": 0,
+          "z": 1.5342259448820508,
+          "distance": 0.5342259448820508,
+          "resolved": true,
+          "bodyRadius": 0.7546129724410254
+        }
+      ]
+    },
+    {
+      "name": "Both route endpoints reverse intent once while inertial gait brakes and turns",
+      "passed": true,
+      "cases": [
+        {
+          "dt": 0.016666666666666666,
+          "sign": -1,
+          "reversals": 1,
+          "endpointSeconds": 0.18333333333333332,
+          "finalZ": -144.6575489440866
+        },
+        {
+          "dt": 0.016666666666666666,
+          "sign": 1,
+          "reversals": 1,
+          "endpointSeconds": 0.18333333333333332,
+          "finalZ": 144.6575489440866
+        },
+        {
+          "dt": 0.06666666666666667,
+          "sign": -1,
+          "reversals": 1,
+          "endpointSeconds": 0.2,
+          "finalZ": -144.646514495607
+        },
+        {
+          "dt": 0.06666666666666667,
+          "sign": 1,
+          "reversals": 1,
+          "endpointSeconds": 0.2,
+          "finalZ": 144.646514495607
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "build": "/assets/index-CFxS5cfC.js",
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T09:39:31.571Z",
+  "method": "Production source bundle; nine close views at mounted steam sheets, actual W/R/H inputs at reproduced site. All sixteen vapor sheets and reflection remain enabled. Central world pixels are checked for the large black-region regression.",
+  "results": [
+    {
+      "case": "Steam sheet 0",
+      "pass": true,
+      "camera": [
+        10.284074498978471,
+        1.807,
+        15.759064012758891
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 32.668744654795105
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-0.png"
+    },
+    {
+      "case": "Steam sheet 1",
+      "pass": true,
+      "camera": [
+        -10.284074498978471,
+        1.807,
+        -4.24093598724111
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 30.40523496073804
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-1.png"
+    },
+    {
+      "case": "Steam sheet 2",
+      "pass": true,
+      "camera": [
+        10.284074498978471,
+        1.807,
+        -24.24093598724111
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 42.758529071872985
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-2.png"
+    },
+    {
+      "case": "Steam sheet 3",
+      "pass": true,
+      "camera": [
+        -10.284074498978471,
+        1.807,
+        -44.24093598724111
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 34.505134666809695
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-3.png"
+    },
+    {
+      "case": "Steam sheet 4",
+      "pass": true,
+      "camera": [
+        10.284074498978471,
+        1.807,
+        -64.24093598724112
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 38.315448215404416
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-4.png"
+    },
+    {
+      "case": "Steam sheet 5",
+      "pass": true,
+      "camera": [
+        -10.284074498978471,
+        1.807,
+        -84.24093598724112
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 37.60568602874919
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-5.png"
+    },
+    {
+      "case": "Steam sheet 6",
+      "pass": true,
+      "camera": [
+        10.284074498978471,
+        1.807,
+        -104.24093598724112
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 35.382767449903454
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-6.png"
+    },
+    {
+      "case": "Steam sheet 7",
+      "pass": true,
+      "camera": [
+        -10.284074498978471,
+        1.807,
+        -124.24093598724112
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 42.88863678009011
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-7.png"
+    },
+    {
+      "case": "Steam sheet 8",
+      "pass": true,
+      "camera": [
+        10.284074498978471,
+        1.807,
+        -144.2409359872411
+      ],
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 36.818543175284276
+      },
+      "vaporSheets": 16,
+      "reflectionEnabled": true,
+      "screenshot": "vapor-source-browser-steam-8.png"
+    },
+    {
+      "case": "Actual walking and holster through original view",
+      "note": "R was also pressed with a full magazine; this case does not verify reload animation.",
+      "pass": true,
+      "pixels": {
+        "blackFraction": 0,
+        "meanLuminance": 35.548882836730314
+      },
+      "screenshot": "vapor-source-browser-walking-holstered.png"
+    }
+  ],
+  "errors": []
+}

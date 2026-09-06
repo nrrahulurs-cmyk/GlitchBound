@@ -1,0 +1,1135 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T10:43:48.312Z",
+  "build": "/assets/index--TQCur8T.js",
+  "method": "Actual E, W, P, Escape and driving inputs. Debug hooks only arrange positions, initial player injury and full restart. No service begin/update/complete/effect injection. Rendered instance centers, actual Cannon bodies, scanner geometry and Blender-car buffers are inspected.",
+  "results": [
+    {
+      "test": "All 15 live mounted terminals have unobstructed actual candidates; 318 parts, 36 bodies and 21 moving groups initialize",
+      "pass": true,
+      "candidates": [
+        {
+          "id": "SERVICE-B049",
+          "available": true,
+          "reason": null
+        },
+        {
+          "id": "SERVICE-B042",
+          "available": true,
+          "reason": null
+        },
+        {
+          "id": "SERVICE-B046",
+          "available": true,
+          "reason": null
+        },
+        {
+          "id": "SERVICE-B110",
+          "available": false,
+          "reason": "Health already full"
+        },
+        {
+          "id": "SERVICE-B166",
+          "available": false,
+          "reason": "Health already full"
+        },
+        {
+          "id": "SERVICE-B106",
+          "available": false,
+          "reason": "Health already full"
+        },
+        {
+          "id": "SERVICE-B062",
+          "available": false,
+          "reason": "Interceptor already repaired"
+        },
+        {
+          "id": "SERVICE-B090",
+          "available": false,
+          "reason": "Interceptor already repaired"
+        },
+        {
+          "id": "SERVICE-B054",
+          "available": false,
+          "reason": "Interceptor already repaired"
+        },
+        {
+          "id": "SERVICE-B101",
+          "available": false,
+          "reason": "Neural energy already full"
+        },
+        {
+          "id": "SERVICE-B142",
+          "available": false,
+          "reason": "Neural energy already full"
+        },
+        {
+          "id": "SERVICE-B073",
+          "available": false,
+          "reason": "Neural energy already full"
+        },
+        {
+          "id": "SERVICE-B154",
+          "available": true,
+          "reason": null
+        },
+        {
+          "id": "SERVICE-B136",
+          "available": true,
+          "reason": null
+        },
+        {
+          "id": "SERVICE-B146",
+          "available": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "test": "Actual E opens the food shutter and drawer with vapor; actual W cancels, safely retracts and grants no reward",
+      "pass": true,
+      "site": "SERVICE-B049",
+      "active": {
+        "id": "SERVICE-B049",
+        "type": "food",
+        "phase": "active",
+        "progress": 0.5487916666666671,
+        "closure": 0,
+        "groups": [
+          {
+            "id": "fixed",
+            "x": -118.4,
+            "y": 0.185,
+            "z": 123.8,
+            "ry": 0
+          },
+          {
+            "id": "shutter",
+            "x": -118.4,
+            "y": 0.7050000000000001,
+            "z": 123.8,
+            "ry": 0
+          },
+          {
+            "id": "drawer",
+            "x": -118.4,
+            "y": 0.185,
+            "z": 124.16633197697091,
+            "ry": 0
+          }
+        ],
+        "shown": [
+          {
+            "id": "SERVICE-B049-FIX-status-base",
+            "role": "status-base",
+            "group": "fixed",
+            "position": [
+              -116.79000091552734,
+              2.325000047683716,
+              124.3550033569336
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-guide--1",
+            "role": "shutter-guide--1",
+            "group": "fixed",
+            "position": [
+              -119.76000213623047,
+              2.234999895095825,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-guide-standoff--1",
+            "role": "guide-standoff--1",
+            "group": "fixed",
+            "position": [
+              -119.76000213623047,
+              1.9049999713897705,
+              124.29000091552734
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer-slide--1",
+            "role": "drawer-slide--1",
+            "group": "fixed",
+            "position": [
+              -118.86000061035156,
+              1.315000057220459,
+              124.5999984741211
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-guide-1",
+            "role": "shutter-guide-1",
+            "group": "fixed",
+            "position": [
+              -117.04000091552734,
+              2.234999895095825,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-guide-standoff-1",
+            "role": "guide-standoff-1",
+            "group": "fixed",
+            "position": [
+              -117.04000091552734,
+              1.9049999713897705,
+              124.29000091552734
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer-slide-1",
+            "role": "drawer-slide-1",
+            "group": "fixed",
+            "position": [
+              -117.94000244140625,
+              1.315000057220459,
+              124.5999984741211
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-header",
+            "role": "shutter-header",
+            "group": "fixed",
+            "position": [
+              -118.4000015258789,
+              3.240000009536743,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-0",
+            "role": "shutter-0",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.058000087738037,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-1",
+            "role": "shutter-1",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.302999973297119,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-2",
+            "role": "shutter-2",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.5480000972747803,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-3",
+            "role": "shutter-3",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.7929999828338623,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-4",
+            "role": "shutter-4",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              3.0380001068115234,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer",
+            "role": "drawer",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.3799999952316284,
+              124.68633270263672
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer-front",
+            "role": "drawer-front",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.4249999523162842,
+              124.89633178710938
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-meal-base",
+            "role": "meal-base",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.4320000410079956,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-meal-bowl",
+            "role": "meal-bowl",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.4950000047683716,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-meal-rim",
+            "role": "meal-rim",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.5420000553131104,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-0",
+            "role": "noodles-0",
+            "group": "drawer",
+            "position": [
+              -118.5,
+              1.5670000314712524,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-1",
+            "role": "noodles-1",
+            "group": "drawer",
+            "position": [
+              -118.44999694824219,
+              1.5670000314712524,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-2",
+            "role": "noodles-2",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.5670000314712524,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-3",
+            "role": "noodles-3",
+            "group": "drawer",
+            "position": [
+              -118.3499984741211,
+              1.5670000314712524,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-4",
+            "role": "noodles-4",
+            "group": "drawer",
+            "position": [
+              -118.30000305175781,
+              1.5670000314712524,
+              124.65633392333984
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-garnish",
+            "role": "garnish",
+            "group": "drawer",
+            "position": [
+              -118.33499908447266,
+              1.5850000381469727,
+              124.65633392333984
+            ]
+          }
+        ],
+        "maxBodyError": 0,
+        "bodies": 3,
+        "beam": {
+          "count": 0,
+          "positions": []
+        },
+        "steam": 12
+      }
+    },
+    {
+      "test": "Real food completion holds the served bowl then closes into cooldown, restores exactly 25 health and activates neural recovery",
+      "pass": true,
+      "site": "SERVICE-B049",
+      "completion": {
+        "id": "SERVICE-B049",
+        "type": "food",
+        "phase": "success",
+        "progress": 1,
+        "closure": 0,
+        "groups": [
+          {
+            "id": "fixed",
+            "x": -118.4,
+            "y": 0.185,
+            "z": 123.8,
+            "ry": 0
+          },
+          {
+            "id": "shutter",
+            "x": -118.4,
+            "y": 0.7050000000000001,
+            "z": 123.8,
+            "ry": 0
+          },
+          {
+            "id": "drawer",
+            "x": -118.4,
+            "y": 0.185,
+            "z": 124.32,
+            "ry": 0
+          }
+        ],
+        "shown": [
+          {
+            "id": "SERVICE-B049-FIX-status-base",
+            "role": "status-base",
+            "group": "fixed",
+            "position": [
+              -116.79000091552734,
+              2.325000047683716,
+              124.3550033569336
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-guide--1",
+            "role": "shutter-guide--1",
+            "group": "fixed",
+            "position": [
+              -119.76000213623047,
+              2.234999895095825,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-guide-standoff--1",
+            "role": "guide-standoff--1",
+            "group": "fixed",
+            "position": [
+              -119.76000213623047,
+              1.9049999713897705,
+              124.29000091552734
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer-slide--1",
+            "role": "drawer-slide--1",
+            "group": "fixed",
+            "position": [
+              -118.86000061035156,
+              1.315000057220459,
+              124.5999984741211
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-guide-1",
+            "role": "shutter-guide-1",
+            "group": "fixed",
+            "position": [
+              -117.04000091552734,
+              2.234999895095825,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-guide-standoff-1",
+            "role": "guide-standoff-1",
+            "group": "fixed",
+            "position": [
+              -117.04000091552734,
+              1.9049999713897705,
+              124.29000091552734
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer-slide-1",
+            "role": "drawer-slide-1",
+            "group": "fixed",
+            "position": [
+              -117.94000244140625,
+              1.315000057220459,
+              124.5999984741211
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-header",
+            "role": "shutter-header",
+            "group": "fixed",
+            "position": [
+              -118.4000015258789,
+              3.240000009536743,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-0",
+            "role": "shutter-0",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.058000087738037,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-1",
+            "role": "shutter-1",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.302999973297119,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-2",
+            "role": "shutter-2",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.5480000972747803,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-3",
+            "role": "shutter-3",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              2.7929999828338623,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-shutter-4",
+            "role": "shutter-4",
+            "group": "shutter",
+            "position": [
+              -118.4000015258789,
+              3.0380001068115234,
+              124.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer",
+            "role": "drawer",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.3799999952316284,
+              124.83999633789062
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-drawer-front",
+            "role": "drawer-front",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.4249999523162842,
+              125.05000305175781
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-meal-base",
+            "role": "meal-base",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.4320000410079956,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-meal-bowl",
+            "role": "meal-bowl",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.4950000047683716,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-meal-rim",
+            "role": "meal-rim",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.5420000553131104,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-0",
+            "role": "noodles-0",
+            "group": "drawer",
+            "position": [
+              -118.5,
+              1.5670000314712524,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-1",
+            "role": "noodles-1",
+            "group": "drawer",
+            "position": [
+              -118.44999694824219,
+              1.5670000314712524,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-2",
+            "role": "noodles-2",
+            "group": "drawer",
+            "position": [
+              -118.4000015258789,
+              1.5670000314712524,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-3",
+            "role": "noodles-3",
+            "group": "drawer",
+            "position": [
+              -118.3499984741211,
+              1.5670000314712524,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-noodles-4",
+            "role": "noodles-4",
+            "group": "drawer",
+            "position": [
+              -118.30000305175781,
+              1.5670000314712524,
+              124.80999755859375
+            ]
+          },
+          {
+            "id": "SERVICE-B049-FIX-garnish",
+            "role": "garnish",
+            "group": "drawer",
+            "position": [
+              -118.33499908447266,
+              1.5850000381469727,
+              124.80999755859375
+            ]
+          }
+        ],
+        "maxBodyError": 0,
+        "bodies": 3,
+        "beam": {
+          "count": 0,
+          "positions": []
+        },
+        "steam": 12
+      }
+    },
+    {
+      "test": "Actual E drives the clinic rail scanner; its beam follows the actual offset player chest, and health restores only at completion",
+      "pass": true,
+      "site": "SERVICE-B110",
+      "scan": {
+        "id": "SERVICE-B110",
+        "type": "clinic",
+        "phase": "active",
+        "progress": 0.3890222222222221,
+        "closure": 0,
+        "groups": [
+          {
+            "id": "fixed",
+            "x": 226.2,
+            "y": 0.185,
+            "z": -276.5,
+            "ry": -1.5707963267948966
+          },
+          {
+            "id": "scanner",
+            "x": 226.2,
+            "y": -0.25412558237180616,
+            "z": -276.5,
+            "ry": -1.5707963267948966
+          }
+        ],
+        "shown": [
+          {
+            "id": "SERVICE-B110-FIX-status-base",
+            "role": "status-base",
+            "group": "fixed",
+            "position": [
+              225.64500427246094,
+              2.325000047683716,
+              -274.8900146484375
+            ]
+          },
+          {
+            "id": "SERVICE-B110-FIX-scanner-rail",
+            "role": "scanner-rail",
+            "group": "fixed",
+            "position": [
+              225.64500427246094,
+              1.9249999523162842,
+              -275.7799987792969
+            ]
+          },
+          {
+            "id": "SERVICE-B110-FIX-scanner-standoff-1.1",
+            "role": "scanner-standoff-1.1",
+            "group": "fixed",
+            "position": [
+              225.73500061035156,
+              1.284999966621399,
+              -275.7799987792969
+            ]
+          },
+          {
+            "id": "SERVICE-B110-FIX-scanner-standoff-2.38",
+            "role": "scanner-standoff-2.38",
+            "group": "fixed",
+            "position": [
+              225.73500061035156,
+              2.565000057220459,
+              -275.7799987792969
+            ]
+          },
+          {
+            "id": "SERVICE-B110-FIX-scanner-head",
+            "role": "scanner-head",
+            "group": "scanner",
+            "position": [
+              225.52000427246094,
+              2.0658743381500244,
+              -275.7799987792969
+            ]
+          },
+          {
+            "id": "SERVICE-B110-FIX-scanner-top-stop",
+            "role": "scanner-top-stop",
+            "group": "fixed",
+            "position": [
+              225.63999938964844,
+              2.6649999618530273,
+              -275.7799987792969
+            ]
+          },
+          {
+            "id": "SERVICE-B110-FIX-scanner-bottom-stop",
+            "role": "scanner-bottom-stop",
+            "group": "fixed",
+            "position": [
+              225.63999938964844,
+              1.184999942779541,
+              -275.7799987792969
+            ]
+          }
+        ],
+        "maxBodyError": 0,
+        "bodies": 2,
+        "beam": {
+          "count": 2,
+          "positions": [
+            225.3800048828125,
+            2.0658743381500244,
+            -275.7799987792969,
+            223.86500549316406,
+            1.2869999408721924,
+            -274.7699890136719
+          ]
+        },
+        "steam": 0
+      },
+      "endpoint": [
+        223.86500549316406,
+        1.2869999408721924,
+        -274.7699890136719
+      ],
+      "actual": [
+        223.86499999999998,
+        1.287,
+        -274.77000000000004
+      ]
+    },
+    {
+      "test": "Actual ram dents the owned car; actual E repair visibly scans it while the player turns, then restores exact original mesh and integrity",
+      "pass": true,
+      "site": "SERVICE-B062",
+      "damagedIntegrity": 85,
+      "repair": {
+        "id": "SERVICE-B062",
+        "type": "garage",
+        "phase": "active",
+        "progress": 0.3728727272727275,
+        "closure": 0,
+        "groups": [
+          {
+            "id": "fixed",
+            "x": 226.2,
+            "y": 0.185,
+            "z": 74.1,
+            "ry": -1.5707963267948966
+          },
+          {
+            "id": "bridge",
+            "x": 226.2,
+            "y": 0.185,
+            "z": 74.1,
+            "ry": -1.5707963267948966
+          },
+          {
+            "id": "carriage",
+            "x": 226.2,
+            "y": 0.185,
+            "z": 75.37083764729248,
+            "ry": -1.5707963267948966
+          },
+          {
+            "id": "tool",
+            "x": 226.2,
+            "y": -0.445,
+            "z": 75.37083764729248,
+            "ry": -1.5707963267948966
+          }
+        ],
+        "shown": [
+          {
+            "id": "SERVICE-B062-FIX-status-base",
+            "role": "status-base",
+            "group": "fixed",
+            "position": [
+              225.64500427246094,
+              2.325000047683716,
+              75.70999908447266
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-wall-plate--1.47",
+            "role": "wall-plate--1.47",
+            "group": "fixed",
+            "position": [
+              225.6999969482422,
+              2.875,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-cantilever--1.47",
+            "role": "cantilever--1.47",
+            "group": "fixed",
+            "position": [
+              223.22000122070312,
+              3.2300000190734863,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-wall-upright--1.47",
+            "role": "wall-upright--1.47",
+            "group": "fixed",
+            "position": [
+              225.55999755859375,
+              3.055000066757202,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace--1.47-0",
+            "role": "brace--1.47-0",
+            "group": "fixed",
+            "position": [
+              225.52000427246094,
+              2.634999990463257,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace--1.47-1",
+            "role": "brace--1.47-1",
+            "group": "fixed",
+            "position": [
+              225.25,
+              2.7100000381469727,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace--1.47-2",
+            "role": "brace--1.47-2",
+            "group": "fixed",
+            "position": [
+              224.97999572753906,
+              2.7850000858306885,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace--1.47-3",
+            "role": "brace--1.47-3",
+            "group": "fixed",
+            "position": [
+              224.7100067138672,
+              2.859999895095825,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace--1.47-4",
+            "role": "brace--1.47-4",
+            "group": "fixed",
+            "position": [
+              224.44000244140625,
+              2.934999942779541,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace--1.47-5",
+            "role": "brace--1.47-5",
+            "group": "fixed",
+            "position": [
+              224.1699981689453,
+              3.009999990463257,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace--1.47-6",
+            "role": "brace--1.47-6",
+            "group": "fixed",
+            "position": [
+              223.89999389648438,
+              3.0850000381469727,
+              72.62999725341797
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-wall-plate-1.47",
+            "role": "wall-plate-1.47",
+            "group": "fixed",
+            "position": [
+              225.6999969482422,
+              2.875,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-cantilever-1.47",
+            "role": "cantilever-1.47",
+            "group": "fixed",
+            "position": [
+              223.22000122070312,
+              3.2300000190734863,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-wall-upright-1.47",
+            "role": "wall-upright-1.47",
+            "group": "fixed",
+            "position": [
+              225.55999755859375,
+              3.055000066757202,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace-1.47-0",
+            "role": "brace-1.47-0",
+            "group": "fixed",
+            "position": [
+              225.52000427246094,
+              2.634999990463257,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace-1.47-1",
+            "role": "brace-1.47-1",
+            "group": "fixed",
+            "position": [
+              225.25,
+              2.7100000381469727,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace-1.47-2",
+            "role": "brace-1.47-2",
+            "group": "fixed",
+            "position": [
+              224.97999572753906,
+              2.7850000858306885,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace-1.47-3",
+            "role": "brace-1.47-3",
+            "group": "fixed",
+            "position": [
+              224.7100067138672,
+              2.859999895095825,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace-1.47-4",
+            "role": "brace-1.47-4",
+            "group": "fixed",
+            "position": [
+              224.44000244140625,
+              2.934999942779541,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace-1.47-5",
+            "role": "brace-1.47-5",
+            "group": "fixed",
+            "position": [
+              224.1699981689453,
+              3.009999990463257,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-brace-1.47-6",
+            "role": "brace-1.47-6",
+            "group": "fixed",
+            "position": [
+              223.89999389648438,
+              3.0850000381469727,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-front-tie",
+            "role": "front-tie",
+            "group": "fixed",
+            "position": [
+              220.7100067138672,
+              3.2300000190734863,
+              74.0999984741211
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-bridge",
+            "role": "bridge",
+            "group": "bridge",
+            "position": [
+              222,
+              3.2300000190734863,
+              75.56999969482422
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-bridge-end-left",
+            "role": "bridge-end-left",
+            "group": "bridge",
+            "position": [
+              222,
+              3.2300000190734863,
+              72.44000244140625
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-bridge-end-right",
+            "role": "bridge-end-right",
+            "group": "bridge",
+            "position": [
+              222,
+              3.2300000190734863,
+              78.69999694824219
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-tool-carriage",
+            "role": "tool-carriage",
+            "group": "carriage",
+            "position": [
+              222,
+              3.1549999713897705,
+              76.84083557128906
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-tool-upper-sleeve",
+            "role": "tool-upper-sleeve",
+            "group": "carriage",
+            "position": [
+              222,
+              3.0450000762939453,
+              76.84083557128906
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-tool-sliding-stem",
+            "role": "tool-sliding-stem",
+            "group": "tool",
+            "position": [
+              222,
+              2.384999990463257,
+              76.84083557128906
+            ]
+          },
+          {
+            "id": "SERVICE-B062-FIX-repair-head",
+            "role": "repair-head",
+            "group": "tool",
+            "position": [
+              222,
+              1.9850000143051147,
+              76.84083557128906
+            ]
+          }
+        ],
+        "maxBodyError": 0,
+        "bodies": 4,
+        "beam": {
+          "count": 2,
+          "positions": [
+            222,
+            1.8650000095367432,
+            76.84083557128906,
+            222,
+            1.3550000190734863,
+            76.84083557128906
+          ]
+        },
+        "steam": 0
+      }
+    },
+    {
+      "test": "Actual pause cancels and finishes retraction while paused; full restart restores all fifteen idle mechanisms and clears outcomes",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

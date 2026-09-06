@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import * as CANNON from 'cannon-es';
 import { SCENE_PLACEMENTS } from './asset-placements.js';
+import { getKinematicPoseController } from './kinematic-pose.js';
 
 // Renderer-independent street activity metadata is shared with the Blender scene.
 const route = (region, type, x1, x2, z1, z2, clockwise = true, phase = 0.12) => ({ region, type, x1, x2, z1, z2, clockwise, phase });
@@ -359,20 +360,21 @@ export function createTrafficController({vehicles:authoredVehicles=createCityLif
     body.position.set(vehicle.x+offset.x,vehicle.y+offset.y,vehicle.z+offset.z);
     body.previousPosition.copy(body.position);body.interpolatedPosition.copy(body.position);
     const motion=vehicle.active?vehicle.motionVelocity:null;
-    // The shared world advances this kinematic prediction on its next step.
-    // Contact equations therefore push bins/corpses using real vehicle motion.
+    // Accepted traffic poses stay fixed through every internal physics step;
+    // their motion still transfers momentum through contact equations.
     body.velocity.set(motion?.x||0,0,motion?.z||0);body.angularVelocity.set(0,motion?.yaw||0,0);body.aabbNeedsUpdate=true;
+    physics.poseController.setTarget(body,{position:body.position,quaternion:body.quaternion,velocity:body.velocity,angularVelocity:body.angularVelocity});
   }
   function attachPhysics({world,material,groundHeightAt,onImpact}={}) {
     if(!world)throw new Error('Traffic physics needs the shared Cannon world.');
-    if(physics)for(const vehicle of vehicles)if(vehicle.body)physics.world.removeBody(vehicle.body);
+    if(physics)for(const vehicle of vehicles)if(vehicle.body){physics.poseController.unregister(vehicle.body);physics.world.removeBody(vehicle.body);}
     if(physics?.contacts)for(const contact of physics.contacts)physics.world.removeContactMaterial(contact);
     const rollingMaterial=new CANNON.Material('traffic wheels and body');
     const surfaces=new Set([material,world.defaultMaterial,...world.bodies.map(body=>body.material)].filter(Boolean));
     const contacts=[...surfaces].map(surface=>new CANNON.ContactMaterial(rollingMaterial,surface,{friction:.004,restitution:.1}));
     contacts.push(new CANNON.ContactMaterial(rollingMaterial,rollingMaterial,{friction:.03,restitution:.16}));
     contacts.forEach(contact=>world.addContactMaterial(contact));
-    physics={world,material:rollingMaterial,groundHeightAt,onImpact,contacts};
+    physics={world,material:rollingMaterial,groundHeightAt,onImpact,contacts,poseController:getKinematicPoseController(world)};
     for(const vehicle of vehicles) {
       const body=new CANNON.Body({mass:0,type:CANNON.Body.KINEMATIC,material:rollingMaterial,allowSleep:true});
       body.addShape(new CANNON.Box(new CANNON.Vec3(vehicle.localFootprint.halfWidth,vehicle.bodyHalfHeight,vehicle.localFootprint.halfLength)));
@@ -402,7 +404,7 @@ export function createTrafficController({vehicles:authoredVehicles=createCityLif
       if(!impactPose)continue;
       const body=vehicle.body;
       if(!vehicle.wrecked){
-        syncBody(vehicle);body.type=CANNON.Body.DYNAMIC;body.mass={sport:1000,taxi:1300,van:2100,bus:4000}[vehicle.type]||1300;body.updateMassProperties();
+        syncBody(vehicle);physics.poseController.unregister(body);body.type=CANNON.Body.DYNAMIC;body.mass={sport:1000,taxi:1300,van:2100,bus:4000}[vehicle.type]||1300;body.updateMassProperties();
         body.velocity.set(-Math.sin(vehicle.yaw)*vehicle.velocity,0,-Math.cos(vehicle.yaw)*vehicle.velocity);vehicle.wrecked=true;body.userData.wrecked=true;
       }
       vehicle.active=true;vehicle.waiting=false;vehicle.lastRam=clock;vehicle.blockedBy=null;
@@ -432,9 +434,10 @@ export function createTrafficController({vehicles:authoredVehicles=createCityLif
   function getTrafficColliders() {
     return vehicles.filter(v=>v.active).map(v=>{if(v.wrecked&&v.body){v.body.updateAABB();const a=v.body.aabb;return {id:v.id,x:(a.lowerBound.x+a.upperBound.x)/2,y:(a.lowerBound.y+a.upperBound.y)/2,z:(a.lowerBound.z+a.upperBound.z)/2,sx:a.upperBound.x-a.lowerBound.x,sy:a.upperBound.y-a.lowerBound.y,sz:a.upperBound.z-a.lowerBound.z};}const f=trafficFootprint(v),c=Math.abs(Math.cos(f.yaw)),s=Math.abs(Math.sin(f.yaw));return {id:v.id,x:f.x,y:v.y+v.height/2,z:f.z,sx:2*(c*f.halfWidth+s*f.halfLength),sy:v.height,sz:2*(s*f.halfWidth+c*f.halfLength)};});
   }
-  function dispose(){if(physics){for(const v of vehicles)if(v.body)physics.world.removeBody(v.body);for(const contact of physics.contacts||[])physics.world.removeContactMaterial(contact);}physics=null;}
+  function afterPhysics(){if(physics)for(const vehicle of vehicles)if(vehicle.body)physics.poseController.clearContactHints(vehicle.body);}
+  function dispose(){if(physics){for(const v of vehicles)if(v.body){physics.poseController.unregister(v.body);physics.world.removeBody(v.body);}for(const contact of physics.contacts||[])physics.world.removeContactMaterial(contact);}physics=null;}
   reset();
-  return {vehicles,update,reset,getTrafficState,getTrafficColliders,attachPhysics,ram,damageWeight,dispose};
+  return {vehicles,update,reset,getTrafficState,getTrafficColliders,attachPhysics,afterPhysics,ram,damageWeight,dispose};
 }
 
 export function createCityLife(scene, city, options={}) {
@@ -548,6 +551,6 @@ export function createCityLife(scene, city, options={}) {
   }
   update(0, 0, null);
   return { update, stats, getTrafficColliders:traffic.getTrafficColliders, getTrafficState:traffic.getTrafficState,
-    attachPhysics:traffic.attachPhysics,ram:traffic.ram,
+    attachPhysics:traffic.attachPhysics,afterPhysics:traffic.afterPhysics,ram:traffic.ram,
     reset(vehicleBlockers){traffic.reset(vehicleBlockers);update(0,0,null,vehicleBlockers);},dispose };
 }

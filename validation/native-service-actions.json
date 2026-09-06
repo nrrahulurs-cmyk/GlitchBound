@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T10:34:15.271626+00:00",
+  "file": "service-actions.blend",
+  "sha256": "78c2314b674afe6e4c9447eb95415a871d15f43483fccf4d809543b83b623a18",
+  "sourceHash": "d76c455fe433af286608bb6825b3a9a1a53452b5d9d0d68a1fea01beb18debd8",
+  "bytes": 876672,
+  "sites": [
+    {
+      "id": "SERVICE-B049",
+      "parts": 27,
+      "contextParts": 68,
+      "samples": 122
+    },
+    {
+      "id": "SERVICE-B042",
+      "parts": 27,
+      "contextParts": 67,
+      "samples": 122
+    },
+    {
+      "id": "SERVICE-B046",
+      "parts": 27,
+      "contextParts": 68,
+      "samples": 122
+    },
+    {
+      "id": "SERVICE-B110",
+      "parts": 11,
+      "contextParts": 58,
+      "samples": 187
+    },
+    {
+      "id": "SERVICE-B166",
+      "parts": 11,
+      "contextParts": 62,
+      "samples": 187
+    },
+    {
+      "id": "SERVICE-B106",
+      "parts": 11,
+      "contextParts": 62,
+      "samples": 187
+    },
+    {
+      "id": "SERVICE-B062",
+      "parts": 33,
+      "contextParts": 76,
+      "samples": 218
+    },
+    {
+      "id": "SERVICE-B090",
+      "parts": 33,
+      "contextParts": 77,
+      "samples": 218
+    },
+    {
+      "id": "SERVICE-B054",
+      "parts": 33,
+      "contextParts": 74,
+      "samples": 218
+    },
+    {
+      "id": "SERVICE-B101",
+      "parts": 14,
+      "contextParts": 66,
+      "samples": 140
+    },
+    {
+      "id": "SERVICE-B142",
+      "parts": 14,
+      "contextParts": 67,
+      "samples": 140
+    },
+    {
+      "id": "SERVICE-B073",
+      "parts": 14,
+      "contextParts": 66,
+      "samples": 140
+    },
+    {
+      "id": "SERVICE-B154",
+      "parts": 21,
+      "contextParts": 64,
+      "samples": 82
+    },
+    {
+      "id": "SERVICE-B136",
+      "parts": 21,
+      "contextParts": 66,
+      "samples": 82
+    },
+    {
+      "id": "SERVICE-B146",
+      "parts": 21,
+      "contextParts": 65,
+      "samples": 82
+    }
+  ],
+  "partCount": 318,
+  "restPoseMaximumErrorMetres": 0,
+  "animationSamplesVerified": 22947,
+  "animationMaximumPoseError": 8.742278012618954e-08,
+  "animationMaximumEmissionError": 4.132588715677343e-08,
+  "maximumAuthoredMovementMetres": 1.7647869095888113,
+  "fps": 20,
+  "blender": "5.2.1 LTS",
+  "limits": "Editable 20 Hz pose samples. Runtime beam and steam are described in JSON, not baked volumetrics. No render quality claim."
+}

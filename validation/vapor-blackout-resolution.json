@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "scope": "Reproduced large black world-view region at street steam sheets",
+  "fixedBuild": "/assets/index-CFxS5cfC.js",
+  "fixedBuildSHA256": "43b3701a7287fe28c4cfdebbe2c83d4e90fc2ebabaccf61521b539587d21aee0",
+  "source": "src/atmosphere.js",
+  "camera": [10.284074498978472, 1.807, -104.24093598724111],
+  "lookAt": [6.984074498978472, 0.3357339480848431, -108.04093598724111],
+  "finding": "The vapor edge shader raised an unguarded sine product to the fractional power 1.5. Bounding that input at zero removes the blackout. Small UV overshoot during clipped reflection rendering is the inferred source of a negative input; that intermediate GPU value was not directly read back.",
+  "isolation": {
+    "holsteringWeapon": "Blackout persists",
+    "hidingShadowProxies": "Blackout persists",
+    "hidingAreaLights": "Blackout persists",
+    "hidingVaporSheets": "Blackout disappears",
+    "hidingReflection": "Blackout disappears",
+    "geometry": "Independent layout and actual scene raycasts find ordinary pavement on the black side, with no nearby occluding solid. Collision geometry was not changed."
+  },
+  "controlledShaderSwitch": {
+    "baseBuild": "/assets/index-jMsxbThJ.js",
+    "worldPixelRegion": [600,80,1230,650],
+    "blackThreshold": "Maximum RGB channel below 3/255",
+    "originalBlackFraction": 0.8023447507658034,
+    "clampedBlackFraction": 0,
+    "restoredOriginalBlackFraction": 0.8023447507658034,
+    "reflectionsAndVaporEnabledAfterFix": true,
+    "evidence": "black-view-vapor-fix-proof.json"
+  },
+  "productionVerification": {
+    "evidence": "vapor-source-browser.json",
+    "passedCases": 10,
+    "cases": "Nine close views at actual street steam sheets, then actual walking and holstering at the original site. R was pressed with a full magazine, so this is not a reload-animation test.",
+    "allCasesBlackFraction": 0,
+    "consoleErrors": 0,
+    "vaporSheetsEnabled": 16,
+    "reflectionEnabled": true
+  },
+  "limits": "This resolves the reproduced rendering defect. It does not establish that every dark visual region in every possible camera state has been checked, or that the whole quality goal is complete."
+}

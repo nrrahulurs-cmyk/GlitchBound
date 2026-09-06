@@ -19,13 +19,13 @@ def build_blueprint_scene(layout, blueprint, output_dir):
     layers={}
     for name in ['01 Sheet and grid','02 Road corridors','03 Building footprints','04 Parcels and setbacks',
                  '05 Structural supports','06 Districts and labels','07 Dimensions and legend',
-                 '08 Signs and scene anchors','09 Elevated connections']:
+                 '08 Signs and scene anchors','09 Elevated connections','10 Street frontages','11 Authored block circulation']:
         c=bpy.data.collections.new('PLAN / '+name);scene.collection.children.link(c);layers[name]=c
 
     colors={'paper':'#071b2b','grid':'#123348','road':'#133d51','road_edge':'#5cc8df',
             'building':'#24506a','building_edge':'#bddbeb','setback':'#48687f',
             'support':'#ffbb58','district':'#a785d9','text':'#d8ecf5','muted':'#78a4b8',
-            'sign':'#ff86cb','prop':'#82e0ae','connection':'#cdad6f'}
+            'sign':'#ff86cb','prop':'#82e0ae','connection':'#cdad6f','frontage':'#c5f68d','block':'#f4a777','walk':'#81dfcb'}
     materials={}
     for key,hex_color in colors.items():
         rgb=[int(hex_color[i:i+2],16)/255 for i in (1,3,5)]
@@ -151,6 +151,22 @@ def build_blueprint_scene(layout, blueprint, output_dir):
             obj=line(connection['id'],points,'connection','09 Elevated connections',.35,.64)
             obj['record']=json.dumps(connection,ensure_ascii=False)
 
+    frontages=blueprint.get('streetDetails',{}).get('assemblies',[])
+    for frontage in frontages:
+        box=aabb(frontage);obj=rect(frontage['id']+' / footprint',*box,'frontage','10 Street frontages',.67)
+        obj['street_frontage_id']=frontage['id'];obj['record']=json.dumps(frontage,ensure_ascii=False)
+        outline(frontage['id']+' / outline',box,'frontage','10 Street frontages',.24,.69)
+        anchor=frontage['anchor']
+        line(frontage['id']+' / wall anchor',[(anchor['x'],anchor['z']),(box[0],box[1])],'frontage','10 Street frontages',.15,.68)
+
+    authored=blueprint.get('blockCompositions',{})
+    for assembly in authored.get('assemblies',[]):
+        obj=outline(assembly['id']+' / authored footprint',aabb(assembly),'block','11 Authored block circulation',.22,.74)
+        obj['block_composition_id']=assembly['id'];obj['record']=json.dumps(assembly,ensure_ascii=False)
+    for path in authored.get('paths',[]):
+        obj=line(path['id'],[(p['x'],p['z']) for p in path['points']],'walk','11 Authored block circulation',.28,.78)
+        obj['walk_path_id']=path['id'];obj['record']=json.dumps(path,ensure_ascii=False)
+
     districts=blueprint.get('districts',layout.get('districts',[]))
     for district in districts:
         box=aabb(district)
@@ -177,6 +193,10 @@ def build_blueprint_scene(layout, blueprint, output_dir):
         x=min_x+i*225;z=max_z+75
         line('Legend '+text,[(x,z),(x+12,z)],key,layer,.8,.7)
         label('Legend label '+text,text,x+18,z,3.9,key,layer,align='LEFT')
+    line('Legend street frontages',[(min_x,max_z+87),(min_x+12,max_z+87)],'frontage',layer,.8,.7)
+    label('Legend label street frontages',f'{len(frontages)} WALL-SUPPORTED FRONTS / {sum(1 for a in frontages if a.get("courtyard"))} SERVICE-COURT ENTRIES',min_x+18,max_z+87,3.9,'frontage',layer,align='LEFT')
+    line('Legend authored blocks',[(min_x+460,max_z+87),(min_x+472,max_z+87)],'block',layer,.8,.7)
+    label('Legend label authored blocks',f'{len(authored.get("assemblies",[]))} AUTHORED ASSEMBLIES / WALK ROUTES',min_x+478,max_z+87,3.6,'block',layer,align='LEFT')
     line('Scale / 100m',[(min_x,min_z-20),(min_x+100,min_z-20)],'text',layer,.6,.6)
     for x in [min_x,min_x+50,min_x+100]:line('Scale tick',[(x,min_z-24),(x,min_z-16)],'text',layer,.3,.6)
     label('Scale label','0                50               100 m',min_x+50,min_z-11,3.5,'muted',layer)
@@ -200,4 +220,5 @@ def build_blueprint_scene(layout, blueprint, output_dir):
     support_text.use_fake_user=True
     scene['building_count']=len(footprints);scene['support_count']=len(supports)
     scene['sign_count']=len(blueprint.get('signs',[]));scene['road_count']=len(roads)
+    scene['street_frontage_count']=len(frontages)
     return scene

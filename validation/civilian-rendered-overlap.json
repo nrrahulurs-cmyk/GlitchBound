@@ -1,0 +1,851 @@
+{
+  "status": "findings",
+  "checkedAtUTC": "2026-09-06T10:54:38.224Z",
+  "method": "Read-only CPU fixture extracts the exact authored284-person seed/template from city.js, then runs production civilian navigation/gait and reads actual InstancedMesh matrices at60Hz for3s. Full static structures/street shapes, real supply/bin bounds, resting service parts, traffic routes, owned and parked initial vehicles are supplied. Each potential pair uses 15-axis full3D OBB SAT; umbrella contacts are separate. No browser, rendering, positions, damage or production code edits.",
+  "sourceHashes": {
+    "city.js": "09b87cde5ea2a12726338da8435011c85040af948dde2cd0822e570da46dd902",
+    "civilians.js": "e1771b8a80aa859fcefa0df1c45f79a4ed580734006791324adf564ec0a09d33",
+    "civilian-motion.js": "a002f48d3bc4c68ab70ec80b85848c497bb02b7f46e6a1b457b15837ca146d2c",
+    "civilian-navigation.js": "a97b1a22753045a3d6439d400c851319cedb5de3a7d8df75f5a205c4aa627f70"
+  },
+  "counts": {
+    "people": 284,
+    "renderedParts": 14785,
+    "frames": 181,
+    "staticColliders": 28308,
+    "dynamicObstacles": 284,
+    "satTests": 2487,
+    "agreementChecks": 2351
+  },
+  "maxMatrixOrthogonalityError": 8.480415869538405e-8,
+  "samples": [
+    {
+      "time": 0,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 13.784253734629601,
+          "z": -109.2979471385479,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.13619785010815,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.374897250905633,
+          "z": -99.59516586363316,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 13.221090064384043,
+          "z": -108.50926034152508,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 12.517017678823322,
+          "z": -100.10201624035835,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -13.434102502185851,
+          "z": -159.20033758878708,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 0.8,
+      "discPairs": [
+        "CIV-003/CIV-019",
+        "CIV-014/CIV-030",
+        "CIV-017/CIV-021"
+      ],
+      "bodyPairs": [
+        "CIV-003/CIV-019",
+        "CIV-014/CIV-030"
+      ],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [
+        {
+          "pair": "CIV-003/CIV-019",
+          "partContacts": 43,
+          "maxPenetration": 0.137167072991818
+        },
+        {
+          "pair": "CIV-014/CIV-030",
+          "partContacts": 8,
+          "maxPenetration": 0.026824405416846275
+        }
+      ],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 13.784253734629601,
+          "z": -109.03837838937693,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.50905604645442,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.374897250905633,
+          "z": -99.73758326004484,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 13.221090064384043,
+          "z": -108.90914539324574,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 12.517017678823322,
+          "z": -99.68567384866985,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -13.434102502185851,
+          "z": -158.83317474592036,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 1,
+      "discPairs": [
+        "CIV-003/CIV-019",
+        "CIV-014/CIV-030"
+      ],
+      "bodyPairs": [
+        "CIV-003/CIV-019",
+        "CIV-014/CIV-030"
+      ],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [
+        {
+          "pair": "CIV-003/CIV-019",
+          "partContacts": 31,
+          "maxPenetration": 0.20195870846509933
+        },
+        {
+          "pair": "CIV-014/CIV-030",
+          "partContacts": 35,
+          "maxPenetration": 0.14740209467709064
+        }
+      ],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 13.784253734629601,
+          "z": -108.96921588961379,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.61232705582694,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.374897250905633,
+          "z": -99.77422789908796,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 13.221090064384043,
+          "z": -109.0210000046146,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 12.517017678823322,
+          "z": -99.56848172163573,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -13.434102502185851,
+          "z": -158.7317022692256,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 2,
+      "discPairs": [],
+      "bodyPairs": [],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 13.784253734629601,
+          "z": -108.6234033907981,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -159.12868210268954,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.374897250905633,
+          "z": -99.95745109430355,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 13.221090064384043,
+          "z": -109.58027306145895,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 12.517017678823322,
+          "z": -98.98252108646516,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -13.434102502185851,
+          "z": -158.22433988575176,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    },
+    {
+      "time": 3,
+      "discPairs": [
+        "CIV-013/CIV-033",
+        "CIV-014/CIV-028"
+      ],
+      "bodyPairs": [
+        "CIV-013/CIV-033"
+      ],
+      "umbrellaPairs": [],
+      "reportedBodyContacts": [],
+      "reportedPairPositions": [
+        {
+          "id": "CIV-003",
+          "x": 13.784253734629601,
+          "z": -108.27759089198241,
+          "yaw": 0,
+          "scale": 0.9916700023738668
+        },
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -159.64503714955214,
+          "yaw": 3.141592653589793,
+          "scale": 1.0120567231741735
+        },
+        {
+          "id": "CIV-017",
+          "x": 13.374897250905633,
+          "z": -100.14067428951914,
+          "yaw": 3.141592653589793,
+          "scale": 0.9455076281516813
+        },
+        {
+          "id": "CIV-019",
+          "x": 13.221090064384043,
+          "z": -110.1395461183033,
+          "yaw": 3.141592653589793,
+          "scale": 1.0150259601627476
+        },
+        {
+          "id": "CIV-021",
+          "x": 12.517017678823322,
+          "z": -98.39656045129458,
+          "yaw": 0,
+          "scale": 1.021076310784556
+        },
+        {
+          "id": "CIV-030",
+          "x": -13.434102502185851,
+          "z": -157.71697750227793,
+          "yaw": 0,
+          "scale": 0.9256484238617122
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "pair": "CIV-003/CIV-019",
+      "category": "body",
+      "firstTime": 0.48333333333333334,
+      "lastTime": 1.4833333333333334,
+      "frames": 61,
+      "maxPenetration": 0.20195870846509933,
+      "partPairKinds": [
+        "arm / hand versus accessory / coat",
+        "arm / hand versus torso / coat",
+        "shoulder / coat versus shoulder / coat",
+        "shoulder / coat versus accessory / coat",
+        "arm / hand versus shoulder / coat",
+        "accessory / coat versus shoulder / coat",
+        "shoulder / coat versus torso / coat",
+        "arm / hand versus leg / boot",
+        "torso / coat versus shoulder / coat",
+        "shoulder / coat versus arm / hand",
+        "accessory / coat versus arm / hand",
+        "torso / coat versus arm / hand",
+        "leg / boot versus arm / hand",
+        "arm / hand versus arm / hand"
+      ],
+      "deepestAt": 0.9,
+      "contact": {
+        "penetration": 0.20195870846509933,
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "parts": [
+          5,
+          5
+        ],
+        "roles": [
+          "shoulder / coat",
+          "shoulder / coat"
+        ],
+        "worldCenters": [
+          [
+            13.49666976928711,
+            1.222192406654358,
+            -109.03375244140625
+          ],
+          [
+            13.515447616577148,
+            1.2439748048782349,
+            -108.9643325805664
+          ]
+        ],
+        "matrices": [
+          [
+            0.21816739439964294,
+            0,
+            0,
+            0,
+            0,
+            0.20398513972759247,
+            0.04193350300192833,
+            0,
+            0,
+            -0.055911339819431305,
+            0.2719801664352417,
+            0,
+            13.49666976928711,
+            1.222192406654358,
+            -109.03375244140625,
+            1
+          ],
+          [
+            -0.22330571711063385,
+            -1.0751779183405872e-35,
+            -2.734706254395225e-17,
+            0,
+            1.271611960227669e-19,
+            0.2131529152393341,
+            -0.0010383500484749675,
+            0,
+            3.4804937835981374e-17,
+            -0.001384466653689742,
+            -0.2842038869857788,
+            0,
+            13.515447616577148,
+            1.2439748048782349,
+            -108.9643325805664,
+            1
+          ]
+        ]
+      },
+      "positions": [
+        {
+          "id": "CIV-003",
+          "x": 13.784253734629601,
+          "z": -109.00379713949536,
+          "yaw": 0
+        },
+        {
+          "id": "CIV-019",
+          "x": 13.221090064384043,
+          "z": -108.96507269893017,
+          "yaw": 3.141592653589793
+        }
+      ]
+    },
+    {
+      "pair": "CIV-014/CIV-030",
+      "category": "body",
+      "firstTime": 0.7333333333333333,
+      "lastTime": 1.5833333333333333,
+      "frames": 52,
+      "maxPenetration": 0.14901088178157806,
+      "partPairKinds": [
+        "shoulder / coat versus shoulder / coat",
+        "shoulder / coat versus accessory / coat",
+        "accessory / coat versus shoulder / coat",
+        "shoulder / coat versus torso / coat",
+        "torso / coat versus shoulder / coat",
+        "torso / coat versus torso / coat",
+        "shoulder / coat versus head / neck",
+        "arm / hand versus accessory / coat",
+        "shoulder / coat versus arm / hand",
+        "accessory / coat versus arm / hand",
+        "torso / coat versus arm / hand",
+        "arm / hand versus shoulder / coat",
+        "arm / hand versus torso / coat",
+        "leg / boot versus arm / hand"
+      ],
+      "deepestAt": 1.0833333333333333,
+      "contact": {
+        "penetration": 0.14901088178157806,
+        "axis": [
+          -1,
+          -7.703719777548943e-34,
+          -1.2246467792224701e-16
+        ],
+        "parts": [
+          5,
+          8
+        ],
+        "roles": [
+          "shoulder / coat",
+          "shoulder / coat"
+        ],
+        "worldCenters": [
+          [
+            -13.624519348144531,
+            1.241400957107544,
+            -158.66867065429688
+          ],
+          [
+            -13.674771308898926,
+            1.2786407470703125,
+            -158.68817138671875
+          ]
+        ],
+        "matrices": [
+          [
+            -0.22265248000621796,
+            -1.715252313744222e-34,
+            -2.7267064252551022e-17,
+            0,
+            -2.282149123822563e-18,
+            0.21171335875988007,
+            0.018635163083672523,
+            0,
+            3.4569876266950955e-17,
+            0.024846883490681648,
+            -0.2822844684123993,
+            0,
+            -13.624519348144531,
+            1.241400957107544,
+            -158.66867065429688,
+            1
+          ],
+          [
+            0.17587320506572723,
+            0,
+            0,
+            0,
+            0,
+            0.11005045473575592,
+            -0.015072428621351719,
+            0,
+            0,
+            0.040193140506744385,
+            0.2934678792953491,
+            0,
+            -13.674771308898926,
+            1.2786407470703125,
+            -158.68817138671875,
+            1
+          ]
+        ]
+      },
+      "positions": [
+        {
+          "id": "CIV-014",
+          "x": -13.918015924282372,
+          "z": -158.6553566430655,
+          "yaw": 3.141592653589793
+        },
+        {
+          "id": "CIV-030",
+          "x": -13.434102502185851,
+          "z": -158.68942207060277,
+          "yaw": 0
+        }
+      ]
+    },
+    {
+      "pair": "CIV-013/CIV-033",
+      "category": "body",
+      "firstTime": 2.8833333333333333,
+      "lastTime": 3,
+      "frames": 8,
+      "maxPenetration": 0.07274311780929561,
+      "partPairKinds": [
+        "arm / hand versus accessory / coat",
+        "arm / hand versus shoulder / coat",
+        "arm / hand versus torso / coat"
+      ],
+      "deepestAt": 2.9833333333333334,
+      "contact": {
+        "penetration": 0.07274311780929561,
+        "axis": [
+          0.9999999999999999,
+          0,
+          0
+        ],
+        "parts": [
+          17,
+          22
+        ],
+        "roles": [
+          "arm / hand",
+          "accessory / coat"
+        ],
+        "worldCenters": [
+          [
+            13.23117446899414,
+            1.3690063953399658,
+            9.961691856384277
+          ],
+          [
+            13.12989616394043,
+            1.1278667449951172,
+            9.933998107910156
+          ]
+        ],
+        "matrices": [
+          [
+            -0.16002157330513,
+            0,
+            -1.9596990663622445e-17,
+            0,
+            -1.2136543667068894e-17,
+            -0.039491280913352966,
+            0.09910240024328232,
+            0,
+            -8.221688079396301e-18,
+            0.16847407817840576,
+            0.06713517755270004,
+            0,
+            13.23117446899414,
+            1.3690063953399658,
+            9.961691856384277,
+            1
+          ],
+          [
+            0.18802127242088318,
+            0,
+            0,
+            0,
+            0,
+            0.4848969578742981,
+            0,
+            0,
+            0,
+            0,
+            0.04947927966713905,
+            0,
+            13.12989616394043,
+            1.1278667449951172,
+            9.933998107910156,
+            1
+          ]
+        ]
+      },
+      "positions": [
+        {
+          "id": "CIV-013",
+          "x": 13.593889965675771,
+          "z": 10.335798017606944,
+          "yaw": 3.141592653589793
+        },
+        {
+          "id": "CIV-033",
+          "x": 13.016093914862722,
+          "z": 9.765768264867337,
+          "yaw": 0
+        }
+      ]
+    }
+  ],
+  "reportedPairFindings": [
+    {
+      "pair": "CIV-003/CIV-019",
+      "body": {
+        "pair": "CIV-003/CIV-019",
+        "category": "body",
+        "firstTime": 0.48333333333333334,
+        "lastTime": 1.4833333333333334,
+        "frames": 61,
+        "maxPenetration": 0.20195870846509933,
+        "partPairKinds": [
+          "arm / hand versus accessory / coat",
+          "arm / hand versus torso / coat",
+          "shoulder / coat versus shoulder / coat",
+          "shoulder / coat versus accessory / coat",
+          "arm / hand versus shoulder / coat",
+          "accessory / coat versus shoulder / coat",
+          "shoulder / coat versus torso / coat",
+          "arm / hand versus leg / boot",
+          "torso / coat versus shoulder / coat",
+          "shoulder / coat versus arm / hand",
+          "accessory / coat versus arm / hand",
+          "torso / coat versus arm / hand",
+          "leg / boot versus arm / hand",
+          "arm / hand versus arm / hand"
+        ],
+        "deepestAt": 0.9,
+        "contact": {
+          "penetration": 0.20195870846509933,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "parts": [
+            5,
+            5
+          ],
+          "roles": [
+            "shoulder / coat",
+            "shoulder / coat"
+          ],
+          "worldCenters": [
+            [
+              13.49666976928711,
+              1.222192406654358,
+              -109.03375244140625
+            ],
+            [
+              13.515447616577148,
+              1.2439748048782349,
+              -108.9643325805664
+            ]
+          ],
+          "matrices": [
+            [
+              0.21816739439964294,
+              0,
+              0,
+              0,
+              0,
+              0.20398513972759247,
+              0.04193350300192833,
+              0,
+              0,
+              -0.055911339819431305,
+              0.2719801664352417,
+              0,
+              13.49666976928711,
+              1.222192406654358,
+              -109.03375244140625,
+              1
+            ],
+            [
+              -0.22330571711063385,
+              -1.0751779183405872e-35,
+              -2.734706254395225e-17,
+              0,
+              1.271611960227669e-19,
+              0.2131529152393341,
+              -0.0010383500484749675,
+              0,
+              3.4804937835981374e-17,
+              -0.001384466653689742,
+              -0.2842038869857788,
+              0,
+              13.515447616577148,
+              1.2439748048782349,
+              -108.9643325805664,
+              1
+            ]
+          ]
+        },
+        "positions": [
+          {
+            "id": "CIV-003",
+            "x": 13.784253734629601,
+            "z": -109.00379713949536,
+            "yaw": 0
+          },
+          {
+            "id": "CIV-019",
+            "x": 13.221090064384043,
+            "z": -108.96507269893017,
+            "yaw": 3.141592653589793
+          }
+        ]
+      },
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-014/CIV-030",
+      "body": {
+        "pair": "CIV-014/CIV-030",
+        "category": "body",
+        "firstTime": 0.7333333333333333,
+        "lastTime": 1.5833333333333333,
+        "frames": 52,
+        "maxPenetration": 0.14901088178157806,
+        "partPairKinds": [
+          "shoulder / coat versus shoulder / coat",
+          "shoulder / coat versus accessory / coat",
+          "accessory / coat versus shoulder / coat",
+          "shoulder / coat versus torso / coat",
+          "torso / coat versus shoulder / coat",
+          "torso / coat versus torso / coat",
+          "shoulder / coat versus head / neck",
+          "arm / hand versus accessory / coat",
+          "shoulder / coat versus arm / hand",
+          "accessory / coat versus arm / hand",
+          "torso / coat versus arm / hand",
+          "arm / hand versus shoulder / coat",
+          "arm / hand versus torso / coat",
+          "leg / boot versus arm / hand"
+        ],
+        "deepestAt": 1.0833333333333333,
+        "contact": {
+          "penetration": 0.14901088178157806,
+          "axis": [
+            -1,
+            -7.703719777548943e-34,
+            -1.2246467792224701e-16
+          ],
+          "parts": [
+            5,
+            8
+          ],
+          "roles": [
+            "shoulder / coat",
+            "shoulder / coat"
+          ],
+          "worldCenters": [
+            [
+              -13.624519348144531,
+              1.241400957107544,
+              -158.66867065429688
+            ],
+            [
+              -13.674771308898926,
+              1.2786407470703125,
+              -158.68817138671875
+            ]
+          ],
+          "matrices": [
+            [
+              -0.22265248000621796,
+              -1.715252313744222e-34,
+              -2.7267064252551022e-17,
+              0,
+              -2.282149123822563e-18,
+              0.21171335875988007,
+              0.018635163083672523,
+              0,
+              3.4569876266950955e-17,
+              0.024846883490681648,
+              -0.2822844684123993,
+              0,
+              -13.624519348144531,
+              1.241400957107544,
+              -158.66867065429688,
+              1
+            ],
+            [
+              0.17587320506572723,
+              0,
+              0,
+              0,
+              0,
+              0.11005045473575592,
+              -0.015072428621351719,
+              0,
+              0,
+              0.040193140506744385,
+              0.2934678792953491,
+              0,
+              -13.674771308898926,
+              1.2786407470703125,
+              -158.68817138671875,
+              1
+            ]
+          ]
+        },
+        "positions": [
+          {
+            "id": "CIV-014",
+            "x": -13.918015924282372,
+            "z": -158.6553566430655,
+            "yaw": 3.141592653589793
+          },
+          {
+            "id": "CIV-030",
+            "x": -13.434102502185851,
+            "z": -158.68942207060277,
+            "yaw": 0
+          }
+        ]
+      },
+      "umbrella": null
+    },
+    {
+      "pair": "CIV-017/CIV-021",
+      "body": null,
+      "umbrella": null
+    }
+  ],
+  "durationMs": 3345.1445999999996,
+  "limits": "Production navigation and rendering math are exercised without a GPU. Traffic advances normally; undamaged dynamic bins and parked car retain their initial poses. This establishes geometric body overlap, not a new performance or image-quality result."
+}

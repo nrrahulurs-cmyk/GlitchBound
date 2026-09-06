@@ -1,6 +1,7 @@
 """Build the complete VESPER city as an editable Blender scene.
 
 Run: blender --background --python blender/build_city.py
+Save/reopen only, preserving existing viewpoints: append -- --skip-render --preserve-views
 Requires Node.js to evaluate the shared deterministic layout in src/city-layout.js.
 All city geometry is native editable Blender mesh geometry. Storefront lettering
 is editable Blender text; asset props are appended from cyberpunk-assets.blend.
@@ -19,23 +20,25 @@ from mathutils import Vector, Matrix
 ROOT=Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(ROOT/'blender'))
 from advert_materials import load_ad_material, material_image, image_quad, panel_dimensions
-NODE=shutil.which('node') or r'C:\Program Files\nodejs\node.exe'
-script='import { createCityLayout } from '+json.dumps((ROOT/'src'/'city-layout.js').as_uri())+';const city=createCityLayout();'
-if (ROOT/'src'/'city-life.js').exists():
-    script+='const life=await import('+json.dumps((ROOT/'src'/'city-life.js').as_uri())+');if(life.createCityLifeLayout){city.nativeLife=life.createCityLifeLayout();city.nativeTrafficRoutes=life.CITY_TRAFFIC_ROUTES;}'
-script+='const simulation=await import('+json.dumps((ROOT/'src'/'simulation.js').as_uri())+');if(simulation.createSupplySupportLayout)city.nativeSupply=simulation.createSupplySupportLayout();'
-script+='const anchors=await import('+json.dumps((ROOT/'src'/'asset-placements.js').as_uri())+');city.nativePlacements=anchors.SCENE_PLACEMENTS;'
-script+='const adverts=await import('+json.dumps((ROOT/'src'/'advert-campaigns.js').as_uri())+');city.nativeAdvertCampaigns=adverts.ADVERT_CAMPAIGNS;'
-script+='const streets=await import('+json.dumps((ROOT/'src'/'street-collisions.js').as_uri())+');const physicalStreet=streets.createStreetCollisionLayout(city);city.boxes=city.boxes.filter(box=>!physicalStreet.removedBoxes.has(box)).concat(physicalStreet.dynamicProps.flatMap(prop=>prop.parts));city.nativeDynamicProps=physicalStreet.dynamicProps;'
-script+='process.stdout.write(JSON.stringify(city));'
-result=subprocess.run([NODE,'--input-type=module','-e',script],
-                      capture_output=True,text=True,check=True)
-layout=json.loads(result.stdout)
+from surface_materials import configure_surface_materials
+from native_layout import read_native_layout
+layout=read_native_layout(ROOT)
 far_lod_count=sum(1 for box in layout['boxes'] if box.get('lod')=='far')
 layout['boxes']=[box for box in layout['boxes'] if box.get('lod')!='far']
 layout['groups']=defaultdict(list)
 for box in layout['boxes']:layout['groups'][box['kind']].append(box)
 layout['wires']=[]
+preserved_views={'cameras':{},'scenes':{}}
+native_path=ROOT/'blender'/'neon-district-city.blend'
+if '--preserve-views' in sys.argv and native_path.exists():
+    bpy.ops.wm.open_mainfile(filepath=str(native_path))
+    for obj in bpy.data.objects:
+        if obj.type!='CAMERA':continue
+        preserved_views['cameras'][obj.name]={'matrix':[list(row) for row in obj.matrix_world],
+            'type':obj.data.type,'lens':obj.data.lens,'ortho_scale':obj.data.ortho_scale,
+            'clip_start':obj.data.clip_start,'clip_end':obj.data.clip_end,
+            'shift_x':obj.data.shift_x,'shift_y':obj.data.shift_y,'sensor_width':obj.data.sensor_width,'sensor_height':obj.data.sensor_height}
+    preserved_views['scenes']={s.name:s.camera.name for s in bpy.data.scenes if s.camera}
 bpy.ops.wm.read_factory_settings(use_empty=True)
 
 def collection(name):
@@ -45,6 +48,9 @@ SIGNS=collection('02 NEON / editable signage')
 PROPS=collection('03 GAMEPLAY / Blender asset kit')
 LIFE=collection('04 STREET LIFE / commuters and traffic')
 RIG=collection('05 LIGHTING / cameras and atmosphere')
+FRONTS=collection('07 STREET FRONTS / attached entrance assemblies')
+SERVICES=collection('08 SERVICE MECHANISMS / editable idle fixtures')
+BLOCKS=collection('09 AUTHORED BLOCKS / residential court and market')
 
 def linear(hex_color):
     rgb=[int(hex_color.lstrip('#')[i:i+2],16)/255 for i in (0,2,4)]
@@ -65,17 +71,14 @@ def material(name, color=None, emissive=0, roughness=.6, metallic=.2):
     return m
 
 mats={
- 'solid':material('Voxel / architectural alloy',roughness=.6,metallic=.35),
- 'pavement':material('Voxel / rain polished asphalt',roughness=.22,metallic=.60),
+ 'solid':material('Voxel / architectural alloy',roughness=.86,metallic=.08),
+ 'pavement':material('Voxel / rain polished asphalt',roughness=.91,metallic=.025),
  'glow':material('Voxel / emissive neon and windows',emissive=2.4,roughness=.3,metallic=.15),
  'glass':material('Voxel / reflective facade glass',roughness=.11,metallic=.86),
- 'metal':material('Voxel / weathered small metal panels',roughness=.49,metallic=.67),
+ 'metal':material('Voxel / weathered small metal panels',roughness=.57,metallic=.66),
  'window':material('Voxel / occupied warm windows',emissive=.85,roughness=.35,metallic=.2),
 }
-road_nodes=mats['pavement'].node_tree
-noise=road_nodes.nodes.new('ShaderNodeTexNoise');noise.inputs['Scale'].default_value=125;noise.inputs['Detail'].default_value=3
-bump=road_nodes.nodes.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.24;bump.inputs['Distance'].default_value=.04
-road_nodes.links.new(noise.outputs['Fac'],bump.inputs['Height']);road_nodes.links.new(bump.outputs['Normal'],road_nodes.nodes.get('Principled BSDF').inputs['Normal'])
+configure_surface_materials(mats)
 
 def to_blender(x,y,z):return (x,-z,y)
 
@@ -96,14 +99,69 @@ class Batch:
         mesh.update();obj=bpy.data.objects.new(name,mesh);coll.objects.link(obj);return obj
 
 batches=defaultdict(Batch)
+refit_spans=defaultdict(list)
 for kind,items in layout['groups'].items():
     for v in items:
+        if v.get('detail') in ['street-craft','block-craft','service-mechanism']:continue
         # Independent sections keep the native geometry practical to edit.
         section=int(math.floor(v['z']/27));side='WEST' if v['x']< -16 else 'EAST' if v['x']>16 else 'AVENUE'
         if abs(v['x'])>45:side+=f' / outer {int(abs(v["x"])//45):02d}'
-        batches[(kind,section,side)].box(v)
+        key=(kind,section,side)
+        if v.get('detail')=='street-frontage-refit':
+            refit_spans[key].append({'id':v['id'],'sourceIndex':v['sourceIndex'],'vertexStart':len(batches[key].verts)})
+        batches[key].box(v)
 for (kind,section,side),batch in batches.items():
-    batch.finish(f'{side} / block {section:+03d} / {kind}',mats[kind],CITY)
+    obj=batch.finish(f'{side} / block {section:+03d} / {kind}',mats[kind],CITY)
+    if refit_spans[(kind,section,side)]:
+        obj['frontage_refit_spans']=json.dumps(refit_spans[(kind,section,side)])
+frontage_by_id={box['id']:box for box in layout['boxes'] if box.get('detail')=='street-craft'}
+for assembly in layout.get('streetDetails',{}).get('assemblies',[]):
+    parent=bpy.data.objects.new(assembly['id'],None);FRONTS.objects.link(parent)
+    parent['street_frontage']=json.dumps(assembly,ensure_ascii=False)
+    parent['removed_service_shutters']=json.dumps([bid for bid in assembly['boxIds'] if bid in layout['nativeServiceFixtures']['removedBoxIds']])
+    parts=defaultdict(Batch)
+    for box_id in assembly['boxIds']:
+        if box_id not in frontage_by_id:continue
+        box=frontage_by_id[box_id];parts[box['kind']].box(box)
+    for kind,batch in parts.items():
+        obj=batch.finish(assembly['id']+' / '+kind,mats[kind],FRONTS);obj.parent=parent
+        obj['street_frontage_id']=assembly['id'];obj['voxel_modules']=len(batch.verts)//8
+        obj['source_box_ids']=json.dumps([bid for bid in assembly['boxIds'] if bid in frontage_by_id and frontage_by_id[bid]['kind']==kind])
+
+block_by_id={box['id']:box for box in layout['boxes'] if box.get('detail')=='block-craft'}
+for assembly in layout.get('blockCompositions',{}).get('assemblies',[]):
+    parent=bpy.data.objects.new(assembly['id'],None);BLOCKS.objects.link(parent)
+    parent['block_composition']=json.dumps(assembly,ensure_ascii=False)
+    parts=defaultdict(Batch)
+    for box_id in assembly['boxIds']:
+        box=block_by_id[box_id];parts[box['kind']].box(box)
+    for kind,batch in parts.items():
+        obj=batch.finish(assembly['id']+' / '+kind,mats[kind],BLOCKS);obj.parent=parent
+        obj['block_composition_id']=assembly['id'];obj['voxel_modules']=len(batch.verts)//8
+        obj['source_box_ids']=json.dumps([bid for bid in assembly['boxIds'] if block_by_id[bid]['kind']==kind])
+
+service_materials={}
+for recipe in layout['nativeServiceFixtures']['recipes']:
+    parent=bpy.data.objects.new(recipe['id']+' / mechanism',None);SERVICES.objects.link(parent)
+    parent.location=to_blender(**recipe['origin']);parent.rotation_euler.z=recipe['ry']
+    parent['service_id']=recipe['id'];parent['service_recipe']=json.dumps(recipe,ensure_ascii=False)
+    parent['service_site']=json.dumps(next(s for s in layout['nativeServiceFixtures']['sites'] if s['id']==recipe['id']))
+    parent['source_recipe_hash']=layout['nativeServiceFixtures']['sourceHash']
+    groups={}
+    for group_id in sorted(set(p['partGroup'] for p in recipe['parts'])):
+        group=bpy.data.objects.new(recipe['id']+' / '+group_id,None);SERVICES.objects.link(group)
+        group.parent=parent;group['service_id']=recipe['id'];group['part_group']=group_id;groups[group_id]=group
+    for part in recipe['idlePose']['boxes']:
+        intensity=part.get('intensity',0);key=(part['color'],intensity)
+        if key not in service_materials:
+            service_materials[key]=material('Service / '+part['color']+' / '+str(intensity),part['color'],emissive=intensity,roughness=.57,metallic=.46)
+            service_materials[key].node_tree.nodes['Principled BSDF'].inputs['Emission Strength'].default_value=intensity
+        batch=Batch();batch.box({'x':0,'y':0,'z':0,'sx':part['sx'],'sy':part['sy'],'sz':part['sz'],'c':part['color']})
+        obj=batch.finish(part['id'],service_materials[key],SERVICES)
+        obj.parent=groups[part['partGroup']];obj.location=to_blender(**part['local'])
+        obj['service_id']=recipe['id'];obj['service_part_id']=part['id'];obj['part_group']=part['partGroup']
+        obj['runtime_source_module']='src/service-fixtures.js';obj['source_box']=json.dumps(part)
+        obj['collision_solid']=part.get('solid',True);obj['voxel_modules']=1
 
 sign_mats={}
 poster_mats={}
@@ -391,6 +449,17 @@ scene['dynamic_street_props']=json.dumps(layout.get('nativeDynamicProps',[]))
 scene['structural_support_count']=len(layout.get('supports',[]))
 scene['placement_corrections']=json.dumps(layout.get('placementCorrections',{}))
 scene['shared_asset_placements']=json.dumps(layout['nativePlacements'])
+scene['street_frontage_count']=len(layout.get('streetDetails',{}).get('assemblies',[]))
+scene['street_frontage_voxels']=layout.get('streetDetails',{}).get('voxelCount',0)
+scene['street_frontage_refit_records']=len(layout.get('streetDetails',{}).get('facadeReplacements',[]))
+scene['street_frontage_refit_fragments']=sum(len(spans) for spans in refit_spans.values())
+scene['service_mechanism_count']=len(layout['nativeServiceFixtures']['recipes'])
+scene['service_mechanism_voxels']=sum(len(r['parts']) for r in layout['nativeServiceFixtures']['recipes'])
+scene['service_shutter_replacements']=json.dumps(layout['nativeServiceFixtures']['removedBoxIds'])
+scene['block_composition_count']=len(layout.get('blockCompositions',{}).get('assemblies',[]))
+service_text=bpy.data.texts.new('VESPER / resting service mechanisms.json')
+service_text.write(json.dumps(layout['nativeServiceFixtures'],indent=2,ensure_ascii=False));service_text.use_fake_user=True
+scene['preview_images_current']='--skip-render' not in sys.argv
 aerial_scene=scene.copy();aerial_scene.name='VESPER / complete city aerial';aerial_scene.use_fake_user=True;aerial_scene.camera=overview
 aerial_scene.world=world.copy();aerial_scene.world.name='VESPER / aerial blue hour'
 aerial_scene.world.node_tree.nodes['Background'].inputs[1].default_value=.55
@@ -406,11 +475,23 @@ from build_blueprint import build_blueprint_scene
 if 'blueprint' not in layout:
     raise RuntimeError('The shared layout must include its authoritative structural blueprint before export.')
 blueprint_scene=build_blueprint_scene(layout,layout['blueprint'],ROOT/'blender')
+for name,record in preserved_views['cameras'].items():
+    obj=bpy.data.objects.get(name)
+    if not obj:
+        data=bpy.data.cameras.new(name);obj=bpy.data.objects.new(name,data);RIG.objects.link(obj)
+    obj.matrix_world=Matrix(record['matrix'])
+    for key,value in record.items():
+        if key!='matrix':setattr(obj.data,key,value)
+for name,camera_name in preserved_views['scenes'].items():
+    if name in bpy.data.scenes and camera_name in bpy.data.objects:bpy.data.scenes[name].camera=bpy.data.objects[camera_name]
+if preserved_views['cameras']:
+    record=bpy.data.texts.new('VESPER / preserved scene viewpoints.json');record.write(json.dumps(preserved_views,indent=2));record.use_fake_user=True
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'blender'/'neon-district-city.blend'))
 print('CITY_COMPLETE',scene['city_box_count'],'voxel modules,',len(layout['signs']),'editable signs,',len(bpy.data.objects),'objects')
-bpy.ops.render.render(write_still=True,scene=scene.name)
-# A second render shows the full expanded street network and neighborhood scale.
-bpy.ops.render.render(write_still=True,scene=aerial_scene.name)
-bpy.ops.render.render(write_still=True,scene=blueprint_scene.name)
+if '--skip-render' not in sys.argv:
+    bpy.ops.render.render(write_still=True,scene=scene.name)
+    # A second render shows the full expanded street network and neighborhood scale.
+    bpy.ops.render.render(write_still=True,scene=aerial_scene.name)
+    bpy.ops.render.render(write_still=True,scene=blueprint_scene.name)
 from verify_city import verify_city
 verify_city(ROOT)

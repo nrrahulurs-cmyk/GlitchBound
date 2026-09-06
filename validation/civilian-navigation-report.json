@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "checkedAtUTC": "2026-09-06T11:09:50.197Z",
+  "results": [
+    {
+      "name": "Circle clearance uses the rotated box and the grid includes its rotated endpoints",
+      "passed": true,
+      "rotatedEndpoint": true,
+      "outsideRotatedFootprint": true,
+      "roundedCornerClearance": true
+    },
+    {
+      "name": "Small accepted substeps stop at thin barriers and allow sliding along solid shelves",
+      "passed": true,
+      "stoppedZ": -0.5185185185185186,
+      "slidX": 1.0000000000000002
+    },
+    {
+      "name": "Overhead objects and low curbs respect actual support height while taller props block",
+      "passed": true,
+      "overheadClear": true,
+      "curbClear": true,
+      "tallFurnitureBlocked": true
+    },
+    {
+      "name": "Dynamic bins, parked vehicles and fixtures refresh once per frame without teleporting living citizens",
+      "passed": true,
+      "providerCalls": 123,
+      "updateFrames": 122,
+      "noPerFrameDepenetration": true
+    },
+    {
+      "name": "Blocked ordinary walkers reverse, brake, and advance gait by accepted travel only",
+      "passed": true,
+      "furthestZ": -0.4650555555555608,
+      "finalZ": -3.109639816922555,
+      "acceptedDistance": 4.179528705811423,
+      "gaitDistance": 4.179528705811423
+    },
+    {
+      "name": "Initialization and reset minimally resolve obstacle and crowd overlaps deterministically",
+      "passed": true,
+      "corrections": [
+        {
+          "id": "CIV-001",
+          "before": {
+            "x": 0,
+            "z": 0
+          },
+          "x": -0.945,
+          "z": 0,
+          "distance": 0.945,
+          "resolved": true,
+          "bodyRadius": 0.7546129724410254
+        },
+        {
+          "id": "CIV-002",
+          "before": {
+            "x": 0,
+            "z": 0
+          },
+          "x": 0.945,
+          "z": 0,
+          "distance": 0.945,
+          "resolved": true,
+          "bodyRadius": 0.7546129724410254
+        }
+      ]
+    },
+    {
+      "name": "All284 authored citizens start and travel clear of real shelves, rotated solids and static vehicle placements",
+      "passed": true,
+      "citizens": 284,
+      "staticObstacles": 28323,
+      "trajectoryChecks": 7176,
+      "shelfFlee": {
+        "id": "CIV-026",
+        "distance": 7.945303374345725,
+        "start": [
+          -12.670963526703417,
+          26.40701135188582
+        ],
+        "end": [
+          -11.292155215885312,
+          23.815545782746867
+        ]
+      },
+      "corrections": [
+        {
+          "id": "CIV-011",
+          "before": {
+            "x": 12.074643455445766,
+            "z": -8.50193376839161
+          },
+          "x": 12.074643455445766,
+          "z": -8.544342992866133,
+          "distance": 0.042409224474523555,
+          "resolved": true,
+          "bodyRadius": 0.6934601539373012
+        },
+        {
+          "id": "CIV-015",
+          "before": {
+            "x": 12.677479572128505,
+            "z": 11.934418112039566
+          },
+          "x": 12.51519531226387,
+          "z": 12.109849118594298,
+          "distance": 0.23898162912788598,
+          "resolved": true,
+          "bodyRadius": 0.7584688616499363
+        },
+        {
+          "id": "CIV-018",
+          "before": {
+            "x": -13.195959337521344,
+            "z": -39.0886715054512
+          },
+          "x": -13.408921193749507,
+          "z": -39.204516473125224,
+          "distance": 0.24243103915039335,
+          "resolved": true,
+          "bodyRadius": 0.718792568967012
+        },
+        {
+          "id": "CIV-019",
+          "before": {
+            "x": 13.221090064384043,
+            "z": -108.50926034152508
+          },
+          "x": 12.889759676727099,
+          "z": -108.04524620850485,
+          "distance": 0.5701657140055119,
+          "resolved": true,
+          "bodyRadius": 0.7659517569032168
+        },
+        {
+          "id": "CIV-021",
+          "before": {
+            "x": 12.517017678823322,
+            "z": -100.10201624035835
+          },
+          "x": 11.806791220366568,
+          "z": -99.54922479893766,
+          "distance": 0.8999999999999999,
+          "resolved": true,
+          "bodyRadius": 0.7705174299702501
+        },
+        {
+          "id": "CIV-023",
+          "before": {
+            "x": 13.587869253009558,
+            "z": -24.88816125690937
+          },
+          "x": 13.565894615737433,
+          "z": -25.25555552756373,
+          "distance": 0.3680508589758887,
+          "resolved": true,
+          "bodyRadius": 0.6976821303323989
+        },
+        {
+          "id": "CIV-030",
+          "before": {
+            "x": -13.434102502185851,
+            "z": -159.20033758878708
+          },
+          "x": -13.302375826581498,
+          "z": -159.4900083930135,
+          "distance": 0.3182154802754928,
+          "resolved": true,
+          "bodyRadius": 0.6985063085656369
+        },
+        {
+          "id": "CIV-074",
+          "before": {
+            "x": 323.10530251963064,
+            "z": 62.86941460734232
+          },
+          "x": 323.10530251963064,
+          "z": 62.48793945252551,
+          "distance": 0.3814751548168118,
+          "resolved": true,
+          "bodyRadius": 0.7838723143528389
+        },
+        {
+          "id": "CIV-078",
+          "before": {
+            "x": 76.89240511644167,
+            "z": 62.954897770099336
+          },
+          "x": 76.53272825768087,
+          "z": 62.954897770099336,
+          "distance": 0.3596768587607926,
+          "resolved": true,
+          "bodyRadius": 0.7070581930110881
+        },
+        {
+          "id": "CIV-119",
+          "before": {
+            "x": -77.17964619430714,
+            "z": -83.09548198571429
+          },
+          "x": -77.45681005406053,
+          "z": -83.21028701542382,
+          "distance": 0.30000000000000004,
+          "resolved": true,
+          "bodyRadius": 0.7423597747531753
+        },
+        {
+          "id": "CIV-128",
+          "before": {
+            "x": 297.25404609702525,
+            "z": -83.15167189808562
+          },
+          "x": 297.4388220035275,
+          "z": -83.22820858455864,
+          "distance": 0.2,
+          "resolved": true,
+          "bodyRadius": 0.7301617124096518
+        },
+        {
+          "id": "CIV-195",
+          "before": {
+            "x": -323.0231257677777,
+            "z": -287.1009962260723
+          },
+          "x": -323.0231257677777,
+          "z": -287.52295460199156,
+          "distance": 0.421958375919246,
+          "resolved": true,
+          "bodyRadius": 0.8025559390370453
+        },
+        {
+          "id": "CIV-275",
+          "before": {
+            "x": -77.03083626120352,
+            "z": -526.6662617242896
+          },
+          "x": -77.03083626120352,
+          "z": -526.5336425230291,
+          "distance": 0.1326192012604679,
+          "resolved": true,
+          "bodyRadius": 0.7054902009836382
+        }
+      ],
+      "meanUpdateMs": 6.78620444444445
+    },
+    {
+      "name": "World restart restores destroyed obstacles before resolving original civilian spawns",
+      "passed": true,
+      "destroyedAreaInitiallyClear": true,
+      "restoredSpawn": [
+        -11.1,
+        -18.195
+      ]
+    }
+  ]
+}

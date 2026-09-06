@@ -1,7 +1,7 @@
 {
   "file": "neon-district-city.blend",
-  "bytes": 59324852,
-  "sha256": "01ea648e3ff39e5082ccece3bfabad122befc11004c78d596b4ec7a297f3a473",
+  "bytes": 59090759,
+  "sha256": "a12e476b2c42a9a086bd7c435132b178706bc4bffeb0ab138232d0c2738b57e0",
   "blender": "5.2.1 LTS",
   "scenes": [
     "VESPER / street composition",
@@ -9,11 +9,11 @@
     "VESPER / architectural blueprint"
   ],
   "cameras": 5,
-  "nativeVoxelModules": 151886,
+  "nativeVoxelModules": 159037,
   "excludedDuplicateFarLodModules": 2112,
   "buildings": 185,
   "editableSigns": 646,
-  "structuralSupports": 3666,
+  "structuralSupports": 4968,
   "elevatedConnections": 45,
   "parcels": 75,
   "roads": 16,
@@ -43,7 +43,44 @@
   "supplyFoundations": 15,
   "supplyStackSpacers": 5,
   "groundedPhysicalBins": 12,
-  "planObjects": 5820,
+  "planObjects": 7385,
+  "streetFrontages": 77,
+  "streetFrontageVoxelModules": 5256,
+  "serviceMechanisms": 15,
+  "serviceMechanismParts": 318,
+  "serviceShuttersReplaced": 15,
+  "serviceMechanismSourceHash": "d76c455fe433af286608bb6825b3a9a1a53452b5d9d0d68a1fea01beb18debd8",
+  "authoredBlockAssemblies": 21,
+  "authoredBlockVoxelModules": 765,
+  "serviceCourtFrontages": 17,
+  "facadeRecordsRefit": 547,
+  "facadeRefitFragments": 1413,
+  "facadeRefitMaximumBoundsErrorMetres": 2.6855468718167685e-05,
+  "previewImages": [
+    {
+      "file": "city-scene-preview.png",
+      "bytes": 2806543,
+      "modifiedAtUTC": "2026-09-06T06:01:51.745998+00:00",
+      "sha256": "15b676e43f050acd1ba19e70c304f8317ba93c9a8fb300edc83e84b860393808",
+      "currentGeometry": false
+    },
+    {
+      "file": "city-aerial-preview.png",
+      "bytes": 2378450,
+      "modifiedAtUTC": "2026-09-06T06:02:10.332008+00:00",
+      "sha256": "8d47f89958fb8c125ac5282054eb95eaff4692213f6f15d7d076ccdfea1dd815",
+      "currentGeometry": false
+    },
+    {
+      "file": "city-blueprint-preview.png",
+      "bytes": 5064441,
+      "modifiedAtUTC": "2026-09-06T06:02:13.660717+00:00",
+      "sha256": "5d1f45a3585bf7df746cacc5d63d489be24eaa2500f345dc89183b7735b6375a",
+      "currentGeometry": false
+    }
+  ],
+  "preservedViewpoints": 5,
+  "previewImagesCurrent": false,
   "verification": "Fresh Blender reopen verified exact current structural blueprint and campaign catalog, all packed images, actual-aspect native image planes, shared asset anchors, unarmed hero geometry, grounded bins, and looping traffic animation.",
   "heroAssetRevision": "Unarmed cybernetic right hand from current cyberpunk-assets.blend",
   "advertCampaigns": [

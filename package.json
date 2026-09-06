@@ -2,7 +2,9 @@
   "name": "neon-district",
   "private": true,
   "license": "MIT",
-  "engines": { "node": "24.x" },
+  "engines": {
+    "node": "24.x"
+  },
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +12,8 @@
     "prebuild": "node scripts/export-blueprint.mjs",
     "dev": "vite --configLoader native",
     "build": "vite build --configLoader native",
-    "preview": "vite preview --configLoader native"
+    "preview": "vite preview --configLoader native",
+    "test": "node scripts/test.mjs"
   },
   "dependencies": {
     "cannon-es": "0.20.0",

@@ -1,0 +1,46 @@
+{
+  "status": "captured",
+  "build": "/assets/index--TQCur8T.js",
+  "checkedAtUTC": "2026-09-06T11:07:06.457Z",
+  "method": "Same saved eye-height cameras. Wait for the relevant detailed chunk to be visible and distant chunk hidden, then 65 animation frames for lighting. HUD hidden. This verifies capture readiness, not aesthetic quality.",
+  "results": [
+    {
+      "name": "Stacktown service court",
+      "chunk": "block-15",
+      "camera": [
+        -150,
+        1.956,
+        -240
+      ],
+      "mode": "playing",
+      "near": true,
+      "far": false,
+      "target": [
+        -174,
+        3,
+        -240
+      ],
+      "image": "block-compositions-stacktown-court-settled.png"
+    },
+    {
+      "name": "Lantern Market",
+      "chunk": "block-0",
+      "camera": [
+        -210,
+        1.807,
+        126
+      ],
+      "mode": "playing",
+      "near": true,
+      "far": false,
+      "target": [
+        -210,
+        16,
+        5
+      ],
+      "image": "block-compositions-lantern-market-settled.png"
+    }
+  ],
+  "errors": [],
+  "earlierAdverseImage": "block-compositions-stacktown-court.png"
+}

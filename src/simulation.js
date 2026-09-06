@@ -2,6 +2,9 @@ import * as THREE from 'three';
 import * as CANNON from 'cannon-es';
 import { createStreetPhysics } from './street-physics.js';
 
+const BASE_SOLVER_ITERATIONS = 7;
+const ARTICULATED_SOLVER_ITERATIONS = 12;
+
 // Static compound street tiles greatly outnumber moving bodies. A cached grid
 // avoids SAP's static/static pair scan while retaining every authored shape.
 class StreetBroadphase extends CANNON.Broadphase {
@@ -29,6 +32,9 @@ class StreetBroadphase extends CANNON.Broadphase {
     const tested=new Set();
     const pair=(a,b)=>{
       if(a===b||(a.type!==CANNON.Body.DYNAMIC&&b.type!==CANNON.Body.DYNAMIC)||!this.needBroadphaseCollision(a,b))return;
+      // Simplified corpses release their articulation collision bit. Preserve
+      // the same person's umbrella exclusion while other corpses stay solid.
+      if(a.userData?.type==='civilian-ragdoll'&&b.userData?.type==='civilian-ragdoll'&&a.userData.civilianId!=null&&a.userData.civilianId===b.userData.civilianId)return;
       const key=a.id<b.id?a.id+','+b.id:b.id+','+a.id;if(tested.has(key))return;tested.add(key);
       this.intersectionTest(a,b,p1,p2);
     };
@@ -60,7 +66,7 @@ export function createSupplySupportLayout() {
 
 /** Neutral city security, crime response, and bounded rigid-body voxel debris. */
 export function createSimulation({ scene, camera, colliders = [], assets = {}, civilians = null,
-  dynamicProps = [], streetColliders = [], groundSurfaces = [], groundHeightAt = () => 0,
+  dynamicProps = [], streetColliders = [], groundSurfaces = [], groundHeightAt = () => 0, getExternalSolids = () => [],
   bounds = { minX: -65, maxX: 65, minZ: -150, maxZ: 40 }, patrolRoutes = [], onEvent = () => {} }) {
   const travelBounds = { minX: bounds.minX + 1.2, maxX: bounds.maxX - 1.2,
     minZ: bounds.minZ + 1.2, maxZ: bounds.maxZ - 1.2 };
@@ -75,7 +81,7 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
   world.collisionMatrix = new CANNON.ObjectCollisionMatrix();
   world.collisionMatrixPrevious = new CANNON.ObjectCollisionMatrix();
   world.allowSleep = true;
-  world.solver.iterations = 7;
+  world.solver.iterations = BASE_SOLVER_ITERATIONS;
   const physicsMaterial = new CANNON.Material('concrete and metal');
   world.defaultContactMaterial.friction = 0.52;
   world.defaultContactMaterial.restitution = 0.24;
@@ -299,7 +305,8 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
       if (obstacle.containsPoint(origin)) return true;
       if (ray.intersectBox(obstacle, impactPoint) && impactPoint.distanceTo(origin) < distance - 0.08) return true;
     }
-    return streetDistance(origin,direction,distance)<distance-.08||Boolean(streetPhysics.raycast(origin,direction,distance-.08));
+    return streetDistance(origin,direction,distance)<distance-.08||Boolean(streetPhysics.raycast(origin,direction,distance-.08))||
+      getExternalSolids().some(box=>Boolean(shotOrientedBox(origin,direction,box,distance-.08)));
   }
 
   function dronePositionBlocked(x, y, z) {
@@ -321,6 +328,22 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
       if(gap<best){best=gap;normal.set(0,0,0);normal[axis]=side;}
     }
     return {point,distance,normal};
+  }
+
+  function shotOrientedBox(origin,direction,box,maximum) {
+    // Fixtures retain their exact rotating/translated shape, including an
+    // inside-cover hit at zero distance. Do not fill the open space in a frame.
+    if(maximum<0)return null;
+    const dx=origin.x-box.x,dy=origin.y-box.y,dz=origin.z-box.z;
+    const along=THREE.MathUtils.clamp(-(dx*direction.x+dy*direction.y+dz*direction.z),0,maximum);
+    const radius=Math.hypot(box.sx,box.sy,box.sz)/2;
+    if((dx+direction.x*along)**2+(dy+direction.y*along)**2+(dz+direction.z*along)**2>radius*radius+1e-7)return null;
+    const center=new THREE.Vector3(box.x,box.y,box.z),offset=new THREE.Vector3(dx,dy,dz);
+    const rotation=new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),box.ry||0),inverse=rotation.clone().invert();
+    const local=new THREE.Box3(new THREE.Vector3(-box.sx/2,-box.sy/2,-box.sz/2),new THREE.Vector3(box.sx/2,box.sy/2,box.sz/2));
+    const contact=shotBox(offset.applyQuaternion(inverse),direction.clone().applyQuaternion(inverse),local,maximum);
+    if(contact){contact.point.applyQuaternion(rotation).add(center);contact.normal.applyQuaternion(rotation);}
+    return contact;
   }
 
   /** Side-effect-free closest shot target. All vectors are independent copies. */
@@ -361,6 +384,7 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
       const bounds=new THREE.Box3().setFromCenterAndSize(new THREE.Vector3(prop.x,prop.y,prop.z),new THREE.Vector3(prop.sx,prop.sy,prop.sz));
       accept(shotBox(start,dir,bounds,distance),'street-prop',prop);
     }
+    for(const fixture of getExternalSolids())accept(shotOrientedBox(start,dir,fixture,distance),'street-solid',fixture);
     // Tiny tolerance includes a body exactly at the camera's selected aim point,
     // while accept() keeps any equally near opaque cover in front of that body.
     const person=civilians?.raycast(start,dir,distance+(targetType?0:1e-7));
@@ -550,7 +574,10 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
         obstructed=true;
         // The barrel may visually extend through a thin wall. Keep the shot on
         // the near cover surface and never damage the target beyond that cover.
-        if(actual.distance>1e-7) {
+        // Containment in an opaque solid already blocks at the muzzle. A
+        // zero-distance damageable target beyond cover must still lose to it.
+        const muzzleInsideCover=actual.distance<=1e-7&&['wall','street-solid','ground'].includes(actual.targetType);
+        if(!muzzleInsideCover) {
           actual=guard.distance<=1e-7?{...guard,point:origin.clone(),distance:0}:{...guard,distance:origin.distanceTo(guard.point)};
           if(actual.distance>1e-7)dir.copy(actual.point).sub(origin).normalize();
         }
@@ -667,6 +694,11 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
     // scene clock may continue during menus; using it here would expire EMPs and
     // drone wind-ups while paused and remove the initial combat grace period.
     elapsed += delta;
+    // Jointed bodies need more contact convergence than loose street props.
+    // Use the measured higher budget only while an articulated assembly is
+    // awake; persistent sleeping or simplified remains keep the normal cost.
+    world.solver.iterations = civilians?.needsArticulatedSolver?.()
+      ? ARTICULATED_SOLVER_ITERATIONS : BASE_SOLVER_ITERATIONS;
     world.step(1 / 60, delta, 4);
     streetPhysics.update(delta);
     for (let i = debris.length - 1; i >= 0; i--) {
@@ -807,7 +839,7 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
     elapsed = 0;
     kills = 0;
     reportedCivilianDeaths.clear();
-    civilians?.reset();
+    world.solver.iterations = BASE_SOLVER_ITERATIONS;
     streetPhysics.reset();
     wantedLevel = 0;
     heat = 0;
@@ -844,6 +876,9 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
       drone.routeIndex = drone.routePoints.length > 1 ? 1 : 0;
       setDroneStatus(drone, false);
     }
+    // Their spawn resolver reads the live props. Restore bins, parked wrecks
+    // and destroyed crates before those positions are sampled.
+    civilians?.reset();
   }
 
   function getState() {
@@ -857,7 +892,7 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
     }
     return {
       kills, securityKills: kills, civilianCasualties: civilianState.dead, civilians: { ...civilianState },
-      streetPhysics: streetPhysics.getState(), physics: { bodies: world.bodies.length,streetTiles: streetTiles.size,streetShapes: staticShapes.length },
+      streetPhysics: streetPhysics.getState(), physics: { bodies: world.bodies.length,streetTiles: streetTiles.size,streetShapes: staticShapes.length,solverIterations:world.solver.iterations },
       totalDrones: drones.length, wantedLevel, heat, crimeReason, securityState,
       searchRemaining, interactPrompt: '',
       remainingTargets: drones.filter((drone) => drone.alive).map((drone) => ({
@@ -876,7 +911,7 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
       sx: bounds.max.x - bounds.min.x,
       sy: bounds.max.y - bounds.min.y,
       sz: bounds.max.z - bounds.min.z,
-    })).concat(streetPhysics.getColliders());
+    })).concat(streetPhysics.getColliders(),getExternalSolids());
   }
 
   function dispose() {
