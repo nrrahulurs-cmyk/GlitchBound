@@ -1,0 +1,28 @@
+{
+  "nativeSHA256": "312d537cd8af507b912dcbdd67bc62815302f42b4c254fae22151e2cfd151592",
+  "image": "validation/native-housing-preview-canopy-occluded.png",
+  "imageSHA256": "c3da29587032e7b4536e7bfff5398d61e1856192b15757287c686d384b1bd924",
+  "cameraThree": {
+    "position": [
+      -170,
+      5.8,
+      -244
+    ],
+    "target": [
+      -186,
+      6.5,
+      -263
+    ],
+    "lensMM": 28
+  },
+  "frame": 1,
+  "samples": 16,
+  "resolution": [
+    1100,
+    800
+  ],
+  "method": "Fresh saved city opened in Blender; CPU Cycles inspection camera, existing street-scene lighting and materials. No native geometry, lighting or saved viewpoints changed.",
+  "blenderVersion": "5.2.1 LTS",
+  "fullCityPreviewsRefreshed": false,
+  "review": "Rejected inspection camera: foreground canopy blocks the stair base. Retained before moving to the previously accepted runtime stair-front camera."
+}

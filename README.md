@@ -77,6 +77,8 @@ Ambient fill keeps unlit masonry and service courtyards readable; four broad can
 
 There are 77 wall-supported street and courtyard assemblies: food hatches, service garages, residential entries, clinic doors and concierge entries. Each has a shared blueprint/native Blender placement. Existing facade rails and glazing are cut around the new apertures, with clear approaches checked against the older street furniture. Fifteen exterior panels provide working services. Doors remain closed; usable interiors and more involved activities are still future work.
 
+The authored Stacktown courtyard includes an exterior staircase to a shared landing, layered apartment bays and connected seating. Sixteen solid treads lead to the 3.065 m landing; the covered ground route stays below it and the upstairs door is closed. The same structures are editable in the Blender city. The interactive blueprint exposes their footprints, route waypoints, floor heights and structural attachments.
+
 Sound is procedurally synthesized with Web Audio. Footsteps follow actual distance travelled and distinguish road from paving; landings, nearby traffic and mounted machinery provide local feedback. Six traffic and six machinery voices use spatial panning, with district-specific ambience and bounded transient voices. Pause and mute silence the output. These are original synthesized sounds, not recorded crowds or licensed music.
 
 Civilians can be injured and killed by gunfire or vehicle impacts. Two carbine body hits are fatal; faster vehicle impacts are lethal, while slow contact causes no damage. Death preserves the currently rendered pose and creates eleven physical body segments joined at the waist, neck, shoulders, elbows, hips and knees. Umbrellas fall independently. Body proxies use boxes, joint limits and passive damping; upward momentum and extreme spin are bounded to stabilize contacts with the controlled car. Fallen civilians remain in the scene until you reconnect. Assaults and fatalities trigger the city's crime response.
@@ -96,6 +98,7 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 - `blender/cyberpunk-assets.blend` — props and character source.
 - `blender/pulse-carbine.blend` — editable weapon and projectile-effect workshop.
 - `blender/service-actions.blend` — editable service mechanisms, keyed operation/interruption sequences and inspection cameras.
+- `blender/character-workshop.blend` — the 284 resolved civilian placements and four editable walking, stopping, turning and fleeing clips.
 - `blender/weapon-manifest.json` — weapon bounds, hashes, animation parts and socket contract.
 - `blender/build_city.py` / `blender/build_assets.py` / `blender/build_weapon.py` — native source and GLB regeneration scripts.
 - `blender/README.md` — Blender commands, dimensions and animation part names.
@@ -138,6 +141,10 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 | `src/weapon-rig.js` | Blender weapon hierarchy, muzzle socket, recoil, sway and reload animation |
 | `src/weapon-vfx.js` | Travelling ion bolts and bounded angular impact effects |
 | `src/city.js` | Batched rendering, ambient street animation and mounted-sign lighting |
+| `src/civilian-source.js` | Shared deterministic citizen geometry, clothing and continuing aerial-traffic population |
+| `src/housing-compositions.js` | Structurally connected apartment bays, exterior stairs, landing and exact facade replacements |
+| `scripts/export-native-characters.mjs` | Exact resolved citizen poses, editable group bindings and sampled animation data for Blender |
+| `src/aircraft-source.js` | Shared voxel courier geometry for runtime flight and the native city |
 | `src/atmosphere.js` | Sky, rain, vapor and wet-road reflection shader |
 | `src/simulation.js` | Neutral patrols, crimes, wanted response and destruction |
 | `src/voxel-assets.js` | Blender material batching |

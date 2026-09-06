@@ -1,9 +1,10 @@
+import {createPedestrianTemplate} from '../src/civilian-source.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import * as THREE from 'three';
 import {createCivilianMotion} from '../src/civilian-motion.js';
-const source=fs.readFileSync(new URL('../src/city.js',import.meta.url),'utf8'),fragment=source.slice(source.indexOf('  function pedestrianTemplate('),source.indexOf('  const people=[];'));
-const pieces=new Function('pick',fragment+';return pedestrianTemplate("#334455",true);')(a=>a[0]);
+
+const pieces=createPedestrianTemplate('#334455',true);
 const unit=new THREE.Box3(new THREE.Vector3(-.5,-.5,-.5),new THREE.Vector3(.5,.5,.5)),results=[];
 function test(name,fn){try{const detail=fn();results.push({test:name,pass:true,...detail});console.log('PASS '+name,JSON.stringify(detail));}catch(e){results.push({test:name,pass:false,error:e.stack});console.error('FAIL '+name,e.message);}}
 function fixture({scale=1,ground=()=>.057,umbrella=false}={}){const motion=createCivilianMotion({scale,phase:2.4,groundHeightAt:ground,umbrella});motion.reset({x:0,z:0,yaw:0});return{motion,x:0,z:0,scale,ground};}

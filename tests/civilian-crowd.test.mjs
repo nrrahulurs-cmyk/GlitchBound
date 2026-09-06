@@ -1,7 +1,8 @@
+import {createPedestrianTemplate} from '../src/civilian-source.js';
 import assert from 'node:assert/strict';import fs from 'node:fs';import * as THREE from 'three';
 import {createCivilianSystem} from '../src/civilians.js';import{createCivilianMotion}from'../src/civilian-motion.js';import{civilianBodyRadius}from'../src/civilian-navigation.js';
-const source=fs.readFileSync(new URL('../src/city.js',import.meta.url),'utf8'),template=source.slice(source.indexOf('  function pedestrianTemplate('),source.indexOf('  const people=[];'));
-const pieces=umbrella=>new Function('pick',template+';return pedestrianTemplate("#445566",'+umbrella+');')(a=>a[0]),results=[];
+
+const pieces=umbrella=>createPedestrianTemplate('#445566',umbrella),results=[];
 function test(name,fn){try{const evidence=fn();results.push({name,passed:true,...evidence});console.log('PASS '+name,JSON.stringify(evidence));}catch(error){results.push({name,passed:false,error:error.stack});console.error('FAIL '+name,error.message);}}
 function fixture(specs,colliders=[]){const people=specs.map(p=>({scale:1,phase:0,minZ:-30,maxZ:30,...p,pieces:pieces(p.umbrella||false)})),mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(),new THREE.MeshBasicMaterial(),people.reduce((n,p)=>n+p.pieces.length,0)),system=createCivilianSystem({people,mesh,colliders});return{people,mesh,system};}
 function run(f,seconds,dt=1/60){let minimumGap=Infinity,maxStep=0;const paths=f.people.map(()=>0),modes=new Set(),previous=f.people.map(p=>({x:p.x,z:p.z}));

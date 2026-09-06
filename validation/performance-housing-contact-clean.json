@@ -1,0 +1,174 @@
+{
+  "status": "measured",
+  "checkedAtUTC": "2026-09-06T13:45:37.375Z",
+  "browser": "152.0.7977.77",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "current": {
+    "build": "Bynkp4Gf",
+    "artifact": "work/performance-diagnosis/Bynkp4Gf-2026-09-06T13-45-13-094Z/report.json",
+    "artifactSHA256": "0a2004a7111e718fd8109d4595aa1db3d85dfccb36eda3b7b1bd1395c4897e50",
+    "bundleSHA256": "9f70ab3b45ff8895c4952856d937040597ca90181174547f1e23854f90ded9e5",
+    "phases": [
+      {
+        "name": "control-baseline",
+        "fps": 59.97600959616154,
+        "meanMs": 16.673333333333332,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "maxMs": 16.80000000000291,
+        "frames": 300,
+        "framesOver25ms": 0,
+        "bodies": 2649,
+        "articulated": 0,
+        "joints": 0,
+        "corpseBodies": 0,
+        "solverIterations": 7,
+        "drawCalls": 444
+      },
+      {
+        "name": "control-24-new-deaths",
+        "fps": 55.87840858292357,
+        "meanMs": 17.895999999999997,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 33.29999999999927,
+        "maxMs": 33.5,
+        "frames": 300,
+        "framesOver25ms": 22,
+        "bodies": 2920,
+        "articulated": 24,
+        "joints": 240,
+        "corpseBodies": 271,
+        "solverIterations": 12,
+        "drawCalls": 444
+      }
+    ]
+  },
+  "previousClean": {
+    "build": "D0-THxnE",
+    "artifact": "work/performance-diagnosis/D0-THxnE-2026-09-06T12-48-25-329Z/report.json",
+    "artifactSHA256": "f82da2b6797d27620495cce3c61960d5305b6173f7242cd007f6a9863f025cf9",
+    "bundleSHA256": "c31e14bcc022368963c4350d3f243e32692b2b9e60417b69ce3fc0140ebba902",
+    "phases": [
+      {
+        "name": "control-baseline",
+        "fps": 59.97600959616154,
+        "meanMs": 16.673333333333332,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "maxMs": 16.899999999999636,
+        "frames": 300,
+        "framesOver25ms": 0,
+        "bodies": 2281,
+        "articulated": 0,
+        "joints": 0,
+        "corpseBodies": 0,
+        "solverIterations": 7,
+        "drawCalls": 444
+      },
+      {
+        "name": "control-24-new-deaths",
+        "fps": 56.940042135631174,
+        "meanMs": 17.562333333333335,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 33.29999999999927,
+        "maxMs": 33.400000000001455,
+        "frames": 300,
+        "framesOver25ms": 16,
+        "bodies": 2552,
+        "articulated": 24,
+        "joints": 240,
+        "corpseBodies": 271,
+        "solverIterations": 12,
+        "drawCalls": 444
+      }
+    ]
+  },
+  "originalControl": {
+    "build": "CS_PCoEN",
+    "artifact": "work/performance-diagnosis/CS_PCoEN-2026-09-06T11-24-50-036Z/report.json",
+    "artifactSHA256": "d6e81d48046d29762e9a5f4599e3de2d6259055ad9573a87490326c449c74aec",
+    "bundleSHA256": "4127c17e40b92cce9fd282c47fe5de600385e1408ef73b7b0fee36c18ec3aff3",
+    "phases": [
+      {
+        "name": "control-baseline",
+        "fps": 59.97600959616152,
+        "meanMs": 16.67333333333334,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 16.799999999999272,
+        "maxMs": 17.100000000002183,
+        "frames": 300,
+        "framesOver25ms": 0,
+        "bodies": 2281,
+        "articulated": 0,
+        "joints": 0,
+        "corpseBodies": 0,
+        "solverIterations": 7,
+        "drawCalls": 444
+      },
+      {
+        "name": "control-24-new-deaths",
+        "fps": 40.800228481279504,
+        "meanMs": 24.50966666666666,
+        "p50Ms": 16.700000000000728,
+        "p95Ms": 33.400000000001455,
+        "maxMs": 50,
+        "frames": 300,
+        "framesOver25ms": 139,
+        "bodies": 2552,
+        "articulated": 24,
+        "joints": 240,
+        "corpseBodies": 271,
+        "solverIterations": 12,
+        "drawCalls": 444
+      }
+    ]
+  },
+  "comparison": {
+    "baselineFpsChange": 0,
+    "loadedFpsChange": -1.0616335527076046,
+    "loadedFpsPercentChange": -1.864476233050183,
+    "loadedMeanMsChange": 0.33366666666666234,
+    "loadedP95MsChange": 0,
+    "loadedFramesOver25msChange": 6,
+    "totalBodyCountChange": 368
+  },
+  "method": {
+    "mode": "one clean-only sample",
+    "warmupRAF": 180,
+    "baselineRAF": 300,
+    "loadedRAF": 300,
+    "camera": {
+      "aim": [
+        0,
+        2.1,
+        -88
+      ],
+      "note": "Same existing harness initial XZ/aim; teleport computes actual ground eye height.",
+      "playerXZ": [
+        0,
+        -170
+      ]
+    },
+    "matchedReferenceIds": true,
+    "productionDamageLoad": true,
+    "instrumented": false,
+    "cpuProfiler": false,
+    "gpuTimingQueries": false,
+    "sourceUnchangedDuringRun": true,
+    "chromeClosed": true,
+    "resourceHandoff": "Root and city explicitly confirmed no heavy CPU/GPU work before launch; Chrome closed before resources released."
+  },
+  "interpretation": "Baseline remained 59.976 FPS. The loaded sample was 55.878 FPS versus 56.940 previously (1.86% lower); p95 remained 33.3 ms. There were 22/300 intervals over 25 ms versus 16/300 before. This single sample does not establish a repeatable regression or its cause; the current world also contains 368 additional bodies. No additional profiling was run.",
+  "limitations": [
+    "One camera, browser and short load window; not a general 60 FPS guarantee.",
+    "Same civilian IDs and input direction do not fix exact live gait/contact timing.",
+    "The load uses the production death service as a stress fixture; it is not proof of actual gun input.",
+    "No per-phase CPU or GPU attribution is available from this uninstrumented sample.",
+    "This retained first-person camera does not exercise visible third-person foot-contact appearance.",
+    "Twelve solver iterations, 24 articulated assemblies and 240 joints were observed under load; this browser sample does not independently prove ordered-pair or shape equality."
+  ],
+  "errors": []
+}

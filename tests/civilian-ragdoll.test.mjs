@@ -1,3 +1,4 @@
+import {createPedestrianTemplate} from '../src/civilian-source.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import * as THREE from 'three';
@@ -7,9 +8,9 @@ import {createSimulation} from '../src/simulation.js';
 import {createCityLayout} from '../src/city-layout.js';
 import {createStreetCollisionLayout} from '../src/street-collisions.js';
 
-const source=fs.readFileSync(new URL('../src/city.js',import.meta.url),'utf8');
-const template=source.slice(source.indexOf('  function pedestrianTemplate('),source.indexOf('  const people=[];'));
-const pieces=new Function('pick',template+';return pedestrianTemplate("#334455",true)')(array=>array[0]);
+
+
+const pieces=createPedestrianTemplate('#334455',true);
 const V=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z),results=[],fixtures=[];
 function test(name,fn){try{const detail=fn();results.push({test:name,pass:true,...detail});console.log('PASS '+name,JSON.stringify(detail));}catch(e){results.push({test:name,pass:false,error:e.stack});console.error('FAIL '+name,e.message);}}
 function fixture({count=1,x=35,z=0,ground=.057,extra={},bodyPieces=pieces,scale=1}={}){

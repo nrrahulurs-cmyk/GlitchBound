@@ -14,11 +14,15 @@ import sys
 def verify_city(root):
     root = Path(root)
     sys.path.insert(0,str(root/'blender'))
-    from native_layout import read_native_layout
+    from native_layout import read_native_layout, read_native_characters
+    from native_characters import load_embedded_export, verify_character, verify_character_materials
     source = read_native_layout(root)
+    character_source = read_native_characters(root)
     path = root/'blender/neon-district-city.blend'
     bpy.ops.wm.open_mainfile(filepath=str(path))
     scene = bpy.data.scenes['VESPER / street composition']
+    bpy.context.window.scene = scene
+    scene.frame_set(1)
     aerial = bpy.data.scenes['VESPER / complete city aerial']
     blueprint_scene = bpy.data.scenes['VESPER / architectural blueprint']
     blueprint = json.loads(bpy.data.texts['VESPER / authoritative city blueprint.json'].as_string())
@@ -61,6 +65,71 @@ def verify_city(root):
         anchors.append(anchor['id'])
     arms=[o for o in scene.objects if o.type=='MESH' and o.name.startswith('right_arm')]
     assert arms and all(len(o.data.vertices)<=200 for o in arms), 'Unarmed hero revision missing'
+    embedded_characters = load_embedded_export()
+    assert embedded_characters == character_source, 'Embedded citizens differ from the freshly resolved runtime source'
+    citizen_rigs = {o['civilian_id']:o for o in scene.objects if o.type=='ARMATURE' and o.get('character_role')=='population'}
+    assert len(citizen_rigs)==character_source['counts']['people']==284
+    citizen_checks=[];citizen_material_checks=[]
+    for character in character_source['characters']:
+        rig=citizen_rigs[character['id']]
+        meshes=[o for o in rig.children if o.type=='MESH']
+        assert len(meshes)==1 and len(meshes[0].modifiers)==1
+        assert json.loads(rig['resolved_placement'])==character['resolved']
+        assert len(rig.data.bones)==len(character['groups'])
+        result={'rig':rig,'mesh':meshes[0],'character':character}
+        citizen_checks.append(verify_character(result))
+        citizen_material_checks.append(verify_character_materials(character_source,result))
+    assert sum(item['vertices'] for item in citizen_checks)==character_source['counts']['voxelPieces']*8
+    assert not any(o.name.startswith('COMMUTER ') for o in scene.objects), 'Legacy approximate citizens remain'
+    aircraft_roots={o['air_traffic_index']:o for o in scene.objects if 'air_traffic_index' in o}
+    assert len(aircraft_roots)==len(character_source['airTraffic'])==16
+    aircraft_checks=[]
+    def linear_color(color):
+        values=[int(color.lstrip('#')[k:k+2],16)/255 for k in (0,2,4)]
+        return tuple(v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4 for v in values)
+    def receives_voxel_tint(socket,seen=None):
+        seen=set() if seen is None else seen
+        for link in socket.links:
+            node=link.from_node
+            if node.type=='VERTEX_COLOR' and node.layer_name=='VoxelTint':return True
+            if node.as_pointer() in seen:continue
+            seen.add(node.as_pointer())
+            if any(receives_voxel_tint(item,seen) for item in node.inputs if item.is_linked):return True
+        return False
+    for i,record in enumerate(character_source['airTraffic']):
+        aircraft=aircraft_roots[i]
+        assert json.loads(aircraft['source_placement'])==record
+        expected_root=(record['x'],-record['z'],record['y']+math.sin(i)*.22)
+        assert max(abs(aircraft.location[k]-expected_root[k]) for k in range(3))<.0001
+        parts_checked=0;maximum=0;color_error=0
+        for kind,parts in source['nativeAircraftGeometry'].items():
+            mesh=next(o for o in aircraft.children if o.get('air_traffic_part_kind')==kind)
+            assert len(mesh.data.vertices)==len(parts)*8
+            tint=mesh.data.color_attributes['VoxelTint']
+            assert tint.domain=='POINT' and tint.data_type=='FLOAT_COLOR'
+            assert len(mesh.data.materials)==1 and all(face.material_index==0 for face in mesh.data.polygons)
+            nodes=mesh.data.materials[0].node_tree.nodes
+            output=next((node for node in nodes if node.type=='OUTPUT_MATERIAL' and node.is_active_output),None)
+            assert output and output.inputs['Surface'].is_linked
+            shader=output.inputs['Surface'].links[0].from_node
+            assert shader.type=='BSDF_PRINCIPLED'
+            assert shader and receives_voxel_tint(shader.inputs['Base Color'])
+            if kind=='glow':
+                assert receives_voxel_tint(shader.inputs['Emission Color'])
+                assert abs(shader.inputs['Emission Strength'].default_value-2.4)<.00001
+            for part_index,(x,y,z,sx,sy,sz,color) in enumerate(parts):
+                corners=[(-sx/2,-sy/2,-sz/2),(sx/2,-sy/2,-sz/2),(sx/2,sy/2,-sz/2),(-sx/2,sy/2,-sz/2),(-sx/2,-sy/2,sz/2),(sx/2,-sy/2,sz/2),(sx/2,sy/2,sz/2),(-sx/2,sy/2,sz/2)]
+                for j,(cx,cy,cz) in enumerate(corners):
+                    actual=mesh.matrix_world@mesh.data.vertices[part_index*8+j].co
+                    expected=(expected_root[0]+x+cx,expected_root[1]-z-cz,expected_root[2]+y+cy)
+                    maximum=max(maximum,max(abs(actual[k]-expected[k]) for k in range(3)))
+                    actual_color=tint.data[part_index*8+j].color
+                    expected_color=(*linear_color(color),1)
+                    color_error=max(color_error,max(abs(actual_color[k]-expected_color[k]) for k in range(4)))
+                parts_checked+=1
+        assert maximum<.0001
+        assert color_error<.000001
+        aircraft_checks.append({'index':i,'parts':parts_checked,'maximumWorldError':maximum,'maximumLinearColorError':color_error})
     traffic=[o for o in scene.objects if o.get('vehicle_type')]
     assert len(traffic)==16 and all(o.animation_data for o in traffic)
     scene.frame_set(1);before=traffic[0].location.copy();scene.frame_set(31);distance=(traffic[0].location-before).length;scene.frame_set(1)
@@ -201,6 +270,11 @@ def verify_city(root):
         'elevatedConnections':len(blueprint['elevatedConnections']),'parcels':len(blueprint['parcels']),'roads':len(source['roads']),
         'cityWidthMetres':bounds['maxX']-bounds['minX'],'cityDepthMetres':bounds['maxZ']-bounds['minZ'],'packedImages':packed,
         'animatedRoadVehicles':len(traffic),'streetLifeAssemblies':17,'supplyFoundations':15,'supplyStackSpacers':5,
+        'resolvedCivilianRigs':len(citizen_checks),'civilianVoxelParts':character_source['counts']['voxelPieces'],
+        'civilianMaximumWorldErrorMetres':max(item['maximumWorldError'] for item in citizen_checks),
+        'overheadAircraft':len(aircraft_checks),'overheadAircraftVoxelParts':sum(item['parts'] for item in aircraft_checks),
+        'characterPosePolicy':'Exact resolved runtime frame-zero population. Four editable finite gait clips are in character-workshop.blend; live simulation remains in Three.js.',
+        'overheadAircraftPosePolicy':'Exact frame-zero voxel craft, roots and bob phase; live flight remains in Three.js.',
         'groundedPhysicalBins':len(props),'planObjects':len(blueprint_scene.objects),
         'streetFrontages':len(frontages),'streetFrontageVoxelModules':sum(item['voxelModules'] for item in frontage_checks),
         'serviceMechanisms':len(service_checks),'serviceMechanismParts':sum(len(r['parts']) for r in service_checks),
@@ -225,6 +299,10 @@ def verify_city(root):
         'trafficMovementOver30FramesMetres':distance,'sharedAnchorsChecked':anchors}
     report['streetFrontages']={'count':len(frontages),'serviceCourts':manifest['serviceCourtFrontages'],'voxelModules':manifest['streetFrontageVoxelModules'],'checks':frontage_checks}
     report['authoredBlocks']={'count':len(block_checks),'modules':manifest['authoredBlockVoxelModules'],'checks':block_checks}
+    report['characters']={'count':len(citizen_checks),'voxelParts':character_source['counts']['voxelPieces'],'freshSourceCompared':True,
+        'sourceHashes':character_source['sourceHashes'],'maximumWorldErrorMetres':manifest['civilianMaximumWorldErrorMetres'],'checks':citizen_checks,
+        'materialChecks':citizen_material_checks}
+    report['overheadAircraft']={'count':len(aircraft_checks),'voxelParts':manifest['overheadAircraftVoxelParts'],'checks':aircraft_checks}
     report['serviceMechanisms']={'count':len(service_checks),'parts':manifest['serviceMechanismParts'],'sourceHash':service_source['sourceHash'],
         'removedShutters':sorted(removed_shutters),'fullSiteRecordsVerified':True,'checks':service_checks}
     report['facadeRefits']={'sourceRecords':len(refits),'nativeFragments':len(expected_fragments),'actualNativeModulesCounted':native_voxels,

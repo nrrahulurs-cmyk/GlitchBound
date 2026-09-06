@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "sourceRevision": "1388b5e",
+  "bodyTuples": 11,
+  "glowPoseTuples": 76800,
+  "frames": 1200,
+  "craft": 16,
+  "outputSHA256": "e1b716c303cfca3c4009b0932bc9d8e1bd227e73b7744f5e0132cbefb543ff1e",
+  "method": "Compare the extracted body kit with actual prior committed source, then compare prior inline glow arithmetic with shared tuples over 40 seconds at 30 Hz including route wraps. No gameplay or flight-timing change."
+}

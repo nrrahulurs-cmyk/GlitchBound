@@ -1,3 +1,4 @@
+import {createCityPopulation} from '../src/civilian-source.js';
 import assert from 'node:assert/strict';import fs from 'node:fs';import * as THREE from 'three';import * as CANNON from 'cannon-es';
 import {StreetBroadphase} from '../src/street-broadphase.js';import {LegacyStreetBroadphase} from './fixtures/street-broadphase-b5707d3.mjs';
 import {createCityLayout} from '../src/city-layout.js';import {createStreetCollisionLayout} from '../src/street-collisions.js';import {createCivilianSystem} from '../src/civilians.js';import {createSimulation} from '../src/simulation.js';
@@ -37,8 +38,8 @@ test('Accepted moving kinematics wake and push sleeping dynamics through real wo
  controller.setTarget(car,{position:car.position,quaternion:car.quaternion,velocity:new CANNON.Vec3(0,0,-8)});world.step(1/60);const first=receiver.sleepState;world.step(1/60);assert.notEqual(receiver.sleepState,CANNON.Body.SLEEPING);assert(receiver.velocity.length()>.1);assert.equal(car.position.z,1.75);controller.clearContactHints(car);controller.dispose();return{firstSleepState:first,afterSleepState:receiver.sleepState,speed:receiver.velocity.length(),carPosition:car.position.toArray()};
 });
 test('Production city with24 articulated deaths retains pairs through motion, sleep, wake and reset',()=>{
- const layout=createCityLayout(),street=createStreetCollisionLayout(layout),source=fs.readFileSync(new URL('../src/city.js',import.meta.url),'utf8');
- const people=new Function('districts',source.slice(source.indexOf('  let randomState='),source.indexOf('  const pedestrianCount='))+';return people;')(layout.districts),mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(),new THREE.MeshBasicMaterial(),people.reduce((n,p)=>n+p.pieces.length,0));
+ const layout=createCityLayout(),street=createStreetCollisionLayout(layout);
+ const people=createCityPopulation({districts:layout.districts}).people,mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(),new THREE.MeshBasicMaterial(),people.reduce((n,p)=>n+p.pieces.length,0));
  const groundHeightAt=(x,z)=>street.groundSurfaces.reduce((height,b)=>{const c=Math.cos(b.ry||0),s=Math.sin(b.ry||0),dx=x-b.x,dz=z-b.z;return Math.abs(dx*c-dz*s)<=b.sx/2&&Math.abs(dx*s+dz*c)<=b.sz/2?Math.max(height,b.y+b.sy/2):height;},.057);
  const civilians=createCivilianSystem({people,mesh,colliders:[...layout.colliders,...street.staticColliders],groundHeightAt,bounds:layout.bounds}),simulation=createSimulation({scene:new THREE.Scene(),camera:new THREE.PerspectiveCamera(),colliders:layout.colliders,streetColliders:street.staticColliders,groundSurfaces:street.groundSurfaces,dynamicProps:street.dynamicProps,groundHeightAt,civilians});
  const selected=civilians.getPeople().sort((a,b)=>Math.hypot(a.x,a.z+170)-Math.hypot(b.x,b.z+170)).slice(0,24);for(const p of selected)civilians.damage(p.id,100,{cause:'gun',direction:{x:.35,y:0,z:1}});const world=simulation.world,bodiesAtLoad=world.bodies.length,check=oracles(world);check.check();

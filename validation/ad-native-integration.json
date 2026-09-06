@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "checkedAtUTC": "2026-09-06T10:37:18.100201+00:00",
+  "checkedAtUTC": "2026-09-06T13:40:40.810829+00:00",
   "method": "Complete native city regeneration from the final structural layout followed by fresh reopen. Checks compare embedded source blueprint/catalog, actual image-plane vertex dimensions, packed raster assets, character geometry, shared anchors, and vehicle animation.",
   "freshReopenVerified": true,
-  "citySHA256": "a12e476b2c42a9a086bd7c435132b178706bc4bffeb0ab138232d0c2738b57e0",
+  "citySHA256": "312d537cd8af507b912dcbdd67bc62815302f42b4c254fae22151e2cfd151592",
   "packedImages": [
     "advert-portrait.png",
     "advert-kuro-optics.png",
@@ -2269,10 +2269,10 @@
     }
   ],
   "counts": {
-    "nativeVoxelModules": 159037,
+    "nativeVoxelModules": 159646,
     "buildings": 185,
     "editableSigns": 646,
-    "structuralSupports": 4968,
+    "structuralSupports": 5324,
     "groundedPhysicalBins": 12
   },
   "trafficMovementOver30FramesMetres": 8.600006156741754,
@@ -2831,8 +2831,8 @@
     ]
   },
   "authoredBlocks": {
-    "count": 21,
-    "modules": 765,
+    "count": 24,
+    "modules": 1459,
     "checks": [
       {
         "id": "COURT-15-GARDEN-0",
@@ -2885,16 +2885,6 @@
         "maximumBoundsErrorMetres": 1.464843751364242e-05
       },
       {
-        "id": "COURT-15-B102-BAYS",
-        "modules": 16,
-        "maximumBoundsErrorMetres": 1.3427734359083843e-05
-      },
-      {
-        "id": "COURT-15-B103-BAYS",
-        "modules": 16,
-        "maximumBoundsErrorMetres": 7.32421875682121e-06
-      },
-      {
         "id": "MARKET-0-STALL-0-0",
         "modules": 51,
         "maximumBoundsErrorMetres": 1.464843751364242e-05
@@ -2938,6 +2928,3594 @@
         "id": "MARKET-0-B045-SETBACK",
         "modules": 58,
         "maximumBoundsErrorMetres": 7.32421875682121e-06
+      },
+      {
+        "id": "HOUSING-B102-STAIR",
+        "modules": 210,
+        "maximumBoundsErrorMetres": 1.464843751364242e-05
+      },
+      {
+        "id": "HOUSING-B102-LANDING",
+        "modules": 50,
+        "maximumBoundsErrorMetres": 1.464843751364242e-05
+      },
+      {
+        "id": "HOUSING-B102-BAYS",
+        "modules": 240,
+        "maximumBoundsErrorMetres": 1.5136718786834535e-05
+      },
+      {
+        "id": "HOUSING-B103-BAYS",
+        "modules": 180,
+        "maximumBoundsErrorMetres": 7.32421875682121e-06
+      },
+      {
+        "id": "HOUSING-COURT-SEAT-EDGE",
+        "modules": 46,
+        "maximumBoundsErrorMetres": 7.32421875682121e-06
+      }
+    ]
+  },
+  "characters": {
+    "count": 284,
+    "voxelParts": 14785,
+    "freshSourceCompared": true,
+    "sourceHashes": {
+      "blender/asset-manifest.json": "d4d7ec5c73e2d98519be31bbc0f9934bb42b393e9bd05c9f87aeaa06cf8caa7f",
+      "package.json": "0e87e01713bbf31c33041a7545315c2c9e7611581b94d82ca87f5ad895a31e8c",
+      "scripts/export-native-characters.mjs": "dd1414620619a94fa87f72b609adb4629dc4e15d0b0dfb0cb2fa72c38873908e",
+      "src/advert-campaigns.js": "d5e97b70b294f951ef7d78e18e47a6862804eb0a68167d0e37efe7ba20359b99",
+      "src/aircraft-source.js": "47438e15ddd842fd8135a0c8bd3179ecb26486db71803faa91586666315b7171",
+      "src/asset-placements.js": "d3e8464c01c03df883b20b090020c6ed52141e3661e272fee1726dc3a18356c7",
+      "src/atmosphere.js": "6cd0bbe1b0939fae9e7be8136df0b19b781747e9f9ced333dd5fd7c110a0df85",
+      "src/audio.js": "210bef0cff9a55eea875fcffa246efc2d3c5ea65b521ee60a92d35f51cbfd83b",
+      "src/block-compositions.js": "d3a8cb503519787984584c444521669d8cd8661f438333321b3bc7abcaeec768",
+      "src/camera-obstruction.js": "b761e264079c6b0208d17bb957b851571a3905f57724979cc844ebfff7cfe711",
+      "src/city-blueprint.js": "527be26daa88fcfe8fd896b2431a5bad6dabd6505e332fe14713c916ce8a9f56",
+      "src/city-expansion.js": "4afa1aa2733da10f6e4441810912944f50f975baddad53dcd226358089585461",
+      "src/city-layout.js": "ff40ed51624d50afc7dfd01278edaf9f9d0607ff61408d6b000161fc04913a85",
+      "src/city-life.js": "d635d80cd461ab8a73cbcf4ac9fc0c9a85b263b624c7a6bf551db421cba39896",
+      "src/city-services.js": "516c040b23d2f94a5ea3116ea028612f8d044c4d86d9d4cc614143970137c286",
+      "src/city-shadows.js": "4bc0e767034555409b28416f469ff026dc53a1187f55d41c62ba69b30a1ca134",
+      "src/city.js": "772ef31415b837a9c2166fd22079a05b38532a98a2ecdcd8c674eb44933b07af",
+      "src/civilian-motion.js": "d29d6f58b29fffc453f8aa107adbc1260a7161f49cef21c285097e63fa3425aa",
+      "src/civilian-navigation.js": "785d6349bba11e916224d0993cec78551583c66aa62726af10230996fbbb2249",
+      "src/civilian-ragdoll.js": "faafbdf01558c26f26160b4e89b8f7827cebb476f5fde7e57e8c3317ac3e8e6e",
+      "src/civilian-source.js": "f5ce916b72dfc66203f4b376d8e1c1ad45741ff863497b8d8af7ed1c45557594",
+      "src/civilians.js": "07fa47557a503d9b003002c3abbefa532f7436fe332e3efedbd6cb523e2b7d74",
+      "src/ground-height.js": "efaaa33c02bdcaf2882c3ec8cd3ad19081eba8c2a37db6fda1c5ea004f9803bc",
+      "src/housing-compositions.js": "fe8f47f83f1312ba7163e3f190a42602eefa68c22c2b2024b6a4ca993216a8b5",
+      "src/kinematic-pose.js": "0991c047a956cefa227e310e908bff47a8fc371933fba0fc8a1a9ee3f0f92624",
+      "src/main.js": "e7461954eb311f61cf261b1a86a666fe2fad1a6950843070bdcbaa35ecd2c364",
+      "src/player-movement.js": "64babb415af0b8f8db8f273931274e0fb186c7aae18262b8a2536d21e1ee9271",
+      "src/service-fixtures.js": "d76c455fe433af286608bb6825b3a9a1a53452b5d9d0d68a1fea01beb18debd8",
+      "src/service-interface.js": "38a17f9d75ee073f7c1b88ee8f2c5e6066655cfefe7e691bdbfbe2fe3a0992d9",
+      "src/service-world.js": "bdae796570bd2858ac0e01e0d5e58f6e5e17f425a8f8dae9d9f196a525992417",
+      "src/simulation.js": "74e06063fdccdd88af5fa002d53644fc25f0f46747b1717d2f75933dcbbae13b",
+      "src/street-broadphase.js": "a31070718a296e6699e5b8d9f2fc442f0172fd7aa5afccbb4a62a6f616ad961f",
+      "src/street-collisions.js": "10b99defe84b0dd336e32a1bf32bf928e36cc3f3971b8d456b41139d4060d4f3",
+      "src/street-detail.js": "8e0b007ac46d7b56119c14529497e20e633199c65a1013e43e3521ee2305c2b1",
+      "src/street-physics.js": "bd4a9b9fcbf5077a5e141005878561b9914f36501bc89a33126c4b3dca860b65",
+      "src/surface-materials.js": "4f9cc88d3c9d48762a6796b3a0e1f605cc43bcd06fdbca7d40c68b63c502e50c",
+      "src/vehicle-damage.js": "8f79045b2d8a1b8d0ee073c6aad0a57f16e943f778a0184c6c961bab1307b71f",
+      "src/voxel-assets.js": "5a7af09ec9923147cf86f130db98f71789f6269426fe6ef96ef0e17a72108bf9",
+      "src/weapon-rig.js": "690a9374bde7a3937628315c0c13a30cf55b2cf01775a6f115d5bca97ab6f9e9",
+      "src/weapon-vfx.js": "7dd32258417aebaa4bda5a6301de7b56174fe886005e04f19bd5875ae00ebb3e",
+      "src/world-audio.js": "fab82737bfcaa84a96c290161df52b2397f76bd76325a9e4d21ee5195a1a53c5"
+    },
+    "maximumWorldErrorMetres": 0.00012302034810695442,
+    "checks": [
+      {
+        "id": "CIV-001",
+        "vertices": 688,
+        "maximumWorldError": 1.530528435297397e-05
+      },
+      {
+        "id": "CIV-002",
+        "vertices": 280,
+        "maximumWorldError": 7.689692222056455e-06
+      },
+      {
+        "id": "CIV-003",
+        "vertices": 280,
+        "maximumWorldError": 1.5290421242546047e-05
+      },
+      {
+        "id": "CIV-004",
+        "vertices": 688,
+        "maximumWorldError": 1.0679050008755277e-06
+      },
+      {
+        "id": "CIV-005",
+        "vertices": 280,
+        "maximumWorldError": 1.5292744555771518e-05
+      },
+      {
+        "id": "CIV-006",
+        "vertices": 280,
+        "maximumWorldError": 7.68899917602539e-06
+      },
+      {
+        "id": "CIV-007",
+        "vertices": 688,
+        "maximumWorldError": 2.1457672119140625e-06
+      },
+      {
+        "id": "CIV-008",
+        "vertices": 280,
+        "maximumWorldError": 4.2658982220906145e-06
+      },
+      {
+        "id": "CIV-009",
+        "vertices": 280,
+        "maximumWorldError": 1.537799835205078e-05
+      },
+      {
+        "id": "CIV-010",
+        "vertices": 688,
+        "maximumWorldError": 1.5290421242546047e-05
+      },
+      {
+        "id": "CIV-011",
+        "vertices": 280,
+        "maximumWorldError": 1.3500155988819748e-06
+      },
+      {
+        "id": "CIV-012",
+        "vertices": 280,
+        "maximumWorldError": 3.932551670838996e-06
+      },
+      {
+        "id": "CIV-013",
+        "vertices": 688,
+        "maximumWorldError": 2.1851423716334533e-06
+      },
+      {
+        "id": "CIV-014",
+        "vertices": 280,
+        "maximumWorldError": 3.053253382919489e-05
+      },
+      {
+        "id": "CIV-015",
+        "vertices": 280,
+        "maximumWorldError": 2.1333134374825097e-06
+      },
+      {
+        "id": "CIV-016",
+        "vertices": 688,
+        "maximumWorldError": 1.5289027085146973e-05
+      },
+      {
+        "id": "CIV-017",
+        "vertices": 280,
+        "maximumWorldError": 1.5290421242546047e-05
+      },
+      {
+        "id": "CIV-018",
+        "vertices": 280,
+        "maximumWorldError": 4.271620003502111e-06
+      },
+      {
+        "id": "CIV-019",
+        "vertices": 688,
+        "maximumWorldError": 7.867813110351562e-06
+      },
+      {
+        "id": "CIV-020",
+        "vertices": 280,
+        "maximumWorldError": 1.5289027085146973e-05
+      },
+      {
+        "id": "CIV-021",
+        "vertices": 280,
+        "maximumWorldError": 7.68899917602539e-06
+      },
+      {
+        "id": "CIV-022",
+        "vertices": 688,
+        "maximumWorldError": 1.3696104637475082e-06
+      },
+      {
+        "id": "CIV-023",
+        "vertices": 280,
+        "maximumWorldError": 2.1358100017510553e-06
+      },
+      {
+        "id": "CIV-024",
+        "vertices": 280,
+        "maximumWorldError": 1.353957258653706e-06
+      },
+      {
+        "id": "CIV-025",
+        "vertices": 688,
+        "maximumWorldError": 2.1457672119140625e-06
+      },
+      {
+        "id": "CIV-026",
+        "vertices": 280,
+        "maximumWorldError": 2.1358100017510553e-06
+      },
+      {
+        "id": "CIV-027",
+        "vertices": 280,
+        "maximumWorldError": 7.689692222056455e-06
+      },
+      {
+        "id": "CIV-028",
+        "vertices": 688,
+        "maximumWorldError": 1.537938444411291e-05
+      },
+      {
+        "id": "CIV-029",
+        "vertices": 280,
+        "maximumWorldError": 3.933906555175781e-06
+      },
+      {
+        "id": "CIV-030",
+        "vertices": 280,
+        "maximumWorldError": 1.528960799951234e-05
+      },
+      {
+        "id": "CIV-031",
+        "vertices": 688,
+        "maximumWorldError": 3.822140584440565e-06
+      },
+      {
+        "id": "CIV-032",
+        "vertices": 280,
+        "maximumWorldError": 2.1358100017510553e-06
+      },
+      {
+        "id": "CIV-033",
+        "vertices": 280,
+        "maximumWorldError": 2.1358100017510553e-06
+      },
+      {
+        "id": "CIV-034",
+        "vertices": 688,
+        "maximumWorldError": 7.636841477416499e-06
+      },
+      {
+        "id": "CIV-035",
+        "vertices": 280,
+        "maximumWorldError": 1.526670325198037e-05
+      },
+      {
+        "id": "CIV-036",
+        "vertices": 280,
+        "maximumWorldError": 1.5261699168042843e-05
+      },
+      {
+        "id": "CIV-037",
+        "vertices": 688,
+        "maximumWorldError": 1.5268099447808614e-05
+      },
+      {
+        "id": "CIV-038",
+        "vertices": 280,
+        "maximumWorldError": 1.525972035665464e-05
+      },
+      {
+        "id": "CIV-039",
+        "vertices": 280,
+        "maximumWorldError": 2.290928384611445e-05
+      },
+      {
+        "id": "CIV-040",
+        "vertices": 688,
+        "maximumWorldError": 7.692463781786765e-06
+      },
+      {
+        "id": "CIV-041",
+        "vertices": 280,
+        "maximumWorldError": 1.5259254716682097e-05
+      },
+      {
+        "id": "CIV-042",
+        "vertices": 280,
+        "maximumWorldError": 1.5289027085146973e-05
+      },
+      {
+        "id": "CIV-043",
+        "vertices": 688,
+        "maximumWorldError": 1.5266237824995157e-05
+      },
+      {
+        "id": "CIV-044",
+        "vertices": 280,
+        "maximumWorldError": 7.645210621273024e-06
+      },
+      {
+        "id": "CIV-045",
+        "vertices": 280,
+        "maximumWorldError": 3.1457307735279175e-05
+      },
+      {
+        "id": "CIV-046",
+        "vertices": 688,
+        "maximumWorldError": 2.75092063733932e-05
+      },
+      {
+        "id": "CIV-047",
+        "vertices": 280,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-048",
+        "vertices": 280,
+        "maximumWorldError": 1.0790251743200897e-05
+      },
+      {
+        "id": "CIV-049",
+        "vertices": 688,
+        "maximumWorldError": 3.814995277208254e-05
+      },
+      {
+        "id": "CIV-050",
+        "vertices": 280,
+        "maximumWorldError": 4.315837287515549e-05
+      },
+      {
+        "id": "CIV-051",
+        "vertices": 280,
+        "maximumWorldError": 3.814864900005139e-05
+      },
+      {
+        "id": "CIV-052",
+        "vertices": 688,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-053",
+        "vertices": 280,
+        "maximumWorldError": 1.5259254716682097e-05
+      },
+      {
+        "id": "CIV-054",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-055",
+        "vertices": 688,
+        "maximumWorldError": 2.1584454150688697e-05
+      },
+      {
+        "id": "CIV-056",
+        "vertices": 280,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-057",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-058",
+        "vertices": 688,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-059",
+        "vertices": 280,
+        "maximumWorldError": 1.0790251743200897e-05
+      },
+      {
+        "id": "CIV-060",
+        "vertices": 280,
+        "maximumWorldError": 1.0789757853659813e-05
+      },
+      {
+        "id": "CIV-061",
+        "vertices": 688,
+        "maximumWorldError": 1.7066507499860077e-05
+      },
+      {
+        "id": "CIV-062",
+        "vertices": 280,
+        "maximumWorldError": 3.145770301448926e-05
+      },
+      {
+        "id": "CIV-063",
+        "vertices": 280,
+        "maximumWorldError": 3.411968959808029e-05
+      },
+      {
+        "id": "CIV-064",
+        "vertices": 688,
+        "maximumWorldError": 3.145770301448926e-05
+      },
+      {
+        "id": "CIV-065",
+        "vertices": 280,
+        "maximumWorldError": 1.0790251743200897e-05
+      },
+      {
+        "id": "CIV-066",
+        "vertices": 280,
+        "maximumWorldError": 1.706078189856626e-05
+      },
+      {
+        "id": "CIV-067",
+        "vertices": 688,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-068",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-069",
+        "vertices": 280,
+        "maximumWorldError": 6.115436553955078e-05
+      },
+      {
+        "id": "CIV-070",
+        "vertices": 688,
+        "maximumWorldError": 1.706078189856626e-05
+      },
+      {
+        "id": "CIV-071",
+        "vertices": 280,
+        "maximumWorldError": 8.530755359084532e-06
+      },
+      {
+        "id": "CIV-072",
+        "vertices": 280,
+        "maximumWorldError": 8.530755359084532e-06
+      },
+      {
+        "id": "CIV-073",
+        "vertices": 688,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-074",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-075",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-076",
+        "vertices": 688,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-077",
+        "vertices": 280,
+        "maximumWorldError": 1.572885150724463e-05
+      },
+      {
+        "id": "CIV-078",
+        "vertices": 280,
+        "maximumWorldError": 1.0792227075344348e-05
+      },
+      {
+        "id": "CIV-079",
+        "vertices": 688,
+        "maximumWorldError": 1.5735626220703125e-05
+      },
+      {
+        "id": "CIV-080",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-081",
+        "vertices": 280,
+        "maximumWorldError": 3.057735705186577e-05
+      },
+      {
+        "id": "CIV-082",
+        "vertices": 688,
+        "maximumWorldError": 3.057735705186577e-05
+      },
+      {
+        "id": "CIV-083",
+        "vertices": 280,
+        "maximumWorldError": 1.5377651809513707e-05
+      },
+      {
+        "id": "CIV-084",
+        "vertices": 280,
+        "maximumWorldError": 1.537799835205078e-05
+      },
+      {
+        "id": "CIV-085",
+        "vertices": 688,
+        "maximumWorldError": 1.6303368565825232e-05
+      },
+      {
+        "id": "CIV-086",
+        "vertices": 280,
+        "maximumWorldError": 3.053253382919489e-05
+      },
+      {
+        "id": "CIV-087",
+        "vertices": 280,
+        "maximumWorldError": 3.0755130345318394e-05
+      },
+      {
+        "id": "CIV-088",
+        "vertices": 688,
+        "maximumWorldError": 1.538492756357353e-05
+      },
+      {
+        "id": "CIV-089",
+        "vertices": 280,
+        "maximumWorldError": 1.537799835205078e-05
+      },
+      {
+        "id": "CIV-090",
+        "vertices": 280,
+        "maximumWorldError": 7.689692222056455e-06
+      },
+      {
+        "id": "CIV-091",
+        "vertices": 688,
+        "maximumWorldError": 1.5730206683355984e-05
+      },
+      {
+        "id": "CIV-092",
+        "vertices": 280,
+        "maximumWorldError": 3.057764751980897e-05
+      },
+      {
+        "id": "CIV-093",
+        "vertices": 280,
+        "maximumWorldError": 3.053340650396074e-05
+      },
+      {
+        "id": "CIV-094",
+        "vertices": 688,
+        "maximumWorldError": 1.5290421242546047e-05
+      },
+      {
+        "id": "CIV-095",
+        "vertices": 280,
+        "maximumWorldError": 7.864213995382122e-06
+      },
+      {
+        "id": "CIV-096",
+        "vertices": 280,
+        "maximumWorldError": 7.634049723904307e-06
+      },
+      {
+        "id": "CIV-097",
+        "vertices": 688,
+        "maximumWorldError": 1.537938444411291e-05
+      },
+      {
+        "id": "CIV-098",
+        "vertices": 280,
+        "maximumWorldError": 3.052153598929184e-05
+      },
+      {
+        "id": "CIV-099",
+        "vertices": 280,
+        "maximumWorldError": 3.0755072812816316e-05
+      },
+      {
+        "id": "CIV-100",
+        "vertices": 688,
+        "maximumWorldError": 1.538492756357353e-05
+      },
+      {
+        "id": "CIV-101",
+        "vertices": 280,
+        "maximumWorldError": 1.5266266914597445e-05
+      },
+      {
+        "id": "CIV-102",
+        "vertices": 280,
+        "maximumWorldError": 7.688782586329598e-06
+      },
+      {
+        "id": "CIV-103",
+        "vertices": 688,
+        "maximumWorldError": 1.5273682954832997e-05
+      },
+      {
+        "id": "CIV-104",
+        "vertices": 280,
+        "maximumWorldError": 3.0517578125e-05
+      },
+      {
+        "id": "CIV-105",
+        "vertices": 280,
+        "maximumWorldError": 3.1456813629281745e-05
+      },
+      {
+        "id": "CIV-106",
+        "vertices": 688,
+        "maximumWorldError": 3.145680304121115e-05
+      },
+      {
+        "id": "CIV-107",
+        "vertices": 280,
+        "maximumWorldError": 1.0792227075344348e-05
+      },
+      {
+        "id": "CIV-108",
+        "vertices": 280,
+        "maximumWorldError": 1.5259254716682097e-05
+      },
+      {
+        "id": "CIV-109",
+        "vertices": 688,
+        "maximumWorldError": 3.075599670410156e-05
+      },
+      {
+        "id": "CIV-110",
+        "vertices": 280,
+        "maximumWorldError": 6.115436553955078e-05
+      },
+      {
+        "id": "CIV-111",
+        "vertices": 280,
+        "maximumWorldError": 3.145770301448926e-05
+      },
+      {
+        "id": "CIV-112",
+        "vertices": 688,
+        "maximumWorldError": 1.5735626220703125e-05
+      },
+      {
+        "id": "CIV-113",
+        "vertices": 280,
+        "maximumWorldError": 1.572941617814678e-05
+      },
+      {
+        "id": "CIV-114",
+        "vertices": 280,
+        "maximumWorldError": 8.531796444181229e-06
+      },
+      {
+        "id": "CIV-115",
+        "vertices": 688,
+        "maximumWorldError": 1.5735626220703125e-05
+      },
+      {
+        "id": "CIV-116",
+        "vertices": 280,
+        "maximumWorldError": 6.115436553955078e-05
+      },
+      {
+        "id": "CIV-117",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-118",
+        "vertices": 688,
+        "maximumWorldError": 1.7066507499860077e-05
+      },
+      {
+        "id": "CIV-119",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-120",
+        "vertices": 280,
+        "maximumWorldError": 1.0792227075344348e-05
+      },
+      {
+        "id": "CIV-121",
+        "vertices": 688,
+        "maximumWorldError": 3.0517578125e-05
+      },
+      {
+        "id": "CIV-122",
+        "vertices": 280,
+        "maximumWorldError": 3.051781095475548e-05
+      },
+      {
+        "id": "CIV-123",
+        "vertices": 280,
+        "maximumWorldError": 3.1457307735279175e-05
+      },
+      {
+        "id": "CIV-124",
+        "vertices": 688,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-125",
+        "vertices": 280,
+        "maximumWorldError": 1.7059948923751673e-05
+      },
+      {
+        "id": "CIV-126",
+        "vertices": 280,
+        "maximumWorldError": 1.0790251743200897e-05
+      },
+      {
+        "id": "CIV-127",
+        "vertices": 688,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-128",
+        "vertices": 280,
+        "maximumWorldError": 3.411968959808029e-05
+      },
+      {
+        "id": "CIV-129",
+        "vertices": 280,
+        "maximumWorldError": 6.151017405347721e-05
+      },
+      {
+        "id": "CIV-130",
+        "vertices": 688,
+        "maximumWorldError": 1.7066507499860077e-05
+      },
+      {
+        "id": "CIV-131",
+        "vertices": 280,
+        "maximumWorldError": 2.7508431484361145e-05
+      },
+      {
+        "id": "CIV-132",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-133",
+        "vertices": 688,
+        "maximumWorldError": 2.7512305711272537e-05
+      },
+      {
+        "id": "CIV-134",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-135",
+        "vertices": 280,
+        "maximumWorldError": 6.151017405347721e-05
+      },
+      {
+        "id": "CIV-136",
+        "vertices": 688,
+        "maximumWorldError": 1.7066507499860077e-05
+      },
+      {
+        "id": "CIV-137",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-138",
+        "vertices": 280,
+        "maximumWorldError": 1.7059948923751673e-05
+      },
+      {
+        "id": "CIV-139",
+        "vertices": 688,
+        "maximumWorldError": 1.7063592888362458e-05
+      },
+      {
+        "id": "CIV-140",
+        "vertices": 280,
+        "maximumWorldError": 3.41196928519873e-05
+      },
+      {
+        "id": "CIV-141",
+        "vertices": 280,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-142",
+        "vertices": 688,
+        "maximumWorldError": 3.05176363326054e-05
+      },
+      {
+        "id": "CIV-143",
+        "vertices": 280,
+        "maximumWorldError": 2.1579515707319626e-05
+      },
+      {
+        "id": "CIV-144",
+        "vertices": 280,
+        "maximumWorldError": 2.1579268755484235e-05
+      },
+      {
+        "id": "CIV-145",
+        "vertices": 688,
+        "maximumWorldError": 2.1582149684407624e-05
+      },
+      {
+        "id": "CIV-146",
+        "vertices": 280,
+        "maximumWorldError": 3.411970261370646e-05
+      },
+      {
+        "id": "CIV-147",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-148",
+        "vertices": 688,
+        "maximumWorldError": 2.1580503486401795e-05
+      },
+      {
+        "id": "CIV-149",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-150",
+        "vertices": 280,
+        "maximumWorldError": 2.7508237758692486e-05
+      },
+      {
+        "id": "CIV-151",
+        "vertices": 688,
+        "maximumWorldError": 2.1580503486401795e-05
+      },
+      {
+        "id": "CIV-152",
+        "vertices": 280,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-153",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-154",
+        "vertices": 688,
+        "maximumWorldError": 4.315903141463925e-05
+      },
+      {
+        "id": "CIV-155",
+        "vertices": 280,
+        "maximumWorldError": 1.7059845205778535e-05
+      },
+      {
+        "id": "CIV-156",
+        "vertices": 280,
+        "maximumWorldError": 3.1456813629281745e-05
+      },
+      {
+        "id": "CIV-157",
+        "vertices": 688,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-158",
+        "vertices": 280,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-159",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-160",
+        "vertices": 688,
+        "maximumWorldError": 2.1580503486401795e-05
+      },
+      {
+        "id": "CIV-161",
+        "vertices": 280,
+        "maximumWorldError": 1.7059948923751673e-05
+      },
+      {
+        "id": "CIV-162",
+        "vertices": 280,
+        "maximumWorldError": 3.145679951185349e-05
+      },
+      {
+        "id": "CIV-163",
+        "vertices": 688,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-164",
+        "vertices": 280,
+        "maximumWorldError": 6.291385313695938e-05
+      },
+      {
+        "id": "CIV-165",
+        "vertices": 280,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-166",
+        "vertices": 688,
+        "maximumWorldError": 4.825267502836927e-05
+      },
+      {
+        "id": "CIV-167",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-168",
+        "vertices": 280,
+        "maximumWorldError": 1.7061510718169065e-05
+      },
+      {
+        "id": "CIV-169",
+        "vertices": 688,
+        "maximumWorldError": 4.825256458730847e-05
+      },
+      {
+        "id": "CIV-170",
+        "vertices": 280,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-171",
+        "vertices": 280,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-172",
+        "vertices": 688,
+        "maximumWorldError": 2.1580503486401795e-05
+      },
+      {
+        "id": "CIV-173",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-174",
+        "vertices": 280,
+        "maximumWorldError": 1.7059903369268578e-05
+      },
+      {
+        "id": "CIV-175",
+        "vertices": 688,
+        "maximumWorldError": 2.1580503486401795e-05
+      },
+      {
+        "id": "CIV-176",
+        "vertices": 280,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-177",
+        "vertices": 280,
+        "maximumWorldError": 3.4119806738537156e-05
+      },
+      {
+        "id": "CIV-178",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-179",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-180",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-181",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-182",
+        "vertices": 280,
+        "maximumWorldError": 8.631682806833522e-05
+      },
+      {
+        "id": "CIV-183",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-184",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-185",
+        "vertices": 280,
+        "maximumWorldError": 1.7060261294073203e-05
+      },
+      {
+        "id": "CIV-186",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-187",
+        "vertices": 688,
+        "maximumWorldError": 3.051781095475548e-05
+      },
+      {
+        "id": "CIV-188",
+        "vertices": 280,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-189",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-190",
+        "vertices": 688,
+        "maximumWorldError": 6.103541818391206e-05
+      },
+      {
+        "id": "CIV-191",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-192",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-193",
+        "vertices": 688,
+        "maximumWorldError": 4.316429936881525e-05
+      },
+      {
+        "id": "CIV-194",
+        "vertices": 280,
+        "maximumWorldError": 6.823979569500669e-05
+      },
+      {
+        "id": "CIV-195",
+        "vertices": 280,
+        "maximumWorldError": 6.823948332111042e-05
+      },
+      {
+        "id": "CIV-196",
+        "vertices": 688,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-197",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-198",
+        "vertices": 280,
+        "maximumWorldError": 3.145770301448926e-05
+      },
+      {
+        "id": "CIV-199",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-200",
+        "vertices": 280,
+        "maximumWorldError": 6.823979569500669e-05
+      },
+      {
+        "id": "CIV-201",
+        "vertices": 280,
+        "maximumWorldError": 4.315903141463925e-05
+      },
+      {
+        "id": "CIV-202",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-203",
+        "vertices": 280,
+        "maximumWorldError": 3.145770301448926e-05
+      },
+      {
+        "id": "CIV-204",
+        "vertices": 280,
+        "maximumWorldError": 6.151014528720582e-05
+      },
+      {
+        "id": "CIV-205",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-206",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-207",
+        "vertices": 280,
+        "maximumWorldError": 6.823948332111042e-05
+      },
+      {
+        "id": "CIV-208",
+        "vertices": 688,
+        "maximumWorldError": 4.315841403416761e-05
+      },
+      {
+        "id": "CIV-209",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-210",
+        "vertices": 280,
+        "maximumWorldError": 3.411974166055521e-05
+      },
+      {
+        "id": "CIV-211",
+        "vertices": 688,
+        "maximumWorldError": 6.291362725856349e-05
+      },
+      {
+        "id": "CIV-212",
+        "vertices": 280,
+        "maximumWorldError": 4.31583754475949e-05
+      },
+      {
+        "id": "CIV-213",
+        "vertices": 280,
+        "maximumWorldError": 6.823948332111042e-05
+      },
+      {
+        "id": "CIV-214",
+        "vertices": 688,
+        "maximumWorldError": 6.291362725856349e-05
+      },
+      {
+        "id": "CIV-215",
+        "vertices": 280,
+        "maximumWorldError": 3.411974166055521e-05
+      },
+      {
+        "id": "CIV-216",
+        "vertices": 280,
+        "maximumWorldError": 6.291371196305698e-05
+      },
+      {
+        "id": "CIV-217",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-218",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-219",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-220",
+        "vertices": 688,
+        "maximumWorldError": 3.412156379713252e-05
+      },
+      {
+        "id": "CIV-221",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-222",
+        "vertices": 280,
+        "maximumWorldError": 6.151017405347721e-05
+      },
+      {
+        "id": "CIV-223",
+        "vertices": 688,
+        "maximumWorldError": 4.316100697280359e-05
+      },
+      {
+        "id": "CIV-224",
+        "vertices": 280,
+        "maximumWorldError": 4.31583754475949e-05
+      },
+      {
+        "id": "CIV-225",
+        "vertices": 280,
+        "maximumWorldError": 4.315874330485152e-05
+      },
+      {
+        "id": "CIV-226",
+        "vertices": 688,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-227",
+        "vertices": 280,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-228",
+        "vertices": 280,
+        "maximumWorldError": 3.411970261370646e-05
+      },
+      {
+        "id": "CIV-229",
+        "vertices": 688,
+        "maximumWorldError": 3.412302143633813e-05
+      },
+      {
+        "id": "CIV-230",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-231",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-232",
+        "vertices": 688,
+        "maximumWorldError": 6.291405077989053e-05
+      },
+      {
+        "id": "CIV-233",
+        "vertices": 280,
+        "maximumWorldError": 6.291405077989053e-05
+      },
+      {
+        "id": "CIV-234",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-235",
+        "vertices": 688,
+        "maximumWorldError": 3.4119897847503345e-05
+      },
+      {
+        "id": "CIV-236",
+        "vertices": 280,
+        "maximumWorldError": 6.823948332111042e-05
+      },
+      {
+        "id": "CIV-237",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-238",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-239",
+        "vertices": 280,
+        "maximumWorldError": 3.145685598152849e-05
+      },
+      {
+        "id": "CIV-240",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-241",
+        "vertices": 688,
+        "maximumWorldError": 4.316100697280359e-05
+      },
+      {
+        "id": "CIV-242",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-243",
+        "vertices": 280,
+        "maximumWorldError": 4.315903141463925e-05
+      },
+      {
+        "id": "CIV-244",
+        "vertices": 688,
+        "maximumWorldError": 3.412302143633813e-05
+      },
+      {
+        "id": "CIV-245",
+        "vertices": 280,
+        "maximumWorldError": 6.291362725856349e-05
+      },
+      {
+        "id": "CIV-246",
+        "vertices": 280,
+        "maximumWorldError": 3.145702538994527e-05
+      },
+      {
+        "id": "CIV-247",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-248",
+        "vertices": 280,
+        "maximumWorldError": 4.31583831649122e-05
+      },
+      {
+        "id": "CIV-249",
+        "vertices": 280,
+        "maximumWorldError": 6.823940522741293e-05
+      },
+      {
+        "id": "CIV-250",
+        "vertices": 688,
+        "maximumWorldError": 4.315837287515549e-05
+      },
+      {
+        "id": "CIV-251",
+        "vertices": 280,
+        "maximumWorldError": 6.151060723805483e-05
+      },
+      {
+        "id": "CIV-252",
+        "vertices": 280,
+        "maximumWorldError": 3.145679951185349e-05
+      },
+      {
+        "id": "CIV-253",
+        "vertices": 688,
+        "maximumWorldError": 4.316429936881525e-05
+      },
+      {
+        "id": "CIV-254",
+        "vertices": 280,
+        "maximumWorldError": 6.823948332111042e-05
+      },
+      {
+        "id": "CIV-255",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-256",
+        "vertices": 688,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-257",
+        "vertices": 280,
+        "maximumWorldError": 6.151014517439689e-05
+      },
+      {
+        "id": "CIV-258",
+        "vertices": 280,
+        "maximumWorldError": 3.145770301448926e-05
+      },
+      {
+        "id": "CIV-259",
+        "vertices": 688,
+        "maximumWorldError": 4.315985457486383e-05
+      },
+      {
+        "id": "CIV-260",
+        "vertices": 280,
+        "maximumWorldError": 4.315903141463925e-05
+      },
+      {
+        "id": "CIV-261",
+        "vertices": 280,
+        "maximumWorldError": 6.823943776646442e-05
+      },
+      {
+        "id": "CIV-262",
+        "vertices": 688,
+        "maximumWorldError": 6.823979569500669e-05
+      },
+      {
+        "id": "CIV-263",
+        "vertices": 280,
+        "maximumWorldError": 3.145770301448926e-05
+      },
+      {
+        "id": "CIV-264",
+        "vertices": 280,
+        "maximumWorldError": 6.291371196305698e-05
+      },
+      {
+        "id": "CIV-265",
+        "vertices": 688,
+        "maximumWorldError": 9.281560950565834e-05
+      },
+      {
+        "id": "CIV-266",
+        "vertices": 280,
+        "maximumWorldError": 6.823948332111042e-05
+      },
+      {
+        "id": "CIV-267",
+        "vertices": 280,
+        "maximumWorldError": 6.823940522741293e-05
+      },
+      {
+        "id": "CIV-268",
+        "vertices": 688,
+        "maximumWorldError": 3.412302143633813e-05
+      },
+      {
+        "id": "CIV-269",
+        "vertices": 280,
+        "maximumWorldError": 3.412052258814641e-05
+      },
+      {
+        "id": "CIV-270",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-271",
+        "vertices": 688,
+        "maximumWorldError": 6.291371196305698e-05
+      },
+      {
+        "id": "CIV-272",
+        "vertices": 280,
+        "maximumWorldError": 4.315853751096847e-05
+      },
+      {
+        "id": "CIV-273",
+        "vertices": 280,
+        "maximumWorldError": 8.631707502193694e-05
+      },
+      {
+        "id": "CIV-274",
+        "vertices": 688,
+        "maximumWorldError": 6.291405077989053e-05
+      },
+      {
+        "id": "CIV-275",
+        "vertices": 280,
+        "maximumWorldError": 6.151060723805483e-05
+      },
+      {
+        "id": "CIV-276",
+        "vertices": 280,
+        "maximumWorldError": 0.00012302034810695442
+      },
+      {
+        "id": "CIV-277",
+        "vertices": 688,
+        "maximumWorldError": 6.291540602897852e-05
+      },
+      {
+        "id": "CIV-278",
+        "vertices": 280,
+        "maximumWorldError": 0.00012207037070764704
+      },
+      {
+        "id": "CIV-279",
+        "vertices": 280,
+        "maximumWorldError": 6.823940522741293e-05
+      },
+      {
+        "id": "CIV-280",
+        "vertices": 688,
+        "maximumWorldError": 6.291405077989053e-05
+      },
+      {
+        "id": "CIV-281",
+        "vertices": 280,
+        "maximumWorldError": 0.00012230851322567372
+      },
+      {
+        "id": "CIV-282",
+        "vertices": 280,
+        "maximumWorldError": 6.151026069063679e-05
+      },
+      {
+        "id": "CIV-283",
+        "vertices": 688,
+        "maximumWorldError": 6.291371196305698e-05
+      },
+      {
+        "id": "CIV-284",
+        "vertices": 280,
+        "maximumWorldError": 8.631674575031098e-05
+      }
+    ],
+    "materialChecks": [
+      {
+        "id": "CIV-001",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-002",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-003",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-004",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-005",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-006",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-007",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-008",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-009",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-010",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-011",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-012",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-013",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-014",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-015",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-016",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-017",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-018",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-019",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-020",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-021",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-022",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-023",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-024",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-025",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-026",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-027",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-028",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-029",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-030",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-031",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-032",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-033",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-034",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-035",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-036",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-037",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-038",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-039",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-040",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-041",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-042",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-043",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-044",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-045",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-046",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-047",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-048",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-049",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-050",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-051",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-052",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-053",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-054",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-055",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-056",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-057",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-058",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-059",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-060",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-061",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-062",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-063",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-064",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-065",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-066",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-067",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-068",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-069",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-070",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-071",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-072",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-073",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-074",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-075",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-076",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-077",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-078",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-079",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-080",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-081",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-082",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-083",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-084",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-085",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-086",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-087",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-088",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-089",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-090",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-091",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-092",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-093",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-094",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-095",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-096",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-097",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-098",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-099",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-100",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-101",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-102",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-103",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-104",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-105",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-106",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-107",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-108",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-109",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-110",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-111",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-112",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-113",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-114",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-115",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-116",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-117",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-118",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-119",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-120",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-121",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-122",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-123",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-124",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-125",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-126",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-127",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-128",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-129",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-130",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-131",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-132",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-133",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-134",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-135",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-136",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-137",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-138",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-139",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-140",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-141",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-142",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-143",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-144",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-145",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-146",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-147",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-148",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-149",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-150",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-151",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-152",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-153",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-154",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-155",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-156",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-157",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-158",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-159",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-160",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-161",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-162",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-163",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-164",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-165",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-166",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-167",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-168",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-169",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-170",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-171",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-172",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-173",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-174",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-175",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-176",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-177",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-178",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-179",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-180",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-181",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-182",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-183",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-184",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-185",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-186",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-187",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-188",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-189",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-190",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-191",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-192",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-193",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-194",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-195",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-196",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-197",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-198",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-199",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-200",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-201",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-202",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-203",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-204",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-205",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-206",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-207",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-208",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-209",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-210",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-211",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-212",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-213",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-214",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-215",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-216",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-217",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-218",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-219",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-220",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-221",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-222",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-223",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-224",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-225",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-226",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-227",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-228",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-229",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-230",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-231",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-232",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-233",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-234",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-235",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-236",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-237",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-238",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-239",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-240",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-241",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-242",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-243",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-244",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-245",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-246",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-247",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-248",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-249",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-250",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-251",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-252",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-253",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-254",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-255",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-256",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-257",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-258",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-259",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-260",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-261",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-262",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-263",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-264",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-265",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-266",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-267",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-268",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-269",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-270",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-271",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-272",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-273",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-274",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-275",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-276",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-277",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-278",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-279",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-280",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-281",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-282",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-283",
+        "faces": 516,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      },
+      {
+        "id": "CIV-284",
+        "faces": 210,
+        "maximumLinearColorError": 1.8444634486414202e-08,
+        "maximumRoughnessError": 9.536743172944284e-09,
+        "maximumMetallicError": 2.980232227667301e-09
+      }
+    ]
+  },
+  "overheadAircraft": {
+    "count": 16,
+    "voxelParts": 240,
+    "checks": [
+      {
+        "index": 0,
+        "parts": 15,
+        "maximumWorldError": 6.376858806333985e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 1,
+        "parts": 15,
+        "maximumWorldError": 6.359051909043956e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 2,
+        "parts": 15,
+        "maximumWorldError": 4.826094951226878e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 3,
+        "parts": 15,
+        "maximumWorldError": 1.3698916887960877e-05,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 4,
+        "parts": 15,
+        "maximumWorldError": 6.141122426583934e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 5,
+        "parts": 15,
+        "maximumWorldError": 4.400480534627604e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 6,
+        "parts": 15,
+        "maximumWorldError": 3.7606619258667706e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 7,
+        "parts": 15,
+        "maximumWorldError": 9.8916702029328e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 8,
+        "parts": 15,
+        "maximumWorldError": 5.214456464841533e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 9,
+        "parts": 15,
+        "maximumWorldError": 8.117035037003006e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 10,
+        "parts": 15,
+        "maximumWorldError": 1.2278184300384964e-05,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 11,
+        "parts": 15,
+        "maximumWorldError": 2.2253673535033158e-05,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 12,
+        "parts": 15,
+        "maximumWorldError": 1.72696262552563e-05,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 13,
+        "parts": 15,
+        "maximumWorldError": 2.1706987183733872e-05,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 14,
+        "parts": 15,
+        "maximumWorldError": 1.3172719633303132e-05,
+        "maximumLinearColorError": 1.0011687145983217e-08
+      },
+      {
+        "index": 15,
+        "parts": 15,
+        "maximumWorldError": 4.94716688592689e-06,
+        "maximumLinearColorError": 1.0011687145983217e-08
       }
     ]
   },
@@ -5000,7 +8578,7 @@
   "facadeRefits": {
     "sourceRecords": 547,
     "nativeFragments": 1413,
-    "actualNativeModulesCounted": 159037,
+    "actualNativeModulesCounted": 159646,
     "maximumBoundsErrorMetres": 2.6855468718167685e-05,
     "checks": [
       {

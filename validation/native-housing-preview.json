@@ -1,0 +1,27 @@
+{
+  "nativeSHA256": "312d537cd8af507b912dcbdd67bc62815302f42b4c254fae22151e2cfd151592",
+  "image": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-05\\alright-wipe-every\\outputs\\neon-district\\blender\\city-housing-preview.png",
+  "imageSHA256": "c12a2e5e41d0aa9e5b3b45f2a45186f2c5d723201c2f114537665df7d3ac9a46",
+  "cameraThree": {
+    "position": [
+      -187,
+      1.935,
+      -248.5
+    ],
+    "target": [
+      -189,
+      3.3,
+      -257
+    ],
+    "lensMM": 20
+  },
+  "frame": 1,
+  "samples": 16,
+  "resolution": [
+    1100,
+    800
+  ],
+  "method": "Fresh saved city opened in Blender; CPU Cycles inspection camera, existing street-scene lighting and materials. No native geometry, lighting or saved viewpoints changed.",
+  "blenderVersion": "5.2.1 LTS",
+  "fullCityPreviewsRefreshed": false
+}

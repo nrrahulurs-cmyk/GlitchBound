@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "build": "Dv3KyA3M",
+  "checkedAtUTC": "2026-09-06T13:17:11.540Z",
+  "method": "Actual game model vertices transformed through live matrixWorld after settled ground and actual W stair ascent; compare soles with controller support and project both onto the same camera. Blueprint uses actual buttons, checkboxes and canvas mouse events; debug API only reads state and coordinates.",
+  "results": [
+    {
+      "test": "Actual transformed player boot vertices at ground-soles",
+      "passed": true,
+      "maximumGap": -0.000003106646064565677,
+      "minimumGap": -0.0011465261780020941,
+      "maximumPixelGap": 0.177924052615124,
+      "sampleCount": 12
+    },
+    {
+      "test": "Actual transformed player boot vertices at landing-soles",
+      "passed": true,
+      "maximumGap": -0.0016638178421204408,
+      "minimumGap": -0.0017454400950973614,
+      "maximumPixelGap": 0.25088860448559697,
+      "sampleCount": 12
+    },
+    {
+      "test": "Actual housing focus button, canvas stair selection and assembly checkbox",
+      "passed": true,
+      "courtScale": 14.300306435137912,
+      "placementScale": 24,
+      "selection": {
+        "id": "HOUSING-B102-STAIR",
+        "category": "assemblies",
+        "x": -189,
+        "y": 2.0349999999999997,
+        "z": -254.62
+      }
+    },
+    {
+      "test": "Actual canvas selection exposes staircase path elevations and authored waypoints",
+      "passed": true,
+      "selection": {
+        "id": "HOUSING-STAIR-TO-LANDING",
+        "category": "routes",
+        "x": -189.5,
+        "y": 0.185,
+        "z": -255.74,
+        "waypointCount": 20
+      }
+    },
+    {
+      "test": "Actual canvas entrance selection identifies closed upper entrance at3.065m",
+      "passed": true,
+      "selection": {
+        "id": "HOUSING-B102-UPPER-ENTRY",
+        "category": "entrances",
+        "x": -190,
+        "y": 3.065,
+        "z": -260.15,
+        "closed": true
+      }
+    },
+    {
+      "test": "Actual canvas pan and zoom/fit buttons remain functional",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "chromeClosed": true,
+  "rawArtifact": "outputs/neon-district/validation/housing-detail-blueprint-Dv3KyA3M-2026-09-06T13-16-55-610Z-raw.json.gz",
+  "rawSHA256": "569d5dd6b1c48d2aecef77f7134e0cc085f8e527a181fb0a5fa79902ca1df814",
+  "bundleSHA256": "144ab1382dcd80d2df5ec401300d6eff57e430788184906eb4f01cce4c2ac7c0",
+  "interpretation": "No positive model-to-support gap was measured at ground or landing. Idle leg rotation causes at most 1.75 mm penetration in these settled captures. The image alone gave a misleading impression of hovering; the exact cause of that impression was not isolated. This does not validate per-tread player foot IK.",
+  "limitations": [
+    "Functional verification, not a performance benchmark.",
+    "One settled ground and one actual-ascent landing pose were sampled.",
+    "Closed upper entrance is an exterior endpoint; no interior access is claimed."
+  ]
+}

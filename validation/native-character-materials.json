@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "nativeSHA256": "acbea93cb621ee7d60dde38fa35666b171f18f4b8b3899a398b4c34ee27098aa",
+  "figures": 288,
+  "faces": 90162,
+  "maximumLinearColorError": 1.8444634486414202e-08,
+  "maximumRoughnessError": 9.536743172944284e-09,
+  "maximumMetallicError": 2.980232227667301e-09,
+  "negativeControls": [
+    {
+      "test": "wrong saved face material slot",
+      "rejected": true
+    },
+    {
+      "test": "changed actual Principled Base Color",
+      "rejected": true
+    },
+    {
+      "test": "changed actual Principled Roughness",
+      "rejected": true
+    },
+    {
+      "test": "changed actual Principled Metallic",
+      "rejected": true
+    }
+  ],
+  "method": "Second fresh reopen; actual saved mesh face slots, active material output, Principled Base Color/Roughness/Metallic. Four temporary negative controls were restored in memory; no native save."
+}

@@ -1,0 +1,505 @@
+{
+  "status": "passed",
+  "build": "Dv3KyA3M",
+  "checkedAtUTC": "2026-09-06T13:04:55.696Z",
+  "method": "Actual W key movement, V third-person and P HUD controls. Aim hook sets viewing direction only. One initial placement per separate route; teleport is forbidden while capturing active routes. No jump, velocity, feet, collision or geometry injection. All16 collinear tread waypoints simplify into continuous ascent. Screenshots wait for near LOD and settled lighting. Diagnostic capture is not a performance benchmark.",
+  "results": [
+    {
+      "test": "Actual W road approach,16 risers,3.065m landing loop and descent without jump or teleport",
+      "passed": true,
+      "visitedSupportLevels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "ascentMaxFeet": 3.0649999999999995,
+      "descentEnd": [
+        -188.99589337543074,
+        1.935,
+        -250.41640129172336
+      ],
+      "videoContinuous": true
+    },
+    {
+      "test": "Existing resident bench remains reachable by actual walking after descent",
+      "passed": true,
+      "end": [
+        -159.33922291235447,
+        1.935,
+        -251.1465683093238
+      ]
+    },
+    {
+      "test": "Separate under-landing W route stays at base ground with overhead clearance",
+      "passed": true,
+      "frames": 116,
+      "minFeet": 0.18500000000000005,
+      "maxFeet": 0.18500000000000005,
+      "end": [
+        -190.6498484933322,
+        1.935,
+        -259.5
+      ]
+    },
+    {
+      "test": "Third-person boom and near-plane sphere remain clear throughout actual routes",
+      "passed": true,
+      "frames": 1198,
+      "retractedFrames": 229,
+      "maximumCameraIntersections": 0
+    },
+    {
+      "test": "Settled HUD-hidden capture matched-court",
+      "passed": true,
+      "camera": [
+        -150,
+        1.956,
+        -240
+      ],
+      "target": [
+        -174,
+        3,
+        -240
+      ],
+      "nearChunkReady": true,
+      "visualApproval": false
+    },
+    {
+      "test": "Settled HUD-hidden capture b102-stair-front",
+      "passed": true,
+      "camera": [
+        -187,
+        1.935,
+        -248.5
+      ],
+      "target": [
+        -189,
+        3.3,
+        -257
+      ],
+      "nearChunkReady": true,
+      "visualApproval": false
+    },
+    {
+      "test": "Settled HUD-hidden capture b102-stair-side",
+      "passed": true,
+      "camera": [
+        -182.7,
+        1.935,
+        -253.9
+      ],
+      "target": [
+        -189,
+        2.7,
+        -255.7
+      ],
+      "nearChunkReady": true,
+      "visualApproval": false
+    },
+    {
+      "test": "Settled HUD-hidden capture b103-bays",
+      "passed": true,
+      "camera": [
+        -180,
+        1.935,
+        -228
+      ],
+      "target": [
+        -183.3,
+        8.5,
+        -218.5
+      ],
+      "nearChunkReady": true,
+      "visualApproval": false
+    }
+  ],
+  "waypoints": [
+    {
+      "stage": "road approach",
+      "target": {
+        "x": -189,
+        "y": 0.185,
+        "z": -247
+      },
+      "end": [
+        -188.94081025248508,
+        1.935,
+        -247.17756924254306
+      ],
+      "groundY": 0.185,
+      "grounded": true,
+      "distance": 0.18717441627582376
+    },
+    {
+      "stage": "road approach",
+      "target": {
+        "x": -189,
+        "y": 0.185,
+        "z": -250.8
+      },
+      "end": [
+        -189.00435138269435,
+        1.935,
+        -251.0663059595834
+      ],
+      "groundY": 0.185,
+      "grounded": true,
+      "distance": 0.2663415075443106
+    },
+    {
+      "stage": "stair ascent",
+      "target": {
+        "x": -189,
+        "y": 3.065,
+        "z": -258.3
+      },
+      "end": [
+        -188.99989888217684,
+        4.8149999999999995,
+        -258.46809723373076
+      ],
+      "groundY": 3.065,
+      "grounded": true,
+      "distance": 0.1680972641441374
+    },
+    {
+      "stage": "landing loop",
+      "target": {
+        "x": -190,
+        "y": 3.065,
+        "z": -260
+      },
+      "end": [
+        -190.14217767633517,
+        4.8149999999999995,
+        -260.2177803542042
+      ],
+      "groundY": 3.065,
+      "grounded": true,
+      "distance": 0.26008224530977025
+    },
+    {
+      "stage": "landing loop",
+      "target": {
+        "x": -186.4,
+        "y": 3.065,
+        "z": -260
+      },
+      "end": [
+        -186.16926318649053,
+        4.8149999999999995,
+        -259.9865720045058
+      ],
+      "groundY": 3.065,
+      "grounded": true,
+      "distance": 0.23112721209650267
+    },
+    {
+      "stage": "landing loop",
+      "target": {
+        "x": -186.4,
+        "y": 3.065,
+        "z": -258.5
+      },
+      "end": [
+        -186.43458734388994,
+        4.8149999999999995,
+        -258.27716352950046
+      ],
+      "groundY": 3.065,
+      "grounded": true,
+      "distance": 0.22550471600845767
+    },
+    {
+      "stage": "landing loop",
+      "target": {
+        "x": -189,
+        "y": 3.065,
+        "z": -258.5
+      },
+      "end": [
+        -189.3210594463834,
+        4.8149999999999995,
+        -258.527887815118
+      ],
+      "groundY": 3.065,
+      "grounded": true,
+      "distance": 0.3222683638585573
+    },
+    {
+      "stage": "stair descent",
+      "target": {
+        "x": -189,
+        "y": 3.065,
+        "z": -258.3
+      },
+      "end": [
+        -189.0809062060477,
+        4.8149999999999995,
+        -258.3574271797121
+      ],
+      "groundY": 3.065,
+      "grounded": true,
+      "distance": 0.09921539772997097
+    },
+    {
+      "stage": "stair descent",
+      "target": {
+        "x": -189,
+        "y": 0.185,
+        "z": -250.8
+      },
+      "end": [
+        -188.99589337543074,
+        1.935,
+        -250.41640129172336
+      ],
+      "groundY": 0.185,
+      "grounded": true,
+      "distance": 0.38362068942754884
+    },
+    {
+      "stage": "retained seat approach",
+      "target": {
+        "x": -182,
+        "y": 0.185,
+        "z": -250.8
+      },
+      "end": [
+        -181.69771547001685,
+        1.935,
+        -250.8165748602794
+      ],
+      "groundY": 0.185,
+      "grounded": true,
+      "distance": 0.30273860517023177
+    },
+    {
+      "stage": "retained seat approach",
+      "target": {
+        "x": -182,
+        "y": 0.185,
+        "z": -249
+      },
+      "end": [
+        -182.07009503504364,
+        1.935,
+        -248.57876481969592
+      ],
+      "groundY": 0.185,
+      "grounded": true,
+      "distance": 0.42702738912577914
+    },
+    {
+      "stage": "retained seat approach",
+      "target": {
+        "x": -173,
+        "y": 0.185,
+        "z": -249
+      },
+      "end": [
+        -172.69959884791518,
+        1.958,
+        -249.01395129080393
+      ],
+      "groundY": 0.20800000000000002,
+      "grounded": true,
+      "distance": 0.30072494191367133
+    },
+    {
+      "stage": "retained seat approach",
+      "target": {
+        "x": -173,
+        "y": 0.185,
+        "z": -251.15
+      },
+      "end": [
+        -173.0406456235976,
+        1.958,
+        -251.43901697353056
+      ],
+      "groundY": 0.20800000000000002,
+      "grounded": true,
+      "distance": 0.29186105890714115
+    },
+    {
+      "stage": "retained seat approach",
+      "target": {
+        "x": -159.5,
+        "y": 0.185,
+        "z": -251.15
+      },
+      "end": [
+        -159.33922291235447,
+        1.935,
+        -251.1465683093238
+      ],
+      "groundY": 0.185,
+      "grounded": true,
+      "distance": 0.16081370716663043
+    },
+    {
+      "stage": "under landing",
+      "target": {
+        "x": -190.3,
+        "y": 0.185,
+        "z": -259.5
+      },
+      "end": [
+        -190.6498484933322,
+        1.935,
+        -259.5
+      ],
+      "groundY": 0.185,
+      "grounded": true,
+      "distance": 0.34984849333218904
+    }
+  ],
+  "images": [
+    "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-landing-arrival.png",
+    "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-retained-seat.png",
+    "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-under-landing.png",
+    "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-matched-court.png",
+    "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-b102-stair-front.png",
+    "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-b102-stair-side.png",
+    "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-b103-bays.png"
+  ],
+  "proof": {
+    "sampleCount": 1198,
+    "keys": [
+      {
+        "stage": "road approach",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "road approach",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "stair ascent",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "landing loop",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "landing loop",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "landing loop",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "landing loop",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "stair descent",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "stair descent",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "retained seat approach",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "retained seat approach",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "retained seat approach",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "retained seat approach",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "retained seat approach",
+        "key": "w",
+        "repeat": false
+      },
+      {
+        "stage": "under landing",
+        "key": "w",
+        "repeat": false
+      }
+    ],
+    "teleports": [
+      {
+        "stage": "setup",
+        "args": [
+          -190,
+          -244
+        ]
+      },
+      {
+        "stage": "retained seat approach",
+        "args": [
+          -184.6,
+          -259.5
+        ]
+      }
+    ]
+  },
+  "errors": [],
+  "chromeClosed": true,
+  "rawVideo": "work\\housing-recording\\2026-09-06T13-04-12-187Z\\page@1ac0c095bf76e7a474794e6acbe048a0.webm",
+  "actionVideo": "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-stair-loop.webm",
+  "videoRange": {
+    "start": 8.733000000000004,
+    "end": 20.312000000000005,
+    "duration": 11.579,
+    "timebase": "Raw Playwright video seconds, end-aligned with context close. Includes1second margin; must inspect representative frames before visual acceptance."
+  },
+  "rawSamples": "housing-browser-Dv3KyA3M-2026-09-06T13-04-12-187Z-raw.json.gz",
+  "independentVideoInspection": {
+    "verified": true,
+    "method": "Viewed decoded frames from the continuous final clip.",
+    "samples": [
+      {
+        "seconds": 0.2,
+        "observation": "Road approach before stairs"
+      },
+      {
+        "seconds": 2.5,
+        "observation": "Mid-stair ascent"
+      },
+      {
+        "seconds": 10.5,
+        "observation": "Ground-level court after descent"
+      }
+    ]
+  }
+}

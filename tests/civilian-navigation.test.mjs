@@ -1,9 +1,10 @@
+import {createCityPopulation,createPedestrianTemplate} from '../src/civilian-source.js';
 import assert from 'node:assert/strict';import fs from 'node:fs';import * as THREE from 'three';
 import {createCivilianNavigation} from '../src/civilian-navigation.js';
 import {createSimulation} from '../src/simulation.js';
 import {createCivilianSystem} from '../src/civilians.js';import {createCityLayout} from '../src/city-layout.js';import {createStreetCollisionLayout} from '../src/street-collisions.js';import{SCENE_PLACEMENTS}from'../src/asset-placements.js';
-const results=[],source=fs.readFileSync(new URL('../src/city.js',import.meta.url),'utf8'),template=source.slice(source.indexOf('  function pedestrianTemplate('),source.indexOf('  const people=[];'));
-const pieces=new Function('pick',template+';return pedestrianTemplate("#334455",false);')(a=>a[0]);
+const results=[];
+const pieces=createPedestrianTemplate('#334455',false);
 const box=(x,z,sx=1,sz=1,ry=0,y=1,sy=2)=>({x,z,sx,sz,ry,y,sy});
 function test(name,fn){try{const evidence=fn();results.push({name,passed:true,...evidence});console.log('PASS '+name,JSON.stringify(evidence));}catch(error){results.push({name,passed:false,error:error.stack});console.error('FAIL '+name,error.message);}}
 function fixture({colliders=[],people=[{x:0,z:-2,speed:.5}],groundHeightAt=()=>.057,bounds}={}){const citizens=people.map(p=>({scale:1,phase:0,minZ:-100,maxZ:100,...p,pieces})),mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(),new THREE.MeshBasicMaterial(),citizens.length*pieces.length),system=createCivilianSystem({people:citizens,mesh,colliders,groundHeightAt,bounds});return{system,people:citizens,mesh};}
@@ -39,7 +40,7 @@ test('Initialization and reset minimally resolve obstacle and crowd overlaps det
 test('All284 authored citizens start and travel clear of real shelves, rotated solids and static vehicle placements',()=>{
  const layout=createCityLayout(),street=createStreetCollisionLayout(layout),colliders=[...layout.colliders,...street.staticColliders],surfaces=street.groundSurfaces;
  const groundHeightAt=(x,z)=>{let h=.057;for(const b of surfaces){const c=Math.cos(b.ry||0),s=Math.sin(b.ry||0),dx=x-b.x,dz=z-b.z;if(Math.abs(dx*c-dz*s)<=b.sx/2&&Math.abs(dx*s+dz*c)<=b.sz/2)h=Math.max(h,b.y+b.sy/2);}return h;};
- const people=new Function('districts',source.slice(source.indexOf('  let randomState='),source.indexOf('  const pedestrianCount='))+';return people;')(layout.districts),count=people.reduce((n,p)=>n+p.pieces.length,0),mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(),new THREE.MeshBasicMaterial(),count),system=createCivilianSystem({people,mesh,colliders,groundHeightAt,bounds:layout.bounds});
+ const people=createCityPopulation({districts:layout.districts}).people,count=people.reduce((n,p)=>n+p.pieces.length,0),mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(),new THREE.MeshBasicMaterial(),count),system=createCivilianSystem({people,mesh,colliders,groundHeightAt,bounds:layout.bounds});
  const vehicles=[SCENE_PLACEMENTS.interceptor,SCENE_PLACEMENTS.parkedCar].map(p=>({...p,y:p.y+p.sy/2})),props=[...street.dynamicProps,...vehicles];system.setObstacleProvider(()=>props);const nav=createCivilianNavigation({colliders,groundHeightAt,bounds:layout.bounds});nav.setObstacleProvider(()=>props);
  const initial=system.getPeople();for(const p of initial)assert(!nav.blocked(p.x,p.z,.44*p.scale,1.85*p.scale),'Spawn overlap '+p.id);for(let i=0;i<initial.length;i++)for(let j=i+1;j<initial.length;j++)assert(Math.hypot(initial[i].x-initial[j].x,initial[i].z-initial[j].z)>=.44*(initial[i].scale+initial[j].scale)+.0199,'Initial crowd overlap');
  let checks=0;const timing=[];for(let i=0;i<360;i++){const start=performance.now();system.update(1/60,i/60,new THREE.Vector3(0,2,25));timing.push(performance.now()-start);if(i%15===0)for(const p of system.getPeople()){assert(!nav.blocked(p.x,p.z,.44*p.scale,1.85*p.scale),'Trajectory enters solid '+p.id);checks++;}}

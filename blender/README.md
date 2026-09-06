@@ -1,12 +1,14 @@
 # Editable Blender source
 
-Open **neon-district-city.blend** for the complete Vesper city, **cyberpunk-assets.blend** for the asset kit, **pulse-carbine.blend** for the weapon and projectile effects, or **service-actions.blend** for editable exterior service animations. The city contains native voxel meshes organized by avenue section, material, and building side, editable text signs, seventeen packed billboard images, atmospheric lighting, and five cameras. These four local source files open independently of the game server. The scripts below regenerate them.
+Open **neon-district-city.blend** for the complete Vesper city, **cyberpunk-assets.blend** for the asset kit, **pulse-carbine.blend** for the weapon and projectile effects, **service-actions.blend** for editable exterior service animations, or **character-workshop.blend** for civilian rigs and motion. The city contains native voxel meshes organized by avenue section, material, and building side, editable text signs, seventeen packed billboard images, atmospheric lighting, and five cameras. These local source files open independently of the game server. The scripts below regenerate them.
 
 Use Blender's scene selector to choose the street composition, **VESPER / complete city aerial**, or **VESPER / architectural blueprint**. The blueprint has separate editable layers for roads, building footprints, parcel boundaries, structural supports, mounted signs, ground assets, elevated connections, and dimensions. Its source records are embedded as JSON in Blender's Text Editor.
 
 The city geometry comes from the same deterministic `src/city-layout.js` layout used by the Three.js game, including the structural corrections from `src/city-blueprint.js`. The generator also imports `src/asset-placements.js`, the traffic and connected activity assemblies from `src/city-life.js`, and supply foundations from `src/simulation.js`. Duplicate distant LOD masses are excluded. `build_city.py` evaluates these sources with Node.js and constructs the Blender scenes; `build_blueprint.py` builds the architectural plan. `build_assets.py` authors and exports the detailed prop kit directly in Blender.
 
-The authored Stacktown court and Lantern Market block come from `src/block-compositions.js`: 21 named assemblies contain 765 voxel modules, including covered circulation, residential entry hardware, seating, branching planters, deep preparation stalls and stepped upper floors. Their editable meshes are grouped in **09 AUTHORED BLOCKS**. The plan includes their footprints and seven checked walking routes. Original services and advertisement placements remain unchanged.
+The authored Stacktown court and Lantern Market block come from `src/block-compositions.js` and `src/housing-compositions.js`: 24 named assemblies contain 1,459 voxel modules. They include covered circulation, residential entries, seating, planters, preparation stalls, upper floors and sixteen solid stair treads to a supported 3.065 m landing. Their editable meshes are grouped in **09 AUTHORED BLOCKS**. The shared plan records their footprints, eleven walking routes and two closed exterior entrances. Services and advertisement placements retain their original records.
+
+**10 CITIZENS** contains the same 284 resolved civilians as runtime frame zero: 14,785 editable voxel pieces, with the exact clothing palettes, umbrella parts, joint groups and spawn corrections. The native city also contains the game's sixteen overhead couriers, using all 240 shared aircraft cubes and their initial vertical phase. These city characters and overhead aircraft are saved at frame zero; navigation, flight and physical deaths remain live runtime systems. Use the separate character workshop for editable finite motion clips.
 
 **08 SERVICE MECHANISMS** contains fifteen named service roots, editable motion groups and 318 individually identified parts at the runtime's idle pose. Exactly fifteen original food-hatch slats are replaced. `native_layout.py` gives the builder and verifier the same grounded sites and evaluated `src/service-fixtures.js` recipes; complete site records remain embedded. The separate `service-actions.blend` supplies the keyed action, success and cancellation samples. Beam and steam effects remain runtime effects described in its companion JSON.
 
@@ -23,6 +25,17 @@ blender --background --python blender/build_city.py
 ```
 
 For a CPU-only city save/reopen without rendering or changing the saved viewpoints, use `blender --background --threads 2 --python blender/build_city.py -- --skip-render --preserve-views`.
+
+The character workshop has two scenes: **VESPER / exact character population** contains all 284 resolved runtime placements, and **VESPER / editable motion workshop** contains four finite clips. Each figure has one disconnected voxel mesh, rigid vertex groups and an editable armature. Ordinary and umbrella figures walk, stop, turn and flee over an actual pavement step. The clips are sampled at 30 Hz from the game's accepted-distance gait planner; they hold their final pose instead of looping through an invented return path. The runtime retains the live navigation and physical ragdoll simulation.
+
+Regenerate the separate workshop with an explicit export destination:
+
+```powershell
+node scripts/export-native-characters.mjs --output blender/native-characters.json.gz
+blender --background --threads 2 --python blender/build_characters.py -- --export blender/native-characters.json.gz --output blender/character-workshop.blend --report validation/native-character-workshop.json --render
+```
+
+The workshop packs its source capture and opens without the intermediate JSON. Fresh-reopen checks evaluate every saved population vertex and all 724 animation poses through the armature modifiers. Material verification reads actual saved face assignments and shader values. The close gait PNG is a Blender render of one recorded pose, not a runtime gameplay capture.
 
 Blender uses Z-up with forward along +Y. The exported GLBs in `public/assets/` use Y-up with forward along −Z. Scene coordinates convert as `(x, y, z)` in the game to `(x, −z, y)` in Blender.
 
@@ -48,4 +61,4 @@ The browser applies hitscan damage immediately after resolving camera aim and mu
 
 `surface_materials.py` creates editable world-space nodes for concrete, paving and metal. Their base roughness/metallic values are respectively `.86/.08`, `.91/.025` and `.57/.66`. Metre-scaled grain and weathering retain the authored voxel colors; isolated wet ground patches reduce paving roughness. Native noise approximates the runtime finish and physical scale, rather than reproducing its GLSL hash exactly. Normal detail stays below one millimetre. The material-only revision preserves geometry, cameras, packed artwork and animation; `../validation/native-surface-materials.json` records save/reopen checks.
 
-`asset-manifest.json` records exact prop bounds and geometry counts. `city-scene-manifest.json` records city counts, packed images, the source file checksum, and fresh-file verification. The preview PNGs are actual Blender captures from their recorded dates. They predate the current authored blocks and service mechanisms; their dates and checksums remain in the manifest. The separately dated surface preview also predates this geometry update. Save/reopen verification establishes source correspondence, not a fresh visual comparison.
+`asset-manifest.json` records exact prop bounds and geometry counts. `city-scene-manifest.json` records city counts, packed images, the source file checksum, and fresh-file verification. The three complete-city preview PNGs predate the current authored blocks and service mechanisms; their dates and checksums remain in the manifest. The separately dated surface preview also predates this geometry update. The new `city-housing-preview.png` is a fresh Cycles render of the accepted stair approach, recorded in `../validation/native-housing-preview.json`. It shows the joined flight and landing, while the under-landing shade remains visually dark. This local inspection does not replace the dated full-city previews.

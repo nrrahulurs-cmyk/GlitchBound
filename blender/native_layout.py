@@ -17,6 +17,7 @@ def read_native_layout(root):
     script += 'const simulation=await import('+module('simulation.js')+');city.nativeSupply=simulation.createSupplySupportLayout();'
     script += 'const anchors=await import('+module('asset-placements.js')+');city.nativePlacements=anchors.SCENE_PLACEMENTS;'
     script += 'const adverts=await import('+module('advert-campaigns.js')+');city.nativeAdvertCampaigns=adverts.ADVERT_CAMPAIGNS;'
+    script += 'const aircraft=await import('+module('aircraft-source.js')+');city.nativeAircraftGeometry={body:aircraft.AIRCRAFT_BODY_PARTS,glow:aircraft.AIRCRAFT_GLOW_PARTS};'
     script += 'const service=await import('+module('city-services.js')+');const fixtures=await import('+module('service-fixtures.js')+');'
     script += '''
 const pavement=city.boxes.filter(b=>b.kind==='pavement'&&b.sx>=1&&b.sz>=1&&b.y+b.sy/2>=.08&&b.y+b.sy/2<=.4);
@@ -48,5 +49,14 @@ city.boxes=city.boxes.filter(b=>!physicalStreet.removedBoxes.has(b)&&!removed.ha
 city.nativeDynamicProps=physicalStreet.dynamicProps;
 process.stdout.write(JSON.stringify(city));
 '''
+    node = shutil.which('node') or r'C:\Program Files\nodejs\node.exe'
+    return json.loads(subprocess.run([node,'--input-type=module','-e',script],capture_output=True,text=True,encoding='utf-8',check=True).stdout)
+
+
+def read_native_characters(root):
+    """Resolve the exact live population before any simulation time advances."""
+    root = Path(root).resolve()
+    module = json.dumps((root/'scripts'/'export-native-characters.mjs').as_uri())
+    script = 'import {createNativeCharacterExport} from '+module+';process.stdout.write(JSON.stringify(createNativeCharacterExport({includeWorkshop:false})));'
     node = shutil.which('node') or r'C:\Program Files\nodejs\node.exe'
     return json.loads(subprocess.run([node,'--input-type=module','-e',script],capture_output=True,text=True,encoding='utf-8',check=True).stdout)

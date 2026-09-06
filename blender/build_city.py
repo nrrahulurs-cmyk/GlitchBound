@@ -21,8 +21,10 @@ ROOT=Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(ROOT/'blender'))
 from advert_materials import load_ad_material, material_image, image_quad, panel_dimensions
 from surface_materials import configure_surface_materials
-from native_layout import read_native_layout
+from native_layout import read_native_layout, read_native_characters
+from native_characters import populate_characters, embed_character_export, verify_character
 layout=read_native_layout(ROOT)
+character_source=read_native_characters(ROOT)
 far_lod_count=sum(1 for box in layout['boxes'] if box.get('lod')=='far')
 layout['boxes']=[box for box in layout['boxes'] if box.get('lod')!='far']
 layout['groups']=defaultdict(list)
@@ -51,6 +53,7 @@ RIG=collection('05 LIGHTING / cameras and atmosphere')
 FRONTS=collection('07 STREET FRONTS / attached entrance assemblies')
 SERVICES=collection('08 SERVICE MECHANISMS / editable idle fixtures')
 BLOCKS=collection('09 AUTHORED BLOCKS / residential court and market')
+CITIZENS=collection('10 CITIZENS / exact resolved runtime population')
 
 def linear(hex_color):
     rgb=[int(hex_color.lstrip('#')[i:i+2],16)/255 for i in (0,2,4)]
@@ -283,23 +286,31 @@ for i,support in enumerate(supply_layout.get('stackSpacers',[])):
     prop('VOLTA EXPLOSIVE CELL',f'SUPPLY STACK {i+1:02d} / upper energy cell',
          (support['x'],support['y']+support['sy']/2,support['z']),0,1.35)
 
-# Match the game's static commuter silhouette, while keeping small people editable.
+# All live civilian pieces and their rigid articulation groups are editable.
+# Use the resolved runtime frame-zero roots, including real spawn clearances.
+native_people=populate_characters(character_source,CITIZENS)
+for citizen in native_people:verify_character(citizen)
+character_source_sha=embed_character_export(character_source)
+
+# The overhead craft also use their actual runtime voxel kit and population.
+# Their frame-zero placement includes the runtime's per-craft vertical phase.
+for i,aircraft in enumerate(character_source['airTraffic']):
+    title=f'AIR TRAFFIC {i+1:02d} / shared voxel courier'
+    aircraft_root=bpy.data.objects.new(title,None);LIFE.objects.link(aircraft_root)
+    aircraft_root.location=to_blender(aircraft['x'],aircraft['y']+math.sin(i)*.22,aircraft['z'])
+    aircraft_root['air_traffic_index']=i
+    aircraft_root['source_placement']=json.dumps(aircraft)
+    aircraft_root['pose_policy']='Exact runtime frame zero; editable root. Live flight continues in the Three.js runtime.'
+    for kind,parts in layout['nativeAircraftGeometry'].items():
+        batch=Batch()
+        for x,y,z,sx,sy,sz,c in parts:batch.box({'x':x,'y':y,'z':z,'sx':sx,'sy':sy,'sz':sz,'c':c})
+        mesh=batch.finish(title+' / '+kind,mats['glow' if kind=='glow' else 'metal'],LIFE)
+        mesh.parent=aircraft_root
+        mesh['air_traffic_part_kind']=kind
+
+# Rain remains seeded independently of character placement.
 import random
 rng=random.Random(84719)
-for i in range(26):
-    x=(-1 if i%2 else 1)*(12.8+rng.random()*1.7);z=30-rng.random()*177
-    coat=rng.choice(['#684b6b','#1b777d','#4255a0','#98753e','#833e5a','#304961']);batch=Batch()
-    person_parts=[(0,1.35,0,.46,.64,.31,coat),(0,1.88,0,.31,.33,.3,'#9e9291'),
-      (0,2.02,-.01,.34,.14,.32,'#182430'),(-.13,.72,0,.18,.65,.2,'#233244'),(.13,.72,0,.18,.65,.2,'#233244'),
-      (-.32,1.26,0,.17,.58,.18,coat),(.32,1.26,0,.17,.58,.18,coat),(0,1.92,.16,.3,.065,.025,'#48dbe5')]
-    ground_shift=.17-min(part[1]-part[4]/2 for part in person_parts)
-    for dx,dy,dz,sx,sy,sz,c in person_parts:
-        batch.box({'x':x+dx,'y':dy+ground_shift,'z':z+dz,'sx':sx,'sy':sy,'sz':sz,'c':c})
-    batch.finish(f'COMMUTER {i+1:02d}',mats['solid'],LIFE)
-for i in range(10):
-    obj=prop('K-77 INTERCEPTOR',f'AIR TRAFFIC {i+1:02d}',(-60+rng.random()*120,34+rng.random()*30,-28-rng.random()*135),math.pi/2*(1 if i%2 else -1))
-    for c in list(obj.users_collection):c.objects.unlink(obj)
-    LIFE.objects.link(obj)
 
 # Renderer-independent street-life geometry is shared with the running game.
 life_layout=layout.get('nativeLife') or {}
@@ -437,6 +448,10 @@ scene['source_layout']='Exact seeded voxel layout from src/city-layout.js'
 scene['coordinate_mapping']='Three.js (x,y,z) -> Blender (x,-z,y)'
 scene['city_box_count']=sum(len(items) for items in layout['groups'].values())
 scene['description']='Editable VESPER city with shared structural blueprint, animated street traffic and original voxel art.'
+scene['native_civilian_count']=len(native_people)
+scene['native_civilian_voxel_count']=character_source['counts']['voxelPieces']
+scene['native_character_source_sha256']=character_source_sha
+scene['native_aircraft_count']=len(character_source['airTraffic'])
 scene['driveable_bounds']=json.dumps(bounds)
 scene['excluded_duplicate_far_lod_boxes']=far_lod_count
 scene['campaign_assets']=json.dumps(sorted(poster_mats))
@@ -486,7 +501,7 @@ for name,camera_name in preserved_views['scenes'].items():
     if name in bpy.data.scenes and camera_name in bpy.data.objects:bpy.data.scenes[name].camera=bpy.data.objects[camera_name]
 if preserved_views['cameras']:
     record=bpy.data.texts.new('VESPER / preserved scene viewpoints.json');record.write(json.dumps(preserved_views,indent=2));record.use_fake_user=True
-bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'blender'/'neon-district-city.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'blender'/'neon-district-city.blend'),compress=True)
 print('CITY_COMPLETE',scene['city_box_count'],'voxel modules,',len(layout['signs']),'editable signs,',len(bpy.data.objects),'objects')
 if '--skip-render' not in sys.argv:
     bpy.ops.render.render(write_still=True,scene=scene.name)
