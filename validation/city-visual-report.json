@@ -1,0 +1,127 @@
+{
+  "created": "2026-09-06T04:47:15.923Z",
+  "buildAsset": "/assets/index-CtljCA1a.js",
+  "method": "Hardware Chrome; actual map keys/buttons, test teleport used only for targeted street visual inspection.",
+  "checks": [
+    {
+      "name": "M opens map and pauses game",
+      "pass": true
+    },
+    {
+      "name": "Full map and return button fit the desktop viewport",
+      "pass": true
+    },
+    {
+      "name": "M closes map and resumes game",
+      "pass": true
+    },
+    {
+      "name": "Escape resumes after map",
+      "pass": true
+    },
+    {
+      "name": "close-button resumes after map",
+      "pass": true
+    },
+    {
+      "name": "return-button resumes after map",
+      "pass": true
+    },
+    {
+      "name": "lantern-market HUD and minimap match the district",
+      "pass": true
+    },
+    {
+      "name": "iron-docks HUD and minimap match the district",
+      "pass": true
+    },
+    {
+      "name": "meridian-east HUD and minimap match the district",
+      "pass": true
+    },
+    {
+      "name": "crown-plaza HUD and minimap match the district",
+      "pass": true
+    },
+    {
+      "name": "stacktown HUD and minimap match the district",
+      "pass": true
+    },
+    {
+      "name": "All visited districts neutral and healthy",
+      "pass": true
+    },
+    {
+      "name": "No browser errors",
+      "pass": true
+    }
+  ],
+  "views": [
+    {
+      "name": "lantern-market",
+      "position": [
+        -210,
+        1.75,
+        132
+      ],
+      "district": "Lantern Market",
+      "fps": 60,
+      "drawCalls": 486,
+      "health": 100,
+      "wanted": 0
+    },
+    {
+      "name": "iron-docks",
+      "position": [
+        210,
+        1.75,
+        133
+      ],
+      "district": "Iron Docks",
+      "fps": 60,
+      "drawCalls": 448,
+      "health": 100,
+      "wanted": 0
+    },
+    {
+      "name": "meridian-east",
+      "position": [
+        210,
+        1.75,
+        -292
+      ],
+      "district": "Meridian East",
+      "fps": 60,
+      "drawCalls": 321,
+      "health": 100,
+      "wanted": 0
+    },
+    {
+      "name": "crown-plaza",
+      "position": [
+        0,
+        1.75,
+        -413
+      ],
+      "district": "Crown Plaza",
+      "fps": 60,
+      "drawCalls": 197,
+      "health": 100,
+      "wanted": 0
+    },
+    {
+      "name": "stacktown",
+      "position": [
+        -210,
+        1.75,
+        -174
+      ],
+      "district": "Stacktown",
+      "fps": 60,
+      "drawCalls": 372,
+      "health": 100,
+      "wanted": 0
+    }
+  ],
+  "errors": []
+}

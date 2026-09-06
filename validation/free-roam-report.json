@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T03:23:38.913Z",
+  "url": "http://127.0.0.1:5173/?test=1",
+  "buildAsset": "/assets/index-BIsrV6YE.js",
+  "browser": "Google Chrome 152.0.7977.77",
+  "launchArgs": [
+    "--enable-webgl",
+    "--ignore-gpu-blocklist"
+  ],
+  "viewport": {
+    "width": 960,
+    "height": 650
+  },
+  "method": "Actual UI, keyboard and mouse actions; direct simulation stepping only for neutral proximity and crime-cooldown time; test teleports for targeted locations.",
+  "results": [
+    {
+      "test": "No quests in UI, simulation state, or scene geometry",
+      "pass": true
+    },
+    {
+      "test": "61 simulated seconds near a patrol: no damage, targeting, aiming beams, or wanted level",
+      "pass": true,
+      "simulatedSeconds": 61,
+      "health": 100
+    },
+    {
+      "test": "H draws and holsters legally without firing",
+      "pass": true
+    },
+    {
+      "test": "V changes camera and P hides/restores the HUD without crime",
+      "pass": true
+    },
+    {
+      "test": "A real mouse-fired miss triggers crime, pursuit, and security damage",
+      "pass": true,
+      "healthBefore": 100,
+      "healthAfter": 72,
+      "wanted": 1
+    },
+    {
+      "test": "Escape starts a search; crime-free out-of-sight cooldown clears wanted status",
+      "pass": true
+    },
+    {
+      "test": "Reset restores neutral patrols, health, ammo, and holstered weapon",
+      "pass": true
+    },
+    {
+      "test": "Q EMP in public registers a crime even without a hit",
+      "pass": true
+    },
+    {
+      "test": "E enter, W drive, and E exit remain legal on the clear boulevard",
+      "pass": true,
+      "speed": 17.759841757095764,
+      "position": [
+        -1.3234895421464723,
+        1.75,
+        11.282990360397951
+      ]
+    },
+    {
+      "test": "Real WASD steering into roadside supplies causes destructive-ram crime and debris",
+      "pass": true,
+      "wanted": 1,
+      "debris": 32
+    }
+  ],
+  "errors": [],
+  "final": {
+    "ready": true,
+    "mode": "playing",
+    "position": [
+      1.2,
+      1.75,
+      26.8
+    ],
+    "health": 100,
+    "energy": 100,
+    "ammo": 24,
+    "holstered": true,
+    "thirdPerson": false,
+    "photoMode": false,
+    "carSpeed": 0,
+    "inVehicle": false,
+    "elapsed": 0.2001000000000004,
+    "state": {
+      "kills": 0,
+      "totalDrones": 4,
+      "wantedLevel": 0,
+      "heat": 0,
+      "crimeReason": "",
+      "securityState": "PATROL",
+      "searchRemaining": 0,
+      "interactPrompt": "",
+      "remainingTargets": [
+        {
+          "x": 0.016409929838408204,
+          "y": 3.817929410329231,
+          "z": -27.556539086253373,
+          "hostile": false
+        },
+        {
+          "x": -2.7383399919187545,
+          "y": 4.374114383104249,
+          "z": -54.772832024543476,
+          "hostile": false
+        },
+        {
+          "x": 2.765812100933773,
+          "y": 3.7621589338492085,
+          "z": -90.19798215182952,
+          "hostile": false
+        },
+        {
+          "x": -0.06674690137318084,
+          "y": 4.193054847473817,
+          "z": -120.44110840176496,
+          "hostile": false
+        }
+      ],
+      "debrisCount": 0
+    },
+    "drawCalls": 201,
+    "triangles": 3013070,
+    "averageFPS": 53
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "pass": true,
+  "unchangedGeometry": true,
+  "geometryHash": "a43b42c52d230ee5b39e0c60c214be7e952b726a6a991e237c4ef2adbe95ab5f",
+  "campaigns": [
+    {
+      "id": "kuro-optics",
+      "index": 0,
+      "file": "advert-kuro-optics.png",
+      "count": 10,
+      "districts": [],
+      "minimumSpacing": null
+    },
+    {
+      "id": "axiom",
+      "index": 1,
+      "file": "advert-axiom.png",
+      "count": 19,
+      "districts": [],
+      "minimumSpacing": null
+    },
+    {
+      "id": "orbital",
+      "index": 2,
+      "file": "advert-orbital.png",
+      "count": 12,
+      "districts": [],
+      "minimumSpacing": null
+    },
+    {
+      "id": "noodle",
+      "index": 3,
+      "file": "advert-noodle.png",
+      "count": 1,
+      "districts": [],
+      "minimumSpacing": null
+    },
+    {
+      "id": "recast",
+      "index": 4,
+      "file": "advert-recast.png",
+      "count": 4,
+      "districts": [
+        "Meridian East",
+        "Stacktown"
+      ],
+      "minimumSpacing": 249.83266399732435
+    },
+    {
+      "id": "kinkeep",
+      "index": 5,
+      "file": "advert-kinkeep.png",
+      "count": 4,
+      "districts": [
+        "Stacktown",
+        "Lantern Market"
+      ],
+      "minimumSpacing": 116.94239709121753
+    },
+    {
+      "id": "everon",
+      "index": 6,
+      "file": "advert-everon.png",
+      "count": 4,
+      "districts": [
+        "Crown Plaza",
+        "Meridian East"
+      ],
+      "minimumSpacing": 208.64534414513065
+    },
+    {
+      "id": "quietus",
+      "index": 7,
+      "file": "advert-quietus.png",
+      "count": 4,
+      "districts": [
+        "Meridian East",
+        "Crown Plaza"
+      ],
+      "minimumSpacing": 210.00000000000003
+    },
+    {
+      "id": "vyra",
+      "index": 8,
+      "file": "advert-vyra.png",
+      "count": 4,
+      "districts": [
+        "Stacktown",
+        "Lantern Market"
+      ],
+      "minimumSpacing": 160.6964044401741
+    },
+    {
+      "id": "grinpop",
+      "index": 9,
+      "file": "advert-grinpop.png",
+      "count": 4,
+      "districts": [
+        "Lantern Market",
+        "Iron Docks"
+      ],
+      "minimumSpacing": 119.99999999999999
+    },
+    {
+      "id": "syntask",
+      "index": 10,
+      "file": "advert-syntask.png",
+      "count": 4,
+      "districts": [
+        "Iron Docks",
+        "Meridian East"
+      ],
+      "minimumSpacing": 114.90925811265163
+    },
+    {
+      "id": "nesto",
+      "index": 11,
+      "file": "advert-nesto.png",
+      "count": 4,
+      "districts": [
+        "Stacktown",
+        "Crown Plaza"
+      ],
+      "minimumSpacing": 205.73621484804272
+    },
+    {
+      "id": "irisyn",
+      "index": 12,
+      "file": "advert-irisyn.png",
+      "count": 4,
+      "districts": [
+        "Meridian East",
+        "Iron Docks"
+      ],
+      "minimumSpacing": 138.62308610040392
+    },
+    {
+      "id": "else",
+      "index": 13,
+      "file": "advert-else.png",
+      "count": 4,
+      "districts": [
+        "Lantern Market",
+        "Crown Plaza"
+      ],
+      "minimumSpacing": 279.5163467420108
+    },
+    {
+      "id": "vesper-arc",
+      "index": 14,
+      "file": "advert-vesper-arc.png",
+      "count": 4,
+      "districts": [
+        "Crown Plaza",
+        "Iron Docks"
+      ],
+      "minimumSpacing": 291.2801702828395
+    },
+    {
+      "id": "synthsilk",
+      "index": 15,
+      "file": "advert-synthsilk.png",
+      "count": 4,
+      "districts": [
+        "Stacktown",
+        "Crown Plaza"
+      ],
+      "minimumSpacing": 198.7758458666445
+    }
+  ],
+  "placements": [
+    {
+      "signId": "AD320",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Meridian East",
+      "chunk": "block-17",
+      "x": 225.29999999999998,
+      "y": 20,
+      "z": -277.42,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD581",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Meridian East",
+      "chunk": "block-29",
+      "x": 294.7,
+      "y": 16,
+      "z": -517.42,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD221",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Stacktown",
+      "chunk": "block-11",
+      "x": -194.70000000000002,
+      "y": 14.272482339804991,
+      "z": -148.18,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD470",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Stacktown",
+      "chunk": "block-24",
+      "x": -225.29999999999998,
+      "y": 15.82046890957281,
+      "z": -508.17999999999995,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD285",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Stacktown",
+      "chunk": "block-15",
+      "x": -194.70000000000002,
+      "y": 20,
+      "z": -268.18,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD136",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Stacktown",
+      "chunk": "block-6",
+      "x": -294.7,
+      "y": 12,
+      "z": -38.18,
+      "w": 3,
+      "h": 4.5
+    },
+    {
+      "signId": "AD085",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Lantern Market",
+      "chunk": "block-2",
+      "x": -15.300000000000002,
+      "y": 8.148731172084808,
+      "z": 71.768,
+      "w": 3,
+      "h": 4.5
+    },
+    {
+      "signId": "AD069",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Lantern Market",
+      "chunk": "block-1",
+      "x": -194.70000000000002,
+      "y": 11.544119512243196,
+      "z": 75.282,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD361",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Crown Plaza",
+      "chunk": "block-19",
+      "x": -194.70000000000002,
+      "y": 20,
+      "z": -388.18,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD430",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Crown Plaza",
+      "chunk": "block-22",
+      "x": 105.3,
+      "y": 20,
+      "z": -388.18,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD643",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Meridian East",
+      "chunk": "block-33",
+      "x": 340.7,
+      "y": 10.988704303279519,
+      "z": -377.4812,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD318",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Meridian East",
+      "chunk": "block-17",
+      "x": 239,
+      "y": 13,
+      "z": -195.29999999999998,
+      "w": 4,
+      "h": 6
+    },
+    {
+      "signId": "AD301",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Meridian East",
+      "chunk": "block-16",
+      "x": 105.3,
+      "y": 14.846146598970517,
+      "z": -268.18,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD578",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Meridian East",
+      "chunk": "block-29",
+      "x": 225.29999999999998,
+      "y": 20,
+      "z": -517.42,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD489",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Crown Plaza",
+      "chunk": "block-25",
+      "x": -194.70000000000002,
+      "y": 20,
+      "z": -508.17999999999995,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD535",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Crown Plaza",
+      "chunk": "block-27",
+      "x": 15.300000000000002,
+      "y": 16,
+      "z": -508.17999999999995,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD154",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Stacktown",
+      "chunk": "block-7",
+      "x": -194.70000000000002,
+      "y": 20,
+      "z": -38.18,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD342",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Stacktown",
+      "chunk": "block-18",
+      "x": -225.29999999999998,
+      "y": 16,
+      "z": -388.18,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD594",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Lantern Market",
+      "chunk": "block-30",
+      "x": -340.7,
+      "y": 12,
+      "z": 75.2112,
+      "w": 3,
+      "h": 4.5
+    },
+    {
+      "signId": "AD084",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Lantern Market",
+      "chunk": "block-2",
+      "x": -74.7,
+      "y": 5.742799056973308,
+      "z": 68.7,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD056",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Lantern Market",
+      "chunk": "block-0",
+      "x": -225.29999999999998,
+      "y": 12.427721442189068,
+      "z": 79.832,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD070",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Lantern Market",
+      "chunk": "block-1",
+      "x": -105.3,
+      "y": 12,
+      "z": 79.832,
+      "w": 3,
+      "h": 4.5
+    },
+    {
+      "signId": "AD188",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Iron Docks",
+      "chunk": "block-9",
+      "x": 225.29999999999998,
+      "y": 8.21721697859466,
+      "z": -47.419999999999995,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD624",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Iron Docks",
+      "chunk": "block-32",
+      "x": 326.6,
+      "y": 9.545857308804989,
+      "z": 122.7,
+      "w": 4,
+      "h": 6
+    },
+    {
+      "signId": "AD251",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Iron Docks",
+      "chunk": "block-13",
+      "x": 225.29999999999998,
+      "y": 8.913379910215735,
+      "z": -157.42000000000002,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD097",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Iron Docks",
+      "chunk": "block-3",
+      "x": 15.300000000000002,
+      "y": 6.4207332316786045,
+      "z": 83.19999999999999,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD452",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Meridian East",
+      "chunk": "block-23",
+      "x": 294.7,
+      "y": 16,
+      "z": -397.42,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD304",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Meridian East",
+      "chunk": "block-16",
+      "x": 194.70000000000002,
+      "y": 16,
+      "z": -268.18,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD265",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Stacktown",
+      "chunk": "block-14",
+      "x": -281,
+      "y": 13,
+      "z": -195.29999999999998,
+      "w": 4,
+      "h": 6
+    },
+    {
+      "signId": "AD467",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Stacktown",
+      "chunk": "block-24",
+      "x": -294.7,
+      "y": 12,
+      "z": -508.17999999999995,
+      "w": 3,
+      "h": 4.5
+    },
+    {
+      "signId": "AD414",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Crown Plaza",
+      "chunk": "block-21",
+      "x": 53.4,
+      "y": 20,
+      "z": -356.43,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD512",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Crown Plaza",
+      "chunk": "block-26",
+      "x": -74.7,
+      "y": 20,
+      "z": -517.42,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD449",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Meridian East",
+      "chunk": "block-23",
+      "x": 225.29999999999998,
+      "y": 20,
+      "z": -397.42,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD323",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Meridian East",
+      "chunk": "block-17",
+      "x": 294.7,
+      "y": 16,
+      "z": -277.42,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD123",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Iron Docks",
+      "chunk": "block-5",
+      "x": 225.29999999999998,
+      "y": 9.543064663931727,
+      "z": 71.768,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD237",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Iron Docks",
+      "chunk": "block-12",
+      "x": 105.3,
+      "y": 7.754589435458183,
+      "z": -148.18,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD557",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Crown Plaza",
+      "chunk": "block-28",
+      "x": 105.3,
+      "y": 20,
+      "z": -508.17999999999995,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD367",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Crown Plaza",
+      "chunk": "block-19",
+      "x": -141.1,
+      "y": 16,
+      "z": -356.43,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD595",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Lantern Market",
+      "chunk": "block-30",
+      "x": -323.3,
+      "y": 16,
+      "z": 75.2112,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD055",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Lantern Market",
+      "chunk": "block-0",
+      "x": -294.7,
+      "y": 10.840041418094188,
+      "z": 79.832,
+      "w": 3,
+      "h": 4.5
+    },
+    {
+      "signId": "AD385",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Crown Plaza",
+      "chunk": "block-20",
+      "x": -74.7,
+      "y": 20,
+      "z": -397.42,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD560",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Crown Plaza",
+      "chunk": "block-28",
+      "x": 194.70000000000002,
+      "y": 16,
+      "z": -508.17999999999995,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD110",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Iron Docks",
+      "chunk": "block-4",
+      "x": 105.3,
+      "y": 9.65380463451147,
+      "z": 79.832,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD252",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Iron Docks",
+      "chunk": "block-13",
+      "x": 294.7,
+      "y": 7.916534490510822,
+      "z": -157.42000000000002,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD206",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Stacktown",
+      "chunk": "block-10",
+      "x": -225.29999999999998,
+      "y": 16,
+      "z": -148.18,
+      "w": 3.6,
+      "h": 5.4
+    },
+    {
+      "signId": "AD607",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Stacktown",
+      "chunk": "block-31",
+      "x": -340.7,
+      "y": 12,
+      "z": -380.78880000000004,
+      "w": 3,
+      "h": 4.5
+    },
+    {
+      "signId": "AD541",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Crown Plaza",
+      "chunk": "block-27",
+      "x": 53.4,
+      "y": 20,
+      "z": -476.43,
+      "w": 4.2,
+      "h": 6.300000000000001
+    },
+    {
+      "signId": "AD383",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Crown Plaza",
+      "chunk": "block-20",
+      "x": -63,
+      "y": 13,
+      "z": -315.3,
+      "w": 4,
+      "h": 6
+    }
+  ]
+}

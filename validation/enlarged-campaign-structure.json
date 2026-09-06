@@ -1,0 +1,1546 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:00:06.227Z",
+  "method": "Independent actual oriented-box contact graph, pairwise panel overlaps, support/building intersections, clear image surfaces, and image dimensions computed from actual PNG headers.",
+  "layoutSHA256": "7d50f825f26d75caa65798cfa461cb6940b97b4f832b808130a0460cf14e0b0e",
+  "campaignPlacements": 48,
+  "checks": [
+    {
+      "id": "AD055",
+      "campaign": "else",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -283.3,
+        20.479634719529592,
+        64.7
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B042",
+      "anchor": {
+        "x": -283.3,
+        "y": 14.040041418094187,
+        "z": 67.10000000000001
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD056",
+      "campaign": "grinpop",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -116.7,
+        13.939593301435407,
+        64.7
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B048",
+      "anchor": {
+        "x": -116.7,
+        "y": 13.939593301435407,
+        "z": 66.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": 50
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD069",
+      "campaign": "kinkeep",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -322.7,
+        20,
+        78.84
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B172",
+      "anchor": {
+        "x": -324.2,
+        "y": 20,
+        "z": 78.84
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -305,
+        "y": 1.75,
+        "z": 78.84
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD070",
+      "campaign": "grinpop",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -322.7,
+        17.93959330143541,
+        113.16
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B173",
+      "anchor": {
+        "x": -324.2,
+        "y": 17.93959330143541,
+        "z": 113.16
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -310,
+        "y": 1.75,
+        "z": 101.16
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD084",
+      "campaign": "vyra",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -25.8,
+        17.788324473520213,
+        64.7
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B052",
+      "anchor": {
+        "x": -25.8,
+        "y": 11.348731172084808,
+        "z": 67.10000000000001
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -25.8,
+        "y": 1.75,
+        "z": 50
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD085",
+      "campaign": "else",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -116.7,
+        13.939593301435407,
+        125.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B049",
+      "anchor": {
+        "x": -116.7,
+        "y": 13.939593301435407,
+        "z": 123.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": 140
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD097",
+      "campaign": "syntask",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        104.7,
+        19.97387635782361,
+        22.799999999999997
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B075",
+      "anchor": {
+        "x": 107.10000000000001,
+        "y": 11.47387635782361,
+        "z": 22.799999999999997
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": 22.799999999999997
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD110",
+      "campaign": "vesper-arc",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        104.7,
+        19.754589435458183,
+        -152.8
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B090",
+      "anchor": {
+        "x": 107.10000000000001,
+        "y": 11.254589435458183,
+        "z": -152.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD123",
+      "campaign": "irisyn",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        224.7,
+        18.85297321165114,
+        -152.8
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B094",
+      "anchor": {
+        "x": 227.1,
+        "y": 12.413379910215735,
+        "z": -152.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD136",
+      "campaign": "kinkeep",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -183.3,
+        20,
+        -285.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B102",
+      "anchor": {
+        "x": -183.3,
+        "y": 20,
+        "z": -283.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": -300
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD154",
+      "campaign": "vyra",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -283.3,
+        17.93959330143541,
+        -165.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B082",
+      "anchor": {
+        "x": -283.3,
+        "y": 17.93959330143541,
+        "z": -163.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -180
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD188",
+      "campaign": "grinpop",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        322.7,
+        19.335450610240393,
+        113.16
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B179",
+      "anchor": {
+        "x": 325.09999999999997,
+        "y": 12.895857308804988,
+        "z": 113.16
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": 113.16
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD206",
+      "campaign": "synthsilk",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -183.3,
+        20,
+        -84.7
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B087",
+      "anchor": {
+        "x": -183.3,
+        "y": 20,
+        "z": -86.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": -70
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD221",
+      "campaign": "recast",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -236.7,
+        17.93959330143541,
+        -55.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B068",
+      "anchor": {
+        "x": -236.7,
+        "y": 17.93959330143541,
+        "z": -53.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -236.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD237",
+      "campaign": "irisyn",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        236.7,
+        18.53672895589977,
+        35.3
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B079",
+      "anchor": {
+        "x": 236.7,
+        "y": 12.097135654464363,
+        "z": 32.9
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 236.7,
+        "y": 1.75,
+        "z": 50
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD251",
+      "campaign": "syntask",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        295.3,
+        19.46653449051082,
+        -152.8
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B096",
+      "anchor": {
+        "x": 292.90000000000003,
+        "y": 10.96653449051082,
+        "z": -152.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD252",
+      "campaign": "vesper-arc",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        183.3,
+        20.14916270673275,
+        64.7
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B060",
+      "anchor": {
+        "x": 183.3,
+        "y": 11.64916270673275,
+        "z": 67.10000000000001
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 183.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD265",
+      "campaign": "nesto",
+      "panel": [
+        9,
+        11.245989304812834
+      ],
+      "imageMetres": [
+        8.639999999999999,
+        10.79614973262032
+      ],
+      "imageAreaSquareMetres": 93.27873368983956,
+      "position": [
+        -183.3,
+        19.62299465240642,
+        35.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B071",
+      "anchor": {
+        "x": -183.3,
+        "y": 19.62299465240642,
+        "z": 33.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD285",
+      "campaign": "kinkeep",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -116.7,
+        20,
+        -55.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B072",
+      "anchor": {
+        "x": -116.7,
+        "y": 20,
+        "z": -53.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD301",
+      "campaign": "quietus",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        295.3,
+        20,
+        -272.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B112",
+      "anchor": {
+        "x": 293.8,
+        "y": 20,
+        "z": -272.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD304",
+      "campaign": "syntask",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        104.7,
+        16,
+        -207.2
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B107",
+      "anchor": {
+        "x": 106.2,
+        "y": 16,
+        "z": -207.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -207.2
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD318",
+      "campaign": "everon",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        295.3,
+        17.93959330143541,
+        -512.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B168",
+      "anchor": {
+        "x": 293.8,
+        "y": 17.93959330143541,
+        "z": -512.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD320",
+      "campaign": "recast",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        195.3,
+        17.93959330143541,
+        -207.2
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B109",
+      "anchor": {
+        "x": 193.8,
+        "y": 17.93959330143541,
+        "z": -207.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -207.2
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD323",
+      "campaign": "irisyn",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        104.7,
+        24.785739900405922,
+        -272.8
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B106",
+      "anchor": {
+        "x": 107.10000000000001,
+        "y": 18.346146598970517,
+        "z": -272.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD342",
+      "campaign": "vyra",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -116.7,
+        17.93959330143541,
+        -285.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B104",
+      "anchor": {
+        "x": -116.7,
+        "y": 17.93959330143541,
+        "z": -283.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -300
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD361",
+      "campaign": "everon",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -195.3,
+        17.93959330143541,
+        -392.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B118",
+      "anchor": {
+        "x": -193.8,
+        "y": 17.93959330143541,
+        "z": -392.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -210,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD367",
+      "campaign": "else",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -195.3,
+        17.93959330143541,
+        -512.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B146",
+      "anchor": {
+        "x": -193.8,
+        "y": 17.93959330143541,
+        "z": -512.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -210,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD383",
+      "campaign": "synthsilk",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -116.7,
+        20,
+        -525.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B148",
+      "anchor": {
+        "x": -116.7,
+        "y": 20,
+        "z": -523.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -540
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD385",
+      "campaign": "vesper-arc",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        25.8,
+        20,
+        -314.7
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B129",
+      "anchor": {
+        "x": 25.8,
+        "y": 20,
+        "z": -316.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 25.8,
+        "y": 1.75,
+        "z": -300
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD414",
+      "campaign": "nesto",
+      "panel": [
+        9,
+        11.245989304812834
+      ],
+      "imageMetres": [
+        8.639999999999999,
+        10.79614973262032
+      ],
+      "imageAreaSquareMetres": 93.27873368983956,
+      "position": [
+        -25.8,
+        19.62299465240642,
+        -405.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B125",
+      "anchor": {
+        "x": -25.8,
+        "y": 19.62299465240642,
+        "z": -403.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -25.8,
+        "y": 1.75,
+        "z": -420
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD430",
+      "campaign": "everon",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -64.2,
+        17.93959330143541,
+        -525.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B151",
+      "anchor": {
+        "x": -64.2,
+        "y": 17.93959330143541,
+        "z": -523.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -64.2,
+        "y": 1.75,
+        "z": -540
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD449",
+      "campaign": "irisyn",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        224.7,
+        17.93959330143541,
+        -392.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B138",
+      "anchor": {
+        "x": 226.2,
+        "y": 17.93959330143541,
+        "z": -392.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD452",
+      "campaign": "syntask",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        295.3,
+        20,
+        -392.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B140",
+      "anchor": {
+        "x": 293.8,
+        "y": 20,
+        "z": -392.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD467",
+      "campaign": "nesto",
+      "panel": [
+        9,
+        11.245989304812834
+      ],
+      "imageMetres": [
+        8.639999999999999,
+        10.79614973262032
+      ],
+      "imageAreaSquareMetres": 93.27873368983956,
+      "position": [
+        -116.7,
+        19.62299465240642,
+        -165.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B088",
+      "anchor": {
+        "x": -116.7,
+        "y": 19.62299465240642,
+        "z": -163.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -180
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD470",
+      "campaign": "recast",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -283.3,
+        17.93959330143541,
+        -285.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B098",
+      "anchor": {
+        "x": -283.3,
+        "y": 17.93959330143541,
+        "z": -283.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -300
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD489",
+      "campaign": "quietus",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -104.7,
+        20,
+        -392.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B120",
+      "anchor": {
+        "x": -106.2,
+        "y": 20,
+        "z": -392.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -90,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD512",
+      "campaign": "nesto",
+      "panel": [
+        9,
+        11.245989304812834
+      ],
+      "imageMetres": [
+        8.639999999999999,
+        10.79614973262032
+      ],
+      "imageAreaSquareMetres": 93.27873368983956,
+      "position": [
+        195.3,
+        19.62299465240642,
+        -327.2
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B136",
+      "anchor": {
+        "x": 193.8,
+        "y": 19.62299465240642,
+        "z": -327.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -327.2
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD535",
+      "campaign": "quietus",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        25.8,
+        20,
+        -525.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B156",
+      "anchor": {
+        "x": 25.8,
+        "y": 20,
+        "z": -523.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 25.8,
+        "y": 1.75,
+        "z": -540
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD541",
+      "campaign": "synthsilk",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        64.2,
+        20,
+        -405.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B130",
+      "anchor": {
+        "x": 64.2,
+        "y": 20,
+        "z": -403.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 64.2,
+        "y": 1.75,
+        "z": -420
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD557",
+      "campaign": "else",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -64.2,
+        17.93959330143541,
+        -314.7
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B124",
+      "anchor": {
+        "x": -64.2,
+        "y": 17.93959330143541,
+        "z": -316.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -64.2,
+        "y": 1.75,
+        "z": -300
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD560",
+      "campaign": "vesper-arc",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        104.7,
+        20,
+        -512.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B161",
+      "anchor": {
+        "x": 106.2,
+        "y": 20,
+        "z": -512.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD578",
+      "campaign": "quietus",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        224.7,
+        20,
+        -447.2
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B167",
+      "anchor": {
+        "x": 226.2,
+        "y": 20,
+        "z": -447.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -447.2
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD581",
+      "campaign": "recast",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        224.7,
+        17.93959330143541,
+        -512.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B166",
+      "anchor": {
+        "x": 226.2,
+        "y": 17.93959330143541,
+        "z": -512.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD594",
+      "campaign": "vyra",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        -236.7,
+        13.939593301435407,
+        125.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B045",
+      "anchor": {
+        "x": -236.7,
+        "y": 13.939593301435407,
+        "z": 123.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -236.7,
+        "y": 1.75,
+        "z": 140
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD595",
+      "campaign": "kinkeep",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -14.700000000000003,
+        19.58540494744666,
+        114.2
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B053",
+      "anchor": {
+        "x": -17.1,
+        "y": 11.085404947446658,
+        "z": 114.2
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 0,
+        "y": 1.75,
+        "z": 114.2
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD607",
+      "campaign": "synthsilk",
+      "panel": [
+        8,
+        12
+      ],
+      "imageMetres": [
+        7.68,
+        11.52
+      ],
+      "imageAreaSquareMetres": 88.47359999999999,
+      "position": [
+        -283.3,
+        20,
+        -405.3
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B114",
+      "anchor": {
+        "x": -283.3,
+        "y": 20,
+        "z": -403.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -420
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD624",
+      "campaign": "grinpop",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        116.7,
+        19.22657371508091,
+        -84.7
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B091",
+      "anchor": {
+        "x": 116.7,
+        "y": 12.786980413645505,
+        "z": -87.10000000000001
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 116.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "allMembersConnected": true
+    },
+    {
+      "id": "AD643",
+      "campaign": "everon",
+      "panel": [
+        14,
+        7.8791866028708135
+      ],
+      "imageMetres": [
+        13.44,
+        7.56401913875598
+      ],
+      "imageAreaSquareMetres": 101.66041722488036,
+      "position": [
+        224.7,
+        17.93959330143541,
+        -272.8
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B110",
+      "anchor": {
+        "x": 226.2,
+        "y": 17.93959330143541,
+        "z": -272.8
+      },
+      "supports": 13,
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "allMembersConnected": true
+    }
+  ],
+  "findings": []
+}

@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:18:34.640Z",
+  "method": "Simulation integration unit tests with deterministic civilian service fixtures; real civilian voxel raycasting and swept vehicle geometry are verified separately.",
+  "results": [
+    {
+      "test": "Unarmed proximity remains neutral for60simulated seconds; monoblade API is absent",
+      "pass": true
+    },
+    {
+      "test": "Two60damage shots injure then kill; casualty and security kill counts stay distinct, death emits once",
+      "pass": true
+    },
+    {
+      "test": "Building cover prevents civilian damage while public fire still raises an alert",
+      "pass": true
+    },
+    {
+      "test": "A supply cell or security drone in front of a civilian receives the shot",
+      "pass": true
+    },
+    {
+      "test": "A civilian in front of cover receives the shot before the more distant obstacle",
+      "pass": true
+    },
+    {
+      "test": "Low speed, stationary vehicle and accepted motion without impact cause no crime",
+      "pass": true
+    },
+    {
+      "test": "Reverse impacts preserve accepted sweep/options and actual direction; death feedback cannot repeat",
+      "pass": true
+    },
+    {
+      "test": "Nonlethal vehicle injuries create assault status, and reset restores civilians and permits a new death event",
+      "pass": true
+    }
+  ]
+}

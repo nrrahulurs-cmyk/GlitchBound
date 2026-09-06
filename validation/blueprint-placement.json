@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:00:06.703Z",
+  "layoutHash": "7645c78a50eda995fe319000d78bceaa6e5959d79a49d025f94747bbc4b2fbb1",
+  "method": "Independent oriented-box contact graph and pairwise solid overlap checks on generated geometry. Sign texture layers allow35mm mounting tolerance; strict overlap checks exclude touching faces.",
+  "counts": {
+    "buildings": 185,
+    "signs": 646,
+    "supports": 3666,
+    "elevatedConnections": 45
+  },
+  "results": [
+    {
+      "test": "Building footprints and height envelopes do not intersect",
+      "pass": true,
+      "buildings": 185
+    },
+    {
+      "test": "Every sign has a real facade or grounded support path, valid IDs, and no intersection with another sign or unrelated building",
+      "pass": true,
+      "signs": 646
+    },
+    {
+      "test": "Elevated spans connect to grounded support columns and their visible structural members",
+      "pass": true,
+      "connections": 45
+    },
+    {
+      "test": "Street-life props do not intersect buildings",
+      "pass": true,
+      "props": 423
+    }
+  ],
+  "landmarkResults": [
+    {
+      "id": "AD036",
+      "label": "AXIOM",
+      "position": [
+        23,
+        29,
+        -43
+      ],
+      "mountType": "rooftop-cantilever-frame",
+      "attachedTo": "B017",
+      "anchor": {
+        "x": 23,
+        "y": 16,
+        "z": -39.2
+      },
+      "supportMembers": 11,
+      "allMountMembersConnected": true
+    },
+    {
+      "id": "AD037",
+      "label": "KURO OPTICS",
+      "position": [
+        -23,
+        36,
+        -61
+      ],
+      "mountType": "rooftop-cantilever-frame",
+      "attachedTo": "B004",
+      "anchor": {
+        "x": -23,
+        "y": 21,
+        "z": -61
+      },
+      "supportMembers": 11,
+      "allMountMembersConnected": true
+    },
+    {
+      "id": "AD039",
+      "label": "NOODLES",
+      "position": [
+        -12.8,
+        5.9,
+        12
+      ],
+      "mountType": "projecting-marquee",
+      "attachedTo": "B001",
+      "anchor": {
+        "x": -16,
+        "y": 5.9,
+        "z": 12
+      },
+      "supportMembers": 13,
+      "allMountMembersConnected": true
+    }
+  ],
+  "findings": []
+}

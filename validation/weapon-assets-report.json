@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:25:50.956Z",
+  "method": "Independent Three.js GLTFLoader import, actual triangle raycasts down the hollow bore, scene bounds/orientation checks, separate shard node/extras inspection, and native/export checksum verification.",
+  "results": [
+    {
+      "test": "GLTFLoader preserves real muzzle/ejection sockets and separate animatable parts",
+      "pass": true,
+      "muzzle": [
+        0,
+        0.10300000011920929,
+        -0.7459999918937683
+      ],
+      "dimensions": [
+        0.22049999982118607,
+        0.49250000808387995,
+        0.9829999953508377
+      ]
+    },
+    {
+      "test": "The visible muzzle is genuinely open: five bore rays remain unobstructed for at least18cm",
+      "pass": true,
+      "clearBoreDistances": [
+        0.20049997282028198,
+        0.20049997282028198,
+        0.20049997282028198,
+        0.20049997282028198,
+        0.20049997282028198
+      ]
+    },
+    {
+      "test": "Projectile nose and flash axes match forward−Z with rectangular mesh geometry",
+      "pass": true,
+      "bolt": {
+        "min": [
+          -0.02850000001490116,
+          -0.026000000536441803,
+          0
+        ],
+        "max": [
+          0.02850000001490116,
+          0.026000000536441803,
+          0.8140000104904175
+        ]
+      },
+      "flash": {
+        "min": [
+          -0.04600000008940697,
+          -0.041999999433755875,
+          -0.18250000476837158
+        ],
+        "max": [
+          0.03370000049471855,
+          0.041999999433755875,
+          0
+        ]
+      }
+    },
+    {
+      "test": "Ten separate impact meshes contain normalized burst directions and bounded shard geometry",
+      "pass": true,
+      "meshes": [
+        "shard_00",
+        "shard_01",
+        "shard_02",
+        "shard_03",
+        "shard_04",
+        "shard_05",
+        "shard_06",
+        "shard_07",
+        "shard_08",
+        "shard_09"
+      ]
+    },
+    {
+      "test": "Native fresh-reopen verification and GLB hashes agree with the shipped manifest",
+      "pass": true,
+      "nativeSHA256": "e5e6e302653389ee46c8ec21a589a0b83e0247dc8640d72e793ae2b5e30b8f32"
+    }
+  ]
+}

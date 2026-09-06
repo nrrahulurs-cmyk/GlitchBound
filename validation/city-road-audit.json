@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T03:38:07.275Z",
+  "bounds": {
+    "minX": -350,
+    "maxX": 350,
+    "minZ": -600,
+    "maxZ": 190
+  },
+  "citySize": {
+    "width": 700,
+    "depth": 790,
+    "roadLength": 9590,
+    "blocks": 34
+  },
+  "colliders": 271,
+  "results": [
+    {
+      "test": "All road rectangles connect to the spawn avenue",
+      "pass": true,
+      "connectedSegments": 16
+    },
+    {
+      "test": "Center and both driving lanes remain clear for the actual 1.45m vehicle radius",
+      "pass": true,
+      "laneSegments": 48,
+      "groundColliders": 271
+    },
+    {
+      "test": "Both original-corridor junctions permit clear vehicle turns",
+      "pass": true,
+      "junctions": [
+        50,
+        -180
+      ]
+    },
+    {
+      "test": "All six districts have an accessible ingress on the connected road network",
+      "pass": true,
+      "districts": [
+        {
+          "district": "Kasumi Ward",
+          "ingress": {
+            "x": 0,
+            "z": -65
+          },
+          "road": "Kasumi Avenue"
+        },
+        {
+          "district": "Lantern Market",
+          "ingress": {
+            "x": -150,
+            "z": 140
+          },
+          "road": "Crossway 140"
+        },
+        {
+          "district": "Iron Docks",
+          "ingress": {
+            "x": 220,
+            "z": 50
+          },
+          "road": "Crossway 50"
+        },
+        {
+          "district": "Stacktown",
+          "ingress": {
+            "x": -210,
+            "z": -225
+          },
+          "road": "Avenue -210"
+        },
+        {
+          "district": "Meridian East",
+          "ingress": {
+            "x": 210,
+            "z": -285
+          },
+          "road": "Avenue 210"
+        },
+        {
+          "district": "Crown Plaza",
+          "ingress": {
+            "x": 0,
+            "z": -435
+          },
+          "road": "Crown Avenue"
+        }
+      ]
+    },
+    {
+      "test": "All twelve patrol routes follow roads and avoid building collisions",
+      "pass": true,
+      "patrolSegments": 44
+    },
+    {
+      "test": "Final layout integration preserves twelve neutral patrols and six regions for 61 simulated seconds",
+      "pass": true
+    }
+  ]
+}

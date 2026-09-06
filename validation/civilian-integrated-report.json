@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:28:43.569Z",
+  "method": "The production civilian voxel service and combat simulation run together with a deterministic body/umbrella fixture and real matrix raycasts, continuous swept footprints, falling poses, and cooldowns.",
+  "results": [
+    {
+      "test": "Real voxel body service ignores umbrella, receives60damage shots, settles corpse, and resets alive",
+      "pass": true
+    },
+    {
+      "test": "Real civilian raycasts cannot shoot through static cover",
+      "pass": true
+    },
+    {
+      "test": "Real swept footprints kill on forward and reverse passes, miss beyond the body side, and count each death once",
+      "pass": true
+    },
+    {
+      "test": "Low-speed escape releases an injury contact lock for a later distinct impact",
+      "pass": true
+    }
+  ]
+}

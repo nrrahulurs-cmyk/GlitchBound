@@ -1,0 +1,46 @@
+{
+  "created": "2026-09-06T06:00:06.266Z",
+  "method": "Actual exported GLB minimum bounds from Blender asset manifest, shared runtime anchors, and actual pavement surface elevations. Tolerance15mm.",
+  "results": [
+    {
+      "id": "VEHICLE-PLAYER",
+      "asset": "interceptor",
+      "bottomY": 0.0605000001937151,
+      "surfaceY": 0.057,
+      "gapMetres": 0.0035000001937150957,
+      "pass": true
+    },
+    {
+      "id": "VEHICLE-PARKED",
+      "asset": "interceptor",
+      "bottomY": 0.0605000001937151,
+      "surfaceY": 0.057,
+      "gapMetres": 0.0035000001937150957,
+      "pass": true
+    },
+    {
+      "id": "HERO-SPAWN",
+      "asset": "mercenary",
+      "bottomY": 0.057,
+      "surfaceY": 0.057,
+      "gapMetres": 0,
+      "pass": true
+    },
+    {
+      "id": "SHOP-WEST",
+      "asset": "kiosk",
+      "bottomY": 0.17,
+      "surfaceY": 0.165,
+      "gapMetres": 0.0050000000000000044,
+      "pass": true
+    },
+    {
+      "id": "SHOP-EAST",
+      "asset": "kiosk",
+      "bottomY": 0.17,
+      "surfaceY": 0.165,
+      "gapMetres": 0.0050000000000000044,
+      "pass": true
+    }
+  ]
+}

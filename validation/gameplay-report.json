@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T02:55:59.024Z",
+  "url": "http://127.0.0.1:5173/?test=1",
+  "browser": "Google Chrome 152.0.7977.77",
+  "launchArgs": [
+    "--enable-webgl",
+    "--ignore-gpu-blocklist"
+  ],
+  "viewport": {
+    "width": 960,
+    "height": 650
+  },
+  "results": [
+    {
+      "test": "UI start",
+      "pass": true
+    },
+    {
+      "test": "WASD movement",
+      "pass": true,
+      "position": [
+        0,
+        1.75,
+        17.929639999999996
+      ]
+    },
+    {
+      "test": "Pause/resume UI",
+      "pass": true
+    },
+    {
+      "test": "High-speed bumper ram destroys intact crate before collision",
+      "pass": true,
+      "speed": 29.68137560479055,
+      "debris": 64
+    },
+    {
+      "test": "Enter / drive / exit actual keyboard",
+      "pass": true,
+      "speed": 10.07344862841731,
+      "position": [
+        6,
+        1.75,
+        11.227603859898904
+      ]
+    },
+    {
+      "test": "E exits vehicle into clear space after ram",
+      "pass": true,
+      "position": [
+        9,
+        1.75,
+        -24.286123004038135
+      ]
+    },
+    {
+      "test": "Walking into intact crate is blocked",
+      "pass": true,
+      "stoppedAt": [
+        -5.7,
+        1.75,
+        -10.791259999999996
+      ]
+    },
+    {
+      "test": "Weapon ammo and crate destruction",
+      "pass": true,
+      "ammo": 22,
+      "debris": 96
+    },
+    {
+      "test": "Keyboard reload",
+      "pass": true
+    },
+    {
+      "test": "Drone combat through player weapon",
+      "pass": true,
+      "kills": 1
+    },
+    {
+      "test": "Keyboard EMP and debris cap",
+      "pass": true,
+      "debris": 120
+    },
+    {
+      "test": "Three relays / extraction / completion dialog via E",
+      "pass": true,
+      "health": 89
+    },
+    {
+      "test": "Replay button restores mission / health / ammo / vehicle / debris",
+      "pass": true
+    },
+    {
+      "test": "Death and retry",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "final": {
+    "ready": true,
+    "mode": "playing",
+    "position": [
+      0,
+      1.75,
+      20
+    ],
+    "health": 100,
+    "energy": 100,
+    "ammo": 24,
+    "carSpeed": 0,
+    "inVehicle": false,
+    "elapsed": 0,
+    "state": {
+      "kills": 0,
+      "totalDrones": 4,
+      "relaysHacked": 0,
+      "totalRelays": 3,
+      "complete": false,
+      "objective": "BREACH RELAY 1 / 3",
+      "interactPrompt": "",
+      "remainingTargets": [
+        {
+          "x": 0,
+          "z": -28
+        },
+        {
+          "x": -3,
+          "z": -55
+        },
+        {
+          "x": 3,
+          "z": -90
+        },
+        {
+          "x": 0,
+          "z": -120
+        }
+      ],
+      "debrisCount": 0,
+      "relays": [
+        {
+          "x": -8,
+          "z": -22,
+          "hacked": false
+        },
+        {
+          "x": 8,
+          "z": -65,
+          "hacked": false
+        },
+        {
+          "x": -8,
+          "z": -110,
+          "hacked": false
+        }
+      ],
+      "extraction": {
+        "x": 0,
+        "z": -135,
+        "unlocked": false
+      },
+      "targetPosition": {
+        "x": -8,
+        "y": 0,
+        "z": -22
+      }
+    },
+    "drawCalls": 42,
+    "triangles": 186622,
+    "averageFPS": 47
+  }
+}

@@ -1,0 +1,2287 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:02:18.322188+00:00",
+  "method": "Complete native city regeneration from the final structural layout followed by fresh reopen. Checks compare embedded source blueprint/catalog, actual image-plane vertex dimensions, packed raster assets, character geometry, shared anchors, and vehicle animation.",
+  "freshReopenVerified": true,
+  "citySHA256": "01ea648e3ff39e5082ccece3bfabad122befc11004c78d596b4ec7a297f3a473",
+  "packedImages": [
+    "advert-portrait.png",
+    "advert-kuro-optics.png",
+    "advert-axiom.png",
+    "advert-orbital.png",
+    "advert-noodle.png",
+    "advert-recast.png",
+    "advert-kinkeep.png",
+    "advert-everon.png",
+    "advert-quietus.png",
+    "advert-vyra.png",
+    "advert-grinpop.png",
+    "advert-syntask.png",
+    "advert-nesto.png",
+    "advert-irisyn.png",
+    "advert-else.png",
+    "advert-vesper-arc.png",
+    "advert-synthsilk.png"
+  ],
+  "campaigns": [
+    {
+      "id": "kuro-optics",
+      "file": "advert-kuro-optics.png",
+      "label": "KURO OPTICS",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#b9ed52",
+      "districts": [
+        "Meridian East",
+        "Iron Docks"
+      ],
+      "index": 0,
+      "nativePlacements": 10,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "axiom",
+      "file": "advert-axiom.png",
+      "label": "AXIOM",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#fa634f",
+      "districts": [
+        "Stacktown",
+        "Meridian East"
+      ],
+      "index": 1,
+      "nativePlacements": 19,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "orbital",
+      "file": "advert-orbital.png",
+      "label": "OFFWORLD",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#9990ff",
+      "districts": [
+        "Crown Plaza",
+        "Iron Docks"
+      ],
+      "index": 2,
+      "nativePlacements": 12,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "noodle",
+      "file": "advert-noodle.png",
+      "label": "MIDNIGHT RAMEN",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#ffac56",
+      "districts": [
+        "Lantern Market",
+        "Stacktown"
+      ],
+      "index": 3,
+      "nativePlacements": 1,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "recast",
+      "file": "advert-recast.png",
+      "label": "RECAST",
+      "aspectRatio": 1.7777777777777777,
+      "tint": "#f090ce",
+      "districts": [
+        "Meridian East",
+        "Stacktown"
+      ],
+      "index": 4,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "kinkeep",
+      "file": "advert-kinkeep.png",
+      "label": "KINKEEP",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#ecb977",
+      "districts": [
+        "Stacktown",
+        "Lantern Market"
+      ],
+      "index": 5,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "everon",
+      "file": "advert-everon.png",
+      "label": "EVERON",
+      "aspectRatio": 1.7777777777777777,
+      "tint": "#c7e5ae",
+      "districts": [
+        "Crown Plaza",
+        "Meridian East"
+      ],
+      "index": 6,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "quietus",
+      "file": "advert-quietus.png",
+      "label": "QUIETUS",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#addcd7",
+      "districts": [
+        "Meridian East",
+        "Crown Plaza"
+      ],
+      "index": 7,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "vyra",
+      "file": "advert-vyra.png",
+      "label": "VYRA",
+      "aspectRatio": 1.7777777777777777,
+      "tint": "#ec71d6",
+      "districts": [
+        "Stacktown",
+        "Lantern Market"
+      ],
+      "index": 8,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "grinpop",
+      "file": "advert-grinpop.png",
+      "label": "GRINPOP",
+      "aspectRatio": 1.7777777777777777,
+      "tint": "#f2bb60",
+      "districts": [
+        "Lantern Market",
+        "Iron Docks"
+      ],
+      "index": 9,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "syntask",
+      "file": "advert-syntask.png",
+      "label": "SYNTASK",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#acda63",
+      "districts": [
+        "Iron Docks",
+        "Meridian East"
+      ],
+      "index": 10,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "nesto",
+      "file": "advert-nesto.png",
+      "label": "NESTO",
+      "aspectRatio": 0.8,
+      "tint": "#a99ce4",
+      "districts": [
+        "Stacktown",
+        "Crown Plaza"
+      ],
+      "index": 11,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "id": "irisyn",
+      "file": "advert-irisyn.png",
+      "label": "IRISYN",
+      "aspectRatio": 1.7777777777777777,
+      "tint": "#77deed",
+      "districts": [
+        "Meridian East",
+        "Iron Docks"
+      ],
+      "index": 12,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "else",
+      "file": "advert-else.png",
+      "label": "ELSE",
+      "aspectRatio": 1.7777777777777777,
+      "tint": "#e9a3ce",
+      "districts": [
+        "Crown Plaza",
+        "Lantern Market"
+      ],
+      "index": 13,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "vesper-arc",
+      "file": "advert-vesper-arc.png",
+      "label": "VESPER ARC",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#98b9ee",
+      "districts": [
+        "Crown Plaza",
+        "Iron Docks"
+      ],
+      "index": 14,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "synthsilk",
+      "file": "advert-synthsilk.png",
+      "label": "SYNTHSILK",
+      "aspectRatio": 0.6666666666666666,
+      "tint": "#e691cf",
+      "districts": [
+        "Stacktown",
+        "Crown Plaza"
+      ],
+      "index": 15,
+      "nativePlacements": 4,
+      "imagePixels": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "newPlacements": [
+    {
+      "signId": "AD069",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Lantern Market",
+      "chunk": "block-30",
+      "x": -322.7,
+      "y": 20,
+      "z": 78.84,
+      "w": 8,
+      "h": 12,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B172",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -305,
+        "y": 1.75,
+        "z": 78.84
+      },
+      "roadName": "Avenue -310",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD594",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Lantern Market",
+      "chunk": "block-0",
+      "x": -236.7,
+      "y": 13.939593301435407,
+      "z": 125.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 0,
+      "attachedTo": "B045",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -236.7,
+        "y": 1.75,
+        "z": 140
+      },
+      "roadName": "Crossway 140",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD056",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Lantern Market",
+      "chunk": "block-1",
+      "x": -116.7,
+      "y": 13.939593301435407,
+      "z": 64.7,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B048",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": 50
+      },
+      "roadName": "Crossway 50",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD085",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Lantern Market",
+      "chunk": "block-1",
+      "x": -116.7,
+      "y": 13.939593301435407,
+      "z": 125.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 0,
+      "attachedTo": "B049",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": 140
+      },
+      "roadName": "Crossway 140",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD595",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Lantern Market",
+      "chunk": "block-2",
+      "x": -14.700000000000003,
+      "y": 19.58540494744666,
+      "z": 114.2,
+      "w": 8,
+      "h": 12,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B053",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 0,
+        "y": 1.75,
+        "z": 114.2
+      },
+      "roadName": "Kasumi Avenue",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD084",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Lantern Market",
+      "chunk": "block-2",
+      "x": -25.8,
+      "y": 17.788324473520213,
+      "z": 64.7,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B052",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": -25.8,
+        "y": 1.75,
+        "z": 50
+      },
+      "roadName": "Crossway 50",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD070",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Lantern Market",
+      "chunk": "block-30",
+      "x": -322.7,
+      "y": 17.93959330143541,
+      "z": 113.16,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B173",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -310,
+        "y": 1.75,
+        "z": 101.16
+      },
+      "roadName": "Avenue -310",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD055",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Lantern Market",
+      "chunk": "block-0",
+      "x": -283.3,
+      "y": 20.479634719529592,
+      "z": 64.7,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B042",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "roadName": "Crossway 50",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD188",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Iron Docks",
+      "chunk": "block-32",
+      "x": 322.7,
+      "y": 19.335450610240393,
+      "z": 113.16,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B179",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": 113.16
+      },
+      "roadName": "Avenue 310",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD251",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Iron Docks",
+      "chunk": "block-13",
+      "x": 295.3,
+      "y": 19.46653449051082,
+      "z": -152.8,
+      "w": 8,
+      "h": 12,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B096",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "roadName": "Avenue 310",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD123",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Iron Docks",
+      "chunk": "block-13",
+      "x": 224.7,
+      "y": 18.85297321165114,
+      "z": -152.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B094",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "roadName": "Avenue 210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD110",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Iron Docks",
+      "chunk": "block-12",
+      "x": 104.7,
+      "y": 19.754589435458183,
+      "z": -152.8,
+      "w": 8,
+      "h": 12,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B090",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "roadName": "Avenue 90",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD624",
+      "campaignId": "grinpop",
+      "adIndex": 9,
+      "district": "Iron Docks",
+      "chunk": "block-12",
+      "x": 116.7,
+      "y": 19.22657371508091,
+      "z": -84.7,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 0,
+      "attachedTo": "B091",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 116.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "roadName": "East Canal Road",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD097",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Iron Docks",
+      "chunk": "block-8",
+      "x": 104.7,
+      "y": 19.97387635782361,
+      "z": 22.799999999999997,
+      "w": 8,
+      "h": 12,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B075",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": 22.799999999999997
+      },
+      "roadName": "Avenue 90",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD237",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Iron Docks",
+      "chunk": "block-9",
+      "x": 236.7,
+      "y": 18.53672895589977,
+      "z": 35.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 0,
+      "attachedTo": "B079",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 236.7,
+        "y": 1.75,
+        "z": 50
+      },
+      "roadName": "Crossway 50",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD252",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Iron Docks",
+      "chunk": "block-4",
+      "x": 183.3,
+      "y": 20.14916270673275,
+      "z": 64.7,
+      "w": 8,
+      "h": 12,
+      "ry": 3.141592653589793,
+      "attachedTo": "B060",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 183.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "roadName": "Crossway 50",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD320",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Meridian East",
+      "chunk": "block-16",
+      "x": 195.3,
+      "y": 17.93959330143541,
+      "z": -207.2,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B109",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -207.2
+      },
+      "roadName": "Avenue 210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD643",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Meridian East",
+      "chunk": "block-17",
+      "x": 224.7,
+      "y": 17.93959330143541,
+      "z": -272.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B110",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "roadName": "Avenue 210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD301",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Meridian East",
+      "chunk": "block-17",
+      "x": 295.3,
+      "y": 20,
+      "z": -272.8,
+      "w": 8,
+      "h": 12,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B112",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "roadName": "Avenue 310",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD452",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Meridian East",
+      "chunk": "block-23",
+      "x": 295.3,
+      "y": 20,
+      "z": -392.8,
+      "w": 8,
+      "h": 12,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B140",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "roadName": "Avenue 310",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD449",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Meridian East",
+      "chunk": "block-23",
+      "x": 224.7,
+      "y": 17.93959330143541,
+      "z": -392.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B138",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "roadName": "Avenue 210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD581",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Meridian East",
+      "chunk": "block-29",
+      "x": 224.7,
+      "y": 17.93959330143541,
+      "z": -512.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B166",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "roadName": "Avenue 210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD318",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Meridian East",
+      "chunk": "block-29",
+      "x": 295.3,
+      "y": 17.93959330143541,
+      "z": -512.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B168",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 310,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "roadName": "Avenue 310",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD578",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Meridian East",
+      "chunk": "block-29",
+      "x": 224.7,
+      "y": 20,
+      "z": -447.2,
+      "w": 8,
+      "h": 12,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B167",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -447.2
+      },
+      "roadName": "Avenue 210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD304",
+      "campaignId": "syntask",
+      "adIndex": 10,
+      "district": "Meridian East",
+      "chunk": "block-16",
+      "x": 104.7,
+      "y": 16,
+      "z": -207.2,
+      "w": 8,
+      "h": 12,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B107",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -207.2
+      },
+      "roadName": "Avenue 90",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD323",
+      "campaignId": "irisyn",
+      "adIndex": 12,
+      "district": "Meridian East",
+      "chunk": "block-16",
+      "x": 104.7,
+      "y": 24.785739900405922,
+      "z": -272.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B106",
+      "mountType": "campaign-rooftop-frame",
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "roadName": "Avenue 90",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD221",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Stacktown",
+      "chunk": "block-6",
+      "x": -236.7,
+      "y": 17.93959330143541,
+      "z": -55.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B068",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -236.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "roadName": "West Canal Road",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD285",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Stacktown",
+      "chunk": "block-7",
+      "x": -116.7,
+      "y": 20,
+      "z": -55.3,
+      "w": 8,
+      "h": 12,
+      "ry": 3.141592653589793,
+      "attachedTo": "B072",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "roadName": "West Canal Road",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD154",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Stacktown",
+      "chunk": "block-10",
+      "x": -283.3,
+      "y": 17.93959330143541,
+      "z": -165.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B082",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -180
+      },
+      "roadName": "Crossway -180",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD265",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Stacktown",
+      "chunk": "block-7",
+      "x": -183.3,
+      "y": 19.62299465240642,
+      "z": 35.3,
+      "w": 9,
+      "h": 11.245989304812834,
+      "ry": 0,
+      "attachedTo": "B071",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "roadName": "Crossway 50",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD206",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Stacktown",
+      "chunk": "block-11",
+      "x": -183.3,
+      "y": 20,
+      "z": -84.7,
+      "w": 8,
+      "h": 12,
+      "ry": 0,
+      "attachedTo": "B087",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": -70
+      },
+      "roadName": "West Canal Road",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD470",
+      "campaignId": "recast",
+      "adIndex": 4,
+      "district": "Stacktown",
+      "chunk": "block-14",
+      "x": -283.3,
+      "y": 17.93959330143541,
+      "z": -285.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B098",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -300
+      },
+      "roadName": "Crossway -300",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD136",
+      "campaignId": "kinkeep",
+      "adIndex": 5,
+      "district": "Stacktown",
+      "chunk": "block-15",
+      "x": -183.3,
+      "y": 20,
+      "z": -285.3,
+      "w": 8,
+      "h": 12,
+      "ry": 3.141592653589793,
+      "attachedTo": "B102",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": -300
+      },
+      "roadName": "Crossway -300",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD342",
+      "campaignId": "vyra",
+      "adIndex": 8,
+      "district": "Stacktown",
+      "chunk": "block-15",
+      "x": -116.7,
+      "y": 17.93959330143541,
+      "z": -285.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B104",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -300
+      },
+      "roadName": "Crossway -300",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD467",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Stacktown",
+      "chunk": "block-11",
+      "x": -116.7,
+      "y": 19.62299465240642,
+      "z": -165.3,
+      "w": 9,
+      "h": 11.245989304812834,
+      "ry": 3.141592653589793,
+      "attachedTo": "B088",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -180
+      },
+      "roadName": "Crossway -180",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD607",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Stacktown",
+      "chunk": "block-18",
+      "x": -283.3,
+      "y": 20,
+      "z": -405.3,
+      "w": 8,
+      "h": 12,
+      "ry": 3.141592653589793,
+      "attachedTo": "B114",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -420
+      },
+      "roadName": "Crossway -420",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD361",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Crown Plaza",
+      "chunk": "block-19",
+      "x": -195.3,
+      "y": 17.93959330143541,
+      "z": -392.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B118",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -210,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "roadName": "Avenue -210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD489",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Crown Plaza",
+      "chunk": "block-19",
+      "x": -104.7,
+      "y": 20,
+      "z": -392.8,
+      "w": 8,
+      "h": 12,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B120",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -90,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "roadName": "Avenue -90",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD414",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Crown Plaza",
+      "chunk": "block-20",
+      "x": -25.8,
+      "y": 19.62299465240642,
+      "z": -405.3,
+      "w": 9,
+      "h": 11.245989304812834,
+      "ry": 3.141592653589793,
+      "attachedTo": "B125",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -25.8,
+        "y": 1.75,
+        "z": -420
+      },
+      "roadName": "Crossway -420",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD557",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Crown Plaza",
+      "chunk": "block-20",
+      "x": -64.2,
+      "y": 17.93959330143541,
+      "z": -314.7,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 0,
+      "attachedTo": "B124",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -64.2,
+        "y": 1.75,
+        "z": -300
+      },
+      "roadName": "Crossway -300",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD385",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Crown Plaza",
+      "chunk": "block-21",
+      "x": 25.8,
+      "y": 20,
+      "z": -314.7,
+      "w": 8,
+      "h": 12,
+      "ry": 0,
+      "attachedTo": "B129",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 25.8,
+        "y": 1.75,
+        "z": -300
+      },
+      "roadName": "Crossway -300",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD541",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Crown Plaza",
+      "chunk": "block-21",
+      "x": 64.2,
+      "y": 20,
+      "z": -405.3,
+      "w": 8,
+      "h": 12,
+      "ry": 3.141592653589793,
+      "attachedTo": "B130",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 64.2,
+        "y": 1.75,
+        "z": -420
+      },
+      "roadName": "Crossway -420",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD430",
+      "campaignId": "everon",
+      "adIndex": 6,
+      "district": "Crown Plaza",
+      "chunk": "block-26",
+      "x": -64.2,
+      "y": 17.93959330143541,
+      "z": -525.3,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": 3.141592653589793,
+      "attachedTo": "B151",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -64.2,
+        "y": 1.75,
+        "z": -540
+      },
+      "roadName": "Crossway -540",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD535",
+      "campaignId": "quietus",
+      "adIndex": 7,
+      "district": "Crown Plaza",
+      "chunk": "block-27",
+      "x": 25.8,
+      "y": 20,
+      "z": -525.3,
+      "w": 8,
+      "h": 12,
+      "ry": 3.141592653589793,
+      "attachedTo": "B156",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 25.8,
+        "y": 1.75,
+        "z": -540
+      },
+      "roadName": "Crossway -540",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD512",
+      "campaignId": "nesto",
+      "adIndex": 11,
+      "district": "Crown Plaza",
+      "chunk": "block-22",
+      "x": 195.3,
+      "y": 19.62299465240642,
+      "z": -327.2,
+      "w": 9,
+      "h": 11.245989304812834,
+      "ry": 1.5707963267948966,
+      "attachedTo": "B136",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 210,
+        "y": 1.75,
+        "z": -327.2
+      },
+      "roadName": "Avenue 210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD367",
+      "campaignId": "else",
+      "adIndex": 13,
+      "district": "Crown Plaza",
+      "chunk": "block-25",
+      "x": -195.3,
+      "y": 17.93959330143541,
+      "z": -512.8,
+      "w": 14,
+      "h": 7.8791866028708135,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B146",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -210,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "roadName": "Avenue -210",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD560",
+      "campaignId": "vesper-arc",
+      "adIndex": 14,
+      "district": "Crown Plaza",
+      "chunk": "block-28",
+      "x": 104.7,
+      "y": 20,
+      "z": -512.8,
+      "w": 8,
+      "h": 12,
+      "ry": -1.5707963267948966,
+      "attachedTo": "B161",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": 90,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "roadName": "Avenue 90",
+      "visibilitySamples": 25
+    },
+    {
+      "signId": "AD383",
+      "campaignId": "synthsilk",
+      "adIndex": 15,
+      "district": "Crown Plaza",
+      "chunk": "block-25",
+      "x": -116.7,
+      "y": 20,
+      "z": -525.3,
+      "w": 8,
+      "h": 12,
+      "ry": 3.141592653589793,
+      "attachedTo": "B148",
+      "mountType": "campaign-wall-frame",
+      "roadVantage": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -540
+      },
+      "roadName": "Crossway -540",
+      "visibilitySamples": 25
+    }
+  ],
+  "imagePanels": 91,
+  "panelChecks": [
+    {
+      "signId": "AD033",
+      "file": "advert-portrait.png",
+      "dimensions": [
+        7.680000477309013,
+        13.439999653952459
+      ],
+      "mountType": "freestanding-frame",
+      "attachedTo": "HERO-AD-FRAME"
+    },
+    {
+      "signId": "AD036",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        8.06399876133816,
+        12.096000678814258
+      ],
+      "mountType": "rooftop-cantilever-frame",
+      "attachedTo": "B017"
+    },
+    {
+      "signId": "AD037",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        4.991999430650992,
+        7.487999024741606
+      ],
+      "mountType": "rooftop-cantilever-frame",
+      "attachedTo": "B004"
+    },
+    {
+      "signId": "AD041",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        6.144000108659267,
+        9.215988314488738
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B030"
+    },
+    {
+      "signId": "AD055",
+      "file": "advert-else.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564020177466292
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B042"
+    },
+    {
+      "signId": "AD056",
+      "file": "advert-grinpop.png",
+      "dimensions": [
+        13.439994544981802,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B048"
+    },
+    {
+      "signId": "AD069",
+      "file": "advert-kinkeep.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B172"
+    },
+    {
+      "signId": "AD070",
+      "file": "advert-grinpop.png",
+      "dimensions": [
+        13.439994544981802,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B173"
+    },
+    {
+      "signId": "AD083",
+      "file": "advert-noodle.png",
+      "dimensions": [
+        3.8399963659030885,
+        5.760000074704488
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B051"
+    },
+    {
+      "signId": "AD084",
+      "file": "advert-vyra.png",
+      "dimensions": [
+        13.440000789279006,
+        7.564018160180412
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B052"
+    },
+    {
+      "signId": "AD085",
+      "file": "advert-else.png",
+      "dimensions": [
+        13.439994544981802,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B049"
+    },
+    {
+      "signId": "AD097",
+      "file": "advert-syntask.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B075"
+    },
+    {
+      "signId": "AD098",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        2.246398905052016,
+        3.369600002649639
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B056"
+    },
+    {
+      "signId": "AD110",
+      "file": "advert-vesper-arc.png",
+      "dimensions": [
+        7.679992731806177,
+        11.519999487135134
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B090"
+    },
+    {
+      "signId": "AD111",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.456001292104833,
+        5.183999960534367
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B060"
+    },
+    {
+      "signId": "AD122",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.840011639577391,
+        5.760000074704488
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B063"
+    },
+    {
+      "signId": "AD123",
+      "file": "advert-irisyn.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B094"
+    },
+    {
+      "signId": "AD124",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.456001292104833,
+        5.183999960534367
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B064"
+    },
+    {
+      "signId": "AD136",
+      "file": "advert-kinkeep.png",
+      "dimensions": [
+        7.679992731806177,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B102"
+    },
+    {
+      "signId": "AD139",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.456001292104833,
+        5.183999040709513
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B068"
+    },
+    {
+      "signId": "AD154",
+      "file": "advert-vyra.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B082"
+    },
+    {
+      "signId": "AD157",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        2.8799972226871238,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B072"
+    },
+    {
+      "signId": "AD172",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.8399963659030885,
+        5.760000074704488
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B075"
+    },
+    {
+      "signId": "AD173",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        4.032001514025812,
+        6.04799970867015
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B074"
+    },
+    {
+      "signId": "AD174",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.456001292104833,
+        5.183999960534367
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B076"
+    },
+    {
+      "signId": "AD188",
+      "file": "advert-grinpop.png",
+      "dimensions": [
+        13.439994544981802,
+        7.564019168823419
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B179"
+    },
+    {
+      "signId": "AD189",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        3.456001292104833,
+        5.183999960534367
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B080"
+    },
+    {
+      "signId": "AD203",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        2.8799896065206543,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B082"
+    },
+    {
+      "signId": "AD206",
+      "file": "advert-synthsilk.png",
+      "dimensions": [
+        7.679992731806177,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B087"
+    },
+    {
+      "signId": "AD219",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.8399963659030885,
+        5.760000074704488
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B087"
+    },
+    {
+      "signId": "AD221",
+      "file": "advert-recast.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B068"
+    },
+    {
+      "signId": "AD224",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        2.8799896065206543,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B088"
+    },
+    {
+      "signId": "AD237",
+      "file": "advert-irisyn.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B079"
+    },
+    {
+      "signId": "AD238",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.456008880647976,
+        5.183999592604445
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B092"
+    },
+    {
+      "signId": "AD251",
+      "file": "advert-syntask.png",
+      "dimensions": [
+        7.679992731806177,
+        11.519999487135134
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B096"
+    },
+    {
+      "signId": "AD252",
+      "file": "advert-vesper-arc.png",
+      "dimensions": [
+        7.679992731806177,
+        11.519999487135134
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B060"
+    },
+    {
+      "signId": "AD265",
+      "file": "advert-nesto.png",
+      "dimensions": [
+        8.639999394593394,
+        10.796149266718102
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B071"
+    },
+    {
+      "signId": "AD267",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B098"
+    },
+    {
+      "signId": "AD270",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.455993703545027,
+        5.183999040709513
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B100"
+    },
+    {
+      "signId": "AD285",
+      "file": "advert-kinkeep.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B072"
+    },
+    {
+      "signId": "AD288",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B104"
+    },
+    {
+      "signId": "AD301",
+      "file": "advert-quietus.png",
+      "dimensions": [
+        7.680023279154782,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B112"
+    },
+    {
+      "signId": "AD304",
+      "file": "advert-syntask.png",
+      "dimensions": [
+        7.679992731806177,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B107"
+    },
+    {
+      "signId": "AD318",
+      "file": "advert-everon.png",
+      "dimensions": [
+        13.440033146045321,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B168"
+    },
+    {
+      "signId": "AD320",
+      "file": "advert-recast.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B109"
+    },
+    {
+      "signId": "AD323",
+      "file": "advert-irisyn.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564018160180412
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B106"
+    },
+    {
+      "signId": "AD339",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B114"
+    },
+    {
+      "signId": "AD342",
+      "file": "advert-vyra.png",
+      "dimensions": [
+        13.439994544981802,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B104"
+    },
+    {
+      "signId": "AD361",
+      "file": "advert-everon.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B118"
+    },
+    {
+      "signId": "AD364",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B120"
+    },
+    {
+      "signId": "AD367",
+      "file": "advert-else.png",
+      "dimensions": [
+        13.440033146045321,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B146"
+    },
+    {
+      "signId": "AD383",
+      "file": "advert-synthsilk.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B148"
+    },
+    {
+      "signId": "AD385",
+      "file": "advert-vesper-arc.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B129"
+    },
+    {
+      "signId": "AD388",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        2.879974374127291,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B125"
+    },
+    {
+      "signId": "AD391",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        4.032012867271237,
+        6.048000339407129
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B127"
+    },
+    {
+      "signId": "AD408",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.455993703545027,
+        5.183999040709513
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B128"
+    },
+    {
+      "signId": "AD411",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B130"
+    },
+    {
+      "signId": "AD414",
+      "file": "advert-nesto.png",
+      "dimensions": [
+        8.640001160656887,
+        10.796149266718102
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B125"
+    },
+    {
+      "signId": "AD430",
+      "file": "advert-everon.png",
+      "dimensions": [
+        13.439998518625814,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B151"
+    },
+    {
+      "signId": "AD433",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        3.455993703545027,
+        5.183999040709513
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B135"
+    },
+    {
+      "signId": "AD436",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B137"
+    },
+    {
+      "signId": "AD447",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        3.8399963659030885,
+        5.760000074704488
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B139"
+    },
+    {
+      "signId": "AD449",
+      "file": "advert-irisyn.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B138"
+    },
+    {
+      "signId": "AD452",
+      "file": "advert-syntask.png",
+      "dimensions": [
+        7.680023279154782,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B140"
+    },
+    {
+      "signId": "AD467",
+      "file": "advert-nesto.png",
+      "dimensions": [
+        8.639999394593394,
+        10.796149266718102
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B088"
+    },
+    {
+      "signId": "AD470",
+      "file": "advert-recast.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B098"
+    },
+    {
+      "signId": "AD489",
+      "file": "advert-quietus.png",
+      "dimensions": [
+        7.680023279154782,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B120"
+    },
+    {
+      "signId": "AD492",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B148"
+    },
+    {
+      "signId": "AD495",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        3.455993703545027,
+        5.183999040709513
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B150"
+    },
+    {
+      "signId": "AD510",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        3.8399963659030885,
+        5.760000074704488
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B152"
+    },
+    {
+      "signId": "AD512",
+      "file": "advert-nesto.png",
+      "dimensions": [
+        8.63998394152244,
+        10.796149266718102
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B136"
+    },
+    {
+      "signId": "AD515",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B153"
+    },
+    {
+      "signId": "AD518",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        4.032012867271237,
+        6.048000339407129
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B155"
+    },
+    {
+      "signId": "AD535",
+      "file": "advert-quietus.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B156"
+    },
+    {
+      "signId": "AD538",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B158"
+    },
+    {
+      "signId": "AD541",
+      "file": "advert-synthsilk.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B130"
+    },
+    {
+      "signId": "AD557",
+      "file": "advert-else.png",
+      "dimensions": [
+        13.439998518625814,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B124"
+    },
+    {
+      "signId": "AD560",
+      "file": "advert-vesper-arc.png",
+      "dimensions": [
+        7.680023279154782,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B161"
+    },
+    {
+      "signId": "AD563",
+      "file": "advert-orbital.png",
+      "dimensions": [
+        2.8800048388334525,
+        4.319999697296697
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B165"
+    },
+    {
+      "signId": "AD576",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        3.8399963659030885,
+        5.760000074704488
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B167"
+    },
+    {
+      "signId": "AD578",
+      "file": "advert-quietus.png",
+      "dimensions": [
+        7.680023279154782,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B167"
+    },
+    {
+      "signId": "AD581",
+      "file": "advert-recast.png",
+      "dimensions": [
+        13.440033146045321,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B166"
+    },
+    {
+      "signId": "AD594",
+      "file": "advert-vyra.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B045"
+    },
+    {
+      "signId": "AD595",
+      "file": "advert-kinkeep.png",
+      "dimensions": [
+        7.680000182390211,
+        11.520000149408975
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B053"
+    },
+    {
+      "signId": "AD607",
+      "file": "advert-synthsilk.png",
+      "dimensions": [
+        7.680023279154782,
+        11.520000149408975
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B114"
+    },
+    {
+      "signId": "AD610",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.4560241956570263,
+        5.183999040709513
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B176"
+    },
+    {
+      "signId": "AD624",
+      "file": "advert-grinpop.png",
+      "dimensions": [
+        13.439994544981802,
+        7.564019168823419
+      ],
+      "mountType": "campaign-rooftop-frame",
+      "attachedTo": "B091"
+    },
+    {
+      "signId": "AD625",
+      "file": "advert-axiom.png",
+      "dimensions": [
+        3.1449585428825917,
+        4.717439583218154
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B178"
+    },
+    {
+      "signId": "AD626",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        3.456001292104833,
+        5.183999960534367
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B180"
+    },
+    {
+      "signId": "AD640",
+      "file": "advert-kuro-optics.png",
+      "dimensions": [
+        3.1449585428825917,
+        4.717439583218154
+      ],
+      "mountType": "wall-panel",
+      "attachedTo": "B182"
+    },
+    {
+      "signId": "AD643",
+      "file": "advert-everon.png",
+      "dimensions": [
+        13.440002492268649,
+        7.564019168823419
+      ],
+      "mountType": "campaign-wall-frame",
+      "attachedTo": "B110"
+    }
+  ],
+  "counts": {
+    "nativeVoxelModules": 151886,
+    "buildings": 185,
+    "editableSigns": 646,
+    "structuralSupports": 3666,
+    "groundedPhysicalBins": 12
+  },
+  "trafficMovementOver30FramesMetres": 8.600006156741754,
+  "sharedAnchorsChecked": [
+    "VEHICLE-PLAYER",
+    "VEHICLE-PARKED",
+    "HERO-SPAWN",
+    "SHOP-WEST",
+    "SHOP-EAST",
+    "AIRCRAFT-HERO"
+  ]
+}

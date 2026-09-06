@@ -1,0 +1,14 @@
+.git
+.vercel
+node_modules
+dist
+blender/*.blend*
+blender/*.png
+blender/*.py
+blender/__pycache__
+validation
+*.zip
+*.blend*
+*.log
+__pycache__
+.env*

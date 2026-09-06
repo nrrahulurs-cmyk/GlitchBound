@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "First rendered frame clears hero capsule and owned car; pedestrian-occupied spawn defers",
+      "pass": true
+    },
+    {
+      "name": "Owned car parked with player far away, 300 seconds",
+      "pass": true,
+      "stopped": 2
+    },
+    {
+      "name": "Occupied rotated car near a turn, 180 seconds",
+      "pass": true
+    },
+    {
+      "name": "Blocked authored spawn waits invisible/noncollidable and activates only when clear",
+      "pass": true
+    },
+    {
+      "name": "Twelve reset orientations protect owned car before any rendered frame",
+      "pass": true
+    },
+    {
+      "name": "Continuous lap-wrap movement, 1200 seconds",
+      "pass": true,
+      "laps": 23
+    }
+  ],
+  "frames": 16912,
+  "activeVehiclePairs": 587760
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:21:11.072Z",
+  "method": "Production simulation and civilian voxel/physics service; no injected damage. Independent geometry fixtures exercise camera/muzzle parallax, containment, near-cover checks, floor/slab normals, and actual effect geometry through delayed chain explosions.",
+  "results": [
+    {
+      "test": "Pure camera trace does not damage, emit events, spawn VFX, or mutate caller vectors",
+      "pass": true
+    },
+    {
+      "test": "Exact offset muzzle converges on camera-selected body point and preserves 60-damage, homicide and reset semantics",
+      "pass": true
+    },
+    {
+      "test": "Camera-clear target is protected by a thin obstacle on the actual muzzle trajectory",
+      "pass": true
+    },
+    {
+      "test": "Eye-to-muzzle cover guard prevents a barrel clipping through a thin wall from damaging the person beyond it",
+      "pass": true
+    },
+    {
+      "test": "A muzzle or eye contained in cover stays blocked at zero distance",
+      "pass": true
+    },
+    {
+      "test": "Ground rays hit the physical floor and raised pavement top with upward normals",
+      "pass": true
+    },
+    {
+      "test": "Rotated street boxes yield their actual sloped face and a world-space outward normal",
+      "pass": true
+    },
+    {
+      "test": "Player bullets and bullet-triggered drone, crate and delayed chain deaths create no line or sphere effects",
+      "pass": true
+    },
+    {
+      "test": "Misses keep the exact muzzle origin and finite unit trajectory without false target hits",
+      "pass": true
+    }
+  ]
+}

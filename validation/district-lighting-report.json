@@ -1,0 +1,789 @@
+{
+  "status": "passed",
+  "beforeBuild": "/assets/index-DPcirZkr.js",
+  "afterBuild": "/assets/index-D_uUROj4.js",
+  "views": 12,
+  "findings": [
+    "Nearby district geometry and ground were present; no disappearance was found in twelve avenue, boundary and courtyard views.",
+    "Emissive neon windows and billboards were visible but did not cast light onto Standard-material walls. Very dark lower-hemisphere ambient and weak 38-candela moving shop lights left these surfaces underlit.",
+    "Disabling the reflector made the road darker; reflection, fog and exposure were preserved."
+  ],
+  "changes": {
+    "hemisphereIntensity": 0.95,
+    "hemisphereGround": "#26394d",
+    "environmentIntensity": 0.25,
+    "pooledStorefrontLights": 4,
+    "emitters": "Existing mounted wall signs, selected by proximity and smoothly faded, using their colors and real world positions.",
+    "geometryChanged": false,
+    "collidersChanged": false,
+    "correctedZeroCoordinate": true
+  },
+  "method": "Hardware Chrome, real scene and rendering. Identical setup camera positions, six districts, two city-edge views, four service courtyards. Image measurements are 8-bit sRGB luma in fixed regions; sky, moving traffic and pedestrians can occur in those regions, so these are supporting diagnostics rather than exact wall-only photometry.",
+  "performance": {
+    "meanFrameMs": 16.67333333333333,
+    "p95FrameMs": 16.799999999999272,
+    "rafFPS": 59.97600959616155,
+    "drawCalls": 383
+  },
+  "errors": [],
+  "comparisons": [
+    {
+      "name": "Kasumi Ward",
+      "nearBlocksBefore": 10,
+      "nearBlocksAfter": 10,
+      "ground": {
+        "before": {
+          "meanLuma": 51.54481499062959,
+          "medianLuma": 39.934799999999996,
+          "blackFraction": 0.00972352389878163
+        },
+        "after": {
+          "meanLuma": 59.59339189316009,
+          "medianLuma": 48.9754,
+          "blackFraction": 0.00027335207747578884
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 40.539860089346604,
+          "medianLuma": 26.2826,
+          "blackFraction": 0.19960923961046947
+        },
+        "after": {
+          "meanLuma": 45.513310967564465,
+          "medianLuma": 30.8086,
+          "blackFraction": 0.06585626278775952
+        }
+      },
+      "realMountedEmitters": []
+    },
+    {
+      "name": "Lantern Market",
+      "nearBlocksBefore": 9,
+      "nearBlocksAfter": 9,
+      "ground": {
+        "before": {
+          "meanLuma": 37.408350715396885,
+          "medianLuma": 27.147199999999998,
+          "blackFraction": 0.0039050296782255547
+        },
+        "after": {
+          "meanLuma": 47.16911363949216,
+          "medianLuma": 37.2166,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 50.06071982923944,
+          "medianLuma": 34.2966,
+          "blackFraction": 0.0012522221352623518
+        },
+        "after": {
+          "meanLuma": 57.26995799851766,
+          "medianLuma": 40.880599999999994,
+          "blackFraction": 0
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD052",
+          "distance": 18.424508134547292,
+          "position": [
+            -224.14999999999998,
+            3.46,
+            114.2
+          ]
+        },
+        {
+          "id": "AD060",
+          "distance": 18.424508134547292,
+          "position": [
+            -195.85000000000002,
+            3.46,
+            114.2
+          ]
+        },
+        {
+          "id": "AD068",
+          "distance": 26.70042134499003,
+          "position": [
+            -183.3,
+            4.25,
+            125.85000000000001
+          ]
+        },
+        {
+          "id": "AD051",
+          "distance": 40.98539373972147,
+          "position": [
+            -249.25,
+            3.46,
+            114.2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iron Docks",
+      "nearBlocksBefore": 9,
+      "nearBlocksAfter": 9,
+      "ground": {
+        "before": {
+          "meanLuma": 29.542224084660727,
+          "medianLuma": 27.121,
+          "blackFraction": 0.004420493595751328
+        },
+        "after": {
+          "meanLuma": 38.77190554201805,
+          "medianLuma": 35.89919999999999,
+          "blackFraction": 0.0027647610121836926
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 29.521418564197724,
+          "medianLuma": 24.148400000000002,
+          "blackFraction": 0.051151038114511244
+        },
+        "after": {
+          "meanLuma": 36.67681743605903,
+          "medianLuma": 30.935799999999997,
+          "blackFraction": 0.006708332867476885
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD107",
+          "distance": 17.212277594786787,
+          "position": [
+            195.85000000000002,
+            3.46,
+            114.2
+          ]
+        },
+        {
+          "id": "AD114",
+          "distance": 17.212277594786787,
+          "position": [
+            224.14999999999998,
+            3.46,
+            114.2
+          ]
+        },
+        {
+          "id": "AD121",
+          "distance": 26.764015020172128,
+          "position": [
+            236.7,
+            4.25,
+            125.85000000000001
+          ]
+        },
+        {
+          "id": "AD106",
+          "distance": 40.45494407362343,
+          "position": [
+            170.75,
+            3.46,
+            114.2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stacktown",
+      "nearBlocksBefore": 12,
+      "nearBlocksAfter": 12,
+      "ground": {
+        "before": {
+          "meanLuma": 31.05448477974943,
+          "medianLuma": 25.121000000000002,
+          "blackFraction": 0.03638706654170572
+        },
+        "after": {
+          "meanLuma": 41.57549273820923,
+          "medianLuma": 36.3152,
+          "blackFraction": 0.0020306154326772885
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 33.333150283960954,
+          "medianLuma": 20.89,
+          "blackFraction": 0.289741281962411
+        },
+        "after": {
+          "meanLuma": 42.434937985875465,
+          "medianLuma": 27.5278,
+          "blackFraction": 0.009671179883945842
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD271",
+          "distance": 14.251754277982743,
+          "position": [
+            -224.14999999999998,
+            4.8,
+            -213.29999999999998
+          ]
+        },
+        {
+          "id": "AD286",
+          "distance": 14.251754277982743,
+          "position": [
+            -195.85000000000002,
+            4.8,
+            -213.29999999999998
+          ]
+        },
+        {
+          "id": "AD262",
+          "distance": 16.157428632056508,
+          "position": [
+            -224.14999999999998,
+            3.46,
+            -207.2
+          ]
+        },
+        {
+          "id": "AD275",
+          "distance": 16.157428632056508,
+          "position": [
+            -195.85000000000002,
+            3.46,
+            -207.2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Meridian East",
+      "nearBlocksBefore": 12,
+      "nearBlocksAfter": 12,
+      "ground": {
+        "before": {
+          "meanLuma": 37.435968747263175,
+          "medianLuma": 30.6482,
+          "blackFraction": 0
+        },
+        "after": {
+          "meanLuma": 73.71536836613133,
+          "medianLuma": 59.931799999999996,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 76.65042139117858,
+          "medianLuma": 54.07599999999999,
+          "blackFraction": 0.00022920137297212687
+        },
+        "after": {
+          "meanLuma": 105.7924193048528,
+          "medianLuma": 85.841,
+          "blackFraction": 0
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD295",
+          "distance": 22.73900833369828,
+          "position": [
+            195.85000000000002,
+            3.46,
+            -272.8
+          ]
+        },
+        {
+          "id": "AD306",
+          "distance": 22.73900833369828,
+          "position": [
+            224.14999999999998,
+            3.46,
+            -272.8
+          ]
+        },
+        {
+          "id": "AD303",
+          "distance": 27.774673715455254,
+          "position": [
+            195.85000000000002,
+            4.85,
+            -278.90000000000003
+          ]
+        },
+        {
+          "id": "AD319",
+          "distance": 27.774673715455254,
+          "position": [
+            224.14999999999998,
+            4.85,
+            -278.90000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crown Plaza",
+      "nearBlocksBefore": 12,
+      "nearBlocksAfter": 12,
+      "ground": {
+        "before": {
+          "meanLuma": 32.570560023429856,
+          "medianLuma": 23.4424,
+          "blackFraction": 0.0014058106841611997
+        },
+        "after": {
+          "meanLuma": 42.83660782413037,
+          "medianLuma": 33.6734,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 29.352944230845377,
+          "medianLuma": 13.302,
+          "blackFraction": 0.3652407732471685
+        },
+        "after": {
+          "meanLuma": 35.952449487353185,
+          "medianLuma": 21.306,
+          "blackFraction": 0.06610223499290034
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD373",
+          "distance": 14.941971088179772,
+          "position": [
+            -14.150000000000002,
+            3.46,
+            -392.8
+          ]
+        },
+        {
+          "id": "AD392",
+          "distance": 14.941971088179772,
+          "position": [
+            14.150000000000002,
+            3.46,
+            -392.8
+          ]
+        },
+        {
+          "id": "AD407",
+          "distance": 14.941971088179772,
+          "position": [
+            14.150000000000002,
+            4.75,
+            -392.8
+          ]
+        },
+        {
+          "id": "AD387",
+          "distance": 17.86148090164981,
+          "position": [
+            -14.150000000000002,
+            4.75,
+            -398.90000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Northwest edge",
+      "nearBlocksBefore": 5,
+      "nearBlocksAfter": 5,
+      "ground": {
+        "before": {
+          "meanLuma": 73.28549638708327,
+          "medianLuma": 72.2298,
+          "blackFraction": 0.007122774133083412
+        },
+        "after": {
+          "meanLuma": 113.80178909723224,
+          "medianLuma": 111.37019999999998,
+          "blackFraction": 0.000429553264604811
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 31.441976393935274,
+          "medianLuma": 25.2746,
+          "blackFraction": 0.22796033139164365
+        },
+        "after": {
+          "meanLuma": 45.95474540758793,
+          "medianLuma": 31.531799999999997,
+          "blackFraction": 0.0065573953779586545
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD466",
+          "distance": 27.946958689632083,
+          "position": [
+            -295.84999999999997,
+            4.8,
+            -518.9
+          ]
+        },
+        {
+          "id": "AD454",
+          "distance": 33.35059969475817,
+          "position": [
+            -295.84999999999997,
+            3.46,
+            -512.8
+          ]
+        },
+        {
+          "id": "AD456",
+          "distance": 49.523756925338354,
+          "position": [
+            -270.75000000000006,
+            3.46,
+            -512.8
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Southeast edge",
+      "nearBlocksBefore": 5,
+      "nearBlocksAfter": 5,
+      "ground": {
+        "before": {
+          "meanLuma": 31.604541246484633,
+          "medianLuma": 28.912399999999998,
+          "blackFraction": 0.0038503592627303967
+        },
+        "after": {
+          "meanLuma": 67.8018134989153,
+          "medianLuma": 47.949,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 31.151522953694716,
+          "medianLuma": 26.202399999999997,
+          "blackFraction": 0.03054527565657808
+        },
+        "after": {
+          "meanLuma": 48.04740850340261,
+          "medianLuma": 34.989799999999995,
+          "blackFraction": 0
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD623",
+          "distance": 36.40534164102843,
+          "position": [
+            327.08,
+            4.25,
+            123.85000000000001
+          ]
+        },
+        {
+          "id": "AD120",
+          "distance": 44.130063448855374,
+          "position": [
+            295.84999999999997,
+            3.46,
+            114.2
+          ]
+        },
+        {
+          "id": "AD615",
+          "distance": 44.529631707437254,
+          "position": [
+            322.15000000000003,
+            3.46,
+            113.16
+          ]
+        },
+        {
+          "id": "AD620",
+          "distance": 48.15418673386565,
+          "position": [
+            331.99000000000007,
+            3.46,
+            113.16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Market service courtyard",
+      "nearBlocksBefore": 8,
+      "nearBlocksAfter": 8,
+      "ground": {
+        "before": {
+          "meanLuma": 26.065674917224342,
+          "medianLuma": 25.7994,
+          "blackFraction": 0.09232271165260857
+        },
+        "after": {
+          "meanLuma": 40.09728752734407,
+          "medianLuma": 38.7994,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 36.723824248371955,
+          "medianLuma": 18.9318,
+          "blackFraction": 0.167043078677564
+        },
+        "after": {
+          "meanLuma": 45.53980485403828,
+          "medianLuma": 30.361,
+          "blackFraction": 0.0021969790140986796
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD051",
+          "distance": 21.137703281104123,
+          "position": [
+            -249.25,
+            3.46,
+            114.2
+          ]
+        },
+        {
+          "id": "AD048",
+          "distance": 21.137703281104155,
+          "position": [
+            -270.75000000000006,
+            3.46,
+            114.2
+          ]
+        },
+        {
+          "id": "AD049",
+          "distance": 22.88236220323418,
+          "position": [
+            -249.25,
+            3.46,
+            75.8
+          ]
+        },
+        {
+          "id": "AD045",
+          "distance": 22.8823622032342,
+          "position": [
+            -270.75000000000006,
+            3.46,
+            75.8
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dock service lane",
+      "nearBlocksBefore": 11,
+      "nearBlocksAfter": 11,
+      "ground": {
+        "before": {
+          "meanLuma": 21.057648178691924,
+          "medianLuma": 22.799400000000002,
+          "blackFraction": 0.23784754764136207
+        },
+        "after": {
+          "meanLuma": 33.55839662605078,
+          "medianLuma": 35.306,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 23.921601296955288,
+          "medianLuma": 20.768,
+          "blackFraction": 0.2663431759483906
+        },
+        "after": {
+          "meanLuma": 34.437598821016095,
+          "medianLuma": 26.989799999999995,
+          "blackFraction": 0.00003074652564260239
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD164",
+          "distance": 30.740892960354937,
+          "position": [
+            129.25,
+            3.46,
+            22.799999999999997
+          ]
+        },
+        {
+          "id": "AD161",
+          "distance": 38.33800333872383,
+          "position": [
+            129.25,
+            3.46,
+            -42.8
+          ]
+        },
+        {
+          "id": "AD168",
+          "distance": 42.1307785354128,
+          "position": [
+            170.75,
+            3.46,
+            22.799999999999997
+          ]
+        },
+        {
+          "id": "AD162",
+          "distance": 45.98545965846161,
+          "position": [
+            104.14999999999999,
+            3.46,
+            22.799999999999997
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stacktown service court",
+      "nearBlocksBefore": 14,
+      "nearBlocksAfter": 14,
+      "ground": {
+        "before": {
+          "meanLuma": 24.280994532974894,
+          "medianLuma": 23.446399999999997,
+          "blackFraction": 0.08206810371758826
+        },
+        "after": {
+          "meanLuma": 37.47181485318044,
+          "medianLuma": 36.1616,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 23.3624954321823,
+          "medianLuma": 10.302,
+          "blackFraction": 0.5287507966145281
+        },
+        "after": {
+          "meanLuma": 29.149564847718302,
+          "medianLuma": 18.1616,
+          "blackFraction": 0.2915413512818506
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD274",
+          "distance": 38.81240136863475,
+          "position": [
+            -170.75,
+            3.46,
+            -272.8
+          ]
+        },
+        {
+          "id": "AD277",
+          "distance": 38.81240136863475,
+          "position": [
+            -170.75,
+            3.46,
+            -207.2
+          ]
+        },
+        {
+          "id": "AD278",
+          "distance": 38.81240136863475,
+          "position": [
+            -129.25,
+            3.46,
+            -272.8
+          ]
+        },
+        {
+          "id": "AD281",
+          "distance": 38.81240136863475,
+          "position": [
+            -129.25,
+            3.46,
+            -207.2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crown inner court",
+      "nearBlocksBefore": 14,
+      "nearBlocksAfter": 14,
+      "ground": {
+        "before": {
+          "meanLuma": 50.55809338329593,
+          "medianLuma": 51.1616,
+          "blackFraction": 0
+        },
+        "after": {
+          "meanLuma": 121.27026669014903,
+          "medianLuma": 113.3048,
+          "blackFraction": 0
+        }
+      },
+      "facades": {
+        "before": {
+          "meanLuma": 56.856251561356835,
+          "medianLuma": 28.7456,
+          "blackFraction": 0.04100468465245245
+        },
+        "after": {
+          "meanLuma": 91.68665511126125,
+          "medianLuma": 70.7338,
+          "blackFraction": 0.0007938193893180979
+        }
+      },
+      "realMountedEmitters": [
+        {
+          "id": "AD402",
+          "distance": 11.584580268615694,
+          "position": [
+            35.45,
+            3.46,
+            -360
+          ]
+        },
+        {
+          "id": "AD413",
+          "distance": 29.58314553931004,
+          "position": [
+            54.55,
+            4.75,
+            -363.6
+          ]
+        },
+        {
+          "id": "AD392",
+          "distance": 29.842293812641152,
+          "position": [
+            14.150000000000002,
+            3.46,
+            -392.8
+          ]
+        },
+        {
+          "id": "AD407",
+          "distance": 29.842293812641152,
+          "position": [
+            14.150000000000002,
+            4.75,
+            -392.8
+          ]
+        }
+      ]
+    }
+  ]
+}

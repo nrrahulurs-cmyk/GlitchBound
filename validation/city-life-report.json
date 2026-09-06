@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T04:25:30.343Z",
+  "results": [
+    {
+      "test": "Sixteen varied neutral vehicles follow road lane loops without building collisions",
+      "pass": true,
+      "samples": 8944
+    },
+    {
+      "test": "Traffic slows and stops before reaching the player",
+      "pass": true,
+      "minimumDistance": 8.0676572788783,
+      "stoppedSpeed": 0.059031376227890175
+    },
+    {
+      "test": "Traffic resumes when clear; activity continues across the districts",
+      "pass": true
+    },
+    {
+      "test": "All instanced animations and dynamic traffic collider bounds remain finite",
+      "pass": true,
+      "drawCalls": 5,
+      "stats": {
+        "vehicles": 16,
+        "types": [
+          "taxi",
+          "van",
+          "sport",
+          "bus"
+        ],
+        "districts": [
+          {
+            "name": "Kasumi Ward",
+            "activity": "Late-night taxis and pulsing street signs"
+          },
+          {
+            "name": "Lantern Market",
+            "activity": "Delivery traffic and flickering lantern streets"
+          },
+          {
+            "name": "Iron Docks",
+            "activity": "Heavy transports and rising vent steam"
+          },
+          {
+            "name": "Stacktown",
+            "activity": "Civic buses, service beacons, and drifting paper"
+          },
+          {
+            "name": "Meridian East",
+            "activity": "Sports cars and rotating holographic arrays"
+          },
+          {
+            "name": "Crown Plaza",
+            "activity": "Quiet shuttles and orbiting light sculptures"
+          }
+        ],
+        "movingVoxelParts": 673,
+        "lanterns": 20,
+        "holograms": 3,
+        "lightSculptures": 2,
+        "steamParticles": 64,
+        "paperParticles": 28,
+        "dataMotes": 72,
+        "drawCalls": 5
+      }
+    }
+  ]
+}

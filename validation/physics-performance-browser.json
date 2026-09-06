@@ -1,0 +1,57 @@
+{
+  "checkedAtUTC": "2026-09-06T06:07:42.240Z",
+  "buildAsset": "/assets/index-DPcirZkr.js",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "method": "120 actual RAF callbacks after 120–240 warmup frames; world.step wrapped solely to time original calls. No SAT observer, physics time override, or source changes.",
+  "results": [
+    {
+      "name": "Warmed menu",
+      "frames": 120,
+      "milliseconds": 1984.2000000000007,
+      "fps": 59.973792964418884,
+      "physicsSteps": 0,
+      "worldStepMeanMs": 0,
+      "worldStepP95Ms": 0,
+      "worldBodies": 2193,
+      "shapes": 22160,
+      "awakeDynamicBodies": 0,
+      "drawCalls": 502,
+      "triangles": 2892316,
+      "mode": "menu"
+    },
+    {
+      "name": "Warmed playing at hero spawn",
+      "frames": 120,
+      "milliseconds": 1984,
+      "fps": 59.979838709677416,
+      "physicsSteps": 120,
+      "worldStepMeanMs": 0.873333332935969,
+      "worldStepP95Ms": 1,
+      "worldBodies": 2193,
+      "shapes": 22160,
+      "awakeDynamicBodies": 0,
+      "drawCalls": 436,
+      "triangles": 2875188,
+      "mode": "playing"
+    },
+    {
+      "name": "Warmed playing on street",
+      "frames": 120,
+      "milliseconds": 1984.1000000000022,
+      "fps": 59.97681568469324,
+      "physicsSteps": 120,
+      "worldStepMeanMs": 0.9433333337306976,
+      "worldStepP95Ms": 1.100000023841858,
+      "worldBodies": 2193,
+      "shapes": 22160,
+      "awakeDynamicBodies": 0,
+      "drawCalls": 205,
+      "triangles": 2754654,
+      "mode": "playing"
+    }
+  ],
+  "errors": []
+}

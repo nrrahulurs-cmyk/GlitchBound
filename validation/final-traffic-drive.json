@@ -1,0 +1,443 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T04:32:36.418Z",
+  "buildAsset": "/assets/index-B_LyL9-t.js",
+  "browser": "152.0.7977.77",
+  "method": "Real keyboard walking and driving; test teleport used only to place pedestrian for traffic checks and beside parked starter car. No vehicle transform or simulated-time override.",
+  "results": [
+    {
+      "test": "Final activity build initializes16neutral vehicles,4silhouettes,6districts,673connected vehicleparts",
+      "pass": true
+    },
+    {
+      "test": "Live traffic brakes before a pedestrian without targeting or crime",
+      "pass": true,
+      "minimumDistance": 8.042530824080018,
+      "stoppedSpeed": 0.037109474988612876
+    },
+    {
+      "test": "Real W walking is blocked by stopped traffic body; proximity remains legal",
+      "pass": true,
+      "separation": 2.7492800000000415
+    },
+    {
+      "test": "Traffic resumes when pedestrian clears its lane",
+      "pass": true,
+      "speed": 6.302520000000001
+    },
+    {
+      "test": "Actual E/WASD/handbrake driving passes the corrected skyline route with active traffic; E exits clear",
+      "pass": true,
+      "distanceMetres": 393,
+      "peakSpeedMetresPerSecond": 32,
+      "route": [
+        {
+          "x": 0,
+          "z": 0,
+          "label": "Centerline alignment"
+        },
+        {
+          "x": 0,
+          "z": -180,
+          "label": "Kasumi south junction"
+        },
+        {
+          "x": -90,
+          "z": -180,
+          "label": "West crossway"
+        },
+        {
+          "x": -90,
+          "z": -80,
+          "label": "Corrected west skyline avenue"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "final": {
+    "ready": true,
+    "mode": "playing",
+    "position": [
+      -93.03952216880239,
+      1.75,
+      -82.03350423067064
+    ],
+    "health": 100,
+    "energy": 100,
+    "ammo": 24,
+    "holstered": true,
+    "thirdPerson": false,
+    "photoMode": false,
+    "carSpeed": 0,
+    "inVehicle": false,
+    "elapsed": 37.215099999999886,
+    "city": {
+      "bounds": {
+        "minX": -350,
+        "maxX": 350,
+        "minZ": -600,
+        "maxZ": 190
+      },
+      "district": "Kasumi Ward",
+      "roadSegments": 16,
+      "layout": {
+        "voxels": 153228,
+        "signs": 646,
+        "pedestrians": 284,
+        "pedestrianVoxels": 14785,
+        "blocks": 34,
+        "roadLength": 9590
+      }
+    },
+    "life": {
+      "vehicles": 16,
+      "types": [
+        "taxi",
+        "van",
+        "sport",
+        "bus"
+      ],
+      "districts": [
+        {
+          "name": "Kasumi Ward",
+          "activity": "Late-night taxis and pulsing street signs"
+        },
+        {
+          "name": "Lantern Market",
+          "activity": "Delivery traffic and flickering lantern streets"
+        },
+        {
+          "name": "Iron Docks",
+          "activity": "Heavy transports and rising vent steam"
+        },
+        {
+          "name": "Stacktown",
+          "activity": "Civic buses, service beacons, and drifting paper"
+        },
+        {
+          "name": "Meridian East",
+          "activity": "Sports cars and rotating holographic arrays"
+        },
+        {
+          "name": "Crown Plaza",
+          "activity": "Quiet shuttles and orbiting light sculptures"
+        }
+      ],
+      "movingVoxelParts": 673,
+      "lanterns": 20,
+      "holograms": 3,
+      "lightSculptures": 2,
+      "steamParticles": 64,
+      "paperParticles": 28,
+      "dataMotes": 72,
+      "drawCalls": 5,
+      "traffic": [
+        {
+          "id": "ambient-vehicle-1",
+          "routeId": "ambient-route-1",
+          "region": "Kasumi Ward",
+          "type": "taxi",
+          "x": -43.53134762500875,
+          "z": 46,
+          "yaw": -4.712388980384688,
+          "speed": 8.6
+        },
+        {
+          "id": "ambient-vehicle-2",
+          "routeId": "ambient-route-2",
+          "region": "Kasumi Ward",
+          "type": "sport",
+          "x": 57.48706042988465,
+          "z": -184,
+          "yaw": 1.5707963267948961,
+          "speed": 10.8
+        },
+        {
+          "id": "ambient-vehicle-3",
+          "routeId": "ambient-route-3",
+          "region": "Lantern Market",
+          "type": "van",
+          "x": -138.9069701331473,
+          "z": 54,
+          "yaw": -7.853981633974482,
+          "speed": 7.2
+        },
+        {
+          "id": "ambient-vehicle-4",
+          "routeId": "ambient-route-4",
+          "region": "Lantern Market",
+          "type": "taxi",
+          "x": -296.1926008637943,
+          "z": 144,
+          "yaw": 4.712388965129051,
+          "speed": 8.6
+        },
+        {
+          "id": "ambient-vehicle-5",
+          "routeId": "ambient-route-5",
+          "region": "Iron Docks",
+          "type": "bus",
+          "x": 206,
+          "z": 68.46091461484488,
+          "yaw": -3.1415925977938546,
+          "speed": 6.7
+        },
+        {
+          "id": "ambient-vehicle-6",
+          "routeId": "ambient-route-6",
+          "region": "Iron Docks",
+          "type": "van",
+          "x": 206,
+          "z": 45.41910612697566,
+          "yaw": 3.1415926535897927,
+          "speed": 7.2
+        },
+        {
+          "id": "ambient-vehicle-7",
+          "routeId": "ambient-route-7",
+          "region": "Stacktown",
+          "type": "bus",
+          "x": -301.9712827486221,
+          "z": -295.5109989449718,
+          "yaw": -7.3874110375027895,
+          "speed": 6.7
+        },
+        {
+          "id": "ambient-vehicle-8",
+          "routeId": "ambient-route-8",
+          "region": "Stacktown",
+          "type": "van",
+          "x": -214,
+          "z": -342.4221091250455,
+          "yaw": 3.1415926535897927,
+          "speed": 7.2
+        },
+        {
+          "id": "ambient-vehicle-9",
+          "routeId": "ambient-route-9",
+          "region": "Meridian East",
+          "type": "sport",
+          "x": 166.38680944364148,
+          "z": -184,
+          "yaw": -4.712388980384688,
+          "speed": 10.8
+        },
+        {
+          "id": "ambient-vehicle-10",
+          "routeId": "ambient-route-10",
+          "region": "Meridian East",
+          "type": "sport",
+          "x": 314,
+          "z": -366.3838641108042,
+          "yaw": 6.2831853071795845,
+          "speed": 10.8
+        },
+        {
+          "id": "ambient-vehicle-11",
+          "routeId": "ambient-route-11",
+          "region": "Crown Plaza",
+          "type": "bus",
+          "x": -37.551925729898244,
+          "z": -536,
+          "yaw": -7.853981633974481,
+          "speed": 6.7
+        },
+        {
+          "id": "ambient-vehicle-12",
+          "routeId": "ambient-route-12",
+          "region": "Crown Plaza",
+          "type": "taxi",
+          "x": 0.7591544447919645,
+          "z": -296.243315507456,
+          "yaw": 4.349928684209679,
+          "speed": 8.6
+        },
+        {
+          "id": "ambient-vehicle-13",
+          "routeId": "ambient-route-13",
+          "region": "Kasumi Ward",
+          "type": "taxi",
+          "x": -94,
+          "z": -159.52240315972315,
+          "yaw": 3.1415926535893317,
+          "speed": 8.6
+        },
+        {
+          "id": "ambient-vehicle-14",
+          "routeId": "ambient-route-14",
+          "region": "Lantern Market",
+          "type": "taxi",
+          "x": -86,
+          "z": 133.14130363299103,
+          "yaw": 6.282939974828383,
+          "speed": 8.6
+        },
+        {
+          "id": "ambient-vehicle-15",
+          "routeId": "ambient-route-15",
+          "region": "Iron Docks",
+          "type": "van",
+          "x": 260.5660020684686,
+          "z": -66,
+          "yaw": -7.853981633974481,
+          "speed": 7.2
+        },
+        {
+          "id": "ambient-vehicle-16",
+          "routeId": "ambient-route-16",
+          "region": "Meridian East",
+          "type": "sport",
+          "x": 142.36667758677402,
+          "z": -304,
+          "yaw": 1.5707963267948961,
+          "speed": 10.8
+        }
+      ]
+    },
+    "state": {
+      "kills": 0,
+      "totalDrones": 12,
+      "wantedLevel": 0,
+      "heat": 0,
+      "crimeReason": "",
+      "securityState": "PATROL",
+      "searchRemaining": 0,
+      "interactPrompt": "",
+      "remainingTargets": [
+        {
+          "id": 1,
+          "region": "Kasumi Ward",
+          "x": -5,
+          "y": 4.532620657952389,
+          "z": -132.4679500000011,
+          "hostile": false
+        },
+        {
+          "id": 2,
+          "region": "Kasumi Ward",
+          "x": 5,
+          "y": 5.3859611618267484,
+          "z": 23.632480000002023,
+          "hostile": false
+        },
+        {
+          "id": 3,
+          "region": "Lantern Market",
+          "x": -90.5575910678515,
+          "y": 5.044148447600551,
+          "z": 106.25552052272654,
+          "hostile": false
+        },
+        {
+          "id": 4,
+          "region": "Lantern Market",
+          "x": -210.22732456233288,
+          "y": 5.161745854251402,
+          "z": 126.2606024669115,
+          "hostile": false
+        },
+        {
+          "id": 5,
+          "region": "Iron Docks",
+          "x": 209.44240893214547,
+          "y": 5.1306348684327405,
+          "z": 106.25552052272654,
+          "hostile": false
+        },
+        {
+          "id": 6,
+          "region": "Iron Docks",
+          "x": 309.4572905341755,
+          "y": 4.979418787030579,
+          "z": 6.265168360345549,
+          "hostile": false
+        },
+        {
+          "id": 7,
+          "region": "Stacktown",
+          "x": -210.54270946581897,
+          "y": 4.847124977917377,
+          "z": -223.7348316396571,
+          "hostile": false
+        },
+        {
+          "id": 8,
+          "region": "Stacktown",
+          "x": -90.78993986058943,
+          "y": 4.855383759087656,
+          "z": -363.74112009292423,
+          "hostile": false
+        },
+        {
+          "id": 9,
+          "region": "Meridian East",
+          "x": 209.21006013940664,
+          "y": 4.9966020452207776,
+          "z": -243.7411200929216,
+          "hostile": false
+        },
+        {
+          "id": 10,
+          "region": "Meridian East",
+          "x": 309.45729053417557,
+          "y": 5.140944395307448,
+          "z": -343.7348316396523,
+          "hostile": false
+        },
+        {
+          "id": 11,
+          "region": "Crown Plaza",
+          "x": -0.4188962532632904,
+          "y": 6.155703118346832,
+          "z": -453.73097217092993,
+          "hostile": false
+        },
+        {
+          "id": 12,
+          "region": "Crown Plaza",
+          "x": 89.5811037467381,
+          "y": 6.02730911243986,
+          "z": -333.7309721709234,
+          "hostile": false
+        }
+      ],
+      "debrisCount": 0,
+      "regions": [
+        {
+          "name": "Kasumi Ward",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Lantern Market",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Iron Docks",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Stacktown",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Meridian East",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Crown Plaza",
+          "patrols": 2,
+          "responding": 0
+        }
+      ]
+    },
+    "drawCalls": 277,
+    "triangles": 2836202,
+    "averageFPS": 60
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:00:06.402Z",
+  "coverage": "All final static city boxes, colliders, signs, supply supports, parked interceptor, kiosks, and street-life decorative props are checked. Rotating prop envelopes cover their full animation. Moving traffic and the driveable starter interceptor are validated separately.",
+  "method": {
+    "vehicleRadiusMetres": 1.45,
+    "heightIntervalMetres": [
+      0.15,
+      2.5
+    ],
+    "laneOffsetsMetres": [
+      -6,
+      0,
+      6
+    ],
+    "excluded": "Geometry wholly at or below 0.15m, and overhead geometry wholly at or above 2.5m.",
+    "signDepthMetres": 0.2
+  },
+  "physicsHash": "12e49be0ef7407c1528f414509b51153e06fa5542b1acb1f97a7a5d0fe40d39e",
+  "matchesRecordedPhysicsHash": false,
+  "collisionRoadBoundsHash": "593b561e03d9e2b2b7c458756461b6656ad40d7737b6312fd78651efe856faa0",
+  "matchesPreFacadePhysicsBaseline": false,
+  "blueprintCorrections": {
+    "movedBuildings": [
+      {
+        "sourceId": "core-building--1-34.91499774623662--83",
+        "from": {
+          "x": -41.860091709531844,
+          "z": -83
+        },
+        "to": {
+          "x": -68,
+          "z": -96
+        },
+        "reason": "Separated intersecting building envelopes; preserved all roads."
+      },
+      {
+        "sourceId": "core-building--1-30.75224528554827--111",
+        "from": {
+          "x": -38.457985003478825,
+          "z": -111
+        },
+        "to": {
+          "x": -68,
+          "z": -122
+        },
+        "reason": "Separated intersecting building envelopes; preserved all roads."
+      },
+      {
+        "sourceId": "core-building--1-33.35809141397476--139",
+        "from": {
+          "x": -40.07443140633404,
+          "z": -139
+        },
+        "to": {
+          "x": -68,
+          "z": -149
+        },
+        "reason": "Separated intersecting building envelopes; preserved all roads."
+      },
+      {
+        "sourceId": "core-building-1-36.17945636389777--96",
+        "from": {
+          "x": 43.391334861982614,
+          "z": -96
+        },
+        "to": {
+          "x": 68,
+          "z": -101
+        },
+        "reason": "Separated intersecting building envelopes; preserved all roads."
+      },
+      {
+        "sourceId": "core-building-1-37.91636866051704--124",
+        "from": {
+          "x": 45.53018318209797,
+          "z": -124
+        },
+        "to": {
+          "x": 68,
+          "z": -130
+        },
+        "reason": "Separated intersecting building envelopes; preserved all roads."
+      },
+      {
+        "sourceId": "core-tower--24--231",
+        "from": {
+          "x": -24,
+          "z": -231
+        },
+        "to": {
+          "x": -41,
+          "z": -237
+        },
+        "reason": "Separated intersecting building envelopes; preserved all roads."
+      },
+      {
+        "sourceId": "core-tower-25--233",
+        "from": {
+          "x": 25,
+          "z": -233
+        },
+        "to": {
+          "x": 41,
+          "z": -237
+        },
+        "reason": "Separated intersecting building envelopes; preserved all roads."
+      }
+    ],
+    "removedBuildings": [
+      {
+        "sourceId": "core-background-1",
+        "x": -125.4950478747487,
+        "z": -219.07282140105963,
+        "reason": "Redundant background footprint intersected another planned building."
+      },
+      {
+        "sourceId": "core-background-12",
+        "x": 137.56161458604038,
+        "z": -222.20100183039904,
+        "reason": "Redundant background footprint intersected another planned building."
+      },
+      {
+        "sourceId": "core-background-15",
+        "x": -47.34967975690961,
+        "z": -348.8866676017642,
+        "reason": "Redundant background footprint intersected another planned building."
+      },
+      {
+        "sourceId": "core-background-20",
+        "x": 124.38522773608565,
+        "z": -341.6867284104228,
+        "reason": "Redundant background footprint intersected another planned building."
+      },
+      {
+        "sourceId": "core-background-22",
+        "x": 111.88805732689798,
+        "z": -257.56616342812777,
+        "reason": "Redundant background footprint intersected another planned building."
+      }
+    ],
+    "remountedSigns": 645,
+    "removedLegacyMountParts": 279,
+    "newSupports": 3037,
+    "enlargedCampaigns": 48,
+    "replacedCampaignSupports": 240
+  },
+  "historicalDriveEvidence": "The prior 2574m drive used the earlier collider layout. It remains historical evidence; this corrected layout is independently reaudited here, with a separate final targeted driving report.",
+  "previouslyDrivenBuild": "/assets/index-CP8dLm2v.js",
+  "priorGeometryCounts": {
+    "boxes": 130785,
+    "signs": 90
+  },
+  "finalGeometryCounts": {
+    "boxes": 153998,
+    "signs": 646
+  },
+  "taggedFacadeAdditions": {
+    "boxes": 8219,
+    "signs": 384,
+    "checkedGeometryRecords": 5035
+  },
+  "taggedDistrictThemeAdditions": {
+    "boxes": 11880,
+    "signs": 172,
+    "checkedGeometryRecords": 908
+  },
+  "decorativeActivityProps": {
+    "count": 423,
+    "checkedGeometryRecords": 74
+  },
+  "checkedGeometryRecords": 20217,
+  "roadSegments": 16,
+  "laneSegments": 48,
+  "conflicts": []
+}

@@ -1,0 +1,22 @@
+{
+  "generator": "built-in image_gen",
+  "purpose": "Original distinct in-world cyberpunk voxel advertisements",
+  "prompts": [
+    {
+      "key": "kuro",
+      "prompt": "Use case: ads-marketing. Asset type: a complete original in-world advertising poster texture for a detailed cyberpunk voxel game. Portrait 2:3 full-bleed flat front-on artwork. Brand KURO OPTICS, exact large headline \"SEE BEYOND\". Subject: a huge intricate mechanical cybernetic eyeball floating over a black titanium armored hand, concentric gold optical lenses, tiny electric lime voxel diodes, precision cubic engineering. Art direction: premium three-dimensional Blender voxel render with very fine crisp cubes, dystopian cyberpunk corporate advertising, midnight black and acid lime/chartreuse with restrained ivory type. Bold asymmetric typographic hierarchy, tiny decorative interface rules and eye diagrams. Strong memorable silhouette readable at distance. Add small line \"KURO OPTICS\" at bottom, no other readable text needed. No woman or human face, no environment, no city, no mockup, no frame, no watermark. This is the advertisement itself, edge to edge."
+    },
+    {
+      "key": "axiom",
+      "prompt": "Use case: ads-marketing. Asset type: complete original in-world advertising poster texture for a detailed cyberpunk voxel game. Portrait 2:3 full-bleed flat front-on artwork. Exact large headline \"AXIOM\" with smaller \"BECOME MORE\". Subject: half of a sculptural chrome android skull and upper torso with visible mechanical neck cables and one burning red triangular optical sensor, expensive surgical metal plated into tiny stepped cubic voxel facets. Art direction: premium three-dimensional Blender voxel render with small crisp cubes, dystopian synthetic-body corporate advertising. High contrast crimson red background, icy polished silver android, ink-black negative space and bold white brutalist geometric lettering. Composition clearly distinct from female portrait or conventional beauty ad; non-human faceless mechanical android. Small technical graphic bars and industrial print texture. No cyan-haired girl, no pink face, no city, no mockup, no frame, no watermark. The image is the advertisement itself."
+    },
+    {
+      "key": "orbital",
+      "prompt": "Use case: ads-marketing. Asset type: complete original in-world advertising poster texture for a detailed cyberpunk voxel game. Portrait 2:3 full-bleed flat front-on artwork. Exact large headline \"OFFWORLD\" with smaller \"LEAVE IT ALL BELOW\". Subject: a gleaming ring-shaped orbital habitat above the giant blue crescent of Earth, a tiny angular white shuttle approaching its orange docking lights; deep ultraviolet cosmic sky. Art direction: luxurious aspirational corporate travel advertisement in a dystopian cyberpunk city, detailed three-dimensional Blender voxel illustration with many small crisp cubic voxels. Palette electric cobalt blue, ultraviolet purple, a pale cream moon and warm orange station lamps, tasteful cream condensed large headline at top and small tagline bottom. Broad readable architecture and space composition, understated technical graphic rules. No human faces, no girls, no cybernetic eye, no city street, no mockup, no frame, no watermark. The image is the advertisement itself."
+    },
+    {
+      "key": "noodle",
+      "prompt": "Use case: ads-marketing. Asset type: complete original in-world street-food advertising poster texture for a detailed cyberpunk voxel game. Portrait 2:3 full-bleed flat front-on artwork. Exact large headline \"MIDNIGHT RAMEN\", small tagline \"OPEN 25 HOURS\". Subject: delicious steaming noodle bowl floating in front of a huge stylized orange sun, bright cubic egg halves, chili, scallions and a black pair of chopsticks lifting a flowing bundle of noodles. Art direction: richly detailed Blender voxel food sculpture made of small crisp cubes, cyberpunk noodle shop advertisement with charming retro Tokyo graphic influence. Saturated warm tangerine and buttery yellow background, oxblood red bowl, dark teal shadows; large black and cream playful bold typography distinctly different from other corporate ads. Add small decorative vertical shapes resembling a ticket machine, no extra legible words needed. No human portrait or face, no magenta girl, no city, no mockup, no frame, no watermark. Advertisement itself edge to edge."
+    }
+  ]
+}

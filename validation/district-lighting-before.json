@@ -1,0 +1,2329 @@
+{
+  "build": "/assets/index-DPcirZkr.js",
+  "phase": "before",
+  "errors": [],
+  "performance": {
+    "meanFrameMs": 16.67333333333333,
+    "p95FrameMs": 16.799999999999272,
+    "rafFPS": 59.97600959616155,
+    "drawCalls": 383
+  },
+  "sites": [
+    {
+      "name": "Kasumi Ward",
+      "x": 0,
+      "z": 25,
+      "tx": 0,
+      "tz": -100,
+      "diagnostics": {
+        "position": [
+          0,
+          1.75,
+          25
+        ],
+        "district": "Kasumi Ward",
+        "drawCalls": 431,
+        "fps": 11,
+        "camera": [
+          0,
+          1.75,
+          25
+        ],
+        "visibleBlocks": 10,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 0,
+            "position": [
+              -14,
+              3.3,
+              23
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 0,
+            "position": [
+              14,
+              3.3,
+              23
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Kasumi Ward",
+        "ground": {
+          "meanLuma": 51.54481499062959,
+          "medianLuma": 39.934799999999996,
+          "blackFraction": 0.00972352389878163
+        },
+        "facades": {
+          "meanLuma": 40.539860089346604,
+          "medianLuma": 26.2826,
+          "blackFraction": 0.19960923961046947
+        }
+      }
+    },
+    {
+      "name": "Lantern Market",
+      "x": -210,
+      "z": 126,
+      "tx": -210,
+      "tz": 5,
+      "diagnostics": {
+        "position": [
+          -210,
+          1.75,
+          126
+        ],
+        "district": "Lantern Market",
+        "drawCalls": 467,
+        "fps": 58,
+        "camera": [
+          -210,
+          1.75,
+          126
+        ],
+        "visibleBlocks": 9,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -224,
+              3.3,
+              124
+            ],
+            "color": "ffad6a"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -196,
+              3.3,
+              124
+            ],
+            "color": "f276b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Lantern Market",
+        "ground": {
+          "meanLuma": 37.408350715396885,
+          "medianLuma": 27.147199999999998,
+          "blackFraction": 0.0039050296782255547
+        },
+        "facades": {
+          "meanLuma": 50.06071982923944,
+          "medianLuma": 34.2966,
+          "blackFraction": 0.0012522221352623518
+        }
+      }
+    },
+    {
+      "name": "Iron Docks",
+      "x": 210,
+      "z": 124,
+      "tx": 210,
+      "tz": 0,
+      "diagnostics": {
+        "position": [
+          210,
+          1.75,
+          124
+        ],
+        "district": "Iron Docks",
+        "drawCalls": 399,
+        "fps": 57,
+        "camera": [
+          210,
+          1.75,
+          124
+        ],
+        "visibleBlocks": 9,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              196,
+              3.3,
+              122
+            ],
+            "color": "ffad6a"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              224,
+              3.3,
+              122
+            ],
+            "color": "f276b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Iron Docks",
+        "ground": {
+          "meanLuma": 29.542224084660727,
+          "medianLuma": 27.121,
+          "blackFraction": 0.004420493595751328
+        },
+        "facades": {
+          "meanLuma": 29.521418564197724,
+          "medianLuma": 24.148400000000002,
+          "blackFraction": 0.051151038114511244
+        }
+      }
+    },
+    {
+      "name": "Stacktown",
+      "x": -210,
+      "z": -215,
+      "tx": -210,
+      "tz": -340,
+      "diagnostics": {
+        "position": [
+          -210,
+          1.75,
+          -215
+        ],
+        "district": "Stacktown",
+        "drawCalls": 389,
+        "fps": 59,
+        "camera": [
+          -210,
+          1.75,
+          -215
+        ],
+        "visibleBlocks": 12,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -224,
+              3.3,
+              -217
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -196,
+              3.3,
+              -217
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Stacktown",
+        "ground": {
+          "meanLuma": 31.05448477974943,
+          "medianLuma": 25.121000000000002,
+          "blackFraction": 0.03638706654170572
+        },
+        "facades": {
+          "meanLuma": 33.333150283960954,
+          "medianLuma": 20.89,
+          "blackFraction": 0.289741281962411
+        }
+      }
+    },
+    {
+      "name": "Meridian East",
+      "x": 210,
+      "z": -255,
+      "tx": 210,
+      "tz": -370,
+      "diagnostics": {
+        "position": [
+          210,
+          1.75,
+          -255
+        ],
+        "district": "Meridian East",
+        "drawCalls": 323,
+        "fps": 59,
+        "camera": [
+          210,
+          1.75,
+          -255
+        ],
+        "visibleBlocks": 12,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              196,
+              3.3,
+              -257
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              224,
+              3.3,
+              -257
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Meridian East",
+        "ground": {
+          "meanLuma": 37.435968747263175,
+          "medianLuma": 30.6482,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 76.65042139117858,
+          "medianLuma": 54.07599999999999,
+          "blackFraction": 0.00022920137297212687
+        }
+      }
+    },
+    {
+      "name": "Crown Plaza",
+      "x": 0,
+      "z": -388,
+      "tx": 0,
+      "tz": -520,
+      "diagnostics": {
+        "position": [
+          0,
+          1.75,
+          -388
+        ],
+        "district": "Crown Plaza",
+        "drawCalls": 220,
+        "fps": 60,
+        "camera": [
+          0,
+          1.75,
+          -388
+        ],
+        "visibleBlocks": 12,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -14,
+              3.3,
+              -390
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              14,
+              3.3,
+              -390
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Crown Plaza",
+        "ground": {
+          "meanLuma": 32.570560023429856,
+          "medianLuma": 23.4424,
+          "blackFraction": 0.0014058106841611997
+        },
+        "facades": {
+          "meanLuma": 29.352944230845377,
+          "medianLuma": 13.302,
+          "blackFraction": 0.3652407732471685
+        }
+      }
+    },
+    {
+      "name": "Northwest edge",
+      "x": -310,
+      "z": -543,
+      "tx": -310,
+      "tz": -425,
+      "diagnostics": {
+        "position": [
+          -310,
+          1.75,
+          -543
+        ],
+        "district": "Crown Plaza",
+        "drawCalls": 497,
+        "fps": 60,
+        "camera": [
+          -310,
+          1.75,
+          -543
+        ],
+        "visibleBlocks": 5,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -324,
+              3.3,
+              -545
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -296,
+              3.3,
+              -545
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Northwest edge",
+        "ground": {
+          "meanLuma": 73.28549638708327,
+          "medianLuma": 72.2298,
+          "blackFraction": 0.007122774133083412
+        },
+        "facades": {
+          "meanLuma": 31.441976393935274,
+          "medianLuma": 25.2746,
+          "blackFraction": 0.22796033139164365
+        }
+      }
+    },
+    {
+      "name": "Southeast edge",
+      "x": 310,
+      "z": 156,
+      "tx": 310,
+      "tz": 35,
+      "diagnostics": {
+        "position": [
+          310,
+          1.75,
+          156
+        ],
+        "district": "Iron Docks",
+        "drawCalls": 255,
+        "fps": 60,
+        "camera": [
+          310,
+          1.75,
+          156
+        ],
+        "visibleBlocks": 5,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              296,
+              3.3,
+              154
+            ],
+            "color": "ffad6a"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              324,
+              3.3,
+              154
+            ],
+            "color": "f276b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.057,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Southeast edge",
+        "ground": {
+          "meanLuma": 31.604541246484633,
+          "medianLuma": 28.912399999999998,
+          "blackFraction": 0.0038503592627303967
+        },
+        "facades": {
+          "meanLuma": 31.151522953694716,
+          "medianLuma": 26.202399999999997,
+          "blackFraction": 0.03054527565657808
+        }
+      }
+    },
+    {
+      "name": "Market service courtyard",
+      "x": -260,
+      "z": 96,
+      "tx": -275,
+      "ty": 3,
+      "tz": 96,
+      "diagnostics": {
+        "position": [
+          -260,
+          1.75,
+          96
+        ],
+        "district": "Lantern Market",
+        "drawCalls": 117,
+        "fps": 60,
+        "camera": [
+          -260,
+          1.75,
+          96
+        ],
+        "visibleBlocks": 8,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -258,
+              3.3,
+              126
+            ],
+            "color": "ffad6a"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -258,
+              3.3,
+              154
+            ],
+            "color": "f276b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Market service courtyard",
+        "ground": {
+          "meanLuma": 26.065674917224342,
+          "medianLuma": 25.7994,
+          "blackFraction": 0.09232271165260857
+        },
+        "facades": {
+          "meanLuma": 36.723824248371955,
+          "medianLuma": 18.9318,
+          "blackFraction": 0.167043078677564
+        }
+      }
+    },
+    {
+      "name": "Dock service lane",
+      "x": 140,
+      "z": -6,
+      "tx": 156,
+      "ty": 3,
+      "tz": -38,
+      "diagnostics": {
+        "position": [
+          140,
+          1.75,
+          -6
+        ],
+        "district": "Iron Docks",
+        "drawCalls": 294,
+        "fps": 60,
+        "camera": [
+          140,
+          1.75,
+          -6
+        ],
+        "visibleBlocks": 11,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              76,
+              3.3,
+              -8
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              104,
+              3.3,
+              -8
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Dock service lane",
+        "ground": {
+          "meanLuma": 21.057648178691924,
+          "medianLuma": 22.799400000000002,
+          "blackFraction": 0.23784754764136207
+        },
+        "facades": {
+          "meanLuma": 23.921601296955288,
+          "medianLuma": 20.768,
+          "blackFraction": 0.2663431759483906
+        }
+      }
+    },
+    {
+      "name": "Stacktown service court",
+      "x": -150,
+      "z": -240,
+      "tx": -174,
+      "ty": 3,
+      "tz": -240,
+      "diagnostics": {
+        "position": [
+          -150,
+          1.75,
+          -240
+        ],
+        "district": "Stacktown",
+        "drawCalls": 240,
+        "fps": 60,
+        "camera": [
+          -150,
+          1.75,
+          -240
+        ],
+        "visibleBlocks": 14,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -224,
+              3.3,
+              -242
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -196,
+              3.3,
+              -242
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Stacktown service court",
+        "ground": {
+          "meanLuma": 24.280994532974894,
+          "medianLuma": 23.446399999999997,
+          "blackFraction": 0.08206810371758826
+        },
+        "facades": {
+          "meanLuma": 23.3624954321823,
+          "medianLuma": 10.302,
+          "blackFraction": 0.5287507966145281
+        }
+      }
+    },
+    {
+      "name": "Crown inner court",
+      "x": 25,
+      "z": -365,
+      "tx": 55,
+      "ty": 3,
+      "tz": -365,
+      "diagnostics": {
+        "position": [
+          25,
+          1.75,
+          -365
+        ],
+        "district": "Crown Plaza",
+        "drawCalls": 383,
+        "fps": 60,
+        "camera": [
+          25,
+          1.75,
+          -365
+        ],
+        "visibleBlocks": 14,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.65,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "color": "679db9"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.15,
+            "position": [
+              -45,
+              110,
+              -80
+            ],
+            "color": "73b5df"
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.23,
+            "position": [
+              50,
+              18,
+              10
+            ],
+            "color": "bd437e"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 23,
+            "position": [
+              -13.8,
+              3.4,
+              14
+            ],
+            "color": "ff8430"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              -15,
+              17,
+              5
+            ],
+            "color": "ef2db7"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 21,
+            "position": [
+              16,
+              9,
+              10
+            ],
+            "color": "29caff"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 20,
+            "position": [
+              18,
+              24,
+              -44
+            ],
+            "color": "e736b1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 12,
+            "position": [
+              -14,
+              4,
+              -36
+            ],
+            "color": "37d4e9"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 13,
+            "position": [
+              14,
+              4,
+              -100
+            ],
+            "color": "ff9b55"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              -14,
+              3.3,
+              -367
+            ],
+            "color": "77cde1"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 38,
+            "position": [
+              14,
+              3.3,
+              -367
+            ],
+            "color": "a476d3"
+          },
+          {
+            "type": "PointLight",
+            "intensity": 5,
+            "position": [
+              0,
+              0.45,
+              0
+            ],
+            "color": "36fcff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              -0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 28,
+            "position": [
+              0.85,
+              0.8,
+              -2.2
+            ],
+            "color": "a9faff"
+          },
+          {
+            "type": "SpotLight",
+            "intensity": 90,
+            "position": [
+              0,
+              -0.6,
+              -2
+            ],
+            "color": "afd5ff"
+          }
+        ],
+        "groundY": 0.185,
+        "lighting": null
+      },
+      "metrics": {
+        "name": "Crown inner court",
+        "ground": {
+          "meanLuma": 50.55809338329593,
+          "medianLuma": 51.1616,
+          "blackFraction": 0
+        },
+        "facades": {
+          "meanLuma": 56.856251561356835,
+          "medianLuma": 28.7456,
+          "blackFraction": 0.04100468465245245
+        }
+      }
+    },
+    {
+      "name": "Iron Docks / reflector disabled",
+      "metrics": {
+        "name": "Iron Docks / reflector disabled",
+        "ground": {
+          "meanLuma": 26.454366355829826,
+          "medianLuma": 25.740399999999998,
+          "blackFraction": 0.005826304279912527
+        },
+        "facades": {
+          "meanLuma": 29.28058426225129,
+          "medianLuma": 24.148400000000002,
+          "blackFraction": 0.05215169776724321
+        }
+      }
+    },
+    {
+      "name": "Iron Docks / ambient test",
+      "metrics": {
+        "name": "Iron Docks / ambient test",
+        "ground": {
+          "meanLuma": 48.83130688379108,
+          "medianLuma": 49.007999999999996,
+          "blackFraction": 0.001562011871290222
+        },
+        "facades": {
+          "meanLuma": 40.810936777856405,
+          "medianLuma": 35.4334,
+          "blackFraction": 0.003127760199461097
+        }
+      }
+    }
+  ]
+}

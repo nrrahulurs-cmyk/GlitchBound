@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T04:08:33.858Z",
+  "coverage": "All final static city boxes, signs, and street-life decorative props are checked, including new facade and district-theme details without physics colliders. Rotating/swaying prop envelopes cover their full animation. Moving traffic is validated separately.",
+  "method": {
+    "vehicleRadiusMetres": 1.45,
+    "heightIntervalMetres": [
+      0.15,
+      2.5
+    ],
+    "laneOffsetsMetres": [
+      -6,
+      0,
+      6
+    ],
+    "excluded": "Geometry wholly at or below 0.15m, and overhead geometry wholly at or above 2.5m.",
+    "signDepthMetres": 0.2
+  },
+  "physicsHash": "235b07ba7d120cd5cae4e8044ad5e92a983a1bf66a32fd2dee9c44232e877098",
+  "matchesRecordedPhysicsHash": true,
+  "collisionRoadBoundsHash": "94198f124057d436596deca71a12b532e7e6507035c20300c82c4cc72c687480",
+  "matchesPreFacadePhysicsBaseline": true,
+  "previouslyDrivenBuild": "/assets/index-CP8dLm2v.js",
+  "priorGeometryCounts": {
+    "boxes": 130785,
+    "signs": 90
+  },
+  "finalGeometryCounts": {
+    "boxes": 149181,
+    "signs": 646
+  },
+  "taggedFacadeAdditions": {
+    "boxes": 8403,
+    "signs": 384,
+    "checkedGeometryRecords": 5056
+  },
+  "taggedDistrictThemeAdditions": {
+    "boxes": 9993,
+    "signs": 172,
+    "checkedGeometryRecords": 747
+  },
+  "decorativeActivityProps": {
+    "count": 266,
+    "checkedGeometryRecords": 15
+  },
+  "checkedGeometryRecords": 19667,
+  "roadSegments": 16,
+  "laneSegments": 48,
+  "conflicts": []
+}

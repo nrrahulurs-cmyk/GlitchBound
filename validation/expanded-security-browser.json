@@ -1,0 +1,168 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T03:45:49.950Z",
+  "buildAsset": "/assets/index-cLP-Z3Fp.js",
+  "method": "Real H draw and mouse gunshot beside an outer Meridian patrol. Player teleports used for targeted placement and escape; 26 seconds of cooldown advanced directly through simulation.update.",
+  "results": [
+    {
+      "test": "Public gunfire in Meridian East triggers local pursuit and damage",
+      "pass": true,
+      "respondingPatrols": 1,
+      "health": 93
+    },
+    {
+      "test": "Distant Kasumi and Lantern patrols remain neutral; outer responder is not clamped to old corridor",
+      "pass": true,
+      "localPosition": {
+        "x": 210.63308338823208,
+        "z": -421.24663137495395
+      }
+    },
+    {
+      "test": "Escape clears wanted status without further damage and restores neutral patrols",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "final": {
+    "kills": 0,
+    "totalDrones": 12,
+    "wantedLevel": 0,
+    "heat": 0,
+    "crimeReason": "",
+    "securityState": "PATROL",
+    "searchRemaining": 0,
+    "interactPrompt": "",
+    "remainingTargets": [
+      {
+        "id": 1,
+        "region": "Kasumi Ward",
+        "x": -5,
+        "y": 4.53443295164461,
+        "z": -90.92845000000192,
+        "hostile": false
+      },
+      {
+        "id": 2,
+        "region": "Kasumi Ward",
+        "x": 5,
+        "y": 5.441918528637671,
+        "z": -20.676319999999322,
+        "hostile": false
+      },
+      {
+        "id": 3,
+        "region": "Lantern Market",
+        "x": -91.298746746325,
+        "y": 5.1028039425448295,
+        "z": 61.9983369619618,
+        "hostile": false
+      },
+      {
+        "id": 4,
+        "region": "Lantern Market",
+        "x": -210.9657880100701,
+        "y": 5.169171885780939,
+        "z": 81.99556523189813,
+        "hostile": false
+      },
+      {
+        "id": 5,
+        "region": "Iron Docks",
+        "x": 208.70125325367505,
+        "y": 5.0800039774061805,
+        "z": 61.9983369619618,
+        "hostile": false
+      },
+      {
+        "id": 6,
+        "region": "Iron Docks",
+        "x": 308.90105272133866,
+        "y": 4.917280781161421,
+        "z": -38.00249478394331,
+        "hostile": false
+      },
+      {
+        "id": 7,
+        "region": "Stacktown",
+        "x": -211.0989472786642,
+        "y": 4.83060925323763,
+        "z": -268.0024947839456,
+        "hostile": false
+      },
+      {
+        "id": 8,
+        "region": "Stacktown",
+        "x": -91.34868147204894,
+        "y": 4.89967479670171,
+        "z": -408.0009355439796,
+        "hostile": false
+      },
+      {
+        "id": 9,
+        "region": "Meridian East",
+        "x": 208.65131852795045,
+        "y": 5.060978869404856,
+        "z": -288.0009355439796,
+        "hostile": false
+      },
+      {
+        "id": 10,
+        "region": "Meridian East",
+        "x": 250.58429068766432,
+        "y": 5.16621925079564,
+        "z": -413.90097008219243,
+        "hostile": false
+      },
+      {
+        "id": 11,
+        "region": "Crown Plaza",
+        "x": -0.9740801819730955,
+        "y": 6.118638419564266,
+        "z": -498.00327440390873,
+        "hostile": false
+      },
+      {
+        "id": 12,
+        "region": "Crown Plaza",
+        "x": 89.02591981802603,
+        "y": 5.961981972514604,
+        "z": -378.00327440392863,
+        "hostile": false
+      }
+    ],
+    "debrisCount": 0,
+    "regions": [
+      {
+        "name": "Kasumi Ward",
+        "patrols": 2,
+        "responding": 0
+      },
+      {
+        "name": "Lantern Market",
+        "patrols": 2,
+        "responding": 0
+      },
+      {
+        "name": "Iron Docks",
+        "patrols": 2,
+        "responding": 0
+      },
+      {
+        "name": "Stacktown",
+        "patrols": 2,
+        "responding": 0
+      },
+      {
+        "name": "Meridian East",
+        "patrols": 2,
+        "responding": 0
+      },
+      {
+        "name": "Crown Plaza",
+        "patrols": 2,
+        "responding": 0
+      }
+    ]
+  }
+}

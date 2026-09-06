@@ -1,0 +1,826 @@
+{
+  "status": "passed",
+  "elapsedMs": 1047.2658999999999,
+  "panels": 48,
+  "sampledRays": 3888,
+  "staticBoxes": 152955,
+  "records": [
+    {
+      "id": "AD069",
+      "campaignId": "kinkeep",
+      "buildingId": "B172",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue -310",
+      "view": {
+        "x": -305,
+        "y": 1.75,
+        "z": 78.84
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD594",
+      "campaignId": "vyra",
+      "buildingId": "B045",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway 140",
+      "view": {
+        "x": -236.7,
+        "y": 1.75,
+        "z": 140
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD056",
+      "campaignId": "grinpop",
+      "buildingId": "B048",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway 50",
+      "view": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": 50
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD085",
+      "campaignId": "else",
+      "buildingId": "B049",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway 140",
+      "view": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": 140
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD595",
+      "campaignId": "kinkeep",
+      "buildingId": "B053",
+      "mountType": "campaign-rooftop-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Kasumi Avenue",
+      "view": {
+        "x": 0,
+        "y": 1.75,
+        "z": 114.2
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD084",
+      "campaignId": "vyra",
+      "buildingId": "B052",
+      "mountType": "campaign-rooftop-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway 50",
+      "view": {
+        "x": -25.8,
+        "y": 1.75,
+        "z": 50
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD070",
+      "campaignId": "grinpop",
+      "buildingId": "B173",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue -310",
+      "view": {
+        "x": -310,
+        "y": 1.75,
+        "z": 101.16
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD055",
+      "campaignId": "else",
+      "buildingId": "B042",
+      "mountType": "campaign-rooftop-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway 50",
+      "view": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD188",
+      "campaignId": "grinpop",
+      "buildingId": "B179",
+      "mountType": "campaign-rooftop-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 310",
+      "view": {
+        "x": 310,
+        "y": 1.75,
+        "z": 113.16
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD251",
+      "campaignId": "syntask",
+      "buildingId": "B096",
+      "mountType": "campaign-rooftop-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 310",
+      "view": {
+        "x": 310,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD123",
+      "campaignId": "irisyn",
+      "buildingId": "B094",
+      "mountType": "campaign-rooftop-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 210",
+      "view": {
+        "x": 210,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD110",
+      "campaignId": "vesper-arc",
+      "buildingId": "B090",
+      "mountType": "campaign-rooftop-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 90",
+      "view": {
+        "x": 90,
+        "y": 1.75,
+        "z": -152.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD624",
+      "campaignId": "grinpop",
+      "buildingId": "B091",
+      "mountType": "campaign-rooftop-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "East Canal Road",
+      "view": {
+        "x": 116.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD097",
+      "campaignId": "syntask",
+      "buildingId": "B075",
+      "mountType": "campaign-rooftop-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 90",
+      "view": {
+        "x": 90,
+        "y": 1.75,
+        "z": 22.799999999999997
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD237",
+      "campaignId": "irisyn",
+      "buildingId": "B079",
+      "mountType": "campaign-rooftop-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway 50",
+      "view": {
+        "x": 236.7,
+        "y": 1.75,
+        "z": 50
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD252",
+      "campaignId": "vesper-arc",
+      "buildingId": "B060",
+      "mountType": "campaign-rooftop-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Crossway 50",
+      "view": {
+        "x": 183.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD320",
+      "campaignId": "recast",
+      "buildingId": "B109",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 210",
+      "view": {
+        "x": 210,
+        "y": 1.75,
+        "z": -207.2
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD643",
+      "campaignId": "everon",
+      "buildingId": "B110",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 210",
+      "view": {
+        "x": 210,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD301",
+      "campaignId": "quietus",
+      "buildingId": "B112",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 310",
+      "view": {
+        "x": 310,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD452",
+      "campaignId": "syntask",
+      "buildingId": "B140",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 310",
+      "view": {
+        "x": 310,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD449",
+      "campaignId": "irisyn",
+      "buildingId": "B138",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 210",
+      "view": {
+        "x": 210,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD581",
+      "campaignId": "recast",
+      "buildingId": "B166",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 210",
+      "view": {
+        "x": 210,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD318",
+      "campaignId": "everon",
+      "buildingId": "B168",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 310",
+      "view": {
+        "x": 310,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD578",
+      "campaignId": "quietus",
+      "buildingId": "B167",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 210",
+      "view": {
+        "x": 210,
+        "y": 1.75,
+        "z": -447.2
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD304",
+      "campaignId": "syntask",
+      "buildingId": "B107",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 90",
+      "view": {
+        "x": 90,
+        "y": 1.75,
+        "z": -207.2
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD323",
+      "campaignId": "irisyn",
+      "buildingId": "B106",
+      "mountType": "campaign-rooftop-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue 90",
+      "view": {
+        "x": 90,
+        "y": 1.75,
+        "z": -272.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD221",
+      "campaignId": "recast",
+      "buildingId": "B068",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "West Canal Road",
+      "view": {
+        "x": -236.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD285",
+      "campaignId": "kinkeep",
+      "buildingId": "B072",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "West Canal Road",
+      "view": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -70
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD154",
+      "campaignId": "vyra",
+      "buildingId": "B082",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway -180",
+      "view": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -180
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD265",
+      "campaignId": "nesto",
+      "buildingId": "B071",
+      "mountType": "campaign-wall-frame",
+      "w": 9,
+      "h": 11.245989304812834,
+      "roadName": "Crossway 50",
+      "view": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": 50
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD206",
+      "campaignId": "synthsilk",
+      "buildingId": "B087",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "West Canal Road",
+      "view": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": -70
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD470",
+      "campaignId": "recast",
+      "buildingId": "B098",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway -300",
+      "view": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -300
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD136",
+      "campaignId": "kinkeep",
+      "buildingId": "B102",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Crossway -300",
+      "view": {
+        "x": -183.3,
+        "y": 1.75,
+        "z": -300
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD342",
+      "campaignId": "vyra",
+      "buildingId": "B104",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway -300",
+      "view": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -300
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD467",
+      "campaignId": "nesto",
+      "buildingId": "B088",
+      "mountType": "campaign-wall-frame",
+      "w": 9,
+      "h": 11.245989304812834,
+      "roadName": "Crossway -180",
+      "view": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -180
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD607",
+      "campaignId": "synthsilk",
+      "buildingId": "B114",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Crossway -420",
+      "view": {
+        "x": -283.3,
+        "y": 1.75,
+        "z": -420
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD361",
+      "campaignId": "everon",
+      "buildingId": "B118",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue -210",
+      "view": {
+        "x": -210,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD489",
+      "campaignId": "quietus",
+      "buildingId": "B120",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue -90",
+      "view": {
+        "x": -90,
+        "y": 1.75,
+        "z": -392.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD414",
+      "campaignId": "nesto",
+      "buildingId": "B125",
+      "mountType": "campaign-wall-frame",
+      "w": 9,
+      "h": 11.245989304812834,
+      "roadName": "Crossway -420",
+      "view": {
+        "x": -25.8,
+        "y": 1.75,
+        "z": -420
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD557",
+      "campaignId": "else",
+      "buildingId": "B124",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway -300",
+      "view": {
+        "x": -64.2,
+        "y": 1.75,
+        "z": -300
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD385",
+      "campaignId": "vesper-arc",
+      "buildingId": "B129",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Crossway -300",
+      "view": {
+        "x": 25.8,
+        "y": 1.75,
+        "z": -300
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD541",
+      "campaignId": "synthsilk",
+      "buildingId": "B130",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Crossway -420",
+      "view": {
+        "x": 64.2,
+        "y": 1.75,
+        "z": -420
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD430",
+      "campaignId": "everon",
+      "buildingId": "B151",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Crossway -540",
+      "view": {
+        "x": -64.2,
+        "y": 1.75,
+        "z": -540
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD535",
+      "campaignId": "quietus",
+      "buildingId": "B156",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Crossway -540",
+      "view": {
+        "x": 25.8,
+        "y": 1.75,
+        "z": -540
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD512",
+      "campaignId": "nesto",
+      "buildingId": "B136",
+      "mountType": "campaign-wall-frame",
+      "w": 9,
+      "h": 11.245989304812834,
+      "roadName": "Avenue 210",
+      "view": {
+        "x": 210,
+        "y": 1.75,
+        "z": -327.2
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD367",
+      "campaignId": "else",
+      "buildingId": "B146",
+      "mountType": "campaign-wall-frame",
+      "w": 14,
+      "h": 7.8791866028708135,
+      "roadName": "Avenue -210",
+      "view": {
+        "x": -210,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD560",
+      "campaignId": "vesper-arc",
+      "buildingId": "B161",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Avenue 90",
+      "view": {
+        "x": 90,
+        "y": 1.75,
+        "z": -512.8
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    },
+    {
+      "id": "AD383",
+      "campaignId": "synthsilk",
+      "buildingId": "B148",
+      "mountType": "campaign-wall-frame",
+      "w": 8,
+      "h": 12,
+      "roadName": "Crossway -540",
+      "view": {
+        "x": -116.7,
+        "y": 1.75,
+        "z": -540
+      },
+      "samples": 81,
+      "visible": 81,
+      "overlapCount": 0
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,38 @@
+{
+  "created": "2026-09-06T04:41:47.983Z",
+  "checks": [
+    {
+      "name": "Blueprint served successfully",
+      "pass": true
+    },
+    {
+      "name": "Zoom changes drawing scale",
+      "pass": true
+    },
+    {
+      "name": "Layer controls update the drawing",
+      "pass": true
+    },
+    {
+      "name": "Selecting a sign shows attachment details",
+      "pass": true
+    },
+    {
+      "name": "Placement JSON and vector drawing downloads available",
+      "pass": true
+    },
+    {
+      "name": "No blueprint browser errors",
+      "pass": true
+    }
+  ],
+  "counts": {
+    "buildings": 185,
+    "signs": 646,
+    "supports": 3282,
+    "roads": 16,
+    "parcels": 75,
+    "connections": 45
+  },
+  "errors": []
+}

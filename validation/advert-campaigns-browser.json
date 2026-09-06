@@ -1,0 +1,4274 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T06:05:46.550Z",
+  "browser": "152.0.7977.77",
+  "buildAsset": "/assets/index-DPcirZkr.js",
+  "method": "Actual served PNG HTTP/decode/hash checks and inspection of live Three.js billboard geometry, UVs and structural blueprint. Only test teleport/aim arrange safe street views. Google Fonts uses the shipped fallback in the offline sandbox.",
+  "results": [
+    {
+      "test": "All twelve new PNG campaigns return HTTP 200, decode at full size, and contain distinct image data",
+      "pass": true,
+      "images": [
+        {
+          "id": "recast",
+          "file": "advert-recast.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2011089,
+          "sha256": "b8f17d624063520d1e6f5829c373b0f534669f7df237a06131f2ddd89b561a50",
+          "width": 1672,
+          "height": 941,
+          "aspect": 1.7768331562167907
+        },
+        {
+          "id": "kinkeep",
+          "file": "advert-kinkeep.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2574142,
+          "sha256": "ffacdbba8b3280037daca94a2cdafb1e6cef760e83ecd87abe49da5208653e7c",
+          "width": 1024,
+          "height": 1536,
+          "aspect": 0.6666666666666666
+        },
+        {
+          "id": "everon",
+          "file": "advert-everon.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2262679,
+          "sha256": "7c4b8078b6ebca584d643ec7a3326db96335289b2edef9b9e5fbe740d2682c15",
+          "width": 1672,
+          "height": 941,
+          "aspect": 1.7768331562167907
+        },
+        {
+          "id": "quietus",
+          "file": "advert-quietus.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2270022,
+          "sha256": "41fff1811e1db71467be1f165763eff6f3ff9e6ba8a6294700c10c47d1ae47eb",
+          "width": 1024,
+          "height": 1536,
+          "aspect": 0.6666666666666666
+        },
+        {
+          "id": "vyra",
+          "file": "advert-vyra.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2505196,
+          "sha256": "81712c3866c3fd31c9777e607d97491782e5c78fcb52d51fe6585b5ada934f47",
+          "width": 1672,
+          "height": 941,
+          "aspect": 1.7768331562167907
+        },
+        {
+          "id": "grinpop",
+          "file": "advert-grinpop.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2038498,
+          "sha256": "031b70716656adcaf1d1e12ea5bd18a9d3e4e1be537f61c5065a7293d1c2a578",
+          "width": 1672,
+          "height": 941,
+          "aspect": 1.7768331562167907
+        },
+        {
+          "id": "syntask",
+          "file": "advert-syntask.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2830002,
+          "sha256": "73b9c18975aa93110203528c7b5340a545f48c5fd85c572e3b2d0b237b50cae9",
+          "width": 1024,
+          "height": 1536,
+          "aspect": 0.6666666666666666
+        },
+        {
+          "id": "nesto",
+          "file": "advert-nesto.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2558259,
+          "sha256": "1aa6c54e3f8b134bf0862cb55ec879fd2ba612c102648d754f698fe2d3022c37",
+          "width": 1122,
+          "height": 1402,
+          "aspect": 0.8002853067047075
+        },
+        {
+          "id": "irisyn",
+          "file": "advert-irisyn.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2518237,
+          "sha256": "cf5b11148c1dc689d3c2418cc32486febf056c2cd072c7c598de17801e8f084a",
+          "width": 1672,
+          "height": 941,
+          "aspect": 1.7768331562167907
+        },
+        {
+          "id": "else",
+          "file": "advert-else.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2046107,
+          "sha256": "2222e3032e2101dc76eff0561c6053a0d594518cb642c6670b400f46e287aaec",
+          "width": 1672,
+          "height": 941,
+          "aspect": 1.7768331562167907
+        },
+        {
+          "id": "vesper-arc",
+          "file": "advert-vesper-arc.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2311213,
+          "sha256": "c1e16265f296acbed3f4779d75594fc54e590b3e0550b30d7d52515573bbec9b",
+          "width": 1024,
+          "height": 1536,
+          "aspect": 0.6666666666666666
+        },
+        {
+          "id": "synthsilk",
+          "file": "advert-synthsilk.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2243807,
+          "sha256": "026ada96cb4602a2b60e6542c7e01a5acfb852ab60f422911b5e30a0e665c7e0",
+          "width": 1024,
+          "height": 1536,
+          "aspect": 0.6666666666666666
+        }
+      ]
+    },
+    {
+      "test": "Every new brand has four mounted planes across its two assigned districts; all 48 preserve exact source-image aspect and full UVs within the enlarged engineered frames",
+      "pass": true,
+      "placements": [
+        {
+          "id": "recast",
+          "index": 4,
+          "name": "Billboard / RECAST",
+          "x": -236.7,
+          "y": 17.93959330143541,
+          "z": -55.324999999999996,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD221",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B068",
+          "supports": 13
+        },
+        {
+          "id": "recast",
+          "index": 4,
+          "name": "Billboard / RECAST",
+          "x": -283.3,
+          "y": 17.93959330143541,
+          "z": -285.325,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD470",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B098",
+          "supports": 13
+        },
+        {
+          "id": "recast",
+          "index": 4,
+          "name": "Billboard / RECAST",
+          "x": 195.32500000000002,
+          "y": 17.93959330143541,
+          "z": -207.2,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD320",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B109",
+          "supports": 13
+        },
+        {
+          "id": "recast",
+          "index": 4,
+          "name": "Billboard / RECAST",
+          "x": 224.67499999999998,
+          "y": 17.93959330143541,
+          "z": -512.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD581",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B166",
+          "supports": 13
+        },
+        {
+          "id": "kinkeep",
+          "index": 5,
+          "name": "Billboard / KINKEEP",
+          "x": -14.675000000000002,
+          "y": 19.58540494744666,
+          "z": 114.2,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD595",
+          "district": "Lantern Market",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B053",
+          "supports": 13
+        },
+        {
+          "id": "kinkeep",
+          "index": 5,
+          "name": "Billboard / KINKEEP",
+          "x": -116.7,
+          "y": 20,
+          "z": -55.324999999999996,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD285",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B072",
+          "supports": 13
+        },
+        {
+          "id": "kinkeep",
+          "index": 5,
+          "name": "Billboard / KINKEEP",
+          "x": -183.3,
+          "y": 20,
+          "z": -285.325,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD136",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B102",
+          "supports": 13
+        },
+        {
+          "id": "kinkeep",
+          "index": 5,
+          "name": "Billboard / KINKEEP",
+          "x": -322.675,
+          "y": 20,
+          "z": 78.84,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD069",
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B172",
+          "supports": 13
+        },
+        {
+          "id": "everon",
+          "index": 6,
+          "name": "Billboard / EVERON",
+          "x": 224.67499999999998,
+          "y": 17.93959330143541,
+          "z": -272.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD643",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B110",
+          "supports": 13
+        },
+        {
+          "id": "everon",
+          "index": 6,
+          "name": "Billboard / EVERON",
+          "x": -195.32500000000002,
+          "y": 17.93959330143541,
+          "z": -392.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD361",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B118",
+          "supports": 13
+        },
+        {
+          "id": "everon",
+          "index": 6,
+          "name": "Billboard / EVERON",
+          "x": -64.2,
+          "y": 17.93959330143541,
+          "z": -525.3249999999999,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD430",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B151",
+          "supports": 13
+        },
+        {
+          "id": "everon",
+          "index": 6,
+          "name": "Billboard / EVERON",
+          "x": 295.325,
+          "y": 17.93959330143541,
+          "z": -512.8,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD318",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B168",
+          "supports": 13
+        },
+        {
+          "id": "quietus",
+          "index": 7,
+          "name": "Billboard / QUIETUS",
+          "x": 295.325,
+          "y": 20,
+          "z": -272.8,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD301",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B112",
+          "supports": 13
+        },
+        {
+          "id": "quietus",
+          "index": 7,
+          "name": "Billboard / QUIETUS",
+          "x": -104.675,
+          "y": 20,
+          "z": -392.8,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD489",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B120",
+          "supports": 13
+        },
+        {
+          "id": "quietus",
+          "index": 7,
+          "name": "Billboard / QUIETUS",
+          "x": 25.8,
+          "y": 20,
+          "z": -525.3249999999999,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD535",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B156",
+          "supports": 13
+        },
+        {
+          "id": "quietus",
+          "index": 7,
+          "name": "Billboard / QUIETUS",
+          "x": 224.67499999999998,
+          "y": 20,
+          "z": -447.2,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD578",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B167",
+          "supports": 13
+        },
+        {
+          "id": "vyra",
+          "index": 8,
+          "name": "Billboard / VYRA",
+          "x": -236.7,
+          "y": 13.939593301435407,
+          "z": 125.325,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD594",
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B045",
+          "supports": 13
+        },
+        {
+          "id": "vyra",
+          "index": 8,
+          "name": "Billboard / VYRA",
+          "x": -25.8,
+          "y": 17.788324473520213,
+          "z": 64.675,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD084",
+          "district": "Lantern Market",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B052",
+          "supports": 13
+        },
+        {
+          "id": "vyra",
+          "index": 8,
+          "name": "Billboard / VYRA",
+          "x": -283.3,
+          "y": 17.93959330143541,
+          "z": -165.32500000000002,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD154",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B082",
+          "supports": 13
+        },
+        {
+          "id": "vyra",
+          "index": 8,
+          "name": "Billboard / VYRA",
+          "x": -116.7,
+          "y": 17.93959330143541,
+          "z": -285.325,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD342",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B104",
+          "supports": 13
+        },
+        {
+          "id": "grinpop",
+          "index": 9,
+          "name": "Billboard / GRINPOP",
+          "x": -116.7,
+          "y": 13.939593301435407,
+          "z": 64.675,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD056",
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B048",
+          "supports": 13
+        },
+        {
+          "id": "grinpop",
+          "index": 9,
+          "name": "Billboard / GRINPOP",
+          "x": 116.7,
+          "y": 19.22657371508091,
+          "z": -84.675,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD624",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B091",
+          "supports": 13
+        },
+        {
+          "id": "grinpop",
+          "index": 9,
+          "name": "Billboard / GRINPOP",
+          "x": -322.675,
+          "y": 17.93959330143541,
+          "z": 113.16,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD070",
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B173",
+          "supports": 13
+        },
+        {
+          "id": "grinpop",
+          "index": 9,
+          "name": "Billboard / GRINPOP",
+          "x": 322.675,
+          "y": 19.335450610240393,
+          "z": 113.16,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD188",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B179",
+          "supports": 13
+        },
+        {
+          "id": "syntask",
+          "index": 10,
+          "name": "Billboard / SYNTASK",
+          "x": 104.675,
+          "y": 19.97387635782361,
+          "z": 22.799999999999997,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD097",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B075",
+          "supports": 13
+        },
+        {
+          "id": "syntask",
+          "index": 10,
+          "name": "Billboard / SYNTASK",
+          "x": 295.325,
+          "y": 19.46653449051082,
+          "z": -152.8,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD251",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B096",
+          "supports": 13
+        },
+        {
+          "id": "syntask",
+          "index": 10,
+          "name": "Billboard / SYNTASK",
+          "x": 104.675,
+          "y": 16,
+          "z": -207.2,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD304",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B107",
+          "supports": 13
+        },
+        {
+          "id": "syntask",
+          "index": 10,
+          "name": "Billboard / SYNTASK",
+          "x": 295.325,
+          "y": 20,
+          "z": -392.8,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD452",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B140",
+          "supports": 13
+        },
+        {
+          "id": "nesto",
+          "index": 11,
+          "name": "Billboard / NESTO",
+          "x": -183.3,
+          "y": 19.62299465240642,
+          "z": 35.324999999999996,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 9,
+            "h": 11.245989304812834
+          },
+          "width": 9,
+          "height": 11.245989304812834,
+          "imageWidth": 1122,
+          "imageHeight": 1402,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD265",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B071",
+          "supports": 13
+        },
+        {
+          "id": "nesto",
+          "index": 11,
+          "name": "Billboard / NESTO",
+          "x": -116.7,
+          "y": 19.62299465240642,
+          "z": -165.32500000000002,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 9,
+            "h": 11.245989304812834
+          },
+          "width": 9,
+          "height": 11.245989304812834,
+          "imageWidth": 1122,
+          "imageHeight": 1402,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD467",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B088",
+          "supports": 13
+        },
+        {
+          "id": "nesto",
+          "index": 11,
+          "name": "Billboard / NESTO",
+          "x": -25.8,
+          "y": 19.62299465240642,
+          "z": -405.325,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 9,
+            "h": 11.245989304812834
+          },
+          "width": 9,
+          "height": 11.245989304812834,
+          "imageWidth": 1122,
+          "imageHeight": 1402,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD414",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B125",
+          "supports": 13
+        },
+        {
+          "id": "nesto",
+          "index": 11,
+          "name": "Billboard / NESTO",
+          "x": 195.32500000000002,
+          "y": 19.62299465240642,
+          "z": -327.2,
+          "normal": {
+            "x": 1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 9,
+            "h": 11.245989304812834
+          },
+          "width": 9,
+          "height": 11.245989304812834,
+          "imageWidth": 1122,
+          "imageHeight": 1402,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD512",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B136",
+          "supports": 13
+        },
+        {
+          "id": "irisyn",
+          "index": 12,
+          "name": "Billboard / IRISYN",
+          "x": 236.7,
+          "y": 18.53672895589977,
+          "z": 35.324999999999996,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD237",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B079",
+          "supports": 13
+        },
+        {
+          "id": "irisyn",
+          "index": 12,
+          "name": "Billboard / IRISYN",
+          "x": 224.67499999999998,
+          "y": 18.85297321165114,
+          "z": -152.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD123",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B094",
+          "supports": 13
+        },
+        {
+          "id": "irisyn",
+          "index": 12,
+          "name": "Billboard / IRISYN",
+          "x": 104.675,
+          "y": 24.785739900405922,
+          "z": -272.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD323",
+          "district": "Meridian East",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B106",
+          "supports": 13
+        },
+        {
+          "id": "irisyn",
+          "index": 12,
+          "name": "Billboard / IRISYN",
+          "x": 224.67499999999998,
+          "y": 17.93959330143541,
+          "z": -392.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD449",
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B138",
+          "supports": 13
+        },
+        {
+          "id": "else",
+          "index": 13,
+          "name": "Billboard / ELSE",
+          "x": -283.3,
+          "y": 20.479634719529592,
+          "z": 64.675,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD055",
+          "district": "Lantern Market",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B042",
+          "supports": 13
+        },
+        {
+          "id": "else",
+          "index": 13,
+          "name": "Billboard / ELSE",
+          "x": -116.7,
+          "y": 13.939593301435407,
+          "z": 125.325,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD085",
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B049",
+          "supports": 13
+        },
+        {
+          "id": "else",
+          "index": 13,
+          "name": "Billboard / ELSE",
+          "x": -64.2,
+          "y": 17.93959330143541,
+          "z": -314.675,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD557",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B124",
+          "supports": 13
+        },
+        {
+          "id": "else",
+          "index": 13,
+          "name": "Billboard / ELSE",
+          "x": -195.32500000000002,
+          "y": 17.93959330143541,
+          "z": -512.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 14,
+            "h": 7.8791866028708135
+          },
+          "width": 14,
+          "height": 7.8791866028708135,
+          "imageWidth": 1672,
+          "imageHeight": 941,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD367",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B146",
+          "supports": 13
+        },
+        {
+          "id": "vesper-arc",
+          "index": 14,
+          "name": "Billboard / VESPER ARC",
+          "x": 183.3,
+          "y": 20.14916270673275,
+          "z": 64.675,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD252",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B060",
+          "supports": 13
+        },
+        {
+          "id": "vesper-arc",
+          "index": 14,
+          "name": "Billboard / VESPER ARC",
+          "x": 104.675,
+          "y": 19.754589435458183,
+          "z": -152.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD110",
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "attachedTo": "B090",
+          "supports": 13
+        },
+        {
+          "id": "vesper-arc",
+          "index": 14,
+          "name": "Billboard / VESPER ARC",
+          "x": 25.8,
+          "y": 20,
+          "z": -314.675,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD385",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B129",
+          "supports": 13
+        },
+        {
+          "id": "vesper-arc",
+          "index": 14,
+          "name": "Billboard / VESPER ARC",
+          "x": 104.675,
+          "y": 20,
+          "z": -512.8,
+          "normal": {
+            "x": -1,
+            "y": 0,
+            "z": 2.220446049250313e-16
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD560",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B161",
+          "supports": 13
+        },
+        {
+          "id": "synthsilk",
+          "index": 15,
+          "name": "Billboard / SYNTHSILK",
+          "x": -183.3,
+          "y": 20,
+          "z": -84.675,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD206",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B087",
+          "supports": 13
+        },
+        {
+          "id": "synthsilk",
+          "index": 15,
+          "name": "Billboard / SYNTHSILK",
+          "x": -283.3,
+          "y": 20,
+          "z": -405.325,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD607",
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B114",
+          "supports": 13
+        },
+        {
+          "id": "synthsilk",
+          "index": 15,
+          "name": "Billboard / SYNTHSILK",
+          "x": 64.2,
+          "y": 20,
+          "z": -405.325,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD541",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B130",
+          "supports": 13
+        },
+        {
+          "id": "synthsilk",
+          "index": 15,
+          "name": "Billboard / SYNTHSILK",
+          "x": -116.7,
+          "y": 20,
+          "z": -525.3249999999999,
+          "normal": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "panel": {
+            "w": 8,
+            "h": 12
+          },
+          "width": 8,
+          "height": 12,
+          "imageWidth": 1024,
+          "imageHeight": 1536,
+          "uvRepeat": [
+            1,
+            1
+          ],
+          "uvOffset": [
+            0,
+            0
+          ],
+          "uvRotation": 0,
+          "transparent": false,
+          "opacity": 1,
+          "signId": "AD383",
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "attachedTo": "B148",
+          "supports": 13
+        }
+      ]
+    },
+    {
+      "test": "All 48 enlarged campaigns are fully framed from their audited road positions and retained in the active world LOD; twelve campaign views captured",
+      "pass": true,
+      "views": [
+        {
+          "campaignId": "kinkeep",
+          "signId": "AD069",
+          "camera": {
+            "x": -305,
+            "y": 1.75,
+            "z": 78.84
+          },
+          "target": {
+            "x": -322.675,
+            "y": 20,
+            "z": 78.84
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9940090617231507
+          ],
+          "corners": [
+            [
+              -0.18248244214226408,
+              -0.3046872972390595,
+              0.9927222217021385
+            ],
+            [
+              -0.12954821418508267,
+              0.2163040716620141,
+              0.9949226171573445
+            ],
+            [
+              0.18248244214226408,
+              -0.3046872972390595,
+              0.9927222217021385
+            ],
+            [
+              0.12954821418508267,
+              0.2163040716620141,
+              0.9949226171573445
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-kinkeep.png"
+        },
+        {
+          "campaignId": "vyra",
+          "signId": "AD594",
+          "camera": {
+            "x": -236.7,
+            "y": 1.75,
+            "z": 140
+          },
+          "target": {
+            "x": -236.7,
+            "y": 13.939593301435407,
+            "z": 125.325
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            2.867654797110678e-15,
+            0,
+            0.9919195000517056
+          ],
+          "corners": [
+            [
+              -0.4068177243207103,
+              -0.28179633066699283,
+              0.9906444282860204
+            ],
+            [
+              -0.3119733971828207,
+              0.21609913564761504,
+              0.9928973052126213
+            ],
+            [
+              0.40681772432071694,
+              -0.28179633066699283,
+              0.9906444282860204
+            ],
+            [
+              0.3119733971828258,
+              0.21609913564761504,
+              0.9928973052126213
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-vyra.png"
+        },
+        {
+          "campaignId": "grinpop",
+          "signId": "AD056",
+          "camera": {
+            "x": -116.7,
+            "y": 1.75,
+            "z": 50
+          },
+          "target": {
+            "x": -116.7,
+            "y": 13.939593301435407,
+            "z": 64.675
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9919195000517056
+          ],
+          "corners": [
+            [
+              -0.40681772432071384,
+              -0.28179633066699294,
+              0.9906444282860204
+            ],
+            [
+              -0.31197339718282335,
+              0.21609913564761485,
+              0.9928973052126213
+            ],
+            [
+              0.40681772432071384,
+              -0.28179633066699294,
+              0.9906444282860204
+            ],
+            [
+              0.31197339718282346,
+              0.2160991356476149,
+              0.9928973052126213
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-grinpop.png"
+        },
+        {
+          "campaignId": "else",
+          "signId": "AD085",
+          "camera": {
+            "x": -116.7,
+            "y": 1.75,
+            "z": 140
+          },
+          "target": {
+            "x": -116.7,
+            "y": 13.939593301435407,
+            "z": 125.325
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            7.169136992776695e-16,
+            0,
+            0.9919195000517056
+          ],
+          "corners": [
+            [
+              -0.40681772432071284,
+              -0.28179633066699283,
+              0.9906444282860204
+            ],
+            [
+              -0.31197339718282263,
+              0.21609913564761504,
+              0.9928973052126213
+            ],
+            [
+              0.40681772432071445,
+              -0.28179633066699283,
+              0.9906444282860204
+            ],
+            [
+              0.3119733971828239,
+              0.21609913564761504,
+              0.9928973052126213
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-else.png"
+        },
+        {
+          "campaignId": "kinkeep",
+          "signId": "AD595",
+          "camera": {
+            "x": 0,
+            "y": 1.75,
+            "z": 114.2
+          },
+          "target": {
+            "x": -14.675000000000002,
+            "y": 19.58540494744666,
+            "z": 114.2
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            5.921517613335709e-16,
+            2.3686070453342835e-16,
+            0.9933792755163933
+          ],
+          "corners": [
+            [
+              -0.20850169324558088,
+              -0.3179428836088082,
+              0.9916406409540088
+            ],
+            [
+              -0.13882697814136102,
+              0.21169636114644283,
+              0.9945369130330521
+            ],
+            [
+              0.2085016932455824,
+              -0.31794288360880796,
+              0.9916406409540087
+            ],
+            [
+              0.138826978141362,
+              0.21169636114644297,
+              0.9945369130330521
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "vyra",
+          "signId": "AD084",
+          "camera": {
+            "x": -25.8,
+            "y": 1.75,
+            "z": 50
+          },
+          "target": {
+            "x": -25.8,
+            "y": 17.788324473520213,
+            "z": 64.675
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9929465579870173
+          ],
+          "corners": [
+            [
+              -0.35772820454352766,
+              -0.21745297771594016,
+              0.9918104721579238
+            ],
+            [
+              -0.27335261274192485,
+              0.16616341359779782,
+              0.9938146808404501
+            ],
+            [
+              0.3577282045435275,
+              -0.21745297771594016,
+              0.9918104721579238
+            ],
+            [
+              0.2733526127419247,
+              0.16616341359779782,
+              0.9938146808404501
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "grinpop",
+          "signId": "AD070",
+          "camera": {
+            "x": -310,
+            "y": 1.75,
+            "z": 101.16
+          },
+          "target": {
+            "x": -322.675,
+            "y": 17.93959330143541,
+            "z": 113.16
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -1.148983540892687e-15,
+            1.838373665428299e-15,
+            0.9935859060146733
+          ],
+          "corners": [
+            [
+              -0.1984180491155249,
+              -0.38478726222909126,
+              0.9938174524521269
+            ],
+            [
+              -0.16299608972073726,
+              -0.019718547526702806,
+              0.9949761106018677
+            ],
+            [
+              0.2779788396075842,
+              0.03362865311439034,
+              0.9912150058376961
+            ],
+            [
+              0.2130992746659316,
+              0.41325820330976554,
+              0.9933372271364523
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "else",
+          "signId": "AD055",
+          "camera": {
+            "x": -283.3,
+            "y": 1.75,
+            "z": 50
+          },
+          "target": {
+            "x": -283.3,
+            "y": 20.479634719529592,
+            "z": 64.675
+          },
+          "district": "Lantern Market",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            4.598383928888789e-16,
+            0.9935823230836885
+          ],
+          "corners": [
+            [
+              -0.3255657832756183,
+              -0.18081005763345506,
+              0.9925744395871274
+            ],
+            [
+              -0.2504884490238568,
+              0.13911422278113306,
+              0.9943577828734432
+            ],
+            [
+              0.3255657832756183,
+              -0.18081005763345454,
+              0.9925744395871274
+            ],
+            [
+              0.2504884490238568,
+              0.13911422278113306,
+              0.9943577828734432
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "grinpop",
+          "signId": "AD188",
+          "camera": {
+            "x": 310,
+            "y": 1.75,
+            "z": 113.16
+          },
+          "target": {
+            "x": 322.675,
+            "y": 19.335450610240393,
+            "z": 113.16
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -6.309259975048802e-16,
+            2.0189631920156167e-15,
+            0.9929255980602908
+          ],
+          "corners": [
+            [
+              -0.36452555032112316,
+              -0.1919308752500961,
+              0.9916490119638711
+            ],
+            [
+              -0.2708499484409985,
+              0.14260857056502796,
+              0.9938741276711538
+            ],
+            [
+              0.3645255503211217,
+              -0.1919308752500961,
+              0.9916490119638711
+            ],
+            [
+              0.27084994844099747,
+              0.14260857056502796,
+              0.9938741276711538
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "syntask",
+          "signId": "AD251",
+          "camera": {
+            "x": 310,
+            "y": 1.75,
+            "z": -152.8
+          },
+          "target": {
+            "x": 295.325,
+            "y": 19.46653449051082,
+            "z": -152.8
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            -1.902436217305634e-15,
+            0.9933516675547692
+          ],
+          "corners": [
+            [
+              -0.2093991021353469,
+              -0.32058370160050514,
+              0.9916033370295215
+            ],
+            [
+              -0.13935065891197967,
+              0.2133416504603543,
+              0.994515144418828
+            ],
+            [
+              0.2093991021353469,
+              -0.32058370160050514,
+              0.9916033370295215
+            ],
+            [
+              0.13935065891197967,
+              0.2133416504603543,
+              0.994515144418828
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-syntask.png"
+        },
+        {
+          "campaignId": "irisyn",
+          "signId": "AD123",
+          "camera": {
+            "x": 210,
+            "y": 1.75,
+            "z": -152.8
+          },
+          "target": {
+            "x": 224.67499999999998,
+            "y": 18.85297321165114,
+            "z": -152.8
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9932068678942501
+          ],
+          "corners": [
+            [
+              -0.3446681834789982,
+              -0.2021052081427764,
+              0.9921206922944895
+            ],
+            [
+              -0.26392599219913343,
+              0.15475991154531465,
+              0.9940385952964597
+            ],
+            [
+              0.3446681834789982,
+              -0.2021052081427764,
+              0.9921206922944895
+            ],
+            [
+              0.26392599219913343,
+              0.15475991154531465,
+              0.9940385952964597
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-irisyn.png"
+        },
+        {
+          "campaignId": "vesper-arc",
+          "signId": "AD110",
+          "camera": {
+            "x": 90,
+            "y": 1.75,
+            "z": -152.8
+          },
+          "target": {
+            "x": 104.675,
+            "y": 19.754589435458183,
+            "z": -152.8
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9934183193649508
+          ],
+          "corners": [
+            [
+              -0.20723002681319935,
+              -0.3142229576023724,
+              0.9916935021960885
+            ],
+            [
+              -0.13808755274483098,
+              0.20938220150242567,
+              0.9945676498236841
+            ],
+            [
+              0.20723002681319935,
+              -0.3142229576023724,
+              0.9916935021960885
+            ],
+            [
+              0.13808755274483098,
+              0.20938220150242567,
+              0.9945676498236841
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-vesper-arc.png"
+        },
+        {
+          "campaignId": "grinpop",
+          "signId": "AD624",
+          "camera": {
+            "x": 116.7,
+            "y": 1.75,
+            "z": -70
+          },
+          "target": {
+            "x": 116.7,
+            "y": 19.22657371508091,
+            "z": -84.675
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            5.993121719529826e-16,
+            4.794497375623862e-16,
+            0.993295495223208
+          ],
+          "corners": [
+            [
+              -0.3401839656347357,
+              -0.19698607470921364,
+              0.9922272077943625
+            ],
+            [
+              -0.2607389044541576,
+              0.15098281665501578,
+              0.9941142995231687
+            ],
+            [
+              0.340183965634737,
+              -0.19698607470921364,
+              0.9922272077943625
+            ],
+            [
+              0.2607389044541586,
+              0.15098281665501578,
+              0.9941142995231687
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "syntask",
+          "signId": "AD097",
+          "camera": {
+            "x": 90,
+            "y": 1.75,
+            "z": 22.799999999999997
+          },
+          "target": {
+            "x": 104.675,
+            "y": 19.97387635782361,
+            "z": 22.799999999999997
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -1.4613174373649653e-16,
+            0,
+            0.9934684892323348
+          ],
+          "corners": [
+            [
+              -0.2055918267308692,
+              -0.3094688210409744,
+              0.9917615996852744
+            ],
+            [
+              -0.1371393679668641,
+              0.20643018352362094,
+              0.9946070644247209
+            ],
+            [
+              0.20559182673086882,
+              -0.3094688210409744,
+              0.9917615996852744
+            ],
+            [
+              0.13713936796686385,
+              0.20643018352362094,
+              0.9946070644247209
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "irisyn",
+          "signId": "AD237",
+          "camera": {
+            "x": 236.7,
+            "y": 1.75,
+            "z": 50
+          },
+          "target": {
+            "x": 236.7,
+            "y": 18.53672895589977,
+            "z": 35.324999999999996
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -1.2267870264270307e-15,
+            0,
+            0.9931307366692712
+          ],
+          "corners": [
+            [
+              -0.3485057610690867,
+              -0.20654644716856804,
+              0.9920295367107277
+            ],
+            [
+              -0.2666722939005998,
+              0.1580467843472526,
+              0.9939733612447937
+            ],
+            [
+              0.3485057610690839,
+              -0.20654644716856804,
+              0.9920295367107277
+            ],
+            [
+              0.2666722939005976,
+              0.1580467843472526,
+              0.9939733612447937
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "vesper-arc",
+          "signId": "AD252",
+          "camera": {
+            "x": 183.3,
+            "y": 1.75,
+            "z": 50
+          },
+          "target": {
+            "x": 183.3,
+            "y": 20.14916270673275,
+            "z": 64.675
+          },
+          "district": "Iron Docks",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -1.1622595446314357e-15,
+            9.298076357051486e-16,
+            0.9935082381584093
+          ],
+          "corners": [
+            [
+              -0.2042907501264746,
+              -0.3057231501856338,
+              0.9918156834635341
+            ],
+            [
+              -0.13638962514524008,
+              0.20410843773507276,
+              0.9946382300950434
+            ],
+            [
+              0.20429075012647166,
+              -0.3057231501856338,
+              0.9918156834635341
+            ],
+            [
+              0.1363896251452381,
+              0.20410843773507276,
+              0.9946382300950434
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "recast",
+          "signId": "AD320",
+          "camera": {
+            "x": 210,
+            "y": 1.75,
+            "z": -207.2
+          },
+          "target": {
+            "x": 195.32500000000002,
+            "y": 17.93959330143541,
+            "z": -207.2
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.355849172410347,
+              -0.21520361521580272,
+              0.991855105593206
+            ],
+            [
+              -0.2719815702149142,
+              0.1644837805462838,
+              0.9938472477863888
+            ],
+            [
+              0.355849172410347,
+              -0.21520361521580272,
+              0.991855105593206
+            ],
+            [
+              0.2719815702149142,
+              0.1644837805462838,
+              0.9938472477863888
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser.png"
+        },
+        {
+          "campaignId": "everon",
+          "signId": "AD643",
+          "camera": {
+            "x": 210,
+            "y": 1.75,
+            "z": -272.8
+          },
+          "target": {
+            "x": 224.67499999999998,
+            "y": 17.93959330143541,
+            "z": -272.8
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            -2.0029264076845933e-15,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.355849172410347,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491437,
+              0.16448378054628215,
+              0.9938472477863889
+            ],
+            [
+              0.355849172410347,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491437,
+              0.16448378054628215,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-everon.png"
+        },
+        {
+          "campaignId": "quietus",
+          "signId": "AD301",
+          "camera": {
+            "x": 310,
+            "y": 1.75,
+            "z": -272.8
+          },
+          "target": {
+            "x": 295.325,
+            "y": 20,
+            "z": -272.8
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.20539744212066244,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              -0.13702717215063387,
+              0.20608204108052733,
+              0.9946117282343893
+            ],
+            [
+              0.20539744212066244,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215063387,
+              0.20608204108052733,
+              0.9946117282343893
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-quietus.png"
+        },
+        {
+          "campaignId": "syntask",
+          "signId": "AD452",
+          "camera": {
+            "x": 310,
+            "y": 1.75,
+            "z": -392.8
+          },
+          "target": {
+            "x": 295.325,
+            "y": 20,
+            "z": -392.8
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -4.672151767199701e-15,
+            0,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.20539744212066827,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              -0.13702717215063775,
+              0.20608204108052733,
+              0.9946117282343893
+            ],
+            [
+              0.2053974421206566,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215062998,
+              0.20608204108052733,
+              0.9946117282343893
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "irisyn",
+          "signId": "AD449",
+          "camera": {
+            "x": 210,
+            "y": 1.75,
+            "z": -392.8
+          },
+          "target": {
+            "x": 224.67499999999998,
+            "y": 17.93959330143541,
+            "z": -392.8
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            -2.0029264076845933e-15,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.355849172410347,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491437,
+              0.16448378054628215,
+              0.9938472477863889
+            ],
+            [
+              0.355849172410347,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491437,
+              0.16448378054628215,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "recast",
+          "signId": "AD581",
+          "camera": {
+            "x": 210,
+            "y": 1.75,
+            "z": -512.8
+          },
+          "target": {
+            "x": 224.67499999999998,
+            "y": 17.93959330143541,
+            "z": -512.8
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            -2.0029264076845933e-15,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.355849172410347,
+              -0.21520361521580733,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491437,
+              0.16448378054628035,
+              0.9938472477863889
+            ],
+            [
+              0.355849172410347,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491437,
+              0.16448378054628215,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "everon",
+          "signId": "AD318",
+          "camera": {
+            "x": 310,
+            "y": 1.75,
+            "z": -512.8
+          },
+          "target": {
+            "x": 295.325,
+            "y": 17.93959330143541,
+            "z": -512.8
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9929842349948719
+          ],
+          "corners": [
+            [
+              -0.3558491724103431,
+              -0.2152036152158021,
+              0.9918551055932061
+            ],
+            [
+              -0.2719815702149115,
+              0.16448378054628351,
+              0.9938472477863888
+            ],
+            [
+              0.355849172410346,
+              -0.2152036152158021,
+              0.9918551055932061
+            ],
+            [
+              0.2719815702149137,
+              0.16448378054628351,
+              0.9938472477863888
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "quietus",
+          "signId": "AD578",
+          "camera": {
+            "x": 210,
+            "y": 1.75,
+            "z": -447.2
+          },
+          "target": {
+            "x": 224.67499999999998,
+            "y": 20,
+            "z": -447.2
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            1.8688607068798828e-15,
+            0.9934744331272002
+          ],
+          "corners": [
+            [
+              -0.20539744212066277,
+              -0.308907521337547,
+              0.9917696799582728
+            ],
+            [
+              -0.137027172150634,
+              0.20608204108052908,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066277,
+              -0.308907521337547,
+              0.9917696799582728
+            ],
+            [
+              0.137027172150634,
+              0.20608204108052908,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "syntask",
+          "signId": "AD304",
+          "camera": {
+            "x": 90,
+            "y": 1.75,
+            "z": -207.2
+          },
+          "target": {
+            "x": 104.675,
+            "y": 16,
+            "z": -207.2
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            1.3372346016326492e-15,
+            1.0697876813061194e-15,
+            0.9924845914463123
+          ],
+          "corners": [
+            [
+              -0.2365322978394839,
+              -0.40726262670100466,
+              0.9904754512962887
+            ],
+            [
+              -0.156267229123109,
+              0.2690617847172583,
+              0.9938119482894662
+            ],
+            [
+              0.2365322978394873,
+              -0.40726262670100466,
+              0.9904754512962887
+            ],
+            [
+              0.15626722912311122,
+              0.26906178471725867,
+              0.9938119482894662
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "irisyn",
+          "signId": "AD323",
+          "camera": {
+            "x": 90,
+            "y": 1.75,
+            "z": -272.8
+          },
+          "target": {
+            "x": 104.675,
+            "y": 24.785739900405922,
+            "z": -272.8
+          },
+          "district": "Meridian East",
+          "mountType": "campaign-rooftop-frame",
+          "hierarchyVisible": true,
+          "center": [
+            2.0029640714366488e-15,
+            -8.011856285746596e-16,
+            0.9944488257552855
+          ],
+          "corners": [
+            [
+              -0.28081719008490147,
+              -0.13586432816640415,
+              0.9936373716162685
+            ],
+            [
+              -0.2199041488841077,
+              0.10639352042555174,
+              0.9950842645321818
+            ],
+            [
+              0.280817190084906,
+              -0.13586432816640415,
+              0.9936373716162685
+            ],
+            [
+              0.2199041488841113,
+              0.10639352042555174,
+              0.9950842645321818
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "recast",
+          "signId": "AD221",
+          "camera": {
+            "x": -236.7,
+            "y": 1.75,
+            "z": -70
+          },
+          "target": {
+            "x": -236.7,
+            "y": 17.93959330143541,
+            "z": -55.324999999999996
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            -5.007316019211477e-16,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.3558491724103467,
+              -0.2152036152158025,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491415,
+              0.16448378054628335,
+              0.9938472477863889
+            ],
+            [
+              0.3558491724103467,
+              -0.2152036152158025,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491415,
+              0.16448378054628335,
+              0.9938472477863888
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "kinkeep",
+          "signId": "AD285",
+          "camera": {
+            "x": -116.7,
+            "y": 1.75,
+            "z": -70
+          },
+          "target": {
+            "x": -116.7,
+            "y": 20,
+            "z": -55.324999999999996
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            5.840189708999632e-16,
+            0,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.2053974421206621,
+              -0.30890752133754823,
+              0.9917696799582728
+            ],
+            [
+              -0.13702717215063354,
+              0.20608204108052794,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066358,
+              -0.30890752133754823,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215063454,
+              0.206082041080528,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "vyra",
+          "signId": "AD154",
+          "camera": {
+            "x": -283.3,
+            "y": 1.75,
+            "z": -180
+          },
+          "target": {
+            "x": -283.3,
+            "y": 17.93959330143541,
+            "z": -165.32500000000002
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            -2.0029264076845933e-15,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.355849172410347,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              -0.2719815702149142,
+              0.16448378054628204,
+              0.9938472477863888
+            ],
+            [
+              0.355849172410347,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491437,
+              0.16448378054628215,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "nesto",
+          "signId": "AD265",
+          "camera": {
+            "x": -183.3,
+            "y": 1.75,
+            "z": 50
+          },
+          "target": {
+            "x": -183.3,
+            "y": 19.62299465240642,
+            "z": 35.324999999999996
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            4.731265500665336e-16,
+            0.993387975691582
+          ],
+          "corners": [
+            [
+              -0.23061154837821554,
+              -0.29257605467173564,
+              0.9917866980577701
+            ],
+            [
+              -0.15764939292978486,
+              0.20000922646399413,
+              0.9944826322630236
+            ],
+            [
+              0.23061154837821554,
+              -0.29257605467173564,
+              0.9917866980577701
+            ],
+            [
+              0.15764939292978486,
+              0.20000922646399413,
+              0.9944826322630236
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-nesto.png"
+        },
+        {
+          "campaignId": "synthsilk",
+          "signId": "AD206",
+          "camera": {
+            "x": -183.3,
+            "y": 1.75,
+            "z": -70
+          },
+          "target": {
+            "x": -183.3,
+            "y": 20,
+            "z": -84.675
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9934744331272002
+          ],
+          "corners": [
+            [
+              -0.2053974421206629,
+              -0.3089075213375478,
+              0.9917696799582728
+            ],
+            [
+              -0.1370271721506341,
+              0.2060820410805284,
+              0.9946117282343893
+            ],
+            [
+              0.2053974421206629,
+              -0.3089075213375478,
+              0.9917696799582728
+            ],
+            [
+              0.1370271721506341,
+              0.2060820410805284,
+              0.9946117282343893
+            ]
+          ],
+          "imageComplete": true,
+          "screenshot": "advert-campaigns-browser-synthsilk.png"
+        },
+        {
+          "campaignId": "recast",
+          "signId": "AD470",
+          "camera": {
+            "x": -283.3,
+            "y": 1.75,
+            "z": -300
+          },
+          "target": {
+            "x": -283.3,
+            "y": 17.93959330143541,
+            "z": -285.325
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            2.0029264076845957e-15,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.3558491724103476,
+              -0.21520361521580078,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491465,
+              0.16448378054628407,
+              0.9938472477863888
+            ],
+            [
+              0.3558491724103476,
+              -0.21520361521580078,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491465,
+              0.16448378054628407,
+              0.9938472477863888
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "kinkeep",
+          "signId": "AD136",
+          "camera": {
+            "x": -183.3,
+            "y": 1.75,
+            "z": -300
+          },
+          "target": {
+            "x": -183.3,
+            "y": 20,
+            "z": -285.325
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            1.1680379417999253e-15,
+            0,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.2053974421206613,
+              -0.30890752133754934,
+              0.9917696799582728
+            ],
+            [
+              -0.13702717215063304,
+              0.20608204108052752,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066424,
+              -0.30890752133754934,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215063498,
+              0.20608204108052752,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "vyra",
+          "signId": "AD342",
+          "camera": {
+            "x": -116.7,
+            "y": 1.75,
+            "z": -300
+          },
+          "target": {
+            "x": -116.7,
+            "y": 17.93959330143541,
+            "z": -285.325
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            6.259145024014361e-16,
+            2.0029264076845957e-15,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.3558491724103469,
+              -0.21520361521580078,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491415,
+              0.16448378054628585,
+              0.9938472477863888
+            ],
+            [
+              0.3558491724103483,
+              -0.21520361521580078,
+              0.991855105593206
+            ],
+            [
+              0.2719815702149152,
+              0.16448378054628585,
+              0.9938472477863888
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "nesto",
+          "signId": "AD467",
+          "camera": {
+            "x": -116.7,
+            "y": 1.75,
+            "z": -180
+          },
+          "target": {
+            "x": -116.7,
+            "y": 19.62299465240642,
+            "z": -165.32500000000002
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9933879756915821
+          ],
+          "corners": [
+            [
+              -0.2306115483782157,
+              -0.2925760546717353,
+              0.9917866980577701
+            ],
+            [
+              -0.1576493929297849,
+              0.20000922646399458,
+              0.9944826322630236
+            ],
+            [
+              0.2306115483782157,
+              -0.2925760546717353,
+              0.9917866980577701
+            ],
+            [
+              0.1576493929297849,
+              0.20000922646399458,
+              0.9944826322630236
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "synthsilk",
+          "signId": "AD607",
+          "camera": {
+            "x": -283.3,
+            "y": 1.75,
+            "z": -420
+          },
+          "target": {
+            "x": -283.3,
+            "y": 20,
+            "z": -405.325
+          },
+          "district": "Stacktown",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9934744331272002
+          ],
+          "corners": [
+            [
+              -0.20539744212066277,
+              -0.308907521337547,
+              0.9917696799582728
+            ],
+            [
+              -0.137027172150634,
+              0.20608204108052752,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066277,
+              -0.308907521337547,
+              0.9917696799582728
+            ],
+            [
+              0.137027172150634,
+              0.20608204108052752,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "everon",
+          "signId": "AD361",
+          "camera": {
+            "x": -210,
+            "y": 1.75,
+            "z": -392.8
+          },
+          "target": {
+            "x": -195.32500000000002,
+            "y": 17.93959330143541,
+            "z": -392.8
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            2.5036580096057397e-15,
+            0,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.3558491724103439,
+              -0.21520361521580259,
+              0.9918551055932061
+            ],
+            [
+              -0.2719815702149118,
+              0.1644837805462837,
+              0.9938472477863889
+            ],
+            [
+              0.35584917241034975,
+              -0.21520361521580259,
+              0.9918551055932061
+            ],
+            [
+              0.27198157021491626,
+              0.1644837805462837,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "quietus",
+          "signId": "AD489",
+          "camera": {
+            "x": -90,
+            "y": 1.75,
+            "z": -392.8
+          },
+          "target": {
+            "x": -104.675,
+            "y": 20,
+            "z": -392.8
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            2.336075883599853e-15,
+            9.344303534399412e-16,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.2053974421206599,
+              -0.3089075213375471,
+              0.9917696799582728
+            ],
+            [
+              -0.1370271721506321,
+              0.20608204108052913,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066574,
+              -0.3089075213375471,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215063598,
+              0.20608204108052913,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "nesto",
+          "signId": "AD414",
+          "camera": {
+            "x": -25.8,
+            "y": 1.75,
+            "z": -420
+          },
+          "target": {
+            "x": -25.8,
+            "y": 19.62299465240642,
+            "z": -405.325
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            2.957040937915835e-16,
+            -3.785012400532269e-15,
+            0.993387975691582
+          ],
+          "corners": [
+            [
+              -0.230611548378215,
+              -0.29257605467173947,
+              0.9917866980577701
+            ],
+            [
+              -0.15764939292978447,
+              0.20000922646398958,
+              0.9944826322630236
+            ],
+            [
+              0.23061154837821574,
+              -0.29257605467173947,
+              0.9917866980577701
+            ],
+            [
+              0.157649392929785,
+              0.20000922646398958,
+              0.9944826322630236
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "else",
+          "signId": "AD557",
+          "camera": {
+            "x": -64.2,
+            "y": 1.75,
+            "z": -300
+          },
+          "target": {
+            "x": -64.2,
+            "y": 17.93959330143541,
+            "z": -314.675
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.3558491724103465,
+              -0.21520361521580242,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491404,
+              0.16448378054628196,
+              0.9938472477863889
+            ],
+            [
+              0.3558491724103465,
+              -0.21520361521580242,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491404,
+              0.16448378054628196,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "vesper-arc",
+          "signId": "AD385",
+          "camera": {
+            "x": 25.8,
+            "y": 1.75,
+            "z": -300
+          },
+          "target": {
+            "x": 25.8,
+            "y": 20,
+            "z": -314.675
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9934744331272002
+          ],
+          "corners": [
+            [
+              -0.20539744212066308,
+              -0.30890752133754745,
+              0.9917696799582729
+            ],
+            [
+              -0.137027172150634,
+              0.20608204108052752,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066308,
+              -0.30890752133754745,
+              0.9917696799582729
+            ],
+            [
+              0.137027172150634,
+              0.20608204108052752,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "synthsilk",
+          "signId": "AD541",
+          "camera": {
+            "x": 64.2,
+            "y": 1.75,
+            "z": -420
+          },
+          "target": {
+            "x": 64.2,
+            "y": 20,
+            "z": -405.325
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.20539744212066308,
+              -0.30890752133754745,
+              0.9917696799582729
+            ],
+            [
+              -0.13702717215063415,
+              0.20608204108053083,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066272,
+              -0.30890752133754745,
+              0.9917696799582729
+            ],
+            [
+              0.1370271721506339,
+              0.20608204108053083,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "everon",
+          "signId": "AD430",
+          "camera": {
+            "x": -64.2,
+            "y": 1.75,
+            "z": -540
+          },
+          "target": {
+            "x": -64.2,
+            "y": 17.93959330143541,
+            "z": -525.3249999999999
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -6.259145024014345e-16,
+            0,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.3558491724103474,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              -0.27198157021491465,
+              0.16448378054628215,
+              0.9938472477863889
+            ],
+            [
+              0.35584917241034636,
+              -0.21520361521580503,
+              0.991855105593206
+            ],
+            [
+              0.27198157021491387,
+              0.16448378054628215,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "quietus",
+          "signId": "AD535",
+          "camera": {
+            "x": 25.8,
+            "y": 1.75,
+            "z": -540
+          },
+          "target": {
+            "x": 25.8,
+            "y": 20,
+            "z": -525.3249999999999
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -1.460047427249905e-16,
+            0,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.20539744212066263,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              -0.13702717215063387,
+              0.20608204108052713,
+              0.9946117282343893
+            ],
+            [
+              0.20539744212066224,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215063362,
+              0.20608204108052713,
+              0.9946117282343893
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "nesto",
+          "signId": "AD512",
+          "camera": {
+            "x": 210,
+            "y": 1.75,
+            "z": -327.2
+          },
+          "target": {
+            "x": 195.32500000000002,
+            "y": 19.62299465240642,
+            "z": -327.2
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -2.365632750332669e-15,
+            0,
+            0.9933879756915821
+          ],
+          "corners": [
+            [
+              -0.23061154837821862,
+              -0.29257605467173525,
+              0.9917866980577701
+            ],
+            [
+              -0.1576493929297869,
+              0.200009226463993,
+              0.9944826322630237
+            ],
+            [
+              0.23061154837821277,
+              -0.29257605467173525,
+              0.9917866980577701
+            ],
+            [
+              0.1576493929297829,
+              0.200009226463993,
+              0.9944826322630237
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "else",
+          "signId": "AD367",
+          "camera": {
+            "x": -210,
+            "y": 1.75,
+            "z": -512.8
+          },
+          "target": {
+            "x": -195.32500000000002,
+            "y": 17.93959330143541,
+            "z": -512.8
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            0,
+            0,
+            0.9929842349948718
+          ],
+          "corners": [
+            [
+              -0.3558491724103465,
+              -0.21520361521580472,
+              0.991855105593206
+            ],
+            [
+              -0.2719815702149139,
+              0.16448378054628188,
+              0.9938472477863889
+            ],
+            [
+              0.3558491724103465,
+              -0.21520361521580242,
+              0.991855105593206
+            ],
+            [
+              0.2719815702149139,
+              0.16448378054628363,
+              0.9938472477863889
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "vesper-arc",
+          "signId": "AD560",
+          "camera": {
+            "x": 90,
+            "y": 1.75,
+            "z": -512.8
+          },
+          "target": {
+            "x": 104.675,
+            "y": 20,
+            "z": -512.8
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            -4.6721517671997044e-15,
+            9.34430353439941e-16,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.2053974421206686,
+              -0.308907521337547,
+              0.9917696799582728
+            ],
+            [
+              -0.1370271721506379,
+              0.20608204108052908,
+              0.9946117282343891
+            ],
+            [
+              0.20539744212066,
+              -0.30890752133754723,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215063215,
+              0.2060820410805292,
+              0.9946117282343893
+            ]
+          ],
+          "imageComplete": true
+        },
+        {
+          "campaignId": "synthsilk",
+          "signId": "AD383",
+          "camera": {
+            "x": -116.7,
+            "y": 1.75,
+            "z": -540
+          },
+          "target": {
+            "x": -116.7,
+            "y": 20,
+            "z": -525.3249999999999
+          },
+          "district": "Crown Plaza",
+          "mountType": "campaign-wall-frame",
+          "hierarchyVisible": true,
+          "center": [
+            5.84018970899962e-16,
+            0,
+            0.9934744331272003
+          ],
+          "corners": [
+            [
+              -0.20539744212066172,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              -0.1370271721506335,
+              0.20608204108053063,
+              0.9946117282343891
+            ],
+            [
+              0.2053974421206632,
+              -0.3089075213375465,
+              0.9917696799582728
+            ],
+            [
+              0.13702717215063448,
+              0.20608204108053063,
+              0.9946117282343891
+            ]
+          ],
+          "imageComplete": true
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-kuro-optics.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-portrait.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-axiom.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-orbital.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-noodle.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-recast.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-kinkeep.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-everon.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-quietus.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-vyra.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-grinpop.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-syntask.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-nesto.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-irisyn.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-else.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-vesper-arc.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-synthsilk.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-kinkeep.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-recast.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-quietus.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-everon.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-vyra.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-grinpop.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-syntask.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-nesto.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-irisyn.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-recast.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-else.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-vesper-arc.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-synthsilk.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-grinpop.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-kinkeep.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-quietus.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-everon.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-vyra.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-else.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-syntask.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-nesto.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-irisyn.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-vesper-arc.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/advert-synthsilk.png",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

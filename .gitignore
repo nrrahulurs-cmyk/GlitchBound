@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/
+*.pyc
+*.blend1
+*.blend2
+.DS_Store

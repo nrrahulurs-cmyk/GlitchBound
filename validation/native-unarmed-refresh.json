@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T05:03:34.160207+00:00",
+  "method": "Only hero right-arm mesh data replaced from rebuilt native source; no city geometry or placement regeneration.",
+  "replacedObjects": [
+    "right_arm.001"
+  ],
+  "previousVertices": {
+    "right_arm.001": 552
+  },
+  "newVertices": 160,
+  "transformsPreserved": true,
+  "cityObjectCountsPreserved": true,
+  "freshReopenVerified": true,
+  "citySHA256": "c88bb05c4fde8743ab1dbefa05129a2110c0ca2c26bc77514f39720eb8f2adbe"
+}

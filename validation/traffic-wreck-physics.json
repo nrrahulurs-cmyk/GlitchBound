@@ -1,0 +1,34 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "type": "taxi",
+      "reverse": false,
+      "pass": true
+    },
+    {
+      "type": "taxi",
+      "reverse": true,
+      "pass": true
+    },
+    {
+      "type": "bus",
+      "reverse": false,
+      "pass": true
+    },
+    {
+      "name": "Visible dented voxel transforms/paint, shattered lamp instances and reset",
+      "pass": true
+    },
+    {
+      "name": "Movable parked-car callback overrides authored location by id",
+      "pass": true
+    },
+    {
+      "name": "Kinematic traffic transfers bounded contact velocity to a loose bin",
+      "pass": true,
+      "displacement": 24.47785549329693,
+      "maximumSpeed": 10.390069287747798
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "checkedAtUTC": "2026-09-06T06:43:24.107Z",
+  "buildAsset": "/assets/index-Bw9FMdZW.js",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "method": "Warmed real WASD-game render at a fixed lit street view; actual held mouse fire. No screenshots or scene traversal telemetry during RAF measurement. Original shoot calls timed without altering arguments/results.",
+  "baseline": {
+    "frames": 120,
+    "meanMs": 17.229166666666668,
+    "p95Ms": 16.899999999999636,
+    "fps": 58.041112454655384,
+    "shots": 0,
+    "shotCpuMeanMs": 0,
+    "shotCpuMaxMs": 0,
+    "health": 100,
+    "drawCalls": 529,
+    "peakBolts": 0,
+    "peakImpacts": 0
+  },
+  "firing": {
+    "frames": 120,
+    "meanMs": 16.67333333333333,
+    "p95Ms": 16.80000000000109,
+    "fps": 59.97600959616156,
+    "shots": 14,
+    "shotCpuMeanMs": 0.5714285714285714,
+    "shotCpuMaxMs": 1.5,
+    "health": 93,
+    "drawCalls": 572,
+    "peakBolts": 1,
+    "peakImpacts": 2
+  },
+  "errors": []
+}

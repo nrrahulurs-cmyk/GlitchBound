@@ -1,0 +1,261 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T05:09:11.953Z",
+  "browser": "152.0.7977.77",
+  "buildAsset": "/assets/index-B6zszvDQ.js",
+  "method": "Real H/mouse gunfire and E/W/S/Space vehicle inputs. Teleport, aimAt, and placeCar only arrange starts/camera; no civilian damage injection or simulated-time advancement. Player-only damage triggers the real restart dialog button. Google Fonts CSS is fulfilled empty to use the game font fallback in this offline sandbox.",
+  "results": [
+    {
+      "test": "F is inert, consumes no energy, and no blade controls remain in the UI",
+      "pass": true,
+      "energyBefore": 100,
+      "energyAfter": 100
+    },
+    {
+      "test": "Real H draw and two mouse body shots deal 60 damage each, kill the civilian, trigger crime, and leave a grounded motionless corpse",
+      "pass": true,
+      "id": "CIV-008",
+      "firstHitHealth": 40,
+      "secondHitHealth": 0,
+      "ammo": 22,
+      "wantedLevel": 3,
+      "crimeReason": "CIVILIAN HOMICIDE",
+      "corpse": {
+        "id": "CIV-008",
+        "x": -12.879283959977329,
+        "z": -30.92301671957669,
+        "groundY": 0.165,
+        "fallProgress": 1,
+        "minY": 0.16499999910593033,
+        "maxY": 0.6872956119477749,
+        "visibleHeight": 0.5222956128418446,
+        "bodyHeight": 0.5222955980858242
+      }
+    },
+    {
+      "test": "Actual restart button revives civilians and clears health, ammo, energy and wanted state",
+      "pass": true,
+      "civilianState": {
+        "total": 284,
+        "alive": 284,
+        "dead": 0,
+        "injured": 0,
+        "fleeing": 0,
+        "time": 0.05
+      }
+    },
+    {
+      "test": "A stationary car overlapping a real road civilian causes no collision damage or crime",
+      "pass": true,
+      "id": "CIV-041"
+    },
+    {
+      "test": "Real W driving alongside a civilian stays outside the vehicle footprint and causes no damage",
+      "pass": true,
+      "id": "CIV-035",
+      "drive": {
+        "initial": {
+          "x": 1.876084739714861,
+          "y": 0.065,
+          "z": -85.77555408735847,
+          "yaw": 0,
+          "speed": 0
+        },
+        "final": {
+          "x": 1.876084739714861,
+          "y": 0.065,
+          "z": -112.83112177685682,
+          "yaw": 0,
+          "speed": 1.0437345559625129
+        },
+        "peakSpeed": 22.487821954150558,
+        "travelled": 20.917268899442774,
+        "hit": null
+      }
+    },
+    {
+      "test": "Actual E entry and W driving run over a real civilian and trigger a vehicle crime",
+      "pass": true,
+      "id": "CIV-041",
+      "drive": {
+        "initial": {
+          "x": -0.6981061510741711,
+          "y": 0.065,
+          "z": -85.30656842319814,
+          "yaw": 0,
+          "speed": 0
+        },
+        "final": {
+          "x": -0.6981061510741711,
+          "y": 0.065,
+          "z": -103.96867271180076,
+          "yaw": 0,
+          "speed": 0.8416555571773536
+        },
+        "peakSpeed": 17.95423648089807,
+        "travelled": 12.77503018534398,
+        "hit": {
+          "victim": {
+            "id": "CIV-041",
+            "x": -0.6981061510741711,
+            "y": 0.057,
+            "z": -98.97332369401067,
+            "groundY": 0.057,
+            "scale": 1.0195226015080698,
+            "yaw": 3.141592653589793,
+            "health": 0,
+            "alive": false,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0.17102564102564055,
+            "instanceStart": 2114,
+            "instanceCount": 35,
+            "vehicleCooldown": 1.0666000000000004,
+            "cause": "vehicle",
+            "aimPoint": {
+              "x": -0.6981061510741711,
+              "y": 1.1988653136890384,
+              "z": -98.97332369401067
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -1.12120803070002,
+                "y": 0.056999999999999995,
+                "z": -99.34689782711837
+              },
+              "max": {
+                "x": -0.275004271448322,
+                "y": 1.8757666224133085,
+                "z": -98.78030282762039
+              }
+            }
+          },
+          "car": {
+            "x": -0.6981061510741711,
+            "y": 0.065,
+            "z": -98.08159860854212,
+            "yaw": 0,
+            "speed": 17.95423648089807
+          },
+          "game": {
+            "wantedLevel": 3,
+            "crimeReason": "VEHICULAR HOMICIDE",
+            "civilians": {
+              "total": 284,
+              "alive": 283,
+              "dead": 1,
+              "injured": 0,
+              "fleeing": 10,
+              "time": 1.5340000000000007
+            }
+          }
+        }
+      },
+      "corpse": {
+        "id": "CIV-041",
+        "x": -0.6981061510741711,
+        "z": -98.97332369401067,
+        "groundY": 0.057,
+        "fallProgress": 1,
+        "minY": 0.05700000189244747,
+        "maxY": 0.6049934262409806,
+        "visibleHeight": 0.5479934243485332,
+        "bodyHeight": 0.5479933983105876
+      }
+    },
+    {
+      "test": "Actual S reverse driving also runs over a real civilian",
+      "pass": true,
+      "id": "CIV-041",
+      "drive": {
+        "initial": {
+          "x": -0.6981061510741711,
+          "y": 0.065,
+          "z": -111.29800647546837,
+          "yaw": 0,
+          "speed": 0
+        },
+        "final": {
+          "x": -0.6981061510741711,
+          "y": 0.065,
+          "z": -98.00236215731988,
+          "yaw": 0,
+          "speed": -0.5370657635814106
+        },
+        "peakSpeed": 11,
+        "travelled": 9.634635273567497,
+        "hit": {
+          "victim": {
+            "id": "CIV-041",
+            "x": -0.6981061510741711,
+            "y": 0.057,
+            "z": -98.96476174628089,
+            "groundY": 0.057,
+            "scale": 1.0195226015080698,
+            "yaw": 3.141592653589793,
+            "health": 0,
+            "alive": false,
+            "injured": false,
+            "fleeing": false,
+            "fallProgress": 0.04282051282051469,
+            "instanceStart": 2114,
+            "instanceCount": 35,
+            "vehicleCooldown": 1.1665999999999983,
+            "cause": "vehicle",
+            "aimPoint": {
+              "x": -0.6981061510741711,
+              "y": 1.1988653136890384,
+              "z": -98.96476174628089
+            },
+            "bodyBounds": {
+              "min": {
+                "x": -1.12120803070002,
+                "y": 0.056999999999999995,
+                "z": -99.21969575814556
+              },
+              "max": {
+                "x": -0.275004271448322,
+                "y": 1.8399097799558366,
+                "z": -98.63566659784499
+              }
+            }
+          },
+          "car": {
+            "x": -0.6981061510741711,
+            "y": 0.065,
+            "z": -101.66337120190087,
+            "yaw": 0,
+            "speed": -11
+          },
+          "game": {
+            "wantedLevel": 3,
+            "crimeReason": "VEHICULAR HOMICIDE",
+            "civilians": {
+              "total": 284,
+              "alive": 283,
+              "dead": 1,
+              "injured": 0,
+              "fleeing": 10,
+              "time": 1.4173
+            }
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "final": {
+    "civilianState": {
+      "total": 284,
+      "alive": 284,
+      "dead": 0,
+      "injured": 0,
+      "fleeing": 0,
+      "time": 0.016799999999999274
+    },
+    "wantedLevel": 0,
+    "health": 100,
+    "energy": 100,
+    "ammo": 24
+  }
+}

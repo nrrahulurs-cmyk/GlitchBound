@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T04:34:25.026Z",
+  "method": "Oriented rectangular solid contact graph with 12mm joining tolerance, not a metadata-only check. Four animation phases exercise complete rigid ring rotations.",
+  "results": [
+    {
+      "test": "Seventeen decorative assemblies have physical contact paths to ground at four animation phases",
+      "pass": true,
+      "assemblies": 17,
+      "poses": [
+        0,
+        2,
+        7,
+        17
+      ],
+      "excluded": "Meridian holographic pixels are explicit optical projections from ground-mounted emitters; particle effects are not structural objects."
+    },
+    {
+      "test": "All voxel vehicle components have contact paths to chassis; wheels contact road surface",
+      "pass": true,
+      "types": 4
+    },
+    {
+      "test": "Supply pallets contact assigned road/sidewalk surfaces and support all15 ground cells;5 spacers disappear with upper cells and reset restores correct bodies",
+      "pass": true
+    }
+  ],
+  "findings": []
+}

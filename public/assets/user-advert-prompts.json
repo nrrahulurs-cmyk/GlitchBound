@@ -1,0 +1,110 @@
+[
+  {
+    "id": "recast",
+    "source": "D:/Temp/codex-clipboard-6df8bd2a-8a7e-41ae-883d-de067c462cc4.png",
+    "asset": "advert-recast.png",
+    "aspect": "landscape 16:9",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve the left copy and right chrome rack with detachable synthetic face masks: front woman mask, rear mask and robot skull. Pale sage grey showroom. These are artificial shells, no injury or gore. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): RECAST. PRE-OWNED. REBORN. CERTIFIED BODY RESALE. Preserve landscape 16:9 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-e26b1aaf-3eb1-41ed-8297-41f674144c24.png"
+  },
+  {
+    "id": "kinkeep",
+    "source": "D:/Temp/codex-clipboard-f2050fd5-d08c-4c91-839f-b2b3db5a64dd.png",
+    "asset": "advert-kinkeep.png",
+    "aspect": "portrait 2:3",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve warm cream/coral ad with a voxel skull in a tiny coral chair, a chrome robot hand holding a sage telephone handset, two teacups and remembrance ribbon. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): KINKEEP. GOODBYE IS OPTIONAL. Keep talking. From 49 credits a month. Preserve portrait 2:3 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-1433574d-4f83-41eb-a4f5-995d35f3d3c5.png"
+  },
+  {
+    "id": "everon",
+    "source": "D:/Temp/codex-clipboard-671443d4-f52e-44aa-aab9-42f192015be4.png",
+    "asset": "advert-everon.png",
+    "aspect": "landscape 16:9",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve blue/yellow factory ad: robotic skeleton worker in blue uniform and yellow hardhat holds yellow pay envelope, factory worker line recedes behind, big yellow slogan on right. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): EVERON. EARN BEYOND THE END. FOR YOUR FAMILY. SECURE YOUR LEGACY. SUPPORT YOUR FAMILY. CONTINUE TO CONTRIBUTE. A lasting contribution. Enroll today. Preserve landscape 16:9 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-c7d98d79-490f-4acc-90f3-a392f3ac9bc3.png"
+  },
+  {
+    "id": "quietus",
+    "source": "D:/Temp/codex-clipboard-66f24026-dfaf-43fd-ab97-47c8f763b6d9.png",
+    "asset": "advert-quietus.png",
+    "aspect": "portrait 2:3",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve elegant dark steel mortuary drawers with an adult man peacefully resting in a burgundy-lined drawer, black suit, folded hands, lilies and folded towels. Non-graphic dignified advertising. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): REST IS A PREMIUM. QUIETUS. FIRST-CLASS AFTERCARE. Preserve portrait 2:3 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-ec65c704-accc-4a81-8f04-e086ade9fd8b.png"
+  },
+  {
+    "id": "vyra",
+    "source": "D:/Temp/codex-clipboard-c422aea7-5418-45ad-9881-cc37672274b1.png",
+    "asset": "advert-vyra.png",
+    "aspect": "landscape 16:9",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve cream/black composition: chrome woman android in cream trouser suit, seated with teacup while a dark steel beam breaks against shoulder, debris on right, tall black headline on left. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): THE WORLD BREAKS FIRST. VYRA. SYNTHETIC BODIES. Preserve landscape 16:9 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-8489288f-b82c-4271-93fe-3c584443e4ba.png"
+  },
+  {
+    "id": "grinpop",
+    "source": "D:/Temp/codex-clipboard-e1b568cc-cb01-4803-81bf-60d02f0f63ac.png",
+    "asset": "advert-grinpop.png",
+    "aspect": "landscape 16:9",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve bright yellow/orange composition, huge cheerful orange mascot with exaggerated white toothy smile and open mouth holding an orange GRINPOP soda can, bold black slogan on left. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): GRINPOP. HAPPY ON DEMAND. Preserve landscape 16:9 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-3e6ef26d-ed2f-4655-9bb0-0ad322b66bb5.png"
+  },
+  {
+    "id": "syntask",
+    "source": "D:/Temp/codex-clipboard-a80c0c0d-983a-4490-8e31-ef1a86d234e8.png",
+    "asset": "advert-syntask.png",
+    "aspect": "portrait 2:3",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve cream/orange corporate ad with smiling office worker adjusting his tie, four extra robotic arms handling telephone, mug, keyboard and stamp, office cubicles behind. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): STAY ESSENTIAL. SYNTASK. WORKFORCE AUGMENTATION. EMPLOYMENT NOT GUARANTEED. Preserve portrait 2:3 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-c73a1b61-5495-44d0-9d06-041fee47a21c.png"
+  },
+  {
+    "id": "nesto",
+    "source": "D:/Temp/codex-clipboard-950b79fe-22e8-4517-bebe-bc8b2ba80f54.png",
+    "asset": "advert-nesto.png",
+    "aspect": "portrait 4:5",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve navy/pink/red poster with huge red noodle cup, miniature house made of pink noodles atop it, a small weary worker in doorway, giant pink slogan above. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): HOME IN SECONDS. NESTO. SYNTH NOODLES. Preserve portrait 4:5 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-51c07d56-1343-44b2-99d7-872669a336db.png"
+  },
+  {
+    "id": "irisyn",
+    "source": "D:/Temp/codex-clipboard-e379333b-7a82-4eaa-a3b1-e1f269c4487f.png",
+    "asset": "advert-irisyn.png",
+    "aspect": "landscape 16:9",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve cobalt blue panel on left with white headline and optics logo, closeup cybernetic eye on right with chrome aperture iris and tiny city reflected in lens, orange technical accents. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): SEE THE ADVANTAGE. IRISYN. PRECISION VISION SYSTEMS. Preserve landscape 16:9 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-4104111d-7aa2-4e4d-b31b-e929c15904fb.png"
+  },
+  {
+    "id": "else",
+    "source": "D:/Temp/codex-clipboard-57aa6fd1-b0ad-424b-93b2-734d8e2f3807.png",
+    "asset": "advert-else.png",
+    "aspect": "landscape 16:9",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve burgundy/black ad: closeup woman's closed eye on right, large tear containing tiny couple embracing beside sunset sea, pale pink serif copy on left. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): REMEMBER BEING LOVED. ELSE. CURATED MEMORIES. Preserve landscape 16:9 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-34cd90fb-29a6-45f3-affb-a50ba33b2bd7.png"
+  },
+  {
+    "id": "vesper-arc",
+    "source": "D:/Temp/codex-clipboard-d1849bd0-2ff9-4452-9ca6-7c03f56782cc.png",
+    "asset": "advert-vesper-arc.png",
+    "aspect": "portrait 2:3",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve deep forestgreen/copper luxury space travel ad: woman seen from rear walking through tall arch into orbital lounge, copper planet curving outside grand windows, elegant copper title at top. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): VESPER ARC. LEAVE THE REST BELOW. Preserve portrait 2:3 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-42d57950-f2d2-4684-8159-6685c25f81e9.png"
+  },
+  {
+    "id": "synthsilk",
+    "source": "D:/Temp/codex-clipboard-5bfa699d-03db-4560-af84-c3ad99f45ddd.png",
+    "asset": "advert-synthsilk.png",
+    "aspect": "portrait 2:3",
+    "prompt": "Use case: style-transfer. Asset type: an in-world billboard texture for our detailed voxel cyberpunk game. Input image 1 is the exact advertisement to restyle. Recreate its composition, brand identity, color palette, subjects and all readable lettering in a rich, fully three-dimensional VOXEL art style. Preserve deep plum/black luxury ad: neatly folded dark silk robe with silver clasp on a metal pedestal, flowing silk folds behind, elegant pale pink title and slogan. Every depicted object and character must be built of small crisp cubes with stepped silhouettes, layered voxel geometry, pixel-scale material variation and cinematic ambient-occlusion lighting like a premium Blender voxel render. Do not merely pixelate the original photo. Text must remain clean, high contrast, accurately spelled and legible on a game billboard; use block-aware lettering faithful to the reference layout. Text (verbatim, matching reference): SYNTHSILK. FEEL MORE. ENGINEERED NIGHTWEAR. Preserve portrait 2:3 aspect ratio and full uncropped poster layout. Fill the entire image with the advertisement itself, no external billboard frame, no streets, no UI, no collage, no watermark. The requested change is visual voxel stylization; preserve the original advertising concept.",
+    "generator": "built-in image_gen",
+    "generatedPath": "C:\\Users\\Admin\\.codex\\generated_images\\01a0748f-fc60-7873-a0af-8caf17093bae\\exec-796075f6-cf5f-4838-a05f-8d17a40ee6ac.png"
+  }
+]

@@ -1,0 +1,219 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T03:43:52.466Z",
+  "url": "http://127.0.0.1:5173/?test=1",
+  "buildAsset": "/assets/index-CP8dLm2v.js",
+  "browser": "152.0.7977.77",
+  "method": "Actual keyboard driving from the starter interceptor; test teleport used only to stand beside the parked starter car before entering. No vehicle position or simulation time overrides.",
+  "results": [
+    {
+      "test": "Expanded city and twelve district patrols initialize",
+      "pass": true,
+      "bounds": {
+        "minX": -350,
+        "maxX": 350,
+        "minZ": -600,
+        "maxZ": 190
+      }
+    },
+    {
+      "test": "M opens the full six-district road map and returns to play",
+      "pass": true
+    },
+    {
+      "test": "Actual E/WASD/handbrake driving reaches all six districts through both axes and outer roads",
+      "pass": true,
+      "distanceMetres": 2574,
+      "peakSpeedMetresPerSecond": 32,
+      "checkpoints": 13,
+      "visitedDistricts": [
+        "Kasumi Ward",
+        "Stacktown",
+        "Lantern Market",
+        "Iron Docks",
+        "Meridian East",
+        "Crown Plaza"
+      ]
+    }
+  ],
+  "errors": [],
+  "final": {
+    "ready": true,
+    "mode": "playing",
+    "position": [
+      -212.9961698185385,
+      1.75,
+      -227.33345081613803
+    ],
+    "health": 100,
+    "energy": 100,
+    "ammo": 24,
+    "holstered": true,
+    "thirdPerson": false,
+    "photoMode": false,
+    "carSpeed": 0,
+    "inVehicle": false,
+    "elapsed": 129.4186000000154,
+    "city": {
+      "bounds": {
+        "minX": -350,
+        "maxX": 350,
+        "minZ": -600,
+        "maxZ": 190
+      },
+      "district": "Stacktown",
+      "roadSegments": 16,
+      "layout": {
+        "voxels": 130785,
+        "signs": 90,
+        "pedestrianVoxels": 4177,
+        "blocks": 34,
+        "roadLength": 9590
+      }
+    },
+    "state": {
+      "kills": 0,
+      "totalDrones": 12,
+      "wantedLevel": 0,
+      "heat": 0,
+      "crimeReason": "",
+      "securityState": "PATROL",
+      "searchRemaining": 0,
+      "interactPrompt": "",
+      "remainingTargets": [
+        {
+          "id": 1,
+          "region": "Kasumi Ward",
+          "x": -5,
+          "y": 4.775006959001356,
+          "z": -143.68000773882576,
+          "hostile": false
+        },
+        {
+          "id": 2,
+          "region": "Kasumi Ward",
+          "x": 5,
+          "y": 5.668631167758774,
+          "z": -13.546369126300506,
+          "hostile": false
+        },
+        {
+          "id": 3,
+          "region": "Lantern Market",
+          "x": -90.33963305493386,
+          "y": 5.10721665856125,
+          "z": 119.39633709210402,
+          "hostile": false
+        },
+        {
+          "id": 4,
+          "region": "Lantern Market",
+          "x": -247.07550183502076,
+          "y": 4.947227647937468,
+          "z": 139.06370454393485,
+          "hostile": false
+        },
+        {
+          "id": 5,
+          "region": "Iron Docks",
+          "x": 209.66036694506687,
+          "y": 4.835757294427805,
+          "z": 119.39633709210402,
+          "hostile": false
+        },
+        {
+          "id": 6,
+          "region": "Iron Docks",
+          "x": 309.37287428254007,
+          "y": 4.875290926977175,
+          "z": -0.5958972228172557,
+          "hostile": false
+        },
+        {
+          "id": 7,
+          "region": "Stacktown",
+          "x": -210.62712571745345,
+          "y": 5.029481506138374,
+          "z": -230.59589722281817,
+          "hostile": false
+        },
+        {
+          "id": 8,
+          "region": "Stacktown",
+          "x": -91.36891189185833,
+          "y": 5.156566924516883,
+          "z": -410.61898147288287,
+          "hostile": false
+        },
+        {
+          "id": 9,
+          "region": "Meridian East",
+          "x": 208.63108810814163,
+          "y": 5.139705434539933,
+          "z": -290.61898147288287,
+          "hostile": false
+        },
+        {
+          "id": 10,
+          "region": "Meridian East",
+          "x": 309.37287428254007,
+          "y": 4.994399412331591,
+          "z": -350.5958972228196,
+          "hostile": false
+        },
+        {
+          "id": 11,
+          "region": "Crown Plaza",
+          "x": -0.25535679762328717,
+          "y": 5.854242544597148,
+          "z": -440.58375371575477,
+          "hostile": false
+        },
+        {
+          "id": 12,
+          "region": "Crown Plaza",
+          "x": 89.74464320237678,
+          "y": 5.848094409165143,
+          "z": -320.5837537157445,
+          "hostile": false
+        }
+      ],
+      "debrisCount": 0,
+      "regions": [
+        {
+          "name": "Kasumi Ward",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Lantern Market",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Iron Docks",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Stacktown",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Meridian East",
+          "patrols": 2,
+          "responding": 0
+        },
+        {
+          "name": "Crown Plaza",
+          "patrols": 2,
+          "responding": 0
+        }
+      ]
+    },
+    "drawCalls": 201,
+    "triangles": 2569050,
+    "averageFPS": 60
+  }
+}
