@@ -1,0 +1,140 @@
+{
+  "status": "functional-checks-passed-with-documented-quality-limits",
+  "checkedAtUTC": "2026-09-06T12:50:34.253Z",
+  "build": "D0-THxnE",
+  "bundle": {
+    "url": "http://127.0.0.1:5173/assets/index-D0-THxnE.js",
+    "sha256": "c31e14bcc022368963c4350d3f243e32692b2b9e60417b69ce3fc0140ebba902"
+  },
+  "chromeClosed": true,
+  "gpuReleased": true,
+  "functional": {
+    "summary": "ragdoll-contact-browser-D0-THxnE-2026-09-06T12-45-04-173Z.json",
+    "compressedRaw": "ragdoll-contact-browser-D0-THxnE-2026-09-06T12-45-04-173Z-raw.json.gz",
+    "actualInputs": [
+      "E",
+      "W",
+      "S",
+      "Space"
+    ],
+    "observationCapMs": 35000,
+    "results": [
+      {
+        "test": "Actual forward W run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+        "passed": true,
+        "id": "CIV-041",
+        "firstSleepSeconds": 11.554699999999984,
+        "continuousSleepSeconds": 2.0008000000000017,
+        "observationSeconds": 13.538799999999945,
+        "segments": 11,
+        "joints": 10,
+        "maxWholeBodyRise": 0.8716921068066046,
+        "maxUpVelocity": 3.2000000000000006,
+        "maxJointError": 0.1338713138449322,
+        "maxHullError": 1.1102230246251565e-16,
+        "restPositionDrift": 0,
+        "restRotationDrift": 5.16191365590357e-8
+      },
+      {
+        "test": "A second actual W-driven car contact wakes and moves a previously sleeping physical corpse",
+        "passed": true,
+        "id": "CIV-041",
+        "displacement": 4.017496960394486,
+        "awakeSamples": 48,
+        "maxSpeed": 15.279573699962823
+      },
+      {
+        "test": "Actual reverse S run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+        "passed": true,
+        "id": "CIV-041",
+        "firstSleepSeconds": 22.992499999999755,
+        "continuousSleepSeconds": 2.0008000000000052,
+        "observationSeconds": 24.976599999999717,
+        "segments": 11,
+        "joints": 10,
+        "maxWholeBodyRise": 0.1448824971510725,
+        "maxUpVelocity": 2.938916118766206,
+        "maxJointError": 0.06971916566808865,
+        "maxHullError": 1.1102230246251565e-16,
+        "restPositionDrift": 0,
+        "restRotationDrift": 5.16191365590357e-8
+      }
+    ]
+  },
+  "cleanTiming": {
+    "method": "One fresh context with unwrapped180-RAF warmup,300-RAF baseline and300-RAF24-death load. Exact reference IDs/camera. No runtime wrappers, CPU profiles or GPU timing queries. CDP Performance counters read only outside windows.",
+    "browser": "152.0.7977.77",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "phases": [
+      {
+        "name": "control-baseline",
+        "frames": 300,
+        "fps": 59.97600959616154,
+        "meanRafMs": 16.673333333333332,
+        "p95RafMs": 16.799999999999272,
+        "maxRafMs": 16.899999999999636,
+        "intervalsOver25ms": 0,
+        "articulated": 0,
+        "simplified": 0,
+        "joints": 0,
+        "worldBodies": 2281,
+        "solverIterationsAtEnd": 7
+      },
+      {
+        "name": "control-24-new-deaths",
+        "frames": 300,
+        "fps": 56.940042135631174,
+        "meanRafMs": 17.562333333333335,
+        "p95RafMs": 33.29999999999927,
+        "maxRafMs": 33.400000000001455,
+        "intervalsOver25ms": 16,
+        "articulated": 24,
+        "simplified": 0,
+        "joints": 240,
+        "worldBodies": 2552,
+        "solverIterationsAtEnd": 12
+      }
+    ],
+    "referenceIds": [
+      "CIV-028",
+      "CIV-014",
+      "CIV-030",
+      "CIV-037",
+      "CIV-010",
+      "CIV-038",
+      "CIV-020",
+      "CIV-036",
+      "CIV-039",
+      "CIV-006",
+      "CIV-040",
+      "CIV-019",
+      "CIV-027",
+      "CIV-003",
+      "CIV-041",
+      "CIV-016",
+      "CIV-035",
+      "CIV-002",
+      "CIV-005",
+      "CIV-017",
+      "CIV-043",
+      "CIV-009",
+      "CIV-021",
+      "CIV-042"
+    ],
+    "raw": "../../../work/performance-diagnosis/D0-THxnE-2026-09-06T12-48-25-329Z/report.json",
+    "reference": "performance-pass-01-comparison.json",
+    "coordination": "Root, physics and city confirmed heavy CPU paused before this single clean sample; no simultaneous Chrome or Blender run."
+  },
+  "limitations": [
+    "Reverse impact required 22.99 seconds before first native sleep, then 2 continuous seconds of invariant sleep. This remains visibly slow settling despite the eventual pass.",
+    "The original independent 27.661-second settling case remains preserved; neither extending the observation cap nor this different pose establishes a general settling fix.",
+    "Clean 24-death load averages 56.94 FPS, with 16 of 300 intervals over 25 ms and p95 of 33.3 ms. It is not locked at 60 FPS.",
+    "Functional capture timing is instrumented and is not used as the performance benchmark.",
+    "Same civilian IDs/camera do not produce bit-for-bit identical contact trajectories across browser runs.",
+    "No collision fidelity, corpse count, shape, mask or 12-iteration loaded solver setting was reduced. This bounded verification is not an AAA-quality claim."
+  ],
+  "errors": []
+}

@@ -6,6 +6,7 @@ import { createCivilianSystem } from './civilians.js';
 import { createSurfaceMaterial } from './surface-materials.js';
 import { createCityServices } from './city-services.js';
 import { createServiceFixtures } from './service-fixtures.js';
+import { createGroundHeightSampler } from './ground-height.js';
 import { RectAreaLightUniformsLib } from 'three/addons/lights/RectAreaLightUniformsLib.js';
 
 // The same deterministic voxel modules are exported to the editable Blender scene.
@@ -13,7 +14,7 @@ export function createCity(scene) {
   const layout=createCityLayout();
   const {boxes,signs,colliders,bounds,roads,districts,patrolRoutes,chunks,citySize}=layout;
   const groundSurfaces=boxes.filter(v=>v.kind==='pavement'&&v.sx>=1&&v.sz>=1&&v.y+v.sy/2>=.08&&v.y+v.sy/2<=.4);
-  function groundHeightAt(x,z){let height=.057;for(const v of groundSurfaces){const cs=Math.cos(v.ry||0),sn=Math.sin(v.ry||0),dx=x-v.x,dz=z-v.z;if(Math.abs(dx*cs-dz*sn)<=v.sx/2&&Math.abs(dx*sn+dz*cs)<=v.sz/2)height=Math.max(height,v.y+v.sy/2)}return height}
+  const groundHeightAt=createGroundHeightSampler(groundSurfaces);
   const serviceSource={boxes,streetDetails:layout.streetDetails,roads,districts,colliders,buildings:layout.buildings};
   const serviceFixtures=createServiceFixtures({source:serviceSource,sites:createCityServices({layout:serviceSource,groundHeightAt}).list()});
   const replacedServiceBoxes=new Set(serviceFixtures.removedBoxIds);

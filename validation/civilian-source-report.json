@@ -1,0 +1,38 @@
+{
+  "checkedAtUTC": "2026-09-06T12:24:45.908Z",
+  "passed": true,
+  "results": [
+    {
+      "name": "All authored citizens and continuing aircraft match the frozen pre-extraction data",
+      "passed": true,
+      "people": 284,
+      "umbrellaPeople": 95,
+      "voxelPieces": 14785,
+      "aircraft": 16,
+      "peopleSHA256": "4f52a788f418be78eeb6580990a5acde38aaa1a05b76f15c394c733440c826f3",
+      "airTrafficSHA256": "51d1a7454635d9df5a8c7c4848a287fb1437fedb10d7122a016e1552a8c40f46",
+      "rng": {
+        "seed": 29715,
+        "stateAfterPeople": 474785530,
+        "stateAfterAirTraffic": 1410189882,
+        "drawsAfterPeople": 6485,
+        "drawsTotal": 6549
+      }
+    },
+    {
+      "name": "District order, equal-distance ties and fallback coats retain the old selection rules",
+      "passed": true,
+      "districtVariants": 4,
+      "tieUsesFirstDistrict": true
+    },
+    {
+      "name": "Callers own independent records and templates retain ordered motion bindings and swatch draws",
+      "passed": true,
+      "freshPopulationObjects": true,
+      "bodyPieces": 35,
+      "umbrellaPieces": 51,
+      "umbrellaSwatchDraws": 37,
+      "alternateSeedDeterministic": true
+    }
+  ]
+}

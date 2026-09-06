@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "checkedAtUTC": "2026-09-06T11:41:17.633Z",
+  "oracleCheckpoint": "b5707d3",
+  "results": [
+    {
+      "name": "Random rotated multicell bodies retain every unordered pair against legacy and CannonNaive",
+      "passed": true,
+      "snapshots": 25,
+      "totalPairs": 12209,
+      "orderedPairsIdentical": true
+    },
+    {
+      "name": "Infinite ground, global moving boxes and sleeping receivers obey canonical ownership",
+      "passed": true,
+      "snapshots": 3,
+      "totalPairs": 14,
+      "orderedPairsIdentical": true
+    },
+    {
+      "name": "Collision masks and same-civilian umbrella exclusions preserve cross-corpse contacts",
+      "passed": true,
+      "snapshots": 1,
+      "totalPairs": 17,
+      "orderedPairsIdentical": true
+    },
+    {
+      "name": "Remove, readd, type conversion, rotated static relocation and external AABB refresh stay coherent",
+      "passed": true,
+      "snapshots": 6,
+      "totalPairs": 8,
+      "orderedPairsIdentical": true,
+      "externalAabbRefresh": true
+    },
+    {
+      "name": "Accepted moving kinematics wake and push sleeping dynamics through real world contacts",
+      "passed": true,
+      "firstSleepState": 0,
+      "afterSleepState": 0,
+      "speed": 12.201142707224735,
+      "carPosition": [
+        0,
+        1,
+        1.75
+      ]
+    },
+    {
+      "name": "Production city with24 articulated deaths retains pairs through motion, sleep, wake and reset",
+      "passed": true,
+      "snapshots": 10,
+      "totalPairs": 1722,
+      "orderedPairsIdentical": true,
+      "bodiesAtLoad": 2498,
+      "selected": 24,
+      "meanCollisionPairsMs": {
+        "legacy": 1.3679390000000011,
+        "optimized": 0.4450960000000032,
+        "ratio": 0.3253770818728049
+      },
+      "note": "Bounded CPU microbenchmark on one settled-in-progress production snapshot; this is not browser FPS."
+    }
+  ]
+}

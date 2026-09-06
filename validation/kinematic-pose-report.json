@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "checkedAtUTC": "2026-09-06T12:41:40.826Z",
+  "results": [
+    {
+      "name": "One world controller installs exactly one listener set and disposal is reversible",
+      "passed": true,
+      "sharedInstance": true,
+      "listenersRemoved": true
+    },
+    {
+      "name": "Slow accepted contact pushes wake actual receivers without waking nearby resting objects",
+      "passed": true,
+      "observations": [
+        {
+          "motionHints": true,
+          "speed": 0.06,
+          "firstContact": 120,
+          "firstWake": 120,
+          "receiverDisplacement": 0.12073389101205083,
+          "maxPenetration": 0,
+          "remoteStayedAsleep": true
+        },
+        {
+          "motionHints": false,
+          "speed": 0.06,
+          "firstContact": 120,
+          "firstWake": 120,
+          "receiverDisplacement": 0.11783652280731335,
+          "maxPenetration": 0.0020236560750811483,
+          "remoteStayedAsleep": true
+        }
+      ]
+    },
+    {
+      "name": "Temporary contact wake thresholds restore on idle, clear, unregister, dynamic conversion, removal and disposal",
+      "passed": true,
+      "restoredOriginalLimit": 0.23,
+      "cleanupPaths": 8,
+      "worldTransferPreserved": true
+    },
+    {
+      "name": "Accepted translation and yaw remain exact at every internal step while solver sees contact velocity",
+      "passed": true,
+      "internalSteps": 4,
+      "maximumTranslationError": 0,
+      "maximumQuaternionError": 0,
+      "solverVelocity": [
+        0,
+        0,
+        -10
+      ],
+      "solverAngularVelocity": [
+        0,
+        1.2,
+        0
+      ]
+    },
+    {
+      "name": "Moving accepted car transfers real contact momentum without a second hull displacement",
+      "passed": true,
+      "observations": [
+        {
+          "speed": 0,
+          "peakProbeForwardSpeed": 0.36937848456917594,
+          "probeDisplacement": 0.024625232304611444
+        },
+        {
+          "speed": 10,
+          "peakProbeForwardSpeed": 11.81224699930658,
+          "probeDisplacement": 0.787483133287104
+        }
+      ]
+    },
+    {
+      "name": "A genuinely idle car resumes translation and wakes a sleeping receiver on the first contact step",
+      "passed": true,
+      "before": {
+        "car": 2,
+        "receiver": 2
+      },
+      "after": {
+        "car": 0,
+        "receiver": 0
+      },
+      "receiverVelocity": [
+        0.26723352156638713,
+        3.6510802165164233,
+        -4.5115189732692995
+      ],
+      "internalSteps": 3,
+      "acceptedPoseExact": true
+    },
+    {
+      "name": "A genuinely idle rotating fixture wakes with angular hints and transfers contact to a sleeping receiver",
+      "passed": true,
+      "contacts": 4,
+      "receiverVelocity": [
+        -0.4405453372996376,
+        -0.2521477739793778,
+        -6.526992733650193
+      ],
+      "acceptedYaw": 0.3
+    },
+    {
+      "name": "Cached targets detect callers mutating the body first, while unchanged and quaternion-sign-equivalent idle targets stay asleep",
+      "passed": true,
+      "unchangedIdlePreserved": true,
+      "quaternionSignEquivalent": true,
+      "preMutatedTranslationAndYawWake": true,
+      "resetTargetWake": true,
+      "angularHintAloneWakes": true
+    },
+    {
+      "name": "First registration respects existing idle state, moving hints wake, and dynamic bodies retain their own sleep lifecycle",
+      "passed": true,
+      "firstUnchangedRegistrationSleeps": true,
+      "firstMovingRegistrationWakes": true,
+      "firstDifferentPoseWakes": true,
+      "dynamicSleepUntouched": true
+    },
+    {
+      "name": "Unregistering or changing to dynamic preserves free rigid-body motion and mass",
+      "passed": true,
+      "dynamicMass": 1200,
+      "noTargetReassertion": true
+    },
+    {
+      "name": "Traffic accepted poses stay fixed through substeps; wrecks unregister and resets restore neutral targets",
+      "passed": true,
+      "perStepPoseChecks": 64,
+      "trafficBodies": 16,
+      "wreckFree": true,
+      "resetHintsZero": true
+    }
+  ]
+}

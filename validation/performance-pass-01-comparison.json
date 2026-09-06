@@ -1,0 +1,149 @@
+{
+  "status": "measured-improvement-with-remaining-frame-spikes",
+  "checkedAtUTC": "2026-09-06T12:02:26.051Z",
+  "fixture": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "browser": "152.0.7977.77",
+    "civilianIds": [
+      "CIV-028",
+      "CIV-014",
+      "CIV-030",
+      "CIV-037",
+      "CIV-010",
+      "CIV-038",
+      "CIV-020",
+      "CIV-036",
+      "CIV-039",
+      "CIV-006",
+      "CIV-040",
+      "CIV-019",
+      "CIV-027",
+      "CIV-003",
+      "CIV-041",
+      "CIV-016",
+      "CIV-035",
+      "CIV-002",
+      "CIV-005",
+      "CIV-017",
+      "CIV-043",
+      "CIV-009",
+      "CIV-021",
+      "CIV-042"
+    ],
+    "newDeaths": 24,
+    "articulated": 24,
+    "simplified": 0,
+    "joints": 240,
+    "worldBodies": 2552,
+    "method": "Same exact civilian IDs at their authored live positions; observer camera only is positioned. Production damage service creates the death load. Each clean phase records 300 native RAF intervals after warmup. This is a load fixture, not a real-input combat test."
+  },
+  "before": {
+    "build": "CS_PCoEN",
+    "bundle": {
+      "url": "http://127.0.0.1:5173/assets/index-CS_PCoEN.js",
+      "sha256": "4127c17e40b92cce9fd282c47fe5de600385e1408ef73b7b0fee36c18ec3aff3"
+    },
+    "cleanBaseline": {
+      "fps": 59.97600959616152,
+      "meanRafMs": 16.67333333333334,
+      "p95RafMs": 16.799999999999272
+    },
+    "clean24Deaths": {
+      "fps": 40.800228481279504,
+      "meanRafMs": 24.50966666666666,
+      "p95RafMs": 33.400000000001455
+    },
+    "instrumented24Deaths": {
+      "fpsWithObserverOverhead": 36.4963503649635,
+      "callbackCpuMsPerFrame": 26.730163934484857,
+      "gpuElapsedMsPerFrame": 10.70795457049181,
+      "worldStepMsPerFrame": 12.088524590457071,
+      "broadphaseMsPerFrame": 3.454098361632863,
+      "narrowphaseMsPerFrame": 1.5901639352079298,
+      "solverMsPerFrame": 5.639344261317957,
+      "civiliansMsPerFrame": 8.217377048828563,
+      "fixedStepsPerFrame": 1.639344262295082,
+      "broadphaseMsPerFixedStep": 2.107000000596046,
+      "narrowphaseMsPerFixedStep": 0.9700000004768371,
+      "solverMsPerFixedStep": 3.4399999994039536,
+      "equationsPerFixedStep": 1790.778,
+      "actualIterationsPerFixedStep": 12
+    }
+  },
+  "after": {
+    "build": "C_4wor07",
+    "bundle": {
+      "url": "http://127.0.0.1:5173/assets/index-C_4wor07.js",
+      "sha256": "0396d38e7ae416103e2f72c5c757abb6789ac26393f4a70d6a726ad8da4ccc3a"
+    },
+    "cleanBaseline": {
+      "fps": 59.97600959616155,
+      "meanRafMs": 16.67333333333333,
+      "p95RafMs": 16.799999999999272
+    },
+    "clean24Deaths": {
+      "fps": 56.22610390583999,
+      "meanRafMs": 17.78533333333334,
+      "p95RafMs": 33.29999999999927
+    },
+    "instrumented24Deaths": {
+      "fpsWithObserverOverhead": 48.4981732354748,
+      "callbackCpuMsPerFrame": 20.027540983919238,
+      "gpuElapsedMsPerFrame": 9.203037167213122,
+      "worldStepMsPerFrame": 8.06852458910864,
+      "broadphaseMsPerFrame": 1.1045901635631186,
+      "narrowphaseMsPerFrame": 1.520983606283782,
+      "solverMsPerFrame": 4.342295082573031,
+      "civiliansMsPerFrame": 6.233114753981106,
+      "fixedStepsPerFrame": 1.2459016393442623,
+      "broadphaseMsPerFixedStep": 0.8865789470703977,
+      "narrowphaseMsPerFixedStep": 1.2207894734646145,
+      "solverMsPerFixedStep": 3.4852631583809854,
+      "equationsPerFixedStep": 1913.3526315789472,
+      "actualIterationsPerFixedStep": 12
+    }
+  },
+  "cleanChange": {
+    "loadedFpsIncreasePercent": 37.80830646975026,
+    "loadedMeanFrameDecreasePercent": 27.43543363842833
+  },
+  "qualifications": {
+    "solverIterations": "All loaded fixed steps retained 12 iterations. Solver code and equation ordering logic were not changed. Ordered/oriented candidate equality was proved against the frozen implementation; the separate live replays are not identical contact trajectories or identical equation counts.",
+    "collisionShapes": "No physical shapes, collision masks, corpse counts or fidelity were reduced. Both loaded browser phases retained 24 articulated assemblies, 240 joints and 2,552 world bodies.",
+    "broadphaseCorrection": "Cached static records now also refresh when another query already consumed the AABB dirty flag. This is an intentional stale-record correctness fix, covered separately from the unchanged-snapshot pair-equality proof.",
+    "groundQueries": "164,915 exact comparisons passed, including all 39 authored pavements and rotated/overlapping/boundary cases.",
+    "overhead": "Instrumented FPS is separate from clean production FPS. Wrappers, CPU sampling, Cannon profiling and asynchronous GPU queries add overhead. CPU and GPU overlap and must not be added.",
+    "remainingLimit": "Clean loaded p95 is still 33.3 ms; this is an average improvement to 56.23 FPS, not a locked 60 FPS result.",
+    "timeWindow": "300 rendered frames cover different simulation durations as performance changes. Clean loaded windows are 7.45 s before and 5.42 s after, with 122 vs 200 bodies still awake at the end. Same IDs do not imply bit-for-bit gait/contact poses.",
+    "scope": "One camera, GPU and new-death load. Functional impact/rest/crowd verification is recorded separately; no full-game performance or AAA quality claim."
+  },
+  "evidence": {
+    "beforeRaw": "../../../work/performance-diagnosis/CS_PCoEN-2026-09-06T11-24-50-036Z/report.json",
+    "afterRaw": "../../../work/performance-diagnosis/C_4wor07-2026-09-06T11-57-58-268Z/report.json",
+    "comparison": "../../../work/performance-diagnosis/C_4wor07-2026-09-06T11-57-58-268Z/comparison.json",
+    "harness": "../../../work/ragdoll-performance-diagnosis.cjs",
+    "cpuProfiles": "Both raw folders preserve .cpuprofile files, frame records and exact loaded JavaScript bundles.",
+    "broadphaseProof": "street-broadphase-report.json",
+    "groundProof": "ground-height-report.json",
+    "sourceBeforeAndAfter": {
+      "src/main.js": "e7461954eb311f61cf261b1a86a666fe2fad1a6950843070bdcbaa35ecd2c364",
+      "src/simulation.js": "74e06063fdccdd88af5fa002d53644fc25f0f46747b1717d2f75933dcbbae13b",
+      "src/civilians.js": "07fa47557a503d9b003002c3abbefa532f7436fe332e3efedbd6cb523e2b7d74",
+      "src/civilian-ragdoll.js": "faafbdf01558c26f26160b4e89b8f7827cebb476f5fde7e57e8c3317ac3e8e6e",
+      "src/civilian-motion.js": "d29d6f58b29fffc453f8aa107adbc1260a7161f49cef21c285097e63fa3425aa",
+      "src/civilian-navigation.js": "785d6349bba11e916224d0993cec78551583c66aa62726af10230996fbbb2249",
+      "src/city.js": "2fbec8bcc7e867e830b3b95f35c15cc5924a4d7886c6569238afd828327be8db",
+      "src/city-life.js": "d635d80cd461ab8a73cbcf4ac9fc0c9a85b263b624c7a6bf551db421cba39896",
+      "src/kinematic-pose.js": "2804901da66706106c9aa3514f69419af6944f863725370e2bb8cdc6fbccbacd",
+      "package-lock.json": "cd5c8a9f63146a583b6e18e281ede484c73fe490453120d23b0341efe13e6dc2"
+    },
+    "supplementarySourceAtReport": {
+      "src/ground-height.js": "efaaa33c02bdcaf2882c3ec8cd3ad19081eba8c2a37db6fda1c5ea004f9803bc"
+    }
+  },
+  "errors": [],
+  "chromeClosed": true
+}

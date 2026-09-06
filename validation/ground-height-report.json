@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checkedAtUTC": "2026-09-06T11:35:40.462Z",
+  "results": [
+    {
+      "name": "Rotated, overlapping and cell-boundary footprints preserve exact edge heights",
+      "passed": true,
+      "checks": 58125
+    },
+    {
+      "name": "Every authored pavement agrees with the previous scan throughout the full city",
+      "passed": true,
+      "surfaces": 39,
+      "checks": 106729,
+      "exact": true
+    },
+    {
+      "name": "Very large footprints use bounded storage and keep negative/outside queries correct",
+      "passed": true,
+      "checks": 61
+    }
+  ]
+}

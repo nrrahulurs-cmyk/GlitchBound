@@ -120,6 +120,7 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 | `src/civilian-motion.js` | Grounded leg IK, planted feet, acceleration, turning and flee poses |
 | `src/civilian-navigation.js` | Spatial obstacle queries, accepted movement and living-crowd reservations |
 | `src/player-movement.js` | Grounded character motion, step/jump support and box collision sliding |
+| `src/ground-height.js` | Indexed immutable pavement footprints shared by foot, tire and prop height queries |
 | `src/camera-obstruction.js` | Swept camera clearance and clear-boom recovery |
 | `src/street-detail.js` | Supported frontage assemblies, clear approaches and facade apertures |
 | `src/block-compositions.js` | Authored residential court and market block, structural links and clear routes |
@@ -132,6 +133,7 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 | `src/world-audio.js` | Spatial city sources, neighborhood profiles and travel-driven footsteps |
 | `src/street-collisions.js` | Collision shapes derived from visible street geometry |
 | `src/street-physics.js` | Physical bins and the parked interceptor |
+| `src/street-broadphase.js` | Cached street-body indexing and collision-pair ownership without duplicate candidate work |
 | `src/vehicle-damage.js` | Persistent dents and paint damage on the Blender cars |
 | `src/weapon-rig.js` | Blender weapon hierarchy, muzzle socket, recoil, sway and reload animation |
 | `src/weapon-vfx.js` | Travelling ion bolts and bounded angular impact effects |

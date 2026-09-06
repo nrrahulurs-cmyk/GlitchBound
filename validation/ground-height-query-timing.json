@@ -1,0 +1,52 @@
+{
+  "checkedAtUTC": "2026-09-06T11:37:10.616Z",
+  "method": "Isolated Node query microbenchmark, alternating order after warmup; 196608 road/sidewalk-adjacent point queries per round. This is not an end-to-end game FPS measurement.",
+  "surfaces": 39,
+  "queriesPerRound": 196608,
+  "rounds": [
+    {
+      "original": 72.7328,
+      "optimized": 9.197400000000016,
+      "checksum": 12498.33600002795
+    },
+    {
+      "original": 70.21270000000004,
+      "optimized": 7.484200000000101,
+      "checksum": 12498.33600002795
+    },
+    {
+      "original": 70.3596,
+      "optimized": 7.916699999999992,
+      "checksum": 12498.33600002795
+    },
+    {
+      "original": 71.23649999999998,
+      "optimized": 7.393700000000081,
+      "checksum": 12498.33600002795
+    },
+    {
+      "original": 71.40969999999993,
+      "optimized": 7.506600000000162,
+      "checksum": 12498.33600002795
+    },
+    {
+      "original": 70.41480000000001,
+      "optimized": 7.3840000000000146,
+      "checksum": 12498.33600002795
+    },
+    {
+      "original": 75.96440000000007,
+      "optimized": 7.6013000000000375,
+      "checksum": 12498.33600002795
+    },
+    {
+      "original": 70.2985000000001,
+      "optimized": 7.371499999999969,
+      "checksum": 12498.33600002795
+    }
+  ],
+  "medianMs": {
+    "original": 70.82565,
+    "optimized": 7.4954000000001315
+  }
+}

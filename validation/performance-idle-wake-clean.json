@@ -1,0 +1,93 @@
+{
+  "status": "no-performance-regression-observed",
+  "checkedAtUTC": "2026-09-06T12:38:11.689Z",
+  "build": "5pCnl75W",
+  "bundle": {
+    "url": "http://127.0.0.1:5173/assets/index-5pCnl75W.js",
+    "sha256": "0629fbda831cfaca7b61329d1634212b81adaf3be862b83b2f41555b054d4e0e"
+  },
+  "browser": "152.0.7977.77",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "method": "One fresh browser context. Unwrapped 180-RAF warmup, 300-RAF baseline and 300-RAF fresh24-death load with exact reference IDs and camera. No CPU profiling, runtime function wrappers, GPU timing queries, solver/shape changes or body relocation. CDP Performance counters were read only outside windows.",
+  "phases": [
+    {
+      "name": "control-baseline",
+      "fps": 59.97600959616152,
+      "meanRafMs": 16.67333333333334,
+      "p95RafMs": 16.799999999999272,
+      "maxRafMs": 16.80000000000109,
+      "intervalsOver25ms": 0,
+      "frames": 300,
+      "articulated": 0,
+      "joints": 0,
+      "worldBodies": 2281,
+      "solverIterationsAtEnd": 7
+    },
+    {
+      "name": "control-24-new-deaths",
+      "fps": 57.30221186537799,
+      "meanRafMs": 17.451333333333338,
+      "p95RafMs": 16.80000000000291,
+      "maxRafMs": 33.5,
+      "intervalsOver25ms": 14,
+      "frames": 300,
+      "articulated": 24,
+      "joints": 240,
+      "worldBodies": 2552,
+      "solverIterationsAtEnd": 12
+    }
+  ],
+  "previousBuild": "C_4wor07",
+  "previousLoaded": {
+    "name": "control-24-new-deaths",
+    "fps": 56.22610390583999,
+    "meanRafMs": 17.78533333333334,
+    "p95RafMs": 33.29999999999927,
+    "maxRafMs": 33.400000000001455,
+    "intervalsOver25ms": 20,
+    "frames": 300,
+    "articulated": 24,
+    "joints": 240,
+    "worldBodies": 2552,
+    "solverIterationsAtEnd": 12
+  },
+  "sameIds": [
+    "CIV-028",
+    "CIV-014",
+    "CIV-030",
+    "CIV-037",
+    "CIV-010",
+    "CIV-038",
+    "CIV-020",
+    "CIV-036",
+    "CIV-039",
+    "CIV-006",
+    "CIV-040",
+    "CIV-019",
+    "CIV-027",
+    "CIV-003",
+    "CIV-041",
+    "CIV-016",
+    "CIV-035",
+    "CIV-002",
+    "CIV-005",
+    "CIV-017",
+    "CIV-043",
+    "CIV-009",
+    "CIV-021",
+    "CIV-042"
+  ],
+  "errors": [],
+  "chromeClosed": true,
+  "raw": "../../../work/performance-diagnosis/5pCnl75W-2026-09-06T12-35-16-715Z/report.json",
+  "lifecycleReview": "The wake correction matches native Cannon lifecycle timing and current callers. A separate unchanged native low-speed receiver-wake threshold remains: see private work/kinematic-idle-review.json and work/kinematic-idle-lifecycle-review.md. This timing sample does not certify every contact lifecycle.",
+  "limitations": [
+    "One camera/browser/load sample, not a general performance guarantee.",
+    "Same IDs do not give bit-for-bit gait/contact timing.",
+    "Production damage service is a load fixture, not a real-input combat test.",
+    "The previous and current single-run p95 can shift around a 5% dropped-frame boundary; no locked60FPS claim."
+  ]
+}

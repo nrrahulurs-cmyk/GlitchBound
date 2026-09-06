@@ -1,0 +1,1934 @@
+{
+  "status": "passed",
+  "checkedAtUTC": "2026-09-06T12:46:06.129Z",
+  "build": "/assets/index-D0-THxnE.js",
+  "restTimeoutMs": 35000,
+  "method": "Hardware Chrome production bundle. Real E/W/S/Space inputs cause impacts, deaths and the second contact that wakes the sleeping body. Test hooks only arrange initial poses and later observation cameras. Rendered RAF samples inspect actual Cannon segments, visible civilian bounds and owned hull alignment. Timing here is instrumented diagnostic data, not a performance benchmark. The longer diagnostic observation cap does not fix or dismiss late settling.",
+  "results": [
+    {
+      "test": "Actual forward W run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+      "pass": true,
+      "id": "CIV-041",
+      "metrics": {
+        "samples": 807,
+        "maxWholeBodyRise": 0.8716921068066046,
+        "maxUpVelocity": 3.2000000000000006,
+        "maxJointError": 0.1338713138449322,
+        "displacement": 12.114754283075627,
+        "finalMinimumY": 0.05454859658622824,
+        "finalGround": 0.057,
+        "finalSpeed": 0,
+        "sleeping": true,
+        "segments": 11,
+        "joints": 10,
+        "maxLimbRelativeRotation": 0.7258460887798595,
+        "restPositionDrift": 0,
+        "restRotationDrift": 5.16191365590357e-8,
+        "maxHullError": 1.1102230246251565e-16,
+        "settling": {
+          "firstSleepSeconds": 11.554699999999984,
+          "continuousSleepSeconds": 2.0008000000000017,
+          "observationSeconds": 13.538799999999945,
+          "quietResets": [
+            {
+              "seconds": 4.034899999999999,
+              "previousQuiet": 0.6169000000000016,
+              "quiet": 0.5668000000000049,
+              "energy": 0.0016192455008071384,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.0516,
+              "previousQuiet": 0.5668000000000049,
+              "quiet": 0.5167000000000027,
+              "energy": 0.0016104527420430373,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.068299999999999,
+              "previousQuiet": 0.5167000000000027,
+              "quiet": 0.466600000000006,
+              "energy": 0.0019293803881073898,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.085,
+              "previousQuiet": 0.466600000000006,
+              "quiet": 0.4165000000000038,
+              "energy": 0.001995318139799895,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.1016,
+              "previousQuiet": 0.4165000000000038,
+              "quiet": 0.3667000000000027,
+              "energy": 0.0020510251922643947,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.1183,
+              "previousQuiet": 0.3667000000000027,
+              "quiet": 0.316600000000006,
+              "energy": 0.0021288985794997695,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.135000000000001,
+              "previousQuiet": 0.316600000000006,
+              "quiet": 0.2665000000000038,
+              "energy": 0.002229541867167606,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.151600000000001,
+              "previousQuiet": 0.2665000000000038,
+              "quiet": 0.2167000000000027,
+              "energy": 0.0023041579972706955,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.1684,
+              "previousQuiet": 0.2167000000000027,
+              "quiet": 0.1663000000000049,
+              "energy": 0.0022971862572009234,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.1850000000000005,
+              "previousQuiet": 0.1663000000000049,
+              "quiet": 0.1165000000000038,
+              "energy": 0.0021632429993863277,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.2017000000000015,
+              "previousQuiet": 0.1165000000000038,
+              "quiet": 0.06640000000000161,
+              "energy": 0.002146718187601276,
+              "poseStable": false
+            },
+            {
+              "seconds": 4.2183,
+              "previousQuiet": 0.06640000000000161,
+              "quiet": 0.01660000000000597,
+              "energy": 0.0019960302250201464,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.235400000000012,
+              "previousQuiet": 0.9836999999999992,
+              "quiet": 0.9338999999999982,
+              "energy": 0.0007918819095155287,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.252100000000013,
+              "previousQuiet": 0.9338999999999982,
+              "quiet": 0.883799999999996,
+              "energy": 0.0007580075456318892,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.268800000000012,
+              "previousQuiet": 0.883799999999996,
+              "quiet": 0.8336999999999993,
+              "energy": 0.0007219106023545335,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.2854000000000125,
+              "previousQuiet": 0.8336999999999993,
+              "quiet": 0.7838999999999983,
+              "energy": 0.000990643195564767,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.302100000000014,
+              "previousQuiet": 0.7838999999999983,
+              "quiet": 0.7337999999999961,
+              "energy": 0.0009772708234689717,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.318800000000013,
+              "previousQuiet": 0.7337999999999961,
+              "quiet": 0.6836999999999994,
+              "energy": 0.0009347524419572948,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.335500000000014,
+              "previousQuiet": 0.6836999999999994,
+              "quiet": 0.6335999999999973,
+              "energy": 0.0008924847138982433,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.352100000000014,
+              "previousQuiet": 0.6335999999999973,
+              "quiet": 0.5837999999999962,
+              "energy": 0.0008668005503675517,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.368800000000014,
+              "previousQuiet": 0.5837999999999962,
+              "quiet": 0.5336999999999995,
+              "energy": 0.0008625103608771486,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.385500000000015,
+              "previousQuiet": 0.5336999999999995,
+              "quiet": 0.4835999999999973,
+              "energy": 0.0008299067391384875,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.402100000000015,
+              "previousQuiet": 0.4835999999999973,
+              "quiet": 0.4337999999999962,
+              "energy": 0.0009578806374953737,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.418900000000014,
+              "previousQuiet": 0.4337999999999962,
+              "quiet": 0.38339999999999835,
+              "energy": 0.0009372395897588604,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.435500000000014,
+              "previousQuiet": 0.38339999999999835,
+              "quiet": 0.33359999999999723,
+              "energy": 0.0008791320417640561,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.4522000000000155,
+              "previousQuiet": 0.33359999999999723,
+              "quiet": 0.28349999999999503,
+              "energy": 0.0008274182604538271,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.468800000000014,
+              "previousQuiet": 0.28349999999999503,
+              "quiet": 0.2336999999999994,
+              "energy": 0.0008813699961998869,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.485500000000015,
+              "previousQuiet": 0.2336999999999994,
+              "quiet": 0.1835999999999972,
+              "energy": 0.000874968517205442,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.502200000000016,
+              "previousQuiet": 0.1835999999999972,
+              "quiet": 0.133499999999995,
+              "energy": 0.000879702375226023,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.5189000000000155,
+              "previousQuiet": 0.133499999999995,
+              "quiet": 0.08339999999999828,
+              "energy": 0.0008379705707605568,
+              "poseStable": false
+            },
+            {
+              "seconds": 5.535500000000016,
+              "previousQuiet": 0.08339999999999828,
+              "quiet": 0.03359999999999719,
+              "energy": 0.0009724311891262383,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.136200000000027,
+              "previousQuiet": 1.5673999999999997,
+              "quiet": 1.5175999999999932,
+              "energy": 0.00017229449306821538,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.152900000000028,
+              "previousQuiet": 1.5175999999999932,
+              "quiet": 1.467499999999991,
+              "energy": 0.00019676833168081906,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.169500000000027,
+              "previousQuiet": 1.467499999999991,
+              "quiet": 1.4176999999999953,
+              "energy": 0.00019276733661567833,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.186200000000028,
+              "previousQuiet": 1.4176999999999953,
+              "quiet": 1.367599999999993,
+              "energy": 0.00025860898927037126,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.202900000000029,
+              "previousQuiet": 1.367599999999993,
+              "quiet": 1.3174999999999908,
+              "energy": 0.00024328378033936044,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.219600000000026,
+              "previousQuiet": 1.3174999999999908,
+              "quiet": 1.2673999999999994,
+              "energy": 0.00024150354179645135,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.236200000000029,
+              "previousQuiet": 1.2673999999999994,
+              "quiet": 1.217599999999993,
+              "energy": 0.00026475930972391415,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.25290000000003,
+              "previousQuiet": 1.217599999999993,
+              "quiet": 1.1674999999999907,
+              "energy": 0.000247705624080732,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.269600000000027,
+              "previousQuiet": 1.1674999999999907,
+              "quiet": 1.1173999999999995,
+              "energy": 0.00023252543620783174,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.286200000000029,
+              "previousQuiet": 1.1173999999999995,
+              "quiet": 1.067599999999993,
+              "energy": 0.00021814346337334397,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.303000000000028,
+              "previousQuiet": 1.067599999999993,
+              "quiet": 1.0171999999999952,
+              "energy": 0.00020884388915846239,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.319600000000027,
+              "previousQuiet": 1.0171999999999952,
+              "quiet": 0.9673999999999996,
+              "energy": 0.0001992154040378001,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.336300000000028,
+              "previousQuiet": 0.9673999999999996,
+              "quiet": 0.9172999999999975,
+              "energy": 0.0002237480347499612,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.35290000000003,
+              "previousQuiet": 0.9172999999999975,
+              "quiet": 0.867499999999991,
+              "energy": 0.00021304038020798815,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.369700000000029,
+              "previousQuiet": 0.867499999999991,
+              "quiet": 0.8170999999999932,
+              "energy": 0.00020947191909976472,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.386300000000028,
+              "previousQuiet": 0.8170999999999932,
+              "quiet": 0.7672999999999975,
+              "energy": 0.0001995215451109268,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.403000000000029,
+              "previousQuiet": 0.7672999999999975,
+              "quiet": 0.7171999999999954,
+              "energy": 0.00019293506737730605,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.4196000000000275,
+              "previousQuiet": 0.7171999999999954,
+              "quiet": 0.6673999999999998,
+              "energy": 0.00021105470818902995,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.4363000000000286,
+              "previousQuiet": 0.6673999999999998,
+              "quiet": 0.6172999999999976,
+              "energy": 0.00020212680539908023,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.45300000000003,
+              "previousQuiet": 0.6172999999999976,
+              "quiet": 0.5671999999999955,
+              "energy": 0.0002075098541683188,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.469700000000031,
+              "previousQuiet": 0.5671999999999955,
+              "quiet": 0.5170999999999933,
+              "energy": 0.0002523203527063873,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.486300000000029,
+              "previousQuiet": 0.5170999999999933,
+              "quiet": 0.4672999999999977,
+              "energy": 0.0002698289497181266,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.50300000000003,
+              "previousQuiet": 0.4672999999999977,
+              "quiet": 0.4171999999999955,
+              "energy": 0.00032181748487498046,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.519700000000031,
+              "previousQuiet": 0.4171999999999955,
+              "quiet": 0.3670999999999933,
+              "energy": 0.00032690098236696656,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.536400000000032,
+              "previousQuiet": 0.3670999999999933,
+              "quiet": 0.3169999999999911,
+              "energy": 0.00030929686170776783,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.553000000000031,
+              "previousQuiet": 0.3169999999999911,
+              "quiet": 0.2671999999999955,
+              "energy": 0.00031910739745666334,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.569700000000032,
+              "previousQuiet": 0.2671999999999955,
+              "quiet": 0.2170999999999933,
+              "energy": 0.0003175974327037069,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.586400000000033,
+              "previousQuiet": 0.2170999999999933,
+              "quiet": 0.1669999999999911,
+              "energy": 0.00031846065488878546,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.603000000000032,
+              "previousQuiet": 0.1669999999999911,
+              "quiet": 0.11719999999999546,
+              "energy": 0.0003001033413329416,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.619800000000031,
+              "previousQuiet": 0.11719999999999546,
+              "quiet": 0.06679999999999764,
+              "energy": 0.00028109276053051247,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.636400000000033,
+              "previousQuiet": 0.06679999999999764,
+              "quiet": 0.01699999999999109,
+              "energy": 0.00029966209583715106,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.237000000000018,
+              "previousQuiet": 1.5674000000000028,
+              "quiet": 1.5176000000000072,
+              "energy": 0.0003613806164583954,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.253700000000018,
+              "previousQuiet": 1.5176000000000072,
+              "quiet": 1.467500000000005,
+              "energy": 0.00045613255893312774,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.270400000000018,
+              "previousQuiet": 1.467500000000005,
+              "quiet": 1.4174000000000027,
+              "energy": 0.0006160599943919858,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.287100000000015,
+              "previousQuiet": 1.4174000000000027,
+              "quiet": 1.3673000000000113,
+              "energy": 0.0005771029171753429,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.303800000000015,
+              "previousQuiet": 1.3673000000000113,
+              "quiet": 1.317200000000009,
+              "energy": 0.0005432800572664486,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.320400000000017,
+              "previousQuiet": 1.317200000000009,
+              "quiet": 1.2674000000000025,
+              "energy": 0.000512615993282487,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.337100000000014,
+              "previousQuiet": 1.2674000000000025,
+              "quiet": 1.2173000000000114,
+              "energy": 0.0005038112868014587,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.353800000000014,
+              "previousQuiet": 1.2173000000000114,
+              "quiet": 1.1672000000000091,
+              "energy": 0.00047301245375855913,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.370400000000016,
+              "previousQuiet": 1.1672000000000091,
+              "quiet": 1.1174000000000026,
+              "energy": 0.0005752018991437238,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.387100000000013,
+              "previousQuiet": 1.1174000000000026,
+              "quiet": 1.0673000000000115,
+              "energy": 0.000584412239417734,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.403800000000013,
+              "previousQuiet": 1.0673000000000115,
+              "quiet": 1.0172000000000092,
+              "energy": 0.0005442510279214397,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.420500000000013,
+              "previousQuiet": 1.0172000000000092,
+              "quiet": 0.9671000000000071,
+              "energy": 0.000508723428840754,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.437200000000013,
+              "previousQuiet": 0.9671000000000071,
+              "quiet": 0.9170000000000049,
+              "energy": 0.0004736446920257316,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.453700000000014,
+              "previousQuiet": 0.9170000000000049,
+              "quiet": 0.8675000000000049,
+              "energy": 0.0004411663966612437,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.470400000000014,
+              "previousQuiet": 0.8675000000000049,
+              "quiet": 0.8174000000000028,
+              "energy": 0.00041258468188753143,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.48710000000001,
+              "previousQuiet": 0.8174000000000028,
+              "quiet": 0.7673000000000115,
+              "energy": 0.0004111310702688452,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.50380000000001,
+              "previousQuiet": 0.7673000000000115,
+              "quiet": 0.7172000000000094,
+              "energy": 0.0006242270705577171,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.52050000000001,
+              "previousQuiet": 0.7172000000000094,
+              "quiet": 0.6671000000000072,
+              "energy": 0.0007262588991869931,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.53710000000001,
+              "previousQuiet": 0.6671000000000072,
+              "quiet": 0.6173000000000116,
+              "energy": 0.0006816833476844327,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.55380000000001,
+              "previousQuiet": 0.6173000000000116,
+              "quiet": 0.5672000000000095,
+              "energy": 0.0006338006504807012,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.57060000000001,
+              "previousQuiet": 0.5672000000000095,
+              "quiet": 0.5168000000000117,
+              "energy": 0.0005898701249066786,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.587200000000012,
+              "previousQuiet": 0.5168000000000117,
+              "quiet": 0.46700000000000513,
+              "energy": 0.0005506069402256114,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.60380000000001,
+              "previousQuiet": 0.46700000000000513,
+              "quiet": 0.4172000000000095,
+              "energy": 0.0005142799573401946,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.62050000000001,
+              "previousQuiet": 0.4172000000000095,
+              "quiet": 0.3671000000000073,
+              "energy": 0.0004837567442288745,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.63720000000001,
+              "previousQuiet": 0.3671000000000073,
+              "quiet": 0.3170000000000051,
+              "energy": 0.0007105701602894041,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.65390000000001,
+              "previousQuiet": 0.3170000000000051,
+              "quiet": 0.2669000000000029,
+              "energy": 0.0006640815159660945,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.670600000000007,
+              "previousQuiet": 0.2669000000000029,
+              "quiet": 0.21680000000001165,
+              "energy": 0.0006456501532813901,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.68720000000001,
+              "previousQuiet": 0.21680000000001165,
+              "quiet": 0.1670000000000051,
+              "energy": 0.0005977885780542179,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.703800000000008,
+              "previousQuiet": 0.1670000000000051,
+              "quiet": 0.11720000000000945,
+              "energy": 0.0005546902275775516,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.720600000000008,
+              "previousQuiet": 0.11720000000000945,
+              "quiet": 0.06680000000001163,
+              "energy": 0.0005192198955336215,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.73720000000001,
+              "previousQuiet": 0.06680000000001163,
+              "quiet": 0.01700000000000508,
+              "energy": 0.0006424482049942776,
+              "poseStable": false
+            }
+          ]
+        },
+        "timing": {
+          "instrumented": true,
+          "notPerformanceBenchmark": true,
+          "meanMs": 16.67334167709637,
+          "p95Ms": 16.799999999999272,
+          "fps": 59.975979582645245
+        }
+      }
+    },
+    {
+      "test": "A second actual W-driven car contact wakes and moves a previously sleeping physical corpse",
+      "pass": true,
+      "id": "CIV-041",
+      "before": {
+        "sleeping": true,
+        "position": {
+          "x": 1.0112594841050648,
+          "y": 0.2838504582829579,
+          "z": -111.88246951488827
+        }
+      },
+      "awakeSamples": 48,
+      "maxSpeed": 15.279573699962823,
+      "displacement": 4.017496960394486
+    },
+    {
+      "test": "Actual reverse S run-over produces articulated contact, bounded launch, settled body and synchronized car hull",
+      "pass": true,
+      "id": "CIV-041",
+      "metrics": {
+        "samples": 1496,
+        "maxWholeBodyRise": 0.1448824971510725,
+        "maxUpVelocity": 2.938916118766206,
+        "maxJointError": 0.06971916566808865,
+        "displacement": 6.1505251128772676,
+        "finalMinimumY": 0.052281536366486914,
+        "finalGround": 0.057,
+        "finalSpeed": 0,
+        "sleeping": true,
+        "segments": 11,
+        "joints": 10,
+        "maxLimbRelativeRotation": 0.17944440092880642,
+        "restPositionDrift": 0,
+        "restRotationDrift": 5.16191365590357e-8,
+        "maxHullError": 1.1102230246251565e-16,
+        "settling": {
+          "firstSleepSeconds": 22.992499999999755,
+          "continuousSleepSeconds": 2.0008000000000052,
+          "observationSeconds": 24.976599999999717,
+          "quietResets": [
+            {
+              "seconds": 7.68640000000004,
+              "previousQuiet": 0.13339999999999963,
+              "quiet": 0.08329999999999745,
+              "energy": 0.00742051411110048,
+              "poseStable": false
+            },
+            {
+              "seconds": 7.7030000000000385,
+              "previousQuiet": 0.08329999999999745,
+              "quiet": 0.033500000000001806,
+              "energy": 0.007827995888160003,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.486700000000033,
+              "previousQuiet": 0.2166999999999989,
+              "quiet": 0.1665999999999967,
+              "energy": 0.005559642189639656,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.503400000000033,
+              "previousQuiet": 0.1665999999999967,
+              "quiet": 0.11649999999999451,
+              "energy": 0.005936623129949748,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.520100000000031,
+              "previousQuiet": 0.11649999999999451,
+              "quiet": 0.06639999999999778,
+              "energy": 0.006373415026582614,
+              "poseStable": false
+            },
+            {
+              "seconds": 8.536700000000032,
+              "previousQuiet": 0.06639999999999778,
+              "quiet": 0.016599999999996687,
+              "energy": 0.006858883520159866,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.303700000000024,
+              "previousQuiet": 0.28339999999999965,
+              "quiet": 0.23329999999999745,
+              "energy": 0.004747766323717889,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.320300000000024,
+              "previousQuiet": 0.23329999999999745,
+              "quiet": 0.18349999999999636,
+              "energy": 0.005163685991950043,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.337100000000024,
+              "previousQuiet": 0.18349999999999636,
+              "quiet": 0.13309999999999855,
+              "energy": 0.005616266738031861,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.353700000000025,
+              "previousQuiet": 0.13309999999999855,
+              "quiet": 0.08329999999999746,
+              "energy": 0.00608628985835832,
+              "poseStable": false
+            },
+            {
+              "seconds": 9.370300000000025,
+              "previousQuiet": 0.08329999999999746,
+              "quiet": 0.033499999999996366,
+              "energy": 0.006571549021304245,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.137300000000014,
+              "previousQuiet": 0.3835,
+              "quiet": 0.3336999999999989,
+              "energy": 0.00454893730661448,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.154000000000012,
+              "previousQuiet": 0.3336999999999989,
+              "quiet": 0.2836000000000022,
+              "energy": 0.004889888043587404,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.170700000000013,
+              "previousQuiet": 0.2836000000000022,
+              "quiet": 0.23349999999999999,
+              "energy": 0.005243704234372152,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.187400000000013,
+              "previousQuiet": 0.23349999999999999,
+              "quiet": 0.1833999999999978,
+              "energy": 0.005605012285154599,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.204100000000011,
+              "previousQuiet": 0.1833999999999978,
+              "quiet": 0.13330000000000106,
+              "energy": 0.005967983996058064,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.220700000000011,
+              "previousQuiet": 0.13330000000000106,
+              "quiet": 0.08349999999999996,
+              "energy": 0.006322352208525945,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.237500000000011,
+              "previousQuiet": 0.08349999999999996,
+              "quiet": 0.03310000000000214,
+              "energy": 0.0066614956347286845,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.35410000000001,
+              "previousQuiet": 0.08340000000000146,
+              "quiet": 0.03330000000000473,
+              "energy": 0.008081800958207127,
+              "poseStable": true
+            },
+            {
+              "seconds": 10.570900000000009,
+              "previousQuiet": 0.15010000000000034,
+              "quiet": 0.09999999999999816,
+              "energy": 0.005438905439364946,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.587600000000007,
+              "previousQuiet": 0.09999999999999816,
+              "quiet": 0.04990000000000143,
+              "energy": 0.005048116594862953,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.887600000000004,
+              "previousQuiet": 0.25009999999999855,
+              "quiet": 0.20029999999999745,
+              "energy": 0.0030731935995016503,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.904400000000006,
+              "previousQuiet": 0.20029999999999745,
+              "quiet": 0.14989999999999418,
+              "energy": 0.0033577654505231153,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.921000000000005,
+              "previousQuiet": 0.14989999999999418,
+              "quiet": 0.10009999999999854,
+              "energy": 0.003659962455726964,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.937600000000005,
+              "previousQuiet": 0.10009999999999854,
+              "quiet": 0.050299999999997444,
+              "energy": 0.0039767102598466855,
+              "poseStable": false
+            },
+            {
+              "seconds": 10.954300000000005,
+              "previousQuiet": 0.050299999999997444,
+              "quiet": 0.00019999999999525953,
+              "energy": 0.004303137732378258,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.087800000000005,
+              "previousQuiet": 0.10010000000000037,
+              "quiet": 0.049999999999998185,
+              "energy": 0.006487066105896963,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.2545,
+              "previousQuiet": 0.11670000000000073,
+              "quiet": 0.066600000000004,
+              "energy": 0.006211433845142854,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.2712,
+              "previousQuiet": 0.066600000000004,
+              "quiet": 0.01650000000000182,
+              "energy": 0.0059991880277149275,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.75469999999999,
+              "previousQuiet": 0.450199999999999,
+              "quiet": 0.4000999999999968,
+              "energy": 0.0033946879943090712,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.771399999999991,
+              "previousQuiet": 0.4000999999999968,
+              "quiet": 0.3499999999999946,
+              "energy": 0.003645571264435417,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.78799999999999,
+              "previousQuiet": 0.3499999999999946,
+              "quiet": 0.30019999999999897,
+              "energy": 0.003911022892658767,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.80469999999999,
+              "previousQuiet": 0.30019999999999897,
+              "quiet": 0.25009999999999677,
+              "energy": 0.004156944442718907,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.82139999999999,
+              "previousQuiet": 0.25009999999999677,
+              "quiet": 0.19999999999999457,
+              "energy": 0.004388274340427495,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.837999999999989,
+              "previousQuiet": 0.19999999999999457,
+              "quiet": 0.15019999999999895,
+              "energy": 0.004597781909792748,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.854699999999989,
+              "previousQuiet": 0.15019999999999895,
+              "quiet": 0.10009999999999676,
+              "energy": 0.0047853985907749886,
+              "poseStable": false
+            },
+            {
+              "seconds": 11.871399999999989,
+              "previousQuiet": 0.10009999999999676,
+              "quiet": 0.04999999999999458,
+              "energy": 0.004947719249206163,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.054799999999984,
+              "previousQuiet": 0.13339999999999963,
+              "quiet": 0.08329999999999745,
+              "energy": 0.004773150400783069,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.071499999999983,
+              "previousQuiet": 0.08329999999999745,
+              "quiet": 0.033200000000000715,
+              "energy": 0.00457725812629481,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.538299999999976,
+              "previousQuiet": 0.43349999999999994,
+              "quiet": 0.3837000000000043,
+              "energy": 0.002719180789840675,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.554999999999977,
+              "previousQuiet": 0.3837000000000043,
+              "quiet": 0.3336000000000021,
+              "energy": 0.0029056067190480835,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.571699999999977,
+              "previousQuiet": 0.3336000000000021,
+              "quiet": 0.2834999999999999,
+              "energy": 0.003081413028390993,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.588299999999975,
+              "previousQuiet": 0.2834999999999999,
+              "quiet": 0.2337000000000043,
+              "energy": 0.003243239518283766,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.604999999999976,
+              "previousQuiet": 0.2337000000000043,
+              "quiet": 0.1836000000000021,
+              "energy": 0.003395456361600367,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.621699999999976,
+              "previousQuiet": 0.1836000000000021,
+              "quiet": 0.1334999999999999,
+              "energy": 0.0035539601784746805,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.638399999999976,
+              "previousQuiet": 0.1334999999999999,
+              "quiet": 0.08339999999999771,
+              "energy": 0.003686527529656365,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.654999999999974,
+              "previousQuiet": 0.08339999999999771,
+              "quiet": 0.03360000000000207,
+              "energy": 0.0038094924782636247,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.838399999999972,
+              "previousQuiet": 0.15009999999999854,
+              "quiet": 0.10029999999999199,
+              "energy": 0.003918921680940461,
+              "poseStable": false
+            },
+            {
+              "seconds": 12.855199999999972,
+              "previousQuiet": 0.10029999999999199,
+              "quiet": 0.04989999999999417,
+              "energy": 0.0037897737340426784,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.35539999999996,
+              "previousQuiet": 0.45020000000000066,
+              "quiet": 0.40009999999999846,
+              "energy": 0.0024870775326093332,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.371999999999959,
+              "previousQuiet": 0.40009999999999846,
+              "quiet": 0.35030000000000283,
+              "energy": 0.002595736532514414,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.38869999999996,
+              "previousQuiet": 0.35030000000000283,
+              "quiet": 0.30020000000000063,
+              "energy": 0.002707965383561611,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.405299999999958,
+              "previousQuiet": 0.30020000000000063,
+              "quiet": 0.250400000000005,
+              "energy": 0.002796778788271368,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.421999999999958,
+              "previousQuiet": 0.250400000000005,
+              "quiet": 0.2003000000000028,
+              "energy": 0.0029062374201847094,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.438699999999958,
+              "previousQuiet": 0.2003000000000028,
+              "quiet": 0.1502000000000006,
+              "energy": 0.002986315882021322,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.455399999999958,
+              "previousQuiet": 0.1502000000000006,
+              "quiet": 0.10009999999999843,
+              "energy": 0.003045592136524234,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.471999999999957,
+              "previousQuiet": 0.10009999999999843,
+              "quiet": 0.05030000000000279,
+              "energy": 0.0030894772506592696,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.488699999999957,
+              "previousQuiet": 0.05030000000000279,
+              "quiet": 0.00020000000000060247,
+              "energy": 0.0031332829727330415,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.772199999999954,
+              "previousQuiet": 0.2502000000000007,
+              "quiet": 0.2000999999999985,
+              "energy": 0.0018753643028218466,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.788799999999952,
+              "previousQuiet": 0.2000999999999985,
+              "quiet": 0.15030000000000288,
+              "energy": 0.0017498825024011757,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.805499999999952,
+              "previousQuiet": 0.15030000000000288,
+              "quiet": 0.10020000000000069,
+              "energy": 0.0016272474783289802,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.822199999999953,
+              "previousQuiet": 0.10020000000000069,
+              "quiet": 0.05009999999999851,
+              "energy": 0.0015107987965634591,
+              "poseStable": false
+            },
+            {
+              "seconds": 13.838899999999953,
+              "previousQuiet": 0.05009999999999851,
+              "quiet": 0,
+              "energy": 0.001402982585466384,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.122299999999948,
+              "previousQuiet": 0.2667000000000007,
+              "quiet": 0.21660000000000945,
+              "energy": 0.0019306962893262548,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.138999999999948,
+              "previousQuiet": 0.21660000000000945,
+              "quiet": 0.16650000000000725,
+              "energy": 0.002057496302785347,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.155699999999948,
+              "previousQuiet": 0.16650000000000725,
+              "quiet": 0.11640000000000507,
+              "energy": 0.002167698398744155,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.172399999999948,
+              "previousQuiet": 0.11640000000000507,
+              "quiet": 0.06630000000000288,
+              "energy": 0.002310359095018462,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.188999999999947,
+              "previousQuiet": 0.06630000000000288,
+              "quiet": 0.016500000000007245,
+              "energy": 0.0024214613980840403,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.405699999999943,
+              "previousQuiet": 0.18340000000000145,
+              "quiet": 0.13360000000000583,
+              "energy": 0.0024959952446721406,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.422399999999943,
+              "previousQuiet": 0.13360000000000583,
+              "quiet": 0.08350000000000364,
+              "energy": 0.0023970026178836788,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.439099999999943,
+              "previousQuiet": 0.08350000000000364,
+              "quiet": 0.033400000000001456,
+              "energy": 0.002287946063902332,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.972599999999932,
+              "previousQuiet": 0.5002000000000006,
+              "quiet": 0.4503999999999941,
+              "energy": 0.0017919271596029461,
+              "poseStable": false
+            },
+            {
+              "seconds": 14.989299999999929,
+              "previousQuiet": 0.4503999999999941,
+              "quiet": 0.4003000000000028,
+              "energy": 0.0018552042774727532,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.00599999999993,
+              "previousQuiet": 0.4003000000000028,
+              "quiet": 0.3502000000000006,
+              "energy": 0.001905993932465203,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.02269999999993,
+              "previousQuiet": 0.3502000000000006,
+              "quiet": 0.3000999999999984,
+              "energy": 0.001983112708694137,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.039299999999928,
+              "previousQuiet": 0.3000999999999984,
+              "quiet": 0.2503000000000028,
+              "energy": 0.002036262960135669,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.055999999999928,
+              "previousQuiet": 0.2503000000000028,
+              "quiet": 0.2002000000000006,
+              "energy": 0.00207088512016063,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.072699999999928,
+              "previousQuiet": 0.2002000000000006,
+              "quiet": 0.1500999999999984,
+              "energy": 0.0021420408529178154,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.089299999999927,
+              "previousQuiet": 0.1500999999999984,
+              "quiet": 0.10030000000000276,
+              "energy": 0.0021703458709029294,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.105999999999927,
+              "previousQuiet": 0.10030000000000276,
+              "quiet": 0.05020000000000058,
+              "energy": 0.002174081911499175,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.122699999999927,
+              "previousQuiet": 0.05020000000000058,
+              "quiet": 0.00009999999999839304,
+              "energy": 0.0022049487647615214,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.822999999999922,
+              "previousQuiet": 0.6669999999999998,
+              "quiet": 0.6172000000000042,
+              "energy": 0.0018038211178215114,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.839699999999922,
+              "previousQuiet": 0.6172000000000042,
+              "quiet": 0.567100000000002,
+              "energy": 0.0018234050904973847,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.856399999999923,
+              "previousQuiet": 0.567100000000002,
+              "quiet": 0.5169999999999999,
+              "energy": 0.001834102869408313,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.872999999999921,
+              "previousQuiet": 0.5169999999999999,
+              "quiet": 0.4672000000000043,
+              "energy": 0.0018353039982393115,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.889699999999921,
+              "previousQuiet": 0.4672000000000043,
+              "quiet": 0.4171000000000021,
+              "energy": 0.0018315161241527387,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.90629999999992,
+              "previousQuiet": 0.4171000000000021,
+              "quiet": 0.36730000000000645,
+              "energy": 0.0018482533724215394,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.92299999999992,
+              "previousQuiet": 0.36730000000000645,
+              "quiet": 0.31720000000000426,
+              "energy": 0.0018458452988998823,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.93969999999992,
+              "previousQuiet": 0.31720000000000426,
+              "quiet": 0.26710000000000206,
+              "energy": 0.0018180753016240462,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.956299999999919,
+              "previousQuiet": 0.26710000000000206,
+              "quiet": 0.21730000000000643,
+              "energy": 0.001777814730563508,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.972999999999919,
+              "previousQuiet": 0.21730000000000643,
+              "quiet": 0.16720000000000423,
+              "energy": 0.0017651889836634755,
+              "poseStable": false
+            },
+            {
+              "seconds": 15.989799999999919,
+              "previousQuiet": 0.16720000000000423,
+              "quiet": 0.11680000000000641,
+              "energy": 0.0017721880645515575,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.00639999999992,
+              "previousQuiet": 0.11680000000000641,
+              "quiet": 0.06699999999999987,
+              "energy": 0.0017478646538409805,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.02309999999992,
+              "previousQuiet": 0.06699999999999987,
+              "quiet": 0.01689999999999768,
+              "energy": 0.0016893228719345975,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.589999999999907,
+              "previousQuiet": 0.5335999999999984,
+              "quiet": 0.4834999999999962,
+              "energy": 0.0013769160623836017,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.60659999999991,
+              "previousQuiet": 0.4834999999999962,
+              "quiet": 0.43369999999998965,
+              "energy": 0.0014193796313215624,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.623299999999908,
+              "previousQuiet": 0.43369999999998965,
+              "quiet": 0.3835999999999984,
+              "energy": 0.0014508245653333204,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.639999999999908,
+              "previousQuiet": 0.3835999999999984,
+              "quiet": 0.3334999999999962,
+              "energy": 0.0014756769849519516,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.65669999999991,
+              "previousQuiet": 0.3334999999999962,
+              "quiet": 0.283399999999994,
+              "energy": 0.0014902733754407677,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.67339999999991,
+              "previousQuiet": 0.283399999999994,
+              "quiet": 0.2332999999999918,
+              "energy": 0.0014932780279854146,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.689999999999905,
+              "previousQuiet": 0.2332999999999918,
+              "quiet": 0.18349999999999617,
+              "energy": 0.0014847538331265442,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.706699999999906,
+              "previousQuiet": 0.18349999999999617,
+              "quiet": 0.13339999999999397,
+              "energy": 0.001465731633199224,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.723299999999902,
+              "previousQuiet": 0.13339999999999397,
+              "quiet": 0.08359999999999833,
+              "energy": 0.001442463104232758,
+              "poseStable": false
+            },
+            {
+              "seconds": 16.739999999999903,
+              "previousQuiet": 0.08359999999999833,
+              "quiet": 0.033499999999996144,
+              "energy": 0.0014105657432404368,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.423599999999887,
+              "previousQuiet": 0.650299999999999,
+              "quiet": 0.6004999999999925,
+              "energy": 0.0012405007993090062,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.440299999999883,
+              "previousQuiet": 0.6004999999999925,
+              "quiet": 0.5504000000000012,
+              "energy": 0.001274589365361931,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.456899999999887,
+              "previousQuiet": 0.5504000000000012,
+              "quiet": 0.5005999999999947,
+              "energy": 0.0012982245450031285,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.473599999999887,
+              "previousQuiet": 0.5005999999999947,
+              "quiet": 0.4504999999999925,
+              "energy": 0.0013156664604097586,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.490399999999887,
+              "previousQuiet": 0.4504999999999925,
+              "quiet": 0.4000999999999947,
+              "energy": 0.0013243567137096988,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.506999999999884,
+              "previousQuiet": 0.4000999999999947,
+              "quiet": 0.35029999999999906,
+              "energy": 0.0013210165970758048,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.523599999999888,
+              "previousQuiet": 0.35029999999999906,
+              "quiet": 0.3004999999999925,
+              "energy": 0.0013057302999722484,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.540299999999885,
+              "previousQuiet": 0.3004999999999925,
+              "quiet": 0.25040000000000123,
+              "energy": 0.0012795852225080545,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.556999999999885,
+              "previousQuiet": 0.25040000000000123,
+              "quiet": 0.20029999999999903,
+              "energy": 0.0012493646398629744,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.573699999999885,
+              "previousQuiet": 0.20029999999999903,
+              "quiet": 0.15019999999999684,
+              "energy": 0.0012116414930646645,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.590399999999885,
+              "previousQuiet": 0.15019999999999684,
+              "quiet": 0.10009999999999465,
+              "energy": 0.0011660613358804796,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.606999999999882,
+              "previousQuiet": 0.10009999999999465,
+              "quiet": 0.05029999999999901,
+              "energy": 0.0011141999775061686,
+              "poseStable": false
+            },
+            {
+              "seconds": 17.623699999999882,
+              "previousQuiet": 0.05029999999999901,
+              "quiet": 0.00019999999999682772,
+              "energy": 0.0010627087447234878,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.20729999999987,
+              "previousQuiet": 0.5502000000000006,
+              "quiet": 0.5001000000000093,
+              "energy": 0.0009007460813686307,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.22399999999987,
+              "previousQuiet": 0.5001000000000093,
+              "quiet": 0.4500000000000071,
+              "energy": 0.0008940868709815557,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.240599999999873,
+              "previousQuiet": 0.4500000000000071,
+              "quiet": 0.40020000000000056,
+              "energy": 0.0008859780813738394,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.25729999999987,
+              "previousQuiet": 0.40020000000000056,
+              "quiet": 0.3501000000000093,
+              "energy": 0.0008799674675200812,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.273899999999873,
+              "previousQuiet": 0.3501000000000093,
+              "quiet": 0.30030000000000273,
+              "energy": 0.0008787840892473872,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.290699999999873,
+              "previousQuiet": 0.30030000000000273,
+              "quiet": 0.2499000000000049,
+              "energy": 0.0008799366184331481,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.30729999999987,
+              "previousQuiet": 0.2499000000000049,
+              "quiet": 0.20010000000000927,
+              "energy": 0.0008829146195100939,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.32399999999987,
+              "previousQuiet": 0.20010000000000927,
+              "quiet": 0.15000000000000707,
+              "energy": 0.000888482820648703,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.340599999999874,
+              "previousQuiet": 0.15000000000000707,
+              "quiet": 0.10020000000000052,
+              "energy": 0.0008913938372908754,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.35729999999987,
+              "previousQuiet": 0.10020000000000052,
+              "quiet": 0.05010000000000926,
+              "energy": 0.0008932456261344774,
+              "poseStable": false
+            },
+            {
+              "seconds": 18.37399999999987,
+              "previousQuiet": 0.05010000000000926,
+              "quiet": 7.077671781985373e-15,
+              "energy": 0.0008930002591381703,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.007699999999847,
+              "previousQuiet": 0.6002999999999992,
+              "quiet": 0.550199999999997,
+              "energy": 0.0008910714980067954,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.024299999999844,
+              "previousQuiet": 0.550199999999997,
+              "quiet": 0.5004000000000014,
+              "energy": 0.000873577540841904,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.040999999999844,
+              "previousQuiet": 0.5004000000000014,
+              "quiet": 0.4502999999999992,
+              "energy": 0.0008764235524380494,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.057599999999848,
+              "previousQuiet": 0.4502999999999992,
+              "quiet": 0.40049999999999264,
+              "energy": 0.0008599441673650642,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.074299999999845,
+              "previousQuiet": 0.40049999999999264,
+              "quiet": 0.3504000000000014,
+              "energy": 0.000834399957314355,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.090999999999845,
+              "previousQuiet": 0.3504000000000014,
+              "quiet": 0.3002999999999992,
+              "energy": 0.0008085869274127153,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.10759999999985,
+              "previousQuiet": 0.3002999999999992,
+              "quiet": 0.2504999999999926,
+              "energy": 0.0007961708123815378,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.124299999999845,
+              "previousQuiet": 0.2504999999999926,
+              "quiet": 0.20040000000000135,
+              "energy": 0.0007693820993197111,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.14089999999985,
+              "previousQuiet": 0.20040000000000135,
+              "quiet": 0.1505999999999948,
+              "energy": 0.0007342642181583257,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.15759999999985,
+              "previousQuiet": 0.1505999999999948,
+              "quiet": 0.10049999999999261,
+              "energy": 0.0007014342113321433,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.174299999999846,
+              "previousQuiet": 0.10049999999999261,
+              "quiet": 0.050400000000001347,
+              "energy": 0.0006806321458526863,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.190999999999846,
+              "previousQuiet": 0.050400000000001347,
+              "quiet": 0.00029999999999916205,
+              "energy": 0.0006447581327797744,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.874599999999838,
+              "previousQuiet": 0.650299999999999,
+              "quiet": 0.6001999999999968,
+              "energy": 0.0007600051377874446,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.891299999999834,
+              "previousQuiet": 0.6001999999999968,
+              "quiet": 0.5501000000000056,
+              "energy": 0.0007609854304455636,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.907999999999834,
+              "previousQuiet": 0.5501000000000056,
+              "quiet": 0.5000000000000034,
+              "energy": 0.0007383857929654945,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.924599999999838,
+              "previousQuiet": 0.5000000000000034,
+              "quiet": 0.4501999999999969,
+              "energy": 0.0007018595521689195,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.941299999999835,
+              "previousQuiet": 0.4501999999999969,
+              "quiet": 0.4001000000000056,
+              "energy": 0.0006937280127887252,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.957999999999835,
+              "previousQuiet": 0.4001000000000056,
+              "quiet": 0.3500000000000034,
+              "energy": 0.0006621443392224392,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.97459999999984,
+              "previousQuiet": 0.3500000000000034,
+              "quiet": 0.30019999999999686,
+              "energy": 0.0006213157893474939,
+              "poseStable": false
+            },
+            {
+              "seconds": 19.991299999999836,
+              "previousQuiet": 0.30019999999999686,
+              "quiet": 0.2501000000000056,
+              "energy": 0.0006069288864349027,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.007999999999836,
+              "previousQuiet": 0.2501000000000056,
+              "quiet": 0.2000000000000034,
+              "energy": 0.0005741783834606076,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.024699999999836,
+              "previousQuiet": 0.2000000000000034,
+              "quiet": 0.1499000000000012,
+              "energy": 0.000532543948279297,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.041399999999836,
+              "previousQuiet": 0.1499000000000012,
+              "quiet": 0.09979999999999901,
+              "energy": 0.0005181851622746943,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.057999999999833,
+              "previousQuiet": 0.09979999999999901,
+              "quiet": 0.050000000000003375,
+              "energy": 0.0004851973351641317,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.074699999999833,
+              "previousQuiet": 0.050000000000003375,
+              "quiet": 0,
+              "energy": 0.00044710460266882525,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.624999999999808,
+              "previousQuiet": 0.5334999999999999,
+              "quiet": 0.48310000000000203,
+              "energy": 0.0007408264605651023,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.641599999999812,
+              "previousQuiet": 0.48310000000000203,
+              "quiet": 0.43329999999999547,
+              "energy": 0.0007344575352288486,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.65829999999981,
+              "previousQuiet": 0.43329999999999547,
+              "quiet": 0.3832000000000042,
+              "energy": 0.000729354500208919,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.67499999999981,
+              "previousQuiet": 0.3832000000000042,
+              "quiet": 0.333100000000002,
+              "energy": 0.0007165068679623318,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.691599999999813,
+              "previousQuiet": 0.333100000000002,
+              "quiet": 0.28329999999999544,
+              "energy": 0.0006970461146043068,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.70829999999981,
+              "previousQuiet": 0.28329999999999544,
+              "quiet": 0.23320000000000418,
+              "energy": 0.0006801558876046494,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.72499999999981,
+              "previousQuiet": 0.23320000000000418,
+              "quiet": 0.18310000000000198,
+              "energy": 0.0006570339623935909,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.74169999999981,
+              "previousQuiet": 0.18310000000000198,
+              "quiet": 0.13299999999999979,
+              "energy": 0.0006291247865686511,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.758299999999807,
+              "previousQuiet": 0.13299999999999979,
+              "quiet": 0.08320000000000415,
+              "energy": 0.0006043907262330709,
+              "poseStable": false
+            },
+            {
+              "seconds": 20.774999999999807,
+              "previousQuiet": 0.08320000000000415,
+              "quiet": 0.03310000000000196,
+              "energy": 0.0005751723672403893,
+              "poseStable": false
+            },
+            {
+              "seconds": 21.625299999999786,
+              "previousQuiet": 0.8169000000000011,
+              "quiet": 0.7668000000000098,
+              "energy": 0.00044405874846849735,
+              "poseStable": false
+            },
+            {
+              "seconds": 21.641999999999786,
+              "previousQuiet": 0.7668000000000098,
+              "quiet": 0.7167000000000077,
+              "energy": 0.0004604929954150665,
+              "poseStable": false
+            },
+            {
+              "seconds": 21.65859999999979,
+              "previousQuiet": 0.7167000000000077,
+              "quiet": 0.6669000000000012,
+              "energy": 0.0004727118122291225,
+              "poseStable": false
+            },
+            {
+              "seconds": 21.675299999999787,
+              "previousQuiet": 0.6669000000000012,
+              "quiet": 0.6168000000000099,
+              "energy": 0.0004892824390117733,
+              "poseStable": false
+            },
+            {
+              "seconds": 21.691999999999787,
+              "previousQuiet": 0.6168000000000099,
+              "quiet": 0.5667000000000078,
+              "energy": 0.0004978896031345463,
+              "poseStable": false
+            },
+            {
+              "seconds": 21.708699999999787,
+              "previousQuiet": 0.5667000000000078,
+              "quiet": 0.5166000000000056,
+              "energy": 0.0004980129325680514,
+              "poseStable": false
+            }
+          ]
+        },
+        "timing": {
+          "instrumented": true,
+          "notPerformanceBenchmark": true,
+          "meanMs": 16.684475806451616,
+          "p95Ms": 16.799999999999272,
+          "fps": 59.93595553138782
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "rawSamples": "ragdoll-contact-browser-D0-THxnE-2026-09-06T12-45-04-173Z-raw.json.gz",
+  "chromeClosed": true
+}
