@@ -144,7 +144,8 @@ async function init(){
     catch(error){console.warn('GLITCHBOUND story intro unavailable; gameplay will start directly.',error);glitchboundIntro=null}
     cityShadows=createCityShadows({scene,renderer,moon,city});
     for(const actor of [car,parked,avatar,av,city.root.getObjectByName('Animated citizens / segmented voxel coats and umbrellas')])cityShadows.addCaster(actor);
-    composer=new EffectComposer(renderer);composer.addPass(new RenderPass(scene,camera));
+    const renderTarget=new THREE.WebGLRenderTarget(innerWidth*renderer.getPixelRatio(),innerHeight*renderer.getPixelRatio(),{type:THREE.HalfFloatType,samples:4});
+    composer=new EffectComposer(renderer,renderTarget);composer.addPass(new RenderPass(scene,camera));
     const bloom=new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),.5,.42,1.0);composer.addPass(bloom);composer.addPass(new OutputPass());
     services=createCityServices({layout:city.serviceSource,groundHeightAt:city.groundHeightAt,
       getColliders:(x,z,radius)=>[...city.getCollidersAt(x,z,radius),...simulation.getSolidProps(),...cityLife.getTrafficColliders()]});
@@ -687,7 +688,7 @@ window.addEventListener('mousemove',event=>{
 window.addEventListener('mousedown',event=>{if(mode!=='playing'||(event.target instanceof Element&&event.target.closest('button,a,input,select,textarea,[role="button"],dialog')))return;if(event.button===0){keys.add('Mouse0');fire()}});
 window.addEventListener('mouseup',event=>{if(event.button===0)keys.delete('Mouse0')});
 window.addEventListener('contextmenu',event=>event.preventDefault());
-window.addEventListener('resize',()=>{if(!renderer)return;camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer?.setSize(innerWidth,innerHeight)});
+window.addEventListener('resize',()=>{if(!renderer)return;renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.5));camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer?.setSize(innerWidth,innerHeight)});
 $('start-btn').addEventListener('click',()=>firstRun?beginIntro():start());$('restart-btn').addEventListener('click',()=>restart({playIntro:true}));$('intro-skip').addEventListener('click',skipIntro);
 $('map-btn').addEventListener('click',openCityMap);$('map-return-btn').addEventListener('click',closeCityMap);
 $('brand').addEventListener('click',event=>{event.preventDefault();pause()});$('menu-btn').addEventListener('click',()=>mode==='playing'?pause():ready&&(firstRun?beginIntro():start()));
