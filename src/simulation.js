@@ -364,6 +364,7 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
     if (!drone.responding) {
       drone.pendingShotAt = 0;
       drone.fireAt = elapsed + 1.4 + drone.index % 3 * 0.2;
+      emit('pursuit', { droneId: drone.index + 1, position: drone.visual.position.toArray() });
     }
     drone.responding = true;
     drone.responsePosition.copy(position);
@@ -495,7 +496,7 @@ export function createSimulation({ scene, camera, colliders = [], assets = {}, c
       breakVoxels(drone.visual.position, 1.2, 24, direction);
       if(showPulse)pulse(drone.visual.position, 0xff7040, 3.6, 0.32);
       emit('toast', { text: `SENTINEL NEUTRALIZED  //  ${kills}/${drones.length}` });
-      emit('kill', { kills });
+      emit('kill', { kills, droneId: drone.index + 1, position: drone.visual.position.toArray() });
     }
   }
 

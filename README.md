@@ -1,8 +1,8 @@
-# NEON DISTRICT — Vesper City
+# GLITCHBOUND — Vesper City
 
-A free-roam voxel cyberpunk driving and exploration game, built with Blender assets and Three.js. The generated concept image is the visual target.
+A free-roam voxel cyberpunk driving and exploration game, built with Blender assets and Three.js. The generated concept image is the visual target. The official product name is GLITCHBOUND.
 
-Source: **[Hiraeth010/neon-district](https://github.com/Hiraeth010/neon-district)**. Play at **[neon-district-xi.vercel.app](https://neon-district-xi.vercel.app)**. Local game: **http://127.0.0.1:5173/**.
+Run locally at **http://127.0.0.1:5173/** after following the setup below.
 
 Development is paused at the user's request. The September 6 release includes the finished articulated hero asset/workshop, corrected contact shading on thin physical paving, and the blueprint icon fix. The game retains its existing walking animation; unfinished stair IK, pelvis and movement experiments remain local. New placement/path helpers are available in source but are not active gameplay. See [RELEASE_CHECKPOINT.md](RELEASE_CHECKPOINT.md). The `quality-pass-01` working copy retains unfinished local work. The full quality target and remaining gaps are recorded in [QUALITY_ROADMAP.md](QUALITY_ROADMAP.md); AAA parity and an independent preference result have not been established.
 
@@ -15,7 +15,7 @@ npm ci
 npm run dev
 ```
 
-Open **http://127.0.0.1:5173/** and choose **Enter the District**. The Windows source package also includes **START-GAME.cmd**. For a production build, run `npm run build` followed by `npm run preview` and open the URL printed by Vite. The static website is in `dist/`; serve it over HTTP rather than opening through `file://`. Blender is only needed to edit or regenerate native assets.
+Open **http://127.0.0.1:5173/** and choose **Enter GLITCHBOUND**. The Windows source package also includes **START-GAME.cmd**. For a production build, run `npm run build` followed by `npm run preview` and open the URL printed by Vite. The static website is in `dist/`; serve it over HTTP rather than opening through `file://`. Blender is only needed to edit or regenerate native assets.
 
 ## Explore
 
@@ -30,14 +30,14 @@ Security patrols are neutral. Walking, driving normally, drawing a weapon, and c
 | Input | Action |
 |---|---|
 | WASD / arrows | Walk; throttle and steering in vehicle |
-| Mouse | Look around; right-drag if pointer lock is unavailable |
+| Mouse | Move over the game to look around; pointer lock is requested automatically when available |
 | Left click | Draw weapon if holstered; fire if drawn |
 | H / R | Holster or draw / reload |
 | Shift | Sprint; double tap for kinetic dash |
 | Space | Jump / vehicle handbrake |
 | E | Use a mounted service terminal / enter or exit your interceptor |
 | Q | EMP pulse |
-| V | First-person / third-person camera |
+| V | Toggle first-person / third-person camera (third person is the default) |
 | P | Hide or restore the HUD |
 | M | Full city map |
 | Escape | Pause / menu |
@@ -85,7 +85,7 @@ The current local Iron Docks pass adds seven shared assemblies with 954 voxel mo
 
 The container faces, entrance and apron have more visible depth, but repeated panels, sparse upper walls and an inactive open court remain. An additional raised view shows connected roof-cap, panel and base joins; the inherited large plain crane dominates that view, and hidden rear/underside joins remain outside its visual scope. The native city has been regenerated and reopened against shared source, including all 31 authored assemblies and 855 profiled metal modules. Three native area lights at actual dock fixtures correct an initially unreadable apron render; the revised shutter, cabinet and workbench are legible. The [before/after native review](validation/native-docks-visual-review.md) retains the dark first images and remaining roof-shadow limits. Broader quality work continues; publication does not imply that the full target has been met.
 
-Sound is procedurally synthesized with Web Audio. Footsteps follow actual distance travelled and distinguish road from paving; landings, nearby traffic and mounted machinery provide local feedback. Six traffic and six machinery voices use spatial panning, with district-specific ambience and bounded transient voices. Pause and mute silence the output. These are original synthesized sounds, not recorded crowds or licensed music.
+Sound uses one user-gesture-unlocked Web Audio system. Procedural footsteps follow actual distance travelled and distinguish road from paving; landings, nearby traffic, mounted machinery and the speed-sensitive vehicle motor provide local feedback. Six traffic and six machinery voices use spatial panning, with district-specific ambience and bounded transient voices. User-supplied recorded effects add vehicle acceleration, player damage, carbine fire, drone pursuit and drone destruction; static assets, event mappings and source hashes are listed in [the audio manifest](public/audio/glitchbound/manifest.json), with findings and listening limitations in [the audio audit](docs/GLITCHBOUND_AUDIO_AUDIT.md). Sound remains muted until enabled, and missing recordings fall back to procedural feedback.
 
 Civilians can be injured and killed by gunfire or vehicle impacts. Two carbine body hits are fatal; faster vehicle impacts are lethal, while slow contact causes no damage. Death preserves the currently rendered pose and creates eleven physical body segments joined at the waist, neck, shoulders, elbows, hips and knees. Umbrellas fall independently. Body proxies use boxes, joint limits and passive damping; upward momentum and extreme spin are bounded to stabilize contacts with the controlled car. Fallen civilians remain in the scene until you reconnect. Assaults and fatalities trigger the city's crime response.
 
@@ -110,8 +110,11 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 - `blender/build_city.py` / `blender/build_assets.py` / `blender/build_weapon.py` — native source and GLB regeneration scripts.
 - `blender/README.md` — Blender commands, dimensions and animation part names.
 - `public/assets/concept.png` — original preproduction concept.
+- `public/glitchbound-logo.svg` — shared vector wordmark used by the title screen, browser masthead, and city atlas.
+- `public/favicon.svg` / `public/manifest.webmanifest` — browser and installed-app icon metadata.
 - `public/assets/advert-portrait.png` — concept-derived voxel billboard artwork, generated with the built-in image tool.
 - `public/assets/*.glb` — Blender exports; the unused relay asset is retained in the source kit only.
+- `public/assets/*.webp` — dimension-preserving, quality-92 browser copies of the billboard and concept PNG artwork. The original PNGs remain unchanged for Blender and source editing; the production build omits those heavier copies after validating the WebP files.
 - `public/assets/pulse-carbine.glb`, `public/assets/ion-bolt.glb`, `public/assets/muzzle-flash.glb`, `public/assets/impact-shards.glb` — the four weapon exports.
 - `validation/` — browser reports and captured previews. Free-roam reports supersede the original mission-build report.
 
@@ -158,12 +161,12 @@ The architectural blueprint is available at **http://127.0.0.1:5173/blueprint/**
 | `src/atmosphere.js` | Sky, rain, vapor and wet-road reflection shader |
 | `src/simulation.js` | Neutral patrols, crimes, wanted response and destruction |
 | `src/voxel-assets.js` | Blender material batching |
-| `src/audio.js` | Synthesized ambience and interaction sounds |
+| `src/audio.js` | Procedural ambience and cached, bounded gameplay audio effects |
 
-`?test=1` enables targeted controls under `window.__neon.test`. Normal play exposes a diagnostic snapshot at `window.__neon.snapshot()`.
+`?test=1` enables targeted controls under `window.__glitchbound.test`. Normal play exposes a diagnostic snapshot at `window.__glitchbound.snapshot()`. `window.__neon` remains a compatibility alias for older test harnesses.
 
 Run `npm test` for the portable Node regression suites covering grounded movement, camera clearance, service access/outcomes, gun-cover checks, and articulated physics against production city geometry. The suites use the pinned runtime dependencies and leave stored browser/native reports unchanged. Browser reports record their build identifiers and tested conditions separately; the Node suite does not substitute for a graphics or listening review.
 
 A clean `Y0FsMvtw` sample measured 59.976 FPS ordinarily and 54.195 FPS with 24 fresh articulated deaths (p95 33.3 ms). The loaded result lies within the two preceding `cA0mxVCY` samples, 50.542–54.524 FPS; no FPS improvement caused by the shader guard is established. The [performance report](validation/performance-docks-contact-profile.json) preserves the samples, instrumented diagnosis and their limits. Heavy physical scenes still miss frames.
 
-Dependencies are pinned: Three.js 0.180.0, cannon-es 0.20.0, Vite 7.3.6. `npm ci` uses the included lockfile. Project source code is MIT-licensed; see `LICENSE` and `THIRD-PARTY-NOTICES.md` for dependency licenses and artwork provenance. The project is inspired by Cyberpunk 2077's atmosphere; no assets were extracted from that game. The twelve additional campaign artworks are voxel adaptations of user-supplied references.
+Dependencies are pinned: Three.js 0.180.0, cannon-es 0.20.0, Vite 7.3.6. `npm ci` uses the included lockfile. Project source code is MIT-licensed; see `LICENSE` and `THIRD-PARTY-NOTICES.md` for dependency licenses and artwork provenance. The project is inspired by Cyberpunk 2077's atmosphere; no assets were extracted from that game. The twelve additional campaign artworks are voxel adaptations of user-supplied references. The original source repository is [Hiraeth010/neon-district](https://github.com/Hiraeth010/neon-district); this link records provenance and does not identify the product.

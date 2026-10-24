@@ -1,0 +1,18 @@
+{
+  "name": "GLITCHBOUND",
+  "short_name": "GLITCHBOUND",
+  "description": "A free-roam cyberpunk city.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080A12",
+  "theme_color": "#080A12",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

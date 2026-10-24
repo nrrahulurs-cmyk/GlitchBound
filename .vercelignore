@@ -1,6 +1,7 @@
 .git
 .vercel
 node_modules
+.pnpm-store
 dist
 blender/*.blend*
 blender/*.png

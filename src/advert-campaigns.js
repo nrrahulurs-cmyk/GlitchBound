@@ -2,22 +2,22 @@ import { createCityBlueprint, mountCampaignFrame } from './city-blueprint.js';
 // One pure catalog is shared by Three.js, the city blueprint, and Blender.
 // Indices 0–3 are kept stable for the original four commissioned campaigns.
 export const ADVERT_CAMPAIGNS = [
-  {id:'kuro-optics',file:'advert-kuro-optics.png',label:'KURO OPTICS',aspectRatio:2/3,tint:'#b9ed52',districts:['Meridian East','Iron Docks']},
-  {id:'axiom',file:'advert-axiom.png',label:'AXIOM',aspectRatio:2/3,tint:'#fa634f',districts:['Stacktown','Meridian East']},
-  {id:'orbital',file:'advert-orbital.png',label:'OFFWORLD',aspectRatio:2/3,tint:'#9990ff',districts:['Crown Plaza','Iron Docks']},
-  {id:'noodle',file:'advert-noodle.png',label:'MIDNIGHT RAMEN',aspectRatio:2/3,tint:'#ffac56',districts:['Lantern Market','Stacktown']},
-  {id:'recast',file:'advert-recast.png',label:'RECAST',aspectRatio:16/9,tint:'#f090ce',districts:['Meridian East','Stacktown']},
-  {id:'kinkeep',file:'advert-kinkeep.png',label:'KINKEEP',aspectRatio:2/3,tint:'#ecb977',districts:['Stacktown','Lantern Market']},
-  {id:'everon',file:'advert-everon.png',label:'EVERON',aspectRatio:16/9,tint:'#c7e5ae',districts:['Crown Plaza','Meridian East']},
-  {id:'quietus',file:'advert-quietus.png',label:'QUIETUS',aspectRatio:2/3,tint:'#addcd7',districts:['Meridian East','Crown Plaza']},
-  {id:'vyra',file:'advert-vyra.png',label:'VYRA',aspectRatio:16/9,tint:'#ec71d6',districts:['Stacktown','Lantern Market']},
-  {id:'grinpop',file:'advert-grinpop.png',label:'GRINPOP',aspectRatio:16/9,tint:'#f2bb60',districts:['Lantern Market','Iron Docks']},
-  {id:'syntask',file:'advert-syntask.png',label:'SYNTASK',aspectRatio:2/3,tint:'#acda63',districts:['Iron Docks','Meridian East']},
-  {id:'nesto',file:'advert-nesto.png',label:'NESTO',aspectRatio:4/5,tint:'#a99ce4',districts:['Stacktown','Crown Plaza']},
-  {id:'irisyn',file:'advert-irisyn.png',label:'IRISYN',aspectRatio:16/9,tint:'#77deed',districts:['Meridian East','Iron Docks']},
-  {id:'else',file:'advert-else.png',label:'ELSE',aspectRatio:16/9,tint:'#e9a3ce',districts:['Crown Plaza','Lantern Market']},
-  {id:'vesper-arc',file:'advert-vesper-arc.png',label:'VESPER ARC',aspectRatio:2/3,tint:'#98b9ee',districts:['Crown Plaza','Iron Docks']},
-  {id:'synthsilk',file:'advert-synthsilk.png',label:'SYNTHSILK',aspectRatio:2/3,tint:'#e691cf',districts:['Stacktown','Crown Plaza']}
+  {id:'kuro-optics',file:'advert-kuro-optics.webp',label:'KURO OPTICS',aspectRatio:2/3,tint:'#b9ed52',districts:['Meridian East','Iron Docks']},
+  {id:'axiom',file:'advert-axiom.webp',label:'AXIOM',aspectRatio:2/3,tint:'#fa634f',districts:['Stacktown','Meridian East']},
+  {id:'orbital',file:'advert-orbital.webp',label:'OFFWORLD',aspectRatio:2/3,tint:'#9990ff',districts:['Crown Plaza','Iron Docks']},
+  {id:'noodle',file:'advert-noodle.webp',label:'MIDNIGHT RAMEN',aspectRatio:2/3,tint:'#ffac56',districts:['Lantern Market','Stacktown']},
+  {id:'recast',file:'advert-recast.webp',label:'RECAST',aspectRatio:16/9,tint:'#f090ce',districts:['Meridian East','Stacktown']},
+  {id:'kinkeep',file:'advert-kinkeep.webp',label:'KINKEEP',aspectRatio:2/3,tint:'#ecb977',districts:['Stacktown','Lantern Market']},
+  {id:'everon',file:'advert-everon.webp',label:'EVERON',aspectRatio:16/9,tint:'#c7e5ae',districts:['Crown Plaza','Meridian East']},
+  {id:'quietus',file:'advert-quietus.webp',label:'QUIETUS',aspectRatio:2/3,tint:'#addcd7',districts:['Meridian East','Crown Plaza']},
+  {id:'vyra',file:'advert-vyra.webp',label:'VYRA',aspectRatio:16/9,tint:'#ec71d6',districts:['Stacktown','Lantern Market']},
+  {id:'grinpop',file:'advert-grinpop.webp',label:'GRINPOP',aspectRatio:16/9,tint:'#f2bb60',districts:['Lantern Market','Iron Docks']},
+  {id:'syntask',file:'advert-syntask.webp',label:'SYNTASK',aspectRatio:2/3,tint:'#acda63',districts:['Iron Docks','Meridian East']},
+  {id:'nesto',file:'advert-nesto.webp',label:'NESTO',aspectRatio:4/5,tint:'#a99ce4',districts:['Stacktown','Crown Plaza']},
+  {id:'irisyn',file:'advert-irisyn.webp',label:'IRISYN',aspectRatio:16/9,tint:'#77deed',districts:['Meridian East','Iron Docks']},
+  {id:'else',file:'advert-else.webp',label:'ELSE',aspectRatio:16/9,tint:'#e9a3ce',districts:['Crown Plaza','Lantern Market']},
+  {id:'vesper-arc',file:'advert-vesper-arc.webp',label:'VESPER ARC',aspectRatio:2/3,tint:'#98b9ee',districts:['Crown Plaza','Iron Docks']},
+  {id:'synthsilk',file:'advert-synthsilk.webp',label:'SYNTHSILK',aspectRatio:2/3,tint:'#e691cf',districts:['Stacktown','Crown Plaza']}
 ].map((campaign,index)=>Object.freeze({...campaign,index,districts:Object.freeze(campaign.districts)}));
 
 export function getAdvertCampaign(indexOrId) {

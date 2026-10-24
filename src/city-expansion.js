@@ -140,7 +140,7 @@ export function createExpansionLayout() {
         if(frontRandom()>.38) {
           const bladeZ=z+depth*.22,bladeX=face+side*.83;
           b(bladeX,7.4,bladeZ,1.42,3.58,.35,'#263745','metal');
-          signs.push({text:isDock?'GARAGE':isMarket?'NOODLES':isCorporate?'OPTICS':'CLINIC',sub:'24 / 7',w:1.3,h:3.45,tint,x:bladeX,y:7.4,z:bladeZ+.2,ry:0,art:'type',vertical:isDock?'修理':isMarket?'夜市':isCorporate?'電脳':'診療',chunk});
+          signs.push({text:isDock?'GARAGE':isMarket?'NOODLES':isCorporate?'OPTICS':'CLINIC',sub:'24 / 7',w:1.3,h:3.45,tint,x:bladeX,y:7.4,z:bladeZ+.2,ry:0,art:'type',vertical:isDock?'REPAIR':isMarket?'MARKET':isCorporate?'CYBER':'CLINIC',chunk});
           b(face+side*.35,8.3,bladeZ,1.1,.09,.1,'#66818e','metal');
         }
       }
@@ -408,7 +408,7 @@ export function createExpansionLayout() {
   chunk='infrastructure';
   for(const z of [50,-180]) {
     for(const side of [-1,1])b(side*13.4,4,z+15,.13,7.8,.13,'#345366','metal');
-    signs.push({text:z===50?'KASUMI WARD':'CROWN / DOCKS / STACKTOWN',sub:z===50?'NORTH / NEON DISTRICT':'← WEST LOOP       EAST LOOP →',w:z===50?9:13,h:1.6,tint:'#47d9e6',x:0,y:7.5,z:z+15,ry:0,art:'shop',chunk});
+    signs.push({text:z===50?'KASUMI WARD':'CROWN / DOCKS / STACKTOWN',sub:z===50?'NORTH / GLITCHBOUND':'← WEST LOOP       EAST LOOP →',w:z===50?9:13,h:1.6,tint:'#00e5ff',x:0,y:7.5,z:z+15,ry:0,art:'shop',chunk});
   }
   const loop=(region,x1,x2,z1,z2,height=5)=>({region,height,speed:4.8,points:[{x:x1,z:z1},{x:x2,z:z1},{x:x2,z:z2},{x:x1,z:z2}]});
   const patrolRoutes=[

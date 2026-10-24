@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "product": "GLITCHBOUND",
+  "assets": [
+    {
+      "id": "vehicle-acceleration",
+      "path": "/audio/glitchbound/vehicle-acceleration.mp3",
+      "sha256": "21824541E2F5A595568DC723B0C958BB0E5F770DB599FE3F5A762321E42D0EA2",
+      "event": "vehicle throttle changes from inactive to active",
+      "playback": "one-shot while throttle is held; fades on release; not looped",
+      "suggestedGain": { "initial": 0.12, "range": [0.08, 0.16] },
+      "spatialization": "non-positional local vehicle layer over existing speed-sensitive procedural motor",
+      "source": "user-supplied car accereletion.mp3; copied unchanged",
+      "validation": "decoded and metadata-measured; browser integration added; in-game listening pending; no loopability claim"
+    },
+    {
+      "id": "character-hurt",
+      "path": "/audio/glitchbound/character-hurt.mp3",
+      "sha256": "1A560F07B1F56D1E7C926B8384030EE7A97EE4322BA3C23832E16D15A84F73D8",
+      "event": "confirmed local-player health decrement",
+      "playback": "one-shot with 0.32 second repeat guard",
+      "suggestedGain": { "initial": 0.1, "range": [0.07, 0.13] },
+      "spatialization": "non-positional local feedback",
+      "source": "user-supplied cookiecheese-hurt-sound-531758.mp3; copied unchanged",
+      "validation": "decoded and metadata-measured; browser integration added; in-game listening pending; MP3 decode peak is slightly above 1.0, so gain is reduced"
+    },
+    {
+      "id": "weapon-gunfire",
+      "path": "/audio/glitchbound/weapon-gunfire-one-shot.wav",
+      "sourcePath": "/audio/glitchbound/weapon-gunfire-source.mp3",
+      "sha256": "9F94BC11E3B14A6DA6DB8D871B29CDC515045D7F583FFC78CBBB416FF7580312",
+      "sourceSha256": "80BC8724272412176BABDA3A1AF5B0A1B1A4DB7617225EF1217F2BBC6FABBEAC",
+      "event": "accepted carbine fire event, after existing cooldown and ammo checks",
+      "playback": "0.475 second stereo transient extracted from source range 0.025–0.50 seconds; 0.006 second fade-in and 0.055 second fade-out; maximum 3 overlapping voices",
+      "suggestedGain": { "initial": 0.16, "range": [0.12, 0.19] },
+      "spatialization": "HRTF positional playback at Blender muzzle socket",
+      "source": "derived non-destructively from user-supplied gunfiring sound - Copy.mp3 using scripts/derive-audio-transient.py; full source retained unchanged",
+      "validation": "source decoded and waveform measured; derivative generated and hash-verified; transient boundaries require in-game listening confirmation"
+    },
+    {
+      "id": "sci-fi-chase",
+      "path": "/audio/glitchbound/sci-fi-chase.mp3",
+      "sha256": "0D95D62151EFB8B57B7AB8CA3217A874C14336A699118BBEF52A4172539F8A55",
+      "event": "existing security drone first enters its responding/pursuit state",
+      "playback": "one-shot on the transition edge; 2.5 second global repeat guard; never looped",
+      "suggestedGain": { "initial": 0.1, "range": [0.07, 0.13] },
+      "spatialization": "HRTF positional playback at responding drone",
+      "source": "user-supplied ufo chasing.mp3; copied unchanged",
+      "validation": "decoded and envelope-measured; browser integration added; in-game listening pending; no loopability claim"
+    },
+    {
+      "id": "sci-fi-crash",
+      "path": "/audio/glitchbound/sci-fi-crash.mp3",
+      "sha256": "19E2D8DEDEFD80FF78D5AFE8226E2DCDF0FCEC9EEE389111F9BBAC59021EF14F",
+      "event": "existing security drone destruction transition",
+      "playback": "one-shot with 2.5 second repeat guard; long natural tail retained; not triggered by vehicle bumps",
+      "suggestedGain": { "initial": 0.09, "range": [0.06, 0.12] },
+      "spatialization": "HRTF positional playback at destroyed drone; 80 metre attenuation range",
+      "source": "user-supplied ufo crashing - Copy (2).mp3; copied unchanged",
+      "validation": "decoded and envelope-measured; browser integration added; in-game listening pending; tail intentionally left untrimmed"
+    }
+  ],
+  "mix": {
+    "autoplay": "disabled; existing sound toggle must be clicked to unlock the context",
+    "masterGain": 0.55,
+    "outputGain": 0.75,
+    "limiterThresholdDb": -12,
+    "fallback": "existing procedural sounds remain available when sample fetch/decode fails",
+    "imageOrTextDetection": "not applicable; audio manifest and Unicode source checks do not inspect embedded image text"
+  }
+}

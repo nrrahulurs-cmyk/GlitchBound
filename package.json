@@ -1,5 +1,5 @@
 {
-  "name": "neon-district",
+  "name": "glitchbound",
   "private": true,
   "license": "MIT",
   "engines": {
@@ -12,7 +12,9 @@
     "prebuild": "node scripts/export-blueprint.mjs",
     "dev": "vite --configLoader native",
     "build": "vite build --configLoader native",
+    "postbuild": "node scripts/prune-deployment-assets.mjs",
     "preview": "vite preview --configLoader native",
+    "check:english": "node scripts/check-english.mjs",
     "test": "node scripts/test.mjs"
   },
   "dependencies": {

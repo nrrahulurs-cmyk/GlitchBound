@@ -139,7 +139,7 @@ export function createCityLayout() {
 
   const lowLeft=[{z:20,h:32,d:20,in:16},{z:-7,h:19,d:17,in:17},{z:-31,h:14,d:18,in:16},{z:-56,h:21,d:17,in:17.5},{z:-80,h:12,d:18,in:16},{z:-105,h:19,d:18,in:17},{z:-132,h:15,d:20,in:17},{z:-160,h:16,d:16,in:17}];
   const lowRight=[{z:22,h:27,d:20,in:18},{z:-6,h:20,d:17,in:17},{z:-31,h:16,d:18,in:18},{z:-57,h:17,d:18,in:16.7},{z:-81,h:14,d:18,in:18},{z:-106,h:21,d:19,in:17},{z:-134,h:16,d:20,in:18},{z:-160,h:17,d:15,in:17}];
-  const labels=[['麺屋','NOODLES'],['診療','CHROME'],['音楽','NOVA'],['夜市','MARKET'],['記憶','MEMORY'],['電脳','CYBER']];
+  const labels=['NOODLES','CLINIC','MUSIC','NIGHT MARKET','MEMORY','CYBERNETICS'];
   for(const side of [-1,1]) {
     const row=side<0?lowLeft:lowRight;
     row.forEach((spec,index)=>{
@@ -149,8 +149,8 @@ export function createCityLayout() {
       const tint=choice(['#ff672d','#e92192','#1cc4ec','#ffd17e']);
       const bladeZ=spec.z+spec.d*.31;
       b(build.front-side*.65,7.3,bladeZ,1.2,4.6,.32,'#20202e','metal');
-      sign(label[1],'24 / 7',1.15,4.5,tint,build.front-side*.66,7.3,bladeZ+.18,0,'type',label[0]);
-      sign(index===0&&side<0?'NOODLES':label[1],'',Math.min(7,spec.d*.55),.93,tint,build.front-side*.32,3.5,spec.z,side<0?Math.PI/2:-Math.PI/2,'shop');
+      sign(label,'24 / 7',1.15,4.5,tint,build.front-side*.66,7.3,bladeZ+.18,0,'type',label);
+      sign(index===0&&side<0?'NOODLES':label,'',Math.min(7,spec.d*.55),.93,tint,build.front-side*.32,3.5,spec.z,side<0?Math.PI/2:-Math.PI/2,'shop');
       for(let t=0;t<8;t++) {
         const zz=spec.z+(random()-.5)*(spec.d-1),xx=side*(spec.in-1-random()*1.5);
         b(xx,.25,zz,.4+random()*.55,.45,.4+random()*.4,choice(['#5b4032','#344752','#61503c','#543748']));
@@ -182,12 +182,12 @@ export function createCityLayout() {
   sign('HUMAN+','',8.0,14,'#ff299d',-17.5,21,3.41,.14,'portrait');
   // No glass in front of the art; small projecting brackets make the slab tangible.
   for(const y of [13.7,28.3])b(-17.5,y,3.15,8.75,.18,1.0,'#333e4c','metal',.14);
-  sign('神経回路','CHROME / NEW HUMAN',7,5,'#2edcff',-13.2,11.0,-8,0,'circuit');
+  sign('NEURAL CIRCUIT','CHROME / NEW HUMAN',7,5,'#2edcff',-13.2,11.0,-8,0,'circuit');
   b(19,11.8,10,10.2,5.8,.5,'#273142','metal',-.16);
-  sign('記憶','RECALL / TOMORROW',9.8,5.4,'#37dcff',19,11.8,10.3,-.16,'circuit');
-  sign('夢','SYNTHETIC DREAMS',8.4,12.6,'#ed3bb4',23,29,-43,.06,'dancer');
+  sign('MEMORY','RECALL / TOMORROW',9.8,5.4,'#37dcff',19,11.8,10.3,-.16,'circuit');
+  sign('DREAMS','SYNTHETIC DREAMS',8.4,12.6,'#ed3bb4',23,29,-43,.06,'dancer');
   sign('AI','MIND / MACHINE',5.2,9.2,'#ef39be',-23,36,-61,.02,'portrait');
-  sign('視覚','OPTIC SYSTEMS',7.6,4.8,'#24c9fc',27,22,-95,-.1,'circuit');
+  sign('OPTICS','OPTIC SYSTEMS',7.6,4.8,'#24c9fc',27,22,-95,-.1,'circuit');
   // Near-left noodle shop exactly anchors the warm corner in the concept.
   sign('NOODLES','',5.7,1.15,'#ff9a35',-12.8,5.9,12,.1,'shop');
   b(-12.85,5.9,11.72,6.15,1.5,.35,'#673d20','metal',.1);

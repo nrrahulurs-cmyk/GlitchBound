@@ -86,7 +86,7 @@ export function createCity(scene) {
     mesh.computeBoundingSphere();targetGroup(chunk,lod).add(mesh);
   }
   const textureLoader=new THREE.TextureLoader();
-  const portrait=textureLoader.load('/assets/advert-portrait.png');portrait.colorSpace=THREE.SRGBColorSpace;portrait.anisotropy=8;
+  const portrait=textureLoader.load('/assets/advert-portrait.webp');portrait.colorSpace=THREE.SRGBColorSpace;portrait.anisotropy=8;
   const campaignMeshes=new Map();
   function fitCampaign(mesh,aspect){
     const {w,h}=mesh.userData.displayPanel;
@@ -107,7 +107,7 @@ export function createCity(scene) {
     const ctx=canvas.getContext('2d');let state=371+Math.round(spec.x*17+spec.z*11);
     const r=()=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return state/4294967296;};
     if(spec.art==='circuit') {
-      const chip=spec.text==='神経回路';
+      const chip=spec.text==='NEURAL CIRCUIT';
       const cols=44,rows=Math.round(cols*spec.h/spec.w),cw=canvas.width/cols,ch=canvas.height/rows;
       for(let y=0;y<rows;y++)for(let x=0;x<cols;x++) {
         const nx=(x-cols*.48)/(cols*.42),ny=(y-rows*.44)/(rows*.34),ring=Math.sqrt(nx*nx+ny*ny);
@@ -121,7 +121,7 @@ export function createCity(scene) {
         }
         ctx.fillStyle=fill;ctx.fillRect(x*cw,y*ch,cw-.7,ch-.7);
       }
-      ctx.fillStyle='#c9faff';ctx.font=`900 ${canvas.height*.17}px "Yu Gothic",sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillStyle='#c9faff';ctx.font=`900 ${canvas.height*.17}px "Barlow", "Segoe UI", Arial, sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';
       ctx.fillText(spec.text,canvas.width*.5,canvas.height*.78,canvas.width*.88);
       ctx.fillStyle='#bff3ff';ctx.font=`700 ${canvas.height*.045}px monospace`;ctx.fillText(spec.sub,canvas.width*.5,canvas.height*.94,canvas.width*.92);
     } else if(spec.art==='shop') {
@@ -134,7 +134,7 @@ export function createCity(scene) {
     } else {
       ctx.fillStyle='#171523';ctx.fillRect(0,0,canvas.width,canvas.height);
       const chars=(spec.vertical||spec.text).split('');ctx.fillStyle=spec.tint;ctx.textAlign='center';ctx.textBaseline='middle';
-      ctx.font=`700 ${Math.min(410,canvas.height*.8/chars.length)}px "Yu Gothic",sans-serif`;
+      ctx.font=`700 ${Math.min(410,canvas.height*.8/chars.length)}px "Barlow", "Segoe UI", Arial, sans-serif`;
       chars.forEach((char,i)=>ctx.fillText(char,256,canvas.height*(.15+i*.68/chars.length),460));
       ctx.strokeStyle=spec.tint;ctx.lineWidth=8;ctx.strokeRect(5,5,502,canvas.height-10);
       ctx.font=`800 ${Math.min(70,canvas.width/(spec.text.length*.68))}px monospace`;ctx.fillText(spec.text,256,canvas.height*.9,460);

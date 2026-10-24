@@ -33,6 +33,10 @@ export function createWeaponVFX({scene,boltSource,shardsSource}) {
     });
     return {group,particles,inUse:false,age:0,life:.24};
   });
+  // Shader compilation only needs one representative of each pooled material
+  // family. These clones share the live resources and stay outside the scene.
+  const prewarmRoot=new THREE.Group();
+  prewarmRoot.add(flightPool[0].group.clone(true),burstPool[0].group.clone(true));
   const flights=[],bursts=[];let serial=0,lastShot=null;
   function releaseFlight(shot){shot.group.visible=false;shot.inUse=false;}
   function releaseBurst(burst){burst.group.visible=false;burst.inUse=false;}
@@ -79,5 +83,5 @@ export function createWeaponVFX({scene,boltSource,shardsSource}) {
   function reset(){while(flights.length)releaseFlight(flights.pop());while(bursts.length)releaseBurst(bursts.pop());lastShot=null;serial=0;}
   function getState(){return {source:'Blender ion-bolt.glb / impact-shards.glb',speed:SPEED,activeBolts:flights.length,activeImpacts:bursts.length,maxBolts:MAX_SHOTS,maxImpacts:MAX_BURSTS,lastShot,
     bolts:flights.map(s=>({id:s.id,origin:s.origin.toArray(),position:s.group.position.toArray(),end:s.end.toArray(),distance:s.distance,travel:s.travel,age:s.age}))};}
-  return {fire,update,reset,getState,root};
+  return {fire,update,reset,getState,root,prewarmRoot};
 }

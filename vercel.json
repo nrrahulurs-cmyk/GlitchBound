@@ -5,6 +5,7 @@
   "outputDirectory": "dist",
   "headers": [
     { "source": "/assets/(.*).glb", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }] },
+    { "source": "/assets/(.*).webp", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }] },
     { "source": "/assets/(.*).png", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }] }
   ]
 }

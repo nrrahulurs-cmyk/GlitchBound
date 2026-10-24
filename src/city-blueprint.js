@@ -4,11 +4,21 @@ import { SCENE_PLACEMENTS } from './asset-placements.js';
 export const CITY_RULES=Object.freeze({roadWidth:22,clearDrivingHalfWidth:8,vehicleRadius:1.45,minimumOverheadClearance:5,minimumFacadeMargin:.38,wallMountOffset:.9,groundY:.05,baseGradeY:-.05,sidewalkBuildingSetback:4,units:'metres'});
 
 function buildingRecords(layout) {
+  const boxesByBlock=new Map(),boxesByChunk=new Map();
+  for(const box of layout.boxes) {
+    if(box.blockId) {
+      if(!boxesByBlock.has(box.blockId))boxesByBlock.set(box.blockId,[]);
+      boxesByBlock.get(box.blockId).push(box);
+    }
+    if(box.lod==='far'||box.kind!=='solid')continue;
+    if(!boxesByChunk.has(box.chunk))boxesByChunk.set(box.chunk,[]);
+    boxesByChunk.get(box.chunk).push(box);
+  }
   return layout.colliders.filter(v=>v.sy>5&&v.sx>4&&v.sz>4).map((v,i)=>{
     const id='B'+String(i+1).padStart(3,'0');
     let sections=[];
-    if(v.blockId)sections=layout.boxes.filter(b=>b.blockId===v.blockId&&b.kind==='solid'&&b.sy>5&&b.sx>v.sx*.24&&b.sz>v.sz*.24).map(b=>({x:b.x,y:b.y,z:b.z,sx:b.sx,sy:b.sy,sz:b.sz}));
-    else sections=layout.boxes.filter(b=>b.lod!=='far'&&b.chunk===v.chunk&&b.kind==='solid'&&Math.abs(b.x-v.x)<.01&&Math.abs(b.z-v.z)<.01&&Math.abs(b.sx-v.sx)<.01&&Math.abs(b.sz-v.sz)<.01&&Math.abs(b.sy-v.sy)<.01).map(b=>({x:b.x,y:b.y,z:b.z,sx:b.sx,sy:b.sy,sz:b.sz}));
+    if(v.blockId)sections=(boxesByBlock.get(v.blockId)||[]).filter(b=>b.kind==='solid'&&b.sy>5&&b.sx>v.sx*.24&&b.sz>v.sz*.24).map(b=>({x:b.x,y:b.y,z:b.z,sx:b.sx,sy:b.sy,sz:b.sz}));
+    else sections=(boxesByChunk.get(v.chunk)||[]).filter(b=>Math.abs(b.x-v.x)<.01&&Math.abs(b.z-v.z)<.01&&Math.abs(b.sx-v.sx)<.01&&Math.abs(b.sz-v.sz)<.01&&Math.abs(b.sy-v.sy)<.01).map(b=>({x:b.x,y:b.y,z:b.z,sx:b.sx,sy:b.sy,sz:b.sz}));
     if(!sections.length)sections=[{x:v.x,y:v.y,z:v.z,sx:v.sx,sy:v.sy,sz:v.sz}];
     sections.sort((a,b)=>a.y-a.sy/2-(b.y-b.sy/2));
     return {id,label:id+' / '+(v.chunk||'Kasumi skyline'),sourceId:v.blockId||v.chunk+'-'+i,chunk:v.chunk||'core',x:v.x,y:v.y,z:v.z,sx:v.sx,sy:v.sy,sz:v.sz,sections};

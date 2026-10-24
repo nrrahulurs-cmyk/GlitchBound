@@ -3,49 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#070e18" />
-    <meta name="description" content="Neon District. A playable voxel cyberpunk city built with Blender and Three.js." />
-    <title>NEON DISTRICT — After the signal</title>
+    <meta name="theme-color" content="#080A12" />
+    <meta name="description" content="GLITCHBOUND is a free-roam cyberpunk city built with Blender and Three.js." />
+    <meta name="application-name" content="GLITCHBOUND" />
+    <meta property="og:title" content="GLITCHBOUND — After the signal" />
+    <meta property="og:description" content="A free-roam cyberpunk city. An endless night. A city to get lost in." />
+    <meta property="og:site_name" content="GLITCHBOUND" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>GLITCHBOUND — After the signal</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <div id="world" aria-label="Interactive 3D cyberpunk city"></div>
     <div id="vignette"></div>
     <div id="damage-overlay"></div>
-    <header class="topbar">
-      <a class="brand" href="#" id="brand" aria-label="Neon District menu"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 25V7h6l12 18h6V7h-6v11L10 1H4" stroke="currentColor" stroke-width="3"/></svg><span>NEON<span class="brand-light">DISTRICT</span><small>NO GODS. ONLY SIGNAL.</small></span></a>
-      <div class="district-label"><i class="live-dot"></i><span id="current-district">KASUMI WARD</span><span> / </span> NIGHT CITY GRID <b id="clock">23:48</b></div>
+    <header class="topbar" id="topbar">
+      <a class="brand" href="#" id="brand" aria-label="GLITCHBOUND menu"><span class="brand-lockup"><img class="brand-logo" src="/glitchbound-logo.svg" alt="GLITCHBOUND"><small class="brand-tagline">NO GODS. ONLY SIGNAL.</small></span></a>
+      <div class="district-label"><i class="live-dot"></i><span id="current-district">KASUMI WARD</span><span> / </span> VESPER CITY GRID <b id="clock">23:48</b></div>
       <nav><button id="map-btn" class="icon-button" aria-label="City map" title="City map (M)">M</button><button id="sound-btn" class="icon-button" aria-label="Enable sound" title="Toggle sound"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h4l5-4v14l-5-4H4V9Zm13-1c3 2 3 6 0 8m3-11c5 4 5 10 0 14" stroke="currentColor" stroke-width="1.5"/></svg><span id="sound-state">OFF</span></button><button id="help-btn" class="icon-button" aria-label="Controls" title="Controls">?</button><button id="menu-btn" class="icon-button" aria-label="Open menu" title="Menu"><span class="menu-lines"></span></button></nav>
     </header>
 
     <main id="menu" class="menu-screen">
       <div class="intro">
         <div class="eyebrow"><span>KASUMI WARD</span><i></i> NIGHTFALL / 2089</div>
-        <h1>NEON <span>DISTRICT<span class="period">.</span></span></h1>
+        <h1><img src="/glitchbound-logo.svg" alt="GLITCHBOUND"></h1>
         <p class="intro-copy">An endless night. A city to get lost in.</p>
-        <button id="start-btn" class="primary-button" disabled><span id="start-label">INITIALIZING CITY</span><svg viewBox="0 0 24 24"><path d="M4 12h15m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button>
+        <button id="start-btn" class="primary-button" disabled><span id="start-label">INITIALIZING GLITCHBOUND</span><svg viewBox="0 0 24 24"><path d="M4 12h15m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button>
         <div class="menu-secondary"><button id="concept-btn">VIEW CONCEPT ART <span>↗</span></button><button id="controls-btn">CONTROLS <span>⌘</span></button></div>
-        <div class="ready-status"><i class="live-dot"></i><span id="load-status">Connecting to the district…</span></div>
+        <div class="ready-status"><i class="live-dot"></i><span id="load-status">Connecting to GLITCHBOUND…</span></div>
       </div>
       <aside class="scene-coordinate"><span class="cross">+</span><span>35° 40′ 12.0″ N<br>139° 42′ 09.0″ E</span><i></i><b>LIVE WORLD</b></aside>
-      <footer class="menu-footer"><span>FREE ROAM <b> / </b> THE CITY IS YOURS</span><small>BLENDER + THREE.JS <i> / </i> VOXEL EDITION 02</small></footer>
+      <footer class="menu-footer"><span>GLITCHBOUND <b> / </b> THE CITY IS YOURS</span><small>BLENDER + THREE.JS <i> / </i> VOXEL CITY</small></footer>
     </main>
 
+    <section id="intro-overlay" class="cinematic-overlay hidden" aria-label="Opening cinematic">
+      <div class="cinematic-signal"><i></i><span>GLITCHBOUND // FIELD RECORDING 01</span></div>
+      <p id="intro-caption" class="cinematic-caption" aria-live="polite">KASUMI WARD / 23:49</p>
+      <div id="intro-wordmark" class="cinematic-wordmark" aria-label="GLITCHBOUND">
+        <img src="/glitchbound-logo.svg" alt="GLITCHBOUND">
+        <span>AFTER THE SIGNAL</span>
+      </div>
+      <button id="intro-skip" class="cinematic-skip" type="button" aria-label="Skip story intro">
+        <span>SKIP INTRO</span><kbd>ESC</kbd>
+      </button>
+      <div class="cinematic-progress" aria-hidden="true"><i id="intro-progress"></i></div>
+    </section>
+
     <div id="hud" class="hidden">
-      <div class="left-hud"><div class="roam-card"><div class="tiny-label"><i class="live-dot"></i> <span id="roam-district">KASUMI WARD</span></div><h2>夜の街</h2><p>THE CITY NEVER SLEEPS.</p></div><div id="security-panel"><div class="tiny-label">CIVIC SECURITY</div><strong id="security-state">PATROL</strong><div id="wanted-stars" aria-label="Wanted level 0">◇ ◇ ◇</div><p id="crime-reason">No active alert</p><div class="meter"><i id="heat-bar"></i></div></div></div>
+      <div class="left-hud"><div class="roam-card"><div class="tiny-label"><i class="live-dot"></i> <span id="roam-district">KASUMI WARD</span></div><h2>AFTER DARK</h2><p>THE CITY NEVER SLEEPS.</p></div><div id="security-panel"><div class="tiny-label">CIVIC SECURITY</div><strong id="security-state">PATROL</strong><div id="wanted-stars" aria-label="Wanted level 0">◇ ◇ ◇</div><p id="crime-reason">No active alert</p><div class="meter"><i id="heat-bar"></i></div></div></div>
       <div class="minimap"><div class="map-head"><b id="minimap-district">KASUMI WARD</b><span>N ↑</span></div><canvas id="minimap" width="220" height="190"></canvas><div class="map-foot"><i class="live-dot"></i> <span id="position-label">SECTOR 07</span><b>07</b></div></div>
       <div class="crosshair" id="crosshair"><i></i><i></i><i></i><i></i><b></b></div>
       <div id="interaction" class="hidden"><kbd>E</kbd><span>INTERACT</span></div>
-      <div id="vehicle-hud" class="hidden"><span>YŪREI // INTERCEPTOR</span><strong id="speed">000</strong><small>KM/H</small><p>W / S THROTTLE · A / D STEER · SPACE BRAKE · E EXIT</p></div>
+      <section id="vehicle-hud" class="hidden" aria-label="Interceptor dashboard">
+        <div class="vehicle-hud__top"><span class="vehicle-hud__label">GHOST INTERCEPTOR</span><span class="vehicle-hud__link"><i></i> DRIVE LINK</span></div>
+        <div class="vehicle-hud__readout"><strong id="speed">000</strong><small>KM/H</small><span class="vehicle-hud__caption">ROAD SPEED</span></div>
+        <div class="vehicle-hud__speed-track" role="meter" aria-label="Vehicle speed" aria-valuemin="0" aria-valuemax="120" aria-valuenow="0"><i id="speed-meter"></i></div>
+        <div class="vehicle-hud__controls"><span><kbd>MOUSE</kbd> LOOK</span><span><kbd>WASD / ARROWS</kbd> DRIVE</span><span><kbd>SPACE</kbd> BRAKE</span><span><kbd>E</kbd> EXIT</span></div>
+        <div class="vehicle-hud__condition"><span>HULL</span><i><b id="integrity-meter"></b></i><strong id="car-integrity">100%</strong></div>
+      </section>
       <div class="bottom-hud"><div class="vitals"><div class="health-row"><span class="health-icon">✚</span><strong id="health-text">100</strong><small>/ 100</small><span class="tiny-label">VITALS</span></div><div class="meter"><i id="health-bar"></i></div><div class="energy-row"><span>NEURAL CAPACITY</span><b id="energy-text">100%</b></div><div class="meter energy-meter"><i id="energy-bar"></i></div></div><div class="abilities"><button class="ability" id="dash-btn" title="Shift to sprint, double tap Shift to dash"><kbd>⇧</kbd><span>KINETIC DASH</span><b id="dash-status">READY</b></button><button class="ability" id="emp-btn" title="Q: electromagnetic pulse"><kbd>Q</kbd><span>EMP PULSE</span><b id="emp-status">READY</b></button></div><div class="weapon-info"><small id="weapon-name">M-09 // PULSE CARBINE</small><div><strong id="ammo">24</strong><span>/ ∞</span><b><kbd>R</kbd> RELOAD</b></div><div class="weapon-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
-      <div class="hud-hint"><kbd>W A S D</kbd> MOVE <span>·</span> <kbd>H</kbd> HOLSTER <span>·</span> <kbd>V</kbd> CAMERA <span>·</span> <kbd>P</kbd> HIDE HUD <span>·</span> <kbd>ESC</kbd> MENU</div>
+      <div class="hud-hint"><kbd>WASD</kbd> MOVE <span>·</span> <kbd>H</kbd> DRAW / HOLSTER <span>·</span> <kbd>V</kbd> VIEW <span>·</span> <kbd>P</kbd> HUD <span>·</span> <kbd>ESC</kbd> MENU</div>
       <div id="kill-feed"></div>
     </div>
 
     <div id="toast" role="status" aria-live="polite"></div>
-    <dialog id="city-map-dialog"><button class="close-modal" aria-label="Close city map">×</button><div class="dialog-eyebrow">CITY NETWORK / OPEN EXPLORATION</div><h2>Beyond the boulevard.</h2><div class="city-map-layout"><canvas id="city-map" width="700" height="680" aria-label="City streets, districts, vehicle and current location"></canvas><aside><p id="city-scale">Connected city streets</p><div id="district-list"></div><div class="map-legend"><span><i class="legend-you"></i> YOU</span><span><i class="legend-car"></i> INTERCEPTOR</span><span><i class="legend-patrol"></i> SECURITY PATROL</span><span><i class="legend-wanted"></i> HOSTILE SECURITY</span><span><i class="legend-service"></i> STREET SERVICES</span><span><i class="legend-destination"></i> DESTINATION</span></div><p class="city-map-note">Green markers locate street services. Face a mounted terminal and press E for food, medical care, neural charging or directions. Park at a dock service apron to repair the interceptor.</p></aside></div><button id="map-return-btn" class="primary-button">BACK TO THE STREETS <span>→</span></button><a class="blueprint-link" href="/blueprint/" target="_blank" rel="noopener">OPEN CITY BLUEPRINT ↗</a></dialog>
-    <dialog id="concept-dialog"><button class="close-modal" aria-label="Close concept art">×</button><div class="dialog-eyebrow">PREPRODUCTION / ART DIRECTION 001</div><h2>A city built from the noise.</h2><img src="/assets/concept.png" alt="Voxel cyberpunk concept: neon towers, rain-soaked street, futuristic sports car, and a cybernetic mercenary."/><div class="concept-caption"><span>NEON DISTRICT — VOXEL WORLD STUDY</span><small>Cyberpunk 2077 inspired · Original concept · AI generated</small></div></dialog>
-    <dialog id="help-dialog"><button class="close-modal" aria-label="Close controls">×</button><div class="dialog-eyebrow">NEURAL INTERFACE / QUICK START</div><h2>Welcome to the undercity.</h2><p>Walk the streets, take your interceptor for a drive, and explore at your own pace. Security patrols leave you alone until you commit a crime.</p><div class="controls-grid"><div><kbd>W A S D</kbd><span>Walk / drive</span></div><div><kbd>MOUSE</kbd><span>Look around · right drag if pointer lock unavailable</span></div><div><kbd>CLICK</kbd><span>Draw weapon / fire if drawn</span></div><div><kbd>SHIFT</kbd><span>Sprint · double tap to dash</span></div><div><kbd>SPACE</kbd><span>Jump / handbrake</span></div><div><kbd>E</kbd><span>Use a service terminal / enter or exit your car</span></div><div><kbd>Q</kbd><span>EMP: disable drones & detonate cells</span></div><div><kbd>R / H</kbd><span>Reload / holster weapon</span></div><div><kbd>V / P</kbd><span>First / third person · hide HUD</span></div><div><kbd>M</kbd><span>Open / close full city map</span></div><div><kbd>ESC</kbd><span>Pause / return to menu</span></div></div><p class="help-note">Civilians can be injured or killed by gunfire and vehicle impacts. Public gunfire, EMP discharge, assaults and destructive ramming trigger security. Evade patrols and stay out of sight to lose your wanted level. Walking and driving normally are legal.</p><button id="help-play" class="primary-button">GOT IT <span>→</span></button></dialog>
+    <dialog id="city-map-dialog"><button class="close-modal" aria-label="Close city map">×</button><div class="dialog-eyebrow">GLITCHBOUND / CITY NETWORK</div><h2>Beyond the boulevard.</h2><div class="city-map-layout"><canvas id="city-map" width="700" height="680" aria-label="City streets, districts, vehicle and current location"></canvas><aside><p id="city-scale">Connected city streets</p><div id="district-list"></div><div class="map-legend"><span><i class="legend-you"></i> YOU</span><span><i class="legend-car"></i> INTERCEPTOR</span><span><i class="legend-patrol"></i> SECURITY PATROL</span><span><i class="legend-wanted"></i> HOSTILE SECURITY</span><span><i class="legend-service"></i> STREET SERVICES</span><span><i class="legend-destination"></i> DESTINATION</span></div><p class="city-map-note">Green markers locate street services. Face a mounted terminal and press E for food, medical care, neural charging or directions. Park at a dock service apron to repair the interceptor.</p></aside></div><button id="map-return-btn" class="primary-button">BACK TO THE STREETS <span>→</span></button><a class="blueprint-link" href="/blueprint/" target="_blank" rel="noopener">OPEN CITY ATLAS ↗</a></dialog>
+    <dialog id="concept-dialog"><button class="close-modal" aria-label="Close concept art">×</button><div class="dialog-eyebrow">GLITCHBOUND / ART DIRECTION 001</div><h2>A city built from the noise.</h2><img src="/assets/concept.webp" alt="Voxel cyberpunk concept: neon towers, rain-soaked street, futuristic sports car, and a cybernetic mercenary." loading="lazy" decoding="async"/><div class="concept-caption"><span>GLITCHBOUND — VOXEL CITY STUDY</span><small>Original concept art · AI generated</small></div></dialog>
+    <dialog id="help-dialog"><button class="close-modal" aria-label="Close controls">×</button><div class="dialog-eyebrow">NEURAL INTERFACE / QUICK START</div><h2>Welcome to the undercity.</h2><p>Walk the streets, take your interceptor for a drive, and explore at your own pace. Security patrols leave you alone until you commit a crime.</p><div class="controls-grid"><div><kbd>W A S D / ARROWS</kbd><span>Walk; drive and steer your interceptor</span></div><div><kbd>MOUSE</kbd><span>Move over the game to look and aim; pointer lock is optional</span></div><div><kbd>CLICK</kbd><span>Draw weapon when holstered; click or hold to fire when drawn</span></div><div><kbd>SHIFT</kbd><span>Hold to sprint · double tap to dash</span></div><div><kbd>SPACE</kbd><span>Jump on foot · handbrake in your car</span></div><div><kbd>E</kbd><span>Use a service terminal / enter or exit your car</span></div><div><kbd>Q</kbd><span>EMP: disable drones & detonate cells</span></div><div><kbd>R / H</kbd><span>Reload / toggle weapon draw and holster</span></div><div><kbd>V / P</kbd><span>Toggle first / third person · hide or restore HUD</span></div><div><kbd>M</kbd><span>Open / close full city map</span></div><div><kbd>ESC</kbd><span>Pause and return to the menu</span></div></div><p class="help-note">Civilians can be injured or killed by gunfire and vehicle impacts. Public gunfire, EMP discharge, assaults and destructive ramming trigger security. Evade patrols and stay out of sight to lose your wanted level. Walking and driving normally are legal.</p><button id="help-play" class="primary-button">GOT IT <span>→</span></button></dialog>
     <dialog id="result-dialog"><div class="dialog-eyebrow" id="result-eyebrow">NEURAL LINK LOST</div><h2 id="result-title">Flatlined in Kasumi.</h2><p id="result-copy">Your backup is intact. Reconnect to the city.</p><div class="result-stats"><div><strong id="result-kills">0</strong><span>SECURITY DISABLED</span></div><div><strong id="result-time">00:00</strong><span>TIME IN DISTRICT</span></div></div><button id="restart-btn" class="primary-button">RECONNECT <span>↗</span></button></dialog>
     <script type="module" src="/src/main.js"></script>
   </body>

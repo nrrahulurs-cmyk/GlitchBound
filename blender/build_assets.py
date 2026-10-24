@@ -1,4 +1,4 @@
-"""NEON DISTRICT original voxel prop kit.
+"""GLITCHBOUND original voxel prop kit.
 
 Run with Blender 5.x: blender --background --python build_assets.py
 Each prop is authored in Blender coordinates (+Y is vehicle forward, Z is up),

@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-const CELL=32,FRUSTUM_WIDTH=104,MAP_SIZE=2048,REFRESH_DISTANCE=4,SELECTION_MARGIN=12;
+const CELL=32,FRUSTUM_WIDTH=104,MAP_SIZE=2048,REFRESH_DISTANCE=4,SELECTION_MARGIN=12,MIN_SHADOW_REFRESH_MS=1000/45;
 const finiteBox=b=>b&&['x','y','z','sx','sy','sz'].every(k=>Number.isFinite(b[k]))&&Math.min(b.sx,b.sy,b.sz)>0;
 
 /** One local directional shadow map; no added lights, shadow discs, or scene color.
@@ -27,7 +27,8 @@ export function createCityShadows({scene,renderer,moon,city}) {
   const halfGroundZ=half*(Math.abs(right.z)+Math.abs(up.z-lightDirection.z*up.y/lightDirection.y));
   let maxTop=1,disposed=false,selectedIds=[];
   const stats={mapSize:MAP_SIZE,frustumWidth:FRUSTUM_WIDTH,texelSize:texel,sourceShapes:0,indexedShapes:0,
-    activeProxies:0,disabledStaticBatches:0,proxyRefreshes:0,shadowUpdates:0,proxyDrawCalls:1};
+    activeProxies:0,disabledStaticBatches:0,proxyRefreshes:0,shadowUpdates:0,shadowSkippedFrames:0,proxyDrawCalls:1};
+  let lastShadowUpdateTimestamp=null,shadowRefreshAccumulator=MIN_SHADOW_REFRESH_MS;
 
   // Index the *shadow footprint*, not just the source building's ground parcel:
   // a tall tower outside the local street can still cast into the visible area.
@@ -83,9 +84,14 @@ export function createCityShadows({scene,renderer,moon,city}) {
     proxies.instanceMatrix.needsUpdate=true;stats.activeProxies=count;stats.proxyRefreshes++;
     lastSelection.set(px,groundY,pz);
   }
-  function update(playerPosition){
+  function update(playerPosition,timestamp=performance.now()){
     if(disposed||!playerPosition||!Number.isFinite(playerPosition.x+playerPosition.z))return;
+    if(lastShadowUpdateTimestamp!==null)shadowRefreshAccumulator+=Math.max(0,timestamp-lastShadowUpdateTimestamp);
+    lastShadowUpdateTimestamp=timestamp;
     const groundY=city?.groundHeightAt?.(playerPosition.x,playerPosition.z)??.057;
+    const movedSinceSelection=Math.hypot(playerPosition.x-lastSelection.x,playerPosition.z-lastSelection.z)>=REFRESH_DISTANCE||Math.abs(groundY-lastSelection.y)>1;
+    const refreshDue=shadowRefreshAccumulator>=MIN_SHADOW_REFRESH_MS;
+    if(!refreshDue&&!movedSinceSelection){stats.shadowSkippedFrames++;return;}
     center.set(playerPosition.x,groundY,playerPosition.z);
     // Snap in the light's image plane rather than world X/Z. This preserves the
     // same texel lattice when walking diagonally past a wall or moving a camera.
@@ -97,6 +103,7 @@ export function createCityShadows({scene,renderer,moon,city}) {
     moon.updateWorldMatrix(true,false);moon.target.updateWorldMatrix(true,false);
     if(Math.hypot(playerPosition.x-lastSelection.x,playerPosition.z-lastSelection.z)>=REFRESH_DISTANCE||Math.abs(groundY-lastSelection.y)>1)select(playerPosition.x,playerPosition.z,groundY);
     shadow.needsUpdate=true;renderer.shadowMap.needsUpdate=true;stats.shadowUpdates++;
+    if(refreshDue)shadowRefreshAccumulator%=MIN_SHADOW_REFRESH_MS;
   }
   function addCaster(object,{receiveShadow=true}={}){
     const changed=[];
